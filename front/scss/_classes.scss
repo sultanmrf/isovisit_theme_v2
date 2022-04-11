@@ -1,0 +1,34 @@
+body{
+  direction: rtl;
+  font-family: iransans , Arial;
+  background: #fafafa;
+  color: $iso-dark;
+}
+.btn-blur-dark{
+  background: $iso-blue-dark !important;
+  color: white;
+}
+
+.text-blur{
+  color: $iso-blue-dark !important;
+}
+
+.iso-font-xs {
+  font-size: $iso-xs;
+}
+
+.iso-font-sm {
+  font-size: $iso-sm;
+}
+
+.iso-font-md {
+  font-size: $iso-md;
+}
+
+.iso-font-lg {
+  font-size: $iso-lg;
+}
+
+.iso-font-xl {
+  font-size: $iso-xl;
+}
