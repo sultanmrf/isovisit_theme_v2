@@ -1,20 +1,20 @@
- @font-face {
-     font-family: 'iransans-light';
-     src: url('../../dist/fonts/iransans/iransans-light.eot');
-     src: url('../../dist/fonts/iransans/iransans-light.eot?#iefix') format('embedded-opentype'),
-         url('../../dist/fonts/iransans/iransans-light.woff') format('woff'),
-         url('../../dist/fonts/iransans/iransans-light.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
- }
+@font-face {
+  font-family: 'iransans-light';
+  src: url('../../dist/fonts/iransans/iransans-light.eot');
+  src: url('../../dist/fonts/iransans/iransans-light.eot?#iefix') format('embedded-opentype'),
+  url('../../dist/fonts/iransans/iransans-light.woff') format('woff'),
+  url('../../dist/fonts/iransans/iransans-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
- @font-face {
-     font-family: 'iransans';
-     src: url('../../dist/fonts/iransans/iransans.eot');
-     src: url('../../dist/fonts/iransans/iransans.eot?#iefix') format('embedded-opentype'),
-         url('../../dist/fonts/iransans/iransans.woff') format('woff'),
-         url('../../dist/fonts/iransans/iransans.ttf') format('truetype');
-     font-weight: bold;
-     font-style: normal;
- }
+@font-face {
+  font-family: 'iransans';
+  src: url('../../dist/fonts/iransans/iransans.eot');
+  src: url('../../dist/fonts/iransans/iransans.eot?#iefix') format('embedded-opentype'),
+  url('../../dist/fonts/iransans/iransans.woff') format('woff'),
+  url('../../dist/fonts/iransans/iransans.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
 

@@ -1,9 +1,46 @@
 header{
+
     button{
         width: auto;
         border-radius: 8px !important;
     }
+
     .offcanvas-start{
         width: 270px !important;
     }
+
+    nav ul li::marker{
+        color: $iso-blue-dark;
+    }
+
+    .support-border-dark-light{
+        border-color: #6C757D !important;
+    }
+
+    .iso-lg-logo{
+        width: 58px;
+        height: 58px;
+    }
+
+    ::marker {
+        font-size: 200%;
+    }
+
+    .unactive_menu{
+        font-weight: 700;
+        padding: 4px;
+        color: $iso-dark !important;
+    }
+
+    .active_menu{
+        background: $iso-blue-dark !important;
+    }
+
+    .iso-hover:hover{
+        color: $iso-blue-dark;
+        border-bottom: 2px solid $iso-blue-dark;
+        transition: 0.1s ease-in;
+    }
+
+
 }

@@ -2,17 +2,30 @@ body{
   direction: rtl;
   font-family: iransans , Arial;
   background: #fafafa;
-  color: $iso-dark;
+  color: $iso-dark !important;
 }
-.btn-blur-dark{
+a{
+  text-decoration: none;
+}
+hr{
+  height: 2px !important;
+}
+
+/* iso background custom */
+.iso-bg-blur-dark{
   background: $iso-blue-dark !important;
   color: white;
 }
 
-.text-blur{
+.iso-color-blur-dark{
   color: $iso-blue-dark !important;
 }
 
+.iso-text-dark{
+  color: $iso-dark;
+}
+
+/* iso font size */
 .iso-font-xs {
   font-size: $iso-xs;
 }
@@ -31,4 +44,15 @@ body{
 
 .iso-font-xl {
   font-size: $iso-xl;
+}
+
+
+/* border-radius */
+
+.iso-radius-sm{
+  border-radius: 8px;
+}
+
+.btn:focus{
+  box-shadow: 0 0 !important;
 }

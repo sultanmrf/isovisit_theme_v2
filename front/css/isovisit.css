@@ -17,23 +17,34 @@
   font-family: 'iransans';
   src: url("../../dist/fonts/iransans/iransans.eot");
   src: url("../../dist/fonts/iransans/iransans.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/iransans/iransans.woff") format("woff"), url("../../dist/fonts/iransans/iransans.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 500; }
 
 /* custom classes */
 body {
   direction: rtl;
   font-family: iransans , Arial;
   background: #fafafa;
-  color: #001A34; }
+  color: #001A34 !important; }
 
-.btn-blur-dark {
+a {
+  text-decoration: none; }
+
+hr {
+  height: 2px !important; }
+
+/* iso background custom */
+.iso-bg-blur-dark {
   background: #1773B5 !important;
   color: white; }
 
-.text-blur {
+.iso-color-blur-dark {
   color: #1773B5 !important; }
 
+.iso-text-dark {
+  color: #001A34; }
+
+/* iso font size */
 .iso-font-xs {
   font-size: 0.625rem; }
 
@@ -47,7 +58,14 @@ body {
   font-size: 1.125rem; }
 
 .iso-font-xl {
-  font-size: 2.3rem; }
+  font-size: 1.563rem; }
+
+/* border-radius */
+.iso-radius-sm {
+  border-radius: 8px; }
+
+.btn:focus {
+  box-shadow: 0 0 !important; }
 
 /* header */
 header button {
@@ -56,3 +74,29 @@ header button {
 
 header .offcanvas-start {
   width: 270px !important; }
+
+header nav ul li::marker {
+  color: #1773B5; }
+
+header .support-border-dark-light {
+  border-color: #6C757D !important; }
+
+header .iso-lg-logo {
+  width: 58px;
+  height: 58px; }
+
+header ::marker {
+  font-size: 200%; }
+
+header .unactive_menu {
+  font-weight: 700;
+  padding: 4px;
+  color: #001A34 !important; }
+
+header .active_menu {
+  background: #1773B5 !important; }
+
+header .iso-hover:hover {
+  color: #1773B5;
+  border-bottom: 2px solid #1773B5;
+  transition: 0.1s ease-in; }
