@@ -4,9 +4,12 @@ body{
   background: #fafafa;
   color: $iso-dark !important;
 }
+
 a{
   text-decoration: none;
+  cursor: pointer;
 }
+
 hr{
   height: 2px !important;
 }
@@ -17,6 +20,15 @@ hr{
   color: white;
 }
 
+.iso-bg-blur-light{
+  background: $iso-blue-light;
+}
+
+.iso-bg-gray-light{
+  background: $iso-gray-light ;
+}
+
+/* iso text color custom */
 .iso-color-blur-dark{
   color: $iso-blue-dark !important;
 }
@@ -47,12 +59,20 @@ hr{
 }
 
 
-/* border-radius */
+/* iso border-radius */
 
 .iso-radius-sm{
-  border-radius: 8px;
+  border-radius: $iso-radius-sm;
 }
 
 .btn:focus{
   box-shadow: 0 0 !important;
+}
+/* iso shadow */
+
+.text-shadow{
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.iso-shadow{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }

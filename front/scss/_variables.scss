@@ -4,7 +4,8 @@
 
 $iso-dark : #001A34;
 $iso-blue-dark : #1773B5;
-
+$iso-blue-light : #CCE5FF;
+$iso-gray-light : #F0F1F1;
 /**
 *   size
 */
@@ -12,4 +13,11 @@ $iso-xs: 0.625rem;
 $iso-sm: 0.875rem;
 $iso-md: 1rem;
 $iso-lg: 1.125rem;
-$iso-xl: 1.563rem;
+$iso-lg: 1.25rem;
+$iso-xl: 2.188rem;
+
+/**
+* border-radius
+ */
+
+$iso-radius-sm : 8px;

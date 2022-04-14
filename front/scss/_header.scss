@@ -1,23 +1,19 @@
-header{
+header {
 
-    button{
+    button {
         width: auto;
         border-radius: 8px !important;
     }
 
-    .offcanvas-start{
+    .offcanvas-start {
         width: 270px !important;
     }
 
-    nav ul li::marker{
-        color: $iso-blue-dark;
-    }
-
-    .support-border-dark-light{
+    .support-border-dark-light {
         border-color: #6C757D !important;
     }
 
-    .iso-lg-logo{
+    .iso-lg-logo {
         width: 58px;
         height: 58px;
     }
@@ -26,21 +22,139 @@ header{
         font-size: 200%;
     }
 
-    .unactive_menu{
-        font-weight: 700;
+    .unactive_menu {
         padding: 4px;
         color: $iso-dark !important;
     }
 
-    .active_menu{
+    .active_menu {
         background: $iso-blue-dark !important;
     }
 
-    .iso-hover:hover{
-        color: $iso-blue-dark;
-        border-bottom: 2px solid $iso-blue-dark;
+    .iso-hover-blue,
+    .iso-hover-white {
         transition: 0.1s ease-in;
     }
 
+    .iso-hover-blue:hover {
+        color: $iso-blue-dark;
+        border-bottom: 2px solid $iso-blue-dark;
+    }
 
+    .iso-hover-white:hover {
+        border-bottom: 2px solid #f8f9fa;
+    }
+
+    .iso-color-gradient-header {
+        background: linear-gradient(135.36deg, #20A2FF -7.43%, #20A2FF -7.42%, #1773B5 100%);
+    }
+
+    .animated {
+        transform: rotateY(180deg);
+        position: relative;
+        left: -61px;
+        top: -13px;
+    }
+
+    /* svg header */
+    svg#freepik_stories-online-doctor:not(.animated) {
+        .animable {
+            opacity: 0;
+        }
+    }
+
+    svg#freepik_stories-online-doctor.animated{
+        #freepik--cross-icon--inject-31 {
+            animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomOut;
+            animation-delay: 0s;
+        }
+    }
+
+    svg#freepik_stories-online-doctor.animated{
+        #freepik--pulse-icon--inject-31 {
+            animation: 1.5s Infinite linear heartbeat;
+            animation-delay: 0s;
+        }
+    }
+
+    svg#freepik_stories-online-doctor.animated{
+        #freepik--Character--inject-31 {
+            animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
+            animation-delay: 0s;
+        }
+    }
+
+    svg#freepik_stories-online-doctor.animated{
+        #freepik--Chat--inject-31 {
+            animation: 2.9s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomIn;
+            animation-delay: 0s;
+        }
+    }
+
+    /* style search */
+    .iso-search{
+        position: inherit;
+        i{
+            border-radius: $iso-radius-sm 0 0 $iso-radius-sm !important;
+            height: 40px;
+        }
+        input{
+            border-radius: 0 $iso-radius-sm $iso-radius-sm 0 !important;
+            height: 40px;
+        }
+    }
 }
+
+@keyframes zoomOut {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    10% {transform: scale(1.1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
+    50% { transform: scale(1.1);}
+    60% {transform: scale(1); }
+    100% {transform: scale(1);}
+}
+@keyframes slideLeft
+{
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes zoomIn
+{
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animator-hidden
+{
+    display: none;
+}
+
+.iso-color-gradient-header {
+    div{
+        left: 2px;
+        top: 313px;
+    }
+}
+
