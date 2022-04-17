@@ -1,0 +1,30 @@
+main{
+  section{
+    height: 180px;
+  }
+  .iso-card-doctors{
+    width: 221px;
+    .card-img{
+      width: 89px;
+      span{
+        bottom: 6px;
+        right: -13px;
+      }
+    }
+  }
+
+  .scroll-cards{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-cards > section{
+    max-width: 100%;
+    scroll-snap-align: start;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+

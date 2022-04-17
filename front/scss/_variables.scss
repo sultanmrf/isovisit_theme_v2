@@ -6,14 +6,19 @@ $iso-dark : #001A34;
 $iso-blue-dark : #1773B5;
 $iso-blue-light : #CCE5FF;
 $iso-gray-light : #F0F1F1;
-/**
-*   size
-*/
+$iso-bg-green : #28A745;
+$iso-bg-muted : #E2E3E5;
+$iso-bg-green-light : #D4EDDA;
+
+  /**
+  *   size
+  */
 $iso-xs: 0.625rem;
+$iso-xxs: 0.75rem;
 $iso-sm: 0.875rem;
 $iso-md: 1rem;
 $iso-lg: 1.125rem;
-$iso-lg: 1.25rem;
+$iso-llg: 1.25rem;
 $iso-xl: 2.188rem;
 
 /**
@@ -21,3 +26,8 @@ $iso-xl: 2.188rem;
  */
 
 $iso-radius-sm : 8px;
+
+/**
+* border-color
+ */
+$iso-border-color-light: #D6D8D9;

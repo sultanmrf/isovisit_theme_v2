@@ -3,10 +3,13 @@
 *   color
 */
 /**
-*   size
-*/
+  *   size
+  */
 /**
 * border-radius
+ */
+/**
+* border-color
  */
 /* font-face */
 @font-face {
@@ -48,6 +51,15 @@ hr {
 .iso-bg-gray-light {
   background: #F0F1F1; }
 
+.iso-bg-green {
+  background: #28A745; }
+
+.iso-bg-green-light {
+  background: #D4EDDA; }
+
+.iso-bg-muted {
+  background: #E2E3E5; }
+
 /* iso text color custom */
 .iso-color-blur-dark {
   color: #1773B5 !important; }
@@ -59,6 +71,9 @@ hr {
 .iso-font-xs {
   font-size: 0.625rem; }
 
+.iso-font-xxs {
+  font-size: 0.75rem; }
+
 .iso-font-sm {
   font-size: 0.875rem; }
 
@@ -66,6 +81,9 @@ hr {
   font-size: 1rem; }
 
 .iso-font-lg {
+  font-size: 1.125rem; }
+
+.iso-font-llg {
   font-size: 1.25rem; }
 
 .iso-font-xl {
@@ -74,6 +92,10 @@ hr {
 /* iso border-radius */
 .iso-radius-sm {
   border-radius: 8px; }
+
+/* iso border-color */
+.iso-border-color-light {
+  border-color: #D6D8D9 !important; }
 
 .btn:focus {
   box-shadow: 0 0 !important; }
@@ -85,9 +107,15 @@ hr {
 .iso-shadow {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
 
+.iso-line-title {
+  width: 6px;
+  height: 33px;
+  background: aqua;
+  position: absolute;
+  border-radius: 30px; }
+
 /* header */
 header {
-  /* svg header */
   /* style search */ }
   header button {
     width: auto;
@@ -116,25 +144,6 @@ header {
     border-bottom: 2px solid #f8f9fa; }
   header .iso-color-gradient-header {
     background: linear-gradient(135.36deg, #20A2FF -7.43%, #20A2FF -7.42%, #1773B5 100%); }
-  header .animated {
-    transform: rotateY(180deg);
-    position: relative;
-    left: -61px;
-    top: -13px; }
-  header svg#freepik_stories-online-doctor:not(.animated) .animable {
-    opacity: 0; }
-  header svg#freepik_stories-online-doctor.animated #freepik--cross-icon--inject-31 {
-    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
-    animation-delay: 0s; }
-  header svg#freepik_stories-online-doctor.animated #freepik--pulse-icon--inject-31 {
-    animation: 1.5s Infinite linear heartbeat;
-    animation-delay: 0s; }
-  header svg#freepik_stories-online-doctor.animated #freepik--Character--inject-31 {
-    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-    animation-delay: 0s; }
-  header svg#freepik_stories-online-doctor.animated #freepik--Chat--inject-31 {
-    animation: 2.9s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
-    animation-delay: 0s; }
   header .iso-search {
     position: inherit; }
     header .iso-search i {
@@ -143,6 +152,55 @@ header {
     header .iso-search input {
       border-radius: 0 8px 8px 0 !important;
       height: 40px; }
+
+.iso-color-gradient-header div {
+  left: 2px;
+  top: 313px; }
+
+/* header */
+main section {
+  height: 180px; }
+
+main .iso-card-doctors {
+  width: 221px; }
+  main .iso-card-doctors .card-img {
+    width: 89px; }
+    main .iso-card-doctors .card-img span {
+      bottom: 6px;
+      right: -13px; }
+
+main .scroll-cards {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory; }
+
+main .scroll-cards > section {
+  max-width: 100%;
+  scroll-snap-align: start; }
+
+main ::-webkit-scrollbar {
+  display: none; }
+
+/* svg styles */
+/* svg header section  */
+svg#freepik_stories-online-doctor:not(.animated) .animable {
+  opacity: 0; }
+
+svg#freepik_stories-online-doctor.animated #freepik--cross-icon--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s; }
+
+svg#freepik_stories-online-doctor.animated #freepik--pulse-icon--inject-31 {
+  animation: 1.5s Infinite linear heartbeat;
+  animation-delay: 0s; }
+
+svg#freepik_stories-online-doctor.animated #freepik--Character--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s; }
+
+svg#freepik_stories-online-doctor.animated #freepik--Chat--inject-31 {
+  animation: 2.9s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s; }
 
 @keyframes zoomOut {
   0% {
@@ -184,9 +242,52 @@ header {
     opacity: 1;
     transform: scale(1); } }
 
+/* svg doctors section main */
+svg#freepik_stories-doctors:not(.animated) .animable {
+  opacity: 0; }
+
+svg#freepik_stories-doctors.animated #freepik--character-1--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s; }
+
+svg#freepik_stories-doctors.animated #freepik--character-2--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0.8s;
+  opacity: 0; }
+
+svg#freepik_stories-doctors.animated #freepik--character-3--inject-4 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.4s;
+  opacity: 0; }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* svg style global */
 .animator-hidden {
   display: none; }
 
-.iso-color-gradient-header div {
-  left: 2px;
-  top: 313px; }
+.animated-edit-position {
+  transform: rotateY(180deg);
+  position: relative;
+  left: -61px;
+  top: -13px; }
