@@ -36,6 +36,10 @@ hr{
   background: $iso-bg-green-light;
 }
 
+.iso-bg-green-dark{
+  background: $iso-bg-green-dark;
+}
+
 .iso-bg-muted{
   background: $iso-bg-muted;
 }
@@ -46,6 +50,10 @@ hr{
 
 .iso-text-dark{
   color: $iso-dark;
+}
+
+.iso-text-green-dark{
+  color: $iso-bg-green-dark;
 }
 
 /* iso font size */
@@ -100,12 +108,3 @@ hr{
 .iso-shadow{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
-
-.iso-line-title{
-  width: 6px;
-  height: 33px;
-  background: aqua;
-  position: absolute;
-  border-radius: 30px;
-}
-

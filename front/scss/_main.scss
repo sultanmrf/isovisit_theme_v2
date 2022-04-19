@@ -1,30 +1,78 @@
 main{
+
+  .iso-line-title{
+    width: 6px;
+    height: 34px;
+    background: aqua;
+    position: absolute;
+    border-radius: 30px;
+  }
+
   section{
     height: 180px;
   }
+
+  .section-doctors{
+
+    > .card-body{
+      top: -42px;
+      height: 230px;
+    }
+
+    .card-header {
+      button{
+        bottom: 59px;
+      }
+    }
+
+  }
+
   .iso-card-doctors{
-    width: 221px;
+    width: 220px;
+
     .card-img{
       width: 89px;
+
       span{
         bottom: 6px;
         right: -13px;
       }
+
     }
   }
 
-  .scroll-cards{
+  .slider-cards{
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
   }
-  .scroll-cards > section{
+
+  .slider-cards > section{
     max-width: 100%;
-    scroll-snap-align: start;
+    scroll-snap-align: revert;
   }
 
   ::-webkit-scrollbar {
     display: none;
   }
-}
 
+
+  .iso-card-specialty{
+    width: 170px;
+    height: 150px;
+  }
+
+  .iso-card-question-and-answer{
+    width: 328px;
+    height: 205px;
+  }
+
+  .iso-swiper {
+    width: 100%;
+    .figure-img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+}

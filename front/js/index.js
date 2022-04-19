@@ -13,4 +13,9 @@ $(document).ready(function (){
         }
 
     })
+
+    var swiper = new Swiper(".iso-swiper", {
+        watchSlidesProgress: true,
+        slidesPerView: 1,
+    });
 });
