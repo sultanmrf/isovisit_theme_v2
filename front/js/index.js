@@ -14,8 +14,25 @@ $(document).ready(function (){
 
     })
 
-    var swiper = new Swiper(".iso-swiper", {
-        watchSlidesProgress: true,
+    var swiper = new Swiper(".iso-swiper-question-answer", {
         slidesPerView: 1,
+        spaceBetween: 16,
+        breakpoints: {
+            "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 16,
+            },
+        },
     });
+
+    var swiper1 = new Swiper(".iso-swiper-comments-users", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+
 });

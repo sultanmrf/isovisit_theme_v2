@@ -1,6 +1,7 @@
 body{
   direction: rtl;
-  font-family: iransans , Arial;
+  font-family: IRANSans !important;
+  font-weight: 500;
   background: #fafafa;
   color: $iso-dark !important;
 }
@@ -44,7 +45,7 @@ hr{
   background: $iso-bg-muted;
 }
 /* iso text color custom */
-.iso-color-blur-dark{
+.iso-text-blur-dark{
   color: $iso-blue-dark !important;
 }
 
@@ -85,26 +86,39 @@ hr{
   font-size: $iso-xl;
 }
 
+.iso-font-xxl {
+  font-size: $iso-xxl;
+}
 
 /* iso border-radius */
-.iso-radius-sm{
+.border-radius{
   border-radius: $iso-radius-sm;
 }
 
 /* iso border-color */
-.iso-border-color-light{
+.border-color-light{
   border-color: $iso-border-color-light !important;
 }
 
 .btn:focus{
   box-shadow: 0 0 !important;
 }
-/* iso shadow */
 
+/* iso shadow */
 .text-shadow{
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.iso-shadow{
+.box-shadow{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* iso font weight */
+.fw-medium{
+  font-weight: 500;
+}
+
+/* iso margin */
+.ms-6{
+  margin-right: 4rem!important;
 }

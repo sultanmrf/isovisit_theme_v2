@@ -56,23 +56,66 @@ main{
     display: none;
   }
 
-
   .iso-card-specialty{
     width: 170px;
     height: 150px;
   }
-
-  .iso-card-question-and-answer{
-    width: 328px;
-    height: 205px;
+  @mixin size-fiqure-img{
+    width: 40px;
+    height: 40px;
   }
 
-  .iso-swiper {
+  .iso-swiper-question-answer {
     width: 100%;
+
     .figure-img{
-      width: 40px;
-      height: 40px;
+      @include size-fiqure-img;
+    }
+
+    .card{
+      width: 328px;
+      height: 218px;
+    }
+
+    .swiper-slide{
+      height: 248px;
+    }
+
+    h1{
+      text-overflow: ellipsis;
+    }
+
+    p{
+      height: 63px;
     }
   }
+  .iso-swiper-comments-users{
+    .figure-img{
+      @include size-fiqure-img;
+    }
+
+    .card{
+      width: 242px;
+      height: 200px;
+    }
+
+    .swiper-slide {
+      width: 242px;
+    }
+
+  }
+
+  .swiper-pagination-bullet-active{
+    width: 20px !important;
+    border-radius: 8px !important;
+  }
+  .swiper-pagination-bullet{
+    margin: 3px !important;
+  }
+  .swiper-pagination-horizontal{
+    bottom: -4px !important;
+  }
+
+
 
 }
