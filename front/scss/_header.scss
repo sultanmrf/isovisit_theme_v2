@@ -2,7 +2,7 @@ header {
 
     button {
         width: auto;
-        border-radius: 8px !important;
+        border-radius: $iso-border-radius !important;
     }
 
     .offcanvas-start {
@@ -53,11 +53,11 @@ header {
     .iso-search{
         position: inherit;
         i{
-            border-radius: $iso-radius-sm 0 0 $iso-radius-sm !important;
+            border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
             height: 40px;
         }
         input{
-            border-radius: 0 $iso-radius-sm $iso-radius-sm 0 !important;
+            border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
             height: 40px;
         }
     }

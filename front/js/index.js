@@ -14,23 +14,36 @@ $(document).ready(function (){
 
     })
 
-    var swiper = new Swiper(".iso-swiper-question-answer", {
+    new Swiper(".swiper-question-answer", {
         slidesPerView: 1,
-        spaceBetween: 16,
-        breakpoints: {
-            "@0.00": {
-                slidesPerView: 1,
-                spaceBetween: 16,
-            },
+        spaceBetween: 8,
+        pagination: {
+            el: ".swiper-pagination-question-answer",
+            paginationClickable: true,
         },
     });
 
-    var swiper1 = new Swiper(".iso-swiper-comments-users", {
+    new Swiper(".swiper-articles", {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        pagination: {
+            el: ".swiper-pagination-article",
+            paginationClickable: true,
+        },
+    });
+
+    new Swiper(".swiper-comments-users", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+    });
+
+
+    new Swiper(".swiper-medicines", {
         slidesPerView: "auto",
         spaceBetween: 16,
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+            el: ".swiper-pagination-medicines",
+            paginationClickable: true,
         },
     });
 

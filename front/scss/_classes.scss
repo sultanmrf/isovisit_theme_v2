@@ -92,7 +92,11 @@ hr{
 
 /* iso border-radius */
 .border-radius{
-  border-radius: $iso-radius-sm;
+  border-radius: $iso-border-radius;
+}
+
+.border-radius-bottom{
+  border-radius: 0 0 $iso-border-radius $iso-border-radius;
 }
 
 /* iso border-color */

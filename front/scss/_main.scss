@@ -15,8 +15,8 @@ main{
   .section-doctors{
 
     > .card-body{
-      top: -42px;
-      height: 230px;
+      top: -43px;
+      height: 239px;
     }
 
     .card-header {
@@ -27,7 +27,7 @@ main{
 
   }
 
-  .iso-card-doctors{
+  .card-doctors{
     width: 220px;
 
     .card-img{
@@ -56,16 +56,17 @@ main{
     display: none;
   }
 
-  .iso-card-specialty{
+  .card-specialty{
     width: 170px;
     height: 150px;
   }
+
   @mixin size-fiqure-img{
     width: 40px;
     height: 40px;
   }
 
-  .iso-swiper-question-answer {
+  .swiper-question-answer {
     width: 100%;
 
     .figure-img{
@@ -89,7 +90,7 @@ main{
       height: 63px;
     }
   }
-  .iso-swiper-comments-users{
+  .swiper-comments-users{
     .figure-img{
       @include size-fiqure-img;
     }
@@ -102,7 +103,91 @@ main{
     .swiper-slide {
       width: 242px;
     }
+  }
 
+  .section-comments-users{
+
+    > .card-body{
+      top: -63px;
+      height: 239px;
+    }
+
+    svg{
+      top: -19px;
+    }
+  }
+  .section-question-answer{
+
+    .card-header{
+      top: -71px;
+    }
+
+    .card-body{
+      top: -80px;
+    }
+  }
+
+  .section-articles{
+
+    > .card-body{
+      top: -146px;
+      height: 438px;
+    }
+
+    .card-header{
+      top: -59px;
+    }
+
+    svg{
+      top: -104px;
+    }
+
+    .swiper-articles{
+
+      img{
+        width: 334px;
+        height: 211px;
+      }
+
+      a{
+        height: 49px;
+      }
+    }
+  }
+
+  .section-medicines{
+    > .card-body{
+      top: -251px;
+      height: 159px;
+    }
+
+    .card-header{
+      top: -168px;
+    }
+
+    svg{
+      top:-208px;
+    }
+
+    .swiper-slide {
+      width: 241px;
+    }
+
+    .card{
+      height: 131px;
+    }
+
+  }
+  .swiper-pagination-article{
+    bottom: 44px !important;
+  }
+
+  .swiper-pagination-question-answer, {
+    bottom: -5px !important;
+  }
+
+  .swiper-pagination-medicines{
+    bottom: -10px !important;
   }
 
   .swiper-pagination-bullet-active{
@@ -111,9 +196,6 @@ main{
   }
   .swiper-pagination-bullet{
     margin: 3px !important;
-  }
-  .swiper-pagination-horizontal{
-    bottom: -4px !important;
   }
 
 
