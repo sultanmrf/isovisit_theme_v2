@@ -8,6 +8,20 @@ main{
     border-radius: 30px;
   }
 
+
+ .section-facilities-and-services{
+   .card-header{
+      z-index: 2;
+      width: 156px
+     }
+
+     .card-body{
+     top: 49px;
+     height: 126px;
+     width: 156px
+     }
+ }
+
   section{
     height: 180px;
   }
@@ -23,6 +37,12 @@ main{
       button{
         bottom: 59px;
       }
+    }
+
+   .items-relations-doctor{
+      span{
+        height: 27px;
+       }
     }
 
   }
@@ -41,21 +61,6 @@ main{
     }
   }
 
-  .slider-cards{
-    display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-  }
-
-  .slider-cards > section{
-    max-width: 100%;
-    scroll-snap-align: revert;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
   .card-specialty{
     width: 170px;
     height: 150px;
@@ -65,6 +70,19 @@ main{
     width: 40px;
     height: 40px;
   }
+
+   .swiper-services,
+   .swiper-specialty{
+       .swiper-slide {
+            width: 170px;
+          }
+    }
+
+    .swiper-doctors{
+      .swiper-slide{
+        width:220px;
+      }
+    }
 
   @mixin text-overflow{
     text-overflow: ellipsis;
@@ -122,13 +140,13 @@ main{
   }
   .section-question-answer{
 
-    .card-header{
-      top: -71px;
-    }
-
-    .card-body{
-      top: -80px;
-    }
+//     .card-header{
+//       top: -71px;
+//     }
+//
+//     .card-body{
+//       top: -80px;
+//     }
   }
 
   .section-articles{

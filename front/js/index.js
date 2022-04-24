@@ -1,7 +1,6 @@
 $(document).ready(function (){
     $(document).on('click','.btn-patients',function (){
         $check_expended = $(this).attr("aria-expanded");
-        debugger;
         if($check_expended == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
             $(this).removeClass('unactive_menu');
@@ -32,7 +31,7 @@ $(document).ready(function (){
         },
     });
 
-    new Swiper(".swiper-comments-users", {
+    new Swiper(".swiper-comments-users,.swiper-services,.swiper-doctors,.swiper-specialty", {
         slidesPerView: "auto",
         spaceBetween: 16,
     });

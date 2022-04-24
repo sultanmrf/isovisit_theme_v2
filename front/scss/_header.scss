@@ -50,22 +50,31 @@ header {
     }
 
     /* style search */
-    .iso-search{
-        position: inherit;
-        i{
-            border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
-            height: 40px;
+    .search-box{
+        height:400px;
+
+        .input-group{
+         position: inherit;
+
+          i{
+                     border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
+                     height: 40px;
+                 }
+                 input{
+                     border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
+                     height: 40px;
+                 }
         }
-        input{
-            border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
-            height: 40px;
-        }
+
     }
-}
-.iso-color-gradient-header {
-    div{
-        left: 2px;
-        top: 313px;
-    }
+
+
 }
 
+
+.iso-color-gradient-header {
+        div{
+            left: 2px;
+            top: 313px;
+        }
+    }

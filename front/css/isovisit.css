@@ -217,14 +217,16 @@ header {
     border-bottom: 2px solid #f8f9fa; }
   header .iso-color-gradient-header {
     background: linear-gradient(135.36deg, #20A2FF -7.43%, #20A2FF -7.42%, #1773B5 100%); }
-  header .iso-search {
-    position: inherit; }
-    header .iso-search i {
-      border-radius: 8px 0 0 8px !important;
-      height: 40px; }
-    header .iso-search input {
-      border-radius: 0 8px 8px 0 !important;
-      height: 40px; }
+  header .search-box {
+    height: 400px; }
+    header .search-box .input-group {
+      position: inherit; }
+      header .search-box .input-group i {
+        border-radius: 8px 0 0 8px !important;
+        height: 40px; }
+      header .search-box .input-group input {
+        border-radius: 0 8px 8px 0 !important;
+        height: 40px; }
 
 .iso-color-gradient-header div {
   left: 2px;
@@ -238,6 +240,15 @@ main .iso-line-title {
   position: absolute;
   border-radius: 30px; }
 
+main .section-facilities-and-services .card-header {
+  z-index: 2;
+  width: 156px; }
+
+main .section-facilities-and-services .card-body {
+  top: 49px;
+  height: 126px;
+  width: 156px; }
+
 main section {
   height: 180px; }
 
@@ -248,6 +259,9 @@ main .section-doctors > .card-body {
 main .section-doctors .card-header button {
   bottom: 59px; }
 
+main .section-doctors .items-relations-doctor span {
+  height: 27px; }
+
 main .card-doctors {
   width: 220px; }
   main .card-doctors .card-img {
@@ -256,21 +270,16 @@ main .card-doctors {
       bottom: 6px;
       right: -13px; }
 
-main .slider-cards {
-  display: flex;
-  overflow: auto;
-  scroll-snap-type: x mandatory; }
-
-main .slider-cards > section {
-  max-width: 100%;
-  scroll-snap-align: revert; }
-
-main ::-webkit-scrollbar {
-  display: none; }
-
 main .card-specialty {
   width: 170px;
   height: 150px; }
+
+main .swiper-services .swiper-slide,
+main .swiper-specialty .swiper-slide {
+  width: 170px; }
+
+main .swiper-doctors .swiper-slide {
+  width: 220px; }
 
 main .swiper-question-answer {
   width: 100%; }
@@ -304,12 +313,6 @@ main .section-comments-users > .card-body {
 
 main .section-comments-users svg {
   top: -19px; }
-
-main .section-question-answer .card-header {
-  top: -71px; }
-
-main .section-question-answer .card-body {
-  top: -80px; }
 
 main .section-articles > .card-body {
   height: 411px; }
