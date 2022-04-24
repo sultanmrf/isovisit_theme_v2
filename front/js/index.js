@@ -47,5 +47,15 @@ $(document).ready(function (){
         },
     });
 
+    new Swiper(".swiper-certificates", {
+        slidesPerView: 0,
+        centeredSlides: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        pagination: {
+            el: ".swiper-pagination-certificates",
+            clickable: true,
+        },
+    });
 
 });

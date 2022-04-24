@@ -1,0 +1,34 @@
+footer{
+  background: $iso-blue-dark;
+
+  hr{
+    opacity: 1;
+  }
+
+  .swiper-certificates{
+
+    .swiper-slide{
+      width: 130px;
+      height: 130px;
+    }
+
+    .swiper-wrapper{
+      height: 154px;
+    }
+
+    .swiper-pagination-certificates{
+      bottom: -10px;
+      left: 187px;
+    }
+  }
+
+  .swiper-pagination-bullet-active{
+    background: $iso-bg-green-dark;
+  }
+
+  .card-img{
+    width: 39px;
+    height: 39px;
+  }
+
+}

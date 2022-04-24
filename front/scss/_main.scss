@@ -66,6 +66,10 @@ main{
     height: 40px;
   }
 
+  @mixin text-overflow{
+    text-overflow: ellipsis;
+  }
+
   .swiper-question-answer {
     width: 100%;
 
@@ -83,7 +87,7 @@ main{
     }
 
     h1{
-      text-overflow: ellipsis;
+      @include text-overflow;
     }
 
     p{
@@ -130,17 +134,17 @@ main{
   .section-articles{
 
     > .card-body{
-      top: -146px;
-      height: 438px;
+      //top: -146px;
+      height: 411px;
     }
-
-    .card-header{
-      top: -59px;
-    }
-
-    svg{
-      top: -104px;
-    }
+    //
+    //.card-header{
+    //  top: -59px;
+    //}
+    //
+    //svg{
+    //  top: -104px;
+    //}
 
     .swiper-articles{
 
@@ -157,17 +161,17 @@ main{
 
   .section-medicines{
     > .card-body{
-      top: -251px;
+      //top: -251px;
       height: 159px;
     }
 
-    .card-header{
-      top: -168px;
-    }
-
-    svg{
-      top:-208px;
-    }
+    //.card-header{
+    //  top: -168px;
+    //}
+    //
+    //svg{
+    //  top:-208px;
+    //}
 
     .swiper-slide {
       width: 241px;
@@ -177,9 +181,35 @@ main{
       height: 131px;
     }
 
+    img{
+      width: 85px;
+    }
+
+     .card-body{
+       div{
+         span{
+           @include text-overflow;
+         }
+       }
+     }
   }
+
+  .section-sign-in-isovisit{
+    .card{
+      height: 170px;
+    }
+    > .card-body{
+      background: $iso-blue-light;
+    }
+
+    img{
+      left: -80px;
+      bottom: -34px;
+    }
+  }
+
   .swiper-pagination-article{
-    bottom: 44px !important;
+    bottom: 20px !important;
   }
 
   .swiper-pagination-question-answer, {
@@ -189,15 +219,4 @@ main{
   .swiper-pagination-medicines{
     bottom: -10px !important;
   }
-
-  .swiper-pagination-bullet-active{
-    width: 20px !important;
-    border-radius: 8px !important;
-  }
-  .swiper-pagination-bullet{
-    margin: 3px !important;
-  }
-
-
-
 }

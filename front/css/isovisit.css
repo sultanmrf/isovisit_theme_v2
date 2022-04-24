@@ -85,9 +85,6 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
-hr {
-  height: 2px !important; }
-
 /* iso background custom */
 .iso-bg-blur-dark {
   background: #1773B5 !important;
@@ -174,6 +171,21 @@ hr {
 /* iso margin */
 .ms-6 {
   margin-right: 4rem !important; }
+
+/* iso padding */
+.px-12 {
+  padding: 12px; }
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 8px !important; }
+
+.swiper-pagination-bullet {
+  margin: 3px !important; }
+
+.communication-iso {
+  left: 10px;
+  z-index: 999; }
 
 /* header */
 header {
@@ -300,14 +312,7 @@ main .section-question-answer .card-body {
   top: -80px; }
 
 main .section-articles > .card-body {
-  top: -146px;
-  height: 438px; }
-
-main .section-articles .card-header {
-  top: -59px; }
-
-main .section-articles svg {
-  top: -104px; }
+  height: 411px; }
 
 main .section-articles .swiper-articles img {
   width: 334px;
@@ -317,14 +322,7 @@ main .section-articles .swiper-articles a {
   height: 49px; }
 
 main .section-medicines > .card-body {
-  top: -251px;
   height: 159px; }
-
-main .section-medicines .card-header {
-  top: -168px; }
-
-main .section-medicines svg {
-  top: -208px; }
 
 main .section-medicines .swiper-slide {
   width: 241px; }
@@ -332,8 +330,24 @@ main .section-medicines .swiper-slide {
 main .section-medicines .card {
   height: 131px; }
 
+main .section-medicines img {
+  width: 85px; }
+
+main .section-medicines .card-body div span {
+  text-overflow: ellipsis; }
+
+main .section-sign-in-isovisit .card {
+  height: 170px; }
+
+main .section-sign-in-isovisit > .card-body {
+  background: #CCE5FF; }
+
+main .section-sign-in-isovisit img {
+  left: -80px;
+  bottom: -34px; }
+
 main .swiper-pagination-article {
-  bottom: 44px !important; }
+  bottom: 20px !important; }
 
 main .swiper-pagination-question-answer {
   bottom: -5px !important; }
@@ -341,12 +355,24 @@ main .swiper-pagination-question-answer {
 main .swiper-pagination-medicines {
   bottom: -10px !important; }
 
-main .swiper-pagination-bullet-active {
-  width: 20px !important;
-  border-radius: 8px !important; }
-
-main .swiper-pagination-bullet {
-  margin: 3px !important; }
+/* footer */
+footer {
+  background: #1773B5; }
+  footer hr {
+    opacity: 1; }
+  footer .swiper-certificates .swiper-slide {
+    width: 130px;
+    height: 130px; }
+  footer .swiper-certificates .swiper-wrapper {
+    height: 154px; }
+  footer .swiper-certificates .swiper-pagination-certificates {
+    bottom: -10px;
+    left: 187px; }
+  footer .swiper-pagination-bullet-active {
+    background: #009d38; }
+  footer .card-img {
+    width: 39px;
+    height: 39px; }
 
 /* svg styles */
 /* svg style global */

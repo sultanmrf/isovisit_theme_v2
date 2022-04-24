@@ -11,10 +11,6 @@ a{
   cursor: pointer;
 }
 
-hr{
-  height: 2px !important;
-}
-
 /* iso background custom */
 .iso-bg-blur-dark{
   background: $iso-blue-dark !important;
@@ -125,4 +121,24 @@ hr{
 /* iso margin */
 .ms-6{
   margin-right: 4rem!important;
+}
+
+/* iso padding */
+.px-12{
+  padding: 12px;
+}
+
+
+.swiper-pagination-bullet-active{
+  width: 20px !important;
+  border-radius: 8px !important;
+}
+.swiper-pagination-bullet{
+  margin: 3px !important;
+}
+
+
+.communication-iso{
+  left: 10px;
+  z-index: 999;
 }
