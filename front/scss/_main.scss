@@ -130,39 +130,21 @@ main{
   .section-comments-users{
 
     > .card-body{
-      top: -63px;
-      height: 239px;
+      top: -13px;
+      height: 222px;
     }
 
     svg{
-      top: -19px;
+         top: -9px;
+         left: -13px;
     }
-  }
-  .section-question-answer{
-
-//     .card-header{
-//       top: -71px;
-//     }
-//
-//     .card-body{
-//       top: -80px;
-//     }
   }
 
   .section-articles{
 
     > .card-body{
-      //top: -146px;
       height: 411px;
     }
-    //
-    //.card-header{
-    //  top: -59px;
-    //}
-    //
-    //svg{
-    //  top: -104px;
-    //}
 
     .swiper-articles{
 
@@ -179,17 +161,12 @@ main{
 
   .section-medicines{
     > .card-body{
-      //top: -251px;
       height: 159px;
     }
 
-    //.card-header{
-    //  top: -168px;
-    //}
-    //
-    //svg{
-    //  top:-208px;
-    //}
+   .card-title{
+    top:-10px;
+    }
 
     .swiper-slide {
       width: 241px;
@@ -227,7 +204,7 @@ main{
   }
 
   .swiper-pagination-article{
-    bottom: 20px !important;
+    bottom: 16px !important;
   }
 
   .swiper-pagination-question-answer, {
@@ -235,6 +212,6 @@ main{
   }
 
   .swiper-pagination-medicines{
-    bottom: -10px !important;
+    bottom: -8px !important;
   }
 }

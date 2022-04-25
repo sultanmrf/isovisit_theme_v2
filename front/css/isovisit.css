@@ -78,7 +78,7 @@ body {
   direction: rtl;
   font-family: IRANSans !important;
   font-weight: 500;
-  background: #fafafa;
+  background: #F0F1F1;
   color: #001A34 !important; }
 
 a {
@@ -308,11 +308,12 @@ main .swiper-comments-users .swiper-slide {
   width: 242px; }
 
 main .section-comments-users > .card-body {
-  top: -63px;
-  height: 239px; }
+  top: -13px;
+  height: 222px; }
 
 main .section-comments-users svg {
-  top: -19px; }
+  top: -9px;
+  left: -13px; }
 
 main .section-articles > .card-body {
   height: 411px; }
@@ -326,6 +327,9 @@ main .section-articles .swiper-articles a {
 
 main .section-medicines > .card-body {
   height: 159px; }
+
+main .section-medicines .card-title {
+  top: -10px; }
 
 main .section-medicines .swiper-slide {
   width: 241px; }
@@ -350,13 +354,13 @@ main .section-sign-in-isovisit img {
   bottom: -34px; }
 
 main .swiper-pagination-article {
-  bottom: 20px !important; }
+  bottom: 16px !important; }
 
 main .swiper-pagination-question-answer {
   bottom: -5px !important; }
 
 main .swiper-pagination-medicines {
-  bottom: -10px !important; }
+  bottom: -8px !important; }
 
 /* footer */
 footer {
