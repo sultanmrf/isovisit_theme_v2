@@ -187,6 +187,11 @@ a {
   left: 10px;
   z-index: 999; }
 
+.scroll-top {
+  right: 14px;
+  z-index: 999;
+  top: 382px; }
+
 /* header */
 header {
   /* style search */ }
