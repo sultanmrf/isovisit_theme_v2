@@ -11,6 +11,78 @@ a{
   cursor: pointer;
 }
 
+.form-control:focus{
+  box-shadow: 0 0;
+}
+
+.swiper-pagination-bullet-active{
+  width: 20px !important;
+  border-radius: 8px !important;
+}
+
+.swiper-pagination-bullet{
+  margin: 3px !important;
+}
+
+.communication-iso{
+  left: 15px;
+  top: 41em;
+  z-index: 999;
+  padding: 0.8em;
+}
+
+.scroll-top{
+  right: 14px;
+  z-index: 999;
+  top: 43em;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.communication-iso{
+
+  > img{
+    width: 38px;
+    height: 38px;
+  }
+  .dropdown-menu-communication{
+    position: absolute;
+    top: -225px;
+    left: 0;
+    width: 160px;
+
+    li{
+      opacity: 0;
+    }
+    li:nth-child(1){
+      transition: 1s ease-in-out;
+    }
+    li:nth-child(2){
+      transition: 0.7s ease-in-out;
+    }
+    li:nth-child(3){
+      transition: 0.5s ease-in-out;
+    }
+    li:nth-child(4){
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.rotate-180deg,
+.rotate-0deg{
+  transition: 0.4s ease;
+}
+
+.rotate-180deg{
+  transform: rotate(180deg);
+}
+
+.rotate-0deg{
+  transform: rotate(0deg);
+}
+
 /* iso background custom */
 .iso-bg-blur-dark{
   background: $iso-blue-dark !important;
@@ -126,24 +198,4 @@ a{
 /* iso padding */
 .px-12{
   padding: 12px;
-}
-
-
-.swiper-pagination-bullet-active{
-  width: 20px !important;
-  border-radius: 8px !important;
-}
-.swiper-pagination-bullet{
-  margin: 3px !important;
-}
-
-
-.communication-iso{
-  left: 10px;
-  z-index: 999;
-}
-.scroll-top{
-  right:14px;
-  z-index: 999;
-  top:382px
 }

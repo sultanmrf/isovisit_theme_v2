@@ -85,6 +85,60 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+.form-control:focus {
+  box-shadow: 0 0; }
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 8px !important; }
+
+.swiper-pagination-bullet {
+  margin: 3px !important; }
+
+.communication-iso {
+  left: 15px;
+  top: 41em;
+  z-index: 999;
+  padding: 0.8em; }
+
+.scroll-top {
+  right: 14px;
+  z-index: 999;
+  top: 43em;
+  width: 30px;
+  height: 30px;
+  display: none; }
+
+.communication-iso > img {
+  width: 38px;
+  height: 38px; }
+
+.communication-iso .dropdown-menu-communication {
+  position: absolute;
+  top: -225px;
+  left: 0;
+  width: 160px; }
+  .communication-iso .dropdown-menu-communication li {
+    opacity: 0; }
+  .communication-iso .dropdown-menu-communication li:nth-child(1) {
+    transition: 1s ease-in-out; }
+  .communication-iso .dropdown-menu-communication li:nth-child(2) {
+    transition: 0.7s ease-in-out; }
+  .communication-iso .dropdown-menu-communication li:nth-child(3) {
+    transition: 0.5s ease-in-out; }
+  .communication-iso .dropdown-menu-communication li:nth-child(4) {
+    transition: 0.3s ease-in-out; }
+
+.rotate-180deg,
+.rotate-0deg {
+  transition: 0.4s ease; }
+
+.rotate-180deg {
+  transform: rotate(180deg); }
+
+.rotate-0deg {
+  transform: rotate(0deg); }
+
 /* iso background custom */
 .iso-bg-blur-dark {
   background: #1773B5 !important;
@@ -175,22 +229,6 @@ a {
 /* iso padding */
 .px-12 {
   padding: 12px; }
-
-.swiper-pagination-bullet-active {
-  width: 20px !important;
-  border-radius: 8px !important; }
-
-.swiper-pagination-bullet {
-  margin: 3px !important; }
-
-.communication-iso {
-  left: 10px;
-  z-index: 999; }
-
-.scroll-top {
-  right: 14px;
-  z-index: 999;
-  top: 382px; }
 
 /* header */
 header {
@@ -330,23 +368,20 @@ main .section-articles .swiper-articles img {
 main .section-articles .swiper-articles a {
   height: 49px; }
 
-main .section-medicines > .card-body {
-  height: 159px; }
-
-main .section-medicines .card-title {
-  top: -10px; }
-
-main .section-medicines .swiper-slide {
-  width: 241px; }
-
-main .section-medicines .card {
-  height: 131px; }
-
-main .section-medicines img {
-  width: 85px; }
-
-main .section-medicines .card-body div span {
-  text-overflow: ellipsis; }
+main .section-medicines {
+  height: 300px; }
+  main .section-medicines > .card-body {
+    height: 159px; }
+  main .section-medicines .card-title {
+    top: -10px; }
+  main .section-medicines .swiper-slide {
+    width: 241px; }
+  main .section-medicines .card {
+    height: 131px; }
+  main .section-medicines img {
+    width: 85px; }
+  main .section-medicines .card-body div span {
+    text-overflow: ellipsis; }
 
 main .section-sign-in-isovisit .card {
   height: 170px; }
@@ -372,14 +407,13 @@ footer {
   background: #1773B5; }
   footer hr {
     opacity: 1; }
+  footer .card-body {
+    height: 159px; }
   footer .swiper-certificates .swiper-slide {
-    width: 130px;
+    width: 130px !important;
     height: 130px; }
-  footer .swiper-certificates .swiper-wrapper {
-    height: 154px; }
   footer .swiper-certificates .swiper-pagination-certificates {
-    bottom: -10px;
-    left: 187px; }
+    bottom: -6px; }
   footer .swiper-pagination-bullet-active {
     background: #009d38; }
   footer .card-img {

@@ -5,21 +5,21 @@ footer{
     opacity: 1;
   }
 
+  .card-body{
+    height: 159px;
+  }
+
   .swiper-certificates{
 
-    .swiper-slide{
-      width: 130px;
+    .swiper-slide {
+      width: 130px !important;
       height: 130px;
     }
 
-    .swiper-wrapper{
-      height: 154px;
+    .swiper-pagination-certificates{
+      bottom: -6px;
     }
 
-    .swiper-pagination-certificates{
-      bottom: -10px;
-      left: 187px;
-    }
   }
 
   .swiper-pagination-bullet-active{
