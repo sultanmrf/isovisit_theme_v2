@@ -292,15 +292,23 @@ main .section-facilities-and-services .card-body {
   height: 126px;
   width: 156px; }
 
+main .svg-default-height-section-articles,
+main .svg-default-height-section-comment-users,
+main .svg-default-height-section-doctors,
+main .svg-default-height-section-medicines {
+  height: 200px; }
+
+main svg {
+  display: none; }
+
 main section {
   height: 180px; }
 
 main .section-doctors > .card-body {
-  top: -43px;
   height: 239px; }
 
 main .section-doctors .card-header button {
-  bottom: 59px; }
+  bottom: 17px; }
 
 main .section-doctors .items-relations-doctor span {
   height: 27px; }

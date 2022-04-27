@@ -1,13 +1,16 @@
 $(document).ready(function (){
+
     $(document).on('click','.btn-patients',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
+            $(this).find("~ div").addClass('border-top')
             $(this).removeClass('unactive_menu');
             $(this).find('i').addClass('fa-chevron-up').removeClass('fa-chevron-down');
         }else{
             $(this).parent().removeClass('active_menu').addClass(['bg-transparent','iso-color-blur-dark']);
             $(this).addClass('unactive_menu');
+            $(this).find("~ div").removeClass('border-top');
             $(this).find('i').addClass('fa-chevron-down').removeClass('fa-chevron-up');
         }
     })
@@ -75,14 +78,34 @@ $(document).ready(function (){
         }
     })
 
-    /* section scroll top */
-
+    /* section scroll top btn and show svg by scroll */
     $(window).scroll(function(){
         var scrolled_val = $(this).scrollTop();
+
         if(scrolled_val > 1500){
             $(".scroll-top").addClass('d-flex');
         }else{
             $(".scroll-top").removeClass('d-flex');
+        }
+
+        if(scrolled_val > 420){
+            $(".svg-doctors").show();
+            $(".svg-default-height-section-doctors").remove();
+        }
+
+        if(scrolled_val > 1450){
+            $(".svg-comment-users").show();
+            $(".svg-default-height-section-comment-users").remove();
+        }
+
+        if(scrolled_val > 2100){
+            $(".svg-articles").show();
+            $(".svg-default-height-section-articles").remove();
+        }
+
+        if(scrolled_val > 2600){
+            $(".svg-medicines").show();
+            $(".svg-default-height-section-medicines").remove();
         }
     });
 

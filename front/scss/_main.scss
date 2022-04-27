@@ -8,19 +8,29 @@ main{
     border-radius: 30px;
   }
 
-
- .section-facilities-and-services{
-   .card-header{
+  .section-facilities-and-services{
+    .card-header{
       z-index: 2;
       width: 156px
-     }
+    }
 
-     .card-body{
-     top: 49px;
-     height: 126px;
-     width: 156px
-     }
- }
+    .card-body{
+      top: 49px;
+      height: 126px;
+      width: 156px
+    }
+  }
+
+  .svg-default-height-section-articles,
+  .svg-default-height-section-comment-users,
+  .svg-default-height-section-doctors,
+  .svg-default-height-section-medicines{
+    height: 200px;
+  }
+
+  svg{
+    display: none;
+  }
 
   section{
     height: 180px;
@@ -29,20 +39,19 @@ main{
   .section-doctors{
 
     > .card-body{
-      top: -43px;
       height: 239px;
     }
 
     .card-header {
       button{
-        bottom: 59px;
+        bottom: 17px;
       }
     }
 
-   .items-relations-doctor{
+    .items-relations-doctor{
       span{
         height: 27px;
-       }
+      }
     }
 
   }
@@ -71,18 +80,18 @@ main{
     height: 40px;
   }
 
-   .swiper-services,
-   .swiper-specialty{
-       .swiper-slide {
-            width: 170px;
-          }
+  .swiper-services,
+  .swiper-specialty{
+    .swiper-slide {
+      width: 170px;
     }
+  }
 
-    .swiper-doctors{
-      .swiper-slide{
-        width:220px;
-      }
+  .swiper-doctors{
+    .swiper-slide{
+      width:220px;
     }
+  }
 
   @mixin text-overflow{
     text-overflow: ellipsis;
@@ -135,8 +144,8 @@ main{
     }
 
     svg{
-         top: -9px;
-         left: -13px;
+      top: -9px;
+      left: -13px;
     }
   }
 
@@ -166,8 +175,8 @@ main{
       height: 159px;
     }
 
-   .card-title{
-    top:-10px;
+    .card-title{
+      top:-10px;
     }
 
     .swiper-slide {
@@ -182,13 +191,13 @@ main{
       width: 85px;
     }
 
-     .card-body{
-       div{
-         span{
-           @include text-overflow;
-         }
-       }
-     }
+    .card-body{
+      div{
+        span{
+          @include text-overflow;
+        }
+      }
+    }
   }
 
   .section-sign-in-isovisit{
