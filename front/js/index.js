@@ -114,4 +114,44 @@ $(document).ready(function (){
     });
 
 
+    /* section login */
+    $(".box-verification-code input").keyup(function () {
+        if ($(this).val() != "") {
+            $(this).next('input').focus();
+        }
+    });
+
+    $(document).on('click','.send',function (){
+        $(".card-login").addClass('d-none');
+        $(".modal-footer").addClass('d-none');
+        $(".card-verification").removeClass('d-none');
+
+        /* timer */
+        let second = 60,
+            minutes = 1,
+            timer = setInterval(start_timer, 1000);
+
+        function start_timer() {
+            if(second === 0 && minutes === 0){
+                $(".timer").text("ارسال مجدد کد")
+                    .addClass(['iso-bg-blur-dark','text-light'])
+                    .removeClass(['alert-primary','iso-text-dark']);
+                clearTimeout(timer);
+            }else{
+                if(second === 0){
+                    minutes -= 1;
+                    second = 60;
+                }
+                second -= 1;
+                let pretty = ((second < 10 ? "0" + second : second) + " : " + ("0" + minutes));
+                $(".timer").text(pretty);
+            }
+
+        }
+    });
+
+    $(document).on('click','.login-with-password',function (){
+        $(".card-login-password").removeClass('d-none');
+        $(".card-verification").addClass('d-none');
+    });
 });

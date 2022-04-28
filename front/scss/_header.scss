@@ -54,27 +54,69 @@ header {
         height:400px;
 
         .input-group{
-         position: inherit;
+            position: inherit;
 
-          i{
-                     border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
-                     height: 40px;
-                 }
-                 input{
-                     border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
-                     height: 40px;
-                 }
+            i{
+                border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
+                height: 40px;
+            }
+            input{
+                border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
+                height: 40px;
+            }
         }
 
     }
 
+    .modal{
+        .modal-header{
+            button{
+                border: 2px solid;
+            };
+
+        }
+        .modal-footer{
+            border-top: 2.5px dashed $iso-blue-dark;
+        }
+        .modal-body{
+            input,button{
+               height: 40px;
+            }
+        }
+
+        .box-verification-code{
+            border-color: #e2e3e4 !important;
+            &:focus-within{
+                border: 2px solid #1773B5 !important;
+            }
+
+            input:focus{
+                border-color: #1773B5 !important;
+            }
+        }
+
+        .nav-link{
+            a{
+                border-color: $iso-blue-dark !important;
+            }
+
+        }
+
+        .card-login-password{
+            input{
+                border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
+            }
+            .input-group-text{
+                border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
+            }
+        }
+    }
 
 }
 
-
 .iso-color-gradient-header {
-        div{
-            left: 2px;
-            top: 313px;
-        }
+    div{
+        left: 2px;
+        top: 313px;
     }
+}

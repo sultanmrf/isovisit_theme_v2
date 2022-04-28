@@ -2,7 +2,7 @@ main{
 
   .iso-line-title{
     width: 6px;
-    height: 34px;
+    height: 30px;
     background: aqua;
     position: absolute;
     border-radius: 30px;
@@ -121,20 +121,6 @@ main{
       height: 63px;
     }
   }
-  .swiper-comments-users{
-    .figure-img{
-      @include size-fiqure-img;
-    }
-
-    .card{
-      width: 242px;
-      height: 200px;
-    }
-
-    .swiper-slide {
-      width: 242px;
-    }
-  }
 
   .section-comments-users{
 
@@ -146,6 +132,21 @@ main{
     svg{
       top: -9px;
       left: -13px;
+    }
+
+    .swiper-comments-users{
+      .figure-img{
+        @include size-fiqure-img;
+      }
+
+      .card{
+        width: 242px;
+        height: 200px;
+      }
+
+      .swiper-slide {
+        width: 242px;
+      }
     }
   }
 

@@ -90,7 +90,8 @@ a {
 
 .swiper-pagination-bullet-active {
   width: 20px !important;
-  border-radius: 8px !important; }
+  border-radius: 8px !important;
+  background: #1773B5; }
 
 .swiper-pagination-bullet {
   margin: 3px !important; }
@@ -159,8 +160,8 @@ a {
 .iso-bg-green-dark {
   background: #009d38; }
 
-.iso-bg-muted {
-  background: #E2E3E5; }
+.iso-bg-light {
+  background: #F5F5F5; }
 
 /* iso text color custom */
 .iso-text-blur-dark {
@@ -171,6 +172,9 @@ a {
 
 .iso-text-green-dark {
   color: #009d38; }
+
+.iso-color-secondary {
+  color: #999999; }
 
 /* iso font size */
 .iso-font-xs {
@@ -199,7 +203,7 @@ a {
 
 /* iso border-radius */
 .border-radius {
-  border-radius: 8px; }
+  border-radius: 8px !important; }
 
 .border-radius-bottom {
   border-radius: 0 0 8px 8px; }
@@ -221,6 +225,9 @@ a {
 /* iso font weight */
 .fw-medium {
   font-weight: 500; }
+
+.fw-bold-lg {
+  font-weight: 600; }
 
 /* iso margin */
 .ms-6 {
@@ -270,6 +277,24 @@ header {
       header .search-box .input-group input {
         border-radius: 0 8px 8px 0 !important;
         height: 40px; }
+  header .modal .modal-header button {
+    border: 2px solid; }
+  header .modal .modal-footer {
+    border-top: 2.5px dashed #1773B5; }
+  header .modal .modal-body input, header .modal .modal-body button {
+    height: 40px; }
+  header .modal .box-verification-code {
+    border-color: #e2e3e4 !important; }
+    header .modal .box-verification-code:focus-within {
+      border: 2px solid #1773B5 !important; }
+    header .modal .box-verification-code input:focus {
+      border-color: #1773B5 !important; }
+  header .modal .nav-link a {
+    border-color: #1773B5 !important; }
+  header .modal .card-login-password input {
+    border-radius: 0 8px 8px 0 !important; }
+  header .modal .card-login-password .input-group-text {
+    border-radius: 8px 0 0 8px !important; }
 
 .iso-color-gradient-header div {
   left: 2px;
@@ -278,7 +303,7 @@ header {
 /* header */
 main .iso-line-title {
   width: 6px;
-  height: 34px;
+  height: 30px;
   background: aqua;
   position: absolute;
   border-radius: 30px; }
@@ -347,17 +372,6 @@ main .swiper-question-answer {
   main .swiper-question-answer p {
     height: 63px; }
 
-main .swiper-comments-users .figure-img {
-  width: 40px;
-  height: 40px; }
-
-main .swiper-comments-users .card {
-  width: 242px;
-  height: 200px; }
-
-main .swiper-comments-users .swiper-slide {
-  width: 242px; }
-
 main .section-comments-users > .card-body {
   top: -13px;
   height: 222px; }
@@ -365,6 +379,17 @@ main .section-comments-users > .card-body {
 main .section-comments-users svg {
   top: -9px;
   left: -13px; }
+
+main .section-comments-users .swiper-comments-users .figure-img {
+  width: 40px;
+  height: 40px; }
+
+main .section-comments-users .swiper-comments-users .card {
+  width: 242px;
+  height: 200px; }
+
+main .section-comments-users .swiper-comments-users .swiper-slide {
+  width: 242px; }
 
 main .section-articles > .card-body {
   height: 411px; }
