@@ -11,47 +11,51 @@ a{
   cursor: pointer;
 }
 
+hr{
+  opacity: 1;
+}
+
 .form-control:focus{
   box-shadow: 0 0;
 }
 
 .swiper-pagination-bullet-active{
-  width: 20px !important;
-  border-radius: 8px !important;
+  width: $iso-llg !important;
+  border-radius: 0.5rem !important;
   background: $iso-blue-dark;
 }
 
 .swiper-pagination-bullet{
-  margin: 3px !important;
+  margin: 0.188rem !important;
 }
 
 .communication-iso{
-  left: 15px;
-  top: 41em;
+  left: 0.938rem;
+  top: 40.847rem;
   z-index: 999;
-  padding: 0.8em;
+  padding: 0.797rem;
 }
 
 .scroll-top{
-  right: 14px;
+  right: $iso-sm;
   z-index: 999;
-  top: 43em;
-  width: 30px;
-  height: 30px;
+  top: 42.839rem;
+  width: 1.875rem;
+  height: 1.875rem;
   display: none;
 }
 
 .communication-iso{
 
   > img{
-    width: 38px;
-    height: 38px;
+    width: 2.375rem;
+    height: 2.375rem;
   }
   .dropdown-menu-communication{
     position: absolute;
-    top: -225px;
+    top: -14.063rem;
     left: 0;
-    width: 160px;
+    width: 10rem;
 
     li{
       opacity: 0;
@@ -115,15 +119,15 @@ a{
 }
 
 /* iso text color custom */
-.iso-text-blur-dark{
+.iso-color-blur-dark{
   color: $iso-blue-dark !important;
 }
 
-.iso-text-dark{
+.iso-color-dark{
   color: $iso-dark;
 }
 
-.iso-text-green-dark{
+.iso-color-green-dark{
   color: $iso-green-dark;
 }
 
@@ -170,9 +174,12 @@ a{
 }
 
 .border-radius-bottom{
-  border-radius: 0 0 $iso-border-radius $iso-border-radius;
+  border-radius: 0 0 $iso-border-radius $iso-border-radius !important;
 }
 
+.border-radius-top{
+  border-radius: $iso-border-radius $iso-border-radius 0 0 !important;
+}
 /* iso border-color */
 .border-color-light{
   border-color: $iso-border-color-light !important;
@@ -184,11 +191,11 @@ a{
 
 /* iso shadow */
 .text-shadow{
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.188rem 0.313rem rgba(0, 0, 0, 0.5);
 }
 
 .box-shadow{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.25);
 }
 
 /* iso font weight */
@@ -201,10 +208,20 @@ a{
 }
 /* iso margin */
 .ms-6{
-  margin-right: 4rem!important;
+  margin-right: 0.25rem!important;
 }
 
 /* iso padding */
 .px-12{
-  padding: 12px;
+  padding: 0.75rem;
+}
+
+
+/* iso space text */
+.letter-space-sm{
+  letter-spacing: $letter-space-sm;
+}
+
+.letter-space-md{
+  letter-spacing: $letter-space-md;
 }

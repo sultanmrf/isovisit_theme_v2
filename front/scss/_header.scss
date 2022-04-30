@@ -6,16 +6,21 @@ header {
     }
 
     .offcanvas-start {
-        width: 270px !important;
+        width: 16.875rem !important;
     }
 
     .support-border-dark-light {
         border-color: #6C757D !important;
     }
 
-    .iso-lg-logo {
-        width: 58px;
-        height: 58px;
+    .img-md {
+        width: 3.625rem;
+        height: 3.625rem;
+    }
+
+    .img-sm {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     ::marker {
@@ -23,7 +28,7 @@ header {
     }
 
     .unactive_menu {
-        padding: 4px;
+        padding: 0.25rem;
         color: $iso-dark !important;
     }
 
@@ -38,11 +43,11 @@ header {
 
     .iso-hover-blue:hover {
         color: $iso-blue-dark;
-        border-bottom: 2px solid $iso-blue-dark;
+        border-bottom: 0.125rem solid $iso-blue-dark;
     }
 
     .iso-hover-white:hover {
-        border-bottom: 2px solid #f8f9fa;
+        border-bottom: 0.125rem solid #f8f9fa;
     }
 
     .iso-color-gradient-header {
@@ -51,18 +56,18 @@ header {
 
     /* style search */
     .search-box{
-        height:400px;
+        height:25rem;
 
         .input-group{
             position: inherit;
 
             i{
                 border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
-                height: 40px;
+                height: 2.5rem;
             }
             input{
                 border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
-                height: 40px;
+                height: 2.5rem;
             }
         }
 
@@ -71,23 +76,23 @@ header {
     .modal{
         .modal-header{
             button{
-                border: 2px solid;
+                border: 0.125rem solid;
             };
 
         }
         .modal-footer{
-            border-top: 2.5px dashed $iso-blue-dark;
+            border-top: 0.156rem dashed $iso-blue-dark;
         }
         .modal-body{
             input,button{
-               height: 40px;
+               height: 2.5rem;
             }
         }
 
         .box-verification-code{
             border-color: #e2e3e4 !important;
             &:focus-within{
-                border: 2px solid #1773B5 !important;
+                border: 0.125rem solid #1773B5 !important;
             }
 
             input:focus{
@@ -109,14 +114,39 @@ header {
             .input-group-text{
                 border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
             }
+
+            .input-login-password:focus{
+                border-color:#ced4da !important;
+            }
+            i{
+                width: $iso-llg;
+                height: $iso-llg;
+            }
         }
+
     }
 
+    .menu-user{
+        transition: 0.8s ease-in;
+        .dropdown-menu{
+            transform: translate3d(0px, 32px, 0px) !important;
+            width: 230px;
+            height: 364px;
+        }
+        .dropdown-toggle:after{
+            all: unset;
+        }
+        .btn-user{
+            i{
+                transition: 0.1s ease-in-out !important;
+            }
+        }
+    }
 }
 
 .iso-color-gradient-header {
     div{
-        left: 2px;
-        top: 313px;
+        left: 0.125rem;
+        top: 19.563rem;
     }
 }

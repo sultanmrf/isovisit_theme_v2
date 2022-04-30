@@ -17,8 +17,8 @@ svg#freepik_stories-online-article:not(.animated){
 .animated-edit-position {
   transform: rotateY(180deg);
   position: relative;
-  left: -61px;
-  top: -13px;
+  left: -3.813rem;
+  top: -0.813rem;
 }
 
 /* svg header section  */
@@ -82,7 +82,7 @@ svg#freepik_stories-online-doctor.animated{
 {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-1.875rem);
   }
   100% {
     opacity: 1;
@@ -134,7 +134,7 @@ svg#freepik_stories-doctors.animated{
 @keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-1.875rem);
   }
   100% {
     opacity: 1;
@@ -150,7 +150,7 @@ svg#freepik_stories-doctors.animated{
 @keyframes slideRight {
   0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(1.875rem);
   }
   100% {
     opacity: 1;
@@ -174,7 +174,7 @@ svg#freepik_stories-online-review.animated {
 @keyframes slideRight {
   0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(1.875);
   }
   100% {
     opacity: 1;
@@ -217,7 +217,7 @@ svg#freepik_stories-pharmacist.animated {
 @keyframes slideRight {
   0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(1.875rem);
   }100% {
      opacity: 1;
      transform: translateX(0);}
@@ -226,7 +226,7 @@ svg#freepik_stories-pharmacist.animated {
 @keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-1.875rem);
   }
   100% {
     opacity: 1;
@@ -253,7 +253,7 @@ svg#freepik_stories-online-article.animated {
 @keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-1.875rem);
   }
   100% {
     opacity: 1;
@@ -264,7 +264,7 @@ svg#freepik_stories-online-article.animated {
 @keyframes slideRight {
   0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(1.875rem);
   }
   100% {
     opacity: 1;

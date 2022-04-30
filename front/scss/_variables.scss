@@ -13,9 +13,9 @@ $iso-green-dark : #009d38;
 $iso-secondary : #999999;
 
 
-  /**
-  *   size
-  */
+/**
+*   size
+*/
 $iso-xs: 0.625rem;
 $iso-xxs: 0.75rem;
 $iso-sm: 0.875rem;
@@ -35,3 +35,10 @@ $iso-border-radius : 8px;
 * border-color
  */
 $iso-border-color-light: #D6D8D9;
+
+/**
+* spacing text
+ */
+
+$letter-space-sm : 4px;
+$letter-space-md : 7px;

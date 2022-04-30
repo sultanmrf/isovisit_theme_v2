@@ -121,37 +121,82 @@ $(document).ready(function (){
         }
     });
 
+    /* function timer */
+    let second = 60,
+        minutes = 1,
+        timer = setInterval(start_timer, 1000);
+        clearTimeout(timer);
+    function start_timer() {
+        if(second === 0 && minutes === 0){
+            $(".box-timer").text("ارسال مجدد کد")
+                .addClass(['iso-bg-blur-dark','text-light'])
+                .removeClass(['alert-primary','iso-text-dark']);
+            clearTimeout(timer);
+        }else{
+            if(second === 0){
+                minutes -= 1;
+                second = 60;
+            }
+            second -= 1;
+            let val_timer = ((second < 10 ? "0" + second : second) + " : " + ("0" + minutes));
+            $(".box-timer").text(val_timer);
+        }
+    }
+
     $(document).on('click','.send',function (){
         $(".card-login").addClass('d-none');
         $(".modal-footer").addClass('d-none');
         $(".card-verification").removeClass('d-none');
-
-        /* timer */
-        let second = 60,
-            minutes = 1,
-            timer = setInterval(start_timer, 1000);
-
-        function start_timer() {
-            if(second === 0 && minutes === 0){
-                $(".timer").text("ارسال مجدد کد")
-                    .addClass(['iso-bg-blur-dark','text-light'])
-                    .removeClass(['alert-primary','iso-text-dark']);
-                clearTimeout(timer);
-            }else{
-                if(second === 0){
-                    minutes -= 1;
-                    second = 60;
-                }
-                second -= 1;
-                let pretty = ((second < 10 ? "0" + second : second) + " : " + ("0" + minutes));
-                $(".timer").text(pretty);
-            }
-
-        }
+        setInterval(start_timer, 1000);
     });
+
+    $(document).on('click','.box-timer',function (){
+        $(".box-timer").removeClass(['iso-bg-blur-dark','text-light'])
+            .addClass(['alert-primary','iso-text-dark']);
+        debugger;
+
+        setInterval(start_timer, 1000);
+    });
+
+
 
     $(document).on('click','.login-with-password',function (){
         $(".card-login-password").removeClass('d-none');
         $(".card-verification").addClass('d-none');
     });
+
+    $(document).on('click','.edit-mobile',function (){
+        $(".card-login-password").addClass('d-none');
+        $(".card-verification").addClass('d-none');
+        $(".card-login").removeClass('d-none');
+        $(".modal-footer").removeClass('d-none');
+    });
+
+    $(document).on('click','.show-password',function (){
+        if ($(".input-login-password").prop('type') === "password") {
+            $(".input-login-password").attr('type','text');
+            $(".card-login-password i").addClass('fa-eye-slash').removeClass('fa-eye');
+        } else {
+            $(".input-login-password").attr('type', 'password');
+            $(".card-login-password i").removeClass('fa-eye-slash').addClass('fa-eye');
+        }
+    });
+    /* section login */
+
+    /* section menu user */
+    $(document).on('click','.btn-user',function (){
+        let val_aria_expanded = $(this).attr("aria-expanded");
+        if(val_aria_expanded == 'true'){
+            $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
+            $(this).addClass('border-radius-top').removeClass('border-radius');
+        }else{
+            $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
+            $(this).removeClass('border-radius-top').addClass('border-radius');
+
+        }
+    })
+    $(".btn-user").on('focusout','.btn-user',function () {
+        $(this).css('background','red');
+    });
+
 });
