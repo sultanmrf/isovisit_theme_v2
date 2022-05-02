@@ -1,17 +1,18 @@
 $(document).ready(function (){
 
-    $(document).on('click','.btn-patients',function (){
+    /* section navbar button accordion*/
+    $(document).on('click','.btn-patients , .btn-doctors',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
             $(this).find("~ div").addClass('border-top')
             $(this).removeClass('unactive_menu');
-            $(this).find('i').addClass('fa-chevron-up').removeClass('fa-chevron-down');
+            $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
         }else{
             $(this).parent().removeClass('active_menu').addClass(['bg-transparent','iso-color-blur-dark']);
             $(this).addClass('unactive_menu');
             $(this).find("~ div").removeClass('border-top');
-            $(this).find('i').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+            $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         }
     })
 
@@ -125,7 +126,7 @@ $(document).ready(function (){
     let second = 60,
         minutes = 1,
         timer = setInterval(start_timer, 1000);
-        clearTimeout(timer);
+    clearTimeout(timer);
     function start_timer() {
         if(second === 0 && minutes === 0){
             $(".box-timer").text("ارسال مجدد کد")
@@ -158,8 +159,6 @@ $(document).ready(function (){
         setInterval(start_timer, 1000);
     });
 
-
-
     $(document).on('click','.login-with-password',function (){
         $(".card-login-password").removeClass('d-none');
         $(".card-verification").addClass('d-none');
@@ -181,10 +180,16 @@ $(document).ready(function (){
             $(".card-login-password i").removeClass('fa-eye-slash').addClass('fa-eye');
         }
     });
+
+    $(document).on('click','.accepted-info-user',function (){
+        $(".menu-user").removeClass('d-none');
+        $(".btn-show-modal-login").addClass('d-none');
+        $('#staticBackdrop').modal('hide');
+    });
     /* section login */
 
     /* section menu user */
-    $(document).on('click','.btn-user',function (){
+    $(document).on('click','.btn-user , .btn-user-collapse',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
@@ -192,11 +197,11 @@ $(document).ready(function (){
         }else{
             $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
             $(this).removeClass('border-radius-top').addClass('border-radius');
-
         }
     })
-    $(".btn-user").on('focusout','.btn-user',function () {
-        $(this).css('background','red');
+    $(".btn-user").focusout(function () {
+        $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
+        $(this).removeClass('border-radius-top').addClass('border-radius');
     });
 
 });
