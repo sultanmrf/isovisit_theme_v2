@@ -356,13 +356,20 @@ main {
     background: aqua;
     position: absolute;
     border-radius: 1.875rem; }
-  main .section-facilities-and-services .card-header {
-    z-index: 2;
-    width: 9.75rem; }
-  main .section-facilities-and-services .card-body {
-    top: 3.063rem;
-    height: 7.875rem;
-    width: 9.75rem; }
+  main .section-facilities-and-services {
+    height: 613px; }
+    main .section-facilities-and-services .card {
+      height: 190px; }
+    main .section-facilities-and-services .card-header {
+      z-index: 2;
+      width: 9.75rem; }
+      main .section-facilities-and-services .card-header .card-img {
+        width: 83px;
+        height: 82px; }
+    main .section-facilities-and-services .card-body {
+      top: 3.063rem;
+      height: 7.875rem;
+      width: 9.75rem; }
   main .svg-default-height-section-articles,
   main .svg-default-height-section-comment-users,
   main .svg-default-height-section-doctors,
@@ -371,30 +378,33 @@ main {
   main svg {
     display: none; }
   main section {
-    height: 11.25rem; }
+    height: 14.25rem; }
   main .section-doctors {
     height: 440px; }
-    main .section-doctors > .card-body {
-      height: 14.938rem; }
     main .section-doctors .card-header button {
       bottom: 1.063rem; }
     main .section-doctors .items-relations-doctor span {
       height: 1.688rem; }
-  main .card-doctors {
-    width: 13.75rem; }
-    main .card-doctors .card-img {
-      width: 5.563rem; }
-      main .card-doctors .card-img span {
-        bottom: 0.375rem;
-        right: -0.813rem; }
+    main .section-doctors .card-doctor {
+      width: 13.75rem; }
+      main .section-doctors .card-doctor .card-img {
+        width: 5.563rem; }
+        main .section-doctors .card-doctor .card-img span {
+          bottom: 0.375rem;
+          right: -0.313rem; }
+    main .section-doctors .swiper-doctors {
+      height: 14.063rem; }
+      main .section-doctors .swiper-doctors .swiper-slide {
+        width: 13.75rem; }
   main .card-specialty {
     width: 10.625rem;
     height: 9.375rem; }
-  main .swiper-services .swiper-slide,
-  main .swiper-specialty .swiper-slide {
-    width: 10.625rem; }
-  main .swiper-doctors .swiper-slide {
-    width: 13.75rem; }
+  main .swiper-services,
+  main .swiper-specialty {
+    height: 186px; }
+    main .swiper-services .swiper-slide,
+    main .swiper-specialty .swiper-slide {
+      width: 10.625rem; }
   main .swiper-question-answer {
     width: 100%; }
     main .swiper-question-answer .figure-img {
