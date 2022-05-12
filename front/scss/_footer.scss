@@ -1,7 +1,7 @@
 footer{
   background: $iso-blue-dark;
 
-  .card-body{
+  .section-body{
     height: 9.938rem;
   }
 
@@ -20,11 +20,6 @@ footer{
 
   .swiper-pagination-bullet-active{
     background: $iso-green-dark;
-  }
-
-  .card-img{
-    width: 2.43rem;
-    height: 2.438rem;
   }
 
 }

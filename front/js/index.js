@@ -61,17 +61,17 @@ $(document).ready(function (){
 
 
     /* section communication-iso */
-    $(".communication-iso img").click(function (){
+    $(".communication-iso > img").click(function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
         if(val_aria_expanded == 'true'){
-            $(".dropdown-menu-communication li").css('opacity','0');
+            $(".dropdown-menu-communication li").fadeOut('slow');
             $(this).attr('aria-expanded','false');
             $(this).attr('src','./images/icons/icon-support-light.png')
                 .addClass('rotate-0deg')
                 .removeClass('rotate-180deg');
 
         }else{
-            $(".dropdown-menu-communication li").css('opacity','1');
+            $(".dropdown-menu-communication li").fadeIn('slow');
             $(this).attr('aria-expanded','true');
             $(this).attr('src','./images/icons/close.png')
                 .addClass('rotate-180deg')
@@ -154,7 +154,6 @@ $(document).ready(function (){
     $(document).on('click','.box-timer',function (){
         $(".box-timer").removeClass(['iso-bg-blur-dark','text-light'])
             .addClass(['alert-primary','iso-text-dark']);
-        debugger;
 
         setInterval(start_timer, 1000);
     });
