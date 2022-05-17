@@ -5,18 +5,34 @@ $(document).ready(function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
-            $(this).find("~ div").addClass('border-top')
             $(this).removeClass('unactive_menu');
             $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
         }else{
-            $(this).parent().removeClass('active_menu').addClass(['bg-transparent','iso-color-blur-dark']);
+            $(this).parent().removeClass('active_menu').addClass('iso-color-blur-dark');
             $(this).addClass('unactive_menu');
-            $(this).find("~ div").removeClass('border-top');
             $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         }
     })
 
-    /* swiper main page */
+    $(document).on('click','.link-patients',function (){
+        let val_aria_expanded = $(this).attr("aria-expanded");
+        if(val_aria_expanded == 'true'){
+            $(this).parent().addClass('active_menu');
+            $(this).addClass('text-light').removeClass('iso-color-dark');
+            $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
+        }else{
+            $(this).parent().removeClass('active_menu');
+            $(this).removeClass('text-light').addClass('iso-color-dark');
+            $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
+        }
+    })
+    $(".link-patients").focusout(function () {
+        $(this).parent().removeClass('active_menu');
+        $(this).removeClass('text-light').addClass('iso-color-dark');
+        $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
+    })
+
+        /* swiper main page */
     new Swiper(".swiper-question-answer", {
         slidesPerView: 1,
         spaceBetween: 8,
@@ -202,5 +218,7 @@ $(document).ready(function (){
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         $(this).removeClass('border-radius-top').addClass('border-radius');
     });
+
+
 
 });

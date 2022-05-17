@@ -55,7 +55,7 @@ $(document).ready(function (){
             '                                    <span class="mx-2">3</span>\n' +
             '                                </div>\n' +
             '                                <div class="col-6">\n' +
-            '                                    <button class="btn w-100 border-radius iso-bg-blur-dark">پاسخ</button>\n' +
+            '                                    <button class="btn w-100 border-radius text-light iso-bg-blur-dark">پاسخ</button>\n' +
             '                                </div>\n' +
             '                            </div>\n' +
             '                        </div>\n' +
@@ -64,5 +64,15 @@ $(document).ready(function (){
         $(this).addClass('d-none').removeClass('d-flex');
     });
 
+    $(document).on('click','.btn-question',function (){
+        let val_aria_expanded = $(this).attr("aria-expanded");
+        if(val_aria_expanded == 'true'){
+            $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
+        }else{
+            $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
+        }
+    })
+
+    show_map('contact__map',36.312416, 59.553421)
 
 });

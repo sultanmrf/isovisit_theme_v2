@@ -20,6 +20,31 @@ hr{
   box-shadow: 0 0;
 }
 
+
+.btn{
+  &.iso-bg-blur-dark{
+    @media only screen and (min-width: 1024px) {
+      &:hover{
+        background: $iso-green-dark !important;
+        box-shadow: 0 0 !important;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      &:active{
+        box-shadow: 0 0 !important;
+        background: $iso-green-dark !important;
+      }
+    }
+  }
+}
+
+
+.dropdown{
+  .nav-link:after{
+    all: unset;
+  }
+}
+
 .swiper-pagination-bullet-active{
   width: $iso-llg !important;
   border-radius: 0.5rem !important;
@@ -32,21 +57,9 @@ hr{
 
 .communication-iso{
   left: 0.938rem;
-  top: 40.847rem;
-  z-index: 999;
+  bottom: 1.5rem;
+  z-index: 9999;
   padding: 0.797rem;
-}
-
-.scroll-top{
-  right: $iso-sm;
-  z-index: 999;
-  top: 42.839rem;
-  width: 1.875rem;
-  height: 1.875rem;
-  display: none;
-}
-
-.communication-iso{
 
   > img{
     width: 2.375rem;
@@ -61,6 +74,15 @@ hr{
       display: none;
     }
   }
+}
+
+.scroll-top{
+  right: $iso-sm;
+  z-index: 9999;
+  bottom: 1.60rem !important;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: none;
 }
 
 .rotate-180deg,

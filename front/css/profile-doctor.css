@@ -14,9 +14,9 @@
 /**
 * spacing text
  */
-.card-info-doctor .card-footer {
+.card-info-doctor .btn-group {
   border-color: #009d38 !important; }
-  .card-info-doctor .card-footer button:not(:last-child) {
+  .card-info-doctor .btn-group button:not(:last-child) {
     border-left: 1px solid #009d38; }
 
 #ModalShare input {
@@ -69,3 +69,36 @@ iframe {
     transform: scale(1.2, 1.2); }
   0% {
     transform: scale(1, 1); } }
+
+.btn-question .arrow {
+  width: 34px;
+  height: 43px; }
+
+@media only screen and (min-width: 768px) {
+  .section-get-advice {
+    position: fixed;
+    left: 0;
+    top: 145px; } }
+
+@media only screen and (min-width: 1400px) {
+  .section-data-profile-doctor .btn-group {
+    position: relative;
+    top: -52px;
+    border-radius: 8px !important; } }
+
+@media only screen and (min-width: 1400px) {
+  .section-data-profile-doctor .row {
+    height: 118px; } }
+
+#contact__map {
+  height: 250px; }
+
+@media only screen and (max-width: 767px) {
+  .communication-iso {
+    bottom: 5rem !important; }
+  .scroll-top {
+    bottom: 5rem !important; } }
+
+.get-advice-fixed {
+  bottom: 10px !important;
+  z-index: 9999; }

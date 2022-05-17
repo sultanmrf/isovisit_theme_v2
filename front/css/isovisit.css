@@ -105,7 +105,7 @@ This set of fonts are used in this project under the license: (.....)
   color: #1773B5 !important; }
 
 .iso-color-dark {
-  color: #001A34; }
+  color: #001A34 !important; }
 
 .iso-color-green-dark {
   color: #009d38; }
@@ -162,8 +162,11 @@ This set of fonts are used in this project under the license: (.....)
 .text-shadow {
   text-shadow: 0 0.188rem 0.313rem rgba(0, 0, 0, 0.5); }
 
-.box-shadow {
+.box-shadow-lg {
   box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.25); }
+
+.box-shadow-sm {
+  box-shadow: 0 0 4px 0 #00000040; }
 
 /* iso font weight */
 .fw-medium {
@@ -180,6 +183,9 @@ This set of fonts are used in this project under the license: (.....)
 .px-12 {
   padding: 0 0.75rem 0 0.75rem; }
 
+.px-16 {
+  padding: 0 1rem 0 1rem; }
+
 /* iso space text */
 .letter-space-sm {
   letter-spacing: 4px; }
@@ -195,6 +201,22 @@ header {
     border-radius: 8px !important; }
   header .offcanvas-start {
     width: 16.875rem !important; }
+  @media only screen and (min-width: 1200px) {
+    header .figure .logo {
+      width: 60px;
+      height: 60px; } }
+  @media only screen and (min-width: 1200px) {
+    header .figure .figure-caption .iso-font-lg {
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1200px) {
+    header .figure .figure-caption .iso-font-xs {
+      font-size: 1rem; } }
+  header .nav {
+    height: 2rem; }
+  header .dropdown .dropdown-menu {
+    width: 200px;
+    transform: translate(0px, 32px) !important;
+    border-radius: 0 8px 8px; }
   header .support-border-dark-light {
     border-color: #6C757D !important; }
   header .img-md {
@@ -213,10 +235,10 @@ header {
   header .iso-hover-blue,
   header .iso-hover-white {
     transition: 0.1s ease-in; }
-  header .iso-hover-blue:hover {
-    color: #1773B5;
+  header .hover-line-blue:hover {
+    color: #1773B5 !important;
     border-bottom: 0.125rem solid #1773B5; }
-  header .iso-hover-white:hover {
+  header .hover-line-white:hover {
     border-bottom: 0.125rem solid #f8f9fa; }
   header .iso-color-gradient-header {
     background: linear-gradient(135.36deg, #20A2FF -7.43%, #20A2FF -7.42%, #1773B5 100%); }
@@ -286,6 +308,19 @@ hr {
 .btn:focus {
   box-shadow: 0 0; }
 
+@media only screen and (min-width: 1024px) {
+  .btn.iso-bg-blur-dark:hover {
+    background: #009d38 !important;
+    box-shadow: 0 0 !important; } }
+
+@media only screen and (max-width: 1024px) {
+  .btn.iso-bg-blur-dark:active {
+    box-shadow: 0 0 !important;
+    background: #009d38 !important; } }
+
+.dropdown .nav-link:after {
+  all: unset; }
+
 .swiper-pagination-bullet-active {
   width: 1.25rem !important;
   border-radius: 0.5rem !important;
@@ -296,29 +331,27 @@ hr {
 
 .communication-iso {
   left: 0.938rem;
-  top: 40.847rem;
-  z-index: 999;
+  bottom: 1.5rem;
+  z-index: 9999;
   padding: 0.797rem; }
+  .communication-iso > img {
+    width: 2.375rem;
+    height: 2.375rem; }
+  .communication-iso .dropdown-menu-communication {
+    position: absolute;
+    top: -14.063rem;
+    left: 0;
+    width: 10rem; }
+    .communication-iso .dropdown-menu-communication li {
+      display: none; }
 
 .scroll-top {
   right: 0.875rem;
-  z-index: 999;
-  top: 42.839rem;
+  z-index: 9999;
+  bottom: 1.60rem !important;
   width: 1.875rem;
   height: 1.875rem;
   display: none; }
-
-.communication-iso > img {
-  width: 2.375rem;
-  height: 2.375rem; }
-
-.communication-iso .dropdown-menu-communication {
-  position: absolute;
-  top: -14.063rem;
-  left: 0;
-  width: 10rem; }
-  .communication-iso .dropdown-menu-communication li {
-    display: none; }
 
 .rotate-180deg,
 .rotate-0deg {
@@ -383,8 +416,16 @@ hr {
 /* footer */
 footer {
   background: #1773B5; }
-  footer .section-body {
+  footer .footer-certificates .footer-body {
     height: 9.938rem; }
+  @media only screen and (min-width: 1024px) {
+    footer .footer-contact .footer-title,
+    footer .footer-certificates .footer-title,
+    footer .footer-support .footer-title {
+      font-size: 1.25rem !important; } }
+  @media only screen and (min-width: 1400px) {
+    footer address span {
+      font-size: 1.125rem !important; } }
   footer .swiper-certificates .swiper-slide {
     width: 8.125rem !important;
     height: 8.125rem; }
@@ -392,6 +433,10 @@ footer {
     bottom: -0.375rem; }
   footer .swiper-pagination-bullet-active {
     background: #009d38; }
+  @media only screen and (min-width: 768px) and (max-width: 1400px) {
+    footer .footer-contact,
+    footer .footer-certificates {
+      border-top: 1px solid #fff; } }
 
 /* svg styles */
 /* svg style global */

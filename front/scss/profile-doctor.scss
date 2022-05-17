@@ -2,7 +2,7 @@
 @import "variables";
 
 .card-info-doctor{
-  .card-footer{
+  .btn-group{
     border-color: $iso-green-dark !important;
     button:not(:last-child){
       border-left: 1px solid $iso-green-dark;
@@ -64,7 +64,7 @@ iframe{
 }
 
 .love-active{
- animation: animate-love-active 0.2s linear;
+  animation: animate-love-active 0.2s linear;
 }
 .love-disabled{
   animation: animate-love-disabled 0.2s linear;
@@ -86,4 +86,55 @@ iframe{
   0%{
     transform: scale(1,1);
   }
+}
+
+
+.btn-question{
+  .arrow{
+    width: 34px;
+    height: 43px;
+  }
+}
+.section-get-advice{
+  @media only screen and (min-width: 768px) {
+    position: fixed;
+    left: 0;
+    top: 145px;
+  }
+}
+
+.section-data-profile-doctor{
+  .btn-group{
+    @media only screen and (min-width: 1400px) {
+      position: relative;
+      top: -52px;
+      border-radius: $iso-border-radius !important;
+    }
+  }
+  .row{
+    @media only screen and (min-width: 1400px) {
+      height: 118px;
+    }
+  }
+}
+
+
+#contact__map{
+  height: 250px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .communication-iso{
+    bottom: 5rem !important;
+  }
+
+  .scroll-top{
+    bottom: 5rem !important;
+  }
+}
+
+.get-advice-fixed{
+  bottom: 10px !important;
+  z-index: 9999;
 }

@@ -9,6 +9,39 @@ header {
         width: 16.875rem !important;
     }
 
+    .figure{
+        .logo{
+            @media only screen and (min-width: 1200px) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .figure-caption{
+            .iso-font-lg{
+                @media only screen and (min-width: 1200px) {
+                    font-size: $iso-llg;
+                }
+            }
+            .iso-font-xs{
+                @media only screen and (min-width: 1200px) {
+                    font-size: $iso-md;
+                }
+            }
+        }
+    }
+
+    .nav{
+        height: 2rem;
+    }
+
+    .dropdown{
+        .dropdown-menu{
+            width: 200px;
+            transform: translate(0px, 32px) !important;
+            border-radius: 0 $iso-border-radius $iso-border-radius;
+        }
+    }
+
     .support-border-dark-light {
         border-color: #6C757D !important;
     }
@@ -41,12 +74,12 @@ header {
         transition: 0.1s ease-in;
     }
 
-    .iso-hover-blue:hover {
-        color: $iso-blue-dark;
+    .hover-line-blue:hover {
+        color: $iso-blue-dark !important;
         border-bottom: 0.125rem solid $iso-blue-dark;
     }
 
-    .iso-hover-white:hover {
+    .hover-line-white:hover {
         border-bottom: 0.125rem solid #f8f9fa;
     }
 
@@ -79,7 +112,7 @@ header {
         }
         .modal-body{
             input,button{
-               height: 2.5rem;
+                height: 2.5rem;
             }
         }
 
@@ -98,7 +131,6 @@ header {
             a{
                 border-color: $iso-blue-dark !important;
             }
-
         }
 
         .card-login-password{

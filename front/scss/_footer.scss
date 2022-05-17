@@ -1,9 +1,30 @@
 footer{
   background: $iso-blue-dark;
 
-  .section-body{
-    height: 9.938rem;
+  .footer-certificates{
+    .footer-body{
+      height: 9.938rem;
+    }
   }
+
+  .footer-contact,
+  .footer-certificates,
+  .footer-support{
+    .footer-title{
+      @media only screen and (min-width: 1024px) {
+        font-size: $iso-llg !important;
+      }
+    }
+  }
+
+  address{
+    span{
+      @media only screen and (min-width: 1400px) {
+        font-size: $iso-lg !important;
+      }
+    }
+  }
+
 
   .swiper-certificates{
 
@@ -20,6 +41,13 @@ footer{
 
   .swiper-pagination-bullet-active{
     background: $iso-green-dark;
+  }
+
+  .footer-contact,
+  .footer-certificates{
+    @media only screen and (min-width: 768px) and (max-width: 1400px) {
+      border-top: 1px solid #fff;
+    }
   }
 
 }
