@@ -1,3 +1,7 @@
+html{
+  font-size: 100%;
+}
+
 body{
   direction: rtl;
   font-family: IRANSans !important;
@@ -5,7 +9,6 @@ body{
   background: $iso-gray-light;
   color: $iso-dark !important;
 }
-
 a{
   text-decoration: none;
   cursor: pointer;
@@ -20,24 +23,22 @@ hr{
   box-shadow: 0 0;
 }
 
+.active-btn{
 
-.btn{
-  &.iso-bg-blur-dark{
-    @media only screen and (min-width: 1024px) {
-      &:hover{
-        background: $iso-green-dark !important;
-        box-shadow: 0 0 !important;
-      }
-    }
-    @media only screen and (max-width: 1024px) {
-      &:active{
-        box-shadow: 0 0 !important;
-        background: $iso-green-dark !important;
-      }
+  @media only screen and (min-width: 1024px) {
+    &:hover{
+      background: $iso-green-dark !important;
+      box-shadow: 0 0 !important;
     }
   }
-}
+  @media only screen and (max-width: 1024px) {
+    &:active{
+      box-shadow: 0 0 !important;
+      background: $iso-green-dark !important;
+    }
+  }
 
+}
 
 .dropdown{
   .nav-link:after{
@@ -103,14 +104,14 @@ hr{
   height: 24px;
 }
 
-.img-sm{
-  width: 30px;
-  height: 30px;
+.img-md {
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
-.img-md{
-  width: 50px;
-  height: 50px;
+.img-sm {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .img-lg{
@@ -158,4 +159,32 @@ hr{
 
 .line-muted-bg-green-dashed{
   @include line-dashed('muted-bg-green',#d1e7dd,$iso-secondary);
+}
+
+@media only screen and (min-width: 1024px) {
+  html{
+    font-size: 1.350rem;
+  }
+  .animated-edit-position {
+    transform: rotateY(180deg);
+    position: relative;
+    left: 7rem !important;
+    top: -1rem !important;
+  }
+
+  .search-box {
+    .position-absolute{
+     position: static !important;
+    }
+    .position-relative{
+      width: 1% !important;
+      position: static !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html{
+    font-size: 1rem;
+  }
 }

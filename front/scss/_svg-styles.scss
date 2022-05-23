@@ -14,11 +14,17 @@ svg#freepik_stories-online-article:not(.animated){
   }
 }
 
+
+.animated{
+  width: 320px;
+  height: 320px;
+}
+
 .animated-edit-position {
   transform: rotateY(180deg);
   position: relative;
-  left: -3.813rem;
-  top: -0.813rem;
+  left: -3.65rem;
+  top: -4.5rem;
 }
 
 /* svg header section  */

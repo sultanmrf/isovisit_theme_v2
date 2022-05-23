@@ -8,7 +8,7 @@ $(document).ready(function (){
             $(this).removeClass('unactive_menu');
             $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
         }else{
-            $(this).parent().removeClass('active_menu').addClass('iso-color-blur-dark');
+            $(this).parent().removeClass('active_menu').addClass(['iso-color-blur-dark','bg-transparent']);
             $(this).addClass('unactive_menu');
             $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         }
@@ -197,9 +197,9 @@ $(document).ready(function (){
     });
 
     $(document).on('click','.accepted-info-user',function (){
-        $(".menu-user").removeClass('d-none');
-        $(".btn-show-modal-login").addClass('d-none');
-        $('#staticBackdrop').modal('hide');
+        $(".menu-user").removeClass('d-none').addClass('d-flex');
+        $(".btn-login").addClass('d-none').removeClass('d-flex');
+        $('#modal').modal('hide');
     });
     /* section login */
 

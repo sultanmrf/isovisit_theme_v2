@@ -1,3 +1,5 @@
+@import "./main";
+
 header {
 
     button {
@@ -10,50 +12,32 @@ header {
     }
 
     .figure{
+        font-size: 0.758rem;
         .logo{
-            @media only screen and (min-width: 1200px) {
-                width: 60px;
-                height: 60px;
-            }
-        }
-        .figure-caption{
-            .iso-font-lg{
-                @media only screen and (min-width: 1200px) {
-                    font-size: $iso-llg;
-                }
-            }
-            .iso-font-xs{
-                @media only screen and (min-width: 1200px) {
-                    font-size: $iso-md;
-                }
-            }
+            width: 2.8rem;
+            height: 2.8rem;
         }
     }
 
     .nav{
         height: 2rem;
-    }
-
-    .dropdown{
         .dropdown-menu{
             width: 200px;
-            transform: translate(0px, 32px) !important;
             border-radius: 0 $iso-border-radius $iso-border-radius;
+            transform: translate3d(0px, 38px, 0px) !important;
+
         }
+        &,.dropdown-menu{
+            font-size: 0.760rem;
+        }
+    }
+
+    .btn-show-modal-login{
+        font-size: 16px;
     }
 
     .support-border-dark-light {
         border-color: #6C757D !important;
-    }
-
-    .img-md {
-        width: 3.625rem;
-        height: 3.625rem;
-    }
-
-    .img-sm {
-        width: 2.5rem;
-        height: 2.5rem;
     }
 
     ::marker {
@@ -89,8 +73,6 @@ header {
 
     /* style search */
     .search-box{
-        height:25rem;
-
         .input-group{
             position: inherit;
 
@@ -103,7 +85,9 @@ header {
                 height: 2.5rem;
             }
         }
-
+        .position-absolute{
+            top: 206px;
+        }
     }
 
     .modal{
@@ -155,25 +139,18 @@ header {
     .menu-user{
         transition: 0.8s ease-in;
         .dropdown-menu{
-            transform: translate3d(0px, 32px, 0px) !important;
             width: 230px;
-            height: 364px;
+            inset: -15px auto auto 0px !important;
         }
         .dropdown-toggle:after{
             all: unset;
         }
         .btn-user,
         .btn-user-collapse{
+            z-index: 9999;
             i{
                 transition: 0.1s ease-in-out !important;
             }
         }
-    }
-}
-
-.iso-color-gradient-header {
-    div{
-        left: 0.125rem;
-        top: 19.563rem;
     }
 }

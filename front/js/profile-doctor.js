@@ -19,6 +19,7 @@ $(document).ready(function (){
         if(val_aria_expanded == 'true'){
             $(this).attr('src','./images/icons/love.png').addClass('love-disabled').removeClass('love-active');
             $(this).attr('aria-expanded','false');
+
             $(this).find('~ span').text(--counter_live);
         }else {
             $(this).attr('src','./images/icons/love-active.png').addClass('love-active').removeClass('love-disabled');
@@ -75,4 +76,23 @@ $(document).ready(function (){
 
     show_map('contact__map',36.312416, 59.553421)
 
+    $(window).scroll(function (){
+        function mediaScreenChangeTopOnTag(x) {
+            if (x.matches) {
+                if(window.scrollY > 2700){
+                    $(".section-get-advice").css({top:'228px'});
+                }else{
+                    $(".section-get-advice").css({top:'169px'});
+                }
+            } else {
+                if(window.scrollY > 3020){
+                    $(".section-get-advice").css({top:'-188px'});
+                }else{
+                    $(".section-get-advice").css({top:'169px'});
+                }
+            }
+        }
+        let size_media = window.matchMedia("(min-width: 1400px)")
+        mediaScreenChangeTopOnTag(size_media)
+    });
 });

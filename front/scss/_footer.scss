@@ -17,7 +17,24 @@ footer{
     }
   }
 
-  address{
+  .footer-contact,
+  .footer-certificates,
+  .footer-about{
+    @media only screen and (min-width: 768px) and (max-width: 1400px) {
+      border-top: 1px solid #fff;
+    }
+    @media only screen and (max-width: 768px) {
+      border-top: 1px solid #fff;
+    }
+  }
+
+  .footer-about{
+    @media only screen and (min-width: 768px) and (max-width: 1400px) {
+      border-top: 0 solid #fff;
+    }
+  }
+
+    address{
     span{
       @media only screen and (min-width: 1400px) {
         font-size: $iso-lg !important;
@@ -43,11 +60,6 @@ footer{
     background: $iso-green-dark;
   }
 
-  .footer-contact,
-  .footer-certificates{
-    @media only screen and (min-width: 768px) and (max-width: 1400px) {
-      border-top: 1px solid #fff;
-    }
-  }
+
 
 }

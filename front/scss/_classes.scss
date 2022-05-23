@@ -79,6 +79,21 @@
   font-size: $iso-xxl;
 }
 
+.iso-font-md-em{
+  font-size: 1em;
+}
+
+.iso-font-sm-em{
+  font-size: 0.875em;
+}
+
+.iso-font-xs-em{
+  font-size: 0.75em;
+}
+
+.iso-font-lg-em{
+  font-size: 1.125em;
+}
 /* iso border-radius */
 .border-radius{
   border-radius: $iso-border-radius !important;
