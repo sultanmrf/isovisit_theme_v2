@@ -15,8 +15,8 @@
 * spacing text
  */
 main .iso-line-title {
-  width: 0.375rem;
-  height: 1.875rem;
+  width: 0.375em;
+  height: 1.875em;
   background: aqua;
   position: absolute;
   border-radius: 1.875rem; }
@@ -48,22 +48,21 @@ main svg {
   display: none; }
 
 main .section-doctors {
-  height: 440px; }
+  font-size: 16px; }
   main .section-doctors .section-header button {
-    bottom: 1.063rem; }
-  main .section-doctors .items-relations-doctor span {
-    height: 1.688rem; }
+    bottom: 1.063em; }
   main .section-doctors .card-doctor {
-    width: 13.75rem; }
+    width: 14.8em; }
     main .section-doctors .card-doctor .card-img {
-      width: 5.563rem; }
+      width: 5.563em; }
       main .section-doctors .card-doctor .card-img span {
-        bottom: 0.375rem;
-        right: -0.313rem; }
+        bottom: 0.375em;
+        right: -0.313em; }
   main .section-doctors .swiper-doctors {
-    height: 14.063rem; }
+    margin-top: 5em;
+    height: 14.063em; }
     main .section-doctors .swiper-doctors .swiper-slide {
-      width: 13.75rem; }
+      width: 14.8em; }
 
 main .card-specialty {
   width: 10.625rem;
