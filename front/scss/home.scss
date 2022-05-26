@@ -5,7 +5,7 @@ main {
 
   .iso-line-title {
     width: 0.375em;
-    height: 1.875em;
+    height: 2.3em;
     background: aqua;
     position: absolute;
     border-radius: 1.875rem;
@@ -41,25 +41,47 @@ main {
   .svg-default-height-section-comment-users,
   .svg-default-height-section-doctors,
   .svg-default-height-section-medicines {
-    height: 12.5rem;
+    height: 17.5em;
   }
 
   svg {
-    display: none;
+    //display: none;
+  }
+
+  .section-btn{
+    button{
+      height: 31px;
+    }
+  }
+
+  .section-doctors,
+  .section-specialty,
+  .section-services,
+  .section-comments-users,
+  .section-question-answer,
+  .section-articles,
+  .section-medicines,
+  .section-sign-in-isovisit{
+    font-size: 16px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    width: 45px;
+    height: 45px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after{
+    content: '' !important;
+    all: unset;
   }
 
   .section-doctors {
 
-    font-size:16px;
     .section-header {
       button {
         bottom: 1.063em;
-      }
-    }
-
-    .items-relations-doctor {
-      span {
-//         height: 1.688em;
       }
     }
 
@@ -77,74 +99,59 @@ main {
     }
 
     .swiper-doctors {
-      margin-top:5em;
-      height: 14.063em;
+      height: 15em;
 
       .swiper-slide {
         width: 14.8em;
       }
     }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+      top: 44%;
+    }
   }
 
+  .section-specialty{
 
-  .card-specialty {
-    width: 10.625rem;
-    height: 9.375rem;
+    .card-specialty {
+      width: 10.625em;
+      height: 9.375em;
+    }
+
   }
 
-  @mixin size-fiqure-img {
-    width: 2.5rem;
-    height: 2.5rem;
+  .section-services,
+  .section-specialty,
+  .section-comments-users{
+    .swiper-button-next,
+    .swiper-button-prev{
+      top: 44%;
+    }
   }
 
   .swiper-services,
   .swiper-specialty {
-    height: 186px;
+    height: 170px;
 
     .swiper-slide {
-      width: 10.625rem;
+      width: 10.625em;
     }
+  }
+
+  @mixin size-fiqure-img {
+    width: 2.5em;
+    height: 2.5em;
   }
 
   @mixin text-overflow-ellipsis {
     text-overflow: ellipsis;
   }
 
-  .swiper-question-answer {
-    width: 100%;
-
-    .figure-img {
-      @include size-fiqure-img;
-    }
-
-    .card {
-      width: 20.5rem;
-      height: 13.625rem;
-    }
-
-    .swiper-slide {
-      height: 15.5rem;
-    }
-
-    h1 {
-      @include text-overflow-ellipsis;
-    }
-
-    p {
-      height: 3.938rem;
-    }
-  }
-
   .section-comments-users {
 
     > .section-body {
-      top: -0.813rem;
-      height: 13.875rem;
-    }
-
-    svg {
-      top: -0.563rem;
-      left: -4.813rem;
+      top: -0.813em;
     }
 
     .swiper-comments-users {
@@ -153,56 +160,77 @@ main {
       }
 
       .card {
-        width: 15.125rem;
-        height: 12.5rem;
+        width: 15.125em;
+        height: 12.5em;
       }
 
       .swiper-slide {
-        width: 15.125rem;
+        width: 15em;
       }
+
+      .swiper-wrapper{
+        height: 14em;
+      }
+    }
+  }
+
+  .swiper-question-answer {
+
+    .figure-img {
+      @include size-fiqure-img;
+    }
+
+    .card {
+      width: 20.5em;
+      height: 15em;
+    }
+
+    .swiper-slide {
+      height: 15.5em;
+    }
+
+    .swiper-wrapper{
+      height: 17em;
+    }
+
+    h1 {
+      @include text-overflow-ellipsis;
+    }
+
+    p {
+      height: 5.6em;
     }
   }
 
   .section-articles {
 
-    > .section-body {
-      height: 25.688rem;
-    }
-
     .swiper-articles {
 
       img {
-        width: 20.875rem;
-        height: 13.188rem;
+        height: 13.1875em;
       }
-
       a {
-        height: 3.063rem;
+        height: 3.8em;
       }
     }
   }
 
   .section-medicines {
-    height: 20.75rem;
-
-    > .section-body {
-      height: 9.938rem;
-    }
 
     .section-title {
-      top: -0.45rem;
+      top: -0.45em;
     }
 
     .swiper-slide {
-      width: 15.063rem;
+      width: 15.063em;
     }
 
     .card {
-      height: 8.188rem;
+      height: 8.188em;
     }
 
     img {
-      width: 5.313rem;
+      width: 5.313em;
     }
 
     .card-body {
@@ -221,13 +249,9 @@ main {
     }
 
     .card {
-      height: 10.625rem;
+      height: 10.64em;
     }
 
-    img {
-      left: -5rem;
-      bottom: -2.125rem;
-    }
   }
 
   .swiper-pagination-article {

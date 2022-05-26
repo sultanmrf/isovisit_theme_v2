@@ -1,6 +1,6 @@
 $(document).ready(function (){
 
-    /* section navbar button accordion*/
+    /* section navbar sidebar*/
     $(document).on('click','.btn-patients , .btn-doctors',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
@@ -14,6 +14,7 @@ $(document).ready(function (){
         }
     })
 
+    /*section navbar top*/
     $(document).on('click','.link-patients',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
@@ -31,50 +32,6 @@ $(document).ready(function (){
         $(this).removeClass('text-light').addClass('iso-color-dark');
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
     })
-
-        /* swiper main page */
-    new Swiper(".swiper-question-answer", {
-        slidesPerView: 1,
-        spaceBetween: 8,
-        pagination: {
-            el: ".swiper-pagination-question-answer",
-            clickable: true,
-        },
-    });
-
-    new Swiper(".swiper-articles", {
-        slidesPerView: 1,
-        spaceBetween: 8,
-        pagination: {
-            el: ".swiper-pagination-article",
-            clickable: true,
-        },
-    });
-
-    new Swiper(".swiper-comments-users,.swiper-services,.swiper-doctors,.swiper-specialty", {
-        slidesPerView: "auto",
-        spaceBetween: 16,
-    });
-
-
-    new Swiper(".swiper-medicines", {
-        slidesPerView:"auto",
-        spaceBetween: 16,
-        pagination: {
-            el: ".swiper-pagination-medicines",
-            clickable: true,
-        },
-    });
-
-    new Swiper(".swiper-certificates", {
-        slidesPerView:2,
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination-certificates",
-            clickable: true,
-        },
-    });
-
 
     /* section communication-iso */
     $(".communication-iso > img").click(function (){
@@ -218,7 +175,5 @@ $(document).ready(function (){
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         $(this).removeClass('border-radius-top').addClass('border-radius');
     });
-
-
 
 });

@@ -178,7 +178,7 @@ This set of fonts are used in this project under the license: (.....)
   text-shadow: 0 0.188rem 0.313rem rgba(0, 0, 0, 0.5); }
 
 .box-shadow-lg {
-  box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
 
 .box-shadow-sm {
   box-shadow: 0 0 4px 0 #00000040; }
@@ -208,6 +208,10 @@ This set of fonts are used in this project under the license: (.....)
 .letter-space-md {
   letter-spacing: 7px; }
 
+/*iso line-height */
+.lh-md {
+  line-height: 1.8; }
+
 /* header */
 html {
   font-size: 100%; }
@@ -230,12 +234,12 @@ hr {
 .btn:focus {
   box-shadow: 0 0; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .active-btn:hover {
     background: #009d38 !important;
     box-shadow: 0 0 !important; } }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
   .active-btn:active {
     box-shadow: 0 0 !important;
     background: #009d38 !important; } }
@@ -308,6 +312,15 @@ hr {
 .modal-header button {
   border: 0.125rem solid; }
 
+.position-top-0 {
+  top: 0; }
+
+.iso-position-absolute {
+  position: absolute; }
+
+.iso-position-relative {
+  position: relative; }
+
 .line-black-dashed {
   width: 100%;
   height: 1px !important;
@@ -334,24 +347,6 @@ hr {
   background-repeat: repeat-x;
   background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
   background-size: 9px 3px; }
-
-@media only screen and (min-width: 1024px) {
-  html {
-    font-size: 1.350rem; }
-  .animated-edit-position {
-    transform: rotateY(180deg);
-    position: relative;
-    left: 7rem !important;
-    top: -1rem !important; }
-  .search-box .position-absolute {
-    position: static !important; }
-  .search-box .position-relative {
-    width: 1% !important;
-    position: static !important; } }
-
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 1rem; } }
 
 header {
   /* style search */ }
@@ -402,7 +397,7 @@ header {
     header .search-box .input-group input {
       border-radius: 0 8px 8px 0 !important;
       height: 2.5rem; }
-  header .search-box .position-absolute {
+  header .search-box .iso-position-absolute {
     top: 206px; }
   header .modal .modal-footer {
     border-top: 0.156rem dashed #1773B5; }
@@ -461,12 +456,12 @@ hr {
 .btn:focus {
   box-shadow: 0 0; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .active-btn:hover {
     background: #009d38 !important;
     box-shadow: 0 0 !important; } }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
   .active-btn:active {
     box-shadow: 0 0 !important;
     background: #009d38 !important; } }
@@ -539,6 +534,15 @@ hr {
 .modal-header button {
   border: 0.125rem solid; }
 
+.position-top-0 {
+  top: 0; }
+
+.iso-position-absolute {
+  position: absolute; }
+
+.iso-position-relative {
+  position: relative; }
+
 .line-black-dashed {
   width: 100%;
   height: 1px !important;
@@ -565,24 +569,6 @@ hr {
   background-repeat: repeat-x;
   background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
   background-size: 9px 3px; }
-
-@media only screen and (min-width: 1024px) {
-  html {
-    font-size: 1.350rem; }
-  .animated-edit-position {
-    transform: rotateY(180deg);
-    position: relative;
-    left: 7rem !important;
-    top: -1rem !important; }
-  .search-box .position-absolute {
-    position: static !important; }
-  .search-box .position-relative {
-    width: 1% !important;
-    position: static !important; } }
-
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 1rem; } }
 
 /* footer */
 footer {
@@ -636,7 +622,6 @@ svg#freepik_stories-online-article:not(.animated) .animable {
 
 .animated-edit-position {
   transform: rotateY(180deg);
-  position: relative;
   left: -3.65rem;
   top: -4.5rem; }
 
@@ -815,6 +800,25 @@ svg#freepik_stories-online-article.animated #freepik--Character--inject-45 {
   0% {
     opacity: 0;
     transform: translateX(1.875rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* svg section sing-in */
+svg#freepik_stories-doctors:not(.animated) .animable {
+  opacity: 0; }
+
+svg#freepik_stories-doctors.animated #freepik--character-2--inject-80 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s; }
+
+.svg-sing-in-doctor {
+  transform: rotateY(180deg); }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
   100% {
     opacity: 1;
     transform: translateX(0); } }

@@ -22,7 +22,6 @@ svg#freepik_stories-online-article:not(.animated){
 
 .animated-edit-position {
   transform: rotateY(180deg);
-  position: relative;
   left: -3.65rem;
   top: -4.5rem;
 }
@@ -271,6 +270,34 @@ svg#freepik_stories-online-article.animated {
   0% {
     opacity: 0;
     transform: translateX(1.875rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* svg section sing-in */
+svg#freepik_stories-doctors:not(.animated) {
+  .animable {
+    opacity: 0;
+  }
+}
+
+svg#freepik_stories-doctors.animated {
+  #freepik--character-2--inject-80 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;
+  }
+}
+
+.svg-sing-in-doctor{
+    transform: rotateY(180deg);
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
   }
   100% {
     opacity: 1;

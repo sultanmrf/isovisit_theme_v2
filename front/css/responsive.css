@@ -1,0 +1,40 @@
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1.350rem; }
+  .iso-position-relative-lg-none {
+    position: unset; }
+  .iso-position-absolute-lg-none {
+    position: unset; }
+  .animated-edit-position {
+    left: 7rem;
+    top: -1rem; }
+  .swiper-doctors,
+  .swiper-comments-users {
+    margin-top: 5em; }
+  .section-articles .section-btn button {
+    top: -55px; }
+  .svg-sing-in-doctor {
+    left: -230px;
+    top: -98px; } }
+
+@media only screen and (max-width: 992px) {
+  .swiper-doctors {
+    margin-top: 0; }
+  .position-top-lg-75 {
+    top: 75%; }
+  .section-comments-users .section-svg,
+  .section-doctors .section-svg {
+    height: 18em; }
+  .section-articles .section-svg {
+    height: 13.30em; }
+  .section-articles .swiper-wrapper {
+    height: 26em; }
+  .section-medicines .swiper-wrapper {
+    height: 10em; }
+  .section-medicines .section-svg {
+    height: 13.3em; }
+  .svg-sing-in-doctor {
+    width: 12.5em;
+    height: 12.5em;
+    left: -4.5em;
+    top: 0.2em; } }

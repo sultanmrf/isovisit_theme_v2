@@ -129,7 +129,7 @@
 }
 
 .box-shadow-lg{
-  box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .box-shadow-sm{
@@ -164,4 +164,10 @@
 
 .letter-space-md{
   letter-spacing: $letter-space-md;
+}
+
+/*iso line-height */
+
+.lh-md{
+  line-height: 1.8;
 }

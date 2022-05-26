@@ -16,7 +16,7 @@
  */
 main .iso-line-title {
   width: 0.375em;
-  height: 1.875em;
+  height: 2.3em;
   background: aqua;
   position: absolute;
   border-radius: 1.875rem; }
@@ -42,107 +42,133 @@ main .svg-default-height-section-articles,
 main .svg-default-height-section-comment-users,
 main .svg-default-height-section-doctors,
 main .svg-default-height-section-medicines {
-  height: 12.5rem; }
+  height: 17.5em; }
 
-main svg {
-  display: none; }
+main .section-btn button {
+  height: 31px; }
 
-main .section-doctors {
+main .section-doctors,
+main .section-specialty,
+main .section-services,
+main .section-comments-users,
+main .section-question-answer,
+main .section-articles,
+main .section-medicines,
+main .section-sign-in-isovisit {
   font-size: 16px; }
-  main .section-doctors .section-header button {
-    bottom: 1.063em; }
-  main .section-doctors .card-doctor {
-    width: 14.8em; }
-    main .section-doctors .card-doctor .card-img {
-      width: 5.563em; }
-      main .section-doctors .card-doctor .card-img span {
-        bottom: 0.375em;
-        right: -0.313em; }
-  main .section-doctors .swiper-doctors {
-    margin-top: 5em;
-    height: 14.063em; }
-    main .section-doctors .swiper-doctors .swiper-slide {
-      width: 14.8em; }
 
-main .card-specialty {
-  width: 10.625rem;
-  height: 9.375rem; }
+main .swiper-button-next,
+main .swiper-button-prev {
+  width: 45px;
+  height: 45px; }
+
+main .swiper-button-next:after,
+main .swiper-button-prev:after {
+  content: '' !important;
+  all: unset; }
+
+main .section-doctors .section-header button {
+  bottom: 1.063em; }
+
+main .section-doctors .card-doctor {
+  width: 14.8em; }
+  main .section-doctors .card-doctor .card-img {
+    width: 5.563em; }
+    main .section-doctors .card-doctor .card-img span {
+      bottom: 0.375em;
+      right: -0.313em; }
+
+main .section-doctors .swiper-doctors {
+  height: 15em; }
+  main .section-doctors .swiper-doctors .swiper-slide {
+    width: 14.8em; }
+
+main .section-doctors .swiper-button-next,
+main .section-doctors .swiper-button-prev {
+  top: 44%; }
+
+main .section-specialty .card-specialty {
+  width: 10.625em;
+  height: 9.375em; }
+
+main .section-services .swiper-button-next,
+main .section-services .swiper-button-prev,
+main .section-specialty .swiper-button-next,
+main .section-specialty .swiper-button-prev,
+main .section-comments-users .swiper-button-next,
+main .section-comments-users .swiper-button-prev {
+  top: 44%; }
 
 main .swiper-services,
 main .swiper-specialty {
-  height: 186px; }
+  height: 170px; }
   main .swiper-services .swiper-slide,
   main .swiper-specialty .swiper-slide {
-    width: 10.625rem; }
-
-main .swiper-question-answer {
-  width: 100%; }
-  main .swiper-question-answer .figure-img {
-    width: 2.5rem;
-    height: 2.5rem; }
-  main .swiper-question-answer .card {
-    width: 20.5rem;
-    height: 13.625rem; }
-  main .swiper-question-answer .swiper-slide {
-    height: 15.5rem; }
-  main .swiper-question-answer h1 {
-    text-overflow: ellipsis; }
-  main .swiper-question-answer p {
-    height: 3.938rem; }
+    width: 10.625em; }
 
 main .section-comments-users > .section-body {
-  top: -0.813rem;
-  height: 13.875rem; }
-
-main .section-comments-users svg {
-  top: -0.563rem;
-  left: -4.813rem; }
+  top: -0.813em; }
 
 main .section-comments-users .swiper-comments-users .figure-img {
-  width: 2.5rem;
-  height: 2.5rem; }
+  width: 2.5em;
+  height: 2.5em; }
 
 main .section-comments-users .swiper-comments-users .card {
-  width: 15.125rem;
-  height: 12.5rem; }
+  width: 15.125em;
+  height: 12.5em; }
 
 main .section-comments-users .swiper-comments-users .swiper-slide {
-  width: 15.125rem; }
+  width: 15em; }
 
-main .section-articles > .section-body {
-  height: 25.688rem; }
+main .section-comments-users .swiper-comments-users .swiper-wrapper {
+  height: 14em; }
+
+main .swiper-question-answer .figure-img {
+  width: 2.5em;
+  height: 2.5em; }
+
+main .swiper-question-answer .card {
+  width: 20.5em;
+  height: 15em; }
+
+main .swiper-question-answer .swiper-slide {
+  height: 15.5em; }
+
+main .swiper-question-answer .swiper-wrapper {
+  height: 17em; }
+
+main .swiper-question-answer h1 {
+  text-overflow: ellipsis; }
+
+main .swiper-question-answer p {
+  height: 5.6em; }
 
 main .section-articles .swiper-articles img {
-  width: 20.875rem;
-  height: 13.188rem; }
+  height: 13.1875em; }
 
 main .section-articles .swiper-articles a {
-  height: 3.063rem; }
+  height: 3.8em; }
 
-main .section-medicines {
-  height: 20.75rem; }
-  main .section-medicines > .section-body {
-    height: 9.938rem; }
-  main .section-medicines .section-title {
-    top: -0.45rem; }
-  main .section-medicines .swiper-slide {
-    width: 15.063rem; }
-  main .section-medicines .card {
-    height: 8.188rem; }
-  main .section-medicines img {
-    width: 5.313rem; }
-  main .section-medicines .card-body div span {
-    text-overflow: ellipsis; }
+main .section-medicines .section-title {
+  top: -0.45em; }
+
+main .section-medicines .swiper-slide {
+  width: 15.063em; }
+
+main .section-medicines .card {
+  height: 8.188em; }
+
+main .section-medicines img {
+  width: 5.313em; }
+
+main .section-medicines .card-body div span {
+  text-overflow: ellipsis; }
 
 main .section-sign-in-isovisit > .section-body {
   background: #CCE5FF; }
 
 main .section-sign-in-isovisit .card {
-  height: 10.625rem; }
-
-main .section-sign-in-isovisit img {
-  left: -5rem;
-  bottom: -2.125rem; }
+  height: 10.64em; }
 
 main .swiper-pagination-article {
   bottom: 1rem !important; }

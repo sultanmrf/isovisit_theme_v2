@@ -77,22 +77,18 @@ $(document).ready(function (){
     show_map('contact__map',36.312416, 59.553421)
 
     $(window).scroll(function (){
-        function mediaScreenChangeTopOnTag(x) {
-            if (x.matches) {
-                if(window.scrollY > 2700){
-                    $(".section-get-advice").css({top:'228px'});
-                }else{
-                    $(".section-get-advice").css({top:'169px'});
-                }
-            } else {
-                if(window.scrollY > 3020){
-                    $(".section-get-advice").css({top:'-188px'});
-                }else{
-                    $(".section-get-advice").css({top:'169px'});
-                }
+        if (window.matchMedia("(min-width: 1400px)").matches) {
+            if(window.scrollY > 2700){
+                $(".section-get-advice").css({top:'228px'});
+            }else{
+                $(".section-get-advice").css({top:'169px'});
+            }
+        } else {
+            if(window.scrollY > 3020){
+                $(".section-get-advice").css({top:'-188px'});
+            }else{
+                $(".section-get-advice").css({top:'169px'});
             }
         }
-        let size_media = window.matchMedia("(min-width: 1400px)")
-        mediaScreenChangeTopOnTag(size_media)
     });
 });
