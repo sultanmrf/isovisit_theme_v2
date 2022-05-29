@@ -22,7 +22,7 @@ main .iso-line-title {
   border-radius: 1.875rem; }
 
 main .section-facilities-and-services .card {
-  height: 10em; }
+  height: 12rem; }
 
 main .section-facilities-and-services .card-header {
   z-index: 2;
@@ -38,24 +38,11 @@ main .section-facilities-and-services .card-body {
   height: 7.875rem;
   width: 9.75rem; }
 
-main .svg-default-height-section-articles,
-main .svg-default-height-section-comment-users,
-main .svg-default-height-section-doctors,
-main .svg-default-height-section-medicines {
-  height: 17.5em; }
+main svg {
+  display: none; }
 
 main .section-btn button {
   height: 31px; }
-
-main .section-doctors,
-main .section-specialty,
-main .section-services,
-main .section-comments-users,
-main .section-question-answer,
-main .section-articles,
-main .section-medicines,
-main .section-sign-in-isovisit {
-  font-size: 16px; }
 
 main .swiper-button-next,
 main .swiper-button-prev {
@@ -64,8 +51,7 @@ main .swiper-button-prev {
 
 main .swiper-button-next:after,
 main .swiper-button-prev:after {
-  content: '' !important;
-  all: unset; }
+  content: '' !important; }
 
 main .section-doctors .section-header button {
   bottom: 1.063em; }
@@ -164,17 +150,8 @@ main .section-medicines img {
 main .section-medicines .card-body div span {
   text-overflow: ellipsis; }
 
-main .section-sign-in-isovisit > .section-body {
+main .section-sign-in-doctor > .section-body {
   background: #CCE5FF; }
 
-main .section-sign-in-isovisit .card {
+main .section-sign-in-doctor .card {
   height: 10.64em; }
-
-main .swiper-pagination-article {
-  bottom: 1rem !important; }
-
-main .swiper-pagination-question-answer {
-  bottom: -0.313rem !important; }
-
-main .swiper-pagination-medicines {
-  bottom: -0.5rem !important; }

@@ -4,11 +4,12 @@ html{
 
 body{
   direction: rtl;
-  font-family: IRANSans !important;
+  font-family: IRANSans,'sans-serif';
   font-weight: 500;
   background: $iso-gray-light;
-  color: $iso-dark !important;
+  color: $iso-dark;
 }
+
 a{
   text-decoration: none;
   cursor: pointer;
@@ -21,6 +22,18 @@ hr{
 .form-control:focus,
 .btn:focus{
   box-shadow: 0 0;
+}
+
+.section-doctors,
+.section-specialty,
+.section-services,
+.section-comments-users,
+.section-question-answer,
+.section-articles,
+.section-medicines,
+.section-sign-in-doctor,
+ footer{
+  font-size: 16px;
 }
 
 .active-btn{
@@ -39,6 +52,19 @@ hr{
 
 }
 
+.btn-close-modal{
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #fff;
+  border: 2px solid #DC3545;
+  justify-content: center;
+  align-items: center;
+  color: #dc3545;
+  i{
+    display: flex;
+    align-items: center;
+  }
+}
 .dropdown{
   .nav-link:after{
     all: unset;
@@ -104,13 +130,13 @@ hr{
 }
 
 .img-md {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 60px;
+  height: 60px;
 }
 
 .img-sm {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 40px;
+  height: 40px;
 }
 
 .img-lg{
@@ -118,10 +144,6 @@ hr{
   height: 72px;
 }
 
-.size-wh-40{
-  width: 2.5rem;
-  height: 2.5rem;
-}
 
 .modal-header{
   button{
@@ -161,6 +183,7 @@ hr{
     background-size: 9px 3px;
   }
 }
+
 .line-black-dashed{
   @include line-dashed('black',white,#313131a3);
 }

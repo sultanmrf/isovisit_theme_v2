@@ -52,36 +52,24 @@ $(document).ready(function (){
         }
     })
 
-    /* section scroll top btn and show svg by scroll */
-    $(window).scroll(function(){
-        var scrolled_val = $(this).scrollTop();
+    var $window = $(window);
+    $window.on('scroll', revealOnScroll);
 
-        if(scrolled_val > 1500){
-            $(".scroll-top").addClass('d-flex');
-        }else{
-            $(".scroll-top").removeClass('d-flex');
-        }
+    function revealOnScroll() {
+        var scrolled = $window.scrollTop();
 
-        if(scrolled_val > 420){
-            $(".svg-doctors").show();
-            $(".svg-default-height-section-doctors").remove();
-        }
+        // Animation is showing...
+        $(".section-svg").each(function () {
+            var $this = $(this);
+            var offsetTop = $this.offset().top - 550;
 
-        if(scrolled_val > 1450){
-            $(".svg-comment-users").show();
-            $(".svg-default-height-section-comment-users").remove();
-        }
+            // show svg if scroll > offsetTop tag
+            if (scrolled  > offsetTop) {
+                $this.find('svg').show();
+            }
+        });
+    }
 
-        if(scrolled_val > 2100){
-            $(".svg-articles").show();
-            $(".svg-default-height-section-articles").remove();
-        }
-
-        if(scrolled_val > 2600){
-            $(".svg-medicines").show();
-            $(".svg-default-height-section-medicines").remove();
-        }
-    });
 
     $(document).on('click','.scroll-top',function (){
         $('html').animate({scrollTop : 0},200);
@@ -175,5 +163,45 @@ $(document).ready(function (){
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         $(this).removeClass('border-radius-top').addClass('border-radius');
     });
+
+
+    /* section search-input-sm modal*/
+    if(window.matchMedia("(max-width: 576px)").matches) {
+
+        $(".search-input-lg").attr('data-bs-toggle',"modal");
+        $(document).on('click','.btn-return',function (){
+            $('#modalSearch').modal('hide');
+        })
+
+        $(document).on('keyup','.search-input-sm',function (){
+            let character_length = $(this).val().length;
+            if(character_length >= 2){
+                $(".icon-search").hide();
+                $(".icon-search").addClass('d-none').removeClass('d-flex')
+                $(".search-box-sm .btn-close-modal").addClass('d-flex').removeClass('d-none');
+                $(".result-search .list-group").append("" +
+                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
+                    "      <span class=\"iso-font-sm\">سحر خوش قامت</span>\n" +
+                    "      <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">پزشک</div>\n" +
+                    "   </li>" +
+                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
+                    "       <span class=\"iso-font-sm\">کنترل فشار خون</span>\n" +
+                    "       <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">سرویس</div>\n" +
+                    "    </li>" +
+                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
+                    "       <span class=\"iso-font-sm\">چطور به کودک خود دستور بدهم ؟</span>\n" +
+                    "       <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">مقاله</div>\n" +
+                    "   </li>"+
+                    "  <li class=\"list-group-item d-flex justify-content-between align-items-center\">" +
+                    "       <span class=\"iso-font-sm\">روغن بنفشه محصول خوب</span>\n" +
+                    "       <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">دارو</div>\n"+
+                    "   </li>");
+            }else{
+                $(".icon-search").addClass('d-flex').removeClass('d-none')
+                $(".search-box-sm .btn-close-modal").addClass('d-none').removeClass('d-flex');
+            }
+        })
+
+    }
 
 });

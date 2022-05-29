@@ -11,11 +11,10 @@ main {
     border-radius: 1.875rem;
   }
 
-
   .section-facilities-and-services {
 
     .card {
-      height: 10em;
+      height: 12rem;
     }
 
     .card-header {
@@ -37,32 +36,14 @@ main {
     }
   }
 
-  .svg-default-height-section-articles,
-  .svg-default-height-section-comment-users,
-  .svg-default-height-section-doctors,
-  .svg-default-height-section-medicines {
-    height: 17.5em;
-  }
-
   svg {
-    //display: none;
+    display: none;
   }
 
   .section-btn{
     button{
       height: 31px;
     }
-  }
-
-  .section-doctors,
-  .section-specialty,
-  .section-services,
-  .section-comments-users,
-  .section-question-answer,
-  .section-articles,
-  .section-medicines,
-  .section-sign-in-isovisit{
-    font-size: 16px;
   }
 
   .swiper-button-next,
@@ -74,7 +55,6 @@ main {
   .swiper-button-next:after,
   .swiper-button-prev:after{
     content: '' !important;
-    all: unset;
   }
 
   .section-doctors {
@@ -113,12 +93,10 @@ main {
   }
 
   .section-specialty{
-
     .card-specialty {
       width: 10.625em;
       height: 9.375em;
     }
-
   }
 
   .section-services,
@@ -242,7 +220,7 @@ main {
     }
   }
 
-  .section-sign-in-isovisit {
+  .section-sign-in-doctor {
 
     > .section-body {
       background: $iso-blue-light;
@@ -252,17 +230,5 @@ main {
       height: 10.64em;
     }
 
-  }
-
-  .swiper-pagination-article {
-    bottom: 1rem !important;
-  }
-
-  .swiper-pagination-question-answer, {
-    bottom: -0.313rem !important;
-  }
-
-  .swiper-pagination-medicines {
-    bottom: -0.5rem !important;
   }
 }

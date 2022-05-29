@@ -131,18 +131,6 @@ $(document).ready(function (){
         $('.svg-medicines').attr('viewBox','-40 163 550 317');
     }
 
-    // function mediaScreenSwiper(size_media,...classes,{slidesPerView,spaceBetween}){
-    //     if (window.matchMedia(size_media).matches){
-    //         new Swiper(classes, {
-    //             slidesPerView: 1,
-    //             spaceBetween: 16,
-    //             pagination: {
-    //                 el: ".swiper-pagination-question-answer",
-    //                 clickable: true,
-    //             },
-    //         });
-    //     }
-    // }
 
 
 });
