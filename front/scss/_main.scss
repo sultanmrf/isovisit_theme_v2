@@ -32,6 +32,7 @@ hr{
 .section-articles,
 .section-medicines,
 .section-sign-in-doctor,
+ header,
  footer{
   font-size: 16px;
 }
@@ -57,14 +58,17 @@ hr{
   height: 1.875rem;
   background-color: #fff;
   border: 2px solid #DC3545;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #dc3545;
+  border-radius: 9px;
   i{
     display: flex;
     align-items: center;
   }
 }
+
 .dropdown{
   .nav-link:after{
     all: unset;
@@ -145,12 +149,6 @@ hr{
 }
 
 
-.modal-header{
-  button{
-    border: 0.125rem solid;
-  }
-}
-
 .position-top-0{
   top: 0;
 }
@@ -196,3 +194,25 @@ hr{
   @include line-dashed('muted-bg-green',#d1e7dd,$iso-secondary);
 }
 
+.ellipse-blur{
+  position: relative;
+  &:before{
+    content: "";
+    width: 4%;
+    height: 48%;
+    right: .7rem;
+    top: 37%;
+    position: absolute;
+    background-image: url("../images/icons/ellipse-blur.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.ellipse-light{
+  @extend .ellipse-blur;
+  &:before{
+    width: 7%;
+    right: 0;
+    background-image: url("../images/icons/ellipse-light.png");
+  }
+}

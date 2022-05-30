@@ -2,17 +2,11 @@
 
 header {
 
-    button {
-        width: auto;
-        border-radius: $iso-border-radius !important;
-    }
-
     .offcanvas-start {
-        width: 16.875rem !important;
+        width: 16.875rem;
     }
 
     .figure{
-        font-size: 0.758rem;
         .logo{
             width: 2.8rem;
             height: 2.8rem;
@@ -24,9 +18,9 @@ header {
         .dropdown-menu{
             width: 200px;
             border-radius: 0 $iso-border-radius $iso-border-radius;
-            transform: translate3d(0px, 38px, 0px) !important;
-
+            transform: translate3d(0px, 34px, 0px) !important;
         }
+
         &,.dropdown-menu{
             font-size: 0.760rem;
         }
@@ -36,21 +30,16 @@ header {
         font-size: 16px;
     }
 
-    .support-border-dark-light {
-        border-color: #6C757D !important;
-    }
-
     ::marker {
         font-size: 200%;
     }
 
     .unactive_menu {
-        padding: 0.25rem;
-        color: $iso-dark !important;
+        color: $iso-dark;
     }
 
     .active_menu {
-        background: $iso-blue-dark !important;
+        background: $iso-blue-dark;
     }
 
     .iso-hover-blue,
@@ -115,7 +104,7 @@ header {
         }
         .modal-body{
             input,button{
-                height: 2.5em;
+                //height: 2.5em;
             }
         }
 
@@ -173,7 +162,4 @@ header {
         }
     }
 
-    #modalLogin{
-        font-size: 16px;
-    }
 }

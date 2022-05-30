@@ -245,6 +245,7 @@ hr {
 .section-articles,
 .section-medicines,
 .section-sign-in-doctor,
+header,
 footer {
   font-size: 16px; }
 
@@ -263,9 +264,11 @@ footer {
   height: 1.875rem;
   background-color: #fff;
   border: 2px solid #DC3545;
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: #dc3545; }
+  color: #dc3545;
+  border-radius: 9px; }
   .btn-close-modal i {
     display: flex;
     align-items: center; }
@@ -331,9 +334,6 @@ footer {
   width: 72px;
   height: 72px; }
 
-.modal-header button {
-  border: 0.125rem solid; }
-
 .position-top-0 {
   top: 0; }
 
@@ -370,37 +370,46 @@ footer {
   background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
   background-size: 9px 3px; }
 
+.ellipse-blur, .ellipse-light {
+  position: relative; }
+  .ellipse-blur:before, .ellipse-light:before {
+    content: "";
+    width: 4%;
+    height: 48%;
+    right: .7rem;
+    top: 37%;
+    position: absolute;
+    background-image: url("../images/icons/ellipse-blur.png");
+    background-repeat: no-repeat; }
+
+.ellipse-light:before {
+  width: 7%;
+  right: 0;
+  background-image: url("../images/icons/ellipse-light.png"); }
+
 header {
   /* style section banner */ }
-  header button {
-    width: auto;
-    border-radius: 8px !important; }
   header .offcanvas-start {
-    width: 16.875rem !important; }
-  header .figure {
-    font-size: 0.758rem; }
-    header .figure .logo {
-      width: 2.8rem;
-      height: 2.8rem; }
+    width: 16.875rem; }
+  header .figure .logo {
+    width: 2.8rem;
+    height: 2.8rem; }
   header .nav {
     height: 2rem; }
     header .nav .dropdown-menu {
       width: 200px;
       border-radius: 0 8px 8px;
-      transform: translate3d(0px, 38px, 0px) !important; }
+      transform: translate3d(0px, 34px, 0px) !important; }
     header .nav, header .nav .dropdown-menu {
       font-size: 0.760rem; }
   header .btn-show-modal-login {
     font-size: 16px; }
-  header .support-border-dark-light {
-    border-color: #6C757D !important; }
   header ::marker {
     font-size: 200%; }
   header .unactive_menu {
-    padding: 0.25rem;
-    color: #001A34 !important; }
+    color: #001A34; }
   header .active_menu {
-    background: #1773B5 !important; }
+    background: #1773B5; }
   header .iso-hover-blue,
   header .iso-hover-white {
     transition: 0.1s ease-in; }
@@ -435,8 +444,6 @@ header {
     top: 206px; }
   header .modal .modal-footer {
     border-top: 0.156rem dashed #1773B5; }
-  header .modal .modal-body input, header .modal .modal-body button {
-    height: 2.5em; }
   header .modal .box-verification-code {
     border-color: #e2e3e4 !important; }
     header .modal .box-verification-code:focus-within {
@@ -467,8 +474,6 @@ header {
       header .menu-user .btn-user i,
       header .menu-user .btn-user-collapse i {
         transition: 0.1s ease-in-out !important; }
-  header #modalLogin {
-    font-size: 16px; }
 
 /* main */
 html {
@@ -500,6 +505,7 @@ hr {
 .section-articles,
 .section-medicines,
 .section-sign-in-doctor,
+header,
 footer {
   font-size: 16px; }
 
@@ -518,9 +524,11 @@ footer {
   height: 1.875rem;
   background-color: #fff;
   border: 2px solid #DC3545;
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: #dc3545; }
+  color: #dc3545;
+  border-radius: 9px; }
   .btn-close-modal i {
     display: flex;
     align-items: center; }
@@ -586,9 +594,6 @@ footer {
   width: 72px;
   height: 72px; }
 
-.modal-header button {
-  border: 0.125rem solid; }
-
 .position-top-0 {
   top: 0; }
 
@@ -624,6 +629,23 @@ footer {
   background-repeat: repeat-x;
   background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
   background-size: 9px 3px; }
+
+.ellipse-blur, .ellipse-light {
+  position: relative; }
+  .ellipse-blur:before, .ellipse-light:before {
+    content: "";
+    width: 4%;
+    height: 48%;
+    right: .7rem;
+    top: 37%;
+    position: absolute;
+    background-image: url("../images/icons/ellipse-blur.png");
+    background-repeat: no-repeat; }
+
+.ellipse-light:before {
+  width: 7%;
+  right: 0;
+  background-image: url("../images/icons/ellipse-light.png"); }
 
 /* footer */
 footer .footer-certificates .footer-body {
