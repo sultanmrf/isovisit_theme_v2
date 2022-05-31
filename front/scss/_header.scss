@@ -30,10 +30,6 @@ header {
         font-size: 16px;
     }
 
-    ::marker {
-        font-size: 200%;
-    }
-
     .unactive_menu {
         color: $iso-dark;
     }
@@ -48,7 +44,7 @@ header {
     }
 
     .hover-line-blue:hover {
-        color: $iso-blue-dark !important;
+        color: $iso-blue-dark;
         border-bottom: 0.125rem solid $iso-blue-dark;
     }
 
@@ -66,21 +62,16 @@ header {
         .search-box-sm{
             z-index: 2;
             .input-group{
-                position: inherit;
-
                 i{
-                    border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
                     height: 2.5rem;
                 }
                 input{
-                    border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
                     height: 2.5rem;
                 }
             }
-
         }
 
-        #modalSearch{
+        .modal-search{
             z-index: 99999;
 
             .modal-content{
@@ -98,47 +89,21 @@ header {
     }
 
 
-    .modal{
-        .modal-footer{
-            border-top: 0.156rem dashed $iso-blue-dark;
-        }
-        .modal-body{
-            input,button{
-                //height: 2.5em;
-            }
-        }
+    .modal-login{
 
         .box-verification-code{
-            border-color: #e2e3e4 !important;
+            border: 1px solid #dee2e6;
+
             &:focus-within{
-                border: 0.125rem solid #1773B5 !important;
+                border: 0.125em solid #1773B5;
+            }
+
+            input{
+                border-color: #6c757d;
             }
 
             input:focus{
-                border-color: #1773B5 !important;
-            }
-        }
-
-        .nav-link{
-            a{
-                border-color: $iso-blue-dark !important;
-            }
-        }
-
-        .card-login-password{
-            input{
-                border-radius: 0 $iso-border-radius $iso-border-radius 0 !important;
-            }
-            .input-group-text{
-                border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
-            }
-
-            .input-login-password:focus{
-                border-color:#ced4da !important;
-            }
-            i{
-                width: $iso-llg;
-                height: $iso-llg;
+                border-color: #1773B5;
             }
         }
 
@@ -147,6 +112,7 @@ header {
     .menu-user{
         transition: 0.8s ease-in;
         .dropdown-menu{
+            z-index: 4;
             width: 230px;
             inset: -15px auto auto 0px !important;
         }
@@ -155,10 +121,7 @@ header {
         }
         .btn-user,
         .btn-user-collapse{
-            z-index: 9999;
-            i{
-                transition: 0.1s ease-in-out !important;
-            }
+            z-index: 5;
         }
     }
 

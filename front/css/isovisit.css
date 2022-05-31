@@ -105,7 +105,7 @@ This set of fonts are used in this project under the license: (.....)
   color: #1773B5 !important; }
 
 .iso-color-dark {
-  color: #001A34 !important; }
+  color: #001A34; }
 
 .iso-color-green-dark {
   color: #009d38; }
@@ -260,15 +260,14 @@ footer {
     background: #009d38 !important; } }
 
 .btn-close-modal {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.875em;
+  height: 1.875em;
   background-color: #fff;
   border: 2px solid #DC3545;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #dc3545;
-  border-radius: 9px; }
+  border-radius: 9px !important; }
   .btn-close-modal i {
     display: flex;
     align-items: center; }
@@ -287,7 +286,7 @@ footer {
 .communication-iso {
   left: 0.938rem;
   bottom: 1.5rem;
-  z-index: 9999;
+  z-index: 2;
   padding: 0.797rem; }
   .communication-iso > img {
     width: 2.375rem;
@@ -343,32 +342,14 @@ footer {
 .iso-position-relative {
   position: relative; }
 
-.line-black-dashed {
+.line-blur-dashed {
   width: 100%;
-  height: 1px !important;
-  border: 0;
+  height: 3px !important;
   background-position: top;
+  background-color: #fff;
   background-repeat: repeat-x;
-  background-image: linear-gradient(to right, white 50%, #313131a3 50%);
-  background-size: 19px 3px; }
-
-.line-muted-dashed {
-  width: 100%;
-  height: 1px !important;
-  border: 0;
-  background-position: top;
-  background-repeat: repeat-x;
-  background-image: linear-gradient(to right, white 50%, #999999 50%);
-  background-size: 9px 3px; }
-
-.line-muted-bg-green-dashed {
-  width: 100%;
-  height: 1px !important;
-  border: 0;
-  background-position: top;
-  background-repeat: repeat-x;
-  background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
-  background-size: 9px 3px; }
+  background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
+  background-size: 17px 16px; }
 
 .ellipse-blur, .ellipse-light {
   position: relative; }
@@ -404,8 +385,6 @@ header {
       font-size: 0.760rem; }
   header .btn-show-modal-login {
     font-size: 16px; }
-  header ::marker {
-    font-size: 200%; }
   header .unactive_menu {
     color: #001A34; }
   header .active_menu {
@@ -414,7 +393,7 @@ header {
   header .iso-hover-white {
     transition: 0.1s ease-in; }
   header .hover-line-blue:hover {
-    color: #1773B5 !important;
+    color: #1773B5;
     border-bottom: 0.125rem solid #1773B5; }
   header .hover-line-white:hover {
     border-bottom: 0.125rem solid #f8f9fa; }
@@ -423,57 +402,39 @@ header {
   header .banner .search-box-lg,
   header .banner .search-box-sm {
     z-index: 2; }
-    header .banner .search-box-lg .input-group,
-    header .banner .search-box-sm .input-group {
-      position: inherit; }
-      header .banner .search-box-lg .input-group i,
-      header .banner .search-box-sm .input-group i {
-        border-radius: 8px 0 0 8px !important;
-        height: 2.5rem; }
-      header .banner .search-box-lg .input-group input,
-      header .banner .search-box-sm .input-group input {
-        border-radius: 0 8px 8px 0 !important;
-        height: 2.5rem; }
-  header .banner #modalSearch {
+    header .banner .search-box-lg .input-group i,
+    header .banner .search-box-sm .input-group i {
+      height: 2.5rem; }
+    header .banner .search-box-lg .input-group input,
+    header .banner .search-box-sm .input-group input {
+      height: 2.5rem; }
+  header .banner .modal-search {
     z-index: 99999; }
-    header .banner #modalSearch .modal-content {
+    header .banner .modal-search .modal-content {
       background: #F0F1F1; }
-    header .banner #modalSearch .modal-body {
+    header .banner .modal-search .modal-body {
       min-height: 100vh; }
   header .banner .iso-position-absolute {
     top: 206px; }
-  header .modal .modal-footer {
-    border-top: 0.156rem dashed #1773B5; }
-  header .modal .box-verification-code {
-    border-color: #e2e3e4 !important; }
-    header .modal .box-verification-code:focus-within {
-      border: 0.125rem solid #1773B5 !important; }
-    header .modal .box-verification-code input:focus {
-      border-color: #1773B5 !important; }
-  header .modal .nav-link a {
-    border-color: #1773B5 !important; }
-  header .modal .card-login-password input {
-    border-radius: 0 8px 8px 0 !important; }
-  header .modal .card-login-password .input-group-text {
-    border-radius: 8px 0 0 8px !important; }
-  header .modal .card-login-password .input-login-password:focus {
-    border-color: #ced4da !important; }
-  header .modal .card-login-password i {
-    width: 1.25rem;
-    height: 1.25rem; }
+  header .modal-login .box-verification-code {
+    border: 1px solid #dee2e6; }
+    header .modal-login .box-verification-code:focus-within {
+      border: 0.125em solid #1773B5; }
+    header .modal-login .box-verification-code input {
+      border-color: #6c757d; }
+    header .modal-login .box-verification-code input:focus {
+      border-color: #1773B5; }
   header .menu-user {
     transition: 0.8s ease-in; }
     header .menu-user .dropdown-menu {
+      z-index: 4;
       width: 230px;
       inset: -15px auto auto 0px !important; }
     header .menu-user .dropdown-toggle:after {
       all: unset; }
     header .menu-user .btn-user,
     header .menu-user .btn-user-collapse {
-      z-index: 9999; }
-      header .menu-user .btn-user i,
-      header .menu-user .btn-user-collapse i {
-        transition: 0.1s ease-in-out !important; }
+      z-index: 5; }
 
 /* main */
 html {
@@ -520,15 +481,14 @@ footer {
     background: #009d38 !important; } }
 
 .btn-close-modal {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.875em;
+  height: 1.875em;
   background-color: #fff;
   border: 2px solid #DC3545;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #dc3545;
-  border-radius: 9px; }
+  border-radius: 9px !important; }
   .btn-close-modal i {
     display: flex;
     align-items: center; }
@@ -547,7 +507,7 @@ footer {
 .communication-iso {
   left: 0.938rem;
   bottom: 1.5rem;
-  z-index: 9999;
+  z-index: 2;
   padding: 0.797rem; }
   .communication-iso > img {
     width: 2.375rem;
@@ -603,32 +563,14 @@ footer {
 .iso-position-relative {
   position: relative; }
 
-.line-black-dashed {
+.line-blur-dashed {
   width: 100%;
-  height: 1px !important;
-  border: 0;
+  height: 3px !important;
   background-position: top;
+  background-color: #fff;
   background-repeat: repeat-x;
-  background-image: linear-gradient(to right, white 50%, #313131a3 50%);
-  background-size: 19px 3px; }
-
-.line-muted-dashed {
-  width: 100%;
-  height: 1px !important;
-  border: 0;
-  background-position: top;
-  background-repeat: repeat-x;
-  background-image: linear-gradient(to right, white 50%, #999999 50%);
-  background-size: 9px 3px; }
-
-.line-muted-bg-green-dashed {
-  width: 100%;
-  height: 1px !important;
-  border: 0;
-  background-position: top;
-  background-repeat: repeat-x;
-  background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
-  background-size: 9px 3px; }
+  background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
+  background-size: 17px 16px; }
 
 .ellipse-blur, .ellipse-light {
   position: relative; }

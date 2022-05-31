@@ -5,11 +5,11 @@ $(document).ready(function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
-            $(this).removeClass(['unactive_menu','iso-color-dark']);
+            $(this).removeClass('unactive_menu').addClass('text-white');
             $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
         }else{
             $(this).parent().removeClass('active_menu').addClass(['iso-color-blur-dark','bg-transparent']);
-            $(this).addClass('unactive_menu').removeClass('text-white');
+            $(this).removeClass('text-white');
             $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         }
     })
@@ -143,7 +143,7 @@ $(document).ready(function (){
 
     $(document).on('click','.accepted-info-user',function (){
         $(".menu-user").removeClass('d-none').addClass('d-flex');
-        $(".btn-login").addClass('d-none').removeClass('d-flex');
+        $(".btn-login,.btn-show-modal-login").addClass('d-none').removeClass('d-flex');
         $('.modal').modal('hide');
     });
     /* section login */

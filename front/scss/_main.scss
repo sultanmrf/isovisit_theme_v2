@@ -20,7 +20,7 @@ hr{
 }
 
 .form-control:focus,
-.btn:focus{
+.btn:focus {
   box-shadow: 0 0;
 }
 
@@ -54,15 +54,14 @@ hr{
 }
 
 .btn-close-modal{
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.875em;
+  height: 1.875em;
   background-color: #fff;
   border: 2px solid #DC3545;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #dc3545;
-  border-radius: 9px;
+  border-radius: 9px !important;
   i{
     display: flex;
     align-items: center;
@@ -88,7 +87,7 @@ hr{
 .communication-iso{
   left: 0.938rem;
   bottom: 1.5rem;
-  z-index: 9999;
+  z-index: 2;
   padding: 0.797rem;
 
   > img{
@@ -162,36 +161,31 @@ hr{
 }
 
 
-@mixin line-dashed($color,$background-end,$background-front){
+@mixin line-dashed($background-end,$background-front,$size_width,$size_height){
   width: 100%;
-  height: 1px !important;
-  border: 0;
+  height: 3px !important;
   background-position: top;
+  background-color: #fff;
   background-repeat: repeat-x;
-  @if($color == 'black'){
-    background-image: linear-gradient(to right, $background-end 50%, $background-front 50%);
-    background-size: 19px 3px;
-  }
-  @else if($color == 'muted'){
-    background-image: linear-gradient(to right, $background-end 50%, $background-front 50%);
-    background-size: 9px 3px;
-  }
-  @else {
-    background-image: linear-gradient(to right, $background-end 50%, $background-front 50%);
-    background-size: 9px 3px;
-  }
+  background-image: linear-gradient(to right, $background-end 50%, $background-front 50%);
+  background-size: $size_width +px $size_height+px;
 }
 
-.line-black-dashed{
-  @include line-dashed('black',white,#313131a3);
-}
+//.line-black-dashed{
+//  @include line-dashed('black',white,#313131a3);
+//}
+//
+//.line-muted-dashed{
+//  @include line-dashed('muted',white,$iso-secondary);
+//}
+//
+//.line-muted-bg-green-dashed{
+//  @include line-dashed('muted-bg-green',#d1e7dd,$iso-secondary);
+//}
 
-.line-muted-dashed{
-  @include line-dashed('muted',white,$iso-secondary);
-}
 
-.line-muted-bg-green-dashed{
-  @include line-dashed('muted-bg-green',#d1e7dd,$iso-secondary);
+.line-blur-dashed{
+  @include line-dashed(#fff,$iso-blue-dark,17,16);
 }
 
 .ellipse-blur{

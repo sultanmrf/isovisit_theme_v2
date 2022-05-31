@@ -43,14 +43,15 @@
                     <div class="offcanvas-body bg-light">
                         <ul class="list-group">
                             <li class="list-group-item border-0 mt-1 p-0 bg-transparent">
-                                <button type="button" class="btn border-0 col-12 text-start py-2 p-3 iso-bg-blur-dark btn-show-modal-login border-radius" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ورود / عضویت </button>
+                                <button type="button" class="btn border-0 col-12 text-start py-2 p-3 iso-bg-blur-dark btn-show-modal-login border-radius"
+                                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
                                 <!-- menu user logged in-->
-                                <div class="menu-user d-none">
+                                <div class="menu-user flex-column d-none">
                                     <button class="btn w-100 iso-bg-blur-dark px-2 p-0 text-light d-flex align-items-center justify-content-between btn-user-collapse collapsed border-radius"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu-user" aria-expanded="false" aria-controls="collapse-menu-user">
-                                        <figure class="d-flex align-items-center m-0">
-                                            <img src="./images/doc3.jpg" class="rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
-                                            <figcaption class="ms-1">
+                                        <figure class="figure d-flex align-items-center m-0">
+                                            <img src="./images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
+                                            <figcaption class="figure-caption text-light ms-1">
                                                 سیروس جعفری
                                             </figcaption>
                                         </figure>
@@ -58,40 +59,39 @@
                                     </button>
                                     <div class="collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
                                         <div class="card p-0 border-0 card-body">
-                                            <ul class="border-0 border-radius-bottom fw-normal iso-font-md px-1 py-0 iso-bg-blur-dark">
-                                                <hr class="bg-light m-0 mt-1">
-                                                <li class="p-2 pt-0 ellipse-light">
-                                                    <a href="#" class="text-light hover-line-white">
+                                            <ul class="border-0 border-radius-bottom fw-normal iso-font-md-em px-1 py-0 iso-bg-blur-dark">
+                                                <li class="p-2 mt-2 border-top ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
                                                         پروفایل
                                                     </a>
                                                 </li>
-                                                <li class="p-2 pt-0 ellipse-light">
-                                                    <a href="#" class="text-light hover-line-white">
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
                                                         مشاوره ها
                                                     </a>
                                                 </li>
-                                                <li class="p-2 pt-0 ellipse-light">
-                                                    <a href="#" class="text-light hover-line-white">
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
                                                         تراکنش ها
                                                     </a>
                                                 </li>
-                                                <li class="p-2 pt-0 ellipse-light">
-                                                    <a href="#" class="text-light hover-line-white">
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
                                                         پیام های منشی
                                                     </a>
                                                 </li>
-                                                <li class="p-2 pt-0 ellipse-light">
-                                                    <a href="#" class="text-light hover-line-white">
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
                                                         تیکت ها
                                                     </a>
                                                 </li>
-                                                <li class="p-2 pt-0 ellipse-light">
-                                                    <a href="#" class="text-light hover-line-white">
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
                                                         نظرات
                                                     </a>
                                                 </li>
-                                                <li class="p-2 pt-0">
-                                                    <button class="btn btn-danger fw-normal iso-font-sm">خروج</button>
+                                                <li class="p-2">
+                                                    <button class="btn btn-danger py-1 px-2 border-radius fw-normal iso-font-sm-em">خروج</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -114,8 +114,8 @@
                                 <a href="#" class="iso-color-dark hover-line-blue">پرسش و پاسخ</a>
                             </li>
                             <li class="list-group-item border-0 border-radius p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn d-flex justify-content-between iso-color-dark unactive_menu px-1 ms-1 pt-2 pb-0 btn-patients
-                                rounded-0 text-white align-items-center text-start col-11 bg-transparent"
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-patients
+                                rounded-0 align-items-center text-start col-11 bg-transparent"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatients" aria-expanded="false" aria-controls="collapsePatients">
                                     <span class="fw-medium">برای بیماران</span>
                                     <i class="fa-solid fa-chevron-down"></i>
@@ -150,8 +150,8 @@
                                 </div>
                             </li>
                             <li class="list-group-item border-0 border-radius p-0 mt-2 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn d-flex justify-content-between iso-color-dark unactive_menu px-1 ms-1 pt-2 pb-0 btn-doctors
-                                rounded-0 text-white align-items-center text-start col-11 bg-transparent"
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-doctors
+                                rounded-0 align-items-center text-start col-11 bg-transparent"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoctors" aria-expanded="false" aria-controls="collapseDoctors">
                                     <span  class="fw-medium">برای پزشکان</span>
                                     <i class="fa-solid fa-chevron-down"></i>
@@ -204,7 +204,7 @@
                         </ul>
                         <div class="d-flex mt-5 justify-content-center flex-wrap">
                             <a href="#" target="_blank" class="col-12 d-flex justify-content-center  p-0">
-                                <div class="col-8 py-1 border d-flex bg-white justify-content-evenly support-border-dark-light align-items-center rounded-pill">
+                                <div class="col-9 py-1 border d-flex bg-white justify-content-evenly support-border-dark-light align-items-center rounded-pill">
                                     <label class=" m-0 iso-color-blur-dark fw-bold">0022 651 0915</label>
                                     <img src="images/icons/support.png" alt="support">
                                 </div>
@@ -279,17 +279,17 @@
 
             <div class="btn-login col-3 col-sm-2 col-md-1 d-flex justify-content-end p-0 order-3">
                 <button type="button" class="btn text-light border-0 py-2 p-1 iso-bg-blur-dark text-nowrap border-radius btn-show-modal-login"
-                        data-bs-toggle="modal" data-bs-target="#modalLogin">ورود / عضویت </button>
+                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
             </div>
 
             <!-- section menu user logged in start-->
-            <div class="menu-user dropdown col-3 col-sm-2 col-xl-1 order-3 d-none justify-content-center">
-                <a href="#" class="btn border-radius iso-bg-blur-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="menu-user dropdown col-3  p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
+                <a href="#" class="btn border-radius iso-bg-blur-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user"
+                   role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>سیروس</span>
                     <i class="fa iso-font-lg-em fa-chevron-down ms-2"></i>
                 </a>
-
-                <ul class="dropdown-menu box-shadow iso-font-md-px border-0 border-radius fw-normal iso-font-md px-1 py-0 iso-bg-blur-dark" aria-labelledby="dropdownMenuLink">
+                <ul class="dropdown-menu box-shadow iso-font-md-em border-0 border-radius fw-normal iso-font-md px-1 py-0 iso-bg-blur-dark" aria-labelledby="dropdownMenuLink">
                     <li>
                         <figure class="d-flex align-items-center m-0">
                             <img src="./images/doc3.jpg" class="rounded-circle img-sm m-2" alt="عکس پروفایل">
@@ -329,15 +329,15 @@
                             نظرات
                         </a>
                     </li>
-                    <li class="p-2">
-                        <button class="btn btn-danger fw-normal iso-font-xs">خروج</button>
+                    <li class="p-1">
+                        <button class="btn btn-danger py-1 px-1 border-radius fw-normal iso-font-sm-em">خروج</button>
                     </li>
                 </ul>
             </div>
             <!-- section menu user logged in end-->
 
             <!-- section modal login start -->
-            <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+            <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <form action="#">
                         <div class="modal-content">
@@ -346,7 +346,7 @@
                                     <img src="./images/icons/user.png" alt="ورود / ثبت نام">
                                     <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                                 </div>
-                                <button type="button" class="btn btn-close-modal"
+                                <button type="button" class="btn iso-font-lg-em btn-close-modal text-danger"
                                         data-bs-dismiss="modal" aria-label="Close">
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
@@ -357,22 +357,23 @@
                                     <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
                                 </div>
                                 <div class="row flex-column align-items-center">
-                                    <div class="col-12 d-flex flex-wrap justify-content-center align-items-center p-0">
+                                    <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
                                         <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
                                         <input type="text" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615" maxlength="11">
                                     </div>
-                                    <button type="button" class="btn border-radius iso-bg-blur-dark col-12 mt-3 send text-light iso-font-lg-em">ورود</button>
+                                    <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blur-dark mt-3 send text-light iso-font-lg-em">ورود</button>
                                 </div>
                             </div>
-                            <div class="modal-footer pt-3 d-flex justify-content-center">
-                                <button type="button" class="btn btn-danger">
+                            <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
+                                <hr class="line-blur-dashed my-3 m-0"/>
+                                <button type="button" class="btn btn-danger iso-font-md-em">
                                     <img src="./images/icons/gmail.png" alt="ورود و ثبت نام با جیمیل">
-                                    <span class="iso-font-md-em ms-1">ورود / ثبت نام با جیمیل</span>
+                                    <span class="ms-1">ورود / ثبت نام با جیمیل</span>
                                 </button>
                                 <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
                             </div>
 
-                            <!-- section enter verification code -->
+                            <!-- section enter verification code start -->
                             <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
                                 <div class="container p-0">
                                     <div class="row">
@@ -382,22 +383,23 @@
                                         </div>
                                         <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
                                             <div class="row m-0">
-                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius border">
-                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
+                                                <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
+                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
                                                 </div>
-                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
                                                     <a href="#" class="iso-color-blur-dark login-with-password">ورود با کلمه عبور</a>
                                                     <a href="#"  class="iso-color-blur-dark edit-mobile">تغییر شماره موبایل</a>
                                                 </div>
-                                                <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blur-dark text-light iso-font-md-em active-btn accepted-info-user">تایید</button>
+                                                <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blur-dark text-light iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- section enter verification code end -->
 
                             <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
                                 <div class="container p-0">
@@ -406,22 +408,22 @@
                                             <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
                                         </div>
                                         <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
-                                            <label class="iso-font-md-em align-self-end">کلمه عبور</label>
-                                            <a href="#"  class="iso-color-blur-dark fw-normal iso-font-md-em edit-mobile">تغییر شماره موبایل</a>
+                                            <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                            <a href="#"  class="iso-color-blur-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
                                         </div>
                                         <div class="col-10 offset-1 col-sm-8 offset-sm-2">
                                             <div class="input-group flex-row-reverse">
-                                            <span class="input-group-text border-start-0 rounded-0 bg-light">
-                                                <i class="fa fa-eye-slash show-password iso-font-lg-em iso-color-secondary"></i>
+                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
+                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
                                             </span>
-                                                <input type="text" class="form-control input-login-password rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                                <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
                                             </div>
                                         </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-md-em d-flex justify-content-between">
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
                                             <a href="#" class="iso-color-blur-dark">ورود با کد تایید</a>
                                             <a href="#"  class="iso-color-blur-dark">فراموشی رمز عبور</a>
                                         </div>
-                                        <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blur-dark text-light">ورود</button>
+                                        <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blur-dark text-light border-radius">ورود</button>
                                     </div>
                                 </div>
                             </div>
@@ -445,14 +447,14 @@
                             </div>
                             <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-5 flex-column d-flex justify-content-center mt-lg-3">
                                 <div class="input-group flex-row-reverse align-items-center mt-lg-3">
-                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0"></i>
-                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg"  data-bs-toggle="false" data-bs-target="#modalSearch" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="basic-addon1">
+                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-self-center border-0"></i>
+                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start"  data-bs-toggle="false" data-bs-target=".modal-search" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="basic-addon1">
                                 </div>
                             </div>
                         </div>
 
                         <!-- Modal search -->
-                        <div class="modal fade" id="modalSearch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchLabel" aria-hidden="true" data-dismiss="modal">
+                        <div class="modal fade modal-search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchLabel" aria-hidden="true" data-dismiss="modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
@@ -464,7 +466,7 @@
                                             </div>
                                             <div class="search-box-sm col flex-column ms-4 px-1 d-flex justify-content-center">
                                                 <div class="input-group px-2 border-radius flex-row-reverse align-items-center bg-white">
-                                                    <button type="button" class="btn-close-modal input-group-text d-none"
+                                                    <button type="button" class="btn-close-modal iso-font-lg-em input-group-text d-none text-danger"
                                                             data-bs-dismiss="modal" aria-label="Close">
                                                         <i class="fa-solid fa-xmark"></i>
                                                     </button>
@@ -627,7 +629,7 @@
         <!-- section facilities and services start-->
         <section class="section-facilities-and-services overflow-hidden px-xxl-4">
             <h2 class="mt-3 iso-font-llg text-center fw-bold-lg my-4">امکانات و خدمات ایزو ویزیت برای بیماران</h2>
-            <div class="row gy-5 gx-xxl-5 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 fw-bold-lg">
+            <div class="row gy-4 gx-xxl-5 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 fw-bold-lg">
                 <div class="col bg-transparent border-0 position-relative d-flex flex-column">
                     <div class="card border-0 bg-transparent d-flex align-items-center">
                         <div class="card-header d-flex justify-content-center bg-transparent border-0 p-0 p-lg-3">
