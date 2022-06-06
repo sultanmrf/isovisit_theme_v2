@@ -1,29 +1,4 @@
-@media only screen and (min-width: 992px) {
-  html {
-    font-size: 1.350rem; }
-  .iso-position-relative-lg-none {
-    position: unset; }
-  .iso-position-absolute-lg-none {
-    position: unset; }
-  .animated-edit-position {
-    left: 7rem;
-    top: -1rem; }
-  .swiper-doctors,
-  .swiper-comments-users {
-    margin-top: 5em; }
-  .section-articles .section-btn button {
-    top: -55px; }
-  .svg-sing-in-doctor {
-    left: -230px;
-    top: -98px; } }
-
-@media only screen and (min-width: 768px) {
-  footer .footer-about {
-    border-top: 0 solid #fff; } }
-
 @media only screen and (max-width: 992px) {
-  .swiper-doctors {
-    margin-top: 0; }
   .position-top-lg-75 {
     top: 75%; }
   .section-comments-users .section-svg,
@@ -48,3 +23,33 @@
     bottom: -0.313rem; }
   .swiper .swiper-pagination-medicines {
     bottom: -0.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  footer .footer-about {
+    border-top: 0 solid #fff; } }
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1.350rem; }
+  .iso-position-relative-lg-none {
+    position: unset; }
+  .iso-position-absolute-lg-none {
+    position: unset; }
+  .animated-edit-position {
+    left: 7rem;
+    top: -1rem; }
+  main .section-facilities-and-services .card-header {
+    top: 0; }
+  .swiper-doctors,
+  .swiper-comments-users {
+    margin-top: 5em; }
+  .section-articles .section-btn button {
+    top: -55px; }
+  .svg-sing-in-doctor {
+    left: -230px;
+    top: -98px; } }
+
+@media only screen and (min-width: 1400px) {
+  footer .footer-certificates,
+  footer .footer-contact {
+    border-top: 0 solid; } }

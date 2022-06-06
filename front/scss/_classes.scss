@@ -1,7 +1,7 @@
 
 /* iso background custom */
 .iso-bg-blur-dark{
-  background: $iso-blue-dark !important;
+  background: $iso-blue-dark;
   color: white;
 }
 
@@ -31,7 +31,7 @@
 
 /* iso text color custom */
 .iso-color-blur-dark{
-  color: $iso-blue-dark !important;
+  color: $iso-blue-dark;
 }
 
 .iso-color-dark{
@@ -102,29 +102,26 @@
 .iso-font-llg-em{
   font-size: 1.5em;
 }
+
 /* iso border-radius */
 .border-radius{
-  border-radius: $iso-border-radius !important;
+  border-radius: $iso-border-radius;
 }
 
 .border-radius-bottom{
-  border-radius: 0 0 $iso-border-radius $iso-border-radius !important;
+  border-radius: 0 0 $iso-border-radius $iso-border-radius;
 }
 
 .border-radius-top{
-  border-radius: $iso-border-radius $iso-border-radius 0 0 !important;
+  border-radius: $iso-border-radius $iso-border-radius 0 0;
 }
 
 .border-radius-start{
-  border-radius:  0 $iso-border-radius $iso-border-radius 0 !important;
+  border-radius:  0 $iso-border-radius $iso-border-radius 0;
 }
 
 .border-radius-end{
-  border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
-}
-/* iso border-color */
-.border-color-light{
-  border-color: $iso-border-color-light !important;
+  border-radius: $iso-border-radius 0 0 $iso-border-radius;
 }
 
 /* iso shadow */
@@ -139,6 +136,7 @@
 .box-shadow-sm{
   box-shadow: 0 0 4px 0 #00000040;
 }
+
 /* iso font weight */
 .fw-medium{
   font-weight: 500;
@@ -149,7 +147,7 @@
 }
 /* iso margin */
 .ms-6{
-  margin-right: 0.25rem!important;
+  margin-right: 0.25rem;
 }
 
 /* iso padding */

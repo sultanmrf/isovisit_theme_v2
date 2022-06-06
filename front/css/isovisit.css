@@ -79,7 +79,7 @@ This set of fonts are used in this project under the license: (.....)
 /* custom classes */
 /* iso background custom */
 .iso-bg-blur-dark {
-  background: #1773B5 !important;
+  background: #1773B5;
   color: white; }
 
 .iso-bg-blur-light {
@@ -227,8 +227,7 @@ body {
   color: #001A34; }
 
 a {
-  text-decoration: none;
-  cursor: pointer; }
+  text-decoration: none; }
 
 hr {
   opacity: 1; }
@@ -246,18 +245,13 @@ hr {
 .section-medicines,
 .section-sign-in-doctor,
 header,
-footer {
+footer,
+.communication-iso,
+.scroll-top {
   font-size: 16px; }
 
-@media only screen and (min-width: 992px) {
-  .active-btn:hover {
-    background: #009d38 !important;
-    box-shadow: 0 0 !important; } }
-
-@media only screen and (max-width: 992px) {
-  .active-btn:active {
-    box-shadow: 0 0 !important;
-    background: #009d38 !important; } }
+.active-btn:hover {
+  background: #009d38; }
 
 .btn-close-modal {
   width: 1.875em;
@@ -275,37 +269,31 @@ footer {
 .dropdown .nav-link:after {
   all: unset; }
 
+/* swiper pagination start */
 .swiper-pagination-bullet-active {
-  width: 1.25rem !important;
-  border-radius: 0.5rem !important;
+  width: 1.25em;
+  border-radius: 0.5rem;
   background: #1773B5; }
 
-.swiper-pagination-bullet {
-  margin: 0.188rem !important; }
-
+/* swiper pagination end */
 .communication-iso {
-  left: 0.938rem;
-  bottom: 1.5rem;
+  left: 4%;
+  bottom: 1.5em;
   z-index: 2;
-  padding: 0.797rem; }
-  .communication-iso > img {
-    width: 2.375rem;
-    height: 2.375rem; }
+  padding: 0.797em; }
   .communication-iso .dropdown-menu-communication {
-    position: absolute;
-    top: -14.063rem;
+    bottom: 38px;
     left: 0;
-    width: 10rem; }
+    width: 10em; }
     .communication-iso .dropdown-menu-communication li {
       display: none; }
 
 .scroll-top {
-  right: 0.875rem;
+  right: 4%;
   z-index: 9999;
-  bottom: 1.60rem !important;
-  width: 1.875rem;
-  height: 1.875rem;
-  display: none; }
+  bottom: 1.60em;
+  width: 2em;
+  height: 2em; }
 
 .rotate-180deg,
 .rotate-0deg {
@@ -342,12 +330,25 @@ footer {
 .iso-position-relative {
   position: relative; }
 
-.line-blur-dashed {
+.line-blur-dashed,
+.line-muted-dashed,
+.line-black-dashed,
+.line-muted-bg-green-dashed {
   width: 100%;
-  height: 3px !important;
+  height: 3px;
   background-position: top;
   background-color: #fff;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; }
+
+.line-black-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #000 50%);
+  background-size: 17px 16px; }
+
+.line-muted-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
+  background-size: 17px 16px; }
+
+.line-blur-dashed {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 
@@ -416,6 +417,8 @@ header {
       min-height: 100vh; }
   header .banner .iso-position-absolute {
     top: 206px; }
+  header .btn-return {
+    height: 2.5em; }
   header .modal-login .box-verification-code {
     border: 1px solid #dee2e6; }
     header .modal-login .box-verification-code:focus-within {
@@ -448,8 +451,7 @@ body {
   color: #001A34; }
 
 a {
-  text-decoration: none;
-  cursor: pointer; }
+  text-decoration: none; }
 
 hr {
   opacity: 1; }
@@ -467,18 +469,13 @@ hr {
 .section-medicines,
 .section-sign-in-doctor,
 header,
-footer {
+footer,
+.communication-iso,
+.scroll-top {
   font-size: 16px; }
 
-@media only screen and (min-width: 992px) {
-  .active-btn:hover {
-    background: #009d38 !important;
-    box-shadow: 0 0 !important; } }
-
-@media only screen and (max-width: 992px) {
-  .active-btn:active {
-    box-shadow: 0 0 !important;
-    background: #009d38 !important; } }
+.active-btn:hover {
+  background: #009d38; }
 
 .btn-close-modal {
   width: 1.875em;
@@ -496,37 +493,31 @@ footer {
 .dropdown .nav-link:after {
   all: unset; }
 
+/* swiper pagination start */
 .swiper-pagination-bullet-active {
-  width: 1.25rem !important;
-  border-radius: 0.5rem !important;
+  width: 1.25em;
+  border-radius: 0.5rem;
   background: #1773B5; }
 
-.swiper-pagination-bullet {
-  margin: 0.188rem !important; }
-
+/* swiper pagination end */
 .communication-iso {
-  left: 0.938rem;
-  bottom: 1.5rem;
+  left: 4%;
+  bottom: 1.5em;
   z-index: 2;
-  padding: 0.797rem; }
-  .communication-iso > img {
-    width: 2.375rem;
-    height: 2.375rem; }
+  padding: 0.797em; }
   .communication-iso .dropdown-menu-communication {
-    position: absolute;
-    top: -14.063rem;
+    bottom: 38px;
     left: 0;
-    width: 10rem; }
+    width: 10em; }
     .communication-iso .dropdown-menu-communication li {
       display: none; }
 
 .scroll-top {
-  right: 0.875rem;
+  right: 4%;
   z-index: 9999;
-  bottom: 1.60rem !important;
-  width: 1.875rem;
-  height: 1.875rem;
-  display: none; }
+  bottom: 1.60em;
+  width: 2em;
+  height: 2em; }
 
 .rotate-180deg,
 .rotate-0deg {
@@ -563,12 +554,25 @@ footer {
 .iso-position-relative {
   position: relative; }
 
-.line-blur-dashed {
+.line-blur-dashed,
+.line-muted-dashed,
+.line-black-dashed,
+.line-muted-bg-green-dashed {
   width: 100%;
-  height: 3px !important;
+  height: 3px;
   background-position: top;
   background-color: #fff;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; }
+
+.line-black-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #000 50%);
+  background-size: 17px 16px; }
+
+.line-muted-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
+  background-size: 17px 16px; }
+
+.line-blur-dashed {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 

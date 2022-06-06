@@ -6,7 +6,6 @@ main {
   .iso-line-title {
     width: 0.375em;
     height: 2.3em;
-    background: aqua;
     position: absolute;
     border-radius: 1.875rem;
   }
@@ -18,6 +17,7 @@ main {
     }
 
     .card-header {
+      top: 5%;
       .card-img {
         width: 50%;
         height: 162%;

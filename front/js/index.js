@@ -52,16 +52,20 @@ $(document).ready(function (){
         }
     })
 
-    var $window = $(window);
+    let $window = $(window);
     $window.on('scroll', revealOnScroll);
 
     function revealOnScroll() {
-        var scrolled = $window.scrollTop();
-
+        let scrolled = $window.scrollTop();
+        if (scrolled  > 500) {
+            $(".scroll-top").addClass('d-flex').removeClass('d-none');
+        }else{
+            $(".scroll-top").removeClass('d-flex').addClass('d-none');
+        }
         // Animation is showing...
         $(".section-svg").each(function () {
-            var $this = $(this);
-            var offsetTop = $this.offset().top - 550;
+            let $this = $(this);
+            let offsetTop = $this.offset().top - 550;
 
             // show svg if scroll > offsetTop tag
             if (scrolled  > offsetTop) {
@@ -74,6 +78,7 @@ $(document).ready(function (){
     $(document).on('click','.scroll-top',function (){
         $('html').animate({scrollTop : 0},200);
     });
+
 
 
     /* section login */
@@ -169,10 +174,6 @@ $(document).ready(function (){
     if(window.matchMedia("(max-width: 576px)").matches) {
 
         $(".search-input-lg").attr('data-bs-toggle',"modal");
-        $(document).on('click','.btn-return',function (){
-            $('#modalSearch').modal('hide');
-        })
-
         $(document).on('keyup','.search-input-sm',function (){
             let character_length = $(this).val().length;
             if(character_length >= 2){
@@ -203,5 +204,11 @@ $(document).ready(function (){
         })
 
     }
+    $(document).on('click','.clear-input',function () {
+        $(".search-input-sm").val('');
+        $(this).addClass('d-none');
+        $(".fa-magnifying-glass").addClass('d-flex').removeClass('d-none');
+        $(".result-search .list-group").html('');
+    });
 
 });

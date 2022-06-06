@@ -12,7 +12,6 @@ body{
 
 a{
   text-decoration: none;
-  cursor: pointer;
 }
 
 hr{
@@ -33,24 +32,16 @@ hr{
 .section-medicines,
 .section-sign-in-doctor,
  header,
- footer{
+ footer,
+.communication-iso,
+.scroll-top{
   font-size: 16px;
 }
 
 .active-btn{
-  @media only screen and (min-width: 992px) {
     &:hover{
-      background: $iso-green-dark !important;
-      box-shadow: 0 0 !important;
+      background: $iso-green-dark;
     }
-  }
-  @media only screen and (max-width: 992px) {
-    &:active{
-      box-shadow: 0 0 !important;
-      background: $iso-green-dark !important;
-    }
-  }
-
 }
 
 .btn-close-modal{
@@ -74,31 +65,23 @@ hr{
   }
 }
 
+/* swiper pagination start */
 .swiper-pagination-bullet-active{
-  width: $iso-llg !important;
-  border-radius: 0.5rem !important;
+  width: 1.25em;
+  border-radius: 0.5rem;
   background: $iso-blue-dark;
 }
-
-.swiper-pagination-bullet{
-  margin: 0.188rem !important;
-}
+/* swiper pagination end */
 
 .communication-iso{
-  left: 0.938rem;
-  bottom: 1.5rem;
+  left: 4%;
+  bottom: 1.5em;
   z-index: 2;
-  padding: 0.797rem;
-
-  > img{
-    width: 2.375rem;
-    height: 2.375rem;
-  }
+  padding: 0.797em;
   .dropdown-menu-communication{
-    position: absolute;
-    top: -14.063rem;
+    bottom: 38px;
     left: 0;
-    width: 10rem;
+    width: 10em;
     li{
       display: none;
     }
@@ -106,12 +89,11 @@ hr{
 }
 
 .scroll-top{
-  right: $iso-sm;
+  right: 4%;
   z-index: 9999;
-  bottom: 1.60rem !important;
-  width: 1.875rem;
-  height: 1.875rem;
-  display: none;
+  bottom: 1.60em;
+  width: 2em;
+  height: 2em;
 }
 
 .rotate-180deg,
@@ -147,7 +129,6 @@ hr{
   height: 72px;
 }
 
-
 .position-top-0{
   top: 0;
 }
@@ -160,32 +141,36 @@ hr{
   position: relative;
 }
 
-
-@mixin line-dashed($background-end,$background-front,$size_width,$size_height){
-  width: 100%;
-  height: 3px !important;
-  background-position: top;
-  background-color: #fff;
-  background-repeat: repeat-x;
+@mixin line-dashed-style($background-end,$background-front,$size_width,$size_height){
   background-image: linear-gradient(to right, $background-end 50%, $background-front 50%);
   background-size: $size_width +px $size_height+px;
 }
 
-//.line-black-dashed{
-//  @include line-dashed('black',white,#313131a3);
-//}
-//
-//.line-muted-dashed{
-//  @include line-dashed('muted',white,$iso-secondary);
-//}
-//
-//.line-muted-bg-green-dashed{
-//  @include line-dashed('muted-bg-green',#d1e7dd,$iso-secondary);
-//}
+.line-blur-dashed,
+.line-muted-dashed,
+.line-black-dashed,
+.line-muted-bg-green-dashed{
+  width: 100%;
+  height: 3px;
+  background-position: top;
+  background-color: #fff;
+  background-repeat: repeat-x;
+}
 
+.line-black-dashed{
+  @include line-dashed-style(#fff,#000,17,16);
+}
+
+.line-muted-dashed{
+  @include line-dashed-style(#fff,$iso-blue-dark,17,16);
+}
+
+.line-muted-bg-green-dashed{
+  @include line-dashed-style('muted-bg-green',#d1e7dd,$iso-secondary);
+}
 
 .line-blur-dashed{
-  @include line-dashed(#fff,$iso-blue-dark,17,16);
+  @include line-dashed-style(#fff,$iso-blue-dark,17,16);
 }
 
 .ellipse-blur{
