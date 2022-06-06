@@ -266,6 +266,10 @@ footer,
 .dropdown .nav-link:after {
   all: unset; }
 
+.input-group button, .input-group input {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
 /* swiper pagination start */
 .swiper-pagination-bullet-active {
   width: 1.25em;
@@ -416,6 +420,9 @@ header {
     header .banner .search-box-lg .input-group input,
     header .banner .search-box-sm .input-group input {
       height: 2.5rem; }
+    header .banner .search-box-lg .input-group-search,
+    header .banner .search-box-sm .input-group-search {
+      height: 2.5rem; }
   header .banner .modal-search {
     z-index: 99999; }
     header .banner .modal-search .modal-content {
@@ -500,6 +507,10 @@ footer,
 
 .dropdown .nav-link:after {
   all: unset; }
+
+.input-group button, .input-group input {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
 
 /* swiper pagination start */
 .swiper-pagination-bullet-active {
