@@ -392,7 +392,9 @@ header {
     header .nav .dropdown-menu {
       width: 200px;
       border-radius: 0 8px 8px;
-      transform: translate3d(0px, 34px, 0px) !important; }
+      -webkit-transform: translate3d(0px, 34px, 0px) !important;
+      -moz-transform: translate3d(0px, 34px, 0px) !important;
+      -o-transform: translate3d(0px, 34px, 0px) !important; }
     header .nav, header .nav .dropdown-menu {
       font-size: 0.760rem; }
   header .btn-show-modal-login {
@@ -403,7 +405,9 @@ header {
     background: #1773B5; }
   header .iso-hover-blue,
   header .iso-hover-white {
-    transition: 0.1s ease-in; }
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in; }
   header .hover-line-blue:hover {
     color: #1773B5;
     border-bottom: 0.125rem solid #1773B5; }
