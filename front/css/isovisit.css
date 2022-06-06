@@ -102,7 +102,7 @@ This set of fonts are used in this project under the license: (.....)
 
 /* iso text color custom */
 .iso-color-blur-dark {
-  color: #1773B5 !important; }
+  color: #1773B5; }
 
 .iso-color-dark {
   color: #001A34; }
@@ -158,23 +158,19 @@ This set of fonts are used in this project under the license: (.....)
 
 /* iso border-radius */
 .border-radius {
-  border-radius: 8px !important; }
+  border-radius: 8px; }
 
 .border-radius-bottom {
-  border-radius: 0 0 8px 8px !important; }
+  border-radius: 0 0 8px 8px; }
 
 .border-radius-top {
-  border-radius: 8px 8px 0 0 !important; }
+  border-radius: 8px 8px 0 0; }
 
 .border-radius-start {
-  border-radius: 0 8px 8px 0 !important; }
+  border-radius: 0 8px 8px 0; }
 
 .border-radius-end {
-  border-radius: 8px 0 0 8px !important; }
-
-/* iso border-color */
-.border-color-light {
-  border-color: #D6D8D9 !important; }
+  border-radius: 8px 0 0 8px; }
 
 /* iso shadow */
 .text-shadow {
@@ -195,7 +191,7 @@ This set of fonts are used in this project under the license: (.....)
 
 /* iso margin */
 .ms-6 {
-  margin-right: 0.25rem !important; }
+  margin-right: 0.25rem; }
 
 /* iso padding */
 .px-12 {
@@ -247,7 +243,8 @@ hr {
 header,
 footer,
 .communication-iso,
-.scroll-top {
+.scroll-top,
+.section-data-profile-doctor {
   font-size: 16px; }
 
 .active-btn:hover {
@@ -300,10 +297,16 @@ footer,
   transition: 0.4s ease; }
 
 .rotate-180deg {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(0deg); }
 
 .rotate-0deg {
-  transform: rotate(0deg); }
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg); }
 
 .img-xs {
   width: 24px;
@@ -346,6 +349,10 @@ footer,
 
 .line-muted-dashed {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
+  background-size: 17px 16px; }
+
+.line-muted-bg-green-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #d1e7dd 50%);
   background-size: 17px 16px; }
 
 .line-blur-dashed {
@@ -471,7 +478,8 @@ hr {
 header,
 footer,
 .communication-iso,
-.scroll-top {
+.scroll-top,
+.section-data-profile-doctor {
   font-size: 16px; }
 
 .active-btn:hover {
@@ -524,10 +532,16 @@ footer,
   transition: 0.4s ease; }
 
 .rotate-180deg {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(0deg); }
 
 .rotate-0deg {
-  transform: rotate(0deg); }
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg); }
 
 .img-xs {
   width: 24px;
@@ -572,6 +586,10 @@ footer,
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 
+.line-muted-bg-green-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #d1e7dd 50%);
+  background-size: 17px 16px; }
+
 .line-blur-dashed {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
@@ -610,7 +628,7 @@ footer .swiper-certificates .swiper-wrapper {
   height: 10em; }
 
 footer .swiper-certificates .swiper-pagination-certificates {
-  bottom: -.50em; }
+  top: 8.5em; }
 
 footer .swiper-pagination-bullet-active {
   background: #009d38; }

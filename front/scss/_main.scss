@@ -34,7 +34,8 @@ hr{
  header,
  footer,
 .communication-iso,
-.scroll-top{
+.scroll-top,
+.section-data-profile-doctor{
   font-size: 16px;
 }
 
@@ -102,11 +103,17 @@ hr{
 }
 
 .rotate-180deg{
-  transform: rotate(180deg);
+   transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(0deg);
 }
 
 .rotate-0deg{
-  transform: rotate(0deg);
+   transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 .img-xs{
@@ -166,7 +173,7 @@ hr{
 }
 
 .line-muted-bg-green-dashed{
-  @include line-dashed-style('muted-bg-green',#d1e7dd,$iso-secondary);
+  @include line-dashed-style(#fff,#d1e7dd,17,16);
 }
 
 .line-blur-dashed{

@@ -2,12 +2,7 @@ $(document).ready(function (){
 
 
     /* swiper main page */
-    initSwiper(".swiper-question-answer",1,16,false, true,'.swiper-pagination-question-answer');
-
     initSwiper(".swiper-medicines","auto",16,false, true,'.swiper-pagination-medicines');
-
-    initSwiper(".swiper-certificates",2,10,false, true,'.swiper-pagination-certificates');
-
 
     if (window.matchMedia("(min-width: 992px)").matches) {
 
@@ -32,7 +27,7 @@ $(document).ready(function (){
         $('.svg-medicines').attr('viewBox','0 100 500 317');
 
     }
-    else if(window.matchMedia("(max-width: 992px)").matches){
+     if(window.matchMedia("(max-width: 992px)").matches){
 
         initSwiper(".swiper-comments-users","auto",16,false, false);
 
@@ -42,10 +37,6 @@ $(document).ready(function (){
 
         initSwiper(".swiper-services","auto",16,false, false);
 
-        initSwiper(".swiper-question-answer",2,16,false, true,".swiper-pagination-question-answer");
-
-        initSwiper(".swiper-articles",2,16,false, true,".swiper-pagination-article");
-
         $('.svg-doctors').attr('viewBox','-20 18 500 397');
         $('.svg-articles').attr('viewBox','-50 134 500 400');
         $('.svg-comment-users').attr('viewBox','-20 15 500 400');
@@ -54,10 +45,12 @@ $(document).ready(function (){
 
 
     if (window.matchMedia("(max-width: 576px)").matches){
+        initSwiper(".swiper-question-answer",1,16,false, true,".swiper-pagination-question-answer");
         initSwiper(".swiper-articles",1,16,false, true,".swiper-pagination-article");
     }
 
-    if (window.matchMedia("(min-width: 576px) and (max-width: 576px)").matches){
+    if (window.matchMedia("(min-width: 576px) and (max-width: 992px)").matches){
+        initSwiper(".swiper-question-answer",2,16,false, true,".swiper-pagination-question-answer");
         initSwiper(".swiper-articles",2,16,false, true,".swiper-pagination-article");
     }
 
