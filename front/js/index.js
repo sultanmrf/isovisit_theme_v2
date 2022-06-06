@@ -5,8 +5,7 @@ $(document).ready(function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
-            $(this).removeClass('unactive_menu').addC
-             lass('text-white');
+            $(this).removeClass('unactive_menu').addClass('text-white');
             $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
         }else{
             $(this).parent().removeClass('active_menu').addClass(['iso-color-blur-dark','bg-transparent']);
