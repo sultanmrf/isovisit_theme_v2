@@ -20,7 +20,6 @@ header {
             border-radius: 0 $iso-border-radius $iso-border-radius;
             -webkit-transform: translate3d(0px, 34px, 0px) !important;
             -moz-transform: translate3d(0px, 34px, 0px) !important;
-            -o-transform: translate3d(0px, 34px, 0px) !important;
         }
 
         &,.dropdown-menu{
@@ -125,7 +124,8 @@ header {
         .dropdown-menu{
             z-index: 4;
             width: 230px;
-            inset: -15px auto auto 0px !important;
+            -webkit-transform:  translate(0px, 31px) !important;
+            -moz-transform:  translate(0px, 31px) !important;
         }
         .dropdown-toggle:after{
             all: unset;

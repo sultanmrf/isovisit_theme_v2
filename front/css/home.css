@@ -24,12 +24,13 @@ main .section-facilities-and-services .card {
   height: 12rem; }
 
 main .section-facilities-and-services .card-header {
+  font-size: 16px;
   top: 5%;
   z-index: 2;
   width: 9.75rem; }
   main .section-facilities-and-services .card-header .card-img {
     width: 50%;
-    height: 162%; }
+    height: 5em; }
     main .section-facilities-and-services .card-header .card-img img {
       width: 61%; }
 
