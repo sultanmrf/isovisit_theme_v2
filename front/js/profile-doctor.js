@@ -31,21 +31,21 @@ $(document).ready(function (){
     $(document).on('click','.more-comment',function (){
         $(".section-comments-users > .row").append('<div class="col-12">\n' +
             '                    <div class="card p-2 bg-light border-radius">\n' +
-            '                        <div class="card-header border-0 p-0 bg-transparent iso-font-md fw-normal text-center">\n' +
+            '                        <div class="card-header border-0 p-0 bg-transparent fw-normal text-center">\n' +
             '                            <figure class="figure d-flex align-items-center">\n' +
             '                                <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">\n' +
-            '                                <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md fw-normal iso-color-dark mx-2">\n' +
-            '                                    <span class="iso-font-sm text-start">محمد رضا فنودی</span>\n' +
-            '                                    <div class="row gx-2 iso-font-xxs mt-1 fw-normal">\n' +
+            '                                <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em iso-color-dark mx-2">\n' +
+            '                                    <span class="iso-font-sm-em text-start">محمد رضا فنودی</span>\n' +
+            '                                    <div class="row gx-2 iso-font-xs-em mt-1 fw-normal">\n' +
             '                                        <span class="col text-nowrap border-radius alert-secondary">کاربر مهمان</span>\n' +
             '                                        <span class="col">1400/11/15</span>\n' +
             '                                    </div>\n' +
             '                                </figcaption>\n' +
             '                            </figure>\n' +
-            '                            <hr class="line-muted-dashed"/>\n' +
+            '                            <div class="line-muted-dashed"></div>\n' +
             '                        </div>\n' +
-            '                        <div class="card-body pt-0 px-1">\n' +
-            '                            <div class="card-text iso-font-md fw-normal">\n' +
+            '                        <div class="card-body pt-0 mt-2 px-1">\n' +
+            '                            <div class="card-text iso-font-md-em fw-normal">\n' +
             '                                <p>من برای حملات پنیک که بعد از کرونا دچار شدم مشاوره میخواستم کدوم یکی رو باید انتخاب کنم برای مشاوره ؟ کرونام خوب شده وای حملات پنیک بهم دست میده  </p>\n' +
             '                            </div>\n' +
             '                        </div>\n' +
@@ -56,7 +56,7 @@ $(document).ready(function (){
             '                                    <span class="mx-2">3</span>\n' +
             '                                </div>\n' +
             '                                <div class="col-6">\n' +
-            '                                    <button class="btn w-100 border-radius text-light iso-bg-blur-dark">پاسخ</button>\n' +
+            '                                    <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blur-dark">پاسخ</button>\n' +
             '                                </div>\n' +
             '                            </div>\n' +
             '                        </div>\n' +
@@ -76,19 +76,24 @@ $(document).ready(function (){
 
     show_map('contact__map',36.312416, 59.553421)
 
-    $(window).scroll(function (){
-        if (window.matchMedia("(min-width: 1400px)").matches) {
-            if(window.scrollY > 2700){
-                $(".section-get-advice").css({top:'228px'});
+
+    let $window = $(window);
+    $window.on('scroll', revealOnScroll);
+
+    function revealOnScroll() {
+        let scrolled = $window.scrollTop();
+
+        $("footer").each(function () {
+            let $this = $(this);
+            let offsetTop = $this.offset().top - 700;
+            // show svg if scroll > offsetTop tag
+
+            // debugger;
+            if (scrolled  >= offsetTop) {
+                $(".position-section-get-advice").css({top:-(scrolled - offsetTop) + 'px'});
             }else{
-                $(".section-get-advice").css({top:'169px'});
+                $(".position-section-get-advice").css({top:'115px'});
             }
-        } else {
-            if(window.scrollY > 3020){
-                $(".section-get-advice").css({top:'-188px'});
-            }else{
-                $(".section-get-advice").css({top:'169px'});
-            }
-        }
-    });
+        });
+    }
 });

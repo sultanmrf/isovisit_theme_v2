@@ -48,11 +48,11 @@
 
 /* iso font size */
 .iso-font-xs {
-  font-size: $iso-xs;
+  font-size: $iso-xxs;
 }
 
 .iso-font-xxs {
-  font-size: $iso-xxs;
+  font-size: $iso-xs;
 }
 
 .iso-font-sm {
@@ -105,7 +105,7 @@
 
 /* iso border-radius */
 .border-radius{
-  border-radius: $iso-border-radius;
+  border-radius: $iso-border-radius !important;
 }
 
 .border-radius-bottom{

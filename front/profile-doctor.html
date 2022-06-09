@@ -11,436 +11,442 @@
     <link href="../node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="../node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
     <link href="../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
+    <link href="../node_modules/star-rating-svg/src/css/star-rating-svg.css" rel="stylesheet" />
     <link href="./css/isovisit.css" rel="stylesheet">
     <link href="./css/profile-doctor.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
 </head>
 <body>
+<!-- section header start -->
 <header>
-    <div class="row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm">
-        <!-- navbar section mobile  -->
-        <nav class="col-1 col-xl-9 order-xl-2 order-1">
-            <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <img src="./images/bar.png" alt="bar">
-            </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
-                    <!-- logo section  -->
-                    <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0">
-                        <img src="./images/logo.png" alt="isovisit" class="figure-img m-0">
-                        <figcaption class="figure-caption d-flex flex-column">
-                            <span class="iso-font-lg text-success fw-bold">ایزو ویزیت</span>
-                            <span class="iso-font-xs iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
-                        </figcaption>
-                    </figure>
-                    <!-- logo section  -->
-                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <img src="./images/Vector.png" alt="logo">
-                    </button>
+    <div class="container-xxl p-0">
+        <!-- section navbar start-->
+        <div class="row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0">
+            <!-- section navbar mobile start  -->
+            <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
+                <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img src="./images/bar.png" alt="منو">
                 </div>
-                <div class="offcanvas-body bg-light">
-                    <ul class="list-group">
-                        <li class="list-group-item border-0 mt-1 p-0 bg-transparent">
-                            <button type="button" class="btn border-0 col-12 text-start py-2 p-3 iso-bg-blur-dark btn-show-modal-login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ورود / عضویت </button>
-                            <!-- menu user logged in-->
-                            <div class="menu-user d-none">
-                                <button class="btn w-100 iso-bg-blur-dark px-2 p-0 text-light d-flex align-items-center justify-content-between btn-user-collapse collapsed border-radius"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu-user" aria-expanded="false" aria-controls="collapse-menu-user">
-
-                                    <figure class="d-flex align-items-center m-0">
-                                        <img src="./images/doc3.jpg" class="rounded-circle img-sm m-1" alt="عکس پروفایل">
-                                        <figcaption class="ms-1">
-                                            سیروس جعفری
-                                        </figcaption>
-                                    </figure>
-                                    <i class="fa iso-font-lg fa-chevron-down ms-2"></i>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
+                        <!-- logo section  -->
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0">
+                            <img src="./images/logo.png" alt="ایزو ویزیت" class="figure-img m-0">
+                            <figcaption class="figure-caption d-flex flex-column me-2 me-sm-0">
+                                <h1 class="iso-font-lg text-success fw-bold">ایزو ویزیت</h1>
+                                <h2 class="iso-font-xs iso-color-dark lh-base">حس خوب یک درمان آنلاین </h2>
+                            </figcaption>
+                        </figure>
+                        <!-- logo section  -->
+                        <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="./images/Vector.png" alt="بستن">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body bg-light">
+                        <ul class="list-group">
+                            <li class="list-group-item border-0 mt-1 p-0 bg-transparent">
+                                <button type="button" class="btn col-12 border-0 text-start py-2 p-3 iso-bg-blur-dark btn-show-modal-login border-radius active-btn"
+                                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
+                                <!-- menu user logged in-->
+                                <div class="menu-user flex-column d-none">
+                                    <button class="btn w-100 iso-bg-blur-dark px-2 p-0 text-light d-flex align-items-center justify-content-between btn-user-collapse collapsed border-radius"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu-user" aria-expanded="false" aria-controls="collapse-menu-user">
+                                        <figure class="figure d-flex align-items-center m-0">
+                                            <img src="./images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
+                                            <figcaption class="figure-caption text-light ms-1">
+                                                سیروس جعفری
+                                            </figcaption>
+                                        </figure>
+                                        <i class="fa iso-font-lg fa-chevron-down ms-2"></i>
+                                    </button>
+                                    <div class="collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
+                                        <div class="card p-0 border-0 card-body">
+                                            <ul class="border-0 border-radius-bottom fw-normal iso-font-md-em px-1 py-0 iso-bg-blur-dark">
+                                                <hr class="bg-light my-2 m-0"/>
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
+                                                        پروفایل
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
+                                                        مشاوره ها
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
+                                                        تراکنش ها
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
+                                                        پیام های منشی
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
+                                                        تیکت ها
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 ellipse-light">
+                                                    <a href="#" class="text-light hover-line-white ms-3">
+                                                        نظرات
+                                                    </a>
+                                                </li>
+                                                <li class="p-2">
+                                                    <button class="btn btn-danger py-1 px-2 border-radius fw-normal iso-font-sm-em">خروج</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">صفحه اصلی</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">مشاوره پزشکی</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">پزشکان</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">تخصص ها</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1  bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">پرسش و پاسخ</a>
+                            </li>
+                            <li class="list-group-item border-0 border-radius p-0 d-flex justify-content-center flex-wrap bg-transparent">
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-patients
+                                rounded-0 align-items-center text-start col-11 iso-font-md-em bg-transparent"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatients" aria-expanded="false" aria-controls="collapsePatients">
+                                    <span class="fw-medium">برای بیماران</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
                                 </button>
-                                <div class="collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
-                                    <div class="card p-0 border-0 card-body">
-                                        <ul class="border-0 border-radius-bottom fw-normal iso-font-md px-1 py-0 iso-bg-blur-dark">
-                                            <hr class="bg-light m-0 mt-1">
-                                            <li class="p-2 pt-0">
-                                                <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                                <a href="#" class="text-light hover-line-white">
-                                                    پروفایل
+                                <div class="collapse border-top mt-2 p-2" id="collapsePatients">
+                                    <div class="card mt-2 bg-transparent border-0">
+                                        <ul class="row gy-3 fw-normal list-unstyled px-2">
+                                            <li class="ellipse-light">
+                                                <a href="#" class="text-light hover-line-white ms-3">
+                                                    سوالات متداول
                                                 </a>
                                             </li>
-                                            <li class="p-2 pt-0">
-                                                <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                                <a href="#" class="text-light hover-line-white">
-                                                    مشاوره ها
+
+                                            <li class="ellipse-light">
+                                                <a href="#" class="text-light hover-line-white ms-3">
+                                                    راهنمای سایت
                                                 </a>
                                             </li>
-                                            <li class="p-2 pt-0">
-                                                <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                                <a href="#" class="text-light hover-line-white">
-                                                    تراکنش ها
+
+                                            <li class="ellipse-light">
+                                                <a href="#" class="text-light hover-line-white ms-3">
+                                                    شرایط و قوانین
                                                 </a>
                                             </li>
-                                            <li class="p-2 pt-0">
-                                                <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                                <a href="#" class="text-light hover-line-white">
-                                                    پیام های منشی
+                                            <li class="ellipse-light">
+                                                <a href="#" class="text-light hover-line-white ms-3">
+                                                    ثبت شکایت
                                                 </a>
-                                            </li>
-                                            <li class="p-2 pt-0">
-                                                <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                                <a href="#" class="text-light hover-line-white">
-                                                    تیکت ها
-                                                </a>
-                                            </li>
-                                            <li class="p-2 pt-0">
-                                                <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                                <a href="#" class="text-light hover-line-white">
-                                                    نظرات
-                                                </a>
-                                            </li>
-                                            <li class="p-2 pt-0">
-                                                <button class="btn btn-danger fw-normal iso-font-sm">خروج</button>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item border-0 mt-1 bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">صفحه اصلی</a>
-                        </li>
-                        <li class="list-group-item border-0 mt-1 bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">مشاوره پزشکی</a>
-                        </li>
-                        <li class="list-group-item border-0 mt-1 bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">پزشکان</a>
-                        </li>
-                        <li class="list-group-item border-0 mt-1 bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">تخصص ها</a>
-                        </li>
-                        <li class="list-group-item border-0 mt-1  bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">پرسش و پاسخ</a>
-                        </li>
-                        <li class="list-group-item border-0 border-radius p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                            <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-patients
-                                rounded-0 text-white align-items-center text-start col-11 bg-transparent"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatients" aria-expanded="false" aria-controls="collapsePatients">
-                                <span class="fw-medium">برای بیماران</span>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </button>
-                            <div class="collapse border-top mt-2 p-2" id="collapsePatients">
-                                <div class="card mt-2 bg-transparent border-0">
-                                    <ul class="row gy-3 fw-normal list-unstyled px-2">
-                                        <li>
-                                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                            <a href="#" class="text-light hover-line-white">
-                                                سوالات متداول
-                                            </a>
-                                        </li>
+                            </li>
+                            <li class="list-group-item border-0 border-radius p-0 mt-2 d-flex justify-content-center flex-wrap bg-transparent">
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-doctors
+                                rounded-0 align-items-center text-start col-11  iso-font-md-em bg-transparent"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoctors" aria-expanded="false" aria-controls="collapseDoctors">
+                                    <span  class="fw-medium">برای پزشکان</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse border-top mt-2 p-2" id="collapseDoctors">
+                                    <div class="card mt-2 bg-transparent border-0">
+                                        <ul class="row gy-3 fw-normal list-unstyled px-2">
+                                            <li class="ellipse-light">
+                                                <a href="#" class="text-light hover-line-white ms-3">
+                                                    ثبت نام پزشکان
+                                                </a>
+                                            </li>
 
-                                        <li>
-                                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                            <a href="#" class="text-light hover-line-white">
-                                                راهنمای سایت
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                            <a href="#" class="text-light hover-line-white">
-                                                شرایط و قوانین
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                            <a href="#" class="text-light hover-line-white">
-                                                ثبت شکایت
-                                            </a>
-                                        </li>
-                                    </ul>
+                                            <li class="ellipse-light">
+                                                <a href="#" class="text-light hover-line-white ms-3">
+                                                    ثبت کلینیک
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item border-0 border-radius  p-0 mt-2 d-flex justify-content-center flex-wrap bg-transparent">
-                            <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-doctors
-                                rounded-0 text-white align-items-center text-start col-11 bg-transparent"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoctors" aria-expanded="false" aria-controls="collapseDoctors">
-                                <span  class="fw-medium">برای پزشکان</span>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </button>
-                            <div class="collapse border-top mt-2 p-2" id="collapseDoctors">
-                                <div class="card mt-2 bg-transparent border-0">
-                                    <ul class="row gy-3 fw-normal list-unstyled px-2">
-                                        <li>
-                                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                            <a href="#" class="text-light hover-line-white">
-                                                ثبت نام پزشکان
-                                            </a>
-                                        </li>
+                            </li>
 
-                                        <li>
-                                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                                            <a href="#" class="text-light hover-line-white">
-                                                ثبت کلینیک
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">مقالات</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark hover-line-blue">دارو ها</a>
+                            </li>
+                        </ul>
+                        <hr class="bg-secondary mx-2">
+                        <ul class="row gy-3 fw-normal list-unstyled px-2">
+                            <li class="ellipse-blur">
+                                <a href="#" class="iso-color-dark hover-line-blue ms-3">
+                                    حریم خصوصی
+                                </a>
+                            </li>
+
+                            <li class="ellipse-blur">
+                                <a href="#" class="iso-color-dark hover-line-blue ms-3">
+                                    تماس با ما
+                                </a>
+                            </li>
+
+                            <li class="ellipse-blur">
+                                <a href="#" class="iso-color-dark hover-line-blue ms-3">
+                                    درباره ما
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex mt-5 justify-content-center flex-wrap">
+                            <a href="#" target="_blank" class="col-12 d-flex justify-content-center  p-0">
+                                <div class="col-9 py-1 border d-flex bg-white justify-content-evenly support-border-dark-light align-items-center rounded-pill">
+                                    <label class=" m-0 iso-color-blur-dark fw-bold">0022 651 0915</label>
+                                    <img src="images/icons/support.png" alt="support">
                                 </div>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item border-0 mt-1 bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">مقالات</a>
-                        </li>
-                        <li class="list-group-item border-0 mt-1 bg-transparent">
-                            <a href="#" class="iso-color-dark hover-line-blue">دارو ها</a>
-                        </li>
-                    </ul>
-                    <hr class="bg-secondary mx-2">
-                    <ul class="row gy-3 fw-normal list-unstyled px-2">
-                        <li>
-                            <img src="images/icons/ellipse-blur.png" alt="ellipse">
-                            <a href="#" class="iso-color-dark hover-line-blue">
-                                حریم خصوصی
                             </a>
-                        </li>
 
-                        <li>
-                            <img src="images/icons/ellipse-blur.png" alt="ellipse">
-                            <a href="#" class="iso-color-dark hover-line-blue">
-                                تماس با ما
-                            </a>
-                        </li>
-
-                        <li>
-                            <img src="images/icons/ellipse-blur.png" alt="ellipse">
-                            <a href="#" class="iso-color-dark hover-line-blue">
-                                درباره ما
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-flex mt-5 justify-content-center flex-wrap">
-                        <a href="#" target="_blank" class="col-12 d-flex justify-content-center  p-0">
-                            <div class="col-8 py-1 border d-flex bg-white justify-content-evenly support-border-dark-light align-items-center rounded-pill">
-                                <label class=" m-0 iso-color-blur-dark fw-bold">0022 651 0915</label>
-                                <img src="images/icons/support.png" alt="support">
-                            </div>
-                        </a>
-
-                        <div class="col-12 p-0">
-                            <div class="d-flex justify-content-center align-items-center p-0 mt-3">
-                                <img src="./images/logo.png" alt="logo" class="img-md">
-                                <div class="d-flex  ms-1 flex-column">
+                            <!-- logo section menu sidebar  -->
+                            <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
+                                <img src="./images/logo.png" alt="isovisit" class="figure-img img-md m-0">
+                                <figcaption class="figure-caption d-flex ms-2 flex-column">
                                     <span class="iso-font-xl text-success fw-bold">ایزو ویزیت</span>
-                                    <span class="iso-font-md text-nowrap lh-base">سلامت جسم و روح برای همه </span>
-                                </div>
-                            </div>
+                                    <span class="iso-font-md text-nowrap iso-color-dark lh-base">سلامت جسم و روح برای همه </span>
+                                </figcaption>
+                            </figure>
+                            <!-- logo section menu sidebar  -->
                         </div>
                     </div>
                 </div>
+                <ul class="nav d-none d-xl-flex justify-content-center align-items-center">
+                    <li class="nav-item px-12">
+                        <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" aria-current="page" href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">مشاوره پزشکی</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">پزشکان</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">تخصص ها</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">پرسش و پاسخ</a>
+                    </li>
+                    <li class="nav-item dropdown px-2 pe-1 border-radius-top">
+                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbarPatients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            برای بیماران
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbarPatients">
+                            <li><a class="dropdown-item text-light active-btn" href="#">سوالات متداول</a></li>
+                            <li><a class="dropdown-item text-light active-btn" href="#">راهنمای سایت</a></li>
+                            <li><a class="dropdown-item text-light active-btn" href="#">شرایط و قوانین</a></li>
+                            <li><a class="dropdown-item text-light active-btn" href="#">انتقاد و پیشنهادات</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-2 pe-1 border-radius-top">
+                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbarDoctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            برای پزشکان
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbarDoctors">
+                            <li><a class="dropdown-item text-light active-btn" href="#">ثبت نام پزشکان </a></li>
+                            <li><a class="dropdown-item text-light active-btn" href="#">ثبت کلینیک</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">دارو ها</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- section navbar mobile end -->
+
+            <!-- section logo -->
+            <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
+                <img src="./images/logo.png" alt="ایزو ویزیت" class="figure-img logo m-0">
+                <figcaption class="figure-caption d-flex flex-column ms-xxl-2">
+                    <span class="iso-font-lg text-success fw-bold">ایزو ویزیت</span>
+                    <span class="iso-font-xxs text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
+                </figcaption>
+            </figure>
+            <!-- section logo -->
+
+            <div class="btn-login col-3 col-sm-2 col-md-1 d-flex justify-content-end p-0 order-3">
+                <button type="button" class="btn text-light border-0 py-2 p-1 iso-bg-blur-dark text-nowrap border-radius btn-show-modal-login active-btn"
+                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
             </div>
-            <ul class="nav d-none d-xl-flex justify-content-center">
-                <li class="nav-item px-16">
-                    <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" aria-current="page" href="#">صفحه اصلی</a>
-                </li>
-                <li class="nav-item px-16">
-                    <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">مشاوره پزشکی</a>
-                </li>
-                <li class="nav-item px-16">
-                    <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">پزشکان</a>
-                </li>
-                <li class="nav-item px-16">
-                    <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">تخصص ها</a>
-                </li>
-                <li class="nav-item px-16">
-                    <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">پرسش و پاسخ</a>
-                </li>
-                <li class="nav-item dropdown px-2 pe-1 border-radius-top">
-                    <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbarPatients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        برای بیماران
-                        <i class="fa fa-solid fa-chevron-down iso-font-llg mx-2"></i>
-                    </a>
-                    <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbarPatients">
-                        <li><a class="dropdown-item text-light" href="#">سوالات متداول</a></li>
-                        <li><a class="dropdown-item text-light" href="#">راهنمای سایت</a></li>
-                        <li><a class="dropdown-item text-light" href="#">شرایط و قوانین</a></li>
-                        <li><a class="dropdown-item text-light" href="#">انتقاد و پیشنهادات</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown px-2 pe-1 border-radius-top">
-                    <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbarDoctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        برای پزشکان
-                        <i class="fa fa-solid fa-chevron-down iso-font-llg mx-2"></i>
-                    </a>
-                    <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbarDoctors">
-                        <li><a class="dropdown-item text-light" href="#">ثبت نام پزشکان </a></li>
-                        <li><a class="dropdown-item text-light" href="#">ثبت کلینیک</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item px-16">
-                    <a class="nav-link p-0 py-1 iso-color-dark hover-line-blue" href="#">دارو ها</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- navbar section mobile  -->
 
-        <!-- logo section -->
-        <figure class="figure col-8 col-md-10 col-xl-2 d-flex justify-content-center justify-content-xl-start p-0 mt-3 order-1">
-            <img src="./images/logo.png" alt="isovisit" class="figure-img logo">
-            <figcaption class="figure-caption d-flex flex-column">
-                <span class="iso-font-lg text-success fw-bold">ایزو ویزیت</span>
-                <span class="iso-font-xs text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
-            </figcaption>
-        </figure>
-        <!-- logo section -->
-
-        <div class="btn-login col-3 col-sm-2 col-md-1 col-xl-1 d-flex justify-content-end order-3">
-            <button type="button" class="btn text-light border-0 py-2 p-1 iso-bg-blur-dark text-nowrap btn-show-modal-login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ورود / عضویت </button>
-        </div>
-
-        <!-- menu user logged in-->
-        <div class="dropdown menu-user d-none">
-            <a class="btn border-radius iso-bg-blur-dark dropdown-toggle text-light d-flex align-items-center btn-user" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>سیروس</span>
-                <i class="fa iso-font-lg fa-chevron-down ms-2"></i>
-            </a>
-
-            <ul class="dropdown-menu border-0 border-radius fw-normal iso-font-md px-1 py-0 iso-bg-blur-dark" aria-labelledby="dropdownMenuLink">
-                <li>
-                    <figure class="d-flex align-items-center m-0">
-                        <img src="./images/doc3.jpg" class="rounded-circle img-sm m-2" alt="عکس پروفایل">
-                        <figcaption>
-                            سیروس جعفری
-                        </figcaption>
-                    </figure>
-                </li>
-                <hr class="bg-light m-0">
-                <li class="p-2 pt-3">
-                    <img src="images/icons/ellipse-light.png" alt="ellipse">
-                    <a href="#" class="text-light hover-line-white">
-                        پروفایل
-                    </a>
-                </li>
-                <li class="p-2">
-                    <img src="images/icons/ellipse-light.png" alt="ellipse">
-                    <a href="#" class="text-light hover-line-white">
-                        مشاوره ها
-                    </a>
-                </li>
-                <li class="p-2">
-                    <img src="images/icons/ellipse-light.png" alt="ellipse">
-                    <a href="#" class="text-light hover-line-white">
-                        تراکنش ها
-                    </a>
-                </li>
-                <li class="p-2">
-                    <img src="images/icons/ellipse-light.png" alt="ellipse">
-                    <a href="#" class="text-light hover-line-white">
-                        پیام های منشی
-                    </a>
-                </li>
-                <li class="p-2">
-                    <img src="images/icons/ellipse-light.png" alt="ellipse">
-                    <a href="#" class="text-light hover-line-white">
-                        تیکت ها
-                    </a>
-                </li>
-                <li class="p-2">
-                    <img src="images/icons/ellipse-light.png" alt="ellipse">
-                    <a href="#" class="text-light hover-line-white">
-                        نظرات
-                    </a>
-                </li>
-                <li class="p-2">
-                    <button class="btn btn-danger fw-normal iso-font-sm">خروج</button>
-                </li>
-            </ul>
-        </div>
-
-        <!-- modal login -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <form action="#">
-                    <div class="modal-content">
-                        <div class="modal-header border-0 pb-1">
-                            <div class="card-title d-flex align-items-center m-0">
-                                <img src="./images/icons/user.png" alt="ورود / ثبت نام">
-                                <span class="iso-font-lg ms-1">ورود / ثبت نام</span>
-                            </div>
-                            <button type="button" class="btn px-2 py-1 d-flex align-items-center bg-transparent text-danger btn-outline-danger border-radius"
-                                    data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>
-                        <div class="card-login modal-body px-2 pb-4 d-flex flex-column justify-content-center align-items-center">
-                            <div class="alert d-flex align-items-start p-0">
-                                <img src="./images/icons/alert.png" alt="هشدار">
-                                <p class="iso-font-xxs mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
-                            </div>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="col-11 d-flex flex-wrap justify-content-center align-items-center">
-                                    <label for="mobile" class="col-12 iso-font-sm text-start fw-normal">شماره موبایل</label>
-                                    <input type="text" class="form-control p-1 bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615" maxlength="11">
-                                </div>
-                                <button type="button" class="btn border-radius iso-bg-blur-dark col-11 mt-3 send text-light">ورود</button>
-                            </div>
-                        </div>
-                        <div class="modal-footer pt-3 d-flex justify-content-center">
-                            <button type="button" class="btn btn-danger">
-                                <img src="./images/icons/gmail.png" alt="ورود و ثبت نام با جیمیل">
-                                <span class="iso-font-lg ms-1">ورود / ثبت نام با جیمیل</span>
-                            </button>
-                            <span class="iso-font-xxs">برای کاربران خارج از کشور</span>
-                        </div>
-
-                        <!-- section enter verification code -->
-                        <div class="card-verification modal-body d-none d-flex flex-wrap justify-content-center align-items-center">
-                            <p class="iso-font-sm">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
-                            <button type="button" class="btn col-4 alert-primary px-1 iso-color-dark iso-font-sm box-timer">02:00</button>
-                            <div class="input-group d-flex justify-content-center mt-3">
-                                <div class="box-verification-code col-10 d-flex flex-row-reverse bg-light px-3 pt-1 border-radius border">
-                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 border-secondary" name="" maxlength="1">
-                                </div>
-                                <div class="nav-link col-11 fw-normal iso-font-sm d-flex justify-content-between">
-                                    <a href="#" class="iso-color-blur-dark login-with-password">ورود با کلمه عبور</a>
-                                    <a href="#"  class="iso-color-blur-dark edit-mobile">تغییر شماره موبایل</a>
-                                </div>
-                                <button type="button" class="btn col-10 mt-3 iso-bg-blur-dark text-light accepted-info-user">تایید</button>
-                            </div>
-                        </div>
-
-                        <div class="card-login-password modal-body d-none d-flex flex-wrap justify-content-center align-items-center">
-                            <p class="col-11 iso-font-sm m-0">رمز عبور را وارد کنید</p>
-                            <div class="input-group d-flex justify-content-center mt-3">
-                                <div class="col-10 px-1 d-flex justify-content-between">
-                                    <label class="iso-font-sm align-self-end">کلمه عبور</label>
-                                    <a href="#"  class="iso-color-blur-dark mb-2 fw-normal iso-font-sm edit-mobile">تغییر شماره موبایل</a>
-                                </div>
-                                <div class="d-flex flex-row-reverse">
-                                        <span class="input-group-text border-start-0 rounded-0 bg-light">
-                                            <i class="fa fa-eye-slash show-password iso-font-lg iso-color-secondary"></i>
-                                        </span>
-                                    <input type="text" class="form-control input-login-password rounded-0 border-end-0 bg-light iso-color-secondary" placeholder="کلمه عبور">
-                                </div>
-                                <div class="nav-link col-11 fw-normal iso-font-sm d-flex justify-content-between">
-                                    <a href="#" class="iso-color-blur-dark">ورود با کد تایید</a>
-                                    <a href="#"  class="iso-color-blur-dark">فراموشی رمز عبور</a>
-                                </div>
-                                <button type="button" class="btn col-10 mt-3 iso-bg-blur-dark text-light">ورود</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+            <!-- section menu user logged in start-->
+            <div class="menu-user dropdown col-3  p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
+                <a href="#" class="btn border-radius iso-bg-blur-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user"
+                   role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>سیروس</span>
+                    <i class="fa iso-font-lg-em fa-chevron-down ms-2"></i>
+                </a>
+                <ul class="dropdown-menu box-shadow iso-font-md-em border-0 border-radius fw-normal iso-font-md px-1 py-0 iso-bg-blur-dark" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <figure class="d-flex align-items-center m-0">
+                            <img src="./images/doc3.jpg" class="rounded-circle img-sm m-2" alt="عکس پروفایل">
+                            <figcaption>
+                                سیروس جعفری
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <hr class="bg-light m-0">
+                    <li class="p-2 ellipse-light">
+                        <a href="#" class="text-light hover-line-white ms-3 ms-lg-2">
+                            پروفایل
+                        </a>
+                    </li>
+                    <li class="p-2 ellipse-light">
+                        <a href="#" class="text-light hover-line-white ms-3 ms-lg-2">
+                            مشاوره ها
+                        </a>
+                    </li>
+                    <li class="p-2 ellipse-light">
+                        <a href="#" class="text-light hover-line-white ms-3 ms-lg-2">
+                            تراکنش ها
+                        </a>
+                    </li>
+                    <li class="p-2 ellipse-light">
+                        <a href="#" class="text-light hover-line-white ms-3 ms-lg-2">
+                            پیام های منشی
+                        </a>
+                    </li>
+                    <li class="p-2 ellipse-light">
+                        <a href="#" class="text-light hover-line-white ms-3 ms-lg-2">
+                            تیکت ها
+                        </a>
+                    </li>
+                    <li class="p-2 ellipse-light">
+                        <a href="#" class="text-light hover-line-white ms-3 ms-lg-2">
+                            نظرات
+                        </a>
+                    </li>
+                    <li class="p-1">
+                        <button class="btn btn-danger py-1 px-2 border-radius fw-normal iso-font-sm-em">خروج</button>
+                    </li>
+                </ul>
             </div>
+            <!-- section menu user logged in end-->
+
+            <!-- section modal login start -->
+            <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <form action="#">
+                        <div class="modal-content">
+                            <div class="modal-header border-0 pb-1">
+                                <div class="modal-title d-flex align-items-center m-0">
+                                    <img src="./images/icons/user.png" alt="ورود / ثبت نام">
+                                    <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
+                                </div>
+                                <button type="button" class="btn iso-font-lg-em btn-close-modal text-danger"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="alert d-flex align-items-start p-0">
+                                    <img src="./images/icons/alert.png" alt="هشدار">
+                                    <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                                </div>
+                                <div class="row flex-column align-items-center">
+                                    <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
+                                        <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                        <input type="text" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615" maxlength="11">
+                                    </div>
+                                    <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blur-dark mt-3 send text-light iso-font-lg-em active-btn">ورود</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
+                                <div class="line-blur-dashed my-3 m-0"></div>
+                                <button type="button" class="btn btn-danger iso-font-md-em">
+                                    <img src="./images/icons/gmail.png" alt="ورود و ثبت نام با جیمیل">
+                                    <span class="ms-1">ورود / ثبت نام با جیمیل</span>
+                                </button>
+                                <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
+                            </div>
+
+                            <!-- section enter verification code start -->
+                            <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="container p-0">
+                                    <div class="row">
+                                        <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                                        <div class="col-4 offset-4 mt-2">
+                                            <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-sm box-timer">02:00</button>
+                                        </div>
+                                        <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
+                                            <div class="row m-0">
+                                                <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
+                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="" maxlength="1">
+                                                </div>
+                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                                    <a href="#" class="iso-color-blur-dark login-with-password">ورود با کلمه عبور</a>
+                                                    <a href="#"  class="iso-color-blur-dark edit-mobile">تغییر شماره موبایل</a>
+                                                </div>
+                                                <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blur-dark text-light iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- section enter verification code end -->
+
+                            <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="container p-0">
+                                    <div class="row gy-2">
+                                        <div class="col-10 offset-1 mb-3 iso-font-sm">
+                                            <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
+                                        </div>
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
+                                            <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                            <a href="#"  class="iso-color-blur-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
+                                        </div>
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2">
+                                            <div class="input-group flex-row-reverse">
+                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
+                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
+                                            </span>
+                                                <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                            </div>
+                                        </div>
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                            <a href="#" class="iso-color-blur-dark">ورود با کد تایید</a>
+                                            <a href="#"  class="iso-color-blur-dark">فراموشی رمز عبور</a>
+                                        </div>
+                                        <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blur-dark text-light border-radius active-btn">ورود</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- section modal login end -->
         </div>
+        <!-- section navbar end -->
     </div>
 </header>
+<!-- section header start -->
 
 <!-- main section -->
 <main>
-    <div class="container-fluid">
+    <div class="container-xxl p-xxl-0">
         <div class="row d-flex flex-column position-relative">
             <nav class="col-12 my-4 d-flex align-items-center" aria-label="breadcrumb">
-                <ol class="breadcrumb iso-font-sm m-0 fw-normal">
+                <ol class="breadcrumb iso-font-sm-em m-0 fw-normal">
                     <li class="breadcrumb-item"><a href="#">ایزوویزیت</a></li>
                     <li class="breadcrumb-item"><a href="#">پزشکان</a></li>
                     <li class="breadcrumb-item" aria-current="page">دکتر محمد رضا کاظمیان</li>
@@ -450,18 +456,18 @@
             <!-- section data profile doctor -->
             <section class="col-md-6 section-data-profile-doctor">
                 <div class="card card-info-doctor border-radius p-0 box-shadow-lg">
-                    <div class="card-header ps-4 pe-2 alert-secondary d-flex">
+                    <div class="card-header ps-4 pe-1 alert-secondary d-flex">
                         <figure class="col-11 figure d-flex align-items-center m-0">
                             <div>
                                 <img src="../front/images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
-                                <span class="badge iso-bg-green px-1 py-1 fw-normal rounded iso-font-xs position-absolute" style="transform: translateX(82px) translateY(54px)">آنلاین</span>
+                                <span class="badge iso-bg-green p-1 fw-normal rounded iso-font-xs-em position-absolute" style="transform: translateX(86px) translateY(54px)">آنلاین</span>
                             </div>
-                            <figcaption class="figure-caption lh-lg flex-column d-flex ms-3">
-                                <span class="iso-font-md iso-color-dark">دکتر محمد رضا کاظمیان</span>
-                                <span class="iso-font-xxs fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                            <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-3">
+                                <span class="iso-font-md-em iso-color-dark">دکتر محمد رضا کاظمیان</span>
+                                <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
                             </figcaption>
                         </figure>
-                        <button class="col-1 btn align-self-start d-flex justify-content-end p-0" data-bs-toggle="modal" data-bs-target="#ModalShare">
+                        <button class="col-1 btn align-self-start d-flex justify-content-center p-0" data-bs-toggle="modal" data-bs-target="#ModalShare">
                             <img src="./images/icons/share.png" class="img-xs" alt="اشتراک">
                         </button>
 
@@ -472,32 +478,32 @@
                                     <div class="modal-header border-0 pb-1 pt-2 px-2">
                                         <div class="card-title d-flex align-items-center m-0">
                                             <img src="./images/icons/user.png" alt="ورود / ثبت نام">
-                                            <span class="iso-font-lg ms-1">معرفی این پزشک به دوستان</span>
+                                            <span class="iso-font-md-em ms-1">معرفی این پزشک به دوستان</span>
                                         </div>
-                                        <button type="button" class="px-2 py-1 d-flex align-items-center bg-transparent btn-outline-danger text-danger border-radius"
+                                        <button type="button" class="btn iso-font-lg-em btn-close-modal text-danger"
                                                 data-bs-dismiss="modal" aria-label="Close">
                                             <i class="fa-solid fa-xmark"></i>
                                         </button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="input-group mt-2">
-                                            <input type="text" class="form-control iso-font-sm fw-normal text-end border-radius-start" id="copy_link" value="https://isovisit.com/d/4">
-                                            <div class="input-group-prepend">
-                                                <button class="btn text-light iso-bg-blur-dark iso-font-md border-radius-end btn-copy-link" data-clipboard-target="#copy_link">کپی لینک</button>
+                                            <input type="text" class="form-control iso-font-sm-em fw-normal text-end border-radius-start" id="copy_link" value="https://isovisit.com/d/4">
+                                            <div class="input-group-prepend rounded-0">
+                                                <button class="btn text-light iso-bg-blur-dark iso-font-md-em border-radius-end btn-copy-link" data-clipboard-target="#copy_link">کپی لینک</button>
                                             </div>
                                         </div>
                                         <div class="icons-social-network d-flex justify-content-center my-3">
-                                            <div class="box-telegram size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                            <div class="box-telegram img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
                                                 <img src="images/icons/telegram-two.png" alt="تلگرام">
                                             </div>
-                                            <div class="box-linkedin size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                                <i class="fa-brands iso-font-xl mt-1 text-light fa-linkedin-in"></i>
+                                            <div class="box-linkedin img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                                <i class="fa-brands iso-font-llg-em mt-1 text-light fa-linkedin-in"></i>
                                             </div>
-                                            <div class="box-facebook size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                            <div class="box-facebook img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
                                                 <img src="images/icons/facebook.png" alt="فیسبوک">
                                             </div>
-                                            <div class="box-twitter size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                                <i class="fa-brands iso-font-xl mt-1 text-light fa-twitter"></i>
+                                            <div class="box-twitter img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                                <i class="fa-brands iso-font-llg-em mt-1 text-light fa-twitter"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -507,61 +513,52 @@
                     </div>
                     <div class="card-body p-2 pb-0">
                         <div class="row">
-                            <div class="col-xxl-6 py-1 d-flex iso-font-xxs mt-2 iso-color-green-dark align-items-start items-relations-doctor">
+                            <div class="col-xxl-6 py-1 px-xxl-2 d-flex mt-2 iso-color-green-dark align-items-start items-relations-doctor">
                                 <div class="card-text d-flex align-items-center">
                                     <span class="iso-bg-green-light px-1 py-1 me-1 border-radius">
-                                    <i class="fa-solid iso-font-lg d-flex align-items-center fa-comments"></i>
+                                    <i class="fa-solid iso-font-md-em d-flex align-items-center fa-comments"></i>
                                     </span>
-                                    <span class="iso-color-dark iso-font-xxs">متنی</span>
+                                    <span class="iso-color-dark iso-font-xs-em">متنی</span>
                                 </div>
-                                <div class="card-text d-flex align-items-center ms-sm-3 ms-2">
+                                <div class="card-text d-flex align-items-center ms-sm-3 ms-xxl-2 ms-2">
                                     <span class="alert-secondary px-1 py-1 me-1 border-radius">
-                                        <i class="fa-solid iso-font-lg iso-color-secondary d-flex align-items-center fa-phone"></i>
+                                        <i class="fa-solid iso-font-md-em iso-color-secondary d-flex align-items-center fa-phone"></i>
                                     </span>
-                                    <span class="iso-color-dark iso-font-xxs">تلفنی</span>
+                                    <span class="iso-color-dark iso-font-xs-em">تلفنی</span>
                                 </div>
-                                <div class="card-text d-flex align-items-center ms-sm-3 ms-2">
+                                <div class="card-text d-flex align-items-center ms-sm-3 ms-xxl-2 ms-2">
                                      <span class="iso-bg-green-light px-1 py-1 me-1 border-radius">
-                                     <i class="fa-solid iso-font-lg d-flex align-items-center fa-video"></i>
+                                     <i class="fa-solid iso-font-md-em d-flex align-items-center fa-video"></i>
                                      </span>
-                                    <span class="iso-color-dark iso-font-xxs">تصویری</span>
+                                    <span class="iso-color-dark iso-font-xs-em">تصویری</span>
                                 </div>
-                                <div class="card-text iso-bg-green-light iso-color-dark fw-normal px-2 py-1 ms-sm-3 ms-2 text-nowrap border-radius">
+                                <div class="card-text iso-bg-green-light iso-font-xs-em iso-color-dark fw-normal px-1 py-1 ms-sm-3 ms-xxl-2 ms-2 text-nowrap border-radius">
                                     <img src="images/icons/umbrella-active.png" alt="umbrella">
                                     مشاوره با بیمه
                                 </div>
                             </div>
                             <div class="col-xxl-6 items-doctor">
                                 <div class="row row-cols-2 d-flex px-3">
-                                    <div class="col-6 col-sm-8 col-md-7 col-lg-8 col-xxl-6 list-group mt-1 p-0">
-                                        <li class="list-group-item iso-font-sm fw-normal px-0 border-0">
-                                            <img src="./images/icons/ellipse-block.png" alt="">
-                                            کد نظام پزشکی : 2964
+                                    <div class="list-group col-6 col-sm-8 col-md-7 col-lg-8 col-xxl-7 p-0">
+                                        <li class="list-group-item iso-font-sm-em bg-transparent ellipse-dark fw-normal px-0 border-0">
+                                            <span class="ms-4 ms-xxl-3">کد نظام پزشکی : 2964</span>
                                         </li>
-                                        <li class="list-group-item iso-font-sm fw-normal px-0 border-0">
-                                            <img src="./images/icons/ellipse-block.png" alt="">
-                                            تجربه : 2 سال
+                                        <li class="list-group-item iso-font-sm-em bg-transparent ellipse-dark fw-normal px-0 p-1 border-0">
+                                            <span class="ms-4 ms-xxl-">تجربه : 2 سال</span>
                                         </li>
-                                        <li class="list-group-item iso-font-sm fw-normal px-0 border-0">
-                                            <img src="./images/icons/ellipse-block.png" alt="">
-                                            تعداد نظرات : 1900 نظر
+                                        <li class="list-group-item iso-font-sm-em bg-transparent ellipse-dark fw-normal px-0 border-0">
+                                            <span class="ms-4 ms-xxl-">تعداد نظرات : 1900 نظر</span>
                                         </li>
                                     </div>
-                                    <div class="col-6 col-sm-4 col-md-5 col-lg-4 col-xxl-6 star align-self-end d-flex justify-content-around mb-2 p-0">
-                                        <img src="./images/icons/star.png" alt="1 ستاره">
-                                        <img src="./images/icons/star.png" alt="2 ستاره">
-                                        <img src="./images/icons/star.png" alt="3 ستاره">
-                                        <img src="./images/icons/star.png" alt="4 ستاره">
-                                        <img src="./images/icons/star.png" alt="5 ستاره">
-                                    </div>
+                                    <div class="doctor-rating col-6 col-sm-4 col-md-5 col-lg-4 col-xxl-5 star align-self-end d-flex justify-content-around mb-2 p-0"></div>
                                 </div>
                             </div>
-                            <div class="col-xxl-6 px-1 px-xxl-2 pb-0">
+                            <div class="col-xxl-6 px-1 px-xxl-0 pb-0 ms-xxl-2">
                                 <div class="btn-group w-100 border border-radius-bottom border-success p-0 iso-bg-green-light">
-                                    <button type="button" class="btn px-2 border-right text-nowrap iso-color-green-dark iso-font-sm">دریافت مشاوره</button>
-                                    <button type="button" class="btn px-2 border-right text-nowrap iso-color-green-dark iso-font-sm">درباره پزشک</button>
-                                    <button type="button" class="btn px-2 border-right text-nowrap iso-color-green-dark iso-font-sm">ادرس و تلفن</button>
-                                    <button type="button" class="btn px-2 border-right text-nowrap iso-color-green-dark iso-font-sm">نظرات</button>
+                                    <button type="button" class="btn px-1 border-right text-nowrap iso-color-green-dark iso-font-sm-em">دریافت مشاوره</button>
+                                    <button type="button" class="btn px-1 border-right text-nowrap iso-color-green-dark iso-font-sm-em">درباره پزشک</button>
+                                    <button type="button" class="btn px-1 border-right text-nowrap iso-color-green-dark iso-font-sm-em">ادرس و تلفن</button>
+                                    <button type="button" class="btn px-1 border-right text-nowrap iso-color-green-dark iso-font-sm-em">نظرات</button>
                                 </div>
                             </div>
                         </div>
@@ -570,101 +567,107 @@
                 </div>
             </section>
 
-            <!-- section get advice -->
-            <section class="col-md-6 section-get-advice" id="section-get-advice">
-                <div class="card mt-4 mt-lg-0 border-radius box-shadow-lg">
-                    <div class="card-header iso-font-md fw-normal text-center iso-bg-green-light border-0">
-                        دریافت مشاوره
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text iso-font-sm fw-normal mt-3">
-                            <p>برای شروع ویزیت با پزشک یکی از خدمات زیر را انتخاب کنید</p>
-                        </div>
-                        <div class="row btn-group gy-2 px-3 mb-3 d-flex justify-content-center">
-                            <div class="col-xxl-6">
-                                <a  class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره برای مشکلات پوستی</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره مو</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره ترک خودارضایی</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره درمان زود انزالی</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره درمان کیست تخمدان</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره اصلاح مزاج</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره اصلاح نازایی</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره درمان ناباروری</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره درمان کرونا</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-sm fw-bold p-2 box-shadow-lg">
-                                    <span>مشاوره درمان کرونا</span>
-                                    <span>54,000 تومان</span>
-                                </a>
-                            </div>
-                            <div class="col-xxl-6">
-                                <a href="#" class="btn btn-sm w-100 border-radius text-light iso-bg-blur-dark text-start iso-font-sm fw-bold p-2">
-                                    <div class="row align-items-center">
-                                        <span class="col-sm-9 col-xxl-12">تفسیر نتایج آزمایش ، سونوگرافی و ماموگرافی</span>
-                                        <span class="col-sm-3 col-xxl-12 mt-1 text-end">54,000 تومان</span>
+            <div class="position-fixed position-section-get-advice start-0 end-0 bottom-0 justify-content-end d-flex">
+                <div class="container-xxl p-0">
+                    <div class="row  justify-content-end">
+                        <!-- section get advice -->
+                        <section class="col-md-6 section-get-advice" id="section-get-advice">
+                            <div class="card mt-4 mt-lg-0 border-radius box-shadow-lg">
+                                <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
+                                    دریافت مشاوره
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text iso-font-md-em fw-normal text-center mt-3">
+                                        <p>برای شروع ویزیت با پزشک یکی از خدمات زیر را انتخاب کنید</p>
                                     </div>
-                                </a>
+                                    <div class="row btn-group gy-2 px-1 mb-3 justify-content-center">
+                                        <div class="col-xxl-6 px-1">
+                                            <a  class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره برای مشکلات پوستی</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره مو</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره ترک خودارضایی</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره درمان زود انزالی</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره درمان کیست تخمدان</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره اصلاح مزاج</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره اصلاح نازایی</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره درمان ناباروری</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره درمان کرونا</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-6 px-1">
+                                            <a href="#" class="btn d-flex justify-content-between border-radius text-light iso-bg-blur-dark iso-font-md-em fw-bold p-2 box-shadow-lg">
+                                                <span>مشاوره درمان کرونا</span>
+                                                <span>54,000 تومان</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xxl-7 px-1">
+                                            <a href="#" class="btn btn-sm w-100 border-radius text-light iso-bg-blur-dark text-start iso-font-md-em fw-bold p-2">
+                                                <div class="row align-items-center">
+                                                    <span class="col-sm-9 col-xxl-12 px-2">تفسیر نتایج آزمایش ، سونوگرافی و ماموگرافی</span>
+                                                    <span class="col-sm-3 col-xxl-12 mt-1 text-end">54,000 تومان</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- section about doctor -->
             <section class="col-md-6 section-about-doctor">
                 <div class="card mt-4 border-radius box-shadow-lg">
-                    <div class="card-header iso-font-md fw-normal text-center iso-bg-green-light border-0">
+                    <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
                         درباره پزشک
                     </div>
                     <div class="card-body">
-                        <p class="card-text d-flex justify-content-sm-center iso-font-md mt-3">
+                        <p class="card-text d-flex justify-content-sm-center iso-font-sm mt-3">
                             دکتر محمد رضا کاظمیان پزشک عمومی
                         </p>
-                        <div class="list-group mt-1 p-0 iso-font-sm fw-normal">
+                        <div class="list-group mt-1 p-0 iso-font-sm-em fw-normal">
                             <li class="list-group-item px-0 border-0">
                                 <img src="./images/icons/ellipse-block.png" alt="">
                                 دارای مدرک طب سنتی و مکمل از دانشکده طب سنتی مشهد
@@ -678,35 +681,35 @@
                                 سابقه 18 سال طبابت
                             </li>
                         </div>
-                        <p class="card-text d-flex justify-content-sm-center iso-font-md mt-1">
+                        <p class="card-text d-flex justify-content-sm-center iso-font-sm mt-1">
                             دکتر محمد رضا کاظمیان در شبکه های اجتماعی
                         </p>
                         <div class="icons-social-network d-flex justify-content-start justify-content-sm-center mt-3">
-                            <div class="box-telegram size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                            <div class="box-telegram img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
                                 <img src="images/icons/telegram-two.png" alt="تلگرام">
                             </div>
-                            <div class="box-instagram size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                            <div class="box-instagram img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
                                 <img src="images/icons/instagram-light.png" alt="اینستگرام">
                             </div>
-                            <div class="box-linkedin size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                <i class="fa-brands iso-font-xl mt-1 text-light fa-linkedin-in"></i>
+                            <div class="box-linkedin img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                <i class="fa-brands iso-font-llg-em mt-1 text-light fa-linkedin-in"></i>
                             </div>
-                            <div class="box-facebook size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                            <div class="box-facebook img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
                                 <img src="images/icons/facebook.png" alt="فیسبوک">
                             </div>
-                            <div class="box-twitter size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                <i class="fa-brands iso-font-xl mt-1 text-light fa-twitter"></i>
+                            <div class="box-twitter img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                <i class="fa-brands iso-font-llg-em mt-1 text-light fa-twitter"></i>
                             </div>
-                            <div class="box-youtube size-wh-40 iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                <i class="fa-brands iso-font-xl mt-1 text-light fa-youtube"></i>
+                            <div class="box-youtube img-sm iso-bg-blur-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                <i class="fa-brands iso-font-llg-em mt-1 text-light fa-youtube"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-btn d-flex justify-content-center bg-transparent border-0">
-                    <button type="button" class="btn iso-bg-blur-dark d-flex text-light align-items-center border-radius position-relative">
+                    <button type="button" class="btn iso-font-md-em iso-bg-blur-dark d-flex text-light align-items-center border-radius position-relative">
                         <span class="me-3">بیشتر</span>
-                        <i class="fa-solid iso-font-xl fa-chevron-down"></i>
+                        <i class="fa-solid iso-font-llg-em fa-chevron-down"></i>
                     </button>
                 </div>
             </section>
@@ -716,19 +719,22 @@
                 <div class="card mt-4 border-radius box-shadow-lg">
                     <div class="row flex-column align-items-center">
                         <div class="col-12">
-                            <div class="card-header iso-font-md fw-normal text-center iso-bg-green-light border-0">
-                                ویدیو معرفی پزشک
+                            <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
+                                معرفی پزشک
                             </div>
                         </div>
                         <div class="col-12 col-sm-8">
                             <div class="card-body d-flex flex-column align-items-center">
+                                <p class="card-text text-center fw-normal m-0">
+                                    ویدیو معرفی پزشک
+                                </p>
                                 <video class="video-introduction-doctor" controls poster="images/Doctors-rafiki.png">
                                     <source src="../dist/video/about-doctor.mp4" type="video/mp4">
                                 </video>
                                 <hr class="line-black-dashed mt-4"/>
-                                <div class="card-text text-center fw-normal">
+                                <p class="card-text text-center fw-normal m-0">
                                     گالری تصاویر دکتر
-                                </div>
+                                </p>
                                 <div class="swiper swiper-gallery-doctor">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -765,21 +771,21 @@
             <!-- section address and phone doctor -->
             <section class="col-md-6 section-address-and-phone-doctor">
                 <div class="card mt-4 border-radius box-shadow-lg">
-                    <div class="card-header iso-font-md fw-normal text-center iso-bg-green-light border-0">
+                    <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
                         آدرس و تلفن
                     </div>
                     <div class="card-body pb-0">
                         <address>
-                            <div class="list-group fw-normal iso-font-sm mt-1 p-0">
+                            <div class="list-group fw-normal iso-font-md-em mt-1 p-0">
                                 <span class="mt-1">آدرس : </span>
-                                <li class="list-group-item iso-font-sm fw-normal px-0 border-0">
+                                <li class="list-group-item fw-normal px-0 border-0">
                                     <img src="./images/icons/ellipse-block.png" alt="">
                                     خراسان رضوی، مشهد، خیام جنوبی 10 خیابان گلایل
                                 </li>
                                 <span class="mt-2">شماره تماس : </span>
-                                <li class="list-group-item iso-font-sm fw-normal px-0 border-0">
+                                <li class="list-group-item fw-normal px-0 border-0">
                                     <img src="./images/icons/ellipse-block.png" alt="">
-                                    <a href="http://tel.09030744060">09030744060</a>
+                                    <a href="tel:09030744060">09030744060</a>
                                 </li>
                             </div>
                             <div id="contact__map"></div>
@@ -791,41 +797,41 @@
             <!-- section form comments -->
             <section class="col-md-6 section-form-comments">
                 <div class="card mt-4 border-radius box-shadow-lg">
-                    <div class="card-header iso-font-md fw-normal text-center iso-bg-green-light border-0">
+                    <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
                         نظرات
                     </div>
                     <div class="card-body">
-                        <div class="card-text mt-4 mb-2">
+                        <div class="card-text mt-4 iso-font-sm-em mb-2">
                             نظر / سوال خود را وارد کنید:
                         </div>
 
-                        <form class="row g-3 iso-font-sm fw-normal">
+                        <form class="row g-3 iso-font-sm-em fw-normal">
                             <div class="col-xxl-6">
                                 <label for="name" class="form-label">نام و نام خانوادگی</label>
-                                <input type="email" class="form-control text-start border-radius" id="name" placeholder="نام و نام خانوادگی">
+                                <input type="email" class="form-control text-start iso-font-sm-em border-radius" id="name" placeholder="نام و نام خانوادگی">
                             </div>
                             <div class="col-xxl-6">
                                 <label for="phone" class="form-label">شماره موبایل</label>
-                                <input type="tel" class="form-control text-start border-radius" id="phone" placeholder="شماره موبایل">
+                                <input type="tel" class="form-control text-start iso-font-sm-em border-radius" id="phone" placeholder="شماره موبایل">
                             </div>
                             <div class="col-xxl-6">
                                 <label for="description" class="form-label">نظر خود را وارد کنید</label>
-                                <textarea class="form-control text-start border-radius" id="description" rows="3" placeholder="نظر خود را وارد کنید"></textarea>
+                                <textarea class="form-control text-start iso-font-sm-em border-radius" id="description" rows="3" placeholder="نظر خود را وارد کنید"></textarea>
                             </div>
                             <div class="col-5 col-xxl-3 d-flex flex-column justify-content-end align-items-start">
                                 <label for="code_img" class="form-label">کد تصویر</label>
-                                <input type="text" class="form-control text-start border-radius" id="code_img" placeholder="کد تصویر">
+                                <input type="text" class="form-control text-start iso-font-sm-em border-radius" id="code_img" placeholder="کد تصویر">
                             </div>
                             <div class="col-7 col-xxl-3 p-0 d-flex align-items-end">
-                                <a href="#" class="captcha_image">
-                                    <img src="https://isovisit.com/captcha/flat?oiqm8a4r" width="120" height="35">
+                                <a href="#"></a>
+                                    <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid captcha_image">
                                 </a>
                                 <a href="#" class="refresh_captcha mx-1">
-                                    <i class="fas fa-sync iso-font-xl"></i>
+                                    <i class="fas fa-sync iso-font-llg-em"></i>
                                 </a>
                             </div>
                             <div class="col-12 py-3">
-                                <button type="submit" class="btn col-sm-6 col-12 offset-md-6 text-light iso-bg-blur-dark">ارسال</button>
+                                <button type="submit" class="btn col-sm-6 col-12 offset-md-6 text-light iso-font-md-em iso-bg-blur-dark">ارسال</button>
                             </div>
                         </form>
                     </div>
@@ -837,12 +843,12 @@
                 <div class="row gy-3 mt-4 border-radius box-shadow-lg bg-white py-3 m-0">
                     <div class="col-12">
                         <div class="card p-2 bg-light border-radius">
-                            <div class="card-header border-0 p-0 bg-transparent iso-font-md fw-normal text-center">
+                            <div class="card-header border-0 p-0 bg-transparent fw-normal text-center">
                                 <figure class="figure d-flex align-items-center">
                                     <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">
-                                    <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md fw-normal iso-color-dark mx-2">
-                                        <span class="iso-font-sm text-start">محمد رضا فنودی</span>
-                                        <div class="row gx-2 iso-font-xxs mt-1 fw-normal">
+                                    <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em iso-color-dark mx-2">
+                                        <span class="iso-font-sm-em text-start">محمد رضا فنودی</span>
+                                        <div class="row gx-2 iso-font-xs-em mt-1 fw-normal">
                                             <span class="col text-nowrap border-radius alert-secondary">کاربر مهمان</span>
                                             <span class="col">1400/11/15</span>
                                         </div>
@@ -850,8 +856,8 @@
                                 </figure>
                                 <div class="line-muted-dashed"></div>
                             </div>
-                            <div class="card-body pt-0 px-1">
-                                <div class="card-text iso-font-md fw-normal">
+                            <div class="card-body pt-0 mt-2 px-1">
+                                <div class="card-text iso-font-md-em fw-normal">
                                     <p>من برای حملات پنیک که بعد از کرونا دچار شدم مشاوره میخواستم کدوم یکی رو باید انتخاب کنم برای مشاوره ؟ کرونام خوب شده وای حملات پنیک بهم دست میده  </p>
                                 </div>
                             </div>
@@ -862,7 +868,7 @@
                                         <span class="mx-2">3</span>
                                     </div>
                                     <div class="col-6">
-                                        <button class="btn w-100 border-radius text-light iso-bg-blur-dark">پاسخ</button>
+                                        <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blur-dark">پاسخ</button>
                                     </div>
                                 </div>
                             </div>
@@ -870,22 +876,22 @@
                     </div>
                     <div class="col-12">
                         <div class="card card-comment-parent p-2 alert-success ms-3 border-radius">
-                            <div class="card-header border-0 p-0 bg-transparent iso-font-md fw-normal text-center">
+                            <div class="card-header border-0 p-0 bg-transparent fw-normal text-center">
                                 <figure class="figure d-flex align-items-center">
                                     <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">
-                                    <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md fw-normal iso-color-dark mx-2">
-                                        <span class="iso-font-sm text-start">اپراتور شماره 12 ایزو ویزیت</span>
-                                        <a href="#" class="iso-font-xxs text-start">@در پاسخ به عبدالقریب مرادی</a>
-                                        <div class="row gx-2 iso-font-xxs mt-1 fw-normal">
+                                    <figcaption class="figure-caption fw-normal d-flex iso-font-md-em flex-column iso-color-dark mx-2">
+                                        <span class="iso-font-sm-em text-start">اپراتور شماره 12 ایزو ویزیت</span>
+                                        <a href="#" class="iso-font-xs-em text-start">@در پاسخ به عبدالقریب مرادی</a>
+                                        <div class="row gx-2 iso-font-xs-em mt-1 fw-normal">
                                             <span class="col text-nowrap border-radius bg-light">پشتیبان سایت</span>
                                             <span class="col text-start">1400/11/17</span>
                                         </div>
                                     </figcaption>
                                 </figure>
-                                <hr class="line-muted-bg-green-dashed"/>
+                                <div class="line-muted-bg-green-dashed"></div>
                             </div>
-                            <div class="card-body pt-0 px-1">
-                                <div class="card-text iso-font-md iso-color-dark fw-normal">
+                            <div class="card-body pt-0 mt-2 px-1">
+                                <div class="card-text iso-font-md-em iso-color-dark fw-normal">
                                     <p>سلام. اگر مدت زمانی که برای انتظار گفته شده، گذشته، و هنوز نسخه صادر نشده، از طریق تیکت با پشتیبانی در ارتباط باشید تا بررسی کنن</p>
                                 </div>
                             </div>
@@ -896,7 +902,7 @@
                                         <span class="mx-2">1</span>
                                     </div>
                                     <div class="col-6">
-                                        <button class="btn w-100 border-radius text-light iso-bg-blur-dark">پاسخ</button>
+                                        <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blur-dark">پاسخ</button>
                                     </div>
                                 </div>
                             </div>
@@ -904,9 +910,9 @@
                     </div>
                 </div>
                 <div class="card-btn d-flex justify-content-center bg-transparent border-0">
-                    <button type="button" class="btn iso-bg-blur-dark d-flex text-light align-items-center border-radius more-comment">
+                    <button type="button" class="btn iso-bg-blur-dark iso-font-md-em d-flex text-light align-items-center border-radius more-comment">
                         <span class="me-3">نظرات بیشتر</span>
-                        <i class="fa-solid iso-font-xl fa-chevron-down"></i>
+                        <i class="fa-solid iso-font-llg-em fa-chevron-down"></i>
                     </button>
                 </div>
             </section>
@@ -914,7 +920,7 @@
             <!-- section steps to get online advice -->
             <section class="col-md-6 section-steps-to-get-online-advice">
                 <div class="card mt-3 border-radius box-shadow-lg">
-                    <div class="card-header iso-font-md fw-normal text-center iso-bg-green-light border-0">
+                    <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
                         چطور مشاوره آنلاین بگیرم؟
                     </div>
                     <div class="card-body">
@@ -922,46 +928,46 @@
                             <div class="row gy-4">
                                 <div class="col-xxl-6">
                                     <li class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md fw-bold iso-bg-green-dark border-radius">1</span>
-                                        <span class="mx-2 iso-font-sm">انتخاب پزشک و تخصص</span>
+                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">1</span>
+                                        <span class="mx-2 iso-font-sm-em">انتخاب پزشک و تخصص</span>
                                     </li>
-                                    <p class="card-text mt-2 iso-font-sm">
+                                    <p class="card-text mt-2 iso-font-sm-em">
                                         پزشک و تخصص مورد نظر خود را انتخاب کنید
                                     </p>
                                 </div>
                                 <div class="col-xxl-6">
                                     <li class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md fw-bold iso-bg-green-dark border-radius">2</span>
-                                        <span class="mx-2 iso-font-sm">پاسخ به سوالات</span>
+                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">2</span>
+                                        <span class="mx-2 iso-font-sm-em">پاسخ به سوالات</span>
                                     </li>
-                                    <p class="card-text mt-2 iso-font-sm">
+                                    <p class="card-text mt-2 iso-font-sm-em">
                                         به سوال های ارسال شده در صفحه چت پاسخ دهید
                                     </p>
                                 </div>
                                 <div class="col-xxl-6">
                                     <li class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md fw-bold iso-bg-green-dark border-radius">3</span>
-                                        <span class="mx-2 iso-font-sm">انتخاب نوع مشاوره</span>
+                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">3</span>
+                                        <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
                                     </li>
-                                    <p class="card-text mt-2 iso-font-sm">
+                                    <p class="card-text mt-2 iso-font-sm-em">
                                         در قسمت پرداخت نوع مشاوره خود را که شامل "متنی" ، "صوتی " و "تصویری" هست راانتخاب کنید
                                     </p>
                                 </div>
                                 <div class="col-xxl-6">
                                     <li class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md fw-bold iso-bg-green-dark border-radius">4</span>
-                                        <span class="mx-2 iso-font-sm">انتخاب نوع مشاوره</span>
+                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">4</span>
+                                        <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
                                     </li>
-                                    <p class="card-text mt-2 iso-font-sm">
+                                    <p class="card-text mt-2 iso-font-sm-em">
                                         نوع پرداخت خود را از بین "آنلاین" یا "کارت به کارت" انتخاب و پرداخت کنید
                                     </p>
                                 </div>
                                 <div class="col-12">
                                     <li class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md fw-bold iso-bg-green-dark border-radius">5</span>
-                                        <span class="mx-2 iso-font-sm">انتخاب نوع مشاوره</span>
+                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">5</span>
+                                        <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
                                     </li>
-                                    <p class="card-text mt-2 iso-font-sm">
+                                    <p class="card-text mt-2 iso-font-sm-em">
                                         بر اساس نوع مشاوره ای که در بخش پرداخت انتخاب کردید پزشک پاسخ شما را میدهد
                                     </p>
                                 </div>
@@ -974,35 +980,35 @@
             <!-- section frequently asked question-->
             <section class="col-md-6 section-frequently-asked-question">
                 <div class="card mt-3 border-radius box-shadow-lg overflow-hidden">
-                    <div class="card-header border-0 iso-font-md fw-normal text-center iso-bg-green-light">
+                    <div class="card-header border-0 iso-font-md-em fw-normal text-center iso-bg-green-light">
                         سوالات متداول
                     </div>
                     <div class="card-body p-0">
                         <ul class="list-group iso-bg-light border-0">
                             <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn w-100 border-bottom border-0 iso-bg-light p-0 d-flex rounded-0 align-items-center text-start btn-question"
+                                <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestion" aria-expanded="false" aria-controls="collapseQuestion">
                                     <div class="arrow d-flex align-items-center iso-font-llg justify-content-center iso-bg-green-light iso-color-green-dark">
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </div>
-                                    <span class="iso-font-sm ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
+                                    <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
                                 </button>
                                 <div class="collapse bg-white w-100 p-1" id="collapseQuestion">
-                                    <p class="card-text p-2 iso-font-sm">
+                                    <p class="card-text p-2 iso-font-sm-em">
                                         از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود -
                                     </p>
                                 </div>
                             </li>
                             <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn w-100 border-bottom border-0 iso-bg-light p-0 d-flex rounded-0 align-items-center text-start btn-question"
+                                <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestionOne" aria-expanded="false" aria-controls="collapseQuestionOne">
-                                    <div class="arrow d-flex align-items-center iso-font-llg justify-content-center iso-bg-green-light iso-color-green-dark">
+                                    <div class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark">
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </div>
-                                    <span class="iso-font-sm ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
+                                    <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
                                 </button>
                                 <div class="collapse bg-white w-100 p-1" id="collapseQuestionOne">
-                                    <p class="card-text p-2 iso-font-sm">
+                                    <p class="card-text p-2 iso-font-sm-em">
                                         از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود -
                                     </p>
                                 </div>
@@ -1014,13 +1020,13 @@
         </div>
     </div>
     <div class="communication-iso box-shadow-lg position-fixed rounded-circle iso-bg-green-dark">
-        <img src="./images/icons/icon-support-light.png" aria-expanded="false" role="button" class="pointer-event">
-        <ul class="dropdown-menu-communication d-flex flex-column align-items-end list-unstyled">
+        <img src="./images/icons/icon-support-light.png" aria-expanded="false" role="button" class="pointer-event img-sm">
+        <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
                 <span>پیام در واتساپ</span>
                 <img src="./images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
             </li>
-            <li class="my-3 iso-bg-green-dark text-light rounded-pill p-2">
+            <li class="my-3 my-lg-2 iso-bg-green-dark text-light rounded-pill p-2">
                 <span>پیام در تلگرام</span>
                 <img src="./images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
             </li>
@@ -1028,14 +1034,14 @@
                 <span>پیام در تیکت</span>
                 <img src="./images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
             </li>
-            <li class="my-3 iso-bg-green-dark text-light rounded-pill p-2">
+            <li class="my-3 my-lg-2 mb-4 mb-lg-3 iso-bg-green-dark text-light rounded-pill p-2 mb-3">
                 <span>تماس تلفنی</span>
                 <img src="./images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
             </li>
         </ul>
     </div>
-    <div class="scroll-top box-shadow-lg position-fixed bottom-0 border-radius align-items-center iso-bg-green-dark px-1 py-1">
-        <i class="fa-solid fa-chevron-up text-light iso-font-xl"></i>
+    <div class="scroll-top box-shadow-lg position-fixed border-radius align-items-center justify-content-center d-none iso-bg-green-dark pointer-event" role="button">
+        <i class="fa-solid fa-chevron-up text-light iso-font-llg-em"></i>
     </div>
     <div class="get-advice-fixed bg-white p-2 px-3 box-shadow-lg position-fixed bottom-0 w-100 d-block d-md-none">
         <a href="#section-get-advice" type="button" class="btn iso-bg-blur-dark p-2 text-light w-100">دریافت مشاوره</a>
@@ -1044,18 +1050,18 @@
 </main>
 <!-- main section -->
 
-<!-- footer section -->
-<footer class="mt-4 d-flex flex-column justify-content-center align-items-center">
-    <div class="container-fluid">
-        <div class="row">
+<!-- footer section start-->
+<footer class="mt-4">
+    <div class="container-xxl">
+        <div class="row iso-bg-blur-dark">
             <div class="footer-support order-1 order-md-2 order-xxl-2  col-12 col-md-6 col-xxl-3 px-12 bg-transparent flex-wrap flex-row text-light border-end">
                 <div class="footer-header border-0 pt-3 p-0 bg-transparent col-12 d-flex flex-wrap flex-row justify-content-around align-items-center">
-                    <div class="row w-100 m-0">
+                    <div class="row w-100 m-0 px-2">
                         <div class="col-6 col-xxl-12 text-nowrap p-0 justify-content-start d-flex align-items-center">
-                            <div class="footer-title m-0">نیاز به پشتیبانی دارید؟</div>
+                            <div class="footer-title iso-font-md m-0">نیاز به پشتیبانی دارید؟</div>
                         </div>
                         <div class="col-6 col-xxl-12 p-0 mt-xxl-2">
-                            <div class="py-1 p-2 border d-flex bg-white justify-content-center support-border-dark-light align-items-center rounded-pill">
+                            <div class="py-1 p-2 border d-flex bg-white justify-content-center align-items-center rounded-pill">
                                 <span class="m-0 fw-bold mx-2">
                                     <a href="tel:09156510022" class="iso-color-blur-dark">2200 651 0915</a>
                                 </span>
@@ -1064,68 +1070,60 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-body border-0 p-0 pb-3 mt-2  ms-1">
-                    <span class="card-text iso-font-sm fw-normal ms-md-5 ms-xxl-0">پاسخگویی در روزهای کاری 9 صبح تا 16 عصر</span>
+                <div class="footer-body border-0 p-0 pb-3 mt-2 iso-font-md-em ms-1">
+                    <span class="card-text fw-normal ms-md-5 ms-xxl-0">پاسخگویی در روزهای کاری 9 صبح تا 16 عصر</span>
                     <ul class="row gy-3 fw-normal list-unstyled m-0">
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 پزشکان
                             </a>
                         </li>
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 سوالات متداول
                             </a>
                         </li>
 
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 خدمات
                             </a>
                         </li>
 
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 راهنمای سایت
                             </a>
                         </li>
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 تخصص ها
                             </a>
                         </li>
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 حریم خصوصی
                             </a>
                         </li>
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0  d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 شرایط و قوانین
                             </a>
                         </li>
-                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0">
-                            <img src="images/icons/ellipse-light.png" alt="ellipse">
-                            <a href="#" class="text-light hover-line-white">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 d-flex align-self-center ellipse-light">
+                            <a href="#" class="text-light hover-line-white ms-1">
                                 ثبت شکایت
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-certificates order-2 order-md-4 order-xxl-4  col-12 col-md-6 col-xxl-3 px-12 overflow-hidden text-light border-end">
-                <div class="footer-header pt-3 border-0 mb-3 bg-transparent">
-                    <div class="footer-title text-center text-xxl-start">گواهینامه ها</div>
+            <div class="footer-certificates order-2 order-md-4 order-xxl-4  col-12 col-md-6 col-xxl px-12 overflow-hidden text-light border-end">
+                <div class="footer-header pt-3 border-0 mb-4 bg-transparent">
+                    <div class="footer-title text-center iso-font-md text-xxl-start">گواهینامه ها</div>
                 </div>
-                <div class="footer-body d-flex pb-1">
-                    <div class="swiper swiper-certificates">
+                <div class="footer-body d-flex pb-1 d-flex align-items-center ">
+                    <div class="swiper swiper-certificates mb-3 mb-sm-0">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide ms-2 bg-light py-1 d-flex justify-content-center border-radius">
                                 <a href="#">
@@ -1155,75 +1153,73 @@
             <div class="footer-about order-3 order-md-1 order-xxl-1 px-12  col-12 col-md-6 col-xxl-3 d-flex flex-wrap text-light bg-transparent border-end">
                 <div class="footer-header p-0 pt-3 border-0 bg-transparent">
                     <div class="footer-title">
-                        <h2 class="iso-font-xxl">ایزو ویزیت</h2>
-                        <h3 class="iso-font-llg mt-3">مشاوره آنلاین پزشکی و طب سنتی</h3>
+                        <h2 class="iso-font-xxl-em">ایزو ویزیت</h2>
+                        <p class="iso-font-lg-em mt-3">مشاوره آنلاین پزشکی و طب سنتی</p>
                     </div>
                 </div>
                 <div class="footer-body p-0 pb-3">
-                    <p class="footer-text iso-font-sm fw-normal lh-lg  mt-2">
+                    <p class="footer-text iso-font-md-em fw-normal lh-md mt-2">
                         ایزو ویزیت قرار است یک بستر برای بهینه سازی ارتباط امن و کاربردی بین پزشک و بیمار باشد . از طرفی یک سیستم کامل و کاربردی برای نگهداری و مدیریت پرونده های پزشکی بیماران در مطب خواهد بود
                     </p>
                 </div>
             </div>
-            <div class="footer-contact order-4 order-md-3 order-xxl-3  col-12 col-md-6 col-xxl-3 px-12 bg-transparent text-light border-end">
+            <div class="footer-contact order-4 order-md-3 order-xxl-3  col-12 col-md-6 col-xxl px-12 bg-transparent text-light border-end">
                 <div class="footer-header p-0 pt-3 border-0 bg-transparent">
-                    <div class="footer-title text-center text-xxl-start border-0 bg-transparent">ارتباط با ما</div>
+                    <div class="footer-title text-center text-xxl-start border-0 iso-font-md bg-transparent">ارتباط با ما</div>
                 </div>
                 <div class="footer-body p-0 pb-3 m-0 mt-3 d-flex flex-wrap justify-content-center align-items-center">
-
                     <address class="d-flex align-items-start my-4">
                         <img src="./images/icons/map.png" alt="نشانی">
                         <span class="mx-2 iso-font-sm fw-normal lh-base">
                         ایران ، خراسان رضوی ، مشهد ، بلوار سجاد ، بزرگمهر 13 ، یاسمن 15 ، پلاک 18
                         </span>
                     </address>
-
-                    <div class="footer-social-networks d-flex justify-content-center flex-row-reverse mt-3">
-                        <div class="box-youtube bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#" class="card-link">
-                                <i class="fa-brands iso-font-xl mt-1 iso-color-blur-dark fa-youtube"></i>
+                    <div class="footer-social-networks d-flex justify-content-center iso-font-llg-em flex-row-reverse mt-4">
+                        <div class="box-youtube bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blur-dark fa-youtube"></i>
                             </a>
                         </div>
-                        <div class="box-twitter bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#">
-                                <i class="fa-brands iso-font-xl mt-1 iso-color-blur-dark fa-twitter"></i>
+                        <div class="box-twitter bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blur-dark fa-twitter"></i>
                             </a>
                         </div>
-                        <div class="box-facebook bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#">
-                                <i class="fa-brands iso-font-xl mt-1 iso-color-blur-dark fa-facebook"></i>
+                        <div class="box-facebook bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blur-dark fa-facebook"></i>
                             </a>
                         </div>
-                        <div class="box-linkedin-in bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#">
-                                <i class="fa-brands iso-font-xl mt-1 iso-color-blur-dark fa-linkedin-in"></i>
+                        <div class="box-linkedin-in bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blur-dark fa-linkedin-in"></i>
                             </a>
                         </div>
-                        <div class="box-aparat bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#">
+                        <div class="box-aparat bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
                                 <img src="./images/aparat.png" alt="آپارات">
                             </a>
                         </div>
-                        <div class="box-instagram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#">
+                        <div class="box-instagram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
                                 <img src="images/icons/instegram-blur.png" alt="اینستگرام">
                             </a>
                         </div>
-                        <div class="box-telegram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 size-wh-40">
-                            <a href="#">
+                        <div class="box-telegram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
                                 <img src="./images/telegram.png" alt="تلگرام">
                             </a>
                         </div>
                     </div>
 
-                    <p class="footer-text mt-3 m-0 text-nowrap fw-normal iso-font-xxs">© تمامی حقوق مادی و معنوی این وب سایت به ایزو ویزیت تعلق دارد.</p>
+                    <p class="footer-text mt-3 m-0 fw-normal iso-font-xs-em">© تمامی حقوق مادی و معنوی این وب سایت به ایزو ویزیت تعلق دارد.</p>
 
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- footer section -->
+<!-- footer section end-->
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/lazyloadxt/dist/jquery.lazyloadxt.js"></script>
@@ -1231,6 +1227,8 @@
 <script src="../node_modules/swiper/swiper-bundle.js"></script>
 <script src="../node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+<script src="../node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js"></script>
+<script src="js/init/initSwiper.js"></script>
 <script src="./js/general_function.js"></script>
 <script src="./js/index.js"></script>
 <script src="../node_modules/clipboard/dist/clipboard.min.js"></script>
@@ -1239,6 +1237,11 @@
     lightbox.option({
         'positionFromTop': 250
     })
+    $(".doctor-rating").starRating({
+        readOnly: true,
+        emptyColor:'#ffc107',
+        starSize: 25
+    });
 </script>
 
 </body>

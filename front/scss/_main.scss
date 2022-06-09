@@ -23,27 +23,17 @@ hr{
   box-shadow: 0 0;
 }
 
-.section-facilities-and-services .card-header,
-.section-doctors,
-.section-specialty,
-.section-services,
-.section-comments-users,
-.section-question-answer,
-.section-articles,
-.section-medicines,
-.section-sign-in-doctor,
- header,
- footer,
-.communication-iso,
-.scroll-top,
-.section-data-profile-doctor{
+main,
+header,
+footer,
+{
   font-size: 16px;
 }
 
 .active-btn{
-    &:hover{
-      background: $iso-green-dark;
-    }
+  &:hover{
+    background: $iso-green-dark;
+  }
 }
 
 .btn-close-modal{
@@ -67,12 +57,6 @@ hr{
   }
 }
 
-.input-group{
-  button,input{
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-}
 /* swiper pagination start */
 .swiper-pagination-bullet-active{
   width: 1.25em;
@@ -110,11 +94,13 @@ hr{
 }
 
 .rotate-180deg{
+  transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
 }
 
 .rotate-0deg{
+  transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
 }
@@ -163,7 +149,6 @@ hr{
   width: 100%;
   height: 3px;
   background-position: top;
-  background-color: #fff;
   background-repeat: repeat-x;
 }
 
@@ -172,36 +157,56 @@ hr{
 }
 
 .line-muted-dashed{
-  @include line-dashed-style(#fff,$iso-blue-dark,17,16);
+  @include line-dashed-style(#fff,$iso-secondary,10,2);
 }
 
 .line-muted-bg-green-dashed{
-  @include line-dashed-style(#fff,#d1e7dd,17,16);
+  @include line-dashed-style(#d1e7dd,$iso-secondary,10,2);
 }
 
 .line-blur-dashed{
   @include line-dashed-style(#fff,$iso-blue-dark,17,16);
 }
 
-.ellipse-blur{
+.ellipse-dark,
+.ellipse-blur,
+.ellipse-light{
   position: relative;
   &:before{
     content: "";
-    width: 4%;
     height: 48%;
-    right: .7rem;
     top: 37%;
     position: absolute;
-    background-image: url("../images/icons/ellipse-blur.png");
     background-repeat: no-repeat;
+
+  }
+
+}
+
+.ellipse-blur{
+  &:before{
+    width: 4%;
+    right: .7rem;
+    background-image: url("../images/icons/ellipse-blur.png");
   }
 }
 
 .ellipse-light{
-  @extend .ellipse-blur;
   &:before{
     width: 7%;
     right: 0;
     background-image: url("../images/icons/ellipse-light.png");
   }
+}
+
+.ellipse-dark{
+  &:before{
+    width: 7%;
+    right: 0;
+    background-image: url("../images/icons/ellipse-block.png");
+  }
+}
+
+.list-group-item:first-child{
+
 }

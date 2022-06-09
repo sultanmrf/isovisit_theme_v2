@@ -158,7 +158,7 @@ This set of fonts are used in this project under the license: (.....)
 
 /* iso border-radius */
 .border-radius {
-  border-radius: 8px; }
+  border-radius: 8px !important; }
 
 .border-radius-bottom {
   border-radius: 0 0 8px 8px; }
@@ -232,20 +232,9 @@ hr {
 .btn:focus {
   box-shadow: 0 0; }
 
-.section-facilities-and-services .card-header,
-.section-doctors,
-.section-specialty,
-.section-services,
-.section-comments-users,
-.section-question-answer,
-.section-articles,
-.section-medicines,
-.section-sign-in-doctor,
+main,
 header,
-footer,
-.communication-iso,
-.scroll-top,
-.section-data-profile-doctor {
+footer {
   font-size: 16px; }
 
 .active-btn:hover {
@@ -266,10 +255,6 @@ footer,
 
 .dropdown .nav-link:after {
   all: unset; }
-
-.input-group button, .input-group input {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px; }
 
 /* swiper pagination start */
 .swiper-pagination-bullet-active {
@@ -302,10 +287,12 @@ footer,
   transition: 0.4s ease; }
 
 .rotate-180deg {
+  transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg); }
 
 .rotate-0deg {
+  transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg); }
 
@@ -341,7 +328,6 @@ footer,
   width: 100%;
   height: 3px;
   background-position: top;
-  background-color: #fff;
   background-repeat: repeat-x; }
 
 .line-black-dashed {
@@ -349,33 +335,44 @@ footer,
   background-size: 17px 16px; }
 
 .line-muted-dashed {
-  background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
-  background-size: 17px 16px; }
+  background-image: linear-gradient(to right, #fff 50%, #999999 50%);
+  background-size: 10px 2px; }
 
 .line-muted-bg-green-dashed {
-  background-image: linear-gradient(to right, #fff 50%, #d1e7dd 50%);
-  background-size: 17px 16px; }
+  background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
+  background-size: 10px 2px; }
 
 .line-blur-dashed {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 
-.ellipse-blur, .ellipse-light {
+.ellipse-dark,
+.ellipse-blur,
+.ellipse-light {
   position: relative; }
-  .ellipse-blur:before, .ellipse-light:before {
+  .ellipse-dark:before,
+  .ellipse-blur:before,
+  .ellipse-light:before {
     content: "";
-    width: 4%;
     height: 48%;
-    right: .7rem;
     top: 37%;
     position: absolute;
-    background-image: url("../images/icons/ellipse-blur.png");
     background-repeat: no-repeat; }
+
+.ellipse-blur:before {
+  width: 4%;
+  right: .7rem;
+  background-image: url("../images/icons/ellipse-blur.png"); }
 
 .ellipse-light:before {
   width: 7%;
   right: 0;
   background-image: url("../images/icons/ellipse-light.png"); }
+
+.ellipse-dark:before {
+  width: 7%;
+  right: 0;
+  background-image: url("../images/icons/ellipse-block.png"); }
 
 header {
   /* style section banner */ }
@@ -389,6 +386,7 @@ header {
     header .nav .dropdown-menu {
       width: 200px;
       border-radius: 0 8px 8px;
+      transform: translate3d(0px, 34px, 0px) !important;
       -webkit-transform: translate3d(0px, 34px, 0px) !important;
       -moz-transform: translate3d(0px, 34px, 0px) !important; }
     header .nav, header .nav .dropdown-menu {
@@ -401,9 +399,9 @@ header {
     background: #1773B5; }
   header .iso-hover-blue,
   header .iso-hover-white {
+    transition: 0.1s ease-in;
     -webkit-transition: 0.1s ease-in;
-    -moz-transition: 0.1s ease-in;
-    -o-transition: 0.1s ease-in; }
+    -moz-transition: 0.1s ease-in; }
   header .hover-line-blue:hover {
     color: #1773B5;
     border-bottom: 0.125rem solid #1773B5; }
@@ -446,6 +444,7 @@ header {
     header .menu-user .dropdown-menu {
       z-index: 4;
       width: 230px;
+      transform: translate(0px, 31px) !important;
       -webkit-transform: translate(0px, 31px) !important;
       -moz-transform: translate(0px, 31px) !important; }
     header .menu-user .dropdown-toggle:after {
@@ -475,20 +474,9 @@ hr {
 .btn:focus {
   box-shadow: 0 0; }
 
-.section-facilities-and-services .card-header,
-.section-doctors,
-.section-specialty,
-.section-services,
-.section-comments-users,
-.section-question-answer,
-.section-articles,
-.section-medicines,
-.section-sign-in-doctor,
+main,
 header,
-footer,
-.communication-iso,
-.scroll-top,
-.section-data-profile-doctor {
+footer {
   font-size: 16px; }
 
 .active-btn:hover {
@@ -509,10 +497,6 @@ footer,
 
 .dropdown .nav-link:after {
   all: unset; }
-
-.input-group button, .input-group input {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px; }
 
 /* swiper pagination start */
 .swiper-pagination-bullet-active {
@@ -545,10 +529,12 @@ footer,
   transition: 0.4s ease; }
 
 .rotate-180deg {
+  transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg); }
 
 .rotate-0deg {
+  transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg); }
 
@@ -584,7 +570,6 @@ footer,
   width: 100%;
   height: 3px;
   background-position: top;
-  background-color: #fff;
   background-repeat: repeat-x; }
 
 .line-black-dashed {
@@ -592,33 +577,44 @@ footer,
   background-size: 17px 16px; }
 
 .line-muted-dashed {
-  background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
-  background-size: 17px 16px; }
+  background-image: linear-gradient(to right, #fff 50%, #999999 50%);
+  background-size: 10px 2px; }
 
 .line-muted-bg-green-dashed {
-  background-image: linear-gradient(to right, #fff 50%, #d1e7dd 50%);
-  background-size: 17px 16px; }
+  background-image: linear-gradient(to right, #d1e7dd 50%, #999999 50%);
+  background-size: 10px 2px; }
 
 .line-blur-dashed {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 
-.ellipse-blur, .ellipse-light {
+.ellipse-dark,
+.ellipse-blur,
+.ellipse-light {
   position: relative; }
-  .ellipse-blur:before, .ellipse-light:before {
+  .ellipse-dark:before,
+  .ellipse-blur:before,
+  .ellipse-light:before {
     content: "";
-    width: 4%;
     height: 48%;
-    right: .7rem;
     top: 37%;
     position: absolute;
-    background-image: url("../images/icons/ellipse-blur.png");
     background-repeat: no-repeat; }
+
+.ellipse-blur:before {
+  width: 4%;
+  right: .7rem;
+  background-image: url("../images/icons/ellipse-blur.png"); }
 
 .ellipse-light:before {
   width: 7%;
   right: 0;
   background-image: url("../images/icons/ellipse-light.png"); }
+
+.ellipse-dark:before {
+  width: 7%;
+  right: 0;
+  background-image: url("../images/icons/ellipse-block.png"); }
 
 /* footer */
 footer .footer-certificates .footer-body {

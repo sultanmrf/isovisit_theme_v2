@@ -18,6 +18,7 @@ header {
         .dropdown-menu{
             width: 200px;
             border-radius: 0 $iso-border-radius $iso-border-radius;
+            transform: translate3d(0px, 34px, 0px) !important;
             -webkit-transform: translate3d(0px, 34px, 0px) !important;
             -moz-transform: translate3d(0px, 34px, 0px) !important;
         }
@@ -41,9 +42,9 @@ header {
 
     .iso-hover-blue,
     .iso-hover-white {
+        transition: 0.1s ease-in;
         -webkit-transition: 0.1s ease-in;
         -moz-transition: 0.1s ease-in;
-        -o-transition: 0.1s ease-in;
     }
 
     .hover-line-blue:hover {
@@ -124,6 +125,7 @@ header {
         .dropdown-menu{
             z-index: 4;
             width: 230px;
+            transform:  translate(0px, 31px) !important;
             -webkit-transform:  translate(0px, 31px) !important;
             -moz-transform:  translate(0px, 31px) !important;
         }
