@@ -1,3 +1,21 @@
+/*variable*/
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+* border-color
+ */
+/**
+* spacing text
+ */
 @media only screen and (max-width: 992px) {
   .position-top-lg-75 {
     top: 75%; }
@@ -30,7 +48,11 @@
 
 @media only screen and (max-width: 768px) {
   .position-section-get-advice {
-    position: unset !important; } }
+    position: unset !important; }
+  .communication-iso {
+    bottom: 5em; }
+  .scroll-top {
+    bottom: 5em; } }
 
 @media only screen and (min-width: 992px) {
   html {
@@ -54,6 +76,11 @@
     top: -98px; } }
 
 @media only screen and (min-width: 1400px) {
+  .section-data-profile-doctor .btn-group {
+    top: -52px;
+    border-radius: 8px; }
+  .section-data-profile-doctor .row {
+    height: 118px; }
   footer .footer-certificates,
   footer .footer-contact {
     border-top: 0 solid; } }

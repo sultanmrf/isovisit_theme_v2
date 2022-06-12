@@ -6,6 +6,8 @@
 /**
 *   size
 */
+/* size rem */
+/* size em */
 /**
 * border-radius
  */
@@ -138,23 +140,23 @@ This set of fonts are used in this project under the license: (.....)
 .iso-font-xxl {
   font-size: 2.188rem; }
 
-.iso-font-md-em {
-  font-size: 1em; }
+.iso-font-xxs-em {
+  font-size: 0.625em; }
+
+.iso-font-xs-em {
+  font-size: 0.75em; }
 
 .iso-font-sm-em {
   font-size: 0.875em; }
 
-.iso-font-xs-em {
-  font-size: 0.75em; }
+.iso-font-md-em {
+  font-size: 1em; }
 
 .iso-font-lg-em {
   font-size: 1.125em; }
 
 .iso-font-llg-em {
-  font-size: 1.5em; }
-
-.iso-font-llg-em {
-  font-size: 1.5em; }
+  font-size: 1.25em; }
 
 /* iso border-radius */
 .border-radius {
@@ -240,6 +242,22 @@ footer {
 .active-btn:hover {
   background: #009d38; }
 
+.hover-line-blue:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -6px;
+  height: 4px;
+  background: none;
+  border-radius: 8px;
+  left: 0; }
+
+.hover-line-blue:hover:after {
+  background: #1773B5; }
+
+.hover-line-white:hover {
+  border-bottom: 0.125rem solid #f8f9fa; }
+
 .btn-close-modal {
   width: 1.875em;
   height: 1.875em;
@@ -374,6 +392,12 @@ footer {
   right: 0;
   background-image: url("../images/icons/ellipse-block.png"); }
 
+.profile-doctor {
+  width: 6.125em; }
+  .profile-doctor .badge {
+    right: 0;
+    bottom: .75em; }
+
 header {
   /* style section banner */ }
   header .offcanvas-start {
@@ -402,11 +426,6 @@ header {
     transition: 0.1s ease-in;
     -webkit-transition: 0.1s ease-in;
     -moz-transition: 0.1s ease-in; }
-  header .hover-line-blue:hover {
-    color: #1773B5;
-    border-bottom: 0.125rem solid #1773B5; }
-  header .hover-line-white:hover {
-    border-bottom: 0.125rem solid #f8f9fa; }
   header .iso-color-gradient-header {
     background: linear-gradient(135.36deg, #20A2FF -7.43%, #20A2FF -7.42%, #1773B5 100%); }
   header .banner .search-box-lg,
@@ -482,6 +501,22 @@ footer {
 .active-btn:hover {
   background: #009d38; }
 
+.hover-line-blue:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -6px;
+  height: 4px;
+  background: none;
+  border-radius: 8px;
+  left: 0; }
+
+.hover-line-blue:hover:after {
+  background: #1773B5; }
+
+.hover-line-white:hover {
+  border-bottom: 0.125rem solid #f8f9fa; }
+
 .btn-close-modal {
   width: 1.875em;
   height: 1.875em;
@@ -615,6 +650,12 @@ footer {
   width: 7%;
   right: 0;
   background-image: url("../images/icons/ellipse-block.png"); }
+
+.profile-doctor {
+  width: 6.125em; }
+  .profile-doctor .badge {
+    right: 0;
+    bottom: .75em; }
 
 /* footer */
 footer .footer-certificates .footer-body {

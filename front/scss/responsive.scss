@@ -1,3 +1,6 @@
+/*variable*/
+@import "variables";
+
 @media only screen and (max-width: 992px) {
 
   .position-top-lg-75{
@@ -68,6 +71,14 @@
   .position-section-get-advice{
     position: unset !important;
   }
+
+  .communication-iso{
+    bottom: 5em;
+  }
+
+  .scroll-top{
+    bottom: 5em;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -113,10 +124,19 @@
     left: -230px;
     top: -98px;
   }
-
 }
 
 @media only screen and (min-width: 1400px){
+  .section-data-profile-doctor {
+    .btn-group {
+      top: -52px;
+      border-radius: $iso-border-radius;
+    }
+
+    .row{
+      height: 118px;
+    }
+  }
 
   footer {
     .footer-certificates,
@@ -125,3 +145,4 @@
     }
   }
 }
+

@@ -47,15 +47,6 @@ header {
         -moz-transition: 0.1s ease-in;
     }
 
-    .hover-line-blue:hover {
-        color: $iso-blue-dark;
-        border-bottom: 0.125rem solid $iso-blue-dark;
-    }
-
-    .hover-line-white:hover {
-        border-bottom: 0.125rem solid #f8f9fa;
-    }
-
     .iso-color-gradient-header {
         background: linear-gradient(135.36deg, #20A2FF -7.43%, #20A2FF -7.42%, #1773B5 100%);
     }

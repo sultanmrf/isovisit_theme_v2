@@ -36,6 +36,25 @@ footer,
   }
 }
 
+.hover-line-blue:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -6px;
+  height: 4px;
+  background: none;
+  border-radius: 8px;
+  left: 0;
+}
+
+.hover-line-blue:hover:after{
+  background: #1773B5;
+}
+
+.hover-line-white:hover {
+  border-bottom: 0.125rem solid #f8f9fa;
+}
+
 .btn-close-modal{
   width: 1.875em;
   height: 1.875em;
@@ -207,6 +226,11 @@ footer,
   }
 }
 
-.list-group-item:first-child{
+.profile-doctor{
+  width: 6.125em;
 
+  .badge{
+    right: 0;
+    bottom: .75em;
+  }
 }

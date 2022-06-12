@@ -16,14 +16,24 @@ $iso-secondary : #999999;
 /**
 *   size
 */
-$iso-xs: 0.75rem;
+
+/* size rem */
 $iso-xxs: 0.625rem;
+$iso-xs: 0.75rem;
 $iso-sm: 0.875rem;
 $iso-md: 1rem;
 $iso-lg: 1.125rem;
 $iso-llg: 1.25rem;
 $iso-xl: 1.563rem;
 $iso-xxl: 2.188rem;
+
+/* size em */
+$iso-xxs-em: 0.625em;
+$iso-xs-em: 0.75em;
+$iso-sm-em: 0.875em;
+$iso-md-em: 1em;
+$iso-lg-em: 1.125em;
+$iso-llg-em: 1.25em;
 
 /**
 * border-radius

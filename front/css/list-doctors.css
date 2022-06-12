@@ -1,0 +1,10 @@
+.filter-img {
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("../images/icons/filter.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em; }

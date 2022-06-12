@@ -79,29 +79,30 @@
   font-size: $iso-xxl;
 }
 
-.iso-font-md-em{
-  font-size: 1em;
-}
-
-.iso-font-sm-em{
-  font-size: 0.875em;
+.iso-font-xxs-em{
+  font-size: $iso-xxs-em;
 }
 
 .iso-font-xs-em{
-  font-size: 0.75em;
+  font-size: $iso-xs-em;
+}
+
+.iso-font-sm-em{
+  font-size: $iso-sm-em;
+}
+
+.iso-font-md-em{
+  font-size: $iso-md-em;
 }
 
 .iso-font-lg-em{
-  font-size: 1.125em;
+  font-size: $iso-lg-em;
 }
 
 .iso-font-llg-em{
-  font-size: 1.5em;
+  font-size: $iso-llg-em;
 }
 
-.iso-font-llg-em{
-  font-size: 1.5em;
-}
 
 /* iso border-radius */
 .border-radius{

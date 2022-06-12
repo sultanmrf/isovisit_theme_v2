@@ -56,7 +56,7 @@ $(document).ready(function (){
             '                                    <span class="mx-2">3</span>\n' +
             '                                </div>\n' +
             '                                <div class="col-6">\n' +
-            '                                    <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blur-dark">پاسخ</button>\n' +
+            '                                    <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blur-dark active-btn">پاسخ</button>\n' +
             '                                </div>\n' +
             '                            </div>\n' +
             '                        </div>\n' +
@@ -74,26 +74,51 @@ $(document).ready(function (){
         }
     })
 
+    /*نمایش ادرس دکتر در نقشه گوگل*/
     show_map('contact__map',36.312416, 59.553421)
 
 
-    let $window = $(window);
-    $window.on('scroll', revealOnScroll);
 
-    function revealOnScroll() {
-        let scrolled = $window.scrollTop();
-
-        $("footer").each(function () {
-            let $this = $(this);
-            let offsetTop = $this.offset().top - 700;
-            // show svg if scroll > offsetTop tag
-
-            // debugger;
-            if (scrolled  >= offsetTop) {
-                $(".position-section-get-advice").css({top:-(scrolled - offsetTop) + 'px'});
-            }else{
-                $(".position-section-get-advice").css({top:'115px'});
-            }
-        });
+    // let $window = $(window);
+    // $window.on('scroll', keep_tag_fixed_while_scrolling);
+    //
+    // function keep_tag_fixed_while_scrolling() {
+    //     let tag_target = $("footer") ,
+    //         size_scrolled = $window.scrollTop() ,
+    //         offsetTop,
+    //         val_check_size_media = check_size_media(768,1400);
+    //
+    //     console.log("offset_tag = "  + tag_target.offset().top,"scroll = " + size_scrolled)
+    //
+    //     if(val_check_size_media){
+    //         offsetTop = tag_target.offset().top - 160;
+    //         if (size_scrolled >= offsetTop) {
+    //             $(".position-section-get-advice").css({top:-(size_scrolled - offsetTop - 135) + 'px'});
+    //         }else{
+    //             if(size_scrolled  < 10){
+    //                 $(".position-section-get-advice").css({top:'10.5em'});
+    //             }else{
+    //                 $(".position-section-get-advice").css({top:'unset'});
+    //             }
+    //         }
+    //     }else{
+    //         offsetTop = tag_target.offset().top - 300;
+    //         if (size_scrolled >= offsetTop) {
+    //             $(".position-section-get-advice").css({top:-(size_scrolled - offsetTop - 349) + 'px'});
+    //         }else{
+    //             $(".position-section-get-advice").css({top:'10.5em'});
+    //         }
+    //     }
+    // }
+    //
+    function check_size_media(min_width,max_width){
+        return window.matchMedia("(min-width: " + min_width + "px) and (max-width: " +  max_width + "px)").matches;
     }
+
+
+    if( window.matchMedia("(max-width: 768px)").matches){
+        $(".section-get-advice").removeClass(['position-sticky', 'top-0']);
+        $(".section-data-profile-doctor").after($(".section-get-advice"));
+    }
+
 });
