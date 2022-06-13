@@ -47,17 +47,6 @@ main {
     }
   }
 
-  .swiper-button-next,
-  .swiper-button-prev{
-    width: 45px;
-    height: 45px;
-  }
-
-  .swiper-button-next:after,
-  .swiper-button-prev:after{
-    content: '' !important;
-  }
-
   .section-doctors {
 
     .section-header {
@@ -118,46 +107,11 @@ main {
     }
   }
 
-  @mixin size-fiqure-img {
-    width: 2.5em;
-    height: 2.5em;
-  }
-
   @mixin text-overflow-ellipsis {
     text-overflow: ellipsis;
   }
 
-  .section-comments-users {
-
-    > .section-body {
-      top: -0.813em;
-    }
-
-    .swiper-comments-users {
-      .figure-img {
-        @include size-fiqure-img;
-      }
-
-      .card {
-        width: 15.125em;
-        height: 12.5em;
-      }
-
-      .swiper-slide {
-        width: 15em;
-      }
-
-      .swiper-wrapper{
-        height: 14em;
-      }
-    }
-  }
-
   .swiper-question-answer {
-
-    .figure-img {
-      @include size-fiqure-img;
-    }
 
     .card {
       width: 20.5em;

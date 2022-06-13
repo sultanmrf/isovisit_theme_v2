@@ -10,9 +10,9 @@
     <link href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
     <link href="../node_modules/star-rating-svg/src/css/star-rating-svg.css" rel="stylesheet" />
     <link href="./css/isovisit.css" rel="stylesheet">
-    <link href="./css/home.css" rel="stylesheet">
     <link href="./css/list-doctors.css" rel="stylesheet">
     <link href="./css/responsive.css" rel="stylesheet">
 
@@ -721,10 +721,13 @@
                     <div class="card-body">
                         <div class="col-md-6">
                             <figure class="figure d-flex align-items-center m-0">
-                                <div class="profile-doctor position-relative d-flex justify-content-center">
+                                <div class="profile-doctor position-relative d-flex flex-wrap justify-content-center">
                                     <img src="../front/images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
                                     <span class="badge iso-bg-green p-1 fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
-                                    <div class="doctor-rating col-6 col-sm-4 col-md-5 col-lg-4 col-xxl-5 star align-self-end d-flex justify-content-around mb-2 p-0"></div>
+                                    <div class="star_rating_doctor iso-font-xs-em d-flex align-items-center border-warning border border-radius px-1">
+                                        <i class="doctor-rating"></i>
+                                        <span>4.5 از 5</span>
+                                    </div>
                                 </div>
                                 <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-3">
                                     <span class="iso-font-md-em iso-color-dark">دکتر محمد رضا کاظمیان</span>
@@ -738,8 +741,9 @@
                 </div>
             </section>
 
+
             <!-- section comments users start -->
-            <section class="col-12 section-comments-users mt-4">
+            <section class="section-comments-users mt-4">
                 <div class="section-header p-0 border-0 bg-transparent">
                     <div class="section-title position-absolute d-flex align-items-center">
                         <i class="iso-line-title iso-bg-blur-dark"></i>
@@ -753,7 +757,7 @@
                                 <div class="card border-0 box-shadow-lg border-radius pb-2">
                                     <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
                                         <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle" alt="...">
+                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
                                             <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
                                                 <span class="iso-font-md-em">محمد رضا فنودی</span>
                                                 <a href="#" class="iso-font-sm-em iso-color-blur-dark">درباره دکتر کاضمیان</a>
@@ -772,7 +776,7 @@
                                 <div class="card border-0 box-shadow-lg border-radius pb-2">
                                     <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
                                         <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle" alt="...">
+                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
                                             <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
                                                 <span class="iso-font-md-em">محمد رضا فنودی</span>
                                                 <a href="#" class="iso-font-sm-em iso-color-blur-dark">درباره دکتر کاضمیان</a>
@@ -791,7 +795,7 @@
                                 <div class="card border-0 box-shadow-lg border-radius pb-2">
                                     <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
                                         <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle" alt="...">
+                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
                                             <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
                                                 <span class="iso-font-md-em">محمد رضا فنودی</span>
                                                 <a href="#" class="iso-font-sm-em iso-color-blur-dark">درباره دکتر کاضمیان</a>
@@ -810,7 +814,7 @@
                                 <div class="card border-0 box-shadow-lg border-radius pb-2">
                                     <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
                                         <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle" alt="...">
+                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
                                             <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
                                                 <span class="iso-font-md-em">محمد رضا فنودی</span>
                                                 <a href="#" class="iso-font-sm-em iso-color-blur-dark">درباره دکتر کاضمیان</a>
@@ -829,7 +833,7 @@
                                 <div class="card border-0 box-shadow-lg border-radius pb-2">
                                     <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
                                         <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle" alt="...">
+                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
                                             <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
                                                 <span class="iso-font-md-em">محمد رضا فنودی</span>
                                                 <a href="#" class="iso-font-sm-em iso-color-blur-dark">درباره دکتر کاضمیان</a>
@@ -848,7 +852,7 @@
                                 <div class="card border-0 box-shadow-lg border-radius pb-2">
                                     <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
                                         <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle" alt="...">
+                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
                                             <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
                                                 <span class="iso-font-md-em">محمد رضا فنودی</span>
                                                 <a href="#" class="iso-font-sm-em iso-color-blur-dark">درباره دکتر کاضمیان</a>
@@ -1183,16 +1187,11 @@
 <script src="../node_modules/lazyloadxt/dist/jquery.lazyloadxt.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../node_modules/swiper/swiper-bundle.js"></script>
+<script src="../node_modules/leaflet/dist/leaflet.js"></script>
 <script src="../node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js"></script>
+<script src="js/general_function.js"></script>
 <script src="js/init/initSwiper.js"></script>
 <script src="./js/index.js"></script>
-<script src="./js/home.js"></script>
-<script>
-    $(".doctor-rating").starRating({
-        readOnly: true,
-        emptyColor:'#ffc107',
-        starSize: 25
-    });
-</script>
+<script src="./js/list_doctors.js"></script>
 </body>
 </html>

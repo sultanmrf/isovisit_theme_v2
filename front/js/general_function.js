@@ -18,3 +18,13 @@ function show_map(map_container_id, lat, long) {
         var map_main_marker = L.marker([lat, long]).addTo(map_main);
     }
 }
+
+function check_size_media(min_width,max_width){
+    if(min_width === false){
+        return window.matchMedia("(max-width: " + max_width + "px)").matches;
+    }else if(max_width === false) {
+        return window.matchMedia("(min-width: " + min_width + "px)").matches;
+    }else {
+        return window.matchMedia("(min-width: " + min_width + "px) and (max-width: " +  max_width + "px)").matches;
+    }
+}

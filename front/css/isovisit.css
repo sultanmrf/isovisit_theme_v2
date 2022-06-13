@@ -274,13 +274,22 @@ footer {
 .dropdown .nav-link:after {
   all: unset; }
 
-/* swiper pagination start */
+/* swiper start */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 45px;
+  height: 45px; }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '' !important; }
+
 .swiper-pagination-bullet-active {
   width: 1.25em;
   border-radius: 0.5rem;
   background: #1773B5; }
 
-/* swiper pagination end */
+/* swiper end */
 .communication-iso {
   left: 4%;
   bottom: 1.5em;
@@ -396,7 +405,20 @@ footer {
   width: 6.125em; }
   .profile-doctor .badge {
     right: 0;
-    bottom: .75em; }
+    bottom: 3.75em; }
+
+.section-comments-users > .section-body {
+  top: -0.813em; }
+
+.section-comments-users .swiper-comments-users .card {
+  width: 15.125em;
+  height: 12.5em; }
+
+.section-comments-users .swiper-comments-users .swiper-slide {
+  width: 15em; }
+
+.section-comments-users .swiper-comments-users .swiper-wrapper {
+  height: 14em; }
 
 header {
   /* style section banner */ }
@@ -533,13 +555,22 @@ footer {
 .dropdown .nav-link:after {
   all: unset; }
 
-/* swiper pagination start */
+/* swiper start */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 45px;
+  height: 45px; }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '' !important; }
+
 .swiper-pagination-bullet-active {
   width: 1.25em;
   border-radius: 0.5rem;
   background: #1773B5; }
 
-/* swiper pagination end */
+/* swiper end */
 .communication-iso {
   left: 4%;
   bottom: 1.5em;
@@ -655,7 +686,20 @@ footer {
   width: 6.125em; }
   .profile-doctor .badge {
     right: 0;
-    bottom: .75em; }
+    bottom: 3.75em; }
+
+.section-comments-users > .section-body {
+  top: -0.813em; }
+
+.section-comments-users .swiper-comments-users .card {
+  width: 15.125em;
+  height: 12.5em; }
+
+.section-comments-users .swiper-comments-users .swiper-slide {
+  width: 15em; }
+
+.section-comments-users .swiper-comments-users .swiper-wrapper {
+  height: 14em; }
 
 /* footer */
 footer .footer-certificates .footer-body {

@@ -171,8 +171,7 @@ $(document).ready(function (){
 
 
     /* section search-input-sm modal*/
-    if(window.matchMedia("(max-width: 576px)").matches) {
-
+    if(check_size_media(false,576)) {
         $(".search-input-lg").attr('data-bs-toggle',"modal");
         $(document).on('keyup','.search-input-sm',function (){
             let character_length = $(this).val().length;
@@ -211,6 +210,5 @@ $(document).ready(function (){
         $(".result-search .list-group").html('');
     });
 
-    initSwiper(".swiper-certificates",2,10,false, true,'.swiper-pagination-certificates');
-
+    initCertificatesSwiper();
 });
