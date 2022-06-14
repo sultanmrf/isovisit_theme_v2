@@ -3,7 +3,7 @@ $(document).ready(function (){
    $(".doctor-rating").starRating({
       readOnly: true,
       emptyColor:'#ffc107',
-      starSize: 20,
+      starSize: 18,
       totalStars: 1,
       starShape: 'rounded',
       hoverColor: 'salmon',
@@ -11,3 +11,4 @@ $(document).ready(function (){
       useGradient: false
    });
 });
+

@@ -1,6 +1,17 @@
 $(document).ready(function (){
 
+    lightbox.option({
+        'positionFromTop': 250
+    })
+
+    $(".doctor-rating").starRating({
+        readOnly: true,
+        emptyColor:'#ffc107',
+        starSize: 25
+    });
+
     new ClipboardJS('.btn-copy-link');
+
     new Swiper(".swiper-gallery-doctor", {
         effect: "flip",
         grabCursor: true,

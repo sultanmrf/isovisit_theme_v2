@@ -404,8 +404,8 @@ footer {
 .profile-doctor {
   width: 6.125em; }
   .profile-doctor .badge {
-    right: 0;
-    bottom: 3.75em; }
+    right: -2px;
+    bottom: 2.75em; }
 
 .section-comments-users > .section-body {
   top: -0.813em; }
@@ -685,8 +685,8 @@ footer {
 .profile-doctor {
   width: 6.125em; }
   .profile-doctor .badge {
-    right: 0;
-    bottom: 3.75em; }
+    right: -2px;
+    bottom: 2.75em; }
 
 .section-comments-users > .section-body {
   top: -0.813em; }

@@ -112,13 +112,16 @@ main .section-medicines .section-title {
   top: -0.45em; }
 
 main .section-medicines .swiper-slide {
-  width: 15.063em; }
+  width: 18.75em; }
 
 main .section-medicines .card {
-  height: 8.188em; }
+  height: 10em; }
 
 main .section-medicines img {
   width: 5.313em; }
+
+main .section-medicines .title-medicines {
+  height: 3.25em; }
 
 main .section-medicines .card-body div span {
   text-overflow: ellipsis; }

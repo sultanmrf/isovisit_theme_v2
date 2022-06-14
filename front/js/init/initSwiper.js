@@ -1,14 +1,14 @@
 function initSwiper(target, options, name_pagination , spaceBetween = 16) {
     // Set variables
-    var count_slides_view = '';
-    var navigation = '';
-    var pagination = '';
+    let count_slides_view = '',
+        navigation = '',
+        pagination = '';
 
     /* all_size : in all size page */
-    if(options.all_size){
-        count_slides_view = options.all_size.count_slides_view;
-        navigation = options.all_size.navigation;
-        pagination = options.all_size.pagination;
+    if(options.default){
+        count_slides_view = options.default.count_slides_view;
+        navigation = options.default.navigation;
+        pagination = options.default.pagination;
     }else {
         if (window.matchMedia("(max-width: 576px)").matches){
             count_slides_view = options.sm.count_slides_view;
@@ -24,7 +24,6 @@ function initSwiper(target, options, name_pagination , spaceBetween = 16) {
             pagination = options.lg.pagination;
         }
     }
-
 
     // Use Variables
     let navigation_option = {
@@ -73,7 +72,7 @@ function initMedicineSwiper(target = '.swiper-medicines', name_pagination = '.sw
     }, name_pagination);
 }
 
-// CommentsUsers Swiper:
+// Comments Users Swiper:
 function initCommentsUsersSwiper(target = '.swiper-comments-users', name_pagination = '') {
 
     initSwiper(target, {
@@ -161,7 +160,7 @@ function initServicesSwiper(target = '.swiper-services', name_pagination = '') {
     }, name_pagination);
 }
 
-// QuestionAnswer Swiper:
+// Question Answer Swiper:
 function initQuestionAnswerSwiper(target = '.swiper-question-answer', name_pagination = '.swiper-pagination-question-answer') {
 
     initSwiper(target, {
@@ -205,10 +204,10 @@ function initArticleSwiper(target = '.swiper-articles', name_pagination = '.swip
     }, name_pagination);
 }
 
-// Article Swiper:
+// Certificates Swiper:
 function initCertificatesSwiper(target = '.swiper-certificates', name_pagination = '.swiper-pagination-certificates') {
     initSwiper(target, {
-        all_size: {
+        default: {
             count_slides_view: 2,
             navigation: false,
             pagination: true,

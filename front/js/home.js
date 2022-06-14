@@ -5,7 +5,6 @@ $(document).ready(function (){
     $('.svg-comment-users').attr('viewBox','-20 15 500 400');
     $('.svg-medicines').attr('viewBox','-40 163 550 317');
 
-
     if (check_size_media(992,false)) {
         $('.svg-doctors').attr('viewBox','-20 0 500 397');
         $('.svg-articles').attr('viewBox','25 0 450 400');
@@ -21,5 +20,11 @@ $(document).ready(function (){
     initQuestionAnswerSwiper();
     initArticleSwiper();
 
+    $(".text-Indications,.title-medicines").each(function (){
+        let text = $(this).text().trim();
+        if (text.length >= 56) {
+            $(this).html(text.substr(0, 56) + '...');
+        }
+    })
 
 });

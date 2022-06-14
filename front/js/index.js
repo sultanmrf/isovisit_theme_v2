@@ -74,12 +74,9 @@ $(document).ready(function (){
         });
     }
 
-
     $(document).on('click','.scroll-top',function (){
         $('html').animate({scrollTop : 0},200);
     });
-
-
 
     /* section login */
     $(".box-verification-code input").keyup(function () {
@@ -164,6 +161,7 @@ $(document).ready(function (){
             $(this).removeClass('border-radius-top').addClass('border-radius');
         }
     })
+
     $(".btn-user").focusout(function () {
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         $(this).removeClass('border-radius-top').addClass('border-radius');
@@ -201,8 +199,8 @@ $(document).ready(function (){
                 $(".search-box-sm .btn-close-modal").addClass('d-none').removeClass('d-flex');
             }
         })
-
     }
+
     $(document).on('click','.clear-input',function () {
         $(".search-input-sm").val('');
         $(this).addClass('d-none');
