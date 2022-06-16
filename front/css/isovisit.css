@@ -80,11 +80,11 @@ This set of fonts are used in this project under the license: (.....)
 
 /* custom classes */
 /* iso background custom */
-.iso-bg-blur-dark {
+.iso-bg-blue-dark {
   background: #1773B5;
   color: white; }
 
-.iso-bg-blur-light {
+.iso-bg-blue-light {
   background: #CCE5FF; }
 
 .iso-bg-gray-light {
