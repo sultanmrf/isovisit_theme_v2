@@ -1,5 +1,7 @@
 .filter-img-light,
-.filter-img-dark{
+.filter-img-dark,
+.sort-img-dark,
+.sort-img-light{
   width: 1.5em;
   height: 1.5em;
   background-size: cover;
@@ -14,25 +16,41 @@
   background-image: url("../images/icons/filter-light.png");
 }
 
-.sort-img{
-  width: 1.5em;
-  height: 1.5em;
-  background-size: cover;
-  background-image: url("../images/icons/sort.png");
-  background-repeat: no-repeat;
+.sort-img-dark{
+  background-image: url("../images/icons/sort-dark.png");
 }
 
-.form-check-input{
-  width: 1.5em;
-  height: 1.5em;
+.sort-img-light{
+  background-image: url("../images/icons/sort-light.png");
 }
 
 .star_rating_doctor{
   width: 69px;
   height: 24px;
 }
+
+.form-check-input{
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid rgba(0,0,0,.25);
+}
+
+.show-doctors-more{
+  .btn{
+    top: -1.3em;
+  }
+}
+
+#offcanvasSort{
+  border-radius: 20px 20px 0 0;
+}
+
+.filter{
+  width: 29.8%;
+}
+
 .section-list-doctors{
-  .form-check-input{
-    border: 2px solid rgba(0,0,0,.25)
+  .card-body{
+   height: 115px;
   }
 }

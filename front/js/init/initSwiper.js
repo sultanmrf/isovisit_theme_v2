@@ -1,27 +1,37 @@
-function initSwiper(target, options, name_pagination , spaceBetween = 16) {
+function initSwiper(target, options, name_pagination , spaceBetween = 16 , ) {
     // Set variables
     let count_slides_view = '',
         navigation = '',
-        pagination = '';
+        pagination = '',
+        effect = false,
+        grabCursor = false;
 
     /* all_size : in all size page */
     if(options.default){
         count_slides_view = options.default.count_slides_view;
         navigation = options.default.navigation;
         pagination = options.default.pagination;
+        effect = options.default.effect;
+        grabCursor = options.default.grabCursor;
     }else {
         if (window.matchMedia("(max-width: 576px)").matches){
             count_slides_view = options.sm.count_slides_view;
             navigation = options.sm.navigation;
             pagination = options.sm.pagination;
+            effect = options.sm.effect;
+            grabCursor = options.sm.grabCursor;
         }else if(window.matchMedia("(min-width: 577px) and (max-width: 992px)").matches){
             count_slides_view = options.md.count_slides_view;
             navigation = options.md.navigation;
             pagination = options.md.pagination;
+            effect = options.md.effect;
+            grabCursor = options.md.grabCursor;
         } else {
             count_slides_view = options.lg.count_slides_view;
             navigation = options.lg.navigation;
             pagination = options.lg.pagination;
+            effect = options.lg.effect;
+            grabCursor = options.lg.grabCursor;
         }
     }
 
@@ -47,6 +57,8 @@ function initSwiper(target, options, name_pagination , spaceBetween = 16) {
         spaceBetween: spaceBetween,
         navigation: navigation_option,
         pagination: pagination_option,
+        effect: effect,
+        grabCursor: grabCursor,
     });
 }
 
@@ -58,16 +70,22 @@ function initMedicineSwiper(target = '.swiper-medicines', name_pagination = '.sw
             count_slides_view: 'auto',
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view:'auto',
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 'auto',
             navigation: true,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -80,16 +98,22 @@ function initCommentsUsersSwiper(target = '.swiper-comments-users', name_paginat
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 'auto',
             navigation: true,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -102,16 +126,22 @@ function initDoctorsSwiper(target = '.swiper-doctors', name_pagination = '') {
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 'auto',
             navigation: true,
             pagination: false,
+           effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -124,16 +154,22 @@ function initSpecialtySwiper(target = '.swiper-specialty', name_pagination = '')
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 'auto',
             navigation: true,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -146,16 +182,22 @@ function initServicesSwiper(target = '.swiper-services', name_pagination = '') {
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view: 'auto',
             navigation: false,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 'auto',
             navigation: true,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -168,16 +210,22 @@ function initQuestionAnswerSwiper(target = '.swiper-question-answer', name_pagin
             count_slides_view: 1,
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view: 2,
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 4,
             navigation: true,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -190,16 +238,22 @@ function initArticleSwiper(target = '.swiper-articles', name_pagination = '.swip
             count_slides_view: 1,
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
         md: {
             count_slides_view: 2,
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
         lg: {
             count_slides_view: 3,
             navigation: true,
             pagination: false,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination);
 }
@@ -211,7 +265,22 @@ function initCertificatesSwiper(target = '.swiper-certificates', name_pagination
             count_slides_view: 2,
             navigation: false,
             pagination: true,
+            effect: false,
+            grabCursor: false,
         },
     }, name_pagination,10);
+}
+
+// GalleryDoctor Swiper:
+function initGalleryDoctorSwiper(target = '.swiper-gallery-doctor', name_pagination = '.swiper-pagination-gallery-doctor') {
+    initSwiper(target, {
+        default: {
+            count_slides_view: false,
+            navigation: true,
+            pagination: true,
+            effect: 'flip',
+            grabCursor: true
+        },
+    }, name_pagination,0);
 }
 

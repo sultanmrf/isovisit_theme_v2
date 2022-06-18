@@ -12,17 +12,7 @@ $(document).ready(function (){
 
     new ClipboardJS('.btn-copy-link');
 
-    new Swiper(".swiper-gallery-doctor", {
-        effect: "flip",
-        grabCursor: true,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+    initGalleryDoctorSwiper();
 
     $(document).on('click','.love',function (){
         let val_aria_expanded = $(this).attr('aria-expanded');

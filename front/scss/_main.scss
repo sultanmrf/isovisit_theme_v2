@@ -32,6 +32,7 @@ footer,
 
 .active-btn{
   &:hover{
+    color: white;
     background: $iso-green-dark;
   }
 }
@@ -238,11 +239,15 @@ footer,
 }
 
 .profile-doctor{
-  width: 6.125em;
+  .img-box-profile{
+    width: 5.125em;
+    height: 4.5em;
 
-  .badge{
-    right: -2px;
-    bottom: 2.75em;
+    .badge{
+      padding: 5px 2px 5px 2px;
+      right: -1.2em;
+      bottom: .75em;
+    }
   }
 }
 

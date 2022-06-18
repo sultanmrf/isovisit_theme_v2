@@ -67,13 +67,24 @@
   }
 }
 
+
+@media only screen and (max-width: 576px) {
+  .section-list-doctors{
+    .card-body{
+      height: auto;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px){
   .position-section-get-advice{
     position: unset !important;
   }
 
-  .communication-iso{
-    bottom: 5em;
+  .profile-doctor-master{
+    ~  .communication-iso{
+      bottom: 5em;
+    }
   }
 
   .scroll-top{

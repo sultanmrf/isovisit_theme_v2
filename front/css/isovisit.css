@@ -240,6 +240,7 @@ footer {
   font-size: 16px; }
 
 .active-btn:hover {
+  color: white;
   background: #009d38; }
 
 .hover-line-blue:after {
@@ -401,11 +402,13 @@ footer {
   right: 0;
   background-image: url("../images/icons/ellipse-block.png"); }
 
-.profile-doctor {
-  width: 6.125em; }
-  .profile-doctor .badge {
-    right: -2px;
-    bottom: 2.75em; }
+.profile-doctor .img-box-profile {
+  width: 5.125em;
+  height: 4.5em; }
+  .profile-doctor .img-box-profile .badge {
+    padding: 5px 2px 5px 2px;
+    right: -1.2em;
+    bottom: .75em; }
 
 .section-comments-users > .section-body {
   top: -0.813em; }
@@ -521,6 +524,7 @@ footer {
   font-size: 16px; }
 
 .active-btn:hover {
+  color: white;
   background: #009d38; }
 
 .hover-line-blue:after {
@@ -682,11 +686,13 @@ footer {
   right: 0;
   background-image: url("../images/icons/ellipse-block.png"); }
 
-.profile-doctor {
-  width: 6.125em; }
-  .profile-doctor .badge {
-    right: -2px;
-    bottom: 2.75em; }
+.profile-doctor .img-box-profile {
+  width: 5.125em;
+  height: 4.5em; }
+  .profile-doctor .img-box-profile .badge {
+    padding: 5px 2px 5px 2px;
+    right: -1.2em;
+    bottom: .75em; }
 
 .section-comments-users > .section-body {
   top: -0.813em; }
