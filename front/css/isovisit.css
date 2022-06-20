@@ -239,7 +239,7 @@ header,
 footer {
   font-size: 16px; }
 
-.active-btn:active {
+.active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
 
@@ -543,7 +543,7 @@ header,
 footer {
   font-size: 16px; }
 
-.active-btn:active {
+.active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
 
