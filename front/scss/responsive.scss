@@ -82,13 +82,9 @@
   }
 
   .profile-doctor-master{
-    ~  .communication-iso{
+    ~  .communication-iso,~ .scroll-top{
       bottom: 5em;
     }
-  }
-
-  .scroll-top{
-    bottom: 5em;
   }
 
   .section-list-doctors{

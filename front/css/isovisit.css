@@ -423,6 +423,26 @@ footer {
 .section-comments-users .swiper-comments-users .swiper-wrapper {
   height: 14em; }
 
+.card-doctor-advisory-icon span {
+  width: 1.8em;
+  height: 1.8em; }
+
+.card-doctor-advisory-insurance-icon {
+  width: 6.8em;
+  height: 1.8em; }
+
+.icon-umbrella-active,
+.icon-umbrella-disabled {
+  width: 1.25em;
+  height: 1.25em;
+  background-size: cover; }
+
+.icon-umbrella-disabled {
+  background: url("../images/icons/umbrella-disabled.png"); }
+
+.icon-umbrella-active {
+  background: url("../images/icons/umbrella-active.png"); }
+
 header {
   /* style section banner */ }
   header .offcanvas-start {
@@ -706,6 +726,26 @@ footer {
 
 .section-comments-users .swiper-comments-users .swiper-wrapper {
   height: 14em; }
+
+.card-doctor-advisory-icon span {
+  width: 1.8em;
+  height: 1.8em; }
+
+.card-doctor-advisory-insurance-icon {
+  width: 6.8em;
+  height: 1.8em; }
+
+.icon-umbrella-active,
+.icon-umbrella-disabled {
+  width: 1.25em;
+  height: 1.25em;
+  background-size: cover; }
+
+.icon-umbrella-disabled {
+  background: url("../images/icons/umbrella-disabled.png"); }
+
+.icon-umbrella-active {
+  background: url("../images/icons/umbrella-active.png"); }
 
 /* footer */
 footer .footer-certificates .footer-body {
