@@ -29,7 +29,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
-                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0">
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvasRightLabel">
                             <img src="./images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img m-0">
                             <figcaption class="figure-caption d-flex flex-column me-2 me-sm-0">
                                 <h1 class="iso-font-lg text-success m-0 fw-bold">ایزو ویزیت</h1>
@@ -48,17 +48,17 @@
                                         data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
                                 <!-- menu user logged in-->
                                 <div class="menu-user flex-column d-none">
-                                    <div class="menu-header w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center justify-content-between btn-user-collapse collapsed border-radius"
-                                             data-bs-toggle="collapse" data-bs-target="#collapse-menu-user" aria-expanded="false" aria-controls="collapse-menu-user">
-                                        <button type="button" class="btn d-flex align-items-center p-0 m-0">
+                                    <button class="menu-user-header btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center justify-content-between btn-user-collapse collapsed border-radius"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu-user" aria-expanded="false" aria-controls="collapse-menu-user">
+                                        <div class="btn-title d-flex align-items-center m-0">
                                             <img src="./images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
                                             <span class="text-light ms-1">
                                                 سیروس جعفری
                                             </span>
-                                        </button>
+                                        </div>
                                         <i class="fa iso-font-lg text-light fa-chevron-down ms-2"></i>
-                                    </div>
-                                    <div class="collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
+                                    </button>
+                                    <div class="menu-user-body collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
                                         <div class="card p-0 border-0 card-body">
                                             <ul class="border-0 border-radius-bottom fw-normal iso-font-md-em px-1 py-0 iso-bg-blue-dark">
                                                 <li class="p-2 ellipse-light border-top mt-2">
@@ -339,7 +339,7 @@
                     <form action="#">
                         <div class="modal-content">
                             <div class="modal-header border-0 pb-1">
-                                <div class="modal-title d-flex align-items-center m-0">
+                                <div class="modal-title d-flex align-items-center m-0" id="modalLoginLabel">
                                     <img src="./images/icons/user.png" alt="ورود / ثبت نام">
                                     <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                                 </div>
@@ -356,7 +356,7 @@
                                 <div class="row flex-column align-items-center">
                                     <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
                                         <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615" maxlength="11">
+                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
                                     </div>
                                     <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send  iso-font-lg-em active-btn">ورود</button>
                                 </div>
@@ -443,15 +443,15 @@
                                 <p class="iso-font-llg text-shadow fw-bold mt-2">مشاور آنلاین پزشکی و  طب سنتی</p>
                             </div>
                             <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-5 flex-column d-flex justify-content-center mt-lg-3">
-                                <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3">
+                                <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3" id="icon-search">
                                     <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-items-center h-100 border-0"></i>
-                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target=".modal-search" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target=".modal-search" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon-search">
                                 </div>
                             </div>
                         </div>
 
                         <!-- Modal search -->
-                        <div class="modal fade modal-search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchLabel" aria-hidden="true" data-dismiss="modal">
+                        <div class="modal fade modal-search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-dismiss="modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
@@ -467,8 +467,8 @@
                                                     <button type="button" class="btn-close-modal iso-font-lg-em input-group-text d-none text-danger clear-input">
                                                         <i class="fa-solid fa-xmark"></i>
                                                     </button>
-                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0 p-1 icon-search"></i>
-                                                    <input type="text" class="form-control border-0 iso-font-xxs search-input-sm" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="basic-addon1">
+                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0 p-1 icon-search" id="icon-search-mobile"></i>
+                                                    <input type="text" class="form-control border-0 iso-font-xxs search-input-sm" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon-search-mobile">
                                                 </div>
                                             </div>
                                             <div class="result-search px-1 mt-3">
