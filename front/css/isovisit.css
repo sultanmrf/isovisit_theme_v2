@@ -158,6 +158,9 @@ This set of fonts are used in this project under the license: (.....)
 .iso-font-llg-em {
   font-size: 1.25em; }
 
+.iso-font-xl-em {
+  font-size: 1.563em; }
+
 /* iso border-radius */
 .border-radius {
   border-radius: 8px !important; }
@@ -451,6 +454,40 @@ footer {
   width: 2.5em;
   height: 2.5em;
   background: url("../images/icons/icon-support-light.png") no-repeat; }
+
+.icon-telegram-blue,
+.icon-telegram-light {
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon-telegram-blue {
+  background: url("../images/icons/telegram-blue.png") no-repeat; }
+
+.icon-telegram-light {
+  background: url("../images/icons/telegram-light.png") no-repeat; }
+
+.icon-instagram-light,
+.icon-instagram-blue,
+.icon-aparat {
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon-instagram-blue {
+  background: url("../images/icons/instegram-blue.png") no-repeat; }
+
+.icon-instagram-light {
+  background: url("../images/icons/instagram-light.png") no-repeat; }
+
+.icon-aparat,
+.icon-gmail {
+  width: 1.878em;
+  height: 1.878em; }
+
+.icon-aparat {
+  background: url("../images/icons/aparat.png"); }
+
+.icon-gmail {
+  background: url("../images/icons/gmail.png"); }
 
 header {
   /* style section banner */ }
@@ -764,6 +801,40 @@ footer {
   width: 2.5em;
   height: 2.5em;
   background: url("../images/icons/icon-support-light.png") no-repeat; }
+
+.icon-telegram-blue,
+.icon-telegram-light {
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon-telegram-blue {
+  background: url("../images/icons/telegram-blue.png") no-repeat; }
+
+.icon-telegram-light {
+  background: url("../images/icons/telegram-light.png") no-repeat; }
+
+.icon-instagram-light,
+.icon-instagram-blue,
+.icon-aparat {
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon-instagram-blue {
+  background: url("../images/icons/instegram-blue.png") no-repeat; }
+
+.icon-instagram-light {
+  background: url("../images/icons/instagram-light.png") no-repeat; }
+
+.icon-aparat,
+.icon-gmail {
+  width: 1.878em;
+  height: 1.878em; }
+
+.icon-aparat {
+  background: url("../images/icons/aparat.png"); }
+
+.icon-gmail {
+  background: url("../images/icons/gmail.png"); }
 
 /* footer */
 footer .footer-certificates .footer-body {

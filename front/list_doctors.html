@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ایزو ویزیت | صفحه اصلی</title>
+    <title>ایزو ویزیت | پزشکان</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
@@ -31,11 +31,11 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
-                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0">
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvasRightLabel">
                             <img src="./images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img m-0">
                             <figcaption class="figure-caption d-flex flex-column me-2 me-sm-0">
-                                <h1 class="iso-font-lg text-success m-0 fw-bold">ایزو ویزیت</h1>
-                                <h2 class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </h2>
+                                <span class="iso-font-lg text-success m-0 fw-bold">ایزو ویزیت</span>
+                                <span class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </span>
                             </figcaption>
                         </figure>
                         <!-- logo section  -->
@@ -50,17 +50,15 @@
                                         data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
                                 <!-- menu user logged in-->
                                 <div class="menu-user flex-column d-none">
-                                    <button class="btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center justify-content-between btn-user-collapse collapsed border-radius"
+                                    <button class="menu-user-header btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center btn-user-collapse collapsed border-radius"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu-user" aria-expanded="false" aria-controls="collapse-menu-user">
-                                        <div class="btn-title d-flex align-items-center m-0">
-                                            <img src="./images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
-                                            <span class="text-light ms-1">
+                                        <img src="./images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
+                                        <span class="text-light ms-1">
                                                 سیروس جعفری
-                                            </span>
-                                        </div>
-                                        <i class="fa iso-font-lg text-light fa-chevron-down ms-2"></i>
+                                         </span>
+                                        <i class="fa iso-font-lg text-light fa-chevron-down ms-auto"></i>
                                     </button>
-                                    <div class="collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
+                                    <div class="menu-user-body collapse" id="collapse-menu-user" style="transform: translatey(-5px);z-index: 999">
                                         <div class="card p-0 border-0 card-body">
                                             <ul class="border-0 border-radius-bottom fw-normal iso-font-md-em px-1 py-0 iso-bg-blue-dark">
                                                 <li class="p-2 ellipse-light border-top mt-2">
@@ -341,7 +339,7 @@
                     <form action="#">
                         <div class="modal-content">
                             <div class="modal-header border-0 pb-1">
-                                <div class="modal-title d-flex align-items-center m-0">
+                                <div class="modal-title d-flex align-items-center m-0" id="modalLoginLabel">
                                     <img src="./images/icons/user.png" alt="ورود / ثبت نام">
                                     <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                                 </div>
@@ -358,16 +356,16 @@
                                 <div class="row flex-column align-items-center">
                                     <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
                                         <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615" maxlength="11">
+                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
                                     </div>
                                     <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send  iso-font-lg-em active-btn">ورود</button>
                                 </div>
                             </div>
                             <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
                                 <div class="line-blur-dashed my-3 m-0"></div>
-                                <button type="button" class="btn btn-danger iso-font-md-em">
-                                    <img src="./images/icons/gmail.png" alt="ورود و ثبت نام با جیمیل">
-                                    <span class="ms-1">ورود / ثبت نام با جیمیل</span>
+                                <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em">
+                                    <div class="icon-gmail"></div>
+                                    <span class="ms-2">ورود / ثبت نام با جیمیل</span>
                                 </button>
                                 <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
                             </div>
@@ -445,15 +443,15 @@
                                 <p class="iso-font-llg text-shadow fw-bold mt-2">مشاور آنلاین پزشکی و  طب سنتی</p>
                             </div>
                             <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-5 flex-column d-flex justify-content-center mt-lg-3">
-                                <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3">
+                                <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3" id="icon-search">
                                     <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-items-center h-100 border-0"></i>
-                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target=".modal-search" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target=".modal-search" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon-search">
                                 </div>
                             </div>
                         </div>
 
                         <!-- Modal search -->
-                        <div class="modal fade modal-search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchLabel" aria-hidden="true" data-dismiss="modal">
+                        <div class="modal fade modal-search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-dismiss="modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
@@ -469,8 +467,8 @@
                                                     <button type="button" class="btn-close-modal iso-font-lg-em input-group-text d-none text-danger clear-input">
                                                         <i class="fa-solid fa-xmark"></i>
                                                     </button>
-                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0 p-1 icon-search"></i>
-                                                    <input type="text" class="form-control border-0 iso-font-xxs search-input-sm" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="basic-addon1">
+                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0 p-1 icon-search" id="icon-search-mobile"></i>
+                                                    <input type="text" class="form-control border-0 iso-font-xxs search-input-sm" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon-search-mobile">
                                                 </div>
                                             </div>
                                             <div class="result-search px-1 mt-3">
@@ -1603,40 +1601,40 @@
                         ایران ، خراسان رضوی ، مشهد ، بلوار سجاد ، بزرگمهر 13 ، یاسمن 15 ، پلاک 18
                         </span>
                     </address>
-                    <div class="footer-social-networks d-flex justify-content-center iso-font-llg-em flex-row-reverse mt-4">
+                    <div class="footer-social-networks d-flex justify-content-center flex-row-reverse mt-4">
                         <div class="box-youtube bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <i class="fa-brands iso-color-blur-dark fa-youtube"></i>
+                                <i class="fa-brands iso-color-blur-dark fa-youtube iso-font-xl-em"></i>
                             </a>
                         </div>
                         <div class="box-twitter bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <i class="fa-brands iso-color-blur-dark fa-twitter"></i>
+                                <i class="fa-brands iso-color-blur-dark fa-twitter iso-font-xl-em"></i>
                             </a>
                         </div>
                         <div class="box-facebook bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <i class="fa-brands iso-color-blur-dark fa-facebook"></i>
+                                <i class="fab iso-color-blur-dark fa-facebook-f iso-font-xl-em"></i>
                             </a>
                         </div>
                         <div class="box-linkedin-in bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <i class="fa-brands iso-color-blur-dark fa-linkedin-in"></i>
+                                <i class="fa-brands iso-color-blur-dark fa-linkedin-in iso-font-xl-em"></i>
                             </a>
                         </div>
                         <div class="box-aparat bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <img src="./images/aparat.png" alt="آپارات">
+                                <div class="icon-aparat"></div>
                             </a>
                         </div>
                         <div class="box-instagram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <img src="images/icons/instegram-blur.png" alt="اینستگرام">
+                                <div class="icon-instagram-blue"></div>
                             </a>
                         </div>
                         <div class="box-telegram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <img src="./images/telegram.png" alt="تلگرام">
+                                <div class="icon-telegram-blue"></div>
                             </a>
                         </div>
                     </div>
