@@ -14,6 +14,7 @@ $(document).ready(function (){
 
     initGalleryDoctorSwiper();
 
+    $(document).off('click','.love');
     $(document).on('click','.love',function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
         let counter_live = $(this).find('~ span').text();
@@ -29,6 +30,7 @@ $(document).ready(function (){
         }
     });
 
+    $(document).off('click','.more-comment');
     $(document).on('click','.more-comment',function (){
         $(".section-comments-users > .row").append('<div class="col-12">\n' +
             '                    <div class="card p-2 bg-light border-radius">\n' +
@@ -66,6 +68,7 @@ $(document).ready(function (){
         $(this).addClass('d-none').removeClass('d-flex');
     });
 
+    $(document).off('click','.btn-question');
     $(document).on('click','.btn-question',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){

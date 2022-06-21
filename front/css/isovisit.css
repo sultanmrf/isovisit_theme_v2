@@ -434,14 +434,23 @@ footer {
 .icon-umbrella-active,
 .icon-umbrella-disabled {
   width: 1.25em;
-  height: 1.25em;
-  background-size: cover; }
+  height: 1.25em; }
 
 .icon-umbrella-disabled {
   background: url("../images/icons/umbrella-disabled.png"); }
 
 .icon-umbrella-active {
   background: url("../images/icons/umbrella-active.png"); }
+
+.icon-support {
+  width: 2em;
+  height: 2em;
+  background: url("../images/icons/support.png") no-repeat; }
+
+.icon-support-light {
+  width: 2.5em;
+  height: 2.5em;
+  background: url("../images/icons/icon-support-light.png") no-repeat; }
 
 header {
   /* style section banner */ }
@@ -738,14 +747,23 @@ footer {
 .icon-umbrella-active,
 .icon-umbrella-disabled {
   width: 1.25em;
-  height: 1.25em;
-  background-size: cover; }
+  height: 1.25em; }
 
 .icon-umbrella-disabled {
   background: url("../images/icons/umbrella-disabled.png"); }
 
 .icon-umbrella-active {
   background: url("../images/icons/umbrella-active.png"); }
+
+.icon-support {
+  width: 2em;
+  height: 2em;
+  background: url("../images/icons/support.png") no-repeat; }
+
+.icon-support-light {
+  width: 2.5em;
+  height: 2.5em;
+  background: url("../images/icons/icon-support-light.png") no-repeat; }
 
 /* footer */
 footer .footer-certificates .footer-body {
