@@ -51,8 +51,6 @@
     height: auto; } }
 
 @media only screen and (max-width: 768px) {
-  .position-section-get-advice {
-    position: unset !important; }
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {
     bottom: 5em; }
   .section-list-doctors figure {

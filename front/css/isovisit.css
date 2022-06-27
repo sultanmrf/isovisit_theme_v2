@@ -233,6 +233,12 @@ a {
 hr {
   opacity: 1; }
 
+h2 {
+  font-size: 1.5em; }
+
+p {
+  line-height: 1.8em; }
+
 .form-control:focus,
 .btn:focus {
   box-shadow: 0 0; }
@@ -241,6 +247,17 @@ main,
 header,
 footer {
   font-size: 16px; }
+
+.footer-support li,
+.menu-user li,
+#details-menu-doctors li,
+#details-menu-patients li {
+  padding-inline-start: .7em; }
+  .footer-support li::marker,
+  .menu-user li::marker,
+  #details-menu-doctors li::marker,
+  #details-menu-patients li::marker {
+    content: url("../images/icons/ellipse-light.png"); }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -269,8 +286,7 @@ footer {
   border: 2px solid #DC3545;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 9px !important; }
+  align-items: center; }
   .btn-close-modal i {
     display: flex;
     align-items: center; }
@@ -377,34 +393,6 @@ footer {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 
-.ellipse-dark,
-.ellipse-blur,
-.ellipse-light {
-  position: relative; }
-  .ellipse-dark:before,
-  .ellipse-blur:before,
-  .ellipse-light:before {
-    content: "";
-    height: 48%;
-    top: 37%;
-    position: absolute;
-    background-repeat: no-repeat; }
-
-.ellipse-blur:before {
-  width: 4%;
-  right: .7rem;
-  background-image: url("../images/icons/ellipse-blur.png"); }
-
-.ellipse-light:before {
-  width: 7%;
-  right: 0;
-  background-image: url("../images/icons/ellipse-light.png"); }
-
-.ellipse-dark:before {
-  width: 7%;
-  right: 0;
-  background-image: url("../images/icons/ellipse-block.png"); }
-
 .profile-doctor .img-box-profile {
   width: 5.125em;
   height: 4.5em; }
@@ -488,6 +476,42 @@ footer {
 
 .icon-gmail {
   background: url("../images/icons/gmail.png"); }
+
+.captcha_image {
+  height: 2.2em;
+  width: 9em; }
+
+/* list doctors */
+.section-list-doctors .card-body {
+  height: 7.188em; }
+
+.star_rating_doctor {
+  width: 4.313em;
+  height: 1.5em; }
+
+.love-active {
+  -webkit-animation: animate-love-active 0.2s linear;
+  -moz-animation: animate-love-active 0.2s linear; }
+
+.love-disabled {
+  -webkit-animation: animate-love-disabled 0.2s linear;
+  -moz-animation: animate-love-disabled 0.2s linear; }
+
+@keyframes animate-love-active {
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2); } }
+
+@keyframes animate-love-disabled {
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2); }
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1); } }
 
 header {
   /* style section banner */ }
@@ -562,6 +586,10 @@ header {
     header .menu-user .btn-user,
     header .menu-user .btn-user-collapse {
       z-index: 5; }
+  header .list-menu-communication li {
+    padding-inline-start: .7em; }
+    header .list-menu-communication li::marker {
+      content: url("../images/icons/ellipse-blur.png"); }
 
 /* main */
 html {
@@ -580,6 +608,12 @@ a {
 hr {
   opacity: 1; }
 
+h2 {
+  font-size: 1.5em; }
+
+p {
+  line-height: 1.8em; }
+
 .form-control:focus,
 .btn:focus {
   box-shadow: 0 0; }
@@ -588,6 +622,17 @@ main,
 header,
 footer {
   font-size: 16px; }
+
+.footer-support li,
+.menu-user li,
+#details-menu-doctors li,
+#details-menu-patients li {
+  padding-inline-start: .7em; }
+  .footer-support li::marker,
+  .menu-user li::marker,
+  #details-menu-doctors li::marker,
+  #details-menu-patients li::marker {
+    content: url("../images/icons/ellipse-light.png"); }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -616,8 +661,7 @@ footer {
   border: 2px solid #DC3545;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 9px !important; }
+  align-items: center; }
   .btn-close-modal i {
     display: flex;
     align-items: center; }
@@ -724,34 +768,6 @@ footer {
   background-image: linear-gradient(to right, #fff 50%, #1773B5 50%);
   background-size: 17px 16px; }
 
-.ellipse-dark,
-.ellipse-blur,
-.ellipse-light {
-  position: relative; }
-  .ellipse-dark:before,
-  .ellipse-blur:before,
-  .ellipse-light:before {
-    content: "";
-    height: 48%;
-    top: 37%;
-    position: absolute;
-    background-repeat: no-repeat; }
-
-.ellipse-blur:before {
-  width: 4%;
-  right: .7rem;
-  background-image: url("../images/icons/ellipse-blur.png"); }
-
-.ellipse-light:before {
-  width: 7%;
-  right: 0;
-  background-image: url("../images/icons/ellipse-light.png"); }
-
-.ellipse-dark:before {
-  width: 7%;
-  right: 0;
-  background-image: url("../images/icons/ellipse-block.png"); }
-
 .profile-doctor .img-box-profile {
   width: 5.125em;
   height: 4.5em; }
@@ -835,6 +851,42 @@ footer {
 
 .icon-gmail {
   background: url("../images/icons/gmail.png"); }
+
+.captcha_image {
+  height: 2.2em;
+  width: 9em; }
+
+/* list doctors */
+.section-list-doctors .card-body {
+  height: 7.188em; }
+
+.star_rating_doctor {
+  width: 4.313em;
+  height: 1.5em; }
+
+.love-active {
+  -webkit-animation: animate-love-active 0.2s linear;
+  -moz-animation: animate-love-active 0.2s linear; }
+
+.love-disabled {
+  -webkit-animation: animate-love-disabled 0.2s linear;
+  -moz-animation: animate-love-disabled 0.2s linear; }
+
+@keyframes animate-love-active {
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2); } }
+
+@keyframes animate-love-disabled {
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2); }
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1); } }
 
 /* footer */
 footer .footer-certificates .footer-body {
