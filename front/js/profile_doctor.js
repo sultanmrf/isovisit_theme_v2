@@ -12,15 +12,11 @@ $(document).ready(function (){
         'positionFromTop': 250
     })
 
-    $(".doctor-rating").starRating({
+    $(".doctor-star-rating").starRating({
         readOnly: true,
         emptyColor:'#ffc107',
         starSize: 25
     });
-
-    /* copy link section share start */
-    new ClipboardJS('.btn-copy-link');
-    /* copy link section share end */
 
     /* swiper slider doctors section video introduction doctor start*/
     initGalleryDoctorSwiper();

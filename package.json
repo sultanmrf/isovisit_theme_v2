@@ -14,6 +14,7 @@
     "bootstrap": "^5.1.3",
     "clipboard": "^2.0.8",
     "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.5",
     "lazyloadxt": "^1.1.0",
     "leaflet": "^1.8.0",
     "lightbox2": "^2.11.3",

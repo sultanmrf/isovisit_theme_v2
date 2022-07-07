@@ -34,21 +34,21 @@ $(document).ready(function (){
     })
 
     /* section communication-iso */
-    $(".communication-iso > img").click(function (){
+    $(".icon-support-light").click(function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
         if(val_aria_expanded == 'true'){
             $(".dropdown-menu-communication li").fadeOut('slow');
             $(this).attr('aria-expanded','false');
-            $(this).attr('src','./images/icons/icon-support-light.png')
+            $(this).addClass('icon-support-light')
                 .addClass('rotate-0deg')
-                .removeClass('rotate-180deg');
+                .removeClass(['rotate-180deg','icon-close']);
 
         }else{
             $(".dropdown-menu-communication li").fadeIn('slow');
             $(this).attr('aria-expanded','true');
-            $(this).attr('src','./images/icons/close.png')
+            $(this).addClass('icon-close')
                 .addClass('rotate-180deg')
-                .removeClass('rotate-0deg');
+                .removeClass(['rotate-0deg','icon-support-light']);
         }
     })
 
@@ -163,6 +163,7 @@ $(document).ready(function (){
     /* section login */
 
     /* section menu user */
+    $(document).off('click','.btn-user , .btn-user-collapse');
     $(document).on('click','.btn-user , .btn-user-collapse',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
@@ -188,7 +189,7 @@ $(document).ready(function (){
             if(character_length >= 2){
                 $(".icon-search").hide();
                 $(".icon-search").addClass('d-none').removeClass('d-flex')
-                $(".search-box-sm .btn-close-modal").addClass('d-flex').removeClass('d-none');
+                $(".search-box-sm .btn-close-danger-modal").addClass('d-flex').removeClass('d-none');
                 $(".result-search .list-group").append("" +
                     "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
                     "      <span class=\"iso-font-sm\">سحر خوش قامت</span>\n" +
@@ -221,6 +222,8 @@ $(document).ready(function (){
     });
 
     initCertificatesSwiper();
+    initMedicineSwiper();
+    initDoctorsSwiper();
 
     /* js section comment users start */
     $(document).off('click','.love');
@@ -287,4 +290,31 @@ $(document).ready(function (){
         }
     });
     /* js section comment users end */
+
+    /* copy link section share start */
+    new ClipboardJS('.btn-copy-link');
+
+    $(document).on('click','.btn-copy-link',function (){
+        $('.tooltip-text').addClass('tooltip-active');
+        setTimeout(function (){
+            $(".tooltip-text").removeClass('tooltip-active');
+        },2500)
+    })
+
+    /* copy link section share end */
+
+    /* js start one svg doctors start */
+    $(".doctor-number-star-rating").starRating({
+        readOnly: true,
+        emptyColor:'#ffc107',
+        starSize: 18,
+        totalStars: 1,
+        starShape: 'rounded',
+        hoverColor: 'salmon',
+        activeColor: 'crimson',
+        useGradient: false
+    });
+    /* js start one svg doctors end */
+
+
 });

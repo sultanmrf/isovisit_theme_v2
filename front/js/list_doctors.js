@@ -1,16 +1,6 @@
 $(document).ready(function (){
 
    initCommentsUsersSwiper();
-   $(".doctor-rating").starRating({
-      readOnly: true,
-      emptyColor:'#ffc107',
-      starSize: 18,
-      totalStars: 1,
-      starShape: 'rounded',
-      hoverColor: 'salmon',
-      activeColor: 'crimson',
-      useGradient: false
-   });
 
    /* function show filters select start */
    function show_filters_select(target){
@@ -69,7 +59,6 @@ $(document).ready(function (){
    });
 
    /* remove single filters start */
-   $(document).off('click','.remove-filter-card');
    $(document).on('click','.remove-filter-card',function (){
       $(this).parent().remove();
       let count_filters_done = $(".card-details-filter,.card-details-filter-mobile").find(".card-body .card-text").length;
@@ -84,6 +73,7 @@ $(document).ready(function (){
    $(document).off('click','.offcanvas-sorting .btn');
    $(document).on('click','.offcanvas-sorting .btn',function (){
       let title_btn = $(this).find("span").text();
+      $(".btn-sorting").find('span').html(' ');
       $(".btn-sorting").find('span').text(title_btn);
       $(".offcanvas-sorting .btn i").removeClass('fa-check');
       $(this).find('i').addClass('fa-check');

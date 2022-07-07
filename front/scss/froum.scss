@@ -1,0 +1,32 @@
+@keyframes animate-move-text {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(1020px); }
+}
+
+.start-motion-move-text{
+  animation: animate-move-text 26s linear infinite;
+}
+
+.links-question-answer{
+  height:22px;
+}
+
+.collapse-froum{
+  .form-select-birth{
+    width: 153px;
+  }
+
+  .input-height{
+    width: 94px;
+  }
+}
+
+.error{
+  width: 100%;
+  color: red;
+  font-size: 12px;
+}
+
+.error{
+  height: 10px;
+}

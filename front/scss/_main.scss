@@ -1,3 +1,5 @@
+@import "variables";
+
 html{
   font-size: 100%;
 }
@@ -24,6 +26,7 @@ h2{
 
 p{
   line-height: 1.8em;
+  font-weight: 400;
 }
 
 .form-control:focus,
@@ -76,7 +79,7 @@ footer,
   border-bottom: 0.125rem solid #f8f9fa;
 }
 
-.btn-close-modal{
+@mixin btn-close(){
   width: 1.875em;
   height: 1.875em;
   background-color: #fff;
@@ -89,6 +92,17 @@ footer,
     align-items: center;
   }
 }
+.btn-close-danger-modal{
+  @include btn-close
+}
+
+.btn-close-light-modal{
+  @include btn-close;
+  background-color: $iso-blue-dark;
+  border: 2px solid #fff;
+}
+
+
 
 .dropdown{
   .nav-link:after{
@@ -254,6 +268,74 @@ footer,
   }
 }
 
+.section-doctors {
+
+  .section-header {
+    button {
+      bottom: 1.063em;
+    }
+  }
+
+  .card-doctor {
+    width: 14.8em;
+
+    .card-img {
+      width: 5.563em;
+
+      span {
+        bottom: 0.375em;
+        right: -0.313em;
+      }
+    }
+  }
+
+  .swiper-doctors {
+    height: 15em;
+
+    .swiper-slide {
+      width: 14.8em;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    top: 44%;
+  }
+}
+
+
+.section-medicines {
+
+  .section-title {
+    top: -0.45em;
+  }
+
+  .swiper-slide {
+    width: 18.75em;
+  }
+
+  .card {
+    height: 10em;
+  }
+
+  img {
+    width: 5.313em;
+  }
+
+  .title-medicines{
+    height: 3.25em;
+  }
+
+  .card-body {
+    div {
+      span {
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+
 .card-doctor-advisory-icon{
   span{
     width: 1.8em;
@@ -287,9 +369,13 @@ footer,
 }
 
 .icon-support-light{
-  width: 2.5em;
-  height: 2.5em;
   background: url("../images/icons/icon-support-light.png") no-repeat;
+  background-size: cover;
+}
+
+.icon-close{
+  background: url("../images/icons/close.png") no-repeat;
+  background-size: cover;
 }
 
 .icon-telegram-blue,
@@ -308,9 +394,14 @@ footer,
 
 .icon-instagram-light,
 .icon-instagram-blue,
-.icon-aparat{
+.icon-aparat,
+.icon-bookmark{
   width: 1.5em;
   height: 1.5em;
+}
+
+.icon-bookmark{
+  background: url("../images/icons/saved.png") no-repeat;
 }
 
 .icon-instagram-blue{
@@ -336,10 +427,14 @@ footer,
 }
 
 .captcha_image{
-  height: 2.2em;
-  width: 9em;
+  height: 1.563em;
 }
 
+.iso-form-check-input{
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid rgba(0,0,0,.25);
+}
 
 /* list doctors */
 .section-list-doctors{
@@ -382,4 +477,37 @@ footer,
     -webkit-transform: scale(1,1);
     -moz-transform: scale(1,1);
   }
+}
+
+#copy_link{
+  border: 1px solid $iso-secondary;
+}
+
+.tooltip-text {
+  width: 80px;
+  left: 40%;
+}
+
+.tooltip-active{
+  animation: tooltip_effect;
+  animation-duration: 3s;
+}
+
+@keyframes tooltip_effect {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
+
+.optional.is-invalid,
+.optional.is-valid{
+  border: 1px solid #ced4da;
+  background-image: unset;
 }

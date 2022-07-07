@@ -29,8 +29,12 @@
   background: $iso-light;
 }
 
+.iso-bg-warning{
+  background: $iso-warning;
+}
+
 /* iso text color custom */
-.iso-color-blur-dark{
+.iso-color-blue-dark{
   color: $iso-blue-dark;
 }
 
@@ -44,6 +48,10 @@
 
 .iso-color-secondary{
   color: $iso-secondary;
+}
+
+.iso-color-green-light{
+  color: $iso-green-light;
 }
 
 /* iso font size */
@@ -114,19 +122,19 @@
 }
 
 .border-radius-bottom{
-  border-radius: 0 0 $iso-border-radius $iso-border-radius;
+  border-radius: 0 0 $iso-border-radius $iso-border-radius !important;
 }
 
 .border-radius-top{
-  border-radius: $iso-border-radius $iso-border-radius 0 0;
+  border-radius: $iso-border-radius $iso-border-radius 0 0 !important;
 }
 
 .border-radius-start{
-  border-radius:  0 $iso-border-radius $iso-border-radius 0;
+  border-radius:  0 $iso-border-radius $iso-border-radius 0 !important;
 }
 
 .border-radius-end{
-  border-radius: $iso-border-radius 0 0 $iso-border-radius;
+  border-radius: $iso-border-radius 0 0 $iso-border-radius !important;
 }
 
 /* iso shadow */
@@ -177,4 +185,10 @@
 
 .lh-md{
   line-height: 1.8;
+}
+
+
+/* iso border color */
+.border-color-blue-dark{
+  border:1px solid $iso-blue-dark;
 }

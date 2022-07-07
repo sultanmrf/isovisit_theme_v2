@@ -14,7 +14,6 @@ $(document).ready(function (){
 
     initMedicineSwiper();
     initCommentsUsersSwiper();
-    initDoctorsSwiper();
     initSpecialtySwiper();
     initServicesSwiper();
     initQuestionAnswerSwiper();

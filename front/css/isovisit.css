@@ -102,8 +102,11 @@ This set of fonts are used in this project under the license: (.....)
 .iso-bg-light {
   background: #F5F5F5; }
 
+.iso-bg-warning {
+  background: #fff3cd; }
+
 /* iso text color custom */
-.iso-color-blur-dark {
+.iso-color-blue-dark {
   color: #1773B5; }
 
 .iso-color-dark {
@@ -114,6 +117,9 @@ This set of fonts are used in this project under the license: (.....)
 
 .iso-color-secondary {
   color: #999999; }
+
+.iso-color-green-light {
+  color: #D4EDDA; }
 
 /* iso font size */
 .iso-font-xs {
@@ -166,16 +172,16 @@ This set of fonts are used in this project under the license: (.....)
   border-radius: 8px !important; }
 
 .border-radius-bottom {
-  border-radius: 0 0 8px 8px; }
+  border-radius: 0 0 8px 8px !important; }
 
 .border-radius-top {
-  border-radius: 8px 8px 0 0; }
+  border-radius: 8px 8px 0 0 !important; }
 
 .border-radius-start {
-  border-radius: 0 8px 8px 0; }
+  border-radius: 0 8px 8px 0 !important; }
 
 .border-radius-end {
-  border-radius: 8px 0 0 8px; }
+  border-radius: 8px 0 0 8px !important; }
 
 /* iso shadow */
 .text-shadow {
@@ -216,7 +222,28 @@ This set of fonts are used in this project under the license: (.....)
 .lh-md {
   line-height: 1.8; }
 
+/* iso border color */
+.border-color-blue-dark {
+  border: 1px solid #1773B5; }
+
 /* header */
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+* border-color
+ */
+/**
+* spacing text
+ */
 html {
   font-size: 100%; }
 
@@ -237,7 +264,8 @@ h2 {
   font-size: 1.5em; }
 
 p {
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  font-weight: 400; }
 
 .form-control:focus,
 .btn:focus {
@@ -279,7 +307,7 @@ footer {
 .hover-line-white:hover {
   border-bottom: 0.125rem solid #f8f9fa; }
 
-.btn-close-modal {
+.btn-close-danger-modal {
   width: 1.875em;
   height: 1.875em;
   background-color: #fff;
@@ -287,7 +315,21 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .btn-close-modal i {
+  .btn-close-danger-modal i {
+    display: flex;
+    align-items: center; }
+
+.btn-close-light-modal {
+  width: 1.875em;
+  height: 1.875em;
+  background-color: #fff;
+  border: 2px solid #DC3545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1773B5;
+  border: 2px solid #fff; }
+  .btn-close-light-modal i {
     display: flex;
     align-items: center; }
 
@@ -414,6 +456,44 @@ footer {
 .section-comments-users .swiper-comments-users .swiper-wrapper {
   height: 14em; }
 
+.section-doctors .section-header button {
+  bottom: 1.063em; }
+
+.section-doctors .card-doctor {
+  width: 14.8em; }
+  .section-doctors .card-doctor .card-img {
+    width: 5.563em; }
+    .section-doctors .card-doctor .card-img span {
+      bottom: 0.375em;
+      right: -0.313em; }
+
+.section-doctors .swiper-doctors {
+  height: 15em; }
+  .section-doctors .swiper-doctors .swiper-slide {
+    width: 14.8em; }
+
+.section-doctors .swiper-button-next,
+.section-doctors .swiper-button-prev {
+  top: 44%; }
+
+.section-medicines .section-title {
+  top: -0.45em; }
+
+.section-medicines .swiper-slide {
+  width: 18.75em; }
+
+.section-medicines .card {
+  height: 10em; }
+
+.section-medicines img {
+  width: 5.313em; }
+
+.section-medicines .title-medicines {
+  height: 3.25em; }
+
+.section-medicines .card-body div span {
+  text-overflow: ellipsis; }
+
 .card-doctor-advisory-icon span {
   width: 1.8em;
   height: 1.8em; }
@@ -439,9 +519,12 @@ footer {
   background: url("../images/icons/support.png") no-repeat; }
 
 .icon-support-light {
-  width: 2.5em;
-  height: 2.5em;
-  background: url("../images/icons/icon-support-light.png") no-repeat; }
+  background: url("../images/icons/icon-support-light.png") no-repeat;
+  background-size: cover; }
+
+.icon-close {
+  background: url("../images/icons/close.png") no-repeat;
+  background-size: cover; }
 
 .icon-telegram-blue,
 .icon-telegram-light {
@@ -456,9 +539,13 @@ footer {
 
 .icon-instagram-light,
 .icon-instagram-blue,
-.icon-aparat {
+.icon-aparat,
+.icon-bookmark {
   width: 1.5em;
   height: 1.5em; }
+
+.icon-bookmark {
+  background: url("../images/icons/saved.png") no-repeat; }
 
 .icon-instagram-blue {
   background: url("../images/icons/instegram-blue.png") no-repeat; }
@@ -478,8 +565,12 @@ footer {
   background: url("../images/icons/gmail.png"); }
 
 .captcha_image {
-  height: 2.2em;
-  width: 9em; }
+  height: 1.563em; }
+
+.iso-form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid rgba(0, 0, 0, 0.25); }
 
 /* list doctors */
 .section-list-doctors .card-body {
@@ -512,6 +603,30 @@ footer {
   0% {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1); } }
+
+#copy_link {
+  border: 1px solid #999999; }
+
+.tooltip-text {
+  width: 80px;
+  left: 40%; }
+
+.tooltip-active {
+  animation: tooltip_effect;
+  animation-duration: 3s; }
+
+@keyframes tooltip_effect {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.optional.is-invalid,
+.optional.is-valid {
+  border: 1px solid #ced4da;
+  background-image: unset; }
 
 header {
   /* style section banner */ }
@@ -592,6 +707,23 @@ header {
       content: url("../images/icons/ellipse-blur.png"); }
 
 /* main */
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+* border-color
+ */
+/**
+* spacing text
+ */
 html {
   font-size: 100%; }
 
@@ -612,7 +744,8 @@ h2 {
   font-size: 1.5em; }
 
 p {
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  font-weight: 400; }
 
 .form-control:focus,
 .btn:focus {
@@ -654,7 +787,7 @@ footer {
 .hover-line-white:hover {
   border-bottom: 0.125rem solid #f8f9fa; }
 
-.btn-close-modal {
+.btn-close-danger-modal {
   width: 1.875em;
   height: 1.875em;
   background-color: #fff;
@@ -662,7 +795,21 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .btn-close-modal i {
+  .btn-close-danger-modal i {
+    display: flex;
+    align-items: center; }
+
+.btn-close-light-modal {
+  width: 1.875em;
+  height: 1.875em;
+  background-color: #fff;
+  border: 2px solid #DC3545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1773B5;
+  border: 2px solid #fff; }
+  .btn-close-light-modal i {
     display: flex;
     align-items: center; }
 
@@ -789,6 +936,44 @@ footer {
 .section-comments-users .swiper-comments-users .swiper-wrapper {
   height: 14em; }
 
+.section-doctors .section-header button {
+  bottom: 1.063em; }
+
+.section-doctors .card-doctor {
+  width: 14.8em; }
+  .section-doctors .card-doctor .card-img {
+    width: 5.563em; }
+    .section-doctors .card-doctor .card-img span {
+      bottom: 0.375em;
+      right: -0.313em; }
+
+.section-doctors .swiper-doctors {
+  height: 15em; }
+  .section-doctors .swiper-doctors .swiper-slide {
+    width: 14.8em; }
+
+.section-doctors .swiper-button-next,
+.section-doctors .swiper-button-prev {
+  top: 44%; }
+
+.section-medicines .section-title {
+  top: -0.45em; }
+
+.section-medicines .swiper-slide {
+  width: 18.75em; }
+
+.section-medicines .card {
+  height: 10em; }
+
+.section-medicines img {
+  width: 5.313em; }
+
+.section-medicines .title-medicines {
+  height: 3.25em; }
+
+.section-medicines .card-body div span {
+  text-overflow: ellipsis; }
+
 .card-doctor-advisory-icon span {
   width: 1.8em;
   height: 1.8em; }
@@ -814,9 +999,12 @@ footer {
   background: url("../images/icons/support.png") no-repeat; }
 
 .icon-support-light {
-  width: 2.5em;
-  height: 2.5em;
-  background: url("../images/icons/icon-support-light.png") no-repeat; }
+  background: url("../images/icons/icon-support-light.png") no-repeat;
+  background-size: cover; }
+
+.icon-close {
+  background: url("../images/icons/close.png") no-repeat;
+  background-size: cover; }
 
 .icon-telegram-blue,
 .icon-telegram-light {
@@ -831,9 +1019,13 @@ footer {
 
 .icon-instagram-light,
 .icon-instagram-blue,
-.icon-aparat {
+.icon-aparat,
+.icon-bookmark {
   width: 1.5em;
   height: 1.5em; }
+
+.icon-bookmark {
+  background: url("../images/icons/saved.png") no-repeat; }
 
 .icon-instagram-blue {
   background: url("../images/icons/instegram-blue.png") no-repeat; }
@@ -853,8 +1045,12 @@ footer {
   background: url("../images/icons/gmail.png"); }
 
 .captcha_image {
-  height: 2.2em;
-  width: 9em; }
+  height: 1.563em; }
+
+.iso-form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid rgba(0, 0, 0, 0.25); }
 
 /* list doctors */
 .section-list-doctors .card-body {
@@ -887,6 +1083,30 @@ footer {
   0% {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1); } }
+
+#copy_link {
+  border: 1px solid #999999; }
+
+.tooltip-text {
+  width: 80px;
+  left: 40%; }
+
+.tooltip-active {
+  animation: tooltip_effect;
+  animation-duration: 3s; }
+
+@keyframes tooltip_effect {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.optional.is-invalid,
+.optional.is-valid {
+  border: 1px solid #ced4da;
+  background-image: unset; }
 
 /* footer */
 footer .footer-certificates .footer-body {

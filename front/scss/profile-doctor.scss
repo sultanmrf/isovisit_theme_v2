@@ -92,3 +92,12 @@ iframe{
     height: 12.5em;
   }
 }
+
+.section-address-and-phone-doctor {
+  li {
+    padding-inline-start: .7em;
+    &::marker {
+      content: url("../images/icons/ellipse-block.png");
+    }
+  }
+}

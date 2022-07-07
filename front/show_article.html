@@ -13,7 +13,7 @@
     <link href="../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
     <link href="../node_modules/star-rating-svg/src/css/star-rating-svg.css" rel="stylesheet" />
     <link href="./css/isovisit.css" rel="stylesheet">
-    <link href="./css/list-doctors.css" rel="stylesheet">
+    <link href="./css/articles.css" rel="stylesheet">
     <link href="./css/responsive.css" rel="stylesheet">
 
 </head>
@@ -623,456 +623,749 @@
 
 <!-- section main start -->
 <main>
-    <div class="container-xxl p-xxl-0">
+    <div class="container-xxl">
         <div class="row d-flex flex-wrap position-relative">
             <!-- section breadcrumb link start -->
-            <nav class="col-12 my-4 d-flex align-items-center px-4" aria-label="breadcrumb">
+            <nav class="col-12 my-4 d-flex align-items-center" aria-label="breadcrumb">
                 <ol class="breadcrumb iso-font-sm-em m-0 fw-normal">
                     <li class="breadcrumb-item"><a href="index.html">ایزوویزیت</a></li>
-                    <li class="breadcrumb-item">سرویس ها</li>
+                    <li class="breadcrumb-item"><a href="medicines.html">دارو ها</a></li>
+                    <li class="breadcrumb-item">شلیور</li>
                 </ol>
             </nav>
             <!-- section breadcrumb link end -->
 
-            <!-- section list services start-->
-            <section class="col-12 section-list-services">
-                <div class="section-body">
-                    <div class="row gy-4 flex-wrap mx-0">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Ear-nose-and-throat.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره گوش و حلق و بینی</figcaption>
-                                    </figure>
+            <!-- section description medicines start -->
+            <article>
+                <section class="section-article-description box-shadow-lg border-radius bg-white">
+                    <div class="section-body p-3">
+                        <div class="row gy-3 lh-md">
+                            <div class="col-12 section-title d-flex flex-column mt-0 flex-md-row justify-content-between">
+                                <div class="title-medicines order-2 order-md-1 mt-3 mt-md-0">
+                                    <h2 class="iso-font-llg-em m-0 mt-4">چطور به کودک خودم دستور بدهم؟</h2>
+                                    <p class="m-0 mt-2 fw-normal">نویسنده : <a href="#">سینا دژم پور  - متخصص روانپزشکی</a></p>
                                 </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Midwifery-advice.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره مامایی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
+                                <div class="options-medicines mt-2 mt-md-0 order-1 order-md-2 d-flex justify-content-between align-items-center ">
+                                    <p class="m-0 iso-font-xxs me-md-5">انتشار : 1400/02/12 / خواندن 5 دقیقه </p>
+                                    <div class="box-count-comments d-flex align-items-center ms-3 ms-md-5">
+                                        <i class="fa fa-comment iso-color-green-dark iso-font-llg-em"></i>
+                                        <span class="iso-color-dark iso-font-sm-em ms-1">2</span>
+                                    </div>
+                                    <div class="box-count-view d-flex align-items-center me-md-3 ms-md-4 me-md-0">
+                                        <i class="fa-solid fa-eye  iso-color-green-dark iso-font-llg-em"></i>
+                                        <span class="iso-color-dark iso-font-sm-em ms-1">130</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Sexual-health.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره سلامت جنسی</figcaption>
-                                    </figure>
+                            <div class="col-12 section-description mt-3 fw-normal d-flex align-items-center flex-column justify-content-center">
+                                <div class="col-12 col-md-8 d-flex justify-content-center">
+                                    <img src="./images/article-img.png" alt="..." class="img-fluid">
                                 </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Ear-nose-and-throat.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره گوش و حلق و بینی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Midwifery-advice.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره مامایی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Sexual-health.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره سلامت جنسی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Ear-nose-and-throat.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره گوش و حلق و بینی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Midwifery-advice.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره مامایی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Sexual-health.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره سلامت جنسی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Ear-nose-and-throat.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره گوش و حلق و بینی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Midwifery-advice.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره مامایی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Sexual-health.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره سلامت جنسی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Midwifery-advice.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره مامایی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card border-0 border-radius box-shadow-lg bg-transparent">
-                                <div class="card-body d-flex align-items-center">
-                                    <figure class="figure d-flex align-items-center m-0">
-                                        <img src="./images/services/Sexual-health.png" class="ms-3" alt="...">
-                                        <figcaption class="figure-caption ms-3 iso-font-lg-em iso-color-dark">مشاوره سلامت جنسی</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer p-0 bg-transparent border-0">
-                                    <a href="show_service.html" class="btn w-100 border-radius iso-bg-blue-dark iso-font-md-em active-btn">لیست پزشکان</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-footer show-doctors-more line-muted-dashed position-relative d-flex justify-content-center my-5">
-                    <button type="button" class="btn iso-bg-blue-dark position-absolute px-3 iso-font-md-em active-btn">نمایش سرویس های بیشتر</button>
-                </div>
-            </section>
-            <!-- section list services end -->
+                                <p>
+                                    بسیاری از والدینی که دغدغه تربیت صحیح کودک خود را دارند،از روانپزشکان در مورد نحوه صحیح دستور دادن به کودک خود سوال میکنند.به اقتضای شرایط، والدین مجبور به نظارت و دستور دادن به کودک در شرایط مختلفی هستند.مثل شلوغ کردن کودک ، انجام یک عمل نامناسب یا درخواست انجام وظایف مثل مرتب کردن اتاق...
 
-            <!-- section comments users start -->
-            <section class="col-12 p-0 section-comments-users">
-                <div class="section-body d-flex flex-column flex-lg-row p-0 position-relative overflow-hidden">
-                    <div class="swiper swiper-comments-users col-12">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card border-0 box-shadow-lg border-radius pb-2">
-                                    <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
-                                        <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
-                                            <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
-                                                <span class="iso-font-md-em">محمد رضا فنودی</span>
-                                                <a href="#" class="iso-font-sm-em iso-color-blue-dark">درباره دکتر کاضمیان</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="card-body d-flex pt-0 flex-column py-1 text-center px-2 justify-content-center border-0">
-                                        <p class="card-text iso-font-sm-em m-0 fw-normal iso-color-dark lh-md overflow-hidden"> از مشاوره دکتر کاظمیان راضی بودم انشالله بتونم دستوراتشون رو انجام بدم</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 px-2">
-                                        <button type="button" class="btn iso-bg-blue-dark border-radius iso-font-md-em text-light w-100 active-btn">نمایش نظر</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card border-0 box-shadow-lg border-radius pb-2">
-                                    <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
-                                        <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
-                                            <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
-                                                <span class="iso-font-md-em">محمد رضا فنودی</span>
-                                                <a href="#" class="iso-font-sm-em iso-color-blue-dark">درباره دکتر کاضمیان</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="card-body d-flex pt-0 flex-column py-1 text-center px-2 justify-content-center border-0">
-                                        <p class="card-text iso-font-sm-em m-0 fw-normal iso-color-dark lh-md overflow-hidden"> از مشاوره دکتر کاظمیان راضی بودم انشالله بتونم دستوراتشون رو انجام بدم</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 px-2">
-                                        <button type="button" class="btn iso-bg-blue-dark border-radius iso-font-md-em  w-100 active-btn">نمایش نظر</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card border-0 box-shadow-lg border-radius pb-2">
-                                    <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
-                                        <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
-                                            <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
-                                                <span class="iso-font-md-em">محمد رضا فنودی</span>
-                                                <a href="#" class="iso-font-sm-em iso-color-blue-dark">درباره دکتر کاضمیان</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="card-body d-flex pt-0 flex-column py-1 text-center px-2 justify-content-center border-0">
-                                        <p class="card-text iso-font-sm-em m-0 fw-normal iso-color-dark lh-md overflow-hidden"> از مشاوره دکتر کاظمیان راضی بودم انشالله بتونم دستوراتشون رو انجام بدم</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 px-2">
-                                        <button type="button" class="btn iso-bg-blue-dark border-radius iso-font-md-em  w-100 active-btn">نمایش نظر</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card border-0 box-shadow-lg border-radius pb-2">
-                                    <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
-                                        <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
-                                            <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
-                                                <span class="iso-font-md-em">محمد رضا فنودی</span>
-                                                <a href="#" class="iso-font-sm-em iso-color-blue-dark">درباره دکتر کاضمیان</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="card-body d-flex pt-0 flex-column py-1 text-center px-2 justify-content-center border-0">
-                                        <p class="card-text iso-font-sm-em m-0 fw-normal iso-color-dark lh-md overflow-hidden"> از مشاوره دکتر کاظمیان راضی بودم انشالله بتونم دستوراتشون رو انجام بدم</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 px-2">
-                                        <button type="button" class="btn iso-bg-blue-dark border-radius iso-font-md-em  w-100 active-btn">نمایش نظر</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card border-0 box-shadow-lg border-radius pb-2">
-                                    <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
-                                        <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
-                                            <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
-                                                <span class="iso-font-md-em">محمد رضا فنودی</span>
-                                                <a href="#" class="iso-font-sm-em iso-color-blue-dark">درباره دکتر کاضمیان</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="card-body d-flex pt-0 flex-column py-1 text-center px-2 justify-content-center border-0">
-                                        <p class="card-text iso-font-sm-em m-0 fw-normal iso-color-dark lh-md overflow-hidden"> از مشاوره دکتر کاظمیان راضی بودم انشالله بتونم دستوراتشون رو انجام بدم</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 px-2">
-                                        <button type="button" class="btn iso-bg-blue-dark border-radius iso-font-md-em  w-100 active-btn">نمایش نظر</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card border-0 box-shadow-lg border-radius pb-2">
-                                    <div class="card-header d-flex pb-0 px-2 border-0 justify-content-between bg-transparent">
-                                        <figure class="figure d-flex align-items-center justify-content-center">
-                                            <img src="./images/doc3.jpg" class="figure-img img-sm m-0 rounded-circle" alt="...">
-                                            <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em fw-normal iso-color-dark mx-2">
-                                                <span class="iso-font-md-em">محمد رضا فنودی</span>
-                                                <a href="#" class="iso-font-sm-em iso-color-blue-dark">درباره دکتر کاضمیان</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="card-body d-flex pt-0 flex-column py-1 text-center px-2 justify-content-center border-0">
-                                        <p class="card-text iso-font-sm-em m-0 fw-normal iso-color-dark lh-md overflow-hidden"> از مشاوره دکتر کاظمیان راضی بودم انشالله بتونم دستوراتشون رو انجام بدم</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 px-2">
-                                        <button type="button" class="btn iso-bg-blue-dark border-radius iso-font-md-em  w-100 active-btn">نمایش نظر</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev rounded-pill iso-bg-blue-dark d-none d-lg-flex">
-                            <i class="fa-solid fa-angle-right iso-font-xl"></i>
-                        </div>
-                        <div class="swiper-button-next rounded-pill iso-bg-blue-dark d-none d-lg-flex">
-                            <i class="fa-solid fa-angle-left iso-font-xl"></i>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- section comments users end -->
+                                    دستور دادن نامناسب به کودک ممکن است مشکلاتی را در رابطه والد-کودک به وجود آورد که مانع رشد اجتماعی مناسب کودک شود.بنابراین توجه به چند توصیه اساسی ضروریست که در ادامه اشاره خواهد شد.
 
-            <!-- section steps to get online advice start -->
-            <section class="col-md-6 section-steps-to-get-online-advice mt-4">
-                <div class="card mt-md-0 border-radius box-shadow-lg">
-                    <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
-                        <h2 class="iso-font-md-em m-0">چطور مشاوره آنلاین بگیرم؟</h2>
+                                    نکات مهم در نحوه دستور دادن به کودکان :
+                                    ۱)در دستور دادن باید محتوا ساده باشد .به عبارتی چند دستور را یکجا نمی دهیم
+                                    ۲)دستور باید واضح باشد.مثال: به جای عبارت "شلوغی نکن" ....."با صدای آرام بازی کن"
+                                    ۳)دستور باید مثبت باشد.مثال: به جای عبارت "خواهرت را نزن" ....."خواهرت رو ببوس"
+                                    ۴)دستورات به صورت امری باشد نه سوالی .مثال: به جای عبارت "میشه در رو ببندی؟"......"در رو ببند"
+                                    ۵)موقع دستور دادن تا حد چشمان کودک خم شوید تا نگاه کند یا او را صدا کنید تا به صورت شما نگاه کند بعد به او دستور دهید                                    </p>
+                            </div>
+                            <div class="col-12 section-warning">
+                                <div class="col-md-6">
+                                    <div class="alert p-1 d-flex alert-warning">
+                                        <i class="fa-solid fa-2x text-warning fa-triangle-exclamation"></i>
+                                        <div class="d-flex flex-column ms-2">
+                                            <span class="fw-normal">نوع و دوز مصرفی دارو با توجه به شرایط شما تجویز می‌شود.</span>
+                                            <span>به‌ هیچ‌ عنوان بدون مشورت با پزشک اقدام به مصرف دارو نکنید.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- section card doctors start-->
+                            <div class="section-doctors border border-radius mt-2">
+                                <div class="section-header p-0 border-0 bg-transparent position-relative">
+                                    <div class="section-title d-flex align-items-center my-3">
+                                        <i class="iso-line-title iso-bg-blue-dark"></i>
+                                        <h2 class="iso-font-md-em px-3 fw-normal m-0">دکتر های مرتبط با این مطالب</h2>
+                                    </div>
+                                </div>
+                                <div class="section-body d-flex flex-lg-row p-0 position-relative overflow-hidden">
+                                    <div class="swiper swiper-doctors mt-0">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide mt-1">
+                                                <div class="card card-doctor border-0 box-shadow-lg border-radius pb-2">
+                                                    <div class="card-header d-flex pb-0 p-2 border-0 justify-content-center bg-transparent">
+                                                        <a href="">
+                                                            <div class="profile-doctor">
+                                                                <div class="img-box-profile position-relative d-flex flex-column justify-content-center">
+                                                                    <img src="./images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
+                                                                    <span class="badge iso-bg-green fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body d-flex flex-wrap py-2 justify-content-center border-0">
+                                                        <a href="profile_doctor.html">
+                                                            <span class="iso-font-md-em iso-color-dark text-wrap">دکتر اسماعیل جمشید دوست</span>
+                                                        </a>
+                                                        <span class="iso-font-xs-em iso-color-dark fw-normal lh-md text-wrap">پزشک عمومی با گرایش طب سنتی </span>
+                                                    </div>
+                                                    <div class="card-footer border-0 bg-transparent p-0">
+                                                        <div class="col-12 d-flex iso-font-xs-em iso-color-green-dark justify-content-center align-items-center">
+                                                             <span>
+                                                                <i class="fa-solid iso-font-lg-em fa-stethoscope"></i>
+                                                                10 سال تجربه
+                                                            </span>
+                                                            <span class="mx-2 d-flex align-items-center">
+                                                                <i class="fa-solid iso-font-lg-em mx-1 fa-message"></i>
+                                                                120 نظر
+                                                            </span>
+                                                        </div>
+                                                        <div class="items-relations-doctor col-12 d-flex mt-1 iso-color-green-dark justify-content-evenly align-items-center">
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-comments"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-phone"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-video"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal border-radius">
+                                                                <div class="icon-umbrella-active"></div>
+                                                                <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide mt-1">
+                                                <div class="card card-doctor border-0 box-shadow-lg border-radius pb-2">
+                                                    <div class="card-header d-flex pb-0 p-2 border-0 justify-content-center bg-transparent">
+                                                        <a href="">
+                                                            <div class="profile-doctor">
+                                                                <div class="img-box-profile position-relative d-flex flex-column justify-content-center">
+                                                                    <img src="./images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
+                                                                    <span class="badge iso-bg-green fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body d-flex flex-wrap py-2 justify-content-center border-0">
+                                                        <a href="profile_doctor.html">
+                                                            <span class="iso-font-md-em iso-color-dark text-wrap">دکتر اسماعیل جمشید دوست</span>
+                                                        </a>
+                                                        <span class="iso-font-xs-em iso-color-dark fw-normal lh-md text-wrap">پزشک عمومی با گرایش طب سنتی </span>
+                                                    </div>
+                                                    <div class="card-footer border-0 bg-transparent p-0">
+                                                        <div class="col-12 d-flex iso-font-xs-em iso-color-green-dark justify-content-center align-items-center">
+                                        <span>
+                                            <i class="fa-solid iso-font-lg-em fa-stethoscope"></i>
+                                            10 سال تجربه
+                                        </span>
+                                                            <span class="mx-2 d-flex align-items-center">
+                                            <i class="fa-solid iso-font-lg-em mx-1 fa-message"></i>
+                                            120 نظر
+                                        </span>
+                                                        </div>
+                                                        <div class="items-relations-doctor col-12 d-flex mt-1 iso-color-green-dark justify-content-evenly align-items-center">
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-comments"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="alert-secondary d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-secondary d-flex align-items-center fa-phone"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="alert-secondary d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-secondary d-flex align-items-center fa-video"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal border-radius">
+                                                                <div class="icon-umbrella-active"></div>
+                                                                <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide mt-1">
+                                                <div class="card card-doctor border-0 box-shadow-lg border-radius pb-2">
+                                                    <div class="card-header d-flex pb-0 p-2 border-0 justify-content-center bg-transparent">
+                                                        <a href="">
+                                                            <div class="profile-doctor">
+                                                                <div class="img-box-profile position-relative d-flex flex-column justify-content-center">
+                                                                    <img src="./images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
+                                                                    <span class="badge iso-bg-green fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body d-flex flex-wrap py-2 justify-content-center border-0">
+                                                        <a href="profile_doctor.html">
+                                                            <span class="iso-font-md-em iso-color-dark text-wrap">دکتر اسماعیل جمشید دوست</span>
+                                                        </a>
+                                                        <span class="iso-font-xs-em iso-color-dark fw-normal lh-md text-wrap">پزشک عمومی با گرایش طب سنتی </span>
+                                                    </div>
+                                                    <div class="card-footer border-0 bg-transparent p-0">
+                                                        <div class="col-12 d-flex iso-font-xs-em iso-color-green-dark justify-content-center align-items-center">
+                                        <span>
+                                            <i class="fa-solid iso-font-lg-em fa-stethoscope"></i>
+                                            10 سال تجربه
+                                        </span>
+                                                            <span class="mx-2 d-flex align-items-center">
+                                            <i class="fa-solid iso-font-lg-em mx-1 fa-message"></i>
+                                            120 نظر
+                                        </span>
+                                                        </div>
+                                                        <div class="items-relations-doctor col-12 d-flex mt-1 iso-color-green-dark justify-content-evenly align-items-center">
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-comments"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="alert-secondary d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-secondary d-flex align-items-center fa-phone"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="alert-secondary d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-secondary d-flex align-items-center fa-video"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center alert-secondary iso-color-dark fw-normal border-radius">
+                                                                <div class="icon-umbrella-disabled"></div>
+                                                                <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide mt-1">
+                                                <div class="card card-doctor border-0 box-shadow-lg border-radius pb-2">
+                                                    <div class="card-header d-flex pb-0 p-2 border-0 justify-content-center bg-transparent">
+                                                        <a href="">
+                                                            <div class="profile-doctor">
+                                                                <div class="img-box-profile position-relative d-flex flex-column justify-content-center">
+                                                                    <img src="./images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
+                                                                    <span class="badge iso-bg-green fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body d-flex flex-wrap py-2 justify-content-center border-0">
+                                                        <a href="profile_doctor.html">
+                                                            <span class="iso-font-md-em iso-color-dark text-wrap">دکتر اسماعیل جمشید دوست</span>
+                                                        </a>
+                                                        <span class="iso-font-xs-em iso-color-dark fw-normal lh-md text-wrap">پزشک عمومی با گرایش طب سنتی </span>
+                                                    </div>
+                                                    <div class="card-footer border-0 bg-transparent p-0">
+                                                        <div class="col-12 d-flex iso-font-xs-em iso-color-green-dark justify-content-center align-items-center">
+                                        <span>
+                                            <i class="fa-solid iso-font-lg-em fa-stethoscope"></i>
+                                            10 سال تجربه
+                                        </span>
+                                                            <span class="mx-2 d-flex align-items-center">
+                                            <i class="fa-solid iso-font-lg-em mx-1 fa-message"></i>
+                                            120 نظر
+                                        </span>
+                                                        </div>
+                                                        <div class="items-relations-doctor col-12 d-flex mt-1 iso-color-green-dark justify-content-evenly align-items-center">
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-comments"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-phone"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="alert-secondary d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-secondary d-flex align-items-center fa-video"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center alert-secondary iso-color-dark fw-normal border-radius">
+                                                                <div class="icon-umbrella-disabled"></div>
+                                                                <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide mt-1">
+                                                <div class="card card-doctor border-0 box-shadow-lg border-radius pb-2">
+                                                    <div class="card-header d-flex pb-0 p-2 border-0 justify-content-center bg-transparent">
+                                                        <a href="">
+                                                            <div class="profile-doctor">
+                                                                <div class="img-box-profile position-relative d-flex flex-column justify-content-center">
+                                                                    <img src="./images/doc3.jpg" class="figure-img img-lg rounded-circle rounded" alt="...">
+                                                                    <span class="badge iso-bg-green fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body d-flex flex-wrap py-2 justify-content-center border-0">
+                                                        <a href="profile_doctor.html">
+                                                            <span class="iso-font-md-em iso-color-dark text-wrap">دکتر اسماعیل جمشید دوست</span>
+                                                        </a>
+                                                        <span class="iso-font-xs-em iso-color-dark fw-normal lh-md text-wrap">پزشک عمومی با گرایش طب سنتی </span>
+                                                    </div>
+                                                    <div class="card-footer border-0 bg-transparent p-0">
+                                                        <div class="col-12 d-flex iso-font-xs-em iso-color-green-dark justify-content-center align-items-center">
+                                        <span>
+                                            <i class="fa-solid iso-font-lg-em fa-stethoscope"></i>
+                                            10 سال تجربه
+                                        </span>
+                                                            <span class="mx-2 d-flex align-items-center">
+                                            <i class="fa-solid iso-font-lg-em mx-1 fa-message"></i>
+                                            120 نظر
+                                        </span>
+                                                        </div>
+                                                        <div class="items-relations-doctor col-12 d-flex mt-1 iso-color-green-dark justify-content-evenly align-items-center">
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-comments"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-phone"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                            <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em iso-color-green-dark d-flex align-items-center fa-video"></i>
+                                            </span>
+                                                            </div>
+                                                            <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal border-radius">
+                                                                <div class="icon-umbrella-active"></div>
+                                                                <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev rounded-pill iso-bg-blue-dark d-none d-lg-flex">
+                                            <i class="fa-solid fa-angle-right iso-font-xl"></i>
+                                        </div>
+                                        <div class="swiper-button-next rounded-pill iso-bg-blue-dark d-none d-lg-flex">
+                                            <i class="fa-solid fa-angle-left iso-font-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- section card doctors end -->
+
+                            <div class="section-result">
+                                <h3 class="iso-font-llg-em ">جمع بندی</h3>
+                                <p class="fw-normal">
+                                    بسیاری از والدینی که دغدغه تربیت صحیح کودک خود را دارند،از روانپزشکان در مورد نحوه صحیح دستور دادن به کودک خود سوال میکنند.به اقتضای شرایط، والدین مجبور به نظارت و دستور دادن به کودک در شرایط مختلفی هستند.مثل شلوغ کردن کودک ، انجام یک عمل نامناسب یا درخواست انجام وظایف مثل مرتب کردن اتاق...
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="list-group">
-                            <div class="row gy-3 lh-md">
-                                <div class="col-xxl-6">
-                                    <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">1</span>
-                                        <span class="mx-2 iso-font-sm-em">انتخاب پزشک و تخصص</span>
+                    <div class="section-footer alert-secondary p-3">
+                        <div class="row gy-3">
+                            <div class="col-md-3">
+                                <div class="tags d-flex flex-wrap">
+                                    <span class="badge bg-primary p-2 ms-3 mt-2 px-1">#داروی_گیاهی</span>
+                                    <span class="badge bg-primary p-2 ms-3 mt-2 px-1">#پارسی طب</span>
+                                    <span class="badge bg-primary p-2 ms-3 mt-2 px-1">#مقطر</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/icons/love-active.png" class="love pointer-event love-active" role="button" aria-expanded="true" alt="پسندیدم">
+                                    <span class="ms-2">4</span>
+                                </div>
+                                <div class="box-count-comments d-flex justify-content-end align-items-center">
+                                    <i class="fa fa-comment iso-color-green-dark iso-font-llg-em"></i>
+                                    <span class="iso-color-dark iso-font-sm-em ms-1">16</span>
+                                </div>
+                                <i class="fa-regular fa-bookmark" aria-expanded="false"></i>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row gy-3">
+                                    <div class="col-md-6 share d-flex justify-content-center justify-content-md-start p-0">
+                                        <p class="me-3 m-0 align-self-center">اشتراک گذاری</p>
+                                        <div class="icons-social-network d-flex justify-content-start align-items-center justify-content-sm-center">
+                                            <div class="box-telegram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                                <a href="#" class="d-flex align-self-center">
+                                                    <div class="icon-telegram-light"></div>
+                                                </a>
+                                            </div>
+                                            <div class="box-linkedin img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                                <a href="#" class="d-flex align-self-center">
+                                                    <i class="fa-brands iso-font-xl-em text-light fa-linkedin-in"></i>
+                                                </a>
+                                            </div>
+                                            <div class="box-facebook img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                                <a href="#" class="d-flex align-self-center">
+                                                    <i class="fab iso-font-xl-em text-light fa-facebook-f"></i>
+                                                </a>
+                                            </div>
+                                            <div class="box-twitter img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                                <a href="#" class="d-flex align-self-center">
+                                                    <i class="fa-brands iso-font-xl-em text-light fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="card-text mt-2 iso-font-sm-em">
-                                        پزشک و تخصص مورد نظر خود را انتخاب کنید
-                                    </p>
+                                    <div class="col-md-6 box-copy-link d-flex align-items-center">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control iso-font-sm-em fw-normal px-1 text-end border-radius-start bg-light" id="copy_link" value="https://isovisit.com/medicines/4">
+                                            <div class="input-group-prepend rounded-0">
+                                                <button class="btn active-btn iso-bg-blue-dark iso-font-sm-em border-radius-end btn-copy-link px-1 py-2" data-clipboard-target="#copy_link">کپی لینک</button>
+                                                <span class="tooltip-text position-absolute border-radius text-center iso-bg-blue-dark py-1 mb-1 text-light opacity-0 border border-white bottom-100">کپی شد</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </article>
+            <!-- section description medicines start -->
+
+            <div class="col-md-6">
+                <!-- section list doctors start -->
+                <section class="section-list-doctors mt-4">
+                    <div class="row gy-3 justify-content-lg-center">
+                        <!-- card profile doctors start -->
+                        <div class="col-12">
+                            <div class="card border-radius">
+                                <div class="card-body p-2">
+                                    <div class="row mt-sm-3 mt-md-0">
+                                        <div class="col-12 col-sm-6 pe-0">
+                                            <figure class="figure d-flex align-items-start align-items-sm-center m-0 ms-3">
+                                                <div class="profile-doctor">
+                                                    <div class="img-box-profile position-relative d-flex flex-column justify-content-center">
+                                                        <img src="../front/images/doctor2.png" class="figure-img img-lg rounded-circle rounded m-0" alt="...">
+                                                        <span class="badge iso-bg-green fw-normal rounded iso-font-xxs-em position-absolute">آنلاین</span>
+                                                    </div>
+                                                    <div class="star_rating_doctor d-flex fw-normal align-items-center justify-content-evenly border-warning border border-2 border-radius">
+                                                        <div class="doctor-number-star-rating"></div>
+                                                        <span class="align-self-center iso-font-xs-em">4.5 از 5</span>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-2">
+                                                    <span class="iso-font-md-em iso-color-dark">دکتر اسماعیل جمشید دوست</span>
+                                                    <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="items-relations-doctor col-12 col-sm-6 col-md-6 py-1 d-flex justify-content-center iso-color-green-dark align-items-center">
+                                            <div class="row gy-2 gy-md-3 w-100">
+                                                <div class="col-12 col-md-12 d-flex justify-content-end justify-content-sm-center p-0">
+                                                    <div class="card-doctor-advisory-icon d-flex align-items-center">
+                                                <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                   <i class="fa-solid iso-font-md-em d-flex align-items-center fa-comments"></i>
+                                                </span>
+                                                    </div>
+
+                                                    <div class="card-doctor-advisory-icon d-flex align-items-center ms-2 ms-sm-3">
+                                             <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                                <i class="fa-solid iso-font-md-em d-flex align-items-center fa-phone"></i>
+                                            </span>
+                                                    </div>
+
+                                                    <div class="card-doctor-advisory-icon d-flex align-items-center ms-2 ms-sm-3">
+                                             <span class="iso-bg-green-light d-flex align-items-center justify-content-center border-radius">
+                                             <i class="fa-solid iso-font-md-em d-flex align-items-center fa-video"></i>
+                                             </span>
+                                                    </div>
+
+                                                    <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal ms-2 ms-sm-3 text-nowrap border-radius">
+                                                        <div class="icon-umbrella-active"></div>
+                                                        <span class="iso-font-xs-em ms-2">مشاوره با بیمه</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-12 d-flex iso-font-xs-em iso-color-green-dark align-items-center p-0 justify-content-center">
+                                         <span class="me-sm-1">
+                                             <i class="fa-solid fa-stethoscope iso-font-lg-em"></i>
+                                             10 سال تجربه
+                                         </span>
+                                                    <span class="mx-2 d-flex align-items-center">
+                                            <i class="fa-solid fa-message iso-font-lg-em mx-1"></i>
+                                            120 نظر
+                                        </span>
+                                                    <span class="ms-sm-1 fw-medium d-flex align-items-center">
+                                            <i class="fa-solid   fa-dollar iso-font-lg-em mx-1"></i>
+                                            38000 تومان
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-0 bg-transparent border-0">
+                                    <button type="button" class="btn w-100 iso-font-md-em border-radius iso-bg-blue-dark active-btn">شروع مشاوره</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card profile doctors end -->
+                    </div>
+                </section>
+                <!-- section list doctors end -->
+
+                <!-- section form comments start-->
+                <section class="section-form-comments mt-4">
+                    <div class="card border-radius box-shadow-lg">
+                        <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
+                            <h2 class="iso-font-md-em m-0">نظرات</h2>
+                        </div>
+                        <div class="card-body py-3">
+                            <div class="card-text iso-font-sm-em mb-2">
+                                نظر / سوال خود را وارد کنید:
+                            </div>
+
+                            <form class="row g-3 iso-font-sm-em fw-normal">
+                                <div class="col-xxl-6">
+                                    <label for="name" class="form-label">نام و نام خانوادگی</label>
+                                    <input type="email" class="form-control text-start iso-font-sm-em border-radius" id="name" placeholder="نام و نام خانوادگی">
                                 </div>
                                 <div class="col-xxl-6">
-                                    <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">2</span>
-                                        <span class="mx-2 iso-font-sm-em">پاسخ به سوالات</span>
-                                    </div>
-                                    <p class="card-text mt-2 iso-font-sm-em">
-                                        به سوال های ارسال شده در صفحه چت پاسخ دهید
-                                    </p>
+                                    <label for="phone" class="form-label">شماره موبایل</label>
+                                    <input type="tel" class="form-control text-start iso-font-sm-em border-radius" id="phone" placeholder="شماره موبایل">
                                 </div>
                                 <div class="col-xxl-6">
-                                    <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">3</span>
-                                        <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
-                                    </div>
-                                    <p class="card-text mt-2 iso-font-sm-em">
-                                        در قسمت پرداخت نوع مشاوره خود را که شامل "متنی" ، "صوتی " و "تصویری" هست را انتخاب کنید
-                                    </p>
+                                    <label for="description" class="form-label">نظر خود را وارد کنید</label>
+                                    <textarea class="form-control text-start iso-font-sm-em border-radius" id="description" rows="3" placeholder="نظر خود را وارد کنید"></textarea>
                                 </div>
-                                <div class="col-xxl-6">
-                                    <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">4</span>
-                                        <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
-                                    </div>
-                                    <p class="card-text mt-2 iso-font-sm-em">
-                                        نوع پرداخت خود را از بین "آنلاین" یا "کارت به کارت" انتخاب و پرداخت کنید
-                                    </p>
+                                <div class="col-5 col-xxl-3 d-flex flex-column justify-content-end align-items-start">
+                                    <label for="code_img" class="form-label">کد تصویر</label>
+                                    <input type="text" class="form-control text-start iso-font-sm-em border-radius" id="code_img" placeholder="کد تصویر">
+                                </div>
+                                <div class="col-7 col-xxl-3 p-0 d-flex align-items-end">
+                                    <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid captcha_image" alt=کپچا>
+                                    <a href="#" class="refresh_captcha mx-1">
+                                        <i class="fas fa-sync iso-font-llg-em"></i>
+                                    </a>
                                 </div>
                                 <div class="col-12">
-                                    <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
-                                        <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">5</span>
-                                        <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
+                                    <button type="submit" class="btn active-btn col-sm-6 col-12 offset-md-6  iso-font-md-em iso-bg-blue-dark">ارسال</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- section form comments end -->
+
+                <!-- section comments users start -->
+                <section class="section-comments-users mt-4">
+                    <div class="row gy-2 border-radius box-shadow-lg bg-white m-0 p-2">
+                        <div class="col-12 p-0">
+                            <div class="card p-2 bg-light border-radius">
+                                <div class="card-header border-0 p-0 bg-transparent fw-normal text-center">
+                                    <figure class="figure d-flex align-items-center">
+                                        <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">
+                                        <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em iso-color-dark mx-2">
+                                            <span class="iso-font-sm-em text-start">محمد رضا فنودی</span>
+                                            <div class="row gx-2 iso-font-xs-em mt-1 fw-normal">
+                                                <span class="col text-nowrap border-radius alert-secondary">کاربر مهمان</span>
+                                                <span class="col">1400/11/15</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="line-muted-dashed"></div>
+                                </div>
+                                <div class="card-body pt-0 mt-2 px-1">
+                                    <div class="card-text iso-font-md-em fw-normal">
+                                        <p>من برای حملات پنیک که بعد از کرونا دچار شدم مشاوره میخواستم کدوم یکی رو باید انتخاب کنم برای مشاوره ؟ کرونام خوب شده وای حملات پنیک بهم دست میده  </p>
                                     </div>
-                                    <p class="card-text mt-2 iso-font-sm-em">
-                                        بر اساس نوع مشاوره ای که در بخش پرداخت انتخاب کردید پزشک پاسخ شما را میدهد
-                                    </p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 p-0">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img src="./images/icons/love.png" class="love pointer-event" role="button" aria-expanded="false" alt="پسندیدم">
+                                            <span class="mx-2">3</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn active-btn w-100 border-radius  iso-font-md-em iso-bg-blue-dark">پاسخ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0">
+                            <div class="card card-comment-parent p-2 alert-success ms-3 border-radius">
+                                <div class="card-header border-0 p-0 bg-transparent fw-normal text-center">
+                                    <figure class="figure d-flex align-items-center">
+                                        <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">
+                                        <figcaption class="figure-caption fw-normal d-flex iso-font-md-em flex-column iso-color-dark mx-2">
+                                            <span class="iso-font-sm-em text-start">اپراتور شماره 12 ایزو ویزیت</span>
+                                            <a href="#" class="iso-font-xs-em text-start">@در پاسخ به عبدالقریب مرادی</a>
+                                            <div class="row gx-2 iso-font-xs-em mt-1 fw-normal">
+                                                <span class="col text-nowrap border-radius bg-light">پشتیبان سایت</span>
+                                                <span class="col text-start">1400/11/17</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="line-muted-bg-green-dashed"></div>
+                                </div>
+                                <div class="card-body pt-0 mt-2 px-1">
+                                    <div class="card-text iso-font-md-em iso-color-dark fw-normal">
+                                        <p>سلام. اگر مدت زمانی که برای انتظار گفته شده، گذشته، و هنوز نسخه صادر نشده، از طریق تیکت با پشتیبانی در ارتباط باشید تا بررسی کنن</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 p-0">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-6 d-flex align-items-center iso-color-dark">
+                                            <img src="./images/icons/love-active.png" class="love pointer-event" role="button" aria-expanded="true" alt="پسندیدم">
+                                            <span class="mx-2">1</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn active-btn w-100 border-radius  iso-font-md-em iso-bg-blue-dark">پاسخ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-comment-more p-0"></div>
+                    </div>
+                    <div class="card-btn d-flex justify-content-center bg-transparent border-0">
+                        <button type="button" class="btn active-btn iso-bg-blue-dark iso-font-md-em d-flex align-items-center border-radius more-comment" aria-expanded="false">
+                            <span class="me-3">نظرات بیشتر</span>
+                            <i class="fa-solid iso-font-llg-em fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </section>
+                <!-- section comments users end -->
+            </div>
+            <div class="col-md-6">
+
+                <!-- section steps to get online advice start -->
+                <section class="section-steps-to-get-online-advice mt-4">
+                    <div class="card mt-md-0 border-radius box-shadow-lg">
+                        <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
+                            <h2 class="iso-font-md-em m-0">چطور مشاوره آنلاین بگیرم؟</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group">
+                                <div class="row gy-3 lh-md">
+                                    <div class="col-xxl-6">
+                                        <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
+                                            <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">1</span>
+                                            <span class="mx-2 iso-font-sm-em">انتخاب پزشک و تخصص</span>
+                                        </div>
+                                        <p class="card-text mt-2 iso-font-sm-em">
+                                            پزشک و تخصص مورد نظر خود را انتخاب کنید
+                                        </p>
+                                    </div>
+                                    <div class="col-xxl-6">
+                                        <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
+                                            <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">2</span>
+                                            <span class="mx-2 iso-font-sm-em">پاسخ به سوالات</span>
+                                        </div>
+                                        <p class="card-text mt-2 iso-font-sm-em">
+                                            به سوال های ارسال شده در صفحه چت پاسخ دهید
+                                        </p>
+                                    </div>
+                                    <div class="col-xxl-6">
+                                        <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
+                                            <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">3</span>
+                                            <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
+                                        </div>
+                                        <p class="card-text mt-2 iso-font-sm-em">
+                                            در قسمت پرداخت نوع مشاوره خود را که شامل "متنی" ، "صوتی " و "تصویری" هست را انتخاب کنید
+                                        </p>
+                                    </div>
+                                    <div class="col-xxl-6">
+                                        <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
+                                            <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">4</span>
+                                            <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
+                                        </div>
+                                        <p class="card-text mt-2 iso-font-sm-em">
+                                            نوع پرداخت خود را از بین "آنلاین" یا "کارت به کارت" انتخاب و پرداخت کنید
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
+                                            <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">5</span>
+                                            <span class="mx-2 iso-font-sm-em">انتخاب نوع مشاوره</span>
+                                        </div>
+                                        <p class="card-text mt-2 iso-font-sm-em">
+                                            بر اساس نوع مشاوره ای که در بخش پرداخت انتخاب کردید پزشک پاسخ شما را میدهد
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- section steps to get online advice end -->
+                </section>
+                <!-- section steps to get online advice end -->
 
-            <!-- section frequently asked question start -->
-            <section class="col-md-6 section-frequently-asked-question mt-4">
-                <div class="card border-radius box-shadow-lg overflow-hidden">
-                    <div class="card-header border-0 iso-font-md-em fw-normal text-center iso-bg-green-light">
-                        <h2 class="iso-font-md-em m-0">سوالات متداول</h2>
+                <!-- section frequently asked question start -->
+                <section class="section-frequently-asked-question mt-4">
+                    <div class="card border-radius box-shadow-lg overflow-hidden">
+                        <div class="card-header border-0 iso-font-md-em fw-normal text-center iso-bg-green-light">
+                            <h2 class="iso-font-md-em m-0">سوالات متداول</h2>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group iso-bg-light border-0">
+                                <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
+                                    <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestion" aria-expanded="false" aria-controls="collapseQuestion">
+                                            <span class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark p-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
+                                        <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
+                                    </button>
+                                    <div class="collapse bg-white w-100 p-1" id="collapseQuestion">
+                                        <p class="card-text p-2 iso-font-sm-em">
+                                            از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
+                                    <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestionOne" aria-expanded="true" aria-controls="collapseQuestionOne">
+                                            <span class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark p-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
+                                        <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
+                                    </button>
+                                    <div class="bg-white w-100 p-1 collapse" id="collapseQuestionOne" style="">
+                                        <p class="card-text p-2 iso-font-sm-em">
+                                            از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
+                                    <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestionTwo" aria-expanded="true" aria-controls="collapseQuestionOne">
+                                            <span class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark p-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
+                                        <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
+                                    </button>
+                                    <div class="bg-white w-100 p-1 collapse" id="collapseQuestionTwo" style="">
+                                        <p class="card-text p-2 iso-font-sm-em">
+                                            از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card-body p-0">
-                        <ul class="list-group iso-bg-light border-0">
-                            <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestion" aria-expanded="false" aria-controls="collapseQuestion">
-                                            <span class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark p-1">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </span>
-                                    <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
-                                </button>
-                                <div class="collapse bg-white w-100 p-1" id="collapseQuestion">
-                                    <p class="card-text p-2 iso-font-sm-em">
-                                        از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestionOne" aria-expanded="true" aria-controls="collapseQuestionOne">
-                                            <span class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark p-1">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </span>
-                                    <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
-                                </button>
-                                <div class="bg-white w-100 p-1 collapse" id="collapseQuestionOne" style="">
-                                    <p class="card-text p-2 iso-font-sm-em">
-                                        از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="list-group-item border-0 p-0 d-flex justify-content-center flex-wrap bg-transparent">
-                                <button class="btn w-100 border-bottom border-0 iso-bg-light iso-font-md-em p-0 d-flex rounded-0 align-items-center text-start btn-question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuestionTwo" aria-expanded="true" aria-controls="collapseQuestionOne">
-                                            <span class="arrow d-flex align-items-center iso-font-llg-em justify-content-center iso-bg-green-light iso-color-green-dark p-1">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </span>
-                                    <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
-                                </button>
-                                <div class="bg-white w-100 p-1 collapse" id="collapseQuestionTwo" style="">
-                                    <p class="card-text p-2 iso-font-sm-em">
-                                        از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- section frequently asked question end -->
-
+                </section>
+                <!-- section frequently asked question end -->
+            </div>
         </div>
     </div>
     <div class="communication-iso box-shadow-lg position-fixed rounded-circle iso-bg-green-dark">
@@ -1281,6 +1574,6 @@
 <script src="./js/general_function.js"></script>
 <script src="./js/init/initSwiper.js"></script>
 <script src="./js/index.js"></script>
-<script src="./js/list_doctors.js"></script>
+<script src="./js/articles.js"></script>
 </body>
 </html>

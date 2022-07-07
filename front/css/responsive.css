@@ -54,7 +54,13 @@
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {
     bottom: 5em; }
   .section-list-doctors figure {
-    height: 67px; } }
+    height: 67px; }
+  .box-question-of-doctors-about-medicines .card {
+    width: 22.5em; }
+  .box-question-of-doctors-about-medicines .img-box-profile {
+    right: 9px; }
+  .medicines-master ~ .communication-iso, .medicines-master ~ .scroll-top {
+    bottom: 7em; } }
 
 @media only screen and (min-width: 992px) {
   html {

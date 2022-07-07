@@ -89,6 +89,22 @@
       height: 67px;
     }
   }
+
+  .box-question-of-doctors-about-medicines{
+    .card {
+      width: 22.5em;
+    }
+
+    .img-box-profile{
+      right: 9px;
+    }
+  }
+
+  .medicines-master{
+    ~  .communication-iso,~ .scroll-top{
+      bottom: 7em;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {

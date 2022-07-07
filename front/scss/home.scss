@@ -107,10 +107,6 @@ main {
     }
   }
 
-  @mixin text-overflow-ellipsis {
-    text-overflow: ellipsis;
-  }
-
   .swiper-question-answer {
 
     .card {
@@ -127,7 +123,7 @@ main {
     }
 
     h1 {
-      @include text-overflow-ellipsis;
+       text-overflow: ellipsis;
     }
 
     p {
@@ -173,7 +169,7 @@ main {
     .card-body {
       div {
         span {
-          @include text-overflow-ellipsis;
+          text-overflow: ellipsis;
         }
       }
     }
