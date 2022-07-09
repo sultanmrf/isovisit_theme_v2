@@ -1,6 +1,8 @@
+@import "variables";
+
 @keyframes animate-move-text {
-  0%   { transform: translateX(-100%); }
-  100% { transform: translateX(1020px); }
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(100%); }
 }
 
 .start-motion-move-text{
@@ -8,25 +10,25 @@
 }
 
 .links-question-answer{
-  height:22px;
+  height:1.375em;
 }
 
 .collapse-froum{
   .form-select-birth{
-    width: 153px;
+    width: 19.563em;
   }
 
   .input-height{
-    width: 94px;
+    width: 6.2em;
   }
 }
 
 .error{
   width: 100%;
   color: red;
-  font-size: 12px;
+  font-size: $iso-xs-em;
 }
 
 .error{
-  height: 10px;
+  height: $iso-xxs-em;
 }

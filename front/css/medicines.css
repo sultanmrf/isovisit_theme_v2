@@ -1,0 +1,19 @@
+.box-img-medicines {
+  height: 350px; }
+
+.section-medicines .swiper-wrapper {
+  height: 12.5em; }
+
+.box-question-of-doctors-about-medicines {
+  z-index: 999; }
+  .box-question-of-doctors-about-medicines .card {
+    width: 23em;
+    right: -445px;
+    cursor: pointer; }
+  .box-question-of-doctors-about-medicines .img-box-profile {
+    right: 213px;
+    z-index: 2; }
+
+.section-list-medicines .card {
+  width: 18.75em;
+  height: 10em; }

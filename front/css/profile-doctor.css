@@ -90,6 +90,10 @@ footer {
   border-radius: 8px;
   left: 0; }
 
+article img {
+  max-width: 100%;
+  height: auto; }
+
 .hover-line-blue:hover:after {
   background: #1773B5; }
 
