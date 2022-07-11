@@ -105,7 +105,7 @@ main .swiper-question-answer p {
 main .section-articles .swiper-articles img {
   height: 13.1875em; }
 
-main .section-articles .swiper-articles a {
+main .section-articles .swiper-articles .card-text {
   height: 3.8em; }
 
 main .section-medicines .section-title {
