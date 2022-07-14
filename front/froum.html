@@ -645,20 +645,13 @@
                         <div class="col-md-9 p-0">
                             <div class="links-question-answer overflow-hidden mx-2 w-100 position-relative">
                                 <div class="motion-move-text text-nowrap position-absolute">
-                                    <a href="#" class="iso-color-blue-dark">برای شروع روند درمان باید چکار کنم ؟</a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">اصلاح مزاج - </a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">مشکلات چاقی </a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">مشکلات کودکان و لجبازی های آن ها</a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">ریزش شدید موهای سر و سفید شدن مو</a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">مشکلات چاقی </a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">ریزش شدید موهای سر و سفید شدن مو</a>
-                                    <span class="mx-1 iso-color-dark border-start">|</span>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">برای شروع روند درمان باید چکار کنم ؟</a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">اصلاح مزاج - </a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات چاقی </a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات کودکان و لجبازی های آن ها</a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">ریزش شدید موهای سر و سفید شدن مو</a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات چاقی </a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">ریزش شدید موهای سر و سفید شدن مو</a>
                                 </div>
                             </div>
                         </div>
@@ -670,7 +663,7 @@
 
             <!-- section btn question doctor start -->
             <button class="btn-question-doctor w-50 me-auto my-4 iso-font-md-em ms-auto btn iso-bg-blue-dark active-btn"
-                    data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">پرسیدن سوال پزشکی</button>
+                    data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">پرسیدن سوال پزشکی</button>
             <!-- section btn question doctor end -->
 
             <section class="section-list-question-answer">
@@ -765,7 +758,8 @@
                                 </li>
                             </ul>
                             <div class="btn-more-question d-flex justify-content-center">
-                                <button type="button" class="btn col-10 col-sm-5 col-lg-3 iso-bg-blue-dark py-2 iso-font-md-em p-1 text-center  border-radius d-flex align-items-center justify-content-center  active-btn" aria-expanded="true" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-controls="collapseExample">
+                                <button type="button" class="btn col-10 col-sm-5 col-lg-3 iso-bg-blue-dark py-2 iso-font-md-em p-1 text-center border-radius d-flex align-items-center justify-content-center active-btn"
+                                        aria-expanded="true">
                                     مشاهده سوالات بیشتر
                                 </button>
                             </div>
@@ -863,7 +857,8 @@
                                 </li>
                             </ul>
                             <div class="btn-more-question d-flex justify-content-center">
-                                <button type="button" class="btn col-10 col-sm-5 col-lg-3 iso-bg-blue-dark py-2 iso-font-md-em p-1 text-center  border-radius d-flex align-items-center justify-content-center  active-btn" aria-expanded="true" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-controls="collapseExample">
+                                <button type="button" class="btn col-10 col-sm-5 col-lg-3 iso-bg-blue-dark py-2 iso-font-md-em p-1 text-center border-radius d-flex align-items-center justify-content-center  active-btn"
+                                        aria-expanded="true">
                                     مشاهده سوالات بیشتر
                                 </button>
                             </div>
@@ -874,11 +869,11 @@
 
             <!-- section btn question doctor start -->
             <button class="btn-question-doctor w-50 me-auto my-4 iso-font-md-em ms-auto btn iso-bg-blue-dark active-btn"
-                    data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">پرسیدن سوال پزشکی</button>
+                    data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">پرسیدن سوال پزشکی</button>
             <!-- section btn question doctor end -->
 
             <!-- section form create question start -->
-            <div class="collapse my-4 collapse-froum">
+            <div class="collapse my-4" id="collapseFroum">
                 <div class="card card-body box-shadow-lg border-radius">
                     <form id="form">
                         <div class="row row-cols-4">
@@ -910,29 +905,29 @@
                                             <option>1399</option>
                                             <option>1399</option>
                                         </select>
-                                        <span class="error-births error mt-1"></span>
+                                        <span class="error_births error mt-1"></span>
                                     </div>
                                     <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 pe-0 ms-xl-3">
                                         <label class="">قد : </label>
                                         <div class="input-group input-height ms-2 flex-row-reverse">
                                             <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">cm</span>
-                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="قد" aria-label="cm" aria-describedby="basic-addon1" name="height">
+                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="قد" aria-label="cm" name="height">
                                         </div>
-                                        <span class="error-height error mt-1"></span>
+                                        <span class="error_height error mt-1"></span>
                                     </div>
                                     <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 p-0">
                                         <label class="">وزن : </label>
                                         <div class="input-group input-height ms-2 flex-row-reverse">
                                             <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">kg</span>
-                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="وزن" aria-label="kg" aria-describedby="basic-addon2" name="weight">
+                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="وزن" aria-label="kg" name="weight">
                                         </div>
-                                        <span class="error-weight error mt-1"></span>
+                                        <span class="error_weight error mt-1"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-1 d-flex justify-content-end">
                                 <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
-                                        data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
                             </div>
@@ -944,17 +939,17 @@
                                     <option value="">دسته بندی سوال خود را انتخاب کنید</option>
                                     <option value="1">اصلاح مزاج</option>
                                 </select>
-                                <span class="error-category error mt-1"></span>
+                                <span class="error_category error mt-1"></span>
                             </div>
                             <div class="col-md-4 col-lg-3">
                                 <label for="validationCustom01" class="form-label mb-1 fw-normal">عنوان سوال</label>
                                 <input type="text" class="form-control iso-font-xxs-em fw-normal" id="validationCustom01" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
-                                <span class="error-title_question error mt-1"></span>
+                                <span class="error_title_question error mt-1"></span>
                             </div>
                             <div class="col-md-4 col-lg-3">
                                 <label for="description" class="form-label mb-1 fw-normal">توضیحات</label>
                                 <textarea class="form-control iso-font-xxs-em fw-normal" id="description" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
-                                <span class="error-description error mt-1"></span>
+                                <span class="error_description error mt-1"></span>
                             </div>
                         </div>
                         <div class="row gy-4 gy-md-3 mt-0 mt-md-3">
@@ -986,7 +981,7 @@
                                     <div class="col d-flex align-items-end p-0">
                                         <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid mb-1 captcha_image" alt="کپچا">
                                     </div>
-                                    <span class="error-code_security error mt-1"></span>
+                                    <span class="error_code_security error mt-1"></span>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 form-check d-flex flex-wrap align-items-end ms-2">
@@ -994,13 +989,13 @@
                                 <label class="form-check-label iso-font-md-em fw-normal mx-2" for="flexCheckDefault">
                                     قوانین ارسال سوالات رایگان را مطالعه کنید
                                 </label>
-                                <span class="error-rules_check error mt-1"></span>
+                                <span class="error_rules_check error mt-1"></span>
                             </div>
                         </div>
                         <div class="col-12 d-flex justify-content-center mt-4">
                             <button type="submit" class="btn col-6 col-md-3 iso-bg-blue-dark iso-font-md-em border-radius active-btn">ذخیره سوال </button>
                             <button type="button" class="btn col-6 col-md-3 btn-outline-primary mx-2 iso-font-md-em border-radius"
-                                    data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">بازگشت</button>
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">بازگشت</button>
                         </div>
                     </form>
                 </div>

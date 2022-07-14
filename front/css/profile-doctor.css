@@ -54,7 +54,18 @@ h2 {
 
 p {
   line-height: 1.8em;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 0.875em; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
 
 .form-control:focus,
 .btn:focus {
@@ -80,22 +91,21 @@ footer {
   color: white;
   background: #009d38; }
 
-.hover-line-blue:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: -6px;
-  height: 4px;
-  background: none;
-  border-radius: 8px;
-  left: 0; }
-
-article img {
-  max-width: 100%;
-  height: auto; }
-
-.hover-line-blue:hover:after {
-  background: #1773B5; }
+.hover-line-blue {
+  position: relative; }
+  .hover-line-blue:hover {
+    color: #1773B5; }
+  .hover-line-blue:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 4px;
+    background: none;
+    border-radius: 8px;
+    left: 0; }
+  .hover-line-blue:hover:after {
+    background: #1773B5; }
 
 .hover-line-white:hover {
   border-bottom: 0.125rem solid #f8f9fa; }
@@ -357,8 +367,9 @@ article img {
 .icon-gmail {
   background: url("../images/icons/gmail.png"); }
 
-.captcha_image {
-  height: 1.563em; }
+.captcha img {
+  width: 6.813em;
+  height: 2em; }
 
 .iso-form-check-input {
   width: 1.5em;
@@ -420,6 +431,15 @@ article img {
 .optional.is-valid {
   border: 1px solid #ced4da;
   background-image: unset; }
+
+/* style error validation */
+.error {
+  width: 100%;
+  color: red;
+  font-size: 0.75em; }
+
+.error {
+  height: 0.625em; }
 
 .card-info-doctor .btn-group {
   border: 1px solid #009d38; }

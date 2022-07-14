@@ -40,7 +40,11 @@
   .swiper .swiper-pagination-question-answer {
     bottom: -0.313rem; }
   .swiper .swiper-pagination-medicines {
-    bottom: -0.5rem; } }
+    bottom: -0.5rem; }
+  /* section register_doctor start */
+  .section-comment-doctors .figure-caption {
+    top: 0.625em; }
+  /* section register_doctor end */ }
 
 @media only screen and (min-width: 768px) {
   footer .footer-about {
@@ -48,19 +52,36 @@
 
 @media only screen and (max-width: 576px) {
   .section-list-doctors .card-body {
-    height: auto; } }
+    height: auto; }
+  /* section register_doctor start */
+  .section-comment-doctors .swiper-wrapper {
+    height: 17em; }
+  .section-comment-doctors .swiper-pagination-comment-doctors {
+    bottom: .625em; }
+  .section-comment-doctors .swiper-slide-next {
+    transform: unset;
+    margin-right: unset;
+    margin-left: 1em !important; }
+  /* section register_doctor end */ }
 
 @media only screen and (max-width: 768px) {
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {
     bottom: 5em; }
   .section-list-doctors figure {
-    height: 67px; }
+    height: 4.188em; }
   .box-question-of-doctors-about-medicines .card {
     width: 22.5em; }
   .box-question-of-doctors-about-medicines .img-box-profile {
-    right: 9px; }
+    right: .563em; }
   .medicines-master ~ .communication-iso, .medicines-master ~ .scroll-top {
-    bottom: 7em; } }
+    bottom: 7em; }
+  /* section register_doctor start */
+  .section-service-doctors {
+    background: none;
+    box-shadow: unset; }
+  /* section register_doctor end */
+  .banner-pattern {
+    background-size: 69.875em 27.5em; } }
 
 @media only screen and (min-width: 992px) {
   html {
@@ -78,17 +99,17 @@
   .swiper-comments-users {
     margin-top: 5em; }
   .section-articles .section-btn button {
-    top: -55px; }
+    top: -3.438em; }
   .svg-sing-in-doctor {
-    left: -230px;
-    top: -98px; } }
+    left: -14.375em;
+    top: -6.125em; } }
 
 @media only screen and (min-width: 1400px) {
   .section-data-profile-doctor .btn-group {
-    top: -52px;
+    top: -3.438em;
     border-radius: 8px; }
   .section-data-profile-doctor .row {
-    height: 118px; }
+    height: 7.375em; }
   footer .footer-certificates,
   footer .footer-contact {
     border-top: 0 solid; } }

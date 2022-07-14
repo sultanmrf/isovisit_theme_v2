@@ -17,8 +17,6 @@ $(document).ready(function () {
         }
     });
 
-    // $(".submit-btn").click(function (){
-    // });
 
     $("#form").validate({
         focusCleanup: true,
@@ -71,15 +69,14 @@ $(document).ready(function () {
         showErrors: function(errorMap, errorList) {
             if(errorList.length > 0){
                 for(let x in errorList){
-                    $(".error-" + errorList[x].element.name).html(errorList[x] ? errorList[x].message : '');
+                    $(".error_" + errorList[x].element.name).html(errorList[x] ? errorList[x].message : '');
                     $(errorList[x].element).addClass('is-invalid').removeClass('is-valid');
                 }
             }else{
                   $(this.lastActive).addClass('is-valid').removeClass('is-invalid');
-                  $(".error-" + this.lastActive.name).html('');
+                  $(".error_" + this.lastActive.name).html('');
             }
-            // this.defaultShowErrors();
-            $("#gender-error").remove();
+            $("#gender_error").remove();
             $("#gender1,#gender2").removeClass('error');
         },
 

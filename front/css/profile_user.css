@@ -1,0 +1,64 @@
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+* border-color
+ */
+/**
+* spacing text
+ */
+[class^="icon"] {
+  filter: hue-rotate(294deg); }
+
+.icon-profile {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/profile.png"); }
+
+.icon-consultants {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/general-consultation.png"); }
+
+.icon-transactions {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/transactions.png"); }
+
+.icon-secretary-message {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/secretary-message.png"); }
+
+.icon-comments {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/comments.png"); }
+
+.icon-question-answer {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/question-answer.png"); }
+
+.icon-tickets {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons/tickets.png"); }
+
+.menu-profile {
+  padding: 13px 120px 13px 122px; }
+  .menu-profile a:hover div {
+    filter: hue-rotate(356deg); }
+  .menu-profile .hover-line-blue:after {
+    bottom: -13px; }
+
+.specifications {
+  border-left: 2px dashed #001A34 !important; }

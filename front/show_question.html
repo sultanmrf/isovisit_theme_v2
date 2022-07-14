@@ -645,35 +645,29 @@
                         <div class="col-md-9 p-0">
                             <div class="links-question-answer overflow-hidden mx-2 w-100 position-relative">
                                 <div class="motion-move-text text-nowrap position-absolute">
-                                    <a href="#" class="iso-color-blue-dark">برای شروع روند درمان باید چکار کنم ؟</a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">اصلاح مزاج - </a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">مشکلات چاقی </a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">مشکلات کودکان و لجبازی های آن ها</a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">ریزش شدید موهای سر و سفید شدن مو</a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">مشکلات چاقی </a>
-                                    <span class="mx-1 iso-color-dark">|</span>
-                                    <a href="#" class="iso-color-blue-dark">ریزش شدید موهای سر و سفید شدن مو</a>
-                                    <span class="mx-1 iso-color-dark border-start">|</span>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">برای شروع روند درمان باید چکار کنم ؟</a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">اصلاح مزاج - </a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات چاقی </a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات کودکان و لجبازی های آن ها</a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">ریزش شدید موهای سر و سفید شدن مو</a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات چاقی </a>
+                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">ریزش شدید موهای سر و سفید شدن مو</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
             <!-- section alert question and answer success start end -->
 
             <!-- section btn question doctor start -->
             <button class="btn-question-doctor w-50 me-auto my-4 iso-font-md-em ms-auto btn iso-bg-blue-dark active-btn"
-                    data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">پرسیدن سوال پزشکی</button>
+                    data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">پرسیدن سوال پزشکی</button>
             <!-- section btn question doctor end -->
 
             <!-- section form create question start -->
-            <div class="collapse my-4 collapse-froum">
+            <div class="collapse my-4" id="collapseFroum">
                 <div class="card card-body box-shadow-lg border-radius">
                     <form id="form">
                         <div class="row row-cols-4">
@@ -711,7 +705,7 @@
                                         <label class="">قد : </label>
                                         <div class="input-group input-height ms-2 flex-row-reverse">
                                             <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">cm</span>
-                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="قد" aria-label="cm" aria-describedby="basic-addon1" name="height">
+                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="قد" aria-label="cm" name="height">
                                         </div>
                                         <span class="error-height error mt-1"></span>
                                     </div>
@@ -719,7 +713,7 @@
                                         <label class="">وزن : </label>
                                         <div class="input-group input-height ms-2 flex-row-reverse">
                                             <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">kg</span>
-                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="وزن" aria-label="kg" aria-describedby="basic-addon2" name="weight">
+                                            <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="وزن" aria-label="kg" name="weight">
                                         </div>
                                         <span class="error-weight error mt-1"></span>
                                     </div>
@@ -727,7 +721,7 @@
                             </div>
                             <div class="col-1 d-flex justify-content-end">
                                 <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
-                                        data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
                             </div>
@@ -795,7 +789,7 @@
                         <div class="col-12 d-flex justify-content-center mt-4">
                             <button type="submit" class="btn col-6 col-md-3 iso-bg-blue-dark iso-font-md-em border-radius active-btn">ذخیره سوال </button>
                             <button type="button" class="btn col-6 col-md-3 btn-outline-primary mx-2 iso-font-md-em border-radius"
-                                    data-bs-toggle="collapse" data-bs-target=".collapse-froum" aria-expanded="false" aria-controls="collapse-froum">بازگشت</button>
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">بازگشت</button>
                         </div>
                     </form>
                 </div>

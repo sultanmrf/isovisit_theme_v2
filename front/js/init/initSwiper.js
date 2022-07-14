@@ -284,3 +284,30 @@ function initGalleryDoctorSwiper(target = '.swiper-gallery-doctor', name_paginat
     }, name_pagination,0);
 }
 
+// Comment Doctors Swiper:
+function initCommentDoctorsSwiper(target = '.swiper-comment-doctors', name_pagination = '.swiper-pagination-comment-doctors') {
+
+    initSwiper(target, {
+        sm: {
+            count_slides_view: 1,
+            navigation: false,
+            pagination: true,
+            effect: false,
+            grabCursor: false,
+        },
+        md: {
+            count_slides_view: 3,
+            navigation: false,
+            pagination: true,
+            effect: false,
+            grabCursor: false,
+        },
+        lg: {
+            count_slides_view: 3,
+            navigation: true,
+            pagination: false,
+            effect: false,
+            grabCursor: false,
+        },
+    }, name_pagination);
+}

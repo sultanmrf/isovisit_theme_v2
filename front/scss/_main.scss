@@ -27,6 +27,19 @@ h2{
 p{
   line-height: 1.8em;
   font-weight: 400;
+  font-size: $iso-sm-em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .form-control:focus,
@@ -60,19 +73,27 @@ footer,
   }
 }
 
-.hover-line-blue:after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: -6px;
-  height: 4px;
-  background: none;
-  border-radius: 8px;
-  left: 0;
-}
+.hover-line-blue{
+  position: relative;
 
-.hover-line-blue:hover:after{
-  background: #1773B5;
+  &:hover{
+    color: $iso-blue-dark;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 4px;
+    background: none;
+    border-radius: 8px;
+    left: 0;
+  }
+
+  &:hover:after{
+    background: $iso-blue-dark;
+  }
 }
 
 .hover-line-white:hover {
@@ -426,8 +447,11 @@ footer,
   background: url("../images/icons/gmail.png");
 }
 
-.captcha_image{
-  height: 1.563em;
+.captcha{
+  img{
+    width: 6.813em;
+    height: 2em;
+  }
 }
 
 .iso-form-check-input{
@@ -510,4 +534,15 @@ footer,
 .optional.is-valid{
   border: 1px solid #ced4da;
   background-image: unset;
+}
+
+/* style error validation */
+.error{
+  width: 100%;
+  color: red;
+  font-size: $iso-xs-em;
+}
+
+.error{
+  height: $iso-xxs-em;
 }

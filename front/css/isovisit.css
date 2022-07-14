@@ -265,7 +265,18 @@ h2 {
 
 p {
   line-height: 1.8em;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 0.875em; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
 
 .form-control:focus,
 .btn:focus {
@@ -291,22 +302,21 @@ footer {
   color: white;
   background: #009d38; }
 
-.hover-line-blue:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: -6px;
-  height: 4px;
-  background: none;
-  border-radius: 8px;
-  left: 0; }
-
-article img {
-  max-width: 100%;
-  height: auto; }
-
-.hover-line-blue:hover:after {
-  background: #1773B5; }
+.hover-line-blue {
+  position: relative; }
+  .hover-line-blue:hover {
+    color: #1773B5; }
+  .hover-line-blue:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 4px;
+    background: none;
+    border-radius: 8px;
+    left: 0; }
+  .hover-line-blue:hover:after {
+    background: #1773B5; }
 
 .hover-line-white:hover {
   border-bottom: 0.125rem solid #f8f9fa; }
@@ -568,8 +578,9 @@ article img {
 .icon-gmail {
   background: url("../images/icons/gmail.png"); }
 
-.captcha_image {
-  height: 1.563em; }
+.captcha img {
+  width: 6.813em;
+  height: 2em; }
 
 .iso-form-check-input {
   width: 1.5em;
@@ -631,6 +642,15 @@ article img {
 .optional.is-valid {
   border: 1px solid #ced4da;
   background-image: unset; }
+
+/* style error validation */
+.error {
+  width: 100%;
+  color: red;
+  font-size: 0.75em; }
+
+.error {
+  height: 0.625em; }
 
 header {
   /* style section banner */ }
@@ -749,7 +769,18 @@ h2 {
 
 p {
   line-height: 1.8em;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 0.875em; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
 
 .form-control:focus,
 .btn:focus {
@@ -775,22 +806,21 @@ footer {
   color: white;
   background: #009d38; }
 
-.hover-line-blue:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: -6px;
-  height: 4px;
-  background: none;
-  border-radius: 8px;
-  left: 0; }
-
-article img {
-  max-width: 100%;
-  height: auto; }
-
-.hover-line-blue:hover:after {
-  background: #1773B5; }
+.hover-line-blue {
+  position: relative; }
+  .hover-line-blue:hover {
+    color: #1773B5; }
+  .hover-line-blue:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 4px;
+    background: none;
+    border-radius: 8px;
+    left: 0; }
+  .hover-line-blue:hover:after {
+    background: #1773B5; }
 
 .hover-line-white:hover {
   border-bottom: 0.125rem solid #f8f9fa; }
@@ -1052,8 +1082,9 @@ article img {
 .icon-gmail {
   background: url("../images/icons/gmail.png"); }
 
-.captcha_image {
-  height: 1.563em; }
+.captcha img {
+  width: 6.813em;
+  height: 2em; }
 
 .iso-form-check-input {
   width: 1.5em;
@@ -1116,6 +1147,15 @@ article img {
   border: 1px solid #ced4da;
   background-image: unset; }
 
+/* style error validation */
+.error {
+  width: 100%;
+  color: red;
+  font-size: 0.75em; }
+
+.error {
+  height: 0.625em; }
+
 /* footer */
 footer .footer-certificates .footer-body {
   height: 9.938rem; }
@@ -1152,7 +1192,16 @@ svg#freepik_stories-about-us-page:not(.animated) .animable,
 svg#freepik_stories-accept-terms:not(.animated) .animable,
 svg#freepik_stories-emails:not(.animated) .animable,
 svg#freepik_stories-faq:not(.animated) .animable,
-svg#freepik_stories-active-support:not(.animated) .animable {
+svg#freepik_stories-active-support:not(.animated) .animable,
+svg#freepik_stories-cellphone:not(.animated) .animable,
+svg#freepik_stories-critical-thinking:not(.animated) .animable,
+svg#freepik_stories-mobile-development:not(.animated) .animable,
+svg#freepik_stories-completed:not(.animated) .animable,
+svg#freepik_stories-insurance:not(.animated) .animable,
+svg#freepik_stories-contact-us:not(.animated) .animable,
+svg#freepik_stories-personal-files:not(.animated) .animable,
+svg#freepik_stories-user-research:not(.animated) .animable,
+svg#freepik_stories-business-deal:not(.animated) .animable {
   opacity: 0; }
 
 .animated {
@@ -1253,21 +1302,21 @@ svg#freepik_stories-online-doctor.animated #freepik--Chat--inject-31 {
     -moz-transform: scale(0.1); } }
 
 /* svg doctors section main */
-svg#freepik_stories-doctors:not(.animated) .animable {
+svg.freepik_stories-doctors:not(.animated) .animable {
   opacity: 0; }
 
-svg#freepik_stories-doctors.animated #freepik--character-1--inject-4 {
+svg.freepik_stories-doctors.animated #freepik--character-1--inject-4 {
   animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
   -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
   -moz-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft; }
 
-svg#freepik_stories-doctors.animated #freepik--character-2--inject-4 {
+svg.freepik_stories-doctors.animated #freepik--character-2--inject-4 {
   animation: 1s 1 forwards 0.8s cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
   -webkit-animation: 1s 1 forwards 0.8s cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
   -moz-animation: 1s 1 forwards 0.8s cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
   opacity: 0; }
 
-svg#freepik_stories-doctors.animated #freepik--character-3--inject-4 {
+svg.freepik_stories-doctors.animated #freepik--character-3--inject-4 {
   animation: 1s 1 forwards 0.4s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
   -webkit-animation: 1s 1 forwards 0.4s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
   -moz-animation: 1s 1 forwards 0.4s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
@@ -1409,10 +1458,10 @@ svg#freepik_stories-online-article.animated #freepik--Character--inject-45 {
     -moz-transform: translateX(0); } }
 
 /* svg section sing-in */
-svg#freepik_stories-doctors:not(.animated) .animable {
+svg.freepik_stories-doctors:not(.animated) .animable {
   opacity: 0; }
 
-svg#freepik_stories-doctors.animated #freepik--character-2--inject-80 {
+svg.freepik_stories-doctors.animated #freepik--character-2--inject-80 {
   animation: 1s 1 forwards 0s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
   -webkit-animation: 1s 1 forwards 0s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
   -moz-animation: 1s 1 forwards 0s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft; }
@@ -1572,6 +1621,319 @@ svg#freepik_stories-active-support.animated #freepik--Chat--inject-124 {
   0% {
     opacity: 0;
     transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* svg section register_doctors */
+svg#freepik_stories-business-deal.animated #freepik--Contract--inject-64 {
+  animation: 1.2s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-business-deal.animated #freepik--character-2--inject-64 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-business-deal.animated #freepik--character-1--inject-64 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-cellphone.animated #freepik--Device--inject-234 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s; }
+
+svg#freepik_stories-cellphone.animated #freepik--icon-2--inject-234 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-cellphone.animated #freepik--character-2--inject-234 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-cellphone.animated #freepik--icon-1--inject-234 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-cellphone.animated #freepik--icon-1--inject-234 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-cellphone.animated #freepik--character-1--inject-234 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-critical-thinking.animated #freepik--Document--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-critical-thinking.animated #freepik--Pictures--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-critical-thinking.animated #freepik--Chart--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-critical-thinking.animated #freepik--speech-bubbles--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-critical-thinking.animated #freepik--Shape--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-critical-thinking.animated #freepik--Gears--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-critical-thinking.animated #freepik--light-bulb--inject-1 {
+  animation: 1.1s 1 forwards linear slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-mobile-development.animated #freepik--Device--inject-19 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-mobile-development.animated #freepik--Interface--inject-19 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: inherit; } }
+
+svg#freepik_stories-completed.animated #freepik--complete-list--inject-163 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-insurance.animated #freepik--character-1--inject-331 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-insurance.animated #freepik--character-2--inject-331 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-contact-us.animated #freepik--Chair--inject-367 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-contact-us.animated #freepik--Character--inject-367 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-contact-us.animated #freepik--speech-bubble--inject-367 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-contact-us.animated #freepik--Bird--inject-367 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-contact-us.animated #freepik--Desk--inject-367 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-personal-files.animated #freepik--filing-cabinet--inject-384 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+svg#freepik_stories-user-research.animated #freepik--Table--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-2--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-3--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-4--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-1--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--device-1--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--device-2--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0.3s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--Chair--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--Character--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--trash-bin--inject-2 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.1s;
+  opacity: 0; }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
   100% {
     opacity: 1;
     transform: translateX(0); } }

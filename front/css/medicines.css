@@ -1,5 +1,5 @@
 .box-img-medicines {
-  height: 350px; }
+  height: 21.875px; }
 
 .section-medicines .swiper-wrapper {
   height: 12.5em; }
@@ -8,10 +8,10 @@
   z-index: 999; }
   .box-question-of-doctors-about-medicines .card {
     width: 23em;
-    right: -445px;
+    right: -27.813em;
     cursor: pointer; }
   .box-question-of-doctors-about-medicines .img-box-profile {
-    right: 213px;
+    right: 13.313em;
     z-index: 2; }
 
 .section-list-medicines .card {

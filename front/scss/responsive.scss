@@ -57,6 +57,14 @@
     }
   }
 
+  /* section register_doctor start */
+  .section-comment-doctors{
+    .figure-caption{
+      top: 0.625em;
+    }
+  }
+  /* section register_doctor end */
+
 }
 
 @media only screen and (min-width: 768px){
@@ -74,6 +82,24 @@
       height: auto;
     }
   }
+
+  /* section register_doctor start */
+  .section-comment-doctors{
+    .swiper-wrapper{
+      height: 17em;
+    }
+    .swiper-pagination-comment-doctors{
+      bottom: .625em;
+    }
+
+    .swiper-slide-next{
+      transform: unset;
+      margin-right: unset;
+      margin-left: 1em !important;
+    }
+  }
+  /* section register_doctor end */
+
 }
 
 @media only screen and (max-width: 768px){
@@ -86,7 +112,7 @@
 
   .section-list-doctors{
     figure{
-      height: 67px;
+      height: 4.188em;
     }
   }
 
@@ -96,7 +122,7 @@
     }
 
     .img-box-profile{
-      right: 9px;
+      right: .563em;
     }
   }
 
@@ -104,6 +130,17 @@
     ~  .communication-iso,~ .scroll-top{
       bottom: 7em;
     }
+  }
+
+  /* section register_doctor start */
+  .section-service-doctors{
+    background: none;
+    box-shadow: unset;
+  }
+  /* section register_doctor end */
+
+  .banner-pattern{
+    background-size: 69.875em 27.5em;
   }
 }
 
@@ -141,26 +178,27 @@
   .section-articles{
     .section-btn{
       button{
-        top: -55px;
+        top: -3.438em;
       }
     }
   }
 
   .svg-sing-in-doctor{
-    left: -230px;
-    top: -98px;
+    left: -14.375em;
+    top: -6.125em;
   }
+
 }
 
 @media only screen and (min-width: 1400px){
   .section-data-profile-doctor {
     .btn-group {
-      top: -52px;
+      top: -3.438em;
       border-radius: $iso-border-radius;
     }
 
     .row{
-      height: 118px;
+      height: 7.375em;
     }
   }
 
