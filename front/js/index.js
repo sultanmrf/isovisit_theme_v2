@@ -315,6 +315,7 @@ $(document).ready(function (){
         useGradient: false
     });
     /* js start one svg doctors end */
+    initMenuProfile();
 
 
 });

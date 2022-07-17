@@ -15,50 +15,75 @@
 /**
 * spacing text
  */
-[class^="icon"] {
+main [class^="icon"] {
   filter: hue-rotate(294deg); }
 
-.icon-profile {
+main .icon-profile {
   width: 30px;
   height: 30px;
   background: url("../images/icons/profile.png"); }
 
-.icon-consultants {
+main .icon-consultants {
   width: 30px;
   height: 30px;
   background: url("../images/icons/general-consultation.png"); }
 
-.icon-transactions {
+main .icon-transactions {
   width: 30px;
   height: 30px;
   background: url("../images/icons/transactions.png"); }
 
-.icon-secretary-message {
+main .icon-secretary-message {
   width: 30px;
   height: 30px;
   background: url("../images/icons/secretary-message.png"); }
 
-.icon-comments {
+main .icon-comments {
   width: 30px;
   height: 30px;
   background: url("../images/icons/comments.png"); }
 
-.icon-question-answer {
+main .icon-question-answer {
   width: 30px;
   height: 30px;
   background: url("../images/icons/question-answer.png"); }
 
-.icon-tickets {
+main .icon-tickets {
   width: 30px;
   height: 30px;
   background: url("../images/icons/tickets.png"); }
 
-.menu-profile {
+main .menu-profile {
   padding: 13px 120px 13px 122px; }
-  .menu-profile a:hover div {
-    filter: hue-rotate(356deg); }
-  .menu-profile .hover-line-blue:after {
+  main .menu-profile .link-hover:after {
     bottom: -13px; }
+  main .menu-profile .link-hover:hover div {
+    filter: hue-rotate(356deg); }
+  main .menu-profile .active {
+    position: relative; }
+    main .menu-profile .active:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: -6px;
+      height: 4px;
+      border-radius: 8px;
+      left: 0;
+      background: #1773B5; }
+    main .menu-profile .active div {
+      filter: hue-rotate(356deg); }
+    main .menu-profile .active:after {
+      bottom: -13px; }
 
-.specifications {
-  border-left: 2px dashed #001A34 !important; }
+main .specifications {
+  border-left: 2px dashed #001A34 !important;
+  width: 138px; }
+
+main .nav-pills .nav-link.active {
+  color: #1773B5; }
+
+main #pills-consultants .badge {
+  border-radius: 50px; }
+
+main .swiper-menu .swiper-slide:nth-child(4) {
+  width: 129px !important; }

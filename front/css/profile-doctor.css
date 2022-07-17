@@ -91,11 +91,11 @@ footer {
   color: white;
   background: #009d38; }
 
-.hover-line-blue {
+.link-hover {
   position: relative; }
-  .hover-line-blue:hover {
+  .link-hover:hover {
     color: #1773B5; }
-  .hover-line-blue:after {
+  .link-hover:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -104,7 +104,20 @@ footer {
     background: none;
     border-radius: 8px;
     left: 0; }
-  .hover-line-blue:hover:after {
+  .link-hover:hover:after {
+    background: #1773B5; }
+
+.link-active {
+  position: relative;
+  color: #1773B5; }
+  .link-active:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 4px;
+    border-radius: 8px;
+    left: 0;
     background: #1773B5; }
 
 .hover-line-white:hover {

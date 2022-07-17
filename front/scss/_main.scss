@@ -73,7 +73,7 @@ footer,
   }
 }
 
-.hover-line-blue{
+.link-hover{
   position: relative;
 
   &:hover{
@@ -92,6 +92,21 @@ footer,
   }
 
   &:hover:after{
+    background: $iso-blue-dark;
+  }
+}
+
+.link-active{
+  position: relative;
+  color: $iso-blue-dark;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 4px;
+    border-radius: 8px;
+    left: 0;
     background: $iso-blue-dark;
   }
 }

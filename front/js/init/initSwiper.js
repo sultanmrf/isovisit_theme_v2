@@ -311,3 +311,31 @@ function initCommentDoctorsSwiper(target = '.swiper-comment-doctors', name_pagin
         },
     }, name_pagination);
 }
+
+// menu profile Swiper:
+function initMenuProfile(target = '.swiper-menu', name_pagination = '') {
+
+    initSwiper(target, {
+        sm: {
+            count_slides_view: 4,
+            navigation: false,
+            pagination: false,
+            effect: false,
+            grabCursor: false,
+        },
+        md: {
+            count_slides_view: 4,
+            navigation: false,
+            pagination: false,
+            effect: false,
+            grabCursor: false,
+        },
+        lg: {
+            count_slides_view: 4,
+            navigation: false,
+            pagination: false,
+            effect: false,
+            grabCursor: false,
+        },
+    }, name_pagination);
+}
