@@ -85,5 +85,13 @@ main .nav-pills .nav-link.active {
 main #pills-consultants .badge {
   border-radius: 50px; }
 
-main .swiper-menu .swiper-slide:nth-child(4) {
-  width: 129px !important; }
+main .swiper-menu {
+  height: 75px; }
+  main .swiper-menu .swiper-slide {
+    width: auto !important;
+    margin-left: 29px !important; }
+
+main .list-question-answer-user a,
+main .list-question-answer-news a {
+  height: 18px;
+  overflow: hidden; }

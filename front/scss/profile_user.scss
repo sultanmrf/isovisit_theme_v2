@@ -52,6 +52,7 @@ main{
   }
 
   .menu-profile{
+
     padding: 13px 120px 13px 122px;
 
     .link-hover{
@@ -103,8 +104,21 @@ main{
   }
 
   .swiper-menu{
-    .swiper-slide:nth-child(4){
-      width: 129px !important;
+    height:75px;
+    .swiper-slide{
+      width: auto !important;
+      margin-left:29px !important;
     }
   }
+
+  .list-question-answer-user,
+  .list-question-answer-news{
+
+   a {
+     height:18px;
+     overflow:hidden;
+     }
+
+  }
+
 }

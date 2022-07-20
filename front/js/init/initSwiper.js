@@ -324,14 +324,14 @@ function initMenuProfile(target = '.swiper-menu', name_pagination = '') {
             grabCursor: false,
         },
         md: {
-            count_slides_view: 4,
+            count_slides_view: 6,
             navigation: false,
             pagination: false,
             effect: false,
             grabCursor: false,
         },
         lg: {
-            count_slides_view: 4,
+            count_slides_view: 8,
             navigation: false,
             pagination: false,
             effect: false,
