@@ -91,10 +91,9 @@ $(document).ready(function (){
         timer = setInterval(start_timer, 1000);
     clearTimeout(timer);
     function start_timer() {
+        debugger;
         if(second === 0 && minutes === 0){
-            $(".box-timer").text("ارسال مجدد کد")
-                .addClass(['iso-bg-blur-dark','text-light'])
-                .removeClass(['alert-primary','iso-text-dark']);
+            $(".box-timer").text("ارسال مجدد کد");
             clearTimeout(timer);
         }else{
             if(second === 0){

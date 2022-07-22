@@ -25,7 +25,7 @@
   .section-articles .section-svg {
     height: 13.30em; }
   .section-articles .swiper-wrapper {
-    height: 26em; }
+    height: 27em; }
   .section-medicines .swiper-wrapper {
     height: 12em; }
   .section-medicines .section-svg {
@@ -36,7 +36,7 @@
     left: -4.5em;
     top: 0.2em; }
   .swiper .swiper-pagination-article {
-    bottom: 1rem; }
+    bottom: 0.5rem; }
   .swiper .swiper-pagination-question-answer {
     bottom: -0.313rem; }
   .swiper .swiper-pagination-medicines {
