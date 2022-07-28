@@ -85,16 +85,27 @@ $(document).ready(function (){
         }
     });
 
+    /* js section question start */
+    $(document).off('click','.btn-question');
+    $(document).on('click','.btn-question',function (){
+        let val_aria_expanded = $(this).attr("aria-expanded");
+        if(val_aria_expanded == 'true'){
+            $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
+        }else{
+            $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
+        }
+    })
+    /* js section question end */
+
     /* function timer */
     let second = 60,
-        minutes = 1,
-        timer = setInterval(start_timer, 1000);
-    clearTimeout(timer);
+        minutes = 0;
+        // timer = setInterval(start_timer, 1000);
+    // clearInterval(timer);
     function start_timer() {
-        debugger;
         if(second === 0 && minutes === 0){
             $(".box-timer").text("ارسال مجدد کد");
-            clearTimeout(timer);
+            clearInterval(setInterval(start_timer, 1000));
         }else{
             if(second === 0){
                 minutes -= 1;
@@ -106,18 +117,6 @@ $(document).ready(function (){
         }
     }
 
-    /* js section question start */
-    $(document).off('click','.btn-question');
-    $(document).on('click','.btn-question',function (){
-        let val_aria_expanded = $(this).attr("aria-expanded");
-        if(val_aria_expanded == 'true'){
-            $(this).find('i').addClass('rotate-180deg').removeClass('rotate-0deg');
-        }else{
-            $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
-        }
-    })
-    /* js section question start */
-
     $(document).on('click','.send',function (){
         $(".card-login").addClass('d-none');
         $(".modal-footer").addClass('d-none');
@@ -128,7 +127,6 @@ $(document).ready(function (){
     $(document).on('click','.box-timer',function (){
         $(".box-timer").removeClass(['iso-bg-blur-dark','text-light'])
             .addClass(['alert-primary','iso-text-dark']);
-
         setInterval(start_timer, 1000);
     });
 

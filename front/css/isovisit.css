@@ -229,6 +229,25 @@ This set of fonts are used in this project under the license: (.....)
 .border-color-blue-dark {
   border: 1px solid #1773B5; }
 
+/* iso order */
+.order-6 {
+  order: 6; }
+
+/* iso btn outline */
+.btn-outline-info-dark {
+  border: 1px solid #17A2B8;
+  color: #17A2B8; }
+  .btn-outline-info-dark:hover {
+    color: white;
+    background: #17A2B8; }
+
+.btn-outline-green-dark {
+  border: 1px solid #28a745;
+  color: #28a745; }
+  .btn-outline-green-dark:hover {
+    color: white;
+    background: #28a745; }
+
 /* header */
 /**
 *   color
@@ -290,6 +309,7 @@ header,
 footer {
   font-size: 16px; }
 
+/* ellipse light li */
 .footer-support li,
 .menu-user li,
 #details-menu-doctors li,
@@ -300,6 +320,14 @@ footer {
   #details-menu-doctors li::marker,
   #details-menu-patients li::marker {
     content: url("../images/icons/ellipse-light.png"); }
+
+/* ellipse blue li */
+.list-menu-communication li,
+#pills-profile li {
+  padding-inline-start: .7em; }
+  .list-menu-communication li::marker,
+  #pills-profile li::marker {
+    content: url("../images/icons/ellipse-blur.png"); }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -567,10 +595,14 @@ footer {
 .icon-telegram-light {
   background: url("../images/icons/telegram-light.png") no-repeat; }
 
+.icon-email {
+  background: url("../images/icons/email.png") no-repeat; }
+
 .icon-instagram-light,
 .icon-instagram-blue,
 .icon-aparat,
-.icon-bookmark {
+.icon-bookmark,
+.icon-email {
   width: 1.5em;
   height: 1.5em; }
 
@@ -741,10 +773,6 @@ header {
     header .menu-user .btn-user,
     header .menu-user .btn-user-collapse {
       z-index: 5; }
-  header .list-menu-communication li {
-    padding-inline-start: .7em; }
-    header .list-menu-communication li::marker {
-      content: url("../images/icons/ellipse-blur.png"); }
 
 /* main */
 /**
@@ -807,6 +835,7 @@ header,
 footer {
   font-size: 16px; }
 
+/* ellipse light li */
 .footer-support li,
 .menu-user li,
 #details-menu-doctors li,
@@ -817,6 +846,14 @@ footer {
   #details-menu-doctors li::marker,
   #details-menu-patients li::marker {
     content: url("../images/icons/ellipse-light.png"); }
+
+/* ellipse blue li */
+.list-menu-communication li,
+#pills-profile li {
+  padding-inline-start: .7em; }
+  .list-menu-communication li::marker,
+  #pills-profile li::marker {
+    content: url("../images/icons/ellipse-blur.png"); }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -1084,10 +1121,14 @@ footer {
 .icon-telegram-light {
   background: url("../images/icons/telegram-light.png") no-repeat; }
 
+.icon-email {
+  background: url("../images/icons/email.png") no-repeat; }
+
 .icon-instagram-light,
 .icon-instagram-blue,
 .icon-aparat,
-.icon-bookmark {
+.icon-bookmark,
+.icon-email {
   width: 1.5em;
   height: 1.5em; }
 

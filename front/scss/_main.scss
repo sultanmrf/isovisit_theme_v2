@@ -54,14 +54,26 @@ footer,
   font-size: 16px;
 }
 
+/* ellipse light li */
 .footer-support,
 .menu-user,
 #details-menu-doctors,
-#details-menu-patients{
+#details-menu-patients,{
   li{
     padding-inline-start:.7em;
     &::marker{
       content: url("../images/icons/ellipse-light.png");
+    }
+  }
+}
+
+/* ellipse blue li */
+.list-menu-communication,
+#pills-profile{
+  li{
+    padding-inline-start:.7em;
+    &::marker{
+      content: url("../images/icons/ellipse-blur.png");
     }
   }
 }
@@ -428,10 +440,15 @@ footer,
   background: url("../images/icons/telegram-light.png") no-repeat;
 }
 
+.icon-email{
+  background: url("../images/icons/email.png") no-repeat;
+}
+
 .icon-instagram-light,
 .icon-instagram-blue,
 .icon-aparat,
-.icon-bookmark{
+.icon-bookmark,
+.icon-email{
   width: 1.5em;
   height: 1.5em;
 }

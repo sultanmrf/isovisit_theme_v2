@@ -81,13 +81,6 @@ iframe{
 }
 
 .section-about-doctor{
-  li{
-    padding-inline-start:.7em;
-    &::marker{
-      content: url("../images/icons/ellipse-block.png");
-    }
-  }
-
   .card-body{
     height: 12.5em;
   }

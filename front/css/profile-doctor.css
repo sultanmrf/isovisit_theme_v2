@@ -76,6 +76,7 @@ header,
 footer {
   font-size: 16px; }
 
+/* ellipse light li */
 .footer-support li,
 .menu-user li,
 #details-menu-doctors li,
@@ -86,6 +87,14 @@ footer {
   #details-menu-doctors li::marker,
   #details-menu-patients li::marker {
     content: url("../images/icons/ellipse-light.png"); }
+
+/* ellipse blue li */
+.list-menu-communication li,
+#pills-profile li {
+  padding-inline-start: .7em; }
+  .list-menu-communication li::marker,
+  #pills-profile li::marker {
+    content: url("../images/icons/ellipse-blur.png"); }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -353,10 +362,14 @@ footer {
 .icon-telegram-light {
   background: url("../images/icons/telegram-light.png") no-repeat; }
 
+.icon-email {
+  background: url("../images/icons/email.png") no-repeat; }
+
 .icon-instagram-light,
 .icon-instagram-blue,
 .icon-aparat,
-.icon-bookmark {
+.icon-bookmark,
+.icon-email {
   width: 1.5em;
   height: 1.5em; }
 
@@ -504,11 +517,6 @@ iframe {
   width: 1.6em;
   height: 1.6em;
   background: url("../images/icons/user.png") no-repeat; }
-
-.section-about-doctor li {
-  padding-inline-start: .7em; }
-  .section-about-doctor li::marker {
-    content: url("../images/icons/ellipse-block.png"); }
 
 .section-about-doctor .card-body {
   height: 12.5em; }

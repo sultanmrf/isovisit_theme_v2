@@ -196,3 +196,28 @@
 .border-color-blue-dark{
   border:1px solid $iso-blue-dark;
 }
+
+/* iso order */
+.order-6{
+  order: 6;
+}
+
+/* iso btn outline */
+.btn-outline-info-dark{
+  border: 1px solid $iso-cyan;
+  color: $iso-cyan;
+  &:hover{
+    color: white;
+    background: $iso-cyan;
+  }
+}
+
+.btn-outline-green-dark{
+  border: 1px solid $iso-green;
+  color: $iso-green;
+
+  &:hover{
+    color: white;
+    background: $iso-green;
+  }
+}

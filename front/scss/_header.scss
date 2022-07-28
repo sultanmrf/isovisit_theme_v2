@@ -128,14 +128,4 @@ header {
             z-index: 5;
         }
     }
-
-    .list-menu-communication{
-        li{
-            padding-inline-start:.7em;
-            &::marker{
-                content: url("../images/icons/ellipse-blur.png");
-            }
-        }
-    }
-
 }

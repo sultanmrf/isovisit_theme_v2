@@ -100,6 +100,31 @@
   }
   /* section register_doctor end */
 
+  /* section ticket profile_user start */
+  #pills-tickets{
+    .list-group {
+      .list-group-item{
+        .col-4{
+          border-left: 1px solid #dee2e6;
+          border-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  /* section ticket profile_user end */
+
+  /* section tab menu profile user start */
+
+  main{
+    .menu-profile{
+      .active{
+        &:after{
+          bottom: -6px;
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width: 768px){
