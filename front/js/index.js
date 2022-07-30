@@ -99,13 +99,13 @@ $(document).ready(function (){
 
     /* function timer */
     let second = 60,
-        minutes = 0;
-        // timer = setInterval(start_timer, 1000);
+        minutes = 1;
+        timer = "";
     // clearInterval(timer);
     function start_timer() {
         if(second === 0 && minutes === 0){
             $(".box-timer").text("ارسال مجدد کد");
-            clearInterval(setInterval(start_timer, 1000));
+            clearInterval(timer);
         }else{
             if(second === 0){
                 minutes -= 1;
@@ -121,13 +121,15 @@ $(document).ready(function (){
         $(".card-login").addClass('d-none');
         $(".modal-footer").addClass('d-none');
         $(".card-verification").removeClass('d-none');
-        setInterval(start_timer, 1000);
+        timer = setInterval(start_timer, 1000);
     });
 
     $(document).on('click','.box-timer',function (){
+        second = 60;
+        minutes = 1;
         $(".box-timer").removeClass(['iso-bg-blur-dark','text-light'])
             .addClass(['alert-primary','iso-text-dark']);
-        setInterval(start_timer, 1000);
+        timer = setInterval(start_timer, 1000);
     });
 
     $(document).on('click','.login-with-password',function (){

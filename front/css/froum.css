@@ -27,8 +27,9 @@
 .links-question-answer {
   height: 1.375em; }
 
-.collapse-froum .form-select-birth {
-  width: 19.563em; }
+#collapse_froum .form-select-birth {
+  width: 10em; }
 
-.collapse-froum .input-height {
+#collapse_froum .input-height,
+#collapse_froum .input-weight {
   width: 6.2em; }

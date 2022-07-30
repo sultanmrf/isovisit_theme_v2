@@ -869,11 +869,11 @@
 
             <!-- section btn question doctor start -->
             <button class="btn-question-doctor w-50 me-auto my-4 iso-font-md-em ms-auto btn iso-bg-blue-dark active-btn"
-                    data-bs-toggle="collapse" data-bs-target="#collapseFroum" aria-expanded="false" aria-controls="collapseFroum">پرسیدن سوال پزشکی</button>
+                    data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">پرسیدن سوال پزشکی</button>
             <!-- section btn question doctor end -->
 
             <!-- section form create question start -->
-            <div class="collapse my-4" id="collapseFroum">
+            <div class="collapse my-4" id="collapse_froum">
                 <div class="card card-body box-shadow-lg border-radius">
                     <form id="form">
                         <div class="row row-cols-4">
@@ -897,7 +897,7 @@
                                     </div>
                                     <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center ms-xl-4">
                                         <label for="validationCustom04" class="form-label m-0">سال تولد : </label>
-                                        <select class="form-select w-50 form-select-birth iso-font-sm-em fw-normal py-1 mx-2" id="validationCustom04" name="births">
+                                        <select class="form-select form-select-birth iso-font-sm-em fw-normal py-1 mx-2" id="validationCustom04" name="births">
                                             <option value="">انتخاب کنید</option>
                                             <option>1300</option>
                                             <option>1378</option>
@@ -908,16 +908,16 @@
                                         <span class="error_births error mt-1"></span>
                                     </div>
                                     <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 pe-0 ms-xl-3">
-                                        <label class="">قد : </label>
-                                        <div class="input-group input-height ms-2 flex-row-reverse">
+                                        <label class="mt-2">قد : </label>
+                                        <div class="input-group input-height ms-2 mt-2 flex-row-reverse">
                                             <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">cm</span>
                                             <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="قد" aria-label="cm" name="height">
                                         </div>
                                         <span class="error_height error mt-1"></span>
                                     </div>
                                     <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 p-0">
-                                        <label class="">وزن : </label>
-                                        <div class="input-group input-height ms-2 flex-row-reverse">
+                                        <label class="mt-2">وزن : </label>
+                                        <div class="input-group input-weight ms-2 mt-2 flex-row-reverse">
                                             <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">kg</span>
                                             <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="وزن" aria-label="kg" name="weight">
                                         </div>
@@ -967,7 +967,7 @@
                             </div>
                         </div>
                         <div class="row row-cols-4 gy-3 mt-0 mt-md-3">
-                            <div class="col-12 col-md-4">
+                            <div class="col-12 col-md-3">
                                 <label for="formFile" class="form-label mb-1 fw-normal">ارسال عکس در صورت لزوم<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span>  </label>
                                 <input class="form-control py-1 iso-font-md-em optional" type="file" id="formFile" name="file">
                             </div>
