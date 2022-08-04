@@ -17,23 +17,12 @@ $(document).ready(function () {
         }
     });
 
-
-    $("#form").validate({
-        focusCleanup: true,
-        onfocusout: false,
-        rules:{
-            height:{
-                required: true
-            },
-            weight:{
-                required: true
-            },
-            births:{
-                required: true
-            },
-            category:{
-                required: true
-            },
+    initValidation("#form",
+        {
+            height: "required",
+            weight: "required",
+            births: "required",
+            category: "required",
             title_question:{
                 required: true,
                 maxlength: 150
@@ -42,14 +31,10 @@ $(document).ready(function () {
                 required: true,
                 maxlength: 650
             },
-            code_security:{
-                required: true
-            },
-            rules_check:{
-                required: true
-            }
+            code_security:"required",
+            rules_check:"required",
         },
-        messages: {
+        {
             height: "قد را مشخص کنید",
             weight: "وزن را مشخص کنید",
             births: "سال تولد را مشخص کنید",
@@ -64,23 +49,5 @@ $(document).ready(function () {
             },
             code_security: "کد امنیتی را وارد کنید",
             rules_check: "این فیلد نمی تواند خالی باشد",
-        },
-        errorElement : 'div',
-        showErrors: function(errorMap, errorList) {
-            if(errorList.length > 0){
-                for(let x in errorList){
-                    $(".error_" + errorList[x].element.name).html(errorList[x] ? errorList[x].message : '');
-                    $(errorList[x].element).addClass('is-invalid').removeClass('is-valid');
-                }
-            }else{
-                  $(this.lastActive).addClass('is-valid').removeClass('is-invalid');
-                  $(".error_" + this.lastActive.name).html('');
-            }
-            $("#gender_error").remove();
-            $("#gender1,#gender2").removeClass('error');
-        },
-
-    });
-
-
+        });
 });

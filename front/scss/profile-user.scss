@@ -1,4 +1,4 @@
-@import "variables";
+ @import "variables";
 
 @mixin size-thirty(){
   width: 1.875em;
@@ -39,6 +39,11 @@ main{
   .icon-tickets{
     @include size-thirty;;
     background: url("../images/icons/tickets.png");
+  }
+
+  .icon-secretary{
+    @include size-thirty;
+    background: url("../images/icons/secretary.png") no-repeat;
   }
 
   .icon-social-network{
@@ -160,17 +165,6 @@ main{
     height: 1.5em;
   }
 
-  .icon-edit
-  {
-    @include twenty-four;
-    background: url("../images/icons/edit.png") no-repeat;
-  }
-
-  .icon-trash
-  {
-    @include twenty-four;
-    background: url("../images/icons/trash.png") no-repeat;
-  }
 
   .icon-explorer
   {
@@ -478,6 +472,15 @@ main{
         background: $iso-green;
         color: white;
       }
+    }
+  }
+
+
+  .search-box-user{
+    width: 346px;
+    height: 42px;
+    input,i{
+      height: 40px;
     }
   }
 

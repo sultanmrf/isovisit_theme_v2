@@ -11,6 +11,7 @@
 * border-radius
  */
 /**
+
 * border-color
  */
 /**
@@ -50,6 +51,12 @@
   footer .footer-about {
     border-top: 0 solid #fff; } }
 
+@media only screen and (min-width: 576px) {
+  .operation-doctor .dropdown-menu,
+  .operation-patient .dropdown-menu {
+    width: 4.875em;
+    height: 2.313em; } }
+
 @media only screen and (max-width: 576px) {
   .section-list-doctors .card-body {
     height: auto; }
@@ -70,7 +77,11 @@
   /* section ticket profile_user end */
   /* section tab menu profile user start */
   main .menu-profile .active:after {
-    bottom: -6px; } }
+    bottom: -6px; }
+  .operation-patient .dropdown-menu {
+    inset: -72px -41px auto auto !important; }
+  .operation-doctor .dropdown-menu {
+    inset: -72px 44px auto auto !important; } }
 
 @media only screen and (max-width: 768px) {
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {

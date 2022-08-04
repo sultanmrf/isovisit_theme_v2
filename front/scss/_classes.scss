@@ -33,6 +33,10 @@
   background: $iso-light;
 }
 
+.iso-bg-white-dark{
+  background: $iso-white-dark;
+}
+
 .iso-bg-warning{
   background: $iso-warning;
 }
@@ -220,4 +224,9 @@
     color: white;
     background: $iso-green;
   }
+}
+
+/* z-index */
+.z-index-last{
+  z-index: 9999;
 }

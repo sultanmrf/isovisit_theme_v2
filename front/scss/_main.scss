@@ -8,8 +8,9 @@ body{
   direction: rtl;
   font-family: IRANSans,'sans-serif';
   font-weight: 500;
-  background: $iso-gray-light;
+  background: #fff;
   color: $iso-dark;
+  overflow-x: hidden;
 }
 
 a{
@@ -47,6 +48,10 @@ input[type=number] {
   box-shadow: 0 0;
 }
 
+.content{
+  background: #F0F1F1;
+}
+
 main,
 header,
 footer,
@@ -57,8 +62,8 @@ footer,
 /* ellipse light li */
 .footer-support,
 .menu-user,
-#details-menu-doctors,
-#details-menu-patients,{
+#details_menu_doctors,
+#details_menu_patients,{
   li{
     padding-inline-start:.7em;
     &::marker{
@@ -69,7 +74,7 @@ footer,
 
 /* ellipse blue li */
 .list-menu-communication,
-#pills-profile{
+#pills_profile{
   li{
     padding-inline-start:.7em;
     &::marker{
@@ -230,6 +235,11 @@ footer,
 .img-sm {
   width: 40px;
   height: 40px;
+}
+
+.img-llg{
+  width: 45px;
+  height: 45px;
 }
 
 .img-lg{
@@ -426,22 +436,34 @@ footer,
   background-size: cover;
 }
 
-.icon-telegram-blue,
-.icon-telegram-light{
+@mixin icon-xs{
   width: 1.5em;
   height: 1.5em;
 }
 
+
 .icon-telegram-blue{
+  @include icon-xs;
   background: url("../images/icons/telegram-blue.png") no-repeat;
 }
 
 .icon-telegram-light{
+  @include icon-xs;
   background: url("../images/icons/telegram-light.png") no-repeat;
 }
 
 .icon-email{
   background: url("../images/icons/email.png") no-repeat;
+}
+
+.icon-edit {
+  @include icon-xs;
+  background: url("../images/icons/edit.png") no-repeat;
+}
+
+.icon-trash {
+  @include icon-xs;
+  background: url("../images/icons/trash.png") no-repeat;
 }
 
 .icon-instagram-light,
@@ -484,6 +506,12 @@ footer,
     width: 6.813em;
     height: 2em;
   }
+}
+
+.icon-user{
+  width: 1.6em;
+  height: 1.6em;
+  background: url("../images/icons/user.png") no-repeat;
 }
 
 .iso-form-check-input{
@@ -578,3 +606,10 @@ footer,
 .error{
   height: $iso-xxs-em;
 }
+
+#form_comments{
+  .input-group-height{
+    height: 134px;
+  }
+}
+

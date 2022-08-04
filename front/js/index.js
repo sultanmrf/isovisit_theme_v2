@@ -316,4 +316,18 @@ $(document).ready(function (){
     /* js start one svg doctors end */
 
 
+    /* validation comments start */
+    initValidation("#form_comments",{
+            first_and_last_name: "required",
+            phone: "required",
+            description: "required",
+            code_security: "required",
+        },
+        {
+            first_and_last_name: "نام و نام خانوادگی الزامی است",
+            phone: "شماره موبایل الزامی است",
+            description: "توضیحات نظر الزامی است",
+            code_security: "کد امنیتی الزامی است",
+        });
+    /* validation comments end */
 });

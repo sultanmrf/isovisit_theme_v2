@@ -23,7 +23,7 @@ $(document).ready(function (){
     /* swiper slider doctors section video introduction doctor end*/
 
     /*نمایش ادرس دکتر در نقشه گوگل*/
-    show_map('contact__map',36.312416, 59.553421)
+    show_map('contact_map',36.312416, 59.553421)
 
     /* edit location div section get advice in size mobile start */
     if(check_size_media(false,768)){

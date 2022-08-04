@@ -8,11 +8,8 @@ $(document).ready(function (){
 
     initCommentDoctorsSwiper();
 
-    $("#form").validate({
-        focusCleanup: true,
-        onfocusout: false,
-        rules:{
-            first_and_last_name:"required",
+    initValidation("#form",
+        {first_and_last_name:"required",
             mobile_number:{
                 required: true,
                 maxlength:11
@@ -23,9 +20,8 @@ $(document).ready(function (){
                 maxlength: 10
             },
             title_specialty:"required",
-            code_security:"required"
-        },
-        messages: {
+            code_security:"required"}
+        ,{
             first_and_last_name: " نام و نام خانوادگی الزامی است",
             mobile_number: {
                 required: "شماره موبایل الزامی است",
@@ -39,19 +35,6 @@ $(document).ready(function (){
             title_specialty: "عنوان تخصص الزامی است",
             code_security: "کد امنیتی الزامی است",
 
-        },
-        errorElement : 'div',
-        showErrors: function(errorMap, errorList) {
-            if(errorList.length > 0){
-                for(let x in errorList){
-                    $(".error_" + errorList[x].element.name).html(errorList[x] ? errorList[x].message : '');
-                    $(errorList[x].element).addClass('is-invalid').removeClass('is-valid');
-                }
-            }else{
-                $(this.lastActive).addClass('is-valid').removeClass('is-invalid');
-                $(".error_" + this.lastActive.name).html('');
-            }
-        },
+        });
 
-    });
 });

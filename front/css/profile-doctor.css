@@ -11,6 +11,7 @@
 * border-radius
  */
 /**
+
 * border-color
  */
 /**
@@ -28,6 +29,7 @@
 * border-radius
  */
 /**
+
 * border-color
  */
 /**
@@ -40,8 +42,9 @@ body {
   direction: rtl;
   font-family: IRANSans,'sans-serif';
   font-weight: 500;
-  background: #F0F1F1;
-  color: #001A34; }
+  background: #fff;
+  color: #001A34;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -71,6 +74,9 @@ input[type=number] {
 .btn:focus {
   box-shadow: 0 0; }
 
+.content {
+  background: #F0F1F1; }
+
 main,
 header,
 footer {
@@ -79,21 +85,21 @@ footer {
 /* ellipse light li */
 .footer-support li,
 .menu-user li,
-#details-menu-doctors li,
-#details-menu-patients li {
+#details_menu_doctors li,
+#details_menu_patients li {
   padding-inline-start: .7em; }
   .footer-support li::marker,
   .menu-user li::marker,
-  #details-menu-doctors li::marker,
-  #details-menu-patients li::marker {
+  #details_menu_doctors li::marker,
+  #details_menu_patients li::marker {
     content: url("../images/icons/ellipse-light.png"); }
 
 /* ellipse blue li */
 .list-menu-communication li,
-#pills-profile li {
+#pills_profile li {
   padding-inline-start: .7em; }
   .list-menu-communication li::marker,
-  #pills-profile li::marker {
+  #pills_profile li::marker {
     content: url("../images/icons/ellipse-blur.png"); }
 
 .active-btn:hover, .active-btn:active {
@@ -221,6 +227,10 @@ footer {
 .img-sm {
   width: 40px;
   height: 40px; }
+
+.img-llg {
+  width: 45px;
+  height: 45px; }
 
 .img-lg {
   width: 72px;
@@ -351,19 +361,28 @@ footer {
   background: url("../images/icons/close.png") no-repeat;
   background-size: cover; }
 
-.icon-telegram-blue,
-.icon-telegram-light {
-  width: 1.5em;
-  height: 1.5em; }
-
 .icon-telegram-blue {
+  width: 1.5em;
+  height: 1.5em;
   background: url("../images/icons/telegram-blue.png") no-repeat; }
 
 .icon-telegram-light {
+  width: 1.5em;
+  height: 1.5em;
   background: url("../images/icons/telegram-light.png") no-repeat; }
 
 .icon-email {
   background: url("../images/icons/email.png") no-repeat; }
+
+.icon-edit {
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../images/icons/edit.png") no-repeat; }
+
+.icon-trash {
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../images/icons/trash.png") no-repeat; }
 
 .icon-instagram-light,
 .icon-instagram-blue,
@@ -396,6 +415,11 @@ footer {
 .captcha img {
   width: 6.813em;
   height: 2em; }
+
+.icon-user {
+  width: 1.6em;
+  height: 1.6em;
+  background: url("../images/icons/user.png") no-repeat; }
 
 .iso-form-check-input {
   width: 1.5em;
@@ -467,6 +491,9 @@ footer {
 .error {
   height: 0.625em; }
 
+#form_comments .input-group-height {
+  height: 134px; }
+
 .card-info-doctor .btn-group {
   border: 1px solid #009d38; }
   .card-info-doctor .btn-group button:not(:last-child) {
@@ -503,7 +530,7 @@ footer {
 iframe {
   width: 100%; }
 
-#contact__map {
+#contact_map {
   height: 15.625em; }
 
 .get-advice-fixed {
@@ -512,11 +539,6 @@ iframe {
 
 .icon-share {
   background: url("../images/icons/share.png") no-repeat; }
-
-.icon-user {
-  width: 1.6em;
-  height: 1.6em;
-  background: url("../images/icons/user.png") no-repeat; }
 
 .section-about-doctor .card-body {
   height: 12.5em; }

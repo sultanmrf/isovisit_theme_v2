@@ -1,0 +1,345 @@
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+
+* border-color
+ */
+/**
+* spacing text
+ */
+main {
+  /* icons */
+  /* icons man */
+  /* icons woman */ }
+  main .icon-profile {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/profile.png"); }
+  main .icon-consultants {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/general-consultation.png"); }
+  main .icon-transactions {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/transactions.png"); }
+  main .icon-secretary-message {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/secretary-message.png"); }
+  main .icon-comments {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/comments.png"); }
+  main .icon-question-answer {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/question-answer.png"); }
+  main .icon-tickets {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/tickets.png"); }
+  main .icon-secretary {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/secretary.png") no-repeat; }
+  main .icon-social-network {
+    width: 1.875em;
+    height: 1.875em;
+    background: url("../images/icons/social-networks.png"); }
+  main .filter-reverse-background-to-green {
+    filter: hue-rotate(294deg); }
+  main .menu-profile {
+    padding: 13px 120px 13px 122px; }
+    main .menu-profile .link-hover:after {
+      bottom: -17px; }
+    main .menu-profile .link-hover:hover div {
+      filter: hue-rotate(356deg); }
+    main .menu-profile .active {
+      position: relative; }
+      main .menu-profile .active:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -6px;
+        height: 4px;
+        border-radius: 8px;
+        left: 0;
+        background: #1773B5; }
+      main .menu-profile .active div {
+        filter: hue-rotate(356deg); }
+      main .menu-profile .active:after {
+        bottom: -17px; }
+  main .filter-tickets .link-hover:after {
+    bottom: 0; }
+  main .filter-tickets .link-hover:hover div {
+    filter: hue-rotate(356deg); }
+  main .filter-tickets .active {
+    position: relative; }
+    main .filter-tickets .active:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: -6px;
+      height: 4px;
+      border-radius: 8px;
+      left: 0;
+      background: #1773B5; }
+    main .filter-tickets .active div {
+      filter: hue-rotate(356deg); }
+    main .filter-tickets .active:after {
+      bottom: 1px; }
+  main .specifications {
+    border-left: 2px dashed #001A34 !important;
+    width: 138px; }
+  main .nav-pills .nav-link.active {
+    color: #1773B5; }
+  main #pills-consultants .badge {
+    border-radius: 50px; }
+  main .swiper-menu {
+    height: 75px; }
+    main .swiper-menu .swiper-slide {
+      width: auto !important;
+      margin-left: 29px !important; }
+  main .list-question-answer-user a,
+  main .list-question-answer-news a {
+    height: 18px;
+    overflow: hidden; }
+  main .icon-explorer {
+    width: 1.5em;
+    height: 1.5em;
+    background: url("../images/icons/explorer.png") no-repeat; }
+  main .icon-pc {
+    width: 1.5em;
+    height: 1.5em;
+    background: url("../images/icons/pc.png") no-repeat; }
+  main .icon-windows {
+    width: 1.5em;
+    height: 1.5em;
+    background: url("../images/icons/windows.png") no-repeat; }
+  main .icon-ip {
+    width: 1.5em;
+    height: 1.5em;
+    background: url("../images/icons/ip.png") no-repeat; }
+  main .icon-man1 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man1.png") no-repeat; }
+  main .icon-man2 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man2.png") no-repeat; }
+  main .icon-man3 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man3.png") no-repeat; }
+  main .icon-man4 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man4.png") no-repeat; }
+  main .icon-man5 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man5.png") no-repeat; }
+  main .icon-man6 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man6.png") no-repeat; }
+  main .icon-man7 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man7.png") no-repeat; }
+  main .icon-man8 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man8.png") no-repeat; }
+  main .icon-man9 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man9.png") no-repeat; }
+  main .icon-man10 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man10.png") no-repeat; }
+  main .icon-man11 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man11.png") no-repeat; }
+  main .icon-man12 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man12.png") no-repeat; }
+  main .icon-man13 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man13.png") no-repeat; }
+  main .icon-man14 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man14.png") no-repeat; }
+  main .icon-man15 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man15.png") no-repeat; }
+  main .icon-man16 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man16.png") no-repeat; }
+  main .icon-man17 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man17.png") no-repeat; }
+  main .icon-man18 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man18.png") no-repeat; }
+  main .icon-man19 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man19.png") no-repeat; }
+  main .icon-man20 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man20.png") no-repeat; }
+  main .icon-man21 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man21.png") no-repeat; }
+  main .icon-man22 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man22.png") no-repeat; }
+  main .icon-man23 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man23.png") no-repeat; }
+  main .icon-man24 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/man24.png") no-repeat; }
+  main .icon-woman1 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman1.png") no-repeat; }
+  main .icon-woman2 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman2.png") no-repeat; }
+  main .icon-woman3 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman3.png") no-repeat; }
+  main .icon-woman4 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman4.png") no-repeat; }
+  main .icon-woman5 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman5.png") no-repeat; }
+  main .icon-woman6 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman6.png") no-repeat; }
+  main .icon-woman7 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman7.png") no-repeat; }
+  main .icon-woman8 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman8.png") no-repeat; }
+  main .icon-woman9 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman9.png") no-repeat; }
+  main .icon-woman10 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman10.png") no-repeat; }
+  main .icon-woman11 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman11.png") no-repeat; }
+  main .icon-woman12 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman12.png") no-repeat; }
+  main .icon-woman13 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman13.png") no-repeat; }
+  main .icon-woman14 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman14.png") no-repeat; }
+  main .icon-woman15 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman15.png") no-repeat; }
+  main .icon-woman16 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman16.png") no-repeat; }
+  main .icon-woman17 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman17.png") no-repeat; }
+  main .icon-woman18 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman18.png") no-repeat; }
+  main .icon-woman19 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman19.png") no-repeat; }
+  main .icon-woman20 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman20.png") no-repeat; }
+  main .icon-woman21 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman21.png") no-repeat; }
+  main .icon-woman22 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman22.png") no-repeat; }
+  main .icon-woman23 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman23.png") no-repeat; }
+  main .icon-woman24 {
+    width: 3.75em;
+    height: 3.75em;
+    background: url("../images/profile_user/woman24.png") no-repeat; }
+  main .profile-bio li::marker {
+    content: url("../images/icons/ellipse-block.png"); }
+  main .img-payment-receipt img {
+    width: 15.625em;
+    height: 15.625em; }
+  main .copy-number-consistency {
+    width: 10em; }
+  main .filter-consultants .btn {
+    width: 156px;
+    height: 47px; }
+  main .filter-consultants .btn.btn-outline-info-dark.active {
+    background: #17A2B8;
+    color: white; }
+  main .filter-consultants .btn.btn-outline-green-dark.active {
+    background: #28a745;
+    color: white; }
+  main .search-box-user {
+    width: 346px;
+    height: 42px; }
+    main .search-box-user input, main .search-box-user i {
+      height: 40px; }

@@ -317,7 +317,7 @@ function initMenuProfile(target = '.swiper-menu', name_pagination = '') {
 
     initSwiper(target, {
         sm: {
-            count_slides_view: 4,
+            count_slides_view: 3,
             navigation: false,
             pagination: false,
             effect: false,

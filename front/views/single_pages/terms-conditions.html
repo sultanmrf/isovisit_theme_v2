@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ایزو ویزیت | پزشکان</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../../node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
+    <link href="../../../node_modules/star-rating-svg/src/css/star-rating-svg.css" rel="stylesheet" />
+    <link href="../../css/isovisit.css" rel="stylesheet">
+    <link href="../../css/doctors_consulting.css" rel="stylesheet">
+    <link href="../../css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- section header start -->
+<header>
+    <div class="container-xxl p-0">
+        <!-- section navbar start-->
+        <div class="row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0">
+            <!-- section navbar mobile start  -->
+            <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
+                <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
+                    <img src="../../images/bar.png" alt="منو">
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
+                    <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
+                        <!-- logo section  -->
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
+                            <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img m-0">
+                            <figcaption class="figure-caption d-flex flex-column me-2 me-sm-0">
+                                <span class="iso-font-lg text-success m-0 fw-bold">ایزو ویزیت</span>
+                                <span class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </span>
+                            </figcaption>
+                        </figure>
+                        <!-- logo section  -->
+                        <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="../../images/Vector.png" alt="بستن">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body bg-light">
+                        <ul class="list-group">
+                            <li class="list-group-item border-0 mt-1 p-0 bg-transparent">
+                                <button type="button" class="btn col-12 border-0 text-start py-2 p-3 iso-bg-blue-dark btn-show-modal-login border-radius active-btn"
+                                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
+                                <!-- menu user logged in-->
+                                <div class="menu-user flex-column iso-bg-blue-dark border-radius d-none">
+                                    <button class="menu-user-header btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center btn-user-collapse collapsed border-radius"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse_menu_user" aria-expanded="false" aria-controls="collapse_menu_user">
+                                        <img src="../../images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
+                                        <span class="text-light ms-1">
+                                                سیروس جعفری
+                                         </span>
+                                        <i class="fa iso-font-lg text-light fa-chevron-down ms-auto"></i>
+                                    </button>
+                                    <div class="menu-user-body border-top mt-2 collapse" id="collapse_menu_user" style="transform: translatey(-5px);z-index: 999">
+                                        <ul class="ps-4 m-0 border-radius-bottom fw-normal iso-font-md-em iso-bg-blue-dark">
+                                            <li class="p-0 pt-3">
+                                                <a href="#" class="text-light hover-line-white ms-2">
+                                                    پروفایل
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="#" class="text-light hover-line-white ms-2">
+                                                    مشاوره ها
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="#" class="text-light hover-line-white ms-2">
+                                                    تراکنش ها
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="#" class="text-light hover-line-white ms-2">
+                                                    پیام های منشی
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="#" class="text-light hover-line-white ms-2">
+                                                    تیکت ها
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="#" class="text-light hover-line-white ms-2">
+                                                    نظرات
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="menu-user-footer p-3 pb-1">
+                                            <button class="btn btn-danger py-1 px-2 border-radius fw-normal iso-font-sm-em">خروج</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../index.html" class="iso-color-dark link-hover position-relative">صفحه اصلی</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../services/services.html" class="iso-color-dark link-hover position-relative">مشاوره پزشکی</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../list_doctors/list_doctors.html" class="iso-color-dark link-hover position-relative">پزشکان</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../specialty/specialty.html" class="iso-color-dark link-hover position-relative">تخصص ها</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1  bg-transparent">
+                                <a href="../froum/froum.html" class="iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                            </li>
+                            <li class="list-group-item border-0 border-radius p-0 d-flex justify-content-center flex-wrap bg-transparent">
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-patients
+                                rounded-0 align-items-center text-start col-11 iso-font-md-em bg-transparent"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#details_menu_patients" aria-expanded="false" aria-controls="details_menu_patients">
+                                    <span class="fw-medium">برای بیماران</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse border-top mt-2 p-2" id="details_menu_patients">
+                                    <div class="card mt-2 bg-transparent border-0">
+                                        <ul class="row gy-3 fw-normal px-4">
+                                            <li>
+                                                <a href="faq.html" class="text-light hover-line-white">
+                                                    سوالات متداول
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="site-guide.html" class="text-light hover-line-white">
+                                                    راهنمای سایت
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="terms-conditions.html" class="text-light hover-line-white">
+                                                    شرایط و قوانین
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-light hover-line-white">
+                                                    ثبت شکایت
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item border-0 border-radius p-0 mt-2 d-flex justify-content-center flex-wrap bg-transparent">
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-doctors
+                                rounded-0 align-items-center text-start col-11  iso-font-md-em bg-transparent"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#details_menu_doctors" aria-expanded="false" aria-controls="details_menu_doctors">
+                                    <span  class="fw-medium">برای پزشکان</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse border-top mt-2 p-2" id="details_menu_doctors">
+                                    <div class="card mt-2 bg-transparent border-0">
+                                        <ul class="row gy-3 fw-normal px-4">
+                                            <li>
+                                                <a href="../register_doctors/register_doctors.html" class="text-light hover-line-white">
+                                                    ثبت نام پزشکان
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="text-light hover-line-white">
+                                                    ثبت کلینیک
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="#" class="iso-color-dark link-hover position-relative">مقالات</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../medicines/medicines.html" class="iso-color-dark link-hover position-relative">دارو ها</a>
+                            </li>
+                        </ul>
+                        <hr class="bg-secondary mx-2">
+                        <ul class="list-menu-communication fw-normal px-4">
+                            <li>
+                                <a href="privacy-policy.html#" class="iso-color-dark link-hover position-relative">
+                                    حریم خصوصی
+                                </a>
+                            </li>
+
+                            <li class="my-2">
+                                <a href="#" class="iso-color-dark link-hover position-relative">
+                                    تماس با ما
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html" class="iso-color-dark link-hover position-relative">
+                                    درباره ما
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex mt-5 justify-content-center flex-wrap">
+                            <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-around align-items-center rounded-pill">
+                                <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                                <div class="icon-support"></div>
+                            </div>
+                            <!-- logo section menu sidebar  -->
+                            <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
+                                <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img img-md m-0">
+                                <figcaption class="figure-caption d-flex ms-2 flex-column">
+                                    <span class="iso-font-xl text-success fw-bold">ایزو ویزیت</span>
+                                    <span class="iso-font-md text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
+                                </figcaption>
+                            </figure>
+                            <!-- logo section menu sidebar  -->
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav d-none d-xl-flex justify-content-center align-items-center">
+                    <li class="nav-item px-12">
+                        <a href="../index.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative" >صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a href="../services/services.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">مشاوره پزشکی</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a href="../list_doctors/list_doctors.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پزشکان</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a href="../specialty/specialty.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">تخصص ها</a>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a href="../froum/froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                    </li>
+                    <li class="nav-item dropdown px-2 pe-1 border-radius-top">
+                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            برای بیماران
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_patients">
+                            <li><a href="faq.html" class="dropdown-item text-light active-btn">سوالات متداول</a></li>
+                            <li><a href="site-guide.html" class="dropdown-item text-light active-btn">راهنمای سایت</a></li>
+                            <li><a href="terms-conditions.html" class="dropdown-item text-light active-btn">شرایط و قوانین</a></li>
+                            <li><a href="#" class="dropdown-item text-light active-btn">انتقاد و پیشنهادات</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-2 pe-1 border-radius-top">
+                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_doctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            برای پزشکان
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_doctors">
+                            <li><a href="../register_doctors/register_doctors.html" class="dropdown-item text-light active-btn">ثبت نام پزشکان </a></li>
+                            <li><a href="#" class="dropdown-item text-light active-btn">ثبت کلینیک</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-12">
+                        <a href="../medicines/medicines.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">دارو ها</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- section navbar mobile end -->
+
+            <!-- section logo -->
+            <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
+                <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img logo m-0">
+                <figcaption class="figure-caption d-flex flex-column ms-xxl-2">
+                    <span class="iso-font-lg text-success fw-bold">ایزو ویزیت</span>
+                    <span class="iso-font-xxs text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
+                </figcaption>
+            </figure>
+            <!-- section logo -->
+
+            <div class="btn-login col-3 col-sm-2 col-md-1 d-flex justify-content-end p-0 order-3">
+                <button type="button" class="btn  border-0 py-2 p-1 iso-bg-blue-dark text-nowrap border-radius btn-show-modal-login active-btn"
+                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
+            </div>
+
+            <!-- section menu user logged in start-->
+            <div class="menu-user dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
+                <button type="button" class="btn border-radius iso-bg-blue-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user"
+                        role="button" id="dropdown_menu_link" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>سیروس</span>
+                    <i class="fa iso-font-lg-em fa-chevron-down ms-2"></i>
+                </button>
+                <div class="dropdown-menu box-shadow iso-font-md-em border-0 border-radius fw-normal px-1 py-0 iso-bg-blue-dark" aria-labelledby="dropdown_menu_link">
+                    <div class="dropdown-header iso-font-md-em text-light p-0">
+                        <figure class="d-flex align-items-center m-0">
+                            <img src="../../images/doc3.jpg" class="rounded-circle img-sm m-2" alt="عکس پروفایل">
+                            <figcaption>
+                                سیروس جعفری
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="dropdown-body border-top">
+                        <ul class="ps-3 m-0">
+                            <li class="p-0 pt-3">
+                                <a href="#" class="text-light hover-line-white ms-2">
+                                    پروفایل
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="#" class="text-light hover-line-white ms-2">
+                                    مشاوره ها
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="#" class="text-light hover-line-white ms-2">
+                                    تراکنش ها
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="#" class="text-light hover-line-white ms-2">
+                                    پیام های منشی
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="#" class="text-light hover-line-white ms-2">
+                                    تیکت ها
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="#" class="text-light hover-line-white ms-2">
+                                    نظرات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-footer pt-3 pb-2">
+                        <button class="btn btn-danger py-1 px-2 border-radius ms-2 fw-normal iso-font-sm-em">خروج</button>
+                    </div>
+                </div>
+            </div>
+            <!-- section menu user logged in end-->
+
+            <!-- section modal login start -->
+            <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <form action="#">
+                        <div class="modal-content">
+                            <div class="modal-header border-0 pb-1">
+                                <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
+                                    <img src="../../images/icons/user.png" alt="ورود / ثبت نام">
+                                    <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
+                                </div>
+                                <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="alert d-flex align-items-start p-0">
+                                    <img src="../../images/icons/alert.png" alt="هشدار">
+                                    <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                                </div>
+                                <div class="row flex-column align-items-center">
+                                    <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
+                                        <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
+                                    </div>
+                                    <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn">ورود</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
+                                <div class="line-blur-dashed my-3 m-0"></div>
+                                <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em">
+                                    <span class="icon-gmail"></span>
+                                    <span class="ms-2">ورود / ثبت نام با جیمیل</span>
+                                </button>
+                                <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
+                            </div>
+
+                            <!-- section enter verification code start -->
+                            <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="container p-0">
+                                    <div class="row">
+                                        <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                                        <div class="col-4 offset-4 mt-2">
+                                            <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-md-em box-timer">02:00</button>
+                                        </div>
+                                        <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
+                                            <div class="row m-0">
+                                                <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
+                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                </div>
+                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                                    <a href="#" class="iso-color-blue-dark login-with-password">ورود با کلمه عبور</a>
+                                                    <a href="#"  class="iso-color-blue-dark edit-mobile">تغییر شماره موبایل</a>
+                                                </div>
+                                                <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blue-dark  iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- section enter verification code end -->
+
+                            <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="container p-0">
+                                    <div class="row gy-2">
+                                        <div class="col-10 offset-1 mb-3 iso-font-sm">
+                                            <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
+                                        </div>
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
+                                            <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                            <a href="#"  class="iso-color-blue-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
+                                        </div>
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2">
+                                            <div class="input-group flex-row-reverse">
+                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
+                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
+                                            </span>
+                                                <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                            </div>
+                                        </div>
+                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                            <a href="#" class="iso-color-blue-dark">ورود با کد تایید</a>
+                                            <a href="#"  class="iso-color-blue-dark">فراموشی رمز عبور</a>
+                                        </div>
+                                        <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blue-dark  border-radius active-btn">ورود</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- section modal login end -->
+        </div>
+        <!-- section navbar end -->
+
+        <!-- section banner start -->
+        <div class="banner iso-color-gradient-header d-flex align-items-center p-0 overflow-hidden">
+            <div class="container-fluid">
+                <div class="row flex-column-reverse justify-content-center justify-content-lg-start flex-lg-row">
+                    <div class="col-12 col-lg-10 p-2 p-lg-0 text-nowrap d-flex align-items-center justify-content-center justify-content-lg-start text-light iso-position-absolute iso-position-absolute-lg-none">
+                        <div class="row col-12 justify-content-start">
+                            <div class="col-12 col-lg-4 offset-1 ms-0 ms-lg-4 d-flex flex-column">
+                                <h1 class="iso-font-xxl iso-font-xxl-mo text-shadow fw-bold">ایزو ویزیت</h1>
+                                <p class="iso-font-llg text-shadow fw-bold mt-2">مشاور آنلاین پزشکی و  طب سنتی</p>
+                            </div>
+                            <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-5 flex-column d-flex justify-content-center mt-lg-3">
+                                <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3" id="icon_search">
+                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-items-center h-100 border-0"></i>
+                                    <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target="#modal_search"
+                                           placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon_search">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal search -->
+                        <div class="modal fade modal-search" id="modal_search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-dismiss="modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-1 px-1">
+                                                <button type="button" class="btn active-btn  px-2 iso-bg-blue-dark
+                                                d-flex align-items-center py-1 border-radius btn-return"  data-bs-dismiss="modal" aria-label="Close">
+                                                    <i class="fa-solid fa-arrow-right iso-font-xl"></i>
+                                                </button>
+                                            </div>
+                                            <div class="search-box-sm col flex-column ms-3 px-1 d-flex justify-content-center">
+                                                <div class="input-group px-2 border-radius flex-row-reverse align-items-center bg-white">
+                                                    <button type="button" class="btn-close-danger-modal border-radius iso-font-lg-em input-group-text d-none text-danger clear-input">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0 p-1 icon-search" id="icon_search_mobile"></i>
+                                                    <input type="text" class="form-control border-0 iso-font-xxs search-input-sm" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon_search_mobile">
+                                                </div>
+                                            </div>
+                                            <div class="result-search px-1 mt-3">
+                                                <ul class="list-group border-radius text-wrap"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex justify-content-end d-lg-inline iso-position-relative iso-position-relative-lg-none">
+                        <svg class="animated animated-edit-position position-relative" id="freepik_stories-online-doctor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 400">
+                            <g  class="animable animator-hidden" style="transform-origin: 250px 416.24px;">
+                                <ellipse  cx="250" cy="416.24" rx="193.89" ry="11.32" style="fill: rgb(245, 245, 245); transform-origin: 250px 416.24px;" class="animable"></ellipse>
+                            </g>
+                            <g id="freepik--cross-icon--inject-31" class="animable animator-active" style="transform-origin: 340.7px 314.54px;">
+                                <circle cx="340.71" cy="314.54" r="31.68" style="fill: rgb(255, 255, 255); transform-origin: 340.71px 314.54px;" id="elxfhl4e85f6a" class="animable"></circle>
+                                <path d="M340.71,346.61a32.07,32.07,0,1,1,32.06-32.07A32.1,32.1,0,0,1,340.71,346.61Zm0-63.35A31.29,31.29,0,1,0,372,314.54,31.31,31.31,0,0,0,340.71,283.26Z" style="fill: rgb(23, 115, 181); transform-origin: 340.7px 314.54px;" id="elrovi4ncz5ri" class="animable"></path>
+                                <rect x="335.61" y="296.58" width="10.2" height="35.92" style="fill: rgb(23, 115, 181); transform-origin: 340.71px 314.54px;" id="elidz1yjyjn1o" class="animable"></rect>
+                                <g id="elesq3qi3glop"><rect x="335.61" y="296.58" width="10.2" height="35.92" style="fill: rgb(23, 115, 181); transform-origin: 340.71px 314.54px; transform: rotate(90deg);" class="animable"></rect></g>
+                            </g>
+                            <g id="freepik--pulse-icon--inject-31" class="animable" style="transform-origin: 145.915px 95.275px;">
+                                <path d="M126.11,75.07l-.68-.73a30.75,30.75,0,0,1,16.81-8.1l.14,1A29.74,29.74,0,0,0,126.11,75.07Z" style="fill: rgb(23, 115, 181); transform-origin: 133.905px 70.655px;" id="ell2c7du1fz9j" class="animable"></path>
+                                <path d="M118.71,86l-.93-.36a30.77,30.77,0,0,1,4-7.14l.8.6A30.24,30.24,0,0,0,118.71,86Z" style="fill: rgb(23, 115, 181); transform-origin: 120.18px 82.25px;" id="elgy1p85zwsvc" class="animable"></path>
+                                <circle cx="146.61" cy="96.87" r="27.44" style="fill: rgb(23, 115, 181); transform-origin: 146.61px 96.87px;" id="elok5410z8jm" class="animable"></circle>
+                                <path d="M163,84.51a11.46,11.46,0,0,0-16.36-.15,11.45,11.45,0,0,0-16.35.15,11.71,11.71,0,0,0,.41,16.32l13,13a4.2,4.2,0,0,0,5.94,0l13-13A11.71,11.71,0,0,0,163,84.51Z" style="fill: rgb(255, 255, 255); transform-origin: 146.657px 98.0304px;" id="el2gjwe90hnun" class="animable"></path>
+                                <path d="M146.61,108.86h0a1,1,0,0,1-.91-.67l-5.79-16.93-2.42,7.08a1,1,0,0,1-.95.67h-9.69a1,1,0,0,1,0-2h9l3.14-9.17a1,1,0,0,1,1.89,0l5.89,17.23,5.72-13.47a1,1,0,0,1,.86-.61,1,1,0,0,1,.93.51L157.3,97h9.11a1,1,0,0,1,0,2h-9.69a1,1,0,0,1-.88-.51l-2.37-4.24-5.94,14A1,1,0,0,1,146.61,108.86Z" style="fill: rgb(23, 115, 181); transform-origin: 146.63px 98.0135px;" id="el97ze2fta0ka" class="animable"></path>
+                            </g>
+                            <g  class="animable" style="transform-origin: 234.719px 246.802px;">
+                                <path d="M298.86,381.2H194.49A12.26,12.26,0,0,1,182.13,368L199,118a14.44,14.44,0,0,1,14.15-13.25H317.54A12.26,12.26,0,0,1,329.9,118L313,368A14.43,14.43,0,0,1,298.86,381.2Z" style="fill: rgb(38, 50, 56); transform-origin: 256.017px 242.975px;" id="el3nce8vxgfxt" class="animable"></path>
+                                <path d="M322,206.56h-2.63a3.42,3.42,0,0,1-3.45-3.7l3.23-47.79a4,4,0,0,1,3.95-3.7h2.63a3.42,3.42,0,0,1,3.45,3.7l-3.23,47.79A4,4,0,0,1,322,206.56Z" style="fill: rgb(38, 50, 56); transform-origin: 322.55px 178.965px;" id="elxjvhizr90g" class="animable"></path>
+                                <path d="M197.48,174.68h-2.62a2.8,2.8,0,0,1-2.83-3l1.17-17.26a3.3,3.3,0,0,1,3.23-3h2.63a2.81,2.81,0,0,1,2.82,3l-1.17,17.26A3.29,3.29,0,0,1,197.48,174.68Z" style="fill: rgb(23, 115, 181); transform-origin: 196.955px 163.05px;" id="eljphhkl2dsni" class="animable"></path>
+                                <path d="M195.4,205.5h-2.63a2.8,2.8,0,0,1-2.82-3l1.17-17.26a3.3,3.3,0,0,1,3.23-3H197a2.81,2.81,0,0,1,2.82,3l-1.17,17.26A3.29,3.29,0,0,1,195.4,205.5Z" style="fill: rgb(23, 115, 181); transform-origin: 194.885px 193.87px;" id="el4pqvdivyqcy" class="animable"></path>
+                                <path d="M296.65,381.2H192.28A12.26,12.26,0,0,1,179.92,368L196.8,118A14.44,14.44,0,0,1,211,104.79H315.33A12.26,12.26,0,0,1,327.69,118L310.8,368A14.43,14.43,0,0,1,296.65,381.2Z" style="fill: rgb(23, 115, 181); transform-origin: 253.805px 242.995px;" id="el8scapygdlfs" class="animable"></path>
+                                <g id="el1a21c8s2o15"><polygon points="181.02 365.2 197.5 121.24 326.56 121.24 310.08 365.2 181.02 365.2" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 253.79px 243.22px;" class="animable"></polygon></g>
+                                <g id="el2ny0oalsbyc"><polygon points="231.97 365.2 278.03 121.24 306.94 121.24 260.88 365.2 231.97 365.2" style="fill: rgb(255, 255, 255); opacity: 0.1; transform-origin: 269.455px 243.22px;" class="animable"></polygon></g>
+                                <g id="eloe8boewa07o"><polygon points="210.13 365.2 256.19 121.24 270.84 121.24 224.78 365.2 210.13 365.2" style="fill: rgb(255, 255, 255); opacity: 0.1; transform-origin: 240.485px 243.22px;" class="animable"></polygon></g>
+                                <path d="M250.14,110.92h25.17a1.5,1.5,0,0,1,1.52,1.63h0a1.78,1.78,0,0,1-1.74,1.64H249.92a1.51,1.51,0,0,1-1.52-1.64h0A1.77,1.77,0,0,1,250.14,110.92Z" style="fill: rgb(255, 255, 255); transform-origin: 262.615px 112.555px;" id="el3hh8qvwmjfa" class="animable"></path>
+                                <polygon points="244.9 405.25 236.08 406.09 232.9 385.74 241.72 384.89 244.9 405.25" style="fill: rgb(255, 181, 115); transform-origin: 238.9px 395.49px;" id="elmpxklzufsne" class="animable"></polygon>
+                                <path d="M235.07,401.78l9.24-2.87a.65.65,0,0,1,.82.38l3,7.33a1.52,1.52,0,0,1-1,2c-3.34,1-6.52,1.23-10.55,3-4.71,2-6.68,4.68-11.75,4.68-3.63,0-4.45-3.33-2.91-3.79,7-2.12,6.08-3.86,11.16-9.33A4.68,4.68,0,0,1,235.07,401.78Z" style="fill: rgb(38, 50, 56); transform-origin: 234.705px 407.587px;" id="elkrndakg1m1" class="animable"></path>
+                                <g id="el6jjsj5t8jfa">
+                                    <polygon points="232.9 385.74 234.54 396.24 243.37 395.39 241.73 384.89 232.9 385.74" style="opacity: 0.2; transform-origin: 238.135px 390.565px;" class="animable"></polygon>
+                                </g>
+                                <path d="M239.28,128.6c-11.57-1.36-23.08-.45-34.63,1.79a9.23,9.23,0,0,0-7.41,8c-1.25,11.06-2.68,35.85,2.9,72.83l47.28-4c.09-6.71-4.68-37.28-.74-69A8.47,8.47,0,0,0,239.28,128.6Z" style="fill: rgb(255, 255, 255); transform-origin: 221.76px 169.59px;" id="elwb24quo7lnf" class="animable"></path>
+                                <path d="M211.75,138.08l1.69,3.38a1,1,0,0,0,.89.58l1.83.1a1.42,1.42,0,0,0,.91-.28l3.15-2.35-3.89-2.83Z" style="fill: rgb(38, 50, 56); transform-origin: 215.985px 139.411px;" id="el62z4uwyuwqf" class="animable"></path><path d="M216.22,141.17a3.08,3.08,0,0,0-2.13-.17c-1.49,5.25-3.12,20.32-3.29,27,4.52,13.17,6,14.5,6,14.5l2.29-15.85S216.52,150.44,216.22,141.17Z" style="fill: rgb(38, 50, 56); transform-origin: 214.945px 161.692px;" id="el9u11swvara" class="animable"></path>
+                                <path d="M229.27,105.8c-1.08,6.52-2,18.43,2.68,22.64-3.43,3.6-7.92,7.77-15.62,8.24s-6.51-4.86-4.56-7.71c7.19-1.92,6.84-7.28,5.43-12.29Z" style="fill: rgb(255, 181, 115); transform-origin: 221.132px 121.255px;" id="ele35bbj3n9t6" class="animable"></path>
+                                <path d="M233.91,127.87a9.6,9.6,0,0,0-1.69-.55.67.67,0,0,0-.75.31c-.74,1.26-3,6.89-15.14,9.05,2,1.18,4.65,4.84,5.79,6.6,3.64-1.89,13.11-7.54,12.21-14.85A.74.74,0,0,0,233.91,127.87Z" style="fill: rgb(245, 245, 245); transform-origin: 225.36px 135.289px;" id="elo8f9k2nxr2s" class="animable"></path>
+                                <path d="M211.84,129.27a.7.7,0,0,0-.82-.84,9.39,9.39,0,0,0-1.24.33,1,1,0,0,0-.26.15c-.93.86-6,8.18-1.25,14.1,1-1.61,4.45-5.26,8.06-6.33C212.91,135.14,211.23,132.27,211.84,129.27Z" style="fill: rgb(245, 245, 245); transform-origin: 211.299px 135.713px;" id="elq75q4qjfpcs" class="animable"></path>
+                                <g id="elfwokzjiuslg">
+                                    <path d="M224.35,110.24l-7.14,6.44a20.62,20.62,0,0,1,.72,3.56c2.76-.47,6.47-3.6,6.67-6.5A9.48,9.48,0,0,0,224.35,110.24Z" style="opacity: 0.2; transform-origin: 220.936px 115.24px;" class="animable"></path>
+                                </g>
+                                <path d="M214.81,86.09c-6.16,2.41-6.56,7.47-6,13s6.58,1.87,7.92-1.59S223.34,82.75,214.81,86.09Z" style="fill: rgb(38, 50, 56); transform-origin: 214.098px 93.7045px;" id="elxz6v7vatne" class="animable"></path>
+                                <path d="M234.46,97.12c-1.71,8.71-2.28,13.88-7.26,17.89-7.51,6-17.68.82-18.58-8.16-.81-8.09,2.12-21,11.09-23.52A11.72,11.72,0,0,1,234.46,97.12Z" style="fill: rgb(255, 181, 115); transform-origin: 221.616px 100.222px;" id="elybu9r671ltq" class="animable"></path>
+                                <path d="M234.1,104.33c-7.33.39-5.78-3.77-4.45-6.16s-1.38-6.34.39-8.39c-3.16,1.26-6.49.22-10.72-2.72-3.28-2.29-7.39,6.86-11.39,2.27-3.78-4.33-.27-10.86,8.81-11.91s10.73,5.37,16.69,4.8,3.89,4.34,2.72,5.34C241.15,87.89,243.88,92.67,234.1,104.33Z" style="fill: rgb(38, 50, 56); transform-origin: 223.549px 90.8296px;" id="eltcjcjcelk08" class="animable"></path>
+                                <path d="M235,88.17a7.34,7.34,0,0,0,3.81-6.39C240.79,85.25,240.58,89.19,235,88.17Z" style="fill: rgb(38, 50, 56); transform-origin: 237.474px 85.0569px;" id="el9i49yr6djhf" class="animable"></path>
+                                <path d="M216,106.42a6,6,0,0,0,4.58-1.08.2.2,0,0,0,0-.29.21.21,0,0,0-.29,0,5.77,5.77,0,0,1-5.09.79.23.23,0,0,0-.27.14.21.21,0,0,0,.14.26A5.29,5.29,0,0,0,216,106.42Z" style="fill: rgb(38, 50, 56); transform-origin: 217.782px 105.75px;" id="elnsyrp35an7" class="animable"></path>
+                                <path d="M236.23,107a8.52,8.52,0,0,1-5.59,3.22c-2.91.38-3.88-2.33-2.66-4.86,1.11-2.28,4-5.22,6.68-4.43S237.91,104.8,236.23,107Z" style="fill: rgb(255, 181, 115); transform-origin: 232.321px 105.527px;" id="elyzaqrl8v78g" class="animable"></path>
+                                <path d="M233.34,296.37c.35-26.11,3.69-88.3,3.69-88.3l-36.86,3.11s7.33,64.09,11.75,90.73c4.6,27.69,18.71,92.56,18.71,92.56l15-1.28S240.15,316.56,233.34,296.37Z" style="fill: rgb(38, 50, 56); transform-origin: 222.9px 301.27px;" id="elbvmd9r3q6n5" class="animable"></path>
+                                <polygon points="229.73 394.88 247.52 393.37 246.82 387.63 228.28 388.87 229.73 394.88" style="fill: rgb(23, 115, 181); transform-origin: 237.9px 391.255px;" id="elmlj96cluok" class="animable"></polygon>
+                                <path d="M221.32,97.64c-.09.71-.55,1.25-1,1.2s-.76-.67-.66-1.39.55-1.25,1-1.2S221.42,96.93,221.32,97.64Z" style="fill: rgb(38, 50, 56); transform-origin: 220.49px 97.545px;" id="ellwzarflwcjq" class="animable"></path>
+                                <path d="M213.16,97c-.09.72-.55,1.25-1,1.2s-.76-.67-.66-1.38.55-1.25,1-1.2S213.26,96.25,213.16,97Z" style="fill: rgb(38, 50, 56); transform-origin: 212.33px 96.91px;" id="el5hkfeu5lag8" class="animable"></path>
+                                <path d="M215.46,97.84a24.82,24.82,0,0,1-4.3,5c1.06,1.11,3.25.81,3.25.81Z" style="fill: rgb(237, 137, 62); transform-origin: 213.31px 100.763px;" id="el79uyohr3b1l" class="animable"></path>
+                                <g id="el1of7jn9o066">
+                                    <path d="M208,97.18c-.15,1.14,1,2.09,2.59,2.29s3.06-.67,3.2-1.81" style="fill: rgb(23, 115, 181); opacity: 0.4; transform-origin: 210.888px 98.3394px;" class="animable"></path>
+                                </g>
+                                <g id="elymf4vvc8h0b">
+                                    <path d="M217.45,98.24c-.22,1.13.89,2.15,2.45,2.45s3.09-.5,3.3-1.62" style="fill: rgb(23, 115, 181); opacity: 0.4; transform-origin: 220.311px 99.4967px;" class="animable"></path>
+                                </g>
+                                <path d="M220.52,101a4.89,4.89,0,0,1-.54,0,3.8,3.8,0,0,1-2.07-.93,2.08,2.08,0,0,1-.72-1.77,5,5,0,0,0-1.6-.4,3.49,3.49,0,0,0-1.69,0c-.14,1.22-1.66,2.06-3.36,1.85a3.72,3.72,0,0,1-2.07-.92,2.1,2.1,0,0,1-.72-1.77l.48.06a1.61,1.61,0,0,0,.57,1.36,3.24,3.24,0,0,0,1.8.79c1.44.19,2.72-.48,2.85-1.48.07-.56,1.23-.52,2.19-.4s2.1.39,2,.94a1.6,1.6,0,0,0,.57,1.36,3.44,3.44,0,0,0,3.75.48,1.6,1.6,0,0,0,.9-1.17l0-.24,12.34,1.59-.06.48-11.88-1.53a2.15,2.15,0,0,1-1.1,1.29A3.53,3.53,0,0,1,220.52,101Z" style="fill: rgb(38, 50, 56); transform-origin: 221.471px 99.0337px;" id="elr12wio5pogl" class="animable"></path>
+                                <path d="M224.46,94.5a.36.36,0,0,0,.2-.06.43.43,0,0,0,.16-.58,4,4,0,0,0-3.14-2.1.43.43,0,0,0-.45.4.42.42,0,0,0,.39.44h0a3.21,3.21,0,0,1,2.47,1.7A.41.41,0,0,0,224.46,94.5Z" style="fill: rgb(38, 50, 56); transform-origin: 223.052px 93.1299px;" id="elwrhbgdvtkyb" class="animable"></path><path d="M210.52,93.37a.43.43,0,0,0,.37-.15,3.41,3.41,0,0,1,2.76-1.34.42.42,0,0,0,.46-.38.41.41,0,0,0-.36-.46,4.3,4.3,0,0,0-3.5,1.65.42.42,0,0,0,.05.59A.51.51,0,0,0,210.52,93.37Z" style="fill: rgb(38, 50, 56); transform-origin: 212.133px 92.2053px;" id="eludyg97zbe8p" class="animable"></path>
+                                <path d="M264.05,292.16c-7.65-39.32-9.37-70.07-16.63-85l-35.71,4s21.27,58.59,31.66,83.6c10.79,26,32.09,70.42,32.09,70.42H293.3S276.65,310.07,264.05,292.16Z" style="fill: rgb(38, 50, 56); transform-origin: 252.505px 286.17px;" id="eljcz9xu9uqsq" class="animable"></path>
+                                <path d="M150.86,143.31,147,140.87a3.22,3.22,0,0,0-4.06.47l-2.62,2.76a3,3,0,0,0,.26,4.37l1.87,1.6a15.25,15.25,0,0,0,5.57,3l5.65,1.67,3.71-4C158.51,146.57,150.86,143.31,150.86,143.31Z" style="fill: rgb(255, 181, 115); transform-origin: 148.496px 147.548px;" id="el0bdyb6sviyt" class="animable"></path>
+                                <path d="M208,141.44c-1.4,3.42-2.77,6.6-4.26,9.85s-3,6.46-4.67,9.65-3.45,6.36-5.47,9.54c-1,1.58-2.11,3.16-3.37,4.75a30.34,30.34,0,0,1-4.6,4.77,16.51,16.51,0,0,1-3.69,2.28c-.42.16-.81.32-1.27.46l-.7.19a8.35,8.35,0,0,1-1.07.19,10,10,0,0,1-3.64-.26,14.82,14.82,0,0,1-4.18-1.91,24,24,0,0,1-2.75-2,65.72,65.72,0,0,1-7.95-8.27c-2.33-2.8-4.53-5.61-6.64-8.48s-4.14-5.69-6.22-8.7l11.06-7.14a149.17,149.17,0,0,0,11.56,16.15,54.44,54.44,0,0,0,6.37,6.59,12.56,12.56,0,0,0,1.41,1c.37.25.74.35.48.26a2.56,2.56,0,0,0-1.08-.06,2.38,2.38,0,0,0-.43.08h-.08c-.05,0-.05,0-.06,0a6.05,6.05,0,0,0,.65-.49,18.45,18.45,0,0,0,2.47-2.74c.85-1.14,1.7-2.42,2.51-3.75a91.72,91.72,0,0,0,4.52-8.54c1.4-3,2.75-6,4-9.12s2.44-6.29,3.45-9.32Z" style="fill: rgb(23, 115, 181); transform-origin: 177.76px 159.801px;" id="ela90s5u9znjo" class="animable"></path>
+                                <g id="elhaxo78rwfn"><g style="opacity: 0.6; transform-origin: 177.76px 159.801px;" class="animable">
+                                    <path d="M208,141.44c-1.4,3.42-2.77,6.6-4.26,9.85s-3,6.46-4.67,9.65-3.45,6.36-5.47,9.54c-1,1.58-2.11,3.16-3.37,4.75a30.34,30.34,0,0,1-4.6,4.77,16.51,16.51,0,0,1-3.69,2.28c-.42.16-.81.32-1.27.46l-.7.19a8.35,8.35,0,0,1-1.07.19,10,10,0,0,1-3.64-.26,14.82,14.82,0,0,1-4.18-1.91,24,24,0,0,1-2.75-2,65.72,65.72,0,0,1-7.95-8.27c-2.33-2.8-4.53-5.61-6.64-8.48s-4.14-5.69-6.22-8.7l11.06-7.14a149.17,149.17,0,0,0,11.56,16.15,54.44,54.44,0,0,0,6.37,6.59,12.56,12.56,0,0,0,1.41,1c.37.25.74.35.48.26a2.56,2.56,0,0,0-1.08-.06,2.38,2.38,0,0,0-.43.08h-.08c-.05,0-.05,0-.06,0a6.05,6.05,0,0,0,.65-.49,18.45,18.45,0,0,0,2.47-2.74c.85-1.14,1.7-2.42,2.51-3.75a91.72,91.72,0,0,0,4.52-8.54c1.4-3,2.75-6,4-9.12s2.44-6.29,3.45-9.32Z" style="fill: rgb(255, 255, 255); transform-origin: 177.76px 159.801px;" id="elknhubbpnaq" class="animable"></path>
+                                </g>
+                                </g>
+                                <path d="M234.18,126.09c-3.75,7-17.1,33.67-18.72,50.13-5.91-15-4.62-48.18-4.62-48.18a44.43,44.43,0,0,0-12.27,3A7.41,7.41,0,0,0,194,137.3a262.07,262.07,0,0,0,1.62,51.47c4.15,32.3,8,82.53,8,82.53s33.05-1.38,58.55-6.76c-3.11-24.69-13.75-66.07-13.85-77.15-.12-14.26.21-42.14.66-53.78a6.89,6.89,0,0,0-5.52-7.07A34.57,34.57,0,0,0,234.18,126.09Z" style="fill: rgb(23, 115, 181); transform-origin: 227.791px 198.631px;" id="el4uukqogyfdp" class="animable"></path>
+                                <g id="elopr7em05mvs">
+                                    <path d="M234.18,126.09c-3.75,7-17.1,33.67-18.72,50.13-5.91-15-4.62-48.18-4.62-48.18a44.43,44.43,0,0,0-12.27,3A7.41,7.41,0,0,0,194,137.3a262.07,262.07,0,0,0,1.62,51.47c4.15,32.3,8,82.53,8,82.53s33.05-1.38,58.55-6.76c-3.11-24.69-13.75-66.07-13.85-77.15-.12-14.26.21-42.15.66-53.79a6.78,6.78,0,0,0-5.21-7A34.31,34.31,0,0,0,234.18,126.09Z" style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 227.791px 198.63px;" class="animable"></path>
+                                </g>
+                                <path d="M226.39,265.94c-5.74-31.67-10.29-78.14-10.66-83.73l.51,0c.37,5.59,4.93,52,10.66,83.67Z" style="fill: rgb(255, 255, 255); transform-origin: 221.315px 224.075px;" id="elr419cwseil" class="animable"></path>
+                                <path d="M223.53,209.6H193.05a2.85,2.85,0,0,1-2.64-2.17l-10.19-47.37a1.7,1.7,0,0,1,1.7-2.17h30.47a2.85,2.85,0,0,1,2.65,2.17l10.19,47.37A1.7,1.7,0,0,1,223.53,209.6Z" style="fill: rgb(255, 255, 255); transform-origin: 202.725px 183.745px;" id="eln8x2wmgxwdj" class="animable"></path>
+                                <path d="M222.58,210h-31a2.91,2.91,0,0,1-2.69-2.21l-10.37-48.17a1.74,1.74,0,0,1,1.74-2.21h31a2.91,2.91,0,0,1,2.69,2.21l10.36,48.17A1.73,1.73,0,0,1,222.58,210Z" style="fill: rgb(23, 115, 181); transform-origin: 201.417px 183.705px;" id="elq5ih0b7y1mh" class="animable"></path>
+                                <path d="M226.13,182.82l-7.71-.29a6.61,6.61,0,0,0-2.71.48l-4,1.6a3,3,0,0,0-1.64,4l1.6,3.46a3.24,3.24,0,0,0,3.7,1.74l4.41-1.1s8.28-.66,8.58-5Z" style="fill: rgb(255, 181, 115); transform-origin: 219.087px 188.216px;" id="eltbzb477zofg" class="animable"></path>
+                                <path d="M247.42,130.38c1.91,3,3.66,5.74,5.38,8.68s3.41,5.85,5,8.89,3.1,6.18,4.47,9.54a48.59,48.59,0,0,1,1.82,5.39,22.59,22.59,0,0,1,.88,6.87v.39a1.92,1.92,0,0,1,0,.2c0,.36-.1.72-.17,1.08s-.16.64-.26,1-.21.55-.32.83a11.17,11.17,0,0,1-1.46,2.42,17.45,17.45,0,0,1-2.77,2.76,36.41,36.41,0,0,1-5,3.31,95.27,95.27,0,0,1-9.52,4.54c-3.15,1.34-6.29,2.56-9.45,3.71s-6.27,2.26-9.56,3.36l-3.81-12.6c3-.82,6.06-1.83,9.05-2.85s6-2.16,8.84-3.35a77.92,77.92,0,0,0,8.14-3.93,23.49,23.49,0,0,0,3.17-2.11,3.81,3.81,0,0,0,.7-.69,1.07,1.07,0,0,0-.2.33c0,.09-.05.15-.1.26a2.37,2.37,0,0,0-.09.36,2.43,2.43,0,0,0-.08.47c0,.06,0,.07,0,.05v-.07a11.76,11.76,0,0,0-.55-2.79,36.08,36.08,0,0,0-1.42-3.85,78.1,78.1,0,0,0-4.14-8.07c-1.56-2.68-3.22-5.36-5-8s-3.6-5.27-5.43-7.67Z" style="fill: rgb(23, 115, 181); transform-origin: 243.814px 161.865px;" id="el2htgdtx5pyh" class="animable"></path>
+                                <g id="elclrneknjjt">
+                                    <g style="opacity: 0.7; transform-origin: 243.814px 161.865px;" class="animable">
+                                        <path d="M247.42,130.38c1.91,3,3.66,5.74,5.38,8.68s3.41,5.85,5,8.89,3.1,6.18,4.47,9.54a48.59,48.59,0,0,1,1.82,5.39,22.59,22.59,0,0,1,.88,6.87v.39a1.92,1.92,0,0,1,0,.2c0,.36-.1.72-.17,1.08s-.16.64-.26,1-.21.55-.32.83a11.17,11.17,0,0,1-1.46,2.42,17.45,17.45,0,0,1-2.77,2.76,36.41,36.41,0,0,1-5,3.31,95.27,95.27,0,0,1-9.52,4.54c-3.15,1.34-6.29,2.56-9.45,3.71s-6.27,2.26-9.56,3.36l-3.81-12.6c3-.82,6.06-1.83,9.05-2.85s6-2.16,8.84-3.35a77.92,77.92,0,0,0,8.14-3.93,23.49,23.49,0,0,0,3.17-2.11,3.81,3.81,0,0,0,.7-.69,1.07,1.07,0,0,0-.2.33c0,.09-.05.15-.1.26a2.37,2.37,0,0,0-.09.36,2.43,2.43,0,0,0-.08.47c0,.06,0,.07,0,.05v-.07a11.76,11.76,0,0,0-.55-2.79,36.08,36.08,0,0,0-1.42-3.85,78.1,78.1,0,0,0-4.14-8.07c-1.56-2.68-3.22-5.36-5-8s-3.6-5.27-5.43-7.67Z" style="fill: rgb(255, 255, 255); transform-origin: 243.814px 161.865px;" id="eld1tmrq0c6xl" class="animable"></path>
+                                    </g>
+                                </g>
+                                <path d="M237.3,165.08a.39.39,0,0,1-.33-.19.39.39,0,0,1,.12-.55l1.56-1a8.5,8.5,0,0,0,3.8-8.86l-3.14-15.9a5.38,5.38,0,0,0-10.46-.44l-4.45,15.59a8.47,8.47,0,0,0,3,9.14l1.48,1.12a.4.4,0,0,1,.07.56.39.39,0,0,1-.55.07L227,163.51a9.28,9.28,0,0,1-3.33-10l4.46-15.59a6.18,6.18,0,0,1,12,.5l3.14,15.91a9.28,9.28,0,0,1-4.15,9.68l-1.57,1A.33.33,0,0,1,237.3,165.08Z" style="fill: rgb(38, 50, 56); transform-origin: 233.377px 149.265px;" id="elsceqirppxg" class="animable"></path>
+                                <path d="M239.7,138.91h0l-11.23-.47a.4.4,0,0,1-.38-.42.42.42,0,0,1,.42-.38l11.22.47a.4.4,0,0,1,.38.42A.39.39,0,0,1,239.7,138.91Z" style="fill: rgb(38, 50, 56); transform-origin: 234.1px 138.275px;" id="eltfxddmnems" class="animable"></path>
+                                <path d="M234.24,134.25a.41.41,0,0,1-.4-.39c0-2-.62-5.47-2.49-6.23a.4.4,0,1,1,.3-.74c2.77,1.14,3,6.36,3,7a.41.41,0,0,1-.39.41Z" style="fill: rgb(38, 50, 56); transform-origin: 232.864px 130.575px;" id="eld4nljqmkshg" class="animable"></path>
+                                <path d="M199.89,147.84h-.08a.4.4,0,0,1-.31-.47c1.32-6.57,6.78-16.94,11.59-20a.39.39,0,0,1,.54.13.38.38,0,0,1-.12.54c-4.65,2.94-9.95,13-11.23,19.47A.4.4,0,0,1,199.89,147.84Z" style="fill: rgb(38, 50, 56); transform-origin: 205.594px 137.576px;" id="el5c56smqgr0f" class="animable"></path>
+                                <path d="M203.17,148.87c-.62,1.59-2,2.55-3,2.14s-1.39-2-.77-3.63,2-2.55,3-2.13S203.8,147.28,203.17,148.87Z" style="fill: rgb(255, 255, 255); transform-origin: 201.287px 148.127px;" id="elf564azria0n" class="animable"></path>
+                                <path d="M229.57,164.36c0,.74-.46,1.33-.95,1.31s-.87-.64-.84-1.39.46-1.34.95-1.31S229.6,163.61,229.57,164.36Z" style="fill: rgb(255, 255, 255); transform-origin: 228.675px 164.32px;" id="el3hcphzjqanb" class="animable"></path>
+                                <path d="M238.19,164.72c0,.74-.45,1.33-.95,1.31s-.86-.64-.83-1.39.45-1.33,1-1.31S238.22,164,238.19,164.72Z" style="fill: rgb(255, 255, 255); transform-origin: 237.3px 164.68px;" id="eloa5vyq3nxbn" class="animable"></path>
+                            </g>
+                            <g id="freepik--Chat--inject-31" class="animable" style="transform-origin: 338.955px 183.005px;">
+                                <path d="M407.77,150.85l-1-.06a15.41,15.41,0,0,0-15.49-16.61v-1a16.4,16.4,0,0,1,16.49,17.67Z" style="fill: rgb(23, 115, 181); transform-origin: 399.55px 142.015px;" id="el26eyro5akrx" class="animable"></path>
+                                <g id="el1uys8148f9g">
+                                    <rect x="402.54" y="159.04" width="8.28" height="1" style="fill: rgb(23, 115, 181); transform-origin: 406.68px 159.54px; transform: rotate(-85.9958deg);" class="animable"></rect>
+                                </g>
+                                <path d="M391.28,136.68h-69a15.18,15.18,0,0,0-14.88,13.94l-.63,9.29a12.91,12.91,0,0,0,13,13.94h69l13.38,8.25,2.12-31.48A12.9,12.9,0,0,0,391.28,136.68Z" style="fill: rgb(23, 115, 181); transform-origin: 355.52px 159.39px;" id="ell5llrnr78x" class="animable"></path>
+                                <rect x="323.87" y="149.99" width="63.91" height="2.32" style="fill: rgb(255, 255, 255); transform-origin: 355.825px 151.15px;" id="elorgjazokle9" class="animable"></rect>
+                                <rect x="339.77" y="158.22" width="47.45" height="2.32" style="fill: rgb(255, 255, 255); transform-origin: 363.495px 159.38px;" id="elbpaxx91u1qa" class="animable"></rect>
+                                <path d="M287.48,186.38H358a13.19,13.19,0,0,1,13.29,14.25l-.64,9.5a15.53,15.53,0,0,1-15.21,14.25H284.91l-14.82,8.45,2.18-32.2A15.52,15.52,0,0,1,287.48,186.38Z" style="fill: rgb(255, 255, 255); transform-origin: 320.711px 209.605px;" id="elasc1krkiszb" class="animable"></path>
+                                <g id="eleqiacnwh3xt">
+                                    <path d="M287.48,186.38H358a13.19,13.19,0,0,1,13.29,14.25l-.64,9.5a15.53,15.53,0,0,1-15.21,14.25H284.91l-14.82,8.45,2.18-32.2A15.52,15.52,0,0,1,287.48,186.38Z" style="fill: rgb(23, 115, 181); opacity: 0.15; transform-origin: 320.711px 209.605px;" class="animable"></path>
+                                </g>
+                                <g id="elujivsy5y9p"><rect x="289.06" y="199.99" width="65.36" height="2.38" style="fill: rgb(23, 115, 181); opacity: 0.5; transform-origin: 321.74px 201.18px;" class="animable"></rect>
+                                </g>
+                                <g id="elmf3cdxjl3on"><rect x="288.49" y="208.4" width="25.83" height="2.38" style="fill: rgb(23, 115, 181); opacity: 0.5; transform-origin: 301.405px 209.59px;" class="animable"></rect>
+                                </g>
+                                <g id="els6nenjp69fg"><rect x="320.65" y="208.4" width="16.5" height="2.38" style="fill: rgb(23, 115, 181); opacity: 0.5; transform-origin: 328.9px 209.59px;" class="animable"></rect>
+                                </g>
+                            </g>
+                            <defs>
+                                <filter height="200%">
+                                    <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>
+                                    <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>
+                                    <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
+                                    <feMerge>
+                                        <feMergeNode in="OUTLINE"></feMergeNode>
+                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                    </feMerge>
+                                </filter>
+                                <filter height="200%">
+                                    <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>
+                                    <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>
+                                    <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
+                                    <feMerge>
+                                        <feMergeNode in="OUTLINE"></feMergeNode>
+                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                    </feMerge>
+                                    <feColorMatrix type="matrix" values="0   0   0   0   0   0   1   0   0   0    0   0   0   0   0   0   0   0   1   0 "></feColorMatrix>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section banner end  -->
+    </div>
+</header>
+<!-- section header end -->
+
+<!-- section main start -->
+<main>
+    <div class="content container-xxl">
+        <div class="row d-flex flex-wrap position-relative">
+            <!-- section breadcrumb link start -->
+            <nav class="col-12 my-4 d-flex align-items-center" aria-label="breadcrumb">
+                <ol class="breadcrumb iso-font-sm-em m-0 fw-normal">
+                    <li class="breadcrumb-item"><a href="../index.html">ایزوویزیت</a></li>
+                    <li class="breadcrumb-item">شرایط و قوانین</li>
+                </ol>
+            </nav>
+            <!-- section breadcrumb link end -->
+
+            <!-- section about us start -->
+            <section class="col-12 section-about-us box-shadow-lg bg-white border-radius p-3">
+                <article>
+                    <div class="row">
+                        <div class="section-header mt-2">
+                            <h2 class="iso-color-blue-dark">شرایط و قوانین</h2>
+                        </div>
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <div class="section-body mt-2">
+                                <div class="list-group">
+                                    <div class="list-group-item border-0 mt-3 p-0">
+                                        <h3 class="iso-font-md-em iso-color-blue-dark">قوانین عمومی</h3>
+                                        <p class="section-text">
+                                            توجه داشته باشید کلیه امور و فعالیت‌های سامانه ایزو ویزیت منطبق با قوانین جمهوری اسلامی ایران و قوانین داخلی این سامانه است. و شما نیز می‌پذیرید که طبق این قوانین رفتار نمایید. در صورتی که در قوانین ، روش کار و سرویس‏‌های ایزو ویزیت تغییراتی ایجاد شود، در همین صفحه به اطلاع عموم خواهد رسید و شما توافق می‌کنید که استفاده شما از سامانه ایزو ویزیت به معنی پذیرش این تغییرات است.
+                                        </p>
+                                        <div class="line-muted-dashed"></div>
+                                    </div>
+
+                                    <div class="list-group-item border-0 mt-3 p-0">
+                                        <h3 class="iso-font-md-em iso-color-blue-dark">پشتیبانی</h3>
+                                        <p class="section-text">
+                                            در ایزو ویزیت شما میتوانید از طریق پیام رسان های رایج که در سایت درج شده و یا از طریق تیکت و یا از طریق تلفن سوالات ، مشکلات ، انتقاد و یا پیشنهادات خود را مطرح کنید. بدیهی است که در کمترین زمان به پیام شما رسیدگی خواهد شد. پشتیبانی ایزو ویزیت از ۹ تا ۱۵ به صورت تلفنی و یا آنلاین پاسخگوی خواهند بود.
+                                        </p>
+                                        <div class="line-muted-dashed"></div>
+                                    </div>
+
+                                    <div class="list-group-item border-0 mt-3 p-0">
+                                        <h3 class="iso-font-md-em iso-color-blue-dark">نحوه واریز وجه</h3>
+                                        <p class="section-text">
+                                            بعد از درخواست مشاوره برای پرداخت هزینه مشاوره برای پزشک به دو صورت میتوانید پرداخت وجه را انجام دهید
+                                        </p>
+                                        <div class="line-muted-dashed"></div>
+                                    </div>
+
+                                    <div class="list-group-item border-0 mt-3 p-0">
+                                        <h3 class="iso-font-md-em iso-color-blue-dark">واریز به صورت آنلاین</h3>
+                                        <p class="section-text">
+                                            در این حالت کافی است که روی گزینه پرداخت انلاین کلیک کرده به سامانه شاپرک وارد شده و به صورت انلاین پرداخت انجام میشود و بعد از پرداخت به ایزوویزیت بازگردانده میشود و بعد از اطمینان از ثبت پرداخت وجه که به صورت اتوماتیک انجام میشود منتظر پاسخ پزشک میمانید.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 order-1 order-lg-2">
+                            <div class="section-svg d-flex justify-content-center">
+                                <svg class="animated" id="freepik_stories-accept-terms" xmlns="http://www.w3.org/2000/svg" viewBox="70 90 350 350" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><g id="freepik--background-complete--inject-51" class="animable animator-hidden" style="transform-origin: 250px 228.23px;"><rect y="382.4" width="500" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 250px 382.525px;" id="el2e4kqz87buc" class="animable"></rect><path d="M237,337.8H43.92a5.71,5.71,0,0,1-5.71-5.71V60.66A5.71,5.71,0,0,1,43.92,55H237a5.71,5.71,0,0,1,5.71,5.71V332.09A5.71,5.71,0,0,1,237,337.8ZM43.92,55.2a5.47,5.47,0,0,0-5.46,5.46V332.09a5.47,5.47,0,0,0,5.46,5.46H237a5.47,5.47,0,0,0,5.46-5.46V60.66A5.47,5.47,0,0,0,237,55.2Z" style="fill: rgb(235, 235, 235); transform-origin: 140.46px 196.4px;" id="elvdg2dsxxeg" class="animable"></path><path d="M453.31,337.8H260.21a5.72,5.72,0,0,1-5.71-5.71V60.66A5.72,5.72,0,0,1,260.21,55h193.1A5.71,5.71,0,0,1,459,60.66V332.09A5.71,5.71,0,0,1,453.31,337.8ZM260.21,55.2a5.47,5.47,0,0,0-5.46,5.46V332.09a5.47,5.47,0,0,0,5.46,5.46h193.1a5.47,5.47,0,0,0,5.46-5.46V60.66a5.47,5.47,0,0,0-5.46-5.46Z" style="fill: rgb(235, 235, 235); transform-origin: 356.75px 196.4px;" id="eluut5iomh3af" class="animable"></path><rect x="51.28" y="391.92" width="26" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 64.28px 392.045px;" id="ely4czq0sbbwp" class="animable"></rect><rect x="145.15" y="389.21" width="45.03" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 167.665px 389.335px;" id="eldpomvzzqz1m" class="animable"></rect><rect x="78.28" y="401.21" width="60.79" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 108.675px 401.335px;" id="elfawsvropfpc" class="animable"></rect><rect x="429.49" y="399.53" width="19.23" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 439.105px 399.655px;" id="elz2jqajwlz4i" class="animable"></rect><rect x="365.29" y="399.53" width="55.29" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 392.935px 399.655px;" id="elbs8ih1qq9jq" class="animable"></rect><rect x="257.05" y="395.31" width="74.47" height="0.25" style="fill: rgb(235, 235, 235); transform-origin: 294.285px 395.435px;" id="elvkb315h08y" class="animable"></rect><polygon points="169.64 295.67 115.06 295.67 111.75 257.44 166.33 257.44 169.64 295.67" style="fill: rgb(230, 230, 230); transform-origin: 140.695px 276.555px;" id="elas59d32b81" class="animable"></polygon><polygon points="172.47 295.67 117.89 295.67 114.57 257.44 169.15 257.44 172.47 295.67" style="fill: rgb(240, 240, 240); transform-origin: 143.52px 276.555px;" id="el4wqd1n8prai" class="animable"></polygon><polygon points="125.35 287.46 123.53 265.65 161.69 265.65 163.51 287.46 125.35 287.46" style="fill: rgb(255, 255, 255); transform-origin: 143.52px 276.555px;" id="elu909ksw2rgg" class="animable"></polygon><rect x="196.82" y="295.67" width="7.79" height="86.73" style="fill: rgb(230, 230, 230); transform-origin: 200.715px 339.035px;" id="elstgd4dcl7gn" class="animable"></rect><rect x="201.65" y="295.67" width="5.41" height="86.73" style="fill: rgb(240, 240, 240); transform-origin: 204.355px 339.035px;" id="elac1p3gvy4rs" class="animable"></rect><g id="el81w7p0qtp1d"><rect x="131.66" y="295.67" width="75.41" height="9.57" style="fill: rgb(240, 240, 240); transform-origin: 169.365px 300.455px; transform: rotate(180deg);" class="animable" id="elfy99cmp2clf"></rect></g><rect x="126.53" y="305.24" width="7.79" height="77.16" style="fill: rgb(230, 230, 230); transform-origin: 130.425px 343.82px;" id="eld6q3r6mek9n" class="animable"></rect><rect x="131.37" y="305.24" width="5.41" height="77.16" style="fill: rgb(240, 240, 240); transform-origin: 134.075px 343.82px;" id="elrkr1ghkabel" class="animable"></rect><rect x="71.07" y="305.24" width="7.79" height="77.16" style="fill: rgb(230, 230, 230); transform-origin: 74.965px 343.82px;" id="eleyt9l6sx5y" class="animable"></rect><rect x="75.91" y="305.24" width="5.41" height="77.16" style="fill: rgb(240, 240, 240); transform-origin: 78.615px 343.82px;" id="elqcnn3f0fn1o" class="animable"></rect><rect x="147.51" y="305.24" width="7.79" height="77.16" style="fill: rgb(230, 230, 230); transform-origin: 151.405px 343.82px;" id="el98n0qp4o6tm" class="animable"></rect><rect x="152.35" y="305.24" width="5.41" height="77.16" style="fill: rgb(240, 240, 240); transform-origin: 155.055px 343.82px;" id="el733c8e5ua3e" class="animable"></rect><rect x="71.07" y="295.67" width="60.58" height="9.57" style="fill: rgb(230, 230, 230); transform-origin: 101.36px 300.455px;" id="elyn6o5f1yc5" class="animable"></rect><rect x="69.01" y="82.42" width="226.23" height="129.78" style="fill: rgb(230, 230, 230); transform-origin: 182.125px 147.31px;" id="eljy2shpr3t6s" class="animable"></rect><rect x="71.83" y="82.42" width="229.45" height="129.78" style="fill: rgb(240, 240, 240); transform-origin: 186.555px 147.31px;" id="el08h5vwfpauyr" class="animable"></rect><rect x="69.01" y="212.2" width="226.23" height="11.24" style="fill: rgb(230, 230, 230); transform-origin: 182.125px 217.82px;" id="eltw4do0hry5l" class="animable"></rect><rect x="81.9" y="212.2" width="229.45" height="11.24" style="fill: rgb(240, 240, 240); transform-origin: 196.625px 217.82px;" id="el6zgyym32ze" class="animable"></rect><g id="elo271lqmb4yp"><rect x="130.13" y="41.05" width="112.85" height="212.52" style="fill: rgb(250, 250, 250); transform-origin: 186.555px 147.31px; transform: rotate(90deg);" class="animable" id="el92bh7c6uim6"></rect></g><polygon points="95.91 203.73 145.59 90.88 169.05 90.88 119.36 203.73 95.91 203.73" style="fill: rgb(255, 255, 255); transform-origin: 132.48px 147.305px;" id="el58f8rui7ime" class="animable"></polygon><path d="M84.22,195.31a.61.61,0,0,1-.61-.61V96.39a.61.61,0,0,1,1.21,0V194.7A.61.61,0,0,1,84.22,195.31Z" style="fill: rgb(240, 240, 240); transform-origin: 84.215px 145.584px;" id="elfa8bgr504sl" class="animable"></path><polygon points="124.4 203.73 174.09 90.88 183.23 90.88 133.55 203.73 124.4 203.73" style="fill: rgb(255, 255, 255); transform-origin: 153.815px 147.305px;" id="elldes8r85st" class="animable"></polygon><g id="elyw8ohhudz9"><rect x="235.85" y="146.77" width="112.85" height="1.08" style="fill: rgb(230, 230, 230); transform-origin: 292.275px 147.31px; transform: rotate(90deg);" class="animable" id="elq08d83zo2ym"></rect></g><g id="eljqnk5tkmih"><polygon points="303.28 103.65 77.05 103.65 76.28 94.17 302.5 94.17 303.28 103.65" style="fill: rgb(235, 235, 235); opacity: 0.6; transform-origin: 189.78px 98.91px;" class="animable" id="ele60x71ofur9"></polygon></g><g id="eleehaahmtclk"><polygon points="303.28 119.18 77.05 119.18 76.28 109.71 302.5 109.71 303.28 119.18" style="fill: rgb(235, 235, 235); opacity: 0.6; transform-origin: 189.78px 114.445px;" class="animable" id="elygfhrvxdpr"></polygon></g><g id="el01e6tjwoj06j"><polygon points="303.28 134.72 77.05 134.72 76.28 125.25 302.5 125.25 303.28 134.72" style="fill: rgb(235, 235, 235); opacity: 0.6; transform-origin: 189.78px 129.985px;" class="animable" id="elslpsfpxa2x"></polygon></g><g id="elc7qb7e3w238"><polygon points="303.28 150.26 77.05 150.26 76.28 140.78 302.5 140.78 303.28 150.26" style="fill: rgb(235, 235, 235); opacity: 0.6; transform-origin: 189.78px 145.52px;" class="animable" id="elbycdxhcv3ra"></polygon></g><g id="el17be6uucmee"><polygon points="303.28 165.8 77.05 165.8 76.28 156.32 302.5 156.32 303.28 165.8" style="fill: rgb(235, 235, 235); opacity: 0.6; transform-origin: 189.78px 161.06px;" class="animable" id="elz5o5583qah"></polygon></g><g id="elug8xiswt1y"><polygon points="303.28 181.33 77.05 181.33 76.28 171.86 302.5 171.86 303.28 181.33" style="fill: rgb(235, 235, 235); opacity: 0.6; transform-origin: 189.78px 176.595px;" class="animable" id="elt1idxfwm2j"></polygon></g><g id="elk4r49lszise"><rect x="365.42" y="82.42" width="60.92" height="60.92" style="fill: rgb(235, 235, 235); transform-origin: 395.88px 112.88px; transform: rotate(180deg);" class="animable" id="elk854oy1fcrq"></rect></g><rect x="362.72" y="82.42" width="2.7" height="60.92" style="fill: rgb(224, 224, 224); transform-origin: 364.07px 112.88px;" id="elmndknhmu74o" class="animable"></rect><g id="el68pk9lvpjz"><rect x="373.67" y="90.67" width="44.41" height="44.41" style="fill: rgb(255, 255, 255); transform-origin: 395.875px 112.875px; transform: rotate(180deg);" class="animable" id="el1cy3ek0vdut"></rect></g><g id="elpktn8kgag2b"><rect x="385.37" y="102.37" width="21.02" height="21.02" style="fill: rgb(245, 245, 245); transform-origin: 395.88px 112.88px; transform: rotate(135deg);" class="animable" id="elj6nm5uk0ar8"></rect></g><g id="elvdzl6wc1vc"><rect x="344.43" y="162.52" width="60.92" height="60.92" style="fill: rgb(235, 235, 235); transform-origin: 374.89px 192.98px; transform: rotate(180deg);" class="animable" id="elxfqqmnnmbnp"></rect></g><rect x="341.73" y="162.52" width="2.7" height="60.92" style="fill: rgb(224, 224, 224); transform-origin: 343.08px 192.98px;" id="el6f7d7pn5ov" class="animable"></rect><g id="elpn9dlyb4z"><rect x="352.68" y="170.77" width="44.41" height="44.41" style="fill: rgb(255, 255, 255); transform-origin: 374.885px 192.975px; transform: rotate(180deg);" class="animable" id="elwelyyxoon3d"></rect></g><g id="elmdxdg7fgcz"><rect x="365.42" y="183.51" width="18.94" height="18.94" rx="6.31" style="fill: rgb(245, 245, 245); transform-origin: 374.89px 192.98px; transform: rotate(180deg);" class="animable" id="elwm0dvaqrje"></rect></g><rect x="292.53" y="253.03" width="15.19" height="125.28" style="fill: rgb(240, 240, 240); transform-origin: 300.125px 315.67px;" id="elnh0p3mtbqn" class="animable"></rect><rect x="294.64" y="378.31" width="145.86" height="4.09" style="fill: rgb(240, 240, 240); transform-origin: 367.57px 380.355px;" id="eldrniz9qx218" class="animable"></rect><g id="elnx84ka4i6ua"><rect x="307.73" y="253.03" width="134.88" height="125.28" style="fill: rgb(250, 250, 250); transform-origin: 375.17px 315.67px; transform: rotate(180deg);" class="animable" id="elud03n2fwx6d"></rect></g><path d="M416.2,326.24H334.13a14.61,14.61,0,0,1,0-29.22H416.2a14.61,14.61,0,0,1,0,29.22ZM334.13,298a13.63,13.63,0,0,0,0,27.26H416.2a13.63,13.63,0,0,0,0-27.26Z" style="fill: rgb(240, 240, 240); transform-origin: 375.165px 311.63px;" id="eln8akbjafxyo" class="animable"></path><path d="M416.2,362.59H334.13a14.61,14.61,0,0,1,0-29.22H416.2a14.61,14.61,0,1,1,0,29.22Zm-82.07-28.24a13.63,13.63,0,1,0,0,27.25H416.2a13.63,13.63,0,1,0,0-27.25Z" style="fill: rgb(240, 240, 240); transform-origin: 375.165px 347.98px;" id="ellx5r1xbivzd" class="animable"></path><path d="M387.55,308.48H362.78a3.06,3.06,0,0,1-3-3.05h0a3.06,3.06,0,0,1,3-3.05h24.77a3.06,3.06,0,0,1,3.05,3.05h0A3.06,3.06,0,0,1,387.55,308.48Z" style="fill: rgb(235, 235, 235); transform-origin: 375.19px 305.43px;" id="eljubia57ce6n" class="animable"></path><path d="M416.2,289.89H334.13a14.61,14.61,0,1,1,0-29.22H416.2a14.61,14.61,0,1,1,0,29.22Zm-82.07-28.24a13.63,13.63,0,1,0,0,27.26H416.2a13.63,13.63,0,0,0,0-27.26Z" style="fill: rgb(240, 240, 240); transform-origin: 375.165px 275.28px;" id="elhx8m1ovwjnw" class="animable"></path><path d="M387.55,272.13H362.78a3.06,3.06,0,0,1-3-3.05h0a3.05,3.05,0,0,1,3-3h24.77a3.06,3.06,0,0,1,3.05,3h0A3.06,3.06,0,0,1,387.55,272.13Z" style="fill: rgb(235, 235, 235); transform-origin: 375.19px 269.105px;" id="elb5m2eadp3aq" class="animable"></path><path d="M387.55,344.82H362.78a3.05,3.05,0,0,1-3-3h0a3.06,3.06,0,0,1,3-3h24.77a3.06,3.06,0,0,1,3.05,3h0A3.06,3.06,0,0,1,387.55,344.82Z" style="fill: rgb(235, 235, 235); transform-origin: 375.19px 341.82px;" id="el8drib11cbg7" class="animable"></path><rect x="307.73" y="246.67" width="137.65" height="6.37" style="fill: rgb(240, 240, 240); transform-origin: 376.555px 249.855px;" id="el3bkk234flfc" class="animable"></rect><g id="elxf6g9t86d4e"><rect x="289.56" y="246.67" width="18.17" height="6.37" style="fill: rgb(230, 230, 230); transform-origin: 298.645px 249.855px; transform: rotate(180deg);" class="animable" id="elprt5wu1o3es"></rect></g></g><g id="freepik--Shadow--inject-51" class="animable animator-hidden" style="transform-origin: 250px 416.24px;"><ellipse id="freepik--path--inject-51" cx="250" cy="416.24" rx="193.89" ry="11.32" style="fill: rgb(245, 245, 245); transform-origin: 250px 416.24px;" class="animable"></ellipse></g><g id="freepik--terms-and-conditions--inject-51" class="animable" style="transform-origin: 307.31px 280.318px;"><path d="M413.64,148.23H262.92s-27.15,25-27.15,85.78c0,52.27,20.59,123.14,12.86,152.15-5.83,21.89-34.1,25.65-47.65,26.17H344.44s47.18,2.85,54.91-26.17S386.49,286.28,386.49,234C386.49,173.19,413.64,148.23,413.64,148.23Z" style="fill: #1773B5; transform-origin: 307.31px 280.318px;" id="elwyxfzaqxy4r" class="animable"></path><g id="elc116fv08dk7"><path d="M413.64,148.23H262.92s-27.15,25-27.15,85.78c0,52.27,20.59,123.14,12.86,152.15-5.83,21.89-34.1,25.65-47.65,26.17H344.44s47.18,2.85,54.91-26.17S386.49,286.28,386.49,234C386.49,173.19,413.64,148.23,413.64,148.23Z" style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 307.31px 280.318px;" class="animable" id="el7qhz5pw5qju"></path></g><g id="elc0vsjgtqb8s"><g style="opacity: 0.8; transform-origin: 318.385px 265.735px;" class="animable" id="el7a24lkxmxsl"><g id="eldpw10iu1sxm"><path d="M372.64,212.33H252.1c3.41-26.74,12.6-42.3,17.67-49.1H386C380.3,175.13,374.92,191.34,372.64,212.33Z" style="fill: #1773B5; opacity: 0.8; transform-origin: 319.05px 187.78px;" class="animable" id="elghz4biako6"></path></g><g id="el3r2c2qabx42"><path d="M371.63,226.51H250.92c.1-2.43.24-4.79.44-7.07H372Q371.75,222.89,371.63,226.51Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 311.46px 222.975px;" class="animable" id="el5igqz892qzi"></path></g><g id="el2as739eigwo"><path d="M288.77,240.68H250.88q-.1-3.39-.11-6.67v-.39h37.9V234C288.67,236.21,288.7,238.44,288.77,240.68Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 269.77px 237.15px;" class="animable" id="eloxskia86vw"></path></g><g id="elj4akep844s"><path d="M372.35,254.85H251.73c-.21-2.38-.38-4.74-.51-7.06H371.89Q372.07,251.3,372.35,254.85Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 311.785px 251.32px;" class="animable" id="el1vahol6yd72i"></path></g><g id="elpgfl03xj3k"><path d="M373.68,269H253.16q-.42-3.55-.78-7.07H373C373.17,264.31,373.42,266.67,373.68,269Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 313.03px 265.465px;" class="animable" id="el2ys0eus2k1y"></path></g><g id="elg4xnthybcq6"><path d="M375.42,283.2H255c-.33-2.36-.64-4.72-.94-7.06H374.52Q374.94,279.67,375.42,283.2Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 314.74px 279.67px;" class="animable" id="el8sn72tk6axf"></path></g><g id="elu37ul1xon3"><path d="M377.41,297.37H257q-.52-3.54-1-7.06H376.4C376.73,292.66,377.07,295,377.41,297.37Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 316.705px 293.84px;" class="animable" id="eljrh13zre71f"></path></g><g id="elal7lt8gdwg9"><path d="M379.54,311.55H259.17c-.19-1.29-.39-2.6-.59-3.91l-.48-3.16H378.47C378.83,306.84,379.18,309.2,379.54,311.55Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 318.82px 308.015px;" class="animable" id="el31jtgpfpab"></path></g><g id="eldpbwwyqicid"><path d="M261.27,325.72q-.5-3.5-1-7.06H380.62c.35,2.36.71,4.71,1.05,7.06Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 320.97px 322.19px;" class="animable" id="eld8akkfmhpn"></path></g><g id="el7rm8qxgdkct"><path d="M263.18,339.89c-.28-2.31-.59-4.67-.91-7.06h100.4c.34,2.38.66,4.74,1,7.06Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 312.97px 336.36px;" class="animable" id="elxxo6p55zrzb"></path></g><g id="elkbpyj6gxi2"><path d="M264.66,354.07q-.29-3.46-.66-7.07H384.52c.27,2.42.52,4.78.73,7.07Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 324.625px 350.535px;" class="animable" id="el0kx2wtj2b2o"></path></g><g id="elghk8la6pesv"><path d="M265.35,368.24c0-2.28-.09-4.64-.22-7.06h63.59c.16,2.47.25,4.83.28,7.06Z" style="fill: #1773B5; opacity: 0.3; transform-origin: 297.065px 364.71px;" class="animable" id="elwaneowua4db"></path></g></g></g><path d="M356,404.68c-7.65,1.39-15.4.33-23.09,0a61,61,0,0,0-11.06.29c-3.6.48-7.18,1.42-10.81,1.1a19.62,19.62,0,0,0,3.37-2.29.37.37,0,0,0-.16-.62c-11.29-4-21.57,6.82-32.82,4.3,3.19-2.36,7.68-2.41,10.4-5.51a.38.38,0,0,0-.27-.64C281.5,401.11,272,405,262,405.89c-.48,0-.48.79,0,.75,9.65-.84,18.9-4.53,28.63-4.61-2.91,2.6-7.35,2.69-10.31,5.31a.38.38,0,0,0,.16.63c11.34,3.13,21.66-7.69,32.86-4.35a18.84,18.84,0,0,1-3.79,2.31.38.38,0,0,0,.09.69c3.69.62,7.3-.17,10.94-.75a59.61,59.61,0,0,1,12.31-.48c7.77.37,15.57,1.42,23.29,0C356.69,405.32,356.49,404.59,356,404.68Z" style="fill: #1773B5; transform-origin: 309.059px 404.924px;" id="el3igbmzflo0m" class="animable"></path></g><g id="freepik--Character--inject-51" class="animable animator-active" style="transform-origin: 179.664px 277.855px;"><path d="M151.88,185.13c.63.81,1.44,1.76,2.18,2.64s1.55,1.77,2.35,2.63c1.61,1.72,3.24,3.41,5,5a45.3,45.3,0,0,0,11,7.7c.49.22,1,.42,1.45.6a6.84,6.84,0,0,0,.68.23,3.58,3.58,0,0,0,.66.19,15.48,15.48,0,0,0,2.93.46,31.36,31.36,0,0,0,6.62-.38,61.34,61.34,0,0,0,6.89-1.46c2.3-.6,4.65-1.34,6.84-2.11l2,4a56,56,0,0,1-14.3,6.36,34.62,34.62,0,0,1-8.16,1.31,21.39,21.39,0,0,1-4.47-.29c-.38-.06-.77-.15-1.15-.24s-.78-.19-1.11-.3c-.7-.21-1.38-.44-2-.7A47.14,47.14,0,0,1,155.45,202a75.07,75.07,0,0,1-5.67-5.46c-.89-1-1.76-1.93-2.6-2.93s-1.64-2-2.51-3.15Z" style="fill: rgb(255, 181, 115); transform-origin: 172.575px 198.724px;" id="elkkwjst9dlpo" class="animable"></path><path d="M141.71,182.3c-.22,5.6,2,15.7,2,15.7l13.86-1.68s.51-14.78-2.18-18.35C150.84,172,141.92,177,141.71,182.3Z" style="fill: #1773B5; transform-origin: 149.652px 186.629px;" id="elhwydc9i0y6m" class="animable"></path><path d="M196.62,202.05l6.49-5.94.83,6.4s-2.69,3.61-5.74,2.09Z" style="fill: rgb(255, 181, 115); transform-origin: 200.28px 200.542px;" id="elrfebxzcs97i" class="animable"></path><polygon points="206.37 196.46 209.12 200.06 203.94 202.51 203.11 196.11 206.37 196.46" style="fill: rgb(255, 181, 115); transform-origin: 206.115px 199.31px;" id="el0gdlhm09pjt5" class="animable"></polygon><path d="M204.73,180.27c.69,0,1.07,0,1.56,0a4.58,4.58,0,0,1,.63,0l.52.07a2.6,2.6,0,0,1,1.24.49,1.52,1.52,0,0,1,.34.73l.23.76.93,3,1.86,6.07,3.71,12.15c2.45,8.1,5,16.18,7.36,24.3,4.85,16.22,9.44,32.5,13.95,48.81s8.75,32.69,13.11,49,8.26,32.81,9.65,49.93a5,5,0,0,1-9.47,2.45c-7.1-15.64-11.74-31.91-15.8-48.33S226.18,297,222.2,280.59s-7.87-32.91-11.51-49.44c-1.87-8.25-3.57-16.55-5.36-24.82l-2.65-12.42-1.33-6.21-.66-3.11-.17-.77a1.57,1.57,0,0,1-.06-.81,2.72,2.72,0,0,1,.84-1l.43-.32a4.29,4.29,0,0,1,.52-.34c.43-.25.74-.46,1.36-.76A3,3,0,0,1,204.73,180.27Z" style="fill: rgb(38, 50, 56); transform-origin: 230.129px 280.529px;" id="eliz8br508x8" class="animable"></path><path d="M258.86,378.16a1.07,1.07,0,0,0-1.3-.75l-2.2.57-2.2.57a1.07,1.07,0,0,0-.77,1.29c1.37,6.3,0,10.81,1.46,16.35,1.51,5.83,8.08,8.82,8.08,8.82l-.21-2.49,1,2.28s4.29-5.8,2.78-11.63C264.08,387.63,260.72,384.33,258.86,378.16Z" style="fill: #1773B5; transform-origin: 259.091px 391.193px;" id="el9ztrbk2h97a" class="animable"></path><g id="el7ddvb9okuuk"><path d="M258.86,378.16a1.07,1.07,0,0,0-1.3-.75l-2.2.57-2.2.57a1.07,1.07,0,0,0-.77,1.29c1.37,6.3,0,10.81,1.46,16.35,1.51,5.83,8.08,8.82,8.08,8.82l-.21-2.49,1,2.28s4.29-5.8,2.78-11.63C264.08,387.63,260.72,384.33,258.86,378.16Z" style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 259.091px 391.193px;" class="animable" id="elpmcgvzdbh9"></path></g><path d="M260.57,392.62a1.37,1.37,0,1,1-1.67-1A1.38,1.38,0,0,1,260.57,392.62Z" style="fill: rgb(38, 50, 56); transform-origin: 259.24px 392.948px;" id="elo46utsblnhg" class="animable"></path><path d="M261.8,402.82a.3.3,0,0,1-.38-.22l-2.48-9.55a.31.31,0,0,1,.22-.38.3.3,0,0,1,.38.22l2.48,9.55A.31.31,0,0,1,261.8,402.82Z" style="fill: rgb(38, 50, 56); transform-origin: 260.48px 397.745px;" id="el5b64duij3og" class="animable"></path><path d="M253.7,343.82l-13.48,3.49a1.46,1.46,0,0,1-1.77-1.05h0a1.46,1.46,0,0,1,1-1.77L253,341a1.46,1.46,0,0,1,1.77,1h0A1.47,1.47,0,0,1,253.7,343.82Z" style="fill: #1773B5; transform-origin: 246.613px 344.153px;" id="elecpmvhdiesi" class="animable"></path><path d="M185.27,160.8c-.24.6-.11,1.23.28,1.4s.91-.18,1.15-.78.12-1.23-.28-1.4S185.52,160.2,185.27,160.8Z" style="fill: rgb(38, 50, 56); transform-origin: 185.986px 161.11px;" id="elqyo9uxqeckm" class="animable"></path><path d="M186.24,160l1.61.21S186.65,161,186.24,160Z" style="fill: rgb(38, 50, 56); transform-origin: 187.045px 160.253px;" id="eljy1rgiaqjp" class="animable"></path><path d="M185.55,161.6a17.87,17.87,0,0,0,.6,4.77,2.79,2.79,0,0,1-2.3-.53Z" style="fill: rgb(237, 137, 62); transform-origin: 185px 164.016px;" id="el38h3omndnsl" class="animable"></path><path d="M187.69,157.14a.38.38,0,0,1-.17-.08,3.17,3.17,0,0,0-2.7-.78.39.39,0,0,1-.47-.27.39.39,0,0,1,.27-.47,3.93,3.93,0,0,1,3.4.94.38.38,0,0,1,0,.54A.37.37,0,0,1,187.69,157.14Z" style="fill: rgb(38, 50, 56); transform-origin: 186.235px 156.304px;" id="eliziu5co3d9f" class="animable"></path><path d="M164.07,160.49c.43,4.87-1.19,12.84-4.87,15.55,0,0,2.77,5.12,11.64,6.31,9.75,1.31,5.17-4.18,5.17-4.18-5.19-2-4.63-5.87-3.32-9.43Z" style="fill: rgb(255, 181, 115); transform-origin: 168.142px 171.521px;" id="elb2grf7ig67j" class="animable"></path><path d="M190.64,186.48c.77,4.54,1.72,9.25,2.71,13.84.53,2.29,1.06,4.59,1.68,6.84s1.24,4.5,1.93,6.71c.38,1.09.72,2.2,1.12,3.26l.6,1.6.14.39,0,.12a1.71,1.71,0,0,0,.07.18,1.58,1.58,0,0,0,.94.73,8.2,8.2,0,0,0,2.46.47,29.61,29.61,0,0,0,6.4-.52c2.21-.4,4.54-.94,6.71-1.54l1.83,4.05a38.44,38.44,0,0,1-3.4,1.8,35.61,35.61,0,0,1-3.53,1.5,29.5,29.5,0,0,1-7.85,1.88,15,15,0,0,1-4.72-.32,9.49,9.49,0,0,1-5.09-3.07,9.77,9.77,0,0,1-.92-1.32c-.14-.23-.25-.47-.37-.7l-.19-.45-.78-1.75c-.51-1.17-1-2.34-1.43-3.52-.86-2.36-1.68-4.73-2.39-7.11s-1.35-4.78-2-7.18c-1.19-4.82-2.16-9.59-2.88-14.58Z" style="fill: rgb(255, 181, 115); transform-origin: 199.455px 207.166px;" id="elxoyfucju9qf" class="animable"></path><path d="M214.44,218.84l3.86-3.06,1.74,5.94s-5.28,3.82-6.69-.67Z" style="fill: rgb(255, 181, 115); transform-origin: 216.695px 219.508px;" id="el6vsnxahpajy" class="animable"></path><polygon points="221.79 216.83 223.17 221.17 220.04 221.72 218.31 215.78 221.79 216.83" style="fill: rgb(255, 181, 115); transform-origin: 220.74px 218.75px;" id="ela2ynveszm7c" class="animable"></polygon><polygon points="149.67 407.41 157.74 408.01 160.13 389.48 152.06 388.88 149.67 407.41" style="fill: rgb(255, 181, 115); transform-origin: 154.9px 398.445px;" id="elaim4a28zv0p" class="animable"></polygon><polygon points="97.99 383.87 104.98 388.12 116.61 373.6 109.62 369.35 97.99 383.87" style="fill: rgb(255, 181, 115); transform-origin: 107.3px 378.735px;" id="ellor1rixjx" class="animable"></polygon><path d="M109.86,390.26a1,1,0,0,1-.3,0c-1,0-2.19-1.56-2.79-2.48a.18.18,0,0,1,0-.21.19.19,0,0,1,.19-.09c.33.07,3.22.68,3.6,1.64a.65.65,0,0,1-.1.64A1.13,1.13,0,0,1,109.86,390.26Zm-2.5-2.27c.85,1.2,1.66,1.91,2.21,1.92a.67.67,0,0,0,.59-.34.26.26,0,0,0,0-.28C110,388.78,108.51,388.27,107.36,388Z" style="fill: #1773B5; transform-origin: 108.67px 388.875px;" id="elzx1qit6zbi" class="animable"></path><path d="M109.43,387.76a6,6,0,0,1-2.55.13.2.2,0,0,1-.13-.14.18.18,0,0,1,0-.18c.06-.07,1.65-1.7,2.82-1.65a1,1,0,0,1,.78.39.67.67,0,0,1,.1.83A1.9,1.9,0,0,1,109.43,387.76Zm-2.1-.18c1,.11,2.54-.18,2.85-.64,0-.08.08-.19-.08-.39a.64.64,0,0,0-.5-.25A4.29,4.29,0,0,0,107.33,387.58Z" style="fill: #1773B5; transform-origin: 108.638px 386.944px;" id="elgmafjvvu6jj" class="animable"></path><path d="M107.08,386.56l-6.63-6.38a.64.64,0,0,0-.85-.06l-5.66,4.36a1.29,1.29,0,0,0,0,1.93c2.35,2.19,3.59,3.13,6.5,5.94,1.8,1.73,4.24,4.43,6.72,6.82s4.9.13,4.08-1.08c-3.7-5.42-3.15-7.45-3.48-10.22A2.22,2.22,0,0,0,107.08,386.56Z" style="fill: rgb(38, 50, 56); transform-origin: 102.454px 390.105px;" id="el983a6mj27nr" class="animable"></path><path d="M161.24,408.27a13.46,13.46,0,0,1-2.54-.29.19.19,0,0,1-.15-.16.2.2,0,0,1,.1-.2c.37-.19,3.65-1.84,4.61-1.28a.57.57,0,0,1,.31.5,1.05,1.05,0,0,1-.37.93A3.07,3.07,0,0,1,161.24,408.27Zm-1.9-.56c1.78.29,3.11.22,3.61-.22a.7.7,0,0,0,.24-.62.21.21,0,0,0-.11-.2C162.54,406.37,160.69,407.07,159.34,407.71Z" style="fill: #1773B5; transform-origin: 161.063px 407.253px;" id="elnpo6cywqevj" class="animable"></path><path d="M158.74,408a.2.2,0,0,1-.11,0,.18.18,0,0,1-.08-.18c0-.14.39-3.44,2.2-3.44h.15c.53.05.68.31.71.53.15.91-1.81,2.66-2.79,3.1Zm2-3.27c-1.16,0-1.62,1.92-1.76,2.74,1-.6,2.33-2,2.24-2.52,0-.05,0-.18-.37-.21Z" style="fill: #1773B5; transform-origin: 160.083px 406.195px;" id="elues2wqyva8" class="animable"></path><path d="M158.24,406.86h-9.07a.67.67,0,0,0-.66.55l-1.22,7.17a1.27,1.27,0,0,0,1.26,1.44c3.16,0,4.69-.24,8.68-.24,2.45,0,7.52.25,10.91.25s3.66-3.35,2.25-3.65c-6.29-1.36-8.73-3.24-10.81-5A2.09,2.09,0,0,0,158.24,406.86Z" style="fill: rgb(38, 50, 56); transform-origin: 159.236px 411.445px;" id="elkcigwru8eu8" class="animable"></path><g id="elejmrn8pveth"><polygon points="160.13 389.48 158.8 399.78 150.82 398.44 152.06 388.89 160.13 389.48" style="opacity: 0.2; transform-origin: 155.475px 394.335px;" class="animable" id="el7ulkk7vcthf"></polygon></g><g id="elmry0syddef"><polygon points="109.61 369.35 116.61 373.61 111.79 379.61 104.65 375.54 109.61 369.35" style="opacity: 0.2; transform-origin: 110.63px 374.48px;" class="animable" id="eltgdcu5940xn"></polygon></g><path d="M145.6,224.66l32.67,4.39C190.93,183.23,187.2,182,187.2,182a33.16,33.16,0,0,0-4.45-1.74q-2.31-.84-4.67-1.53a82.49,82.49,0,0,0-9.57-2.23,83.63,83.63,0,0,0-19-1.07,4.24,4.24,0,0,0-3.2,1.83,3.79,3.79,0,0,0-.35.62,4.56,4.56,0,0,0-.4,2.44C148.32,204.4,147.43,212.32,145.6,224.66Z" style="fill: #1773B5; transform-origin: 166.622px 202.17px;" id="el6t2eewcasdq" class="animable"></path><g id="el9vt7o26tnnu"><path d="M181.45,196a27.38,27.38,0,0,0,1.77,14c2.17-8.94,3.35-15,3.93-19.2C184.66,190.69,182.07,191.65,181.45,196Z" style="opacity: 0.2; transform-origin: 184.176px 200.396px;" class="animable" id="elp2yocpzrkxq"></path></g><path d="M186.91,181.84c5.6,3.2,9.49,10.83,10.66,15.26L185.65,208s-6.18-14.37-5.68-18.83S184.8,180.63,186.91,181.84Z" style="fill: #1773B5; transform-origin: 188.756px 194.812px;" id="elqim65b3l4us" class="animable"></path><path d="M165.84,150.44c-2.51,7.58-3.73,10.73-1.53,16.13,3.32,8.13,13.15,9.85,17.87,3.24,4.25-5.95,7.64-17.35,1.59-23.41A10.67,10.67,0,0,0,165.84,150.44Z" style="fill: rgb(255, 181, 115); transform-origin: 175.107px 158.456px;" id="elqkcpzewzwjh" class="animable"></path><path d="M178.27,157.16a7.2,7.2,0,0,0-.24,4.35c.5,2,2,2.17,2.93.88s1.56-3.62.56-5.3S178.92,155.63,178.27,157.16Z" style="fill: rgb(255, 181, 115); transform-origin: 179.915px 159.567px;" id="eluk4guongr3" class="animable"></path><path d="M168.56,141c-5.4-3-15.12,5.78-17.56,20.11-1.75,10.26,20.16,15.22,34,15.06-.92-2.42-6.67-9.7-3-16.71,2.67-5.09,5.71-3.91,5.91-9.83C188.16,142.17,178.28,137.17,168.56,141Z" style="fill: rgb(38, 50, 56); transform-origin: 169.408px 157.927px;" id="el8uft554j4ji" class="animable"></path><path d="M180.85,144.22c6.28-.61,12.59,5.56,7.91,11.71a10,10,0,0,0-8.24-2C177.65,154.57,180.85,144.22,180.85,144.22Z" style="fill: rgb(38, 50, 56); transform-origin: 184.854px 150.054px;" id="ela25fah70kya" class="animable"></path><path d="M169.65,227.89S157,281.51,151,312.32c-6.26,32.5-36.27,66.36-36.27,66.36L104.57,373s18.88-30.9,25-61.25c12.44-61.6,4-74,16-87.08Z" style="fill: rgb(38, 50, 56); transform-origin: 137.11px 301.675px;" id="elime3j0g0dw" class="animable"></path><polygon points="115.77 379.63 103.04 372.54 104.9 368.78 119.18 375.35 115.77 379.63" style="fill: #1773B5; transform-origin: 111.11px 374.205px;" id="elen3ilvzwgcp" class="animable"></polygon><g id="elnzl4s9gaza"><path d="M162.9,239.54c-9.86,8.57-8.79,39-7.76,52.66,4.14-19.48,9.11-41.16,12-53.71C166.13,237.71,164.72,238,162.9,239.54Z" style="opacity: 0.2; transform-origin: 160.819px 265.136px;" class="animable" id="el6yf7434s2v6"></path></g><path d="M177.79,229.07s5.71,63.67,2.59,87.95c-3.24,25.26-19.72,80.21-19.72,80.21L149,395.73s9.46-54.46,11.14-79.46c1.83-27.27-6.3-90.41-6.3-90.41Z" style="fill: rgb(38, 50, 56); transform-origin: 165.156px 311.545px;" id="eln6xhbjxnvc" class="animable"></path><polygon points="163.13 397.9 146.55 395.76 146.8 390.86 164.8 392.6 163.13 397.9" style="fill: #1773B5; transform-origin: 155.675px 394.38px;" id="elin196gc48l" class="animable"></polygon><path d="M145.31,222.69l-1.78,2.71c-.14.21.11.47.48.52l34.27,4.6c.3,0,.56-.07.59-.25l.61-2.86c0-.2-.2-.41-.52-.45l-33.09-4.44A.61.61,0,0,0,145.31,222.69Z" style="fill: #1773B5; transform-origin: 161.485px 226.514px;" id="elxmm6cqfbbl8" class="animable"></path><g id="eltub7atx090r"><path d="M145.31,222.69l-1.78,2.71c-.14.21.11.47.48.52l34.27,4.6c.3,0,.56-.07.59-.25l.61-2.86c0-.2-.2-.41-.52-.45l-33.09-4.44A.61.61,0,0,0,145.31,222.69Z" style="opacity: 0.5; transform-origin: 161.485px 226.514px;" class="animable" id="elndtur6g9cu"></path></g><path d="M149.37,227l-.89-.12c-.18,0-.3-.13-.28-.24l.82-3.72c0-.1.19-.17.36-.15l.89.12c.18,0,.3.13.28.24l-.82,3.72C149.71,226.91,149.54,227,149.37,227Z" style="fill: rgb(38, 50, 56); transform-origin: 149.375px 224.883px;" id="elspn7i1717yg" class="animable"></path><path d="M171.75,230l-.89-.12c-.17,0-.3-.13-.28-.24l.82-3.72c0-.11.19-.18.37-.15l.88.11c.18,0,.3.14.28.25l-.82,3.71C172.09,230,171.92,230,171.75,230Z" style="fill: rgb(38, 50, 56); transform-origin: 171.755px 227.882px;" id="el0sa35srosrmb" class="animable"></path></g><defs>     <filter id="active" height="200%">         <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>    </filter>    <filter id="hover" height="200%">        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>            <feColorMatrix type="matrix" values="0   0   0   0   0                0   1   0   0   0                0   0   0   0   0                0   0   0   1   0 "></feColorMatrix>    </filter></defs></svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- section about us end-->
+
+        </div>
+    </div>
+    <div class="communication-iso box-shadow-lg position-fixed rounded-circle iso-bg-green-dark">
+        <div class="icon-support-light pointer-event img-sm" aria-expanded="false" role="button"></div>
+        <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
+            <li class="iso-bg-green-dark text-light rounded-pill p-2">
+                <span>پیام در واتساپ</span>
+                <img src="../../images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
+            </li>
+            <li class="my-3 my-lg-2 iso-bg-green-dark text-light rounded-pill p-2">
+                <span>پیام در تلگرام</span>
+                <img src="../../images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
+            </li>
+            <li class="iso-bg-green-dark text-light rounded-pill p-2">
+                <span>پیام در تیکت</span>
+                <img src="../../images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
+            </li>
+            <li class="my-3 my-lg-2 mb-4 mb-lg-3 iso-bg-green-dark text-light rounded-pill p-2 mb-3">
+                <span>تماس تلفنی</span>
+                <img src="../../images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
+            </li>
+        </ul>
+    </div>
+    <div class="scroll-top box-shadow-lg position-fixed border-radius align-items-center justify-content-center d-none iso-bg-green-dark pointer-event" role="button">
+        <i class="fa-solid fa-chevron-up text-light iso-font-llg-em"></i>
+    </div>
+</main>
+<!-- main section end-->
+
+<!-- footer section start-->
+<footer class="mt-4">
+    <div class="container-xxl">
+        <div class="row iso-bg-blue-dark">
+            <div class="footer-support order-1 order-md-2 order-xxl-2  col-12 col-md-6 col-xxl-3 px-12 bg-transparent flex-wrap flex-row text-light border-end">
+                <div class="footer-header border-0 pt-3 p-0 bg-transparent col-12 d-flex flex-wrap flex-row justify-content-around align-items-center">
+                    <div class="row w-100 m-0 px-2">
+                        <div class="col-6 col-xxl-12 text-nowrap p-0 justify-content-start d-flex align-items-center">
+                            <div class="footer-title iso-font-md m-0">نیاز به پشتیبانی دارید؟</div>
+                        </div>
+                        <div class="col-6 col-xxl-12 p-0 mt-xxl-2">
+                            <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-center align-items-center rounded-pill">
+                                <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                                <div class="icon-support"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-body border-0 p-0 pb-3 mt-2 iso-font-md-em ms-1">
+                    <span class="card-text fw-normal ms-md-5 ms-xxl-0">پاسخگویی در روزهای کاری 9 صبح تا 16 عصر</span>
+                    <ul class="row gy-3 fw-normal m-0 ps-3">
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="../list_doctors/list_doctors.html" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                پزشکان
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="faq.html" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                سوالات متداول
+                            </a>
+                        </li>
+
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="#" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                خدمات
+                            </a>
+                        </li>
+
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="site-guide.html" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                راهنمای سایت
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="../specialty/specialty.html" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                تخصص ها
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="privacy-policy.html" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                حریم خصوصی
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="terms-conditions.html" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                شرایط و قوانین
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-5 col-xxl-6 offset-md-1 offset-xxl-0 p-0">
+                            <a href="#" class="text-light hover-line-white ms-2 ms-sm-3 ms-md-1">
+                                ثبت شکایت
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-certificates order-2 order-md-4 order-xxl-4  col-12 col-md-6 col-xxl px-12 overflow-hidden text-light border-end">
+                <div class="footer-header pt-3 border-0 mb-4 bg-transparent">
+                    <div class="footer-title text-center iso-font-md text-xxl-start">گواهینامه ها</div>
+                </div>
+                <div class="footer-body d-flex pb-1 d-flex align-items-center ">
+                    <div class="swiper swiper-certificates mb-3 mb-sm-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ms-2 bg-light py-1 d-flex justify-content-center border-radius">
+                                <a href="#">
+                                    <img src="../../images/certificates/symbol-trust.png" alt="مرکز توسعه تجارت الکترونیکی وزارت صنعت و معدن" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide bg-light py-2 d-flex justify-content-center border-radius">
+                                <a href="#">
+                                    <img src="../../images/certificates/virtual-business.png" alt="عضو اتحادیه کشوری کسب و کار های مجازی" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide bg-light py-1 d-flex justify-content-center border-radius">
+                                <img src="../../images/certificates/irannsr.png" alt="نظام صنفی رایانه ای" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide bg-light py-1 d-flex justify-content-center border-radius">
+                                <img src="../../images/certificates/mojaveze_nashr.png" alt="مرکز توسعه فرهنگ و هنر در فضای مجازی مجوز نشر دیجیتال بر خط " class="img-fluid">
+                            </div>
+                            <div class="swiper-slide bg-light py-1 d-flex justify-content-center border-radius">
+                                <img src="../../images/certificates/samandhi.png" alt="نشان ملی ثبت (رسانه های دیجیتال)" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-certificates"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-about order-3 order-md-1 order-xxl-1 px-12  col-12 col-md-6 col-xxl-3 d-flex flex-wrap text-light bg-transparent border-end">
+                <div class="footer-header p-0 pt-3 border-0 bg-transparent">
+                    <div class="footer-title">
+                        <h2 class="iso-font-xxl-em">ایزو ویزیت</h2>
+                        <p class="iso-font-lg-em mt-3">مشاوره آنلاین پزشکی و طب سنتی</p>
+                    </div>
+                </div>
+                <div class="footer-body p-0 pb-3">
+                    <p class="footer-text iso-font-md-em fw-normal lh-md mt-2">
+                        ایزو ویزیت قرار است یک بستر برای بهینه سازی ارتباط امن و کاربردی بین پزشک و بیمار باشد . از طرفی یک سیستم کامل و کاربردی برای نگهداری و مدیریت پرونده های پزشکی بیماران در مطب خواهد بود
+                    </p>
+                </div>
+            </div>
+            <div class="footer-contact order-4 order-md-3 order-xxl-3  col-12 col-md-6 col-xxl px-12 bg-transparent text-light border-end">
+                <div class="footer-header p-0 pt-3 border-0 bg-transparent">
+                    <div class="footer-title text-center text-xxl-start border-0 iso-font-md bg-transparent">ارتباط با ما</div>
+                </div>
+                <div class="footer-body p-0 pb-3 m-0 mt-3 d-flex flex-wrap justify-content-center align-items-center">
+                    <address class="d-flex align-items-start my-4">
+                        <img src="../../images/icons/map.png" alt="نشانی">
+                        <span class="mx-2 iso-font-sm fw-normal lh-base">
+                        ایران ، خراسان رضوی ، مشهد ، بلوار سجاد ، بزرگمهر 13 ، یاسمن 15 ، پلاک 18
+                        </span>
+                    </address>
+                    <div class="footer-social-networks d-flex justify-content-center flex-row-reverse mt-4">
+                        <div class="box-youtube bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blue-dark fa-youtube iso-font-xl-em"></i>
+                            </a>
+                        </div>
+                        <div class="box-twitter bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blue-dark fa-twitter iso-font-xl-em"></i>
+                            </a>
+                        </div>
+                        <div class="box-facebook bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fab iso-color-blue-dark fa-facebook-f iso-font-xl-em"></i>
+                            </a>
+                        </div>
+                        <div class="box-linkedin-in bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fa-brands iso-color-blue-dark fa-linkedin-in iso-font-xl-em"></i>
+                            </a>
+                        </div>
+                        <div class="box-aparat bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <div class="icon-aparat"></div>
+                            </a>
+                        </div>
+                        <div class="box-instagram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <div class="icon-instagram-blue"></div>
+                            </a>
+                        </div>
+                        <div class="box-telegram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <div class="icon-telegram-blue"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="footer-text mt-3 m-0 fw-normal iso-font-xs-em">© تمامی حقوق مادی و معنوی این وب سایت به ایزو ویزیت تعلق دارد.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end-->
+
+<script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../../node_modules/lazyloadxt/dist/jquery.lazyloadxt.js"></script>
+<script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../node_modules/swiper/swiper-bundle.js"></script>
+<script src="../../../node_modules/leaflet/dist/leaflet.js"></script>
+<script src="../../../node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js"></script>
+<script src="../../../node_modules/clipboard/dist/clipboard.min.js"></script>
+<script src="../../js/general_function.js"></script>
+<script src="../../js/init/initSwiper.js"></script>
+<script src="../../js/index.js"></script>
+<script src="../../js/doctors_consulting.js"></script>
+</body>
+</html>
