@@ -230,11 +230,11 @@ $(document).ready(function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
         let counter_live = $(this).find('~ span').text();
         if(val_aria_expanded == 'true'){
-            $(this).attr('src','./images/icons/love.png').addClass('love-disabled').removeClass('love-active');
+            $(this).attr('src','../../images/icons/love.png').addClass('love-disabled').removeClass('love-active');
             $(this).attr('aria-expanded','false');
             $(this).find('~ span').text(--counter_live);
         }else {
-            $(this).attr('src','./images/icons/love-active.png').addClass('love-active').removeClass('love-disabled');
+            $(this).attr('src','../../images/icons/love-active.png').addClass('love-active').removeClass('love-disabled');
             $(this).attr('aria-expanded','true');
             $(this).find('~ span').text(++counter_live);
         }
@@ -253,7 +253,7 @@ $(document).ready(function (){
                 '                    <div class="card p-2 bg-light border-radius">\n' +
                 '                        <div class="card-header border-0 p-0 bg-transparent fw-normal text-center">\n' +
                 '                            <figure class="figure d-flex align-items-center">\n' +
-                '                                <img src="./images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">\n' +
+                '                                <img src="../../images/doc3.jpg" class="figure-img m-0 rounded-circle img-md" alt="...">\n' +
                 '                                <figcaption class="figure-caption fw-normal d-flex flex-column iso-font-md-em iso-color-dark mx-2">\n' +
                 '                                    <span class="iso-font-sm-em text-start">محمد رضا فنودی</span>\n' +
                 '                                    <div class="row gx-2 iso-font-xs-em mt-1 fw-normal">\n' +
@@ -272,7 +272,7 @@ $(document).ready(function (){
                 '                        <div class="card-footer bg-transparent border-0 p-0">\n' +
                 '                            <div class="row d-flex justify-content-between">\n' +
                 '                                <div class="col-6 d-flex align-items-center">\n' +
-                '                                    <img src="./images/icons/love.png" class="love pointer-event" role="button" aria-expanded="false" alt="پسندیدم">\n' +
+                '                                    <img src="../../images/icons/love.png" class="love pointer-event" role="button" aria-expanded="false" alt="پسندیدم">\n' +
                 '                                    <span class="mx-2">3</span>\n' +
                 '                                </div>\n' +
                 '                                <div class="col-6">\n' +

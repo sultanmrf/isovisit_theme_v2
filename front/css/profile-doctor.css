@@ -82,6 +82,9 @@ header,
 footer {
   font-size: 16px; }
 
+.menu-user-body {
+  transform: translatey(-5px); }
+
 /* ellipse light li */
 .footer-support li,
 .menu-user li,

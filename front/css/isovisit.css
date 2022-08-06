@@ -322,6 +322,9 @@ header,
 footer {
   font-size: 16px; }
 
+.menu-user-body {
+  transform: translatey(-5px); }
+
 /* ellipse light li */
 .footer-support li,
 .menu-user li,
@@ -799,9 +802,9 @@ header {
     header .menu-user .dropdown-menu {
       z-index: 4;
       width: 230px;
-      transform: translate(0px, 31px) !important;
-      -webkit-transform: translate(0px, 31px) !important;
-      -moz-transform: translate(0px, 31px) !important; }
+      transform: translate(0px, 29px) !important;
+      -webkit-transform: translate(0px, 29px) !important;
+      -moz-transform: translate(0px, 29px) !important; }
     header .menu-user .dropdown-toggle:after {
       all: unset; }
     header .menu-user .btn-user,
@@ -873,6 +876,9 @@ main,
 header,
 footer {
   font-size: 16px; }
+
+.menu-user-body {
+  transform: translatey(-5px); }
 
 /* ellipse light li */
 .footer-support li,

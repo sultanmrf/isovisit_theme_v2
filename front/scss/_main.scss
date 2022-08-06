@@ -59,6 +59,10 @@ footer,
   font-size: 16px;
 }
 
+.menu-user-body{
+  transform: translatey(-5px);
+}
+
 /* ellipse light li */
 .footer-support,
 .menu-user,
@@ -154,8 +158,6 @@ footer,
   background-color: $iso-blue-dark;
   border: 2px solid #fff;
 }
-
-
 
 .dropdown{
   .nav-link:after{

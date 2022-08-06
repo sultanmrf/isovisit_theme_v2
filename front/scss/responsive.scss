@@ -64,6 +64,14 @@
     }
   }
   /* section register_doctor end */
+
+  main {
+    .section-facilities-and-services {
+      .card-body {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px){
@@ -91,6 +99,10 @@
     }
   }
 
+  .section-facilities-and-services{
+    .card-body{
+    }
+  }
   /* section register_doctor start */
   .section-comment-doctors{
     .swiper-wrapper{
@@ -240,6 +252,17 @@
   //    inset:-44px -32px auto auto !important;
   //  }
   //}
+
+
+  main {
+    .section-facilities-and-services {
+      .card-body {
+        height: 7rem;
+        width: 9rem;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1400px){

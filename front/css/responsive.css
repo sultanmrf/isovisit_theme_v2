@@ -45,7 +45,9 @@
   /* section register_doctor start */
   .section-comment-doctors .figure-caption {
     top: 0.625em; }
-  /* section register_doctor end */ }
+  /* section register_doctor end */
+  main .section-facilities-and-services .card-body {
+    font-size: 16px; } }
 
 @media only screen and (min-width: 768px) {
   footer .footer-about {
@@ -121,7 +123,10 @@
     top: -3.438em; }
   .svg-sing-in-doctor {
     left: -14.375em;
-    top: -6.125em; } }
+    top: -6.125em; }
+  main .section-facilities-and-services .card-body {
+    height: 7rem;
+    width: 9rem; } }
 
 @media only screen and (min-width: 1400px) {
   .section-data-profile-doctor .btn-group {
