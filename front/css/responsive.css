@@ -18,19 +18,23 @@
 * spacing text
  */
 @media only screen and (max-width: 992px) {
-  .position-top-lg-75 {
-    top: 75%; }
   .section-comments-users .section-svg,
   .section-doctors .section-svg {
     height: 18em; }
+  .section-doctors .link-doctors {
+    top: 41%; }
   .section-articles .section-svg {
     height: 13.30em; }
   .section-articles .swiper-wrapper {
     height: 27em; }
+  .section-articles .link-articles {
+    top: 30%; }
   .section-medicines .swiper-wrapper {
     height: 12em; }
   .section-medicines .section-svg {
     height: 13.3em; }
+  .section-medicines .link-medicines {
+    top: 41%; }
   .svg-sing-in-doctor {
     width: 12.5em;
     height: 12.5em;

@@ -3,16 +3,19 @@
 
 @media only screen and (max-width: 992px) {
 
-  .position-top-lg-75{
-    top:75%;
-  }
-
   .section-comments-users,
   .section-doctors{
     .section-svg{
       height: 18em;
     }
+
   }
+
+  .section-doctors{
+      .link-doctors{
+        top: 41%;
+       }
+   }
 
   .section-articles{
 
@@ -22,6 +25,10 @@
 
     .swiper-wrapper{
       height: 27em;
+    }
+
+    .link-articles{
+      top: 30%;
     }
   }
 
@@ -34,6 +41,10 @@
     .section-svg{
       height: 13.3em;
     }
+
+    .link-medicines{
+          top: 41%;
+        }
   }
 
   .svg-sing-in-doctor{
