@@ -1,0 +1,40 @@
+.style-filter-and-sort{
+  width: 1.5em;
+  height: 1.5em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filter-img-dark{
+  @extend .style-filter-and-sort;
+  background-image: url("../../../images/icons/filter-dark.png");
+}
+
+.filter-img-light{
+  @extend .style-filter-and-sort;
+  background-image: url("../../../images/icons/filter-light.png");
+}
+
+.sort-img-dark{
+  @extend .style-filter-and-sort;
+  background-image: url("../../../images/icons/sort-dark.png");
+}
+
+.sort-img-light{
+  @extend .style-filter-and-sort;
+  background-image: url("../../../images/icons/sort-light.png");
+}
+
+.show-doctors-more{
+  .btn{
+    top: -1.3em;
+  }
+}
+
+#offcanvas_sort{
+  border-radius: 1.25em 1.25em 0 0;
+}
+
+.filter{
+  width: 29.8%;
+}

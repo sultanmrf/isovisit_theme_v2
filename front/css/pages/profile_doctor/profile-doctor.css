@@ -1,0 +1,63 @@
+/* variables */
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+
+* border-color
+ */
+/**
+* spacing text
+ */
+.card-info-doctor .btn-group {
+  border: 0.063em solid #009d38; }
+  .card-info-doctor .btn-group button:not(:last-child) {
+    border-left: 0.063em solid #009d38; }
+
+.video-introduction-doctor {
+  width: 19.375em;
+  height: 12.5em; }
+
+/* swiper style */
+.swiper-gallery-doctor {
+  width: 18.75em;
+  height: 18.75em;
+  padding: 3.125em; }
+  .swiper-gallery-doctor .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 18.75em; }
+  .swiper-gallery-doctor .swiper-slide img {
+    width: 100%;
+    height: 100%; }
+  .swiper-gallery-doctor .swiper-button-next {
+    left: -.313em; }
+  .swiper-gallery-doctor .swiper-button-prev {
+    right: -.313em; }
+  .swiper-gallery-doctor .swiper-button-prev:after,
+  .swiper-gallery-doctor .swiper-button-next:after {
+    content: ''; }
+
+iframe {
+  width: 100%; }
+
+#contact_map {
+  height: 15.625em; }
+
+.get-advice-fixed {
+  bottom: .625em;
+  z-index: 9999; }
+
+.icon-share {
+  background: url("../../../images/icons/share.png") no-repeat; }
+
+.section-about-doctor .card-body {
+  height: 12.5em; }

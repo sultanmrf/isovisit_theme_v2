@@ -1,0 +1,45 @@
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+
+* border-color
+ */
+/**
+* spacing text
+ */
+@keyframes animate-move-text {
+  0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%); }
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%); } }
+
+.start-motion-move-text {
+  animation: animate-move-text 26s linear infinite;
+  -webkit-animation: animate-move-text 26s linear infinite;
+  -moz-animation: animate-move-text 26s linear infinite;
+  -o-animation: animate-move-text 26s linear infinite; }
+
+.links-question-answer {
+  height: 1.375em; }
+
+#collapse_froum .form-select-birth {
+  width: 10em; }
+
+#collapse_froum .input-height,
+#collapse_froum .input-weight {
+  width: 6.2em; }

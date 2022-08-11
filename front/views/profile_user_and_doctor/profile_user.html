@@ -13,9 +13,9 @@
     <link href="../../../node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
     <link href="../../../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
     <link href="../../../node_modules/star-rating-svg/src/css/star-rating-svg.css" rel="stylesheet"/>
-    <link href="../../css/isovisit.css" rel="stylesheet">
-    <link href="../../css/profile-user.css" rel="stylesheet">
-    <link href="../../css/responsive.css" rel="stylesheet">
+    <link href="../../css/base/isovisit.css" rel="stylesheet">
+    <link href="../../css/pages/profile_user/profile-user.css" rel="stylesheet">
+    <link href="../../css/pages/responsive/responsive.css" rel="stylesheet">
 
 </head>
 <body>
@@ -50,7 +50,7 @@
                                 <button type="button" class="btn col-12 border-0 text-start py-2 p-3 iso-bg-blue-dark btn-show-modal-login border-radius active-btn"
                                         data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
                                 <!-- menu user logged in-->
-                                <div class="menu-user flex-column iso-bg-blue-dark border-radius d-none">
+                                <div class="menu-user marker-light flex-column iso-bg-blue-dark border-radius d-none">
                                     <button class="menu-user-header btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center btn-user-collapse collapsed border-radius"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapse_menu_user" aria-expanded="false" aria-controls="collapse_menu_user">
                                         <img src="../../images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
@@ -111,7 +111,7 @@
                                 <a href="../specialty/specialty.html" class="iso-color-dark link-hover position-relative">تخصص ها</a>
                             </li>
                             <li class="list-group-item border-0 mt-1  bg-transparent">
-                                <a href="froum.html" class="iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                                <a href="../froum/froum.html" class="iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
                             </li>
                             <li class="list-group-item border-0 border-radius p-0 d-flex justify-content-center flex-wrap bg-transparent">
                                 <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-patients
@@ -120,7 +120,7 @@
                                     <span class="fw-medium">برای بیماران</span>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </button>
-                                <div class="collapse border-top mt-2 p-2" id="details_menu_patients">
+                                <div class="collapse border-top mt-2 p-2 marker-light " id="details_menu_patients">
                                     <div class="card mt-2 bg-transparent border-0">
                                         <ul class="row gy-3 fw-normal px-4">
                                             <li>
@@ -156,7 +156,7 @@
                                     <span  class="fw-medium">برای پزشکان</span>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </button>
-                                <div class="collapse border-top mt-2 p-2" id="details_menu_doctors">
+                                <div class="collapse border-top mt-2 p-2 marker-light " id="details_menu_doctors">
                                     <div class="card mt-2 bg-transparent border-0">
                                         <ul class="row gy-3 fw-normal px-4">
                                             <li>
@@ -183,7 +183,7 @@
                             </li>
                         </ul>
                         <hr class="bg-secondary mx-2">
-                        <ul class="list-menu-communication fw-normal px-4">
+                        <ul class="list-menu-communication marker-blue fw-normal px-4">
                             <li>
                                 <a href="../single_pages/privacy-policy.html#" class="iso-color-dark link-hover position-relative">
                                     حریم خصوصی
@@ -233,7 +233,7 @@
                         <a href="../specialty/specialty.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">تخصص ها</a>
                     </li>
                     <li class="nav-item px-12">
-                        <a href="froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                        <a href="../froum/froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
                     </li>
                     <li class="nav-item dropdown px-2 pe-1 border-radius-top">
                         <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -275,12 +275,12 @@
             <!-- section logo -->
 
             <div class="btn-login col-3 col-sm-2 col-md-1 d-flex justify-content-end p-0 order-3">
-                <button type="button" class="btn  border-0 py-2 p-1 iso-bg-blue-dark text-nowrap border-radius btn-show-modal-login active-btn"
+                <button type="button" class="btn border-0 py-2 p-1 iso-bg-blue-dark text-nowrap border-radius btn-show-modal-login active-btn iso-font-md-em"
                         data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
             </div>
 
             <!-- section menu user logged in start-->
-            <div class="menu-user dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
+            <div class="menu-user marker-light dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
                 <button type="button" class="btn border-radius iso-bg-blue-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user"
                         role="button" id="dropdown_menu_link" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>سیروس</span>
@@ -444,7 +444,7 @@
         <div class="nav nav-pills menu-profile iso-bg-white-dark border-radius box-shadow-lg mt-2 d-flex justify-content-center p-0" id="pills-tab" role="tablist">
             <div class="swiper swiper-menu w-100">
                 <div class="swiper-wrapper d-flex justify-content-start justify-content-xl-center">
-                    <div class="swiper-slide d-flex align-items-center">
+                    <div class="swiper-slide d-flex align-items-center ps-3">
                         <div class="nav-item" role="presentation">
                             <a class="nav-link d-flex flex-column flex-md-row align-items-center iso-color-dark bg-transparent link-hover p-0 py-1 active" id="pills_profile_tab"
                                data-bs-toggle="pill" data-bs-target="#pills_profile" type="button" role="tab" aria-controls="pills_profile" aria-selected="true">
@@ -532,7 +532,7 @@
         <!-- section alerts end -->
 
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills_profile" role="tabpanel" aria-labelledby="pills_profile">
+            <div class="tab-pane fade show active marker-blue" id="pills_profile" role="tabpanel" aria-labelledby="pills_profile">
                 <div class="row gy-4">
                     <div class="col-lg-6">
                         <div class="card box-shadow-lg d-flex border-radius px-3 py-1 border-radius">
@@ -715,7 +715,7 @@
                                         </li>
                                         <li class="col-12 text-start">
                                             <h5 class="iso-font-sm-em iso-color-blue-dark text-start">بیوگرافی</h5>
-                                            <div class="card-text profile-bio m-0">
+                                            <div class="card-text profile-bio m-0 marker-dark">
                                                 <p> دکتر محمد رضا کاظمیان پزشک عمومی</p>
                                                 <p> دارای مدرک طب سنتی و مکمل از دانشکده طب سنتی مشهد،</p>
                                                 <p> فارغ التحصیل 1380 از دانشکده علوم پزشکی مشهد،</p>
@@ -3176,7 +3176,8 @@
                 <div class="tab-header">
                     <div class="row w-100 d-flex justify-content-center m-0">
                         <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
-                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100">
+                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">
                                 <i class="fa fa-plus iso-font-lg-em iso-color-blue-dark"></i>
                                 <span class="mx-2 iso-color-blue-dark">ایجاد سوال پزشکی جدید</span>
                             </button>
@@ -3184,9 +3185,141 @@
                     </div>
                 </div>
                 <div class="tab-body mt-4">
+                    <!-- section form create question start -->
+                    <div class="collapse my-4 px-0" id="collapse_froum">
+                        <div class="card card-body box-shadow-lg border-radius">
+                            <form id="form_question_answer">
+                                <div class="row row-cols-4">
+                                    <div class="col-11 p-0 py-0 px-md-1">
+                                        <div class="row gy-2 m-0">
+                                            <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
+                                                <label class="m-0">جنسیت : </label>
+                                                <div class="form-check mx-4 d-flex align-items-center">
+                                                    <input class="form-check-input optional" type="radio" name="gender" id="gender1" value="" checked>
+                                                    <label class="form-check-label ms-2" for="gender1">
+                                                        مرد
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mx-2 d-flex align-items-center">
+                                                    <input class="form-check-input optional" type="radio" name="gender" id="gender2" value="">
+                                                    <label class="form-check-label ms-2" for="gender2">
+                                                        زن
+                                                    </label>
+                                                </div>
+                                                <span class="error mt-1"></span>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center ms-xl-4">
+                                                <label for="births" class="form-label m-0">سال تولد : </label>
+                                                <select class="form-select form-select-birth iso-font-sm-em fw-normal py-1 mx-2" id="births" name="births">
+                                                    <option value="">انتخاب کنید</option>
+                                                    <option>1300</option>
+                                                    <option>1378</option>
+                                                    <option>1388</option>
+                                                    <option>1399</option>
+                                                    <option>1399</option>
+                                                </select>
+                                                <span class="error_births error mt-1"></span>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 pe-0 ms-xl-3">
+                                                <label class="mt-2">قد : </label>
+                                                <div class="input-group input-height ms-2 mt-2 flex-row-reverse">
+                                                    <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">cm</span>
+                                                    <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="قد" aria-label="cm" name="height">
+                                                </div>
+                                                <span class="error_height error mt-1"></span>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 p-0">
+                                                <label class="mt-2">وزن : </label>
+                                                <div class="input-group input-weight ms-2 mt-2 flex-row-reverse">
+                                                    <span class="input-group-text bg-transparent border-start-0 px-1 p-0 iso-font-xs-em border-radius-end">kg</span>
+                                                    <input type="text" class="form-control border-end-0 iso-font-sm-em fw-normal border-radius-start py-1 px-2" value="" placeholder="وزن" aria-label="kg" name="weight">
+                                                </div>
+                                                <span class="error_weight error mt-1"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 d-flex justify-content-end">
+                                        <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row gy-3 mt-2">
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="category" class="form-label mb-1 fw-normal">دسته بندی </label>
+                                        <select class="form-select form-select-category iso-font-xs-em fw-normal" id="category" name="category">
+                                            <option value="">دسته بندی سوال خود را انتخاب کنید</option>
+                                            <option value="1">اصلاح مزاج</option>
+                                        </select>
+                                        <span class="error_category error mt-1"></span>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="title_question" class="form-label mb-1 fw-normal">عنوان سوال</label>
+                                        <input type="text" class="form-control iso-font-xxs-em fw-normal" id="title_question" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
+                                        <span class="error_title_question error mt-1"></span>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="description_question_answer" class="form-label mb-1 fw-normal">توضیحات</label>
+                                        <textarea class="form-control iso-font-xxs-em fw-normal" id="description_question_answer" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
+                                        <span class="error_description error mt-1"></span>
+                                    </div>
+                                </div>
+                                <div class="row gy-4 gy-md-3 mt-0 mt-md-3">
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="question_one" class="form-label mb-1 fw-normal">بیماری خاصی دارید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
+                                        <input type="text" class="form-control iso-font-xxs-em fw-normal optional" id="question_one" placeholder="مثل بیماری قلبی ، فشارخون ، دیابت و ..." value="" name="question_one">
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="question_two" class="form-label mb-1 text-nowrap fw-normal">به پزشک دیگری مراجعه کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
+                                        <input type="text" class="form-control iso-font-xxs-em fw-normal optional" id="question_two" placeholder="توضیحات در مورد مراجعه به پزشک" value="" name="question_two">
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="question_three" class="form-label mb-1 text-nowrap fw-normal">آیا از داروی خاصی استفاده کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
+                                        <input type="text"  class="form-control iso-font-xxs-em fw-normal optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" value="5465446" name="question_three">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-4 gy-3 mt-0 mt-md-3">
+                                    <div class="col-12 col-md-3">
+                                        <label for="file" class="form-label mb-1 fw-normal">ارسال عکس در صورت لزوم<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span>  </label>
+                                        <input class="form-control py-1 iso-font-md-em optional" type="file" id="file" name="file">
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
+                                        <div class="row row-cols-2">
+                                            <div class="col d-flex flex-wrap align-items-end">
+                                                <label for="code_security_question_answer" class="form-label mb-1 fw-normal">کد امنیتی </label>
+                                                <input type="text" class="form-control py-2 iso-font-xxs-em fw-normal" id="code_security_question_answer"
+                                                       placeholder="کد امنیتی" value="" name="code_security">
+                                            </div>
+                                            <div class="col captcha d-flex align-items-end p-0">
+                                                <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid" alt="کپچا">
+                                                <a href="#" class="refresh_captcha mx-1">
+                                                    <i class="fas fa-sync iso-font-llg-em"></i>
+                                                </a>
+                                            </div>
+                                            <span class="error_code_security error mt-1"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 form-check d-flex flex-wrap align-items-end ms-2">
+                                        <input class="form-check-input iso-form-check-input mt-lg-4" type="checkbox" name="rules_check" value="" id="rules_check">
+                                        <label class="form-check-label iso-font-md-em fw-normal mx-2" for="rules_check">
+                                            قوانین ارسال سوالات رایگان را مطالعه کنید
+                                        </label>
+                                        <span class="error_rules_check error mt-1"></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    <button type="submit" class="btn col-6 col-md-3 iso-bg-blue-dark iso-font-md-em border-radius active-btn">ذخیره سوال </button>
+                                    <button type="button" class="btn col-6 col-md-3 btn-outline-primary mx-2 iso-font-md-em border-radius"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">بازگشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- section form create question end -->
                     <div class="list-question-answer-user">
                         <h3 class="iso-font-md-em fw-normal">لیست پرسش و پاسخ های ایجاد شده توسط شما</h3>
-                        <div class="list-group mt-4">
+                        <div class="list-group mt-3">
                             <div class="row gy-3">
                                 <div class="col-lg-6">
                                     <div class="list-group-item d-flex flex-column justify-content-between border-radius box-shadow-lg p-0">
@@ -3294,7 +3427,7 @@
                             <i class="fa-solid fa-bell iso-font-llg-em text-warning"></i>
                             <span class="mx-1">لیست پرسش و پاسخ های “ خبرم کن “</span>
                         </h3>
-                        <div class="list-group mt-4">
+                        <div class="list-group mt-3">
                             <div class="row gy-3">
                                 <div class="col-lg-6">
                                     <div class="list-group-item d-flex flex-column justify-content-between iso-bg-warning border-radius box-shadow-lg p-0">
@@ -4524,7 +4657,7 @@
                                             <input type="text" class="form-control fw-normal px-1 iso-font-md-em text-end border-radius-start bg-light" id="copy_link" value="۲۳۶۵۸۹۴۲۳۶۵">
                                             <div class="input-group-prepend rounded-0">
                                                 <button class="btn active-btn iso-bg-blue-dark iso-font-md-em border-radius-end btn-copy-link px-1 py-2" data-clipboard-target="#copy_link">کپی</button>
-                                                <span class="tooltip-text position-absolute border-radius text-center iso-bg-blue-dark py-1 mb-1 text-light opacity-0 border border-white bottom-100">کپی شد</span>
+                                                <span class="tooltip-text position-absolute border-radius text-center iso-bg-blue-dark py-1 mb-1 text-light  border border-white bottom-100">کپی شد</span>
                                             </div>
                                         </div>
                                     </div>
@@ -4584,20 +4717,28 @@
         <div class="icon-support-light pointer-event img-sm" aria-expanded="false" role="button"></div>
         <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در واتساپ</span>
-                <img src="../../images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
+                <a href="https://wa.me/+989156510022" class="text-light" target="_blank">
+                    <span>پیام در واتساپ</span>
+                    <img src="../../images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
+                </a>
             </li>
             <li class="my-3 my-lg-2 iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در تلگرام</span>
-                <img src="../../images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
+                <a href="https://t.me/Parsiteb_IsoVisit" class="text-light" target="_blank">
+                    <span>پیام در تلگرام</span>
+                    <img src="../../images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
+                </a>
             </li>
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در تیکت</span>
-                <img src="../../images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
+                <a href="../profile_user_and_doctor/ticket-show.html" class="text-light" target="_blank">
+                    <span>پیام در تیکت</span>
+                    <img src="../../images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
+                </a>
             </li>
             <li class="my-3 my-lg-2 mb-4 mb-lg-3 iso-bg-green-dark text-light rounded-pill p-2 mb-3">
-                <span>تماس تلفنی</span>
-                <img src="../../images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
+                <a href="tel:09156510022" class="text-light">
+                    <span>تماس تلفنی</span>
+                    <img src="../../images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
+                </a>
             </li>
         </ul>
     </div>
@@ -4611,7 +4752,7 @@
 <footer class="">
     <div class="container-xxl">
         <div class="row iso-bg-blue-dark">
-            <div class="footer-support order-1 order-md-2 order-xxl-2  col-12 col-md-6 col-xxl-3 px-12 bg-transparent flex-wrap flex-row text-light border-end">
+            <div class="footer-support marker-light order-1 order-md-2 order-xxl-2  col-12 col-md-6 col-xxl-3 px-12 bg-transparent flex-wrap flex-row text-light border-end">
                 <div class="footer-header border-0 pt-3 p-0 bg-transparent col-12 d-flex flex-wrap flex-row justify-content-around align-items-center">
                     <div class="row w-100 m-0 px-2">
                         <div class="col-6 col-xxl-12 text-nowrap p-0 justify-content-start d-flex align-items-center">
@@ -4786,9 +4927,9 @@
 <script src="../../../node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 <script src="../../../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="../../js/init/initValidation.js"></script>
-<script src="../../js/general_function.js"></script>
+<script src="../../js/general/general_function.js"></script>
 <script src="../../js/init/initSwiper.js"></script>
 <script src="../../js/index.js"></script>
-<script src="../../js/profile_user.js"></script>
+<script src="../../js/pages/profile_user/profile_user.js"></script>
 </body>
 </html>

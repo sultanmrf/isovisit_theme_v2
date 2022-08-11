@@ -12,9 +12,9 @@
     <link href="../../../node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="../../../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
     <link href="../../../node_modules/star-rating-svg/src/css/star-rating-svg.css" rel="stylesheet" />
-    <link href="../../css/isovisit.css" rel="stylesheet">
-    <link href="../../css/doctors_consulting.css" rel="stylesheet">
-    <link href="../../css/responsive.css" rel="stylesheet">
+    <link href="../../css/base/isovisit.css" rel="stylesheet">
+    <link href="../../css/pages/doctors_consulting/doctors-consulting.css" rel="stylesheet">
+    <link href="../../css/pages/responsive/responsive.css" rel="stylesheet">
 
 </head>
 <body>
@@ -49,7 +49,7 @@
                                 <button type="button" class="btn col-12 border-0 text-start py-2 p-3 iso-bg-blue-dark btn-show-modal-login border-radius active-btn"
                                         data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
                                 <!-- menu user logged in-->
-                                <div class="menu-user flex-column iso-bg-blue-dark border-radius d-none">
+                                <div class="menu-user marker-light flex-column iso-bg-blue-dark border-radius d-none">
                                     <button class="menu-user-header btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center btn-user-collapse collapsed border-radius"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapse_menu_user" aria-expanded="false" aria-controls="collapse_menu_user">
                                         <img src="../../images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
@@ -119,7 +119,7 @@
                                     <span class="fw-medium">برای بیماران</span>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </button>
-                                <div class="collapse border-top mt-2 p-2" id="details_menu_patients">
+                                <div class="collapse border-top mt-2 p-2 marker-light " id="details_menu_patients">
                                     <div class="card mt-2 bg-transparent border-0">
                                         <ul class="row gy-3 fw-normal px-4">
                                             <li>
@@ -155,7 +155,7 @@
                                     <span  class="fw-medium">برای پزشکان</span>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </button>
-                                <div class="collapse border-top mt-2 p-2" id="details_menu_doctors">
+                                <div class="collapse border-top mt-2 p-2 marker-light " id="details_menu_doctors">
                                     <div class="card mt-2 bg-transparent border-0">
                                         <ul class="row gy-3 fw-normal px-4">
                                             <li>
@@ -182,7 +182,7 @@
                             </li>
                         </ul>
                         <hr class="bg-secondary mx-2">
-                        <ul class="list-menu-communication fw-normal px-4">
+                        <ul class="list-menu-communication marker-blue fw-normal px-4">
                             <li>
                                 <a href="../single_pages/privacy-policy.html#" class="iso-color-dark link-hover position-relative">
                                     حریم خصوصی
@@ -274,12 +274,12 @@
             <!-- section logo -->
 
             <div class="btn-login col-3 col-sm-2 col-md-1 d-flex justify-content-end p-0 order-3">
-                <button type="button" class="btn  border-0 py-2 p-1 iso-bg-blue-dark text-nowrap border-radius btn-show-modal-login active-btn"
+                <button type="button" class="btn border-0 py-2 p-1 iso-bg-blue-dark text-nowrap border-radius btn-show-modal-login active-btn iso-font-md-em"
                         data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
             </div>
 
             <!-- section menu user logged in start-->
-            <div class="menu-user dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
+            <div class="menu-user marker-light dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
                 <button type="button" class="btn border-radius iso-bg-blue-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user"
                         role="button" id="dropdown_menu_link" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>سیروس</span>
@@ -667,20 +667,28 @@
         <div class="icon-support-light pointer-event img-sm" aria-expanded="false" role="button"></div>
         <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در واتساپ</span>
-                <img src="../../images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
+                <a href="https://wa.me/+989156510022" class="text-light" target="_blank">
+                    <span>پیام در واتساپ</span>
+                    <img src="../../images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
+                </a>
             </li>
             <li class="my-3 my-lg-2 iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در تلگرام</span>
-                <img src="../../images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
+                <a href="https://t.me/Parsiteb_IsoVisit" class="text-light" target="_blank">
+                    <span>پیام در تلگرام</span>
+                    <img src="../../images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
+                </a>
             </li>
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در تیکت</span>
-                <img src="../../images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
+                <a href="../profile_user_and_doctor/ticket-show.html" class="text-light" target="_blank">
+                    <span>پیام در تیکت</span>
+                    <img src="../../images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
+                </a>
             </li>
             <li class="my-3 my-lg-2 mb-4 mb-lg-3 iso-bg-green-dark text-light rounded-pill p-2 mb-3">
-                <span>تماس تلفنی</span>
-                <img src="../../images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
+                <a href="tel:09156510022" class="text-light">
+                    <span>تماس تلفنی</span>
+                    <img src="../../images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
+                </a>
             </li>
         </ul>
     </div>
@@ -694,7 +702,7 @@
 <footer>
     <div class="container-xxl">
         <div class="row iso-bg-blue-dark">
-            <div class="footer-support order-1 order-md-2 order-xxl-2  col-12 col-md-6 col-xxl-3 px-12 bg-transparent flex-wrap flex-row text-light border-end">
+            <div class="footer-support marker-light order-1 order-md-2 order-xxl-2  col-12 col-md-6 col-xxl-3 px-12 bg-transparent flex-wrap flex-row text-light border-end">
                 <div class="footer-header border-0 pt-3 p-0 bg-transparent col-12 d-flex flex-wrap flex-row justify-content-around align-items-center">
                     <div class="row w-100 m-0 px-2">
                         <div class="col-6 col-xxl-12 text-nowrap p-0 justify-content-start d-flex align-items-center">
@@ -866,9 +874,11 @@
 <script src="../../../node_modules/leaflet/dist/leaflet.js"></script>
 <script src="../../../node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js"></script>
 <script src="../../../node_modules/clipboard/dist/clipboard.min.js"></script>
-<script src="../../js/general_function.js"></script>
+<script src="../../../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="../../js/init/initValidation.js"></script>
+<script src="../../js/general/general_function.js"></script>
 <script src="../../js/init/initSwiper.js"></script>
 <script src="../../js/index.js"></script>
-<script src="../../js/doctors_consulting.js"></script>
+<script src="../../js/pages/doctors_consulting/doctors_consulting.js"></script>
 </body>
 </html>

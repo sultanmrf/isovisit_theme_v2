@@ -1,0 +1,32 @@
+footer{
+  .footer-certificates{
+    .footer-body{
+      height: 9.938rem;
+    }
+  }
+
+  .footer-contact,
+  .footer-certificates,
+  .footer-about{
+    border-top: 1px solid #fff;
+  }
+
+  .swiper-certificates{
+    .swiper-slide {
+      width: 8.125em !important;
+      height: 8.125em;
+    }
+
+    .swiper-wrapper{
+      height: 10em;
+    }
+
+    .swiper-pagination-certificates{
+      top: 8.5em;
+    }
+  }
+
+  .swiper-pagination-bullet-active{
+    background: $iso-green-dark;
+  }
+}

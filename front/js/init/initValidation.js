@@ -1,3 +1,4 @@
+/* show error custom by function show_error */
 const show_error = function (errorMap, errorList) {
     if (errorList.length > 0) {
         for (let x in errorList) {

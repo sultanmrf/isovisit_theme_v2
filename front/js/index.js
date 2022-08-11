@@ -299,7 +299,6 @@ $(document).ready(function (){
             $(".tooltip-text").removeClass('tooltip-active');
         },2500)
     })
-
     /* copy link section share end */
 
     /* js start one svg doctors start */
@@ -315,7 +314,6 @@ $(document).ready(function (){
     });
     /* js start one svg doctors end */
 
-
     /* validation comments start */
     initValidation("#form_comments",{
             first_and_last_name: "required",
@@ -330,4 +328,16 @@ $(document).ready(function (){
             code_security: "کد امنیتی الزامی است",
         });
     /* validation comments end */
+
+
+    $(document).on('click','.filter-consultants button',function (){
+        let val_aria_select = $(this).attr('aria-selected');
+        if(val_aria_select === "true"){
+            $(this).attr('aria-selected',false)
+        }else{
+            $(this).attr('aria-selected',true).removeClass('active');
+            $(".tab-pane").find('.active').removeClass(['show','active']);
+            $("#pills_all_consultants").addClass(['show','active']);
+        }
+    });
 });

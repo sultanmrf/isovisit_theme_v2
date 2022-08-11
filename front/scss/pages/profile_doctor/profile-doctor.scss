@@ -1,0 +1,74 @@
+/* variables */
+@import "../../base/variables";
+
+.card-info-doctor{
+  .btn-group{
+    border: 0.063em solid $iso-green-dark;
+    button:not(:last-child){
+      border-left: 0.063em solid $iso-green-dark;
+    }
+  }
+}
+
+.video-introduction-doctor {
+  width: 19.375em;
+  height: 12.5em;
+}
+
+/* swiper style */
+.swiper-gallery-doctor {
+  width: 18.75em;
+  height: 18.75em;
+  padding: 3.125em;
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 18.75em;
+  }
+
+  .swiper-slide {
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .swiper-button-next{
+    left: -.313em;
+  }
+
+  .swiper-button-prev{
+    right: -.313em;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    &:after{
+      content: '';
+    }
+  }
+}
+
+iframe{
+  width: 100%;
+}
+
+#contact_map{
+  height: 15.625em;
+}
+
+.get-advice-fixed{
+  bottom: .625em;
+  z-index: 9999;
+}
+
+.icon-share{
+  background: url("../../../images/icons/share.png") no-repeat;
+}
+
+.section-about-doctor{
+  .card-body{
+    height: 12.5em;
+  }
+}
