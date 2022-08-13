@@ -479,7 +479,8 @@ footer {
 .line-blur-dashed,
 .line-muted-dashed,
 .line-black-dashed,
-.line-muted-bg-green-dashed {
+.line-muted-bg-green-dashed,
+.line-muted-back-white-dashed {
   width: 100%;
   height: .1883em;
   background-position: top;
@@ -491,6 +492,10 @@ footer {
 
 .line-muted-dashed {
   background-image: linear-gradient(to right, #F0F1F1 50%, #999999 50%);
+  background-size: 10px 2px; }
+
+.line-muted-back-white-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #999999 50%);
   background-size: 10px 2px; }
 
 .line-muted-bg-green-dashed {
@@ -619,6 +624,11 @@ footer {
 .icon-email {
   width: 1.5em;
   height: 1.5em; }
+
+.icon-check {
+  width: 20px;
+  height: 20px;
+  background: url("../../images/icons/check.png") no-repeat; }
 
 .icon-bookmark {
   background: url("../../images/icons/saved.png") no-repeat; }
@@ -1013,7 +1023,8 @@ footer {
 .line-blur-dashed,
 .line-muted-dashed,
 .line-black-dashed,
-.line-muted-bg-green-dashed {
+.line-muted-bg-green-dashed,
+.line-muted-back-white-dashed {
   width: 100%;
   height: .1883em;
   background-position: top;
@@ -1025,6 +1036,10 @@ footer {
 
 .line-muted-dashed {
   background-image: linear-gradient(to right, #F0F1F1 50%, #999999 50%);
+  background-size: 10px 2px; }
+
+.line-muted-back-white-dashed {
+  background-image: linear-gradient(to right, #fff 50%, #999999 50%);
   background-size: 10px 2px; }
 
 .line-muted-bg-green-dashed {
@@ -1153,6 +1168,11 @@ footer {
 .icon-email {
   width: 1.5em;
   height: 1.5em; }
+
+.icon-check {
+  width: 20px;
+  height: 20px;
+  background: url("../../images/icons/check.png") no-repeat; }
 
 .icon-bookmark {
   background: url("../../images/icons/saved.png") no-repeat; }

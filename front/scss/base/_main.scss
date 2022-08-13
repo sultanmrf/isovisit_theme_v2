@@ -242,7 +242,8 @@ footer,
 .line-blur-dashed,
 .line-muted-dashed,
 .line-black-dashed,
-.line-muted-bg-green-dashed{
+.line-muted-bg-green-dashed,
+.line-muted-back-white-dashed{
   width: 100%;
   height: .1883em;
   background-position: top;
@@ -255,6 +256,10 @@ footer,
 
 .line-muted-dashed{
   @include line-dashed-style(#F0F1F1,$iso-secondary,10,2);
+}
+
+.line-muted-back-white-dashed{
+  @include line-dashed-style(#fff,$iso-secondary,10,2);
 }
 
 .line-muted-bg-green-dashed{
@@ -444,6 +449,12 @@ footer,
 .icon-email{
   width: 1.5em;
   height: 1.5em;
+}
+
+.icon-check{
+  width: 20px;
+  height: 20px;
+  background: url("../../images/icons/check.png") no-repeat;
 }
 
 .icon-bookmark{
