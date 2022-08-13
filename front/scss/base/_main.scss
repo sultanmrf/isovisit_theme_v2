@@ -164,7 +164,6 @@ footer,
 .communication-iso{
   left: 4%;
   bottom: 1.5em;
-  z-index: 2;
   padding: 0.797em;
   .dropdown-menu-communication{
     bottom: 2.375em;
@@ -178,7 +177,6 @@ footer,
 
 .scroll-top{
   right: 4%;
-  z-index: 9999;
   bottom: 1.60em;
   width: 2em;
   height: 2em;
@@ -256,7 +254,7 @@ footer,
 }
 
 .line-muted-dashed{
-  @include line-dashed-style(#fff,$iso-secondary,10,2);
+  @include line-dashed-style(#F0F1F1,$iso-secondary,10,2);
 }
 
 .line-muted-bg-green-dashed{

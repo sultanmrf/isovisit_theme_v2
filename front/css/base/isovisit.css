@@ -420,7 +420,6 @@ footer {
 .communication-iso {
   left: 4%;
   bottom: 1.5em;
-  z-index: 2;
   padding: 0.797em; }
   .communication-iso .dropdown-menu-communication {
     bottom: 2.375em;
@@ -431,7 +430,6 @@ footer {
 
 .scroll-top {
   right: 4%;
-  z-index: 9999;
   bottom: 1.60em;
   width: 2em;
   height: 2em; }
@@ -492,7 +490,7 @@ footer {
   background-size: 17px 16px; }
 
 .line-muted-dashed {
-  background-image: linear-gradient(to right, #fff 50%, #999999 50%);
+  background-image: linear-gradient(to right, #F0F1F1 50%, #999999 50%);
   background-size: 10px 2px; }
 
 .line-muted-bg-green-dashed {
@@ -956,7 +954,6 @@ footer {
 .communication-iso {
   left: 4%;
   bottom: 1.5em;
-  z-index: 2;
   padding: 0.797em; }
   .communication-iso .dropdown-menu-communication {
     bottom: 2.375em;
@@ -967,7 +964,6 @@ footer {
 
 .scroll-top {
   right: 4%;
-  z-index: 9999;
   bottom: 1.60em;
   width: 2em;
   height: 2em; }
@@ -1028,7 +1024,7 @@ footer {
   background-size: 17px 16px; }
 
 .line-muted-dashed {
-  background-image: linear-gradient(to right, #fff 50%, #999999 50%);
+  background-image: linear-gradient(to right, #F0F1F1 50%, #999999 50%);
   background-size: 10px 2px; }
 
 .line-muted-bg-green-dashed {
