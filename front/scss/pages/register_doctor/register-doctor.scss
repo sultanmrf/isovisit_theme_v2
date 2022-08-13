@@ -47,9 +47,6 @@ svg {
 }
 
 .swiper-comment-doctors{
-  .swiper-slide:not(.swiper-slide-next){
-    filter: blur(.031em);
-  }
   .swiper-slide-next{
     transition: 0.5s ease;
     -webkit-transition: 0.5s ease;

@@ -53,6 +53,7 @@ function initSwiper(target, options, name_pagination , spaceBetween = 16 , ) {
         navigation_option = false;
 
     new Swiper(target, {
+        rewind: true,
         slidesPerView: count_slides_view,
         spaceBetween: spaceBetween,
         navigation: navigation_option,

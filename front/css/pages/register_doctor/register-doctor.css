@@ -34,9 +34,6 @@ svg {
 #code_security {
   height: 2.438em; }
 
-.swiper-comment-doctors .swiper-slide:not(.swiper-slide-next) {
-  filter: blur(0.031em); }
-
 .swiper-comment-doctors .swiper-slide-next {
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;

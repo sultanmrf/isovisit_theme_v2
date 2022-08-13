@@ -149,6 +149,10 @@ footer,
   height: 2.813em;
 }
 
+.swiper-button-disabled{
+  pointer-events: visible !important;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after{
   content: '' !important;
@@ -386,6 +390,11 @@ footer,
   height: 1.8em;
 }
 
+.icon-twenty-four{
+  width: 1.5em;
+  height: 1.5em;
+}
+
 .icon-umbrella-active,
 .icon-umbrella-disabled{
   width: 1.25em;
@@ -416,18 +425,13 @@ footer,
   background-size: cover;
 }
 
-@mixin icon-xs{
-  width: 1.5em;
-  height: 1.5em;
-}
-
 .icon-telegram-blue{
-  @include icon-xs;
+  @extend .icon-twenty-four;
   background: url("../../images/icons/telegram-blue.png") no-repeat;
 }
 
 .icon-telegram-light{
-  @include icon-xs;
+  @extend .icon-twenty-four;
   background: url("../../images/icons/telegram-light.png") no-repeat;
 }
 
@@ -436,19 +440,13 @@ footer,
 }
 
 .icon-edit {
-  @include icon-xs;
+  @extend .icon-twenty-four;
   background: url("../../images/icons/edit.png") no-repeat;
 }
 
 .icon-trash {
-  @include icon-xs;
+  @extend .icon-twenty-four;
   background: url("../../images/icons/trash.png") no-repeat;
-}
-
-.icon-instagram-light, .icon-instagram-blue, .icon-aparat, .icon-bookmark,
-.icon-email{
-  width: 1.5em;
-  height: 1.5em;
 }
 
 .icon-check{
@@ -458,14 +456,17 @@ footer,
 }
 
 .icon-bookmark{
+  @extend .icon-twenty-four;
   background: url("../../images/icons/saved.png") no-repeat;
 }
 
 .icon-instagram-blue{
+  @extend .icon-twenty-four;
   background: url("../../images/icons/instegram-blue.png") no-repeat;
 }
 
 .icon-instagram-light{
+  @extend .icon-twenty-four;
   background: url("../../images/icons/instagram-light.png") no-repeat;
 }
 
@@ -476,10 +477,12 @@ footer,
 }
 
 .icon-aparat{
+  @extend .icon-twenty-four;
   background: url("../../images/icons/aparat.png");
 }
 
 .icon-gmail{
+  @extend .icon-twenty-four;
   background: url("../../images/icons/gmail.png");
 }
 
@@ -558,7 +561,7 @@ footer,
 }
 
 .tooltip-text {
-  width: 80px;
+  width: 5em;
   left: 40%;
   opacity: 0;
 }

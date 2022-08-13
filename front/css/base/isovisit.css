@@ -407,6 +407,9 @@ footer {
   width: 2.813em;
   height: 2.813em; }
 
+.swiper-button-disabled {
+  pointer-events: visible !important; }
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   content: '' !important; }
@@ -573,6 +576,10 @@ footer {
   width: 6.8em;
   height: 1.8em; }
 
+.icon-twenty-four, .icon-telegram-blue, .icon-telegram-light, .icon-edit, .icon-trash, .icon-bookmark, .icon-instagram-blue, .icon-instagram-light, .icon-aparat, .icon-gmail {
+  width: 1.5em;
+  height: 1.5em; }
+
 .icon-umbrella-active,
 .icon-umbrella-disabled {
   width: 1.25em;
@@ -598,32 +605,19 @@ footer {
   background-size: cover; }
 
 .icon-telegram-blue {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/telegram-blue.png") no-repeat; }
 
 .icon-telegram-light {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/telegram-light.png") no-repeat; }
 
 .icon-email {
   background: url("../../images/icons/email.png") no-repeat; }
 
 .icon-edit {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/edit.png") no-repeat; }
 
 .icon-trash {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/trash.png") no-repeat; }
-
-.icon-instagram-light, .icon-instagram-blue, .icon-aparat, .icon-bookmark,
-.icon-email {
-  width: 1.5em;
-  height: 1.5em; }
 
 .icon-check {
   width: 20px;
@@ -708,7 +702,7 @@ footer {
   border: 1px solid #999999; }
 
 .tooltip-text {
-  width: 80px;
+  width: 5em;
   left: 40%;
   opacity: 0; }
 
@@ -951,6 +945,9 @@ footer {
   width: 2.813em;
   height: 2.813em; }
 
+.swiper-button-disabled {
+  pointer-events: visible !important; }
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   content: '' !important; }
@@ -1117,6 +1114,10 @@ footer {
   width: 6.8em;
   height: 1.8em; }
 
+.icon-twenty-four, .icon-telegram-blue, .icon-telegram-light, .icon-edit, .icon-trash, .icon-bookmark, .icon-instagram-blue, .icon-instagram-light, .icon-aparat, .icon-gmail {
+  width: 1.5em;
+  height: 1.5em; }
+
 .icon-umbrella-active,
 .icon-umbrella-disabled {
   width: 1.25em;
@@ -1142,32 +1143,19 @@ footer {
   background-size: cover; }
 
 .icon-telegram-blue {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/telegram-blue.png") no-repeat; }
 
 .icon-telegram-light {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/telegram-light.png") no-repeat; }
 
 .icon-email {
   background: url("../../images/icons/email.png") no-repeat; }
 
 .icon-edit {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/edit.png") no-repeat; }
 
 .icon-trash {
-  width: 1.5em;
-  height: 1.5em;
   background: url("../../images/icons/trash.png") no-repeat; }
-
-.icon-instagram-light, .icon-instagram-blue, .icon-aparat, .icon-bookmark,
-.icon-email {
-  width: 1.5em;
-  height: 1.5em; }
 
 .icon-check {
   width: 20px;
@@ -1252,7 +1240,7 @@ footer {
   border: 1px solid #999999; }
 
 .tooltip-text {
-  width: 80px;
+  width: 5em;
   left: 40%;
   opacity: 0; }
 
