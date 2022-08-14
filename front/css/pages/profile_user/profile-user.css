@@ -102,6 +102,8 @@ main {
     main .swiper-menu .swiper-slide {
       width: auto !important;
       margin-left: 1.813em !important; }
+    main .swiper-menu .nav-link {
+      cursor: pointer; }
   main .list-question-answer-user a,
   main .list-question-answer-news a {
     height: 1.125em;

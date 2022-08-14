@@ -348,19 +348,22 @@ footer {
   color: white;
   background: #009d38; }
 
+.link-active:after,
+.link-hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -0.375em;
+  height: 0.25em;
+  border-radius: 8px;
+  left: 0; }
+
 .link-hover {
   position: relative; }
   .link-hover:hover {
     color: #1773B5; }
   .link-hover:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -0.375em;
-    height: 0.25em;
-    background: none;
-    border-radius: 8px;
-    left: 0; }
+    background: none; }
   .link-hover:hover:after {
     background: #1773B5; }
 
@@ -368,13 +371,6 @@ footer {
   position: relative;
   color: #1773B5; }
   .link-active:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -0.375em;
-    height: 0.25em;
-    border-radius: 8px;
-    left: 0;
     background: #1773B5; }
 
 .hover-line-white:hover {
@@ -707,8 +703,7 @@ footer {
   opacity: 0; }
 
 .tooltip-active {
-  animation: tooltip_effect;
-  animation-duration: 3s; }
+  animation: tooltip_effect 3s; }
 
 @keyframes tooltip_effect {
   0% {
@@ -886,19 +881,22 @@ footer {
   color: white;
   background: #009d38; }
 
+.link-active:after,
+.link-hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -0.375em;
+  height: 0.25em;
+  border-radius: 8px;
+  left: 0; }
+
 .link-hover {
   position: relative; }
   .link-hover:hover {
     color: #1773B5; }
   .link-hover:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -0.375em;
-    height: 0.25em;
-    background: none;
-    border-radius: 8px;
-    left: 0; }
+    background: none; }
   .link-hover:hover:after {
     background: #1773B5; }
 
@@ -906,13 +904,6 @@ footer {
   position: relative;
   color: #1773B5; }
   .link-active:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -0.375em;
-    height: 0.25em;
-    border-radius: 8px;
-    left: 0;
     background: #1773B5; }
 
 .hover-line-white:hover {
@@ -1245,8 +1236,7 @@ footer {
   opacity: 0; }
 
 .tooltip-active {
-  animation: tooltip_effect;
-  animation-duration: 3s; }
+  animation: tooltip_effect 3s; }
 
 @keyframes tooltip_effect {
   0% {

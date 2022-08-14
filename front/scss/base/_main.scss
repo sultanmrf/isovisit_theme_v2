@@ -70,6 +70,19 @@ footer,
   }
 }
 
+.link-active,
+.link-hover{
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -0.375em;
+    height: 0.25em;
+    border-radius: 8px;
+    left: 0;
+  }
+}
+
 .link-hover{
   position: relative;
 
@@ -78,14 +91,7 @@ footer,
   }
 
   &:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -0.375em;
-    height: 0.25em;
     background: none;
-    border-radius: 8px;
-    left: 0;
   }
 
   &:hover:after{
@@ -97,13 +103,6 @@ footer,
   position: relative;
   color: $iso-blue-dark;
   &:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -0.375em;
-    height: 0.25em;
-    border-radius: 8px;
-    left: 0;
     background: $iso-blue-dark;
   }
 }
@@ -521,6 +520,7 @@ footer,
   -webkit-animation: animate-love-active 0.2s linear;
   -moz-animation: animate-love-active 0.2s linear;
 }
+
 .love-disabled{
   -webkit-animation: animate-love-disabled 0.2s linear;
   -moz-animation: animate-love-disabled 0.2s linear;
@@ -567,8 +567,7 @@ footer,
 }
 
 .tooltip-active{
-  animation: tooltip_effect;
-  animation-duration: 3s;
+  animation: tooltip_effect 3s;
 }
 
 @keyframes tooltip_effect {
@@ -602,7 +601,6 @@ footer,
     height: 8.375em;
   }
 }
-
 
 /* style section filter profile_user and visit */
 .filter-consultants{
