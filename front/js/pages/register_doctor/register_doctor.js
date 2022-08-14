@@ -3,7 +3,7 @@ $(document).ready(function (){
     if(check_size_media(false,576)) {
         $('.svg-stories-personal-files').attr('viewBox','50 0 500 500');
         $('.svg-stories-mobile-development').attr('viewBox','-50 0 500 500');
-        $('.svg-stories-business-deal').attr('viewBox','40 126 400 300');
+        $('.svg-stories-business-deal').attr('viewBox','50 65 400 300');
     }
 
     initCommentDoctorsSwiper();
