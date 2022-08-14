@@ -81,9 +81,7 @@
     border-left: 1px solid #dee2e6;
     border-bottom: 0 !important; }
   /* section ticket profile_user end */
-  /* section tab menu profile user start */
-  main .menu-profile .active:after {
-    bottom: -6px; }
+  /* section visit */
   .operation-patient .dropdown-menu {
     inset: -72px -41px auto auto !important; }
   .operation-doctor .dropdown-menu {
@@ -106,7 +104,10 @@
     box-shadow: unset; }
   /* section register_doctor end */
   .banner-pattern {
-    background-size: 69.875em 27.5em; } }
+    background-size: 69.875em 27.5em; }
+  /* section tab menu profile user start */
+  main .menu-profile .active:after {
+    bottom: -6px; } }
 
 @media only screen and (min-width: 992px) {
   html {
