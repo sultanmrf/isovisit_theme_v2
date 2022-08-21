@@ -364,6 +364,9 @@ footer {
 .btn:active:focus {
   box-shadow: unset; }
 
+.btn, button {
+  font-weight: 500 !important; }
+
 .active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
@@ -940,6 +943,9 @@ footer {
 
 .btn:active:focus {
   box-shadow: unset; }
+
+.btn, button {
+  font-weight: 500 !important; }
 
 .active-btn:hover, .active-btn:active {
   color: white;

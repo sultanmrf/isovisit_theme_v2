@@ -86,6 +86,9 @@ footer,
   box-shadow: unset;
 }
 
+.btn,button{
+  font-weight: 500 !important;
+}
 .active-btn{
   &:hover,&:active{
     color: white;
