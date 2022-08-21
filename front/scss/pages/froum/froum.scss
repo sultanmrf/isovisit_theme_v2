@@ -17,10 +17,10 @@
 }
 
 .start-motion-move-text{
-  animation: animate-move-text 26s linear infinite;
-  -webkit-animation: animate-move-text 26s linear infinite;
-  -moz-animation: animate-move-text 26s linear infinite;
-  -o-animation: animate-move-text 26s linear infinite;
+  animation: animate-move-text 18s linear infinite;
+  -webkit-animation: animate-move-text 18s linear infinite;
+  -moz-animation: animate-move-text 18s linear infinite;
+  -o-animation: animate-move-text 18s linear infinite;
 }
 
 .links-question-answer{
@@ -38,4 +38,17 @@
   }
 }
 
+.icon-question,
+.icon-folder-open{
+  width: 24px;
+  height: 24px;
+}
+
+.icon-question{
+  background: url("../../../images/icons/question.png") no-repeat;
+}
+
+.icon-folder-open{
+  background: url("../../../images/icons/folder.png") no-repeat;
+}
 

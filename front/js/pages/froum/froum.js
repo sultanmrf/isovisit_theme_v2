@@ -5,6 +5,12 @@ $(document).ready(function () {
         $(".motion-move-text").addClass('start-motion-move-text');
     }
 
+    $('.move-form-question-doctor').click(function() {
+        $('html').animate({
+            scrollTop: $("#collapse_froum").offset().top
+        }, 100);
+    });
+
     $(document).off('click','.btn-questions');
     $(document).on('click','.btn-questions',function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
@@ -33,6 +39,10 @@ $(document).ready(function () {
             },
             code_security:"required",
             rules_check:"required",
+            file:{
+                required: true,
+                extension: "xls|csv",
+            },
         },
         {
             height: "قد را مشخص کنید",
@@ -48,6 +58,10 @@ $(document).ready(function () {
                 maxlength: "حداکثر کاراکتر ها باید 650 باشد"
             },
             code_security: "کد امنیتی را وارد کنید",
-            rules_check: "این فیلد نمی تواند خالی باشد",
+            rules_check: "تایید قوانین الزامی باشد",
+            file:{
+                required: "tyrr5edyr",
+                extension: "aewfaeeerer",
+            },
         });
 });

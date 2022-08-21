@@ -23,7 +23,7 @@
 <header>
     <div class="container-xxl p-0">
         <!-- section navbar start-->
-        <div class="row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0">
+        <div class="header-menu header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
             <!-- section navbar mobile start  -->
             <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
                 <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
@@ -35,7 +35,7 @@
                         <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
                             <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img m-0">
                             <figcaption class="figure-caption d-flex flex-column me-2 me-sm-0">
-                                <span class="iso-font-lg text-success m-0 fw-bold">ایزو ویزیت</span>
+                                <span class="iso-font-lg iso-color-green-dark m-0 fw-bold">ایزو ویزیت</span>
                                 <span class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </span>
                             </figcaption>
                         </figure>
@@ -211,7 +211,7 @@
                             <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
                                 <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img img-md m-0">
                                 <figcaption class="figure-caption d-flex ms-2 flex-column">
-                                    <span class="iso-font-xl text-success fw-bold">ایزو ویزیت</span>
+                                    <span class="iso-font-xl iso-color-green-dark fw-bold">ایزو ویزیت</span>
                                     <span class="iso-font-md text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
                                 </figcaption>
                             </figure>
@@ -268,7 +268,7 @@
             <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
                 <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img logo m-0">
                 <figcaption class="figure-caption d-flex flex-column ms-xxl-2">
-                    <span class="iso-font-lg text-success fw-bold">ایزو ویزیت</span>
+                    <span class="iso-font-lg iso-color-green-dark fw-bold">ایزو ویزیت</span>
                     <span class="iso-font-xxs text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
                 </figcaption>
             </figure>
@@ -335,105 +335,105 @@
                 </div>
             </div>
             <!-- section menu user logged in end-->
+        </div>
+        <!-- section navbar end -->
 
-            <!-- section modal login start -->
-            <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <form action="#">
-                        <div class="modal-content">
-                            <div class="modal-header border-0 pb-1">
-                                <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
-                                    <img src="../../images/icons/user.png" alt="ورود / ثبت نام">
-                                    <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
-                                </div>
-                                <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
-                                        data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
+        <!-- section modal login start -->
+        <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <form action="#">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 pb-1">
+                            <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
+                                <img src="../../images/icons/user.png" alt="ورود / ثبت نام">
+                                <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                             </div>
-                            <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
-                                <div class="alert d-flex align-items-start p-0">
-                                    <img src="../../images/icons/alert.png" alt="هشدار">
-                                    <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                            <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
+                            <div class="alert d-flex align-items-start p-0">
+                                <img src="../../images/icons/alert.png" alt="هشدار">
+                                <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                            </div>
+                            <div class="row flex-column align-items-center">
+                                <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
+                                    <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
                                 </div>
-                                <div class="row flex-column align-items-center">
-                                    <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
-                                        <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
+                                <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn">ورود</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
+                            <div class="line-blur-dashed my-3 m-0"></div>
+                            <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em">
+                                <span class="icon-gmail"></span>
+                                <span class="ms-2">ورود / ثبت نام با جیمیل</span>
+                            </button>
+                            <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
+                        </div>
+
+                        <!-- section enter verification code start -->
+                        <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="container p-0">
+                                <div class="row">
+                                    <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                                    <div class="col-4 offset-4 mt-2">
+                                        <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-md-em box-timer">02:00</button>
                                     </div>
-                                    <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn">ورود</button>
-                                </div>
-                            </div>
-                            <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
-                                <div class="line-blur-dashed my-3 m-0"></div>
-                                <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em">
-                                    <span class="icon-gmail"></span>
-                                    <span class="ms-2">ورود / ثبت نام با جیمیل</span>
-                                </button>
-                                <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
-                            </div>
-
-                            <!-- section enter verification code start -->
-                            <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
-                                <div class="container p-0">
-                                    <div class="row">
-                                        <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
-                                        <div class="col-4 offset-4 mt-2">
-                                            <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-md-em box-timer">02:00</button>
-                                        </div>
-                                        <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
-                                            <div class="row m-0">
-                                                <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
-                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                </div>
-                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
-                                                    <a href="#" class="iso-color-blue-dark login-with-password">ورود با کلمه عبور</a>
-                                                    <a href="#"  class="iso-color-blue-dark edit-mobile">تغییر شماره موبایل</a>
-                                                </div>
-                                                <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blue-dark  iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
+                                    <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
+                                        <div class="row m-0">
+                                            <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
+                                                <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- section enter verification code end -->
-
-                            <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
-                                <div class="container p-0">
-                                    <div class="row gy-2">
-                                        <div class="col-10 offset-1 mb-3 iso-font-sm">
-                                            <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
-                                        </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
-                                            <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
-                                            <a href="#"  class="iso-color-blue-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
-                                        </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2">
-                                            <div class="input-group flex-row-reverse">
-                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
-                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
-                                            </span>
-                                                <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                            <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                                <a href="#" class="iso-color-blue-dark login-with-password">ورود با کلمه عبور</a>
+                                                <a href="#"  class="iso-color-blue-dark edit-mobile">تغییر شماره موبایل</a>
                                             </div>
+                                            <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blue-dark  iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
                                         </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
-                                            <a href="#" class="iso-color-blue-dark">ورود با کد تایید</a>
-                                            <a href="#"  class="iso-color-blue-dark">فراموشی رمز عبور</a>
-                                        </div>
-                                        <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blue-dark  border-radius active-btn">ورود</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <!-- section enter verification code end -->
+
+                        <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="container p-0">
+                                <div class="row gy-2">
+                                    <div class="col-10 offset-1 mb-3 iso-font-sm">
+                                        <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
+                                    </div>
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
+                                        <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                        <a href="#"  class="iso-color-blue-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
+                                    </div>
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2">
+                                        <div class="input-group flex-row-reverse">
+                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
+                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
+                                            </span>
+                                            <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                        </div>
+                                    </div>
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                        <a href="#" class="iso-color-blue-dark">ورود با کد تایید</a>
+                                        <a href="#"  class="iso-color-blue-dark">فراموشی رمز عبور</a>
+                                    </div>
+                                    <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blue-dark  border-radius active-btn">ورود</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <!-- section modal login end -->
         </div>
-        <!-- section navbar end -->
+        <!-- section modal login end -->
     </div>
 </header>
 <!-- section header end -->
@@ -517,7 +517,7 @@
             <div class="row gy-2 gy-sm-0 justify-content-between p-1">
                 <div class="col-10 order-1 col-md-3 d-flex align-items-center p-0">
                     <i class="fa-solid fa-bell iso-font-llg-em text-warning"></i>
-                    <h3 class="mx-2 iso-font-sm-em m-0">آخرین بروزرسانی های ایزو ویزیت</h3>
+                    <h5 class="mx-2 m-0 fw-normal">آخرین بروزرسانی های ایزو ویزیت</h5>
                 </div>
                 <div class="col-12 order-3 order-sm-2 col-md-4 d-flex align-items-center p-0">
                     <button type="button" class="border-0 bg-transparent iso-color-blue-dark iso-font-sm-em fw-bold" data-bs-toggle="modal" data-bs-target="#last_update_iso_visit">برای دیدن جدید ترین تغییرات در ایزو ویزیت کلیک کنید</button>
@@ -539,7 +539,7 @@
                             <div class="card-header d-flex border-0 justify-content-center px-0 flex-column bg-transparent">
                                 <div class="card-title d-flex align-items-center">
                                     <div class="icon-profile filter-reverse-background-to-green"></div>
-                                    <h3 class="mx-2 iso-font-sm-em m-0">مشخصات فردی</h3>
+                                    <h3 class="mx-2 iso-font-md-em m-0">مشخصات فردی</h3>
                                 </div>
                                 <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                                     <div class="img-box-profile d-flex flex-column align-items-center">
@@ -576,7 +576,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-4 align-self-end pe-1">
-                                        <button class="btn w-100 iso-bg-blue-dark iso-font-md-em active-btn" data-bs-toggle="modal" data-bs-target="#edit_data_profile_modal">ویرایش اطلاعات</button>
+                                        <button class="btn w-100 iso-bg-blue-dark iso-font-md-em active-btn border-radius fw-medium" data-bs-toggle="modal" data-bs-target="#edit_data_profile_modal">ویرایش اطلاعات</button>
                                     </div>
                                 </div>
                             </div>
@@ -586,11 +586,11 @@
                             <div class="card-header d-flex border-0 justify-content-center px-0 flex-column bg-transparent">
                                 <div class="card-title d-flex align-items-center mb-3 px-2">
                                     <div class="icon-social-network"></div>
-                                    <h3 class="mx-2 iso-font-sm-em m-0">شبکه های اجتماعی</h3>
+                                    <h5 class="mx-2 m-0 fw-normal">شبکه های اجتماعی</h5>
                                 </div>
                             </div>
                             <div class="card-body d-flex flex-column text-center p-1 px-0 py-2 border-0">
-                                <p class="card-text text-secondary m-0">
+                                <p class="card-text text-secondary m-0 iso-font-sm-em">
                                     با اضافه کردن شبکه های اجتماعی خود در این قسمت امان مشاهده آنها در پروفایل شما برای کاربران می باشد
                                 </p>
                                 <div class="icons-social-network d-flex justify-content-center mt-1">
@@ -636,17 +636,17 @@
                             <div class="card-header d-flex border-0 justify-content-center px-0 flex-column bg-transparent">
                                 <div class="card-title d-flex align-items-center mb-3 px-2">
                                     <div class="icon-transactions filter-reverse-background-to-green"></div>
-                                    <h3 class="mx-2 iso-font-sm-em m-0">اطلاعات پرداخت</h3>
+                                    <h5 class="mx-2 m-0 fw-normal">اطلاعات پرداخت</h5>
                                 </div>
                             </div>
                             <div class="card-body d-flex flex-column text-center p-1 py-2 border-0">
                                 <ul class="row gy-3 list-data-account mb-0 align-items-end">
-                                    <li class="col-sm-6 text-start">
-                                        <h5 class="iso-font-sm-em iso-color-blue-dark text-start">شماره حساب</h5>
+                                    <li class="col-sm-6 text-start iso-font-sm-em">
+                                        <h6 class="iso-color-blue-dark text-start">شماره حساب</h6>
                                         <p class="card-text m-0">۹۳۰۳۸۸۷۳۰۹۸۵۶۱</p>
                                     </li>
-                                    <li class="col-sm-6 text-start">
-                                        <h5 class="iso-font-sm-em iso-color-blue-dark text-start">شماره شبا</h5>
+                                    <li class="col-sm-6 text-start iso-font-sm-em">
+                                        <h6 class="iso-color-blue-dark text-start">شماره شبا</h6>
                                         <p class="card-text m-0">IR200560930388700309856001</p>
                                     </li>
                                 </ul>
@@ -682,39 +682,39 @@
                             <div class="card-header d-flex border-0 justify-content-center px-0 flex-column bg-transparent">
                                 <div class="card-title d-flex align-items-center mb-3 px-2">
                                     <div class="icon-consultants filter-reverse-background-to-green"></div>
-                                    <h3 class="mx-2 iso-font-sm-em m-0">اطلاعات تکمیلی پزشک</h3>
+                                    <h5 class="mx-2 m-0 fw-normal">اطلاعات تکمیلی پزشک</h5>
                                 </div>
                             </div>
                             <div class="card-body d-flex flex-column text-center p-1 py-2 border-0">
-                                <p class="card-text text-secondary m-0">پزشک گرامی همه اطلاعات در این فرم برای کاربر قابل مشاهده است ، بجز شماره موبایل ، عکس و مدارک</p>
+                                <p class="card-text text-secondary iso-font-sm-em">پزشک گرامی همه اطلاعات در این فرم برای کاربر قابل مشاهده است ، بجز شماره موبایل ، عکس و مدارک</p>
                                 <!-- section service and specialty start -->
                                 <div class="card-list-service-specialty">
-                                    <h4 class="iso-font-md-em fw-bold mt-4 iso-color-blue-dark text-start ms-3"> خدمات و تخصص</h4>
+                                    <h5 class="fw-bold mt-4 iso-color-blue-dark text-start ms-3"> خدمات و تخصص</h5>
                                     <ul class="row gy-3 list-service-specialty">
                                         <li class="col-sm-6 text-start">
-                                            <h5 class="iso-font-sm-em iso-color-blue-dark text-start">تخصص</h5>
-                                            <p class="card-text m-0">پزشک عمومی گرایش طب سنتی</p>
+                                            <h6 class="iso-color-blue-dark text-start">تخصص</h6>
+                                            <p class="card-text m-0 iso-font-sm-em">پزشک عمومی گرایش طب سنتی</p>
                                         </li>
                                         <li class="col-sm-3 text-start">
-                                            <h5 class="iso-font-sm-em iso-color-blue-dark text-start">تحصیلات</h5>
-                                            <p class="card-text m-0">پزشک عمومی </p>
+                                            <h6 class="iso-color-blue-dark text-start">تحصیلات</h6>
+                                            <p class="card-text m-0 iso-font-sm-em">پزشک عمومی </p>
                                         </li>
                                         <li class="col-sm-3 text-start">
-                                            <h5 class="iso-font-sm-em iso-color-blue-dark text-start">نظام پزشکی</h5>
-                                            <p class="card-text m-0">86283</p>
+                                            <h6 class="iso-color-blue-dark text-start">نظام پزشکی</h6>
+                                            <p class="card-text m-0 iso-font-sm-em">86283</p>
                                         </li>
                                         <li class="col-12 text-start">
-                                            <h5 class="iso-font-sm-em iso-color-blue-dark text-start">تعداد سال سابقه پزشکی</h5>
-                                            <p class="card-text m-0">18 سال</p>
+                                            <h6 class="iso-color-blue-dark text-start">تعداد سال سابقه پزشکی</h6>
+                                            <p class="card-text m-0 iso-font-sm-em">18 سال</p>
                                         </li>
                                         <li class="col-12 text-start">
-                                            <h5 class="iso-font-sm-em iso-color-blue-dark text-start">خدمات</h5>
+                                            <h6 class="iso-color-blue-dark text-start">خدمات</h6>
                                             <p class="card-text m-0">
                                                 مشاوره عمومی، مشاوره برای مشکلات پوستی، مشاوره مو، مشاوره ترک خود ارضایی، مشاوره درمان زود انزالی، مشاوره درمان کیست تخمدان، اصلاح مزاج، مشاوره درمان نازایی، مشاوره درمان ناباروری، مشاوره درمان کرونا، تفسیر نتایج آزمایش ، سونوگرافی و ماموگرافی،
                                             </p>
                                         </li>
                                         <li class="col-12 text-start">
-                                            <h5 class="iso-font-sm-em iso-color-blue-dark text-start">بیوگرافی</h5>
+                                            <h6 class="iso-color-blue-dark text-start">بیوگرافی</h6>
                                             <div class="card-text profile-bio m-0 marker-dark">
                                                 <p> دکتر محمد رضا کاظمیان پزشک عمومی</p>
                                                 <p> دارای مدرک طب سنتی و مکمل از دانشکده طب سنتی مشهد،</p>
@@ -728,22 +728,22 @@
 
                                 <!-- section data location start -->
                                 <div class="card-list-data-location">
-                                    <h4 class="iso-font-md-em fw-bold iso-color-blue-dark text-start ms-3">اطلاعات مطب</h4>
+                                    <h5 class="fw-bold iso-color-blue-dark text-start ms-3">اطلاعات مطب</h5>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <ul class="row gy-3 list-data-location mb-0 align-items-end">
                                                 <li class="col-12 text-start">
-                                                    <h5 class="iso-font-sm-em iso-color-blue-dark text-start">آدرس</h5>
-                                                    <p class="card-text m-0">خیام جنوبی 10 ، خیابان گلایل</p>
+                                                    <h6 class="iso-color-blue-dark text-start">آدرس</h6>
+                                                    <p class="card-text m-0 iso-font-sm-em">خیام جنوبی 10 ، خیابان گلایل</p>
                                                 </li>
                                                 <li class="col-12 text-start">
-                                                    <h5 class="iso-font-sm-em iso-color-blue-dark text-start">تلفن</h5>
-                                                    <p class="card-text m-0">۰۹۰۳۰۷۴۴۰۶۰</p>
+                                                    <h6 class="iso-color-blue-dark text-start">تلفن</h6>
+                                                    <p class="card-text m-0 iso-font-sm-em">۰۹۰۳۰۷۴۴۰۶۰</p>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-6 text-nowrap d-flex align-items-end">
-                                            <button class="btn w-100 iso-bg-blue-dark iso-font-md-em active-btn" data-bs-toggle="modal" data-bs-target="#info_complete_doctor_modal">ویرایش اطلاعات تکمیلی</button>
+                                            <button class="btn w-100 iso-bg-blue-dark iso-font-md-em active-btn border-radius" data-bs-toggle="modal" data-bs-target="#info_complete_doctor_modal">ویرایش اطلاعات تکمیلی</button>
                                         </div>
                                     </div>
 
@@ -4848,9 +4848,9 @@
             </div>
             <div class="footer-about order-3 order-md-1 order-xxl-1 px-12  col-12 col-md-6 col-xxl-3 d-flex flex-wrap text-light bg-transparent border-end">
                 <div class="footer-header p-0 pt-3 border-0 bg-transparent">
-                    <div class="footer-title">
-                        <h2 class="iso-font-xxl-em">ایزو ویزیت</h2>
-                        <p class="iso-font-lg-em mt-3">مشاوره آنلاین پزشکی و طب سنتی</p>
+                    <div class="footer-title iso-font-llg-em">
+                        <h1 class="iso-font-xl-em">ایزو ویزیت</h1>
+                        <p class="iso-font-md-em mt-3">مشاوره آنلاین پزشکی و طب سنتی</p>
                     </div>
                 </div>
                 <div class="footer-body p-0 pb-3">

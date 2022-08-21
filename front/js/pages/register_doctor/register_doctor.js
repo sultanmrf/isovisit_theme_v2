@@ -8,6 +8,12 @@ $(document).ready(function (){
 
     initCommentDoctorsSwiper();
 
+    $('.membership-doctor').click(function() {
+        $('html,body').animate({
+            scrollTop: $("#collapse_doctor").offset().top
+        }, 100);
+    });
+
     initValidation("#form",
         {first_and_last_name:"required",
             mobile_number:{

@@ -22,7 +22,7 @@
 <header>
     <div class="container-xxl p-0">
         <!-- section navbar start-->
-        <div class="row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0">
+        <div class="header-menu header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
             <!-- section navbar mobile start  -->
             <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
                 <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
@@ -34,7 +34,7 @@
                         <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
                             <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img m-0">
                             <figcaption class="figure-caption d-flex flex-column me-2 me-sm-0">
-                                <span class="iso-font-lg text-success m-0 fw-bold">ایزو ویزیت</span>
+                                <span class="iso-font-lg iso-color-green-dark m-0 fw-bold">ایزو ویزیت</span>
                                 <span class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </span>
                             </figcaption>
                         </figure>
@@ -210,7 +210,7 @@
                             <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
                                 <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img img-md m-0">
                                 <figcaption class="figure-caption d-flex ms-2 flex-column">
-                                    <span class="iso-font-xl text-success fw-bold">ایزو ویزیت</span>
+                                    <span class="iso-font-xl iso-color-green-dark fw-bold">ایزو ویزیت</span>
                                     <span class="iso-font-md text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
                                 </figcaption>
                             </figure>
@@ -267,7 +267,7 @@
             <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
                 <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img logo m-0">
                 <figcaption class="figure-caption d-flex flex-column ms-xxl-2">
-                    <span class="iso-font-lg text-success fw-bold">ایزو ویزیت</span>
+                    <span class="iso-font-lg iso-color-green-dark fw-bold">ایزو ویزیت</span>
                     <span class="iso-font-xxs text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
                 </figcaption>
             </figure>
@@ -334,117 +334,120 @@
                 </div>
             </div>
             <!-- section menu user logged in end-->
+        </div>
+        <!-- section navbar end -->
 
-            <!-- section modal login start -->
-            <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <form action="#">
-                        <div class="modal-content">
-                            <div class="modal-header border-0 pb-1">
-                                <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
-                                    <img src="../../images/icons/user.png" alt="ورود / ثبت نام">
-                                    <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
-                                </div>
-                                <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
-                                        data-bs-dismiss="modal" aria-label="Close">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
+
+        <!-- section modal login start -->
+        <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <form action="#">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 pb-1">
+                            <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
+                                <img src="../../images/icons/user.png" alt="ورود / ثبت نام">
+                                <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                             </div>
-                            <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
-                                <div class="alert d-flex align-items-start p-0">
-                                    <img src="../../images/icons/alert.png" alt="هشدار">
-                                    <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                            <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
+                            <div class="alert d-flex align-items-start p-0">
+                                <img src="../../images/icons/alert.png" alt="هشدار">
+                                <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                            </div>
+                            <div class="row flex-column align-items-center">
+                                <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
+                                    <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
                                 </div>
-                                <div class="row flex-column align-items-center">
-                                    <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
-                                        <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                        <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md" name="mobile" id="mobile" placeholder="09251691615">
+                                <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn">ورود</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
+                            <div class="line-blur-dashed my-3 m-0"></div>
+                            <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em">
+                                <span class="icon-gmail"></span>
+                                <span class="ms-2">ورود / ثبت نام با جیمیل</span>
+                            </button>
+                            <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
+                        </div>
+
+                        <!-- section enter verification code start -->
+                        <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="container p-0">
+                                <div class="row">
+                                    <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                                    <div class="col-4 offset-4 mt-2">
+                                        <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-md-em box-timer">02:00</button>
                                     </div>
-                                    <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn">ورود</button>
-                                </div>
-                            </div>
-                            <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
-                                <div class="line-blur-dashed my-3 m-0"></div>
-                                <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em">
-                                    <span class="icon-gmail"></span>
-                                    <span class="ms-2">ورود / ثبت نام با جیمیل</span>
-                                </button>
-                                <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
-                            </div>
-
-                            <!-- section enter verification code start -->
-                            <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
-                                <div class="container p-0">
-                                    <div class="row">
-                                        <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
-                                        <div class="col-4 offset-4 mt-2">
-                                            <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-md-em box-timer">02:00</button>
-                                        </div>
-                                        <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
-                                            <div class="row m-0">
-                                                <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
-                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
-                                                </div>
-                                                <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
-                                                    <a href="#" class="iso-color-blue-dark login-with-password">ورود با کلمه عبور</a>
-                                                    <a href="#"  class="iso-color-blue-dark edit-mobile">تغییر شماره موبایل</a>
-                                                </div>
-                                                <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blue-dark  iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
+                                    <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
+                                        <div class="row m-0">
+                                            <div class="col-10 col-sm-8 offset-1 pb-1 pb-sm-0 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 pt-1 border-radius">
+                                                <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
+                                                <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0" name="/" maxlength="1">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- section enter verification code end -->
-
-                            <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
-                                <div class="container p-0">
-                                    <div class="row gy-2">
-                                        <div class="col-10 offset-1 mb-3 iso-font-sm">
-                                            <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
-                                        </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
-                                            <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
-                                            <a href="#"  class="iso-color-blue-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
-                                        </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2">
-                                            <div class="input-group flex-row-reverse">
-                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
-                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
-                                            </span>
-                                                <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                            <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                                <a href="#" class="iso-color-blue-dark login-with-password">ورود با کلمه عبور</a>
+                                                <a href="#"  class="iso-color-blue-dark edit-mobile">تغییر شماره موبایل</a>
                                             </div>
+                                            <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blue-dark  iso-font-md-em active-btn accepted-info-user border-radius">تایید</button>
                                         </div>
-                                        <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
-                                            <a href="#" class="iso-color-blue-dark">ورود با کد تایید</a>
-                                            <a href="#"  class="iso-color-blue-dark">فراموشی رمز عبور</a>
-                                        </div>
-                                        <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blue-dark  border-radius active-btn">ورود</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <!-- section enter verification code end -->
+
+                        <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="container p-0">
+                                <div class="row gy-2">
+                                    <div class="col-10 offset-1 mb-3 iso-font-sm">
+                                        <p class="m-0 iso-font-md-em">رمز عبور را وارد کنید</p>
+                                    </div>
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
+                                        <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                        <a href="#"  class="iso-color-blue-dark fw-normal iso-font-sm-em edit-mobile">تغییر شماره موبایل</a>
+                                    </div>
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2">
+                                        <div class="input-group flex-row-reverse">
+                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
+                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
+                                            </span>
+                                            <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                        </div>
+                                    </div>
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 fw-normal iso-font-sm-em d-flex justify-content-between">
+                                        <a href="#" class="iso-color-blue-dark">ورود با کد تایید</a>
+                                        <a href="#"  class="iso-color-blue-dark">فراموشی رمز عبور</a>
+                                    </div>
+                                    <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blue-dark  border-radius active-btn">ورود</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <!-- section modal login end -->
         </div>
-        <!-- section navbar end -->
+        <!-- section modal login end -->
 
         <!-- section banner start -->
         <div class="banner iso-color-gradient-header d-flex align-items-center p-0 overflow-hidden">
-            <div class="container-fluid">
+            <div class="container-fluid position-relative">
                 <div class="row flex-column-reverse justify-content-center justify-content-lg-start flex-lg-row">
                     <div class="col-12 col-lg-10 p-2 p-lg-0 text-nowrap d-flex align-items-center justify-content-center justify-content-lg-start text-light iso-position-absolute iso-position-absolute-lg-none">
-                        <div class="row col-12 justify-content-start">
-                            <div class="col-12 col-lg-4 offset-1 ms-0 ms-lg-4 d-flex flex-column">
-                                <h1 class="iso-font-xxl iso-font-xxl-mo text-shadow fw-bold">ایزو ویزیت</h1>
-                                <p class="iso-font-llg text-shadow fw-bold mt-2">مشاور آنلاین پزشکی و  طب سنتی</p>
+                        <div class="row w-100 justify-content-start mt-2 mt-lg-0">
+                            <div class="col-12 col-lg-4 offset-1 d-flex ms-0 ms-lg-4 flex-column">
+                                <h1 class="d-flex flex-column mb-3">
+                                    <span class="iso-font-xxl iso-font-xxl-mo text-shadow fw-bold mb-3">ایزو ویزیت</span>
+                                    <span class="iso-font-llg text-shadow fw-bold mt-0">مشاور آنلاین پزشکی و  طب سنتی</span>
+                                </h1>
                             </div>
-                            <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-5 flex-column d-flex justify-content-center mt-lg-3">
+                            <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-4 flex-column d-flex justify-content-center mt-lg-3">
                                 <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3" id="icon_search">
                                     <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-items-center h-100 border-0"></i>
                                     <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target="#modal_search"
@@ -656,8 +659,8 @@
                         <div class="card border-0 box-shadow-lg border-radius">
                             <div class="card-header border-0 d-flex justify-content-center align-items-center p-3">
                                 <div class="card-title d-flex m-0">
-                                    <div class="filter-img-dark me-1"></div>
-                                    فیلتر ها
+                                    <div class="icon-filter me-1"></div>
+                                   <h5 class="m-0"> فیلتر ها</h5>
                                 </div>
                             </div>
                             <div class="card-body border-0 p-0 border-radius-bottom">
@@ -665,49 +668,49 @@
                                     <li class="list-group-item fw-normal iso-font-md-em pb-3">
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="پزشکان آنلاین" name="doctors_online" id="doctors_online">
-                                            <label class="form-check-label mx-2" for="doctors_online">
+                                            <label class="form-check-label mx-2 fw-normal" for="doctors_online">
                                                 پزشکان آنلاین
                                             </label>
                                         </div>
                                         <div class="form-check m-0 mt-2 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="پزشکان دارای مشاوره با بیمه" name="doctors_Insurance" id="doctors_Insurance">
-                                            <label class="form-check-label mx-2" for="doctors_Insurance">
+                                            <label class="form-check-label mx-2 fw-normal" for="doctors_Insurance">
                                                 پزشکان دارای مشاوره با بیمه
                                             </label>
                                         </div>
                                     </li>
                                     <li class="list-group-item fw-normal iso-font-md-em pb-3">
-                                        <p class="card-text m-0 my-1 fw-medium">نوع مشاوره</p>
+                                        <p class="card-text m-0 my-1 iso-font-md-em">نوع مشاوره</p>
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="مشاوره متنی" name="consulting_text" id="consulting_text">
-                                            <label class="form-check-label mx-2" for="consulting_text">
+                                            <label class="form-check-label mx-2 fw-normal" for="consulting_text">
                                                 مشاوره متنی
                                             </label>
                                         </div>
                                         <div class="form-check m-0 my-2 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="مشاوره تلفنی" name="consulting_phone" id="consulting_phone">
-                                            <label class="form-check-label mx-2" for="consulting_phone">
+                                            <label class="form-check-label mx-2 fw-normal" for="consulting_phone">
                                                 مشاوره تلفنی
                                             </label>
                                         </div>
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="مشاوره تصویری" name="consulting_video" id="consulting_video">
-                                            <label class="form-check-label mx-2" for="consulting_video">
+                                            <label class="form-check-label mx-2 fw-normal" for="consulting_video">
                                                 مشاوره تصویری
                                             </label>
                                         </div>
                                     </li>
                                     <li class="list-group-item fw-normal iso-font-md-em">
-                                        <p class="card-text m-0 my-1 fw-medium">جنسیت پزشک</p>
+                                        <p class="card-text m-0 my-1 iso-font-md-em">جنسیت پزشک</p>
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="آقا" name="man" id="man">
-                                            <label class="form-check-label mx-2" for="man">
+                                            <label class="form-check-label mx-2 fw-normal" for="man">
                                                 آقا
                                             </label>
                                         </div>
                                         <div class="form-check m-0 mt-2 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="خانم" name="woman" id="woman">
-                                            <label class="form-check-label mx-2" for="woman">
+                                            <label class="form-check-label mx-2 fw-normal" for="woman">
                                                 خانم
                                             </label>
                                         </div>
@@ -740,15 +743,18 @@
 
                         <!-- filter and sorting to size mobile start -->
                         <div class="btn-group d-flex justify-content-between align-items-center d-block d-lg-none">
-                            <button type="button" class="btn-filters btn d-flex align-items-center justify-content-center iso-bg-blue-dark border-radius me-2 w-50 active-btn"
+                            <button type="button" class="btn-filters btn d-flex align-items-center justify-content-center iso-bg-blue-dark border-radius me-2 w-50 py-2 active-btn"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvas_filter" aria-controls="offcanvas_filter">
-                                <span class="filter-img-light"></span>
-                                <span>فیلتر ها</span>
+                                <div class="btn-text w-100 d-flex justify-content-center">
+                                    <i class="icon-filter-light"></i>
+                                    <h5 class="m-0">فیلتر ها</h5>
+                                </div>
+                                <span class="count_filter_selected badge bg-light iso-color-blue-dark p-1 iso-font-md-em"></span>
                             </button>
-                            <button type="button" class="btn-sorting btn d-flex align-items-center justify-content-center iso-bg-blue-dark border-radius ms-2 w-50 active-btn"
+                            <button type="button" class="btn-sorting btn d-flex align-items-center justify-content-center iso-bg-blue-dark border-radius ms-2 w-50 py-2 active-btn"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvas_sort" aria-controls="offcanvas_sort">
                                 <i class="sort-img-light"></i>
-                                <span>مرتب سازی</span>
+                                <h5 class="m-0">مرتب سازی</h5>
                             </button>
                         </div>
                         <!-- filter and sorting to size mobile end -->
@@ -762,60 +768,62 @@
                         <!-- Hidden sidebars filter to size mobile start -->
                         <div class="offcanvas offcanvas-filter offcanvas-bottom h-100" tabindex="-1" id="offcanvas_filter" aria-labelledby="offcanvas_filter_label">
                             <div class="offcanvas-header box-shadow-sm justify-content-start">
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                <div class="offcanvas-title d-flex w-100 justify-content-center" id="offcanvas_filter_label">
-                                    <div class="filter-img-dark mx-1"></div>
+                                <div class="offcanvas-title d-flex w-100 justify-content-center position-relative" id="offcanvas_filter_label">
+                                    <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger start-0 position-absolute" data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <div class="icon-filter mx-1"></div>
                                     فیلتر ها
                                 </div>
                             </div>
-                            <div class="offcanvas-body px-0 overflow-hidden">
+                            <div class="offcanvas-body px-0 overflow-hidden d-flex justify-content-between flex-column">
                                 <ul class="list-group border-radius list-group-flush">
                                     <li class="list-group-item fw-normal iso-font-md-em pb-3">
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="پزشکان آنلاین" name="doctors_online" id="doctors_online_mobile">
-                                            <label class="form-check-label mx-2" for="doctors_online_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="doctors_online_mobile">
                                                 پزشکان آنلاین
                                             </label>
                                         </div>
                                         <div class="form-check m-0 mt-2 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="پزشکان دارای مشاوره با بیمه" name="doctors_Insurance" id="doctors_Insurance_mobile">
-                                            <label class="form-check-label mx-2" for="doctors_Insurance_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="doctors_Insurance_mobile">
                                                 پزشکان دارای مشاوره با بیمه
                                             </label>
                                         </div>
                                     </li>
                                     <li class="list-group-item fw-normal iso-font-md-em pb-3">
-                                        <p class="card-text m-0 my-1 fw-medium">نوع مشاوره</p>
+                                        <p class="card-text m-0 my-1 iso-font-md-em">نوع مشاوره</p>
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="مشاوره متنی" name="consulting_text" id="consulting_text_mobile">
-                                            <label class="form-check-label mx-2" for="consulting_text_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="consulting_text_mobile">
                                                 مشاوره متنی
                                             </label>
                                         </div>
                                         <div class="form-check m-0 my-2 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="مشاوره تلفنی" name="consulting_phone" id="consulting_phone_mobile">
-                                            <label class="form-check-label mx-2" for="consulting_phone_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="consulting_phone_mobile">
                                                 مشاوره تلفنی
                                             </label>
                                         </div>
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="مشاوره تصویری" name="consulting_video" id="consulting_video_mobile">
-                                            <label class="form-check-label mx-2" for="consulting_video_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="consulting_video_mobile">
                                                 مشاوره تصویری
                                             </label>
                                         </div>
                                     </li>
                                     <li class="list-group-item fw-normal iso-font-md-em">
-                                        <p class="card-text m-0 my-1 fw-medium">جنسیت پزشک</p>
+                                        <p class="card-text m-0 my-1 iso-font-md-em">جنسیت پزشک</p>
                                         <div class="form-check m-0 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="آقا" name="man" id="man_mobile">
-                                            <label class="form-check-label mx-2" for="man_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="man_mobile">
                                                 آقا
                                             </label>
                                         </div>
                                         <div class="form-check m-0 mt-2 d-flex align-items-center">
                                             <input class="form-check-input iso-form-check-input" type="checkbox" value="خانم" name="woman" id="woman_mobile">
-                                            <label class="form-check-label mx-2" for="woman_mobile">
+                                            <label class="form-check-label mx-2 fw-normal" for="woman_mobile">
                                                 خانم
                                             </label>
                                         </div>
@@ -823,10 +831,10 @@
                                 </ul>
                                 <div class="btn-group row gx-3 d-flex justify-content-between align-items-center mt-4 px-3">
                                     <div class="col-6 col-md-4">
-                                        <button type="button" class="btn w-100 iso-bg-blue-dark border-radius apply-filter active-btn" data-bs-dismiss="offcanvas" aria-label="Close">اعمال</button>
+                                        <button type="button" class="btn w-100 py-2 iso-bg-blue-dark border-radius apply-filter active-btn" data-bs-dismiss="offcanvas" aria-label="Close">اعمال</button>
                                     </div>
                                     <div class="col-6 col-md-4">
-                                        <button type="button" class="btn w-100 btn-outline-primary border-radius remove-filters-mobile" data-bs-dismiss="offcanvas" aria-label="Close">حذف فیلتر</button>
+                                        <button type="button" class="btn w-100 py-2 btn-outline-primary border-radius remove-filters-mobile" data-bs-dismiss="offcanvas" aria-label="Close">حذف فیلتر</button>
                                     </div>
                                 </div>
 
@@ -883,7 +891,7 @@
                                             </div>
                                             <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-2">
                                                 <span class="iso-font-md-em iso-color-dark">دکتر اسماعیل جمشید دوست</span>
-                                                <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                                                <span class="iso-font-xs-em fw-normal iso-color-dark">پزشک عمومی با گرایش طب سنتی</span>
                                             </figcaption>
                                         </figure>
                                     </div>
@@ -952,7 +960,7 @@
                                             </div>
                                             <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-2">
                                                 <span class="iso-font-md-em iso-color-dark">دکتر اسماعیل جمشید دوست</span>
-                                                <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                                                <span class="iso-font-xs-em fw-normal iso-color-dark">پزشک عمومی با گرایش طب سنتی</span>
                                             </figcaption>
                                         </figure>
                                     </div>
@@ -1021,7 +1029,7 @@
                                             </div>
                                             <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-2">
                                                 <span class="iso-font-md-em iso-color-dark">دکتر اسماعیل جمشید دوست</span>
-                                                <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                                                <span class="iso-font-xs-em fw-normal iso-color-dark">پزشک عمومی با گرایش طب سنتی</span>
                                             </figcaption>
                                         </figure>
                                     </div>
@@ -1090,7 +1098,7 @@
                                             </div>
                                             <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-2">
                                                 <span class="iso-font-md-em iso-color-dark">دکتر اسماعیل جمشید دوست</span>
-                                                <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                                                <span class="iso-font-xs-em fw-normal iso-color-dark">پزشک عمومی با گرایش طب سنتی</span>
                                             </figcaption>
                                         </figure>
                                     </div>
@@ -1159,7 +1167,7 @@
                                             </div>
                                             <figcaption class="figure-caption lh-lg iso-font-md-em flex-column d-flex ms-2">
                                                 <span class="iso-font-md-em iso-color-dark">دکتر اسماعیل جمشید دوست</span>
-                                                <span class="iso-font-sm-em fw-normal">پزشک عمومی با گرایش طب سنتی</span>
+                                                <span class="iso-font-xs-em fw-normal iso-color-dark">پزشک عمومی با گرایش طب سنتی</span>
                                             </figcaption>
                                         </figure>
                                     </div>
@@ -1227,11 +1235,11 @@
                     <section class="col-md-6 section-steps-to-get-online-advice">
                         <div class="card mt-md-0 border-radius box-shadow-lg">
                             <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
-                                <h2 class="iso-font-md-em m-0">چطور مشاوره آنلاین بگیرم؟</h2>
+                                <h5 class="m-0">چطور مشاوره آنلاین بگیرم؟</h5>
                             </div>
                             <div class="card-body">
                                 <div class="list-group">
-                                    <div class="row gy-3 lh-md">
+                                    <div class="row gy-3 lh-md fw-normal">
                                         <div class="col-xxl-6">
                                             <div class="list-group-item iso-color-dark list-group-item-success p-2 py-1 d-flex align-items-center border-radius border-0">
                                                 <span class="badge iso-font-md-em fw-bold iso-bg-green-dark border-radius">1</span>
@@ -1288,7 +1296,7 @@
                     <section class="col-md-6 section-frequently-asked-question">
                         <div class="card border-radius box-shadow-lg overflow-hidden">
                             <div class="card-header border-0 iso-font-md-em fw-normal text-center iso-bg-green-light">
-                                سوالات متداول
+                                <h5 class="m-0">سوالات متداول</h5>
                             </div>
                             <div class="card-body p-0">
                                 <ul class="list-group iso-bg-light border-0">
@@ -1300,7 +1308,7 @@
                                             <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
                                         </button>
                                         <div class="collapse bg-white w-100 p-1" id="collapse_question">
-                                            <p class="card-text p-2 iso-font-sm-em">
+                                            <p class="card-text p-2 iso-font-sm-em fw-normal">
                                                 از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
                                             </p>
                                         </div>
@@ -1313,7 +1321,7 @@
                                             <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
                                         </button>
                                         <div class="bg-white w-100 p-1 collapse" id="collapse_question_one">
-                                            <p class="card-text p-2 iso-font-sm-em">
+                                            <p class="card-text p-2 iso-font-sm-em fw-normal">
                                                 از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
                                             </p>
                                         </div>
@@ -1326,7 +1334,7 @@
                                             <span class="iso-font-sm-em ms-4 fw-medium">برای شروع روند درمان باید چکار کنم ؟</span>
                                         </button>
                                         <div class="bg-white w-100 p-1 collapse" id="collapse_question_two">
-                                            <p class="card-text p-2 iso-font-sm-em">
+                                            <p class="card-text p-2 iso-font-sm-em fw-normal">
                                                 از قسمت بالای صفحه گزینه ویزیت جدید را انتخاب کنید - صفحه معرفی پزشک باز میشود - روی گزینه ویزیت کلیک کنید فرم سوالات باز می شود - سوالات را که بصورت چند گزینه‌ای است به دقت بخوانید و هر یک از گزینه ها که شامل حال شما می شود تیک بزنید و در قسمت آخر فرم سوالات ؛ اگر توضیحاتی داشتید تایپ کنید و دکمه ارسال را بزنید
                                             </p>
                                         </div>
@@ -1476,9 +1484,9 @@
             </div>
             <div class="footer-about order-3 order-md-1 order-xxl-1 px-12  col-12 col-md-6 col-xxl-3 d-flex flex-wrap text-light bg-transparent border-end">
                 <div class="footer-header p-0 pt-3 border-0 bg-transparent">
-                    <div class="footer-title">
-                        <h2 class="iso-font-xxl-em">ایزو ویزیت</h2>
-                        <p class="iso-font-lg-em mt-3">مشاوره آنلاین پزشکی و طب سنتی</p>
+                    <div class="footer-title iso-font-llg-em">
+                        <h1 class="iso-font-xl-em">ایزو ویزیت</h1>
+                        <p class="iso-font-md-em mt-3">مشاوره آنلاین پزشکی و طب سنتی</p>
                     </div>
                 </div>
                 <div class="footer-body p-0 pb-3">

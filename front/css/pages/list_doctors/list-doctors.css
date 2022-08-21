@@ -1,13 +1,13 @@
-.style-filter-and-sort, .filter-img-dark, .filter-img-light, .sort-img-dark, .sort-img-light {
+.style-filter-and-sort, .icon-filter, .icon-filter-light, .sort-img-dark, .sort-img-light {
   width: 1.5em;
   height: 1.5em;
   background-size: cover;
   background-repeat: no-repeat; }
 
-.filter-img-dark {
+.icon-filter {
   background-image: url("../../../images/icons/filter-dark.png"); }
 
-.filter-img-light {
+.icon-filter-light {
   background-image: url("../../../images/icons/filter-light.png"); }
 
 .sort-img-dark {
@@ -20,7 +20,11 @@
   top: -1.3em; }
 
 #offcanvas_sort {
-  border-radius: 1.25em 1.25em 0 0; }
+  border-radius: 1.25em 1.25em 0 0;
+  height: unset; }
 
 .filter {
   width: 29.8%; }
+
+.btn-close-danger-modal {
+  top: -.25em; }

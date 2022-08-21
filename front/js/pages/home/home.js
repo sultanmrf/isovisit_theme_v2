@@ -19,6 +19,7 @@ $(document).ready(function (){
     initQuestionAnswerSwiper();
     initArticleSwiper();
 
+
     $(".text-Indications,.title-medicines").each(function (){
         let text = $(this).text().trim();
         if (text.length >= 56) {

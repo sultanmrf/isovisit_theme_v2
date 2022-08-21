@@ -72,6 +72,20 @@ $(document).ready(function (){
                 $this.find('svg').show();
             }
         });
+
+        if(check_size_media(1400,false)){
+            if(scrolled > 20){
+                $(".header-menu").addClass(['position-fixed','z-index-last']).css('width','82.5em');
+            }else{
+                $(".header-menu").removeClass(['position-fixed','z-index-last']);
+            }
+        }
+        if(scrolled > 20){
+            $(".header-menu").addClass(['position-fixed','z-index-last']);
+        }else{
+            $(".header-menu").removeClass(['position-fixed','z-index-last']);
+        }
+
     }
 
     $(document).on('click','.scroll-top',function (){
@@ -329,6 +343,34 @@ $(document).ready(function (){
         });
     /* validation comments end */
 
+    /* validation form send message start */
+    initValidation("#form_tag",{
+            doctor_title: "required",
+        },
+        {
+            doctor_title: "نام پزشک الزامی است",
+        });
+    /* validation form send message end */
+
+    /* validation form answer comment start */
+    initValidation("#form_answer_comment",{
+            first_and_last_name_comment: "required",
+            text_comment: "required",
+        },
+        {
+            first_and_last_name_comment: "نام و نام خانوادگی الزامی است",
+            text_comment: "متن نظر الزامی است",
+        });
+
+    initValidation("#form_answer_comment_two",{
+            first_and_last_name_comment_two: "required",
+            text_comment_two: "required",
+        },
+        {
+            first_and_last_name_comment_two: "نام و نام خانوادگی الزامی است",
+            text_comment_two: "متن نظر الزامی است",
+        });
+    /* validation form answer comment end */
 
     $(document).on('click','.filter-consultants button',function (){
         let val_aria_select = $(this).attr('aria-selected');
@@ -340,4 +382,18 @@ $(document).ready(function (){
             $("#pills_all_consultants").addClass(['show','active']);
         }
     });
+
+    /* js section operation comment start */
+    $(document).off('click','.btn-accepted');
+    $(document).on('click','.btn-accepted',function (){
+        let val_aria_expanded = $(this).attr('aria-expanded');
+        if(val_aria_expanded == 'true'){
+            $(this).attr('aria-expanded','false').removeClass(['btn-outline-success','border-success']).addClass('btn-outline-secondary');
+            $(this).find("i").removeClass(['fa-check','text-success']).addClass('fa-ban');
+        }else {
+            $(this).attr('aria-expanded','true').addClass('border-success').removeClass('btn-outline-secondary');
+            $(this).find("i").addClass(['fa-check','text-success']).removeClass('fa-ban');
+        }
+    });
+    /* js section operation comment end */
 });

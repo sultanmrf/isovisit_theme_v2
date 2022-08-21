@@ -2,6 +2,7 @@ $(document).ready(function (){
    initCommentsUsersSwiper();
    /* function show filters select start */
    function show_filters_select(target){
+      let count_filter_selected = 0 ;
       $(target).find(".card-body").text('');
       $("input[type='checkbox']").each(function (){
          if($(this).is(':checked')){
@@ -13,11 +14,15 @@ $(document).ready(function (){
                 "         <i class=\"fa-solid fa-2x fa-xmark text-danger ms-2 pointer-event remove-filter-card\" role='button' data-title_filter='" + val_checkbox_current + "'></i>\n" +
                 "    </div>")
 
+            ++count_filter_selected;
             if(target === '.card-details-filter-mobile'){
                $(target).removeClass('box-shadow-lg').addClass('bg-transparent');
                $(target).find(".card-body .card-text").addClass('bg-white');
             }
          }
+         /*اگر تعداد فیلتر های ثبت شده بیشتر از 0 باشد عددش رو بنداز و گرنه باید خالی چاپ شود */
+         show_counter_filter(count_filter_selected);
+
       })
 
       let count_filters_done = $(target).find(".card-body .card-text").length;
@@ -27,21 +32,18 @@ $(document).ready(function (){
    }
    /* function show filters select end */
 
-   $(".filter [type='checkbox']").click(function (){
-      show_filters_select(".card-details-filter");
-   })
+   function show_counter_filter(count_filter_selected){
+      count_filter_selected > 0
+          ? $(".count_filter_selected").text(count_filter_selected)
+          : $(".count_filter_selected").text("");
+   }
 
-   $(".apply-filter").click(function (){
-      show_filters_select('.card-details-filter-mobile');
-   })
-
-   /* function remove all filter start */
    function remove_filters(target){
       $(target).find(".card-body").text('');
       $(target).addClass('d-none');
       $("[type='checkbox']").prop('checked',false);
+      show_counter_filter(0);
    }
-   /* function remove all filter end */
 
    /* remove filters in size < 992 start */
    $(document).off('click','.remove-filters-mobile');
@@ -55,6 +57,7 @@ $(document).ready(function (){
    $(document).on('click','.remove-filters',function (){
       remove_filters(".card-details-filter")
    });
+   /* remove filters in size > 992 end */
 
    /* remove single filters start */
    $(document).on('click','.remove-filter-card',function (){
@@ -62,11 +65,20 @@ $(document).ready(function (){
       let count_filters_done = $(".card-details-filter,.card-details-filter-mobile").find(".card-body .card-text").length;
       if(count_filters_done < 1)
          $(".card-details-filter,.card-details-filter-mobile").addClass('d-none');
-
+      show_counter_filter(count_filters_done);
       let fef= $(this).data('title_filter');
       $("input[value='" + fef + "']").prop('checked',false);
    });
    /* remove single filters end */
+
+   $(".filter [type='checkbox']").click(function (){
+      show_filters_select(".card-details-filter");
+   })
+
+   $(".apply-filter").click(function (){
+      show_filters_select('.card-details-filter-mobile');
+   })
+
 
    $(document).off('click','.offcanvas-sorting .btn');
    $(document).on('click','.offcanvas-sorting .btn',function (){

@@ -51,7 +51,13 @@
     top: 0.625em; }
   /* section register_doctor end */
   main .section-facilities-and-services .card-body {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .section-doctors .section-header {
+    position: unset !important; }
+  .section-doctors .section-title {
+    top: 1.5em; }
+  .section-medicines .section-header {
+    position: unset !important; } }
 
 @media only screen and (min-width: 768px) {
   footer .footer-about {
@@ -131,7 +137,13 @@
     top: -6.125em; }
   main .section-facilities-and-services .card-body {
     height: 7rem;
-    width: 9rem; } }
+    width: 9rem; }
+  main .section-facilities-and-services h6 {
+    font-size: 17px; }
+  .section-medicines .section-header {
+    top: 0.9em; }
+  .section-doctors .section-header {
+    top: 1em; } }
 
 @media only screen and (min-width: 1400px) {
   .section-data-profile-doctor .btn-group {
@@ -141,4 +153,14 @@
     height: 7.375em; }
   footer .footer-certificates,
   footer .footer-contact {
-    border-top: 0 solid; } }
+    border-top: 0 solid; }
+  .links-doctor {
+    border-radius: 8px; } }
+
+@media only screen and (max-width: 1400px) {
+  .links-doctor {
+    border-radius: 0 0 8px 8px; }
+  /* section form comment in profile doctor start */
+  #form_comments .input-group-height {
+    height: unset; }
+  /* section form comment in profile doctor end */ }

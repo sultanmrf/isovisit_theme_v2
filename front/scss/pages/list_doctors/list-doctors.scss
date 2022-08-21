@@ -5,12 +5,12 @@
   background-repeat: no-repeat;
 }
 
-.filter-img-dark{
+.icon-filter{
   @extend .style-filter-and-sort;
   background-image: url("../../../images/icons/filter-dark.png");
 }
 
-.filter-img-light{
+.icon-filter-light{
   @extend .style-filter-and-sort;
   background-image: url("../../../images/icons/filter-light.png");
 }
@@ -33,8 +33,13 @@
 
 #offcanvas_sort{
   border-radius: 1.25em 1.25em 0 0;
+  height: unset;
 }
 
 .filter{
   width: 29.8%;
+}
+
+.btn-close-danger-modal{
+  top: -.25em;
 }

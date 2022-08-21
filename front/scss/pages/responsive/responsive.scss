@@ -83,6 +83,21 @@
       }
     }
   }
+
+  .section-doctors {
+    .section-header{
+      position: unset !important;
+    }
+    .section-title{
+      top: 1.5em;
+    }
+  }
+
+  .section-medicines {
+    .section-header{
+      position: unset !important;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px){
@@ -263,6 +278,21 @@
         height: 7rem;
         width: 9rem;
       }
+      h6{
+        font-size: 17px;
+      }
+    }
+  }
+
+  .section-medicines{
+    .section-header{
+      top: 0.9em;
+    }
+  }
+
+  .section-doctors {
+    .section-header{
+      top: 1em;
     }
   }
 
@@ -286,6 +316,23 @@
       border-top: 0 solid;
     }
   }
+
+  .links-doctor{
+    border-radius: 8px;
+  }
 }
 
+@media only screen and (max-width: 1400px){
+  .links-doctor{
+    border-radius: 0 0 8px 8px;
+  }
+
+  /* section form comment in profile doctor start */
+  #form_comments{
+    .input-group-height{
+      height: unset;
+    }
+  }
+  /* section form comment in profile doctor end */
+}
 

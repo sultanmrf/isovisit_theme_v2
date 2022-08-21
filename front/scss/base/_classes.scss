@@ -2,7 +2,7 @@
 /* iso background custom */
 .iso-bg-blue-dark{
   background: $iso-blue-dark;
-  color: white;
+  color: #F8F9FA;
 }
 
 .iso-bg-blue-light{
@@ -201,6 +201,9 @@
   border:1px solid $iso-blue-dark;
 }
 
+.border-color-cyan{
+  border:1px solid $iso-cyan;
+}
 /* iso order */
 .order-6{
   order: 6;
@@ -228,7 +231,7 @@
 
 /* z-index */
 .z-index-last{
-  z-index: 9999;
+  z-index: 1040;
 }
 
 .z-index-first{

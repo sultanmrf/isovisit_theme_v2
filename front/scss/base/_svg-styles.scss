@@ -3,25 +3,26 @@
   display: none;
 }
 
-svg#freepik_stories-online-review:not(.animated),
-svg#freepik_stories-pharmacist:not(.animated),
-svg#freepik_stories-doctors:not(.animated),
-svg#freepik_stories-online-doctor:not(.animated),
-svg#freepik_stories-online-article:not(.animated),
-svg#freepik_stories-about-us-page:not(.animated),
-svg#freepik_stories-accept-terms:not(.animated),
-svg#freepik_stories-emails:not(.animated),
-svg#freepik_stories-faq:not(.animated),
-svg#freepik_stories-active-support:not(.animated),
-svg#freepik_stories-cellphone:not(.animated),
-svg#freepik_stories-critical-thinking:not(.animated),
-svg#freepik_stories-mobile-development:not(.animated),
-svg#freepik_stories-completed:not(.animated),
-svg#freepik_stories-insurance:not(.animated),
-svg#freepik_stories-contact-us:not(.animated),
-svg#freepik_stories-personal-files:not(.animated),
-svg#freepik_stories-user-research:not(.animated),
-svg#freepik_stories-business-deal:not(.animated){
+#freepik_stories-online-review:not(.animated),
+#freepik_stories-pharmacist:not(.animated),
+#freepik_stories-doctors:not(.animated),
+#freepik_stories-online-doctor:not(.animated),
+#freepik_stories-online-article:not(.animated),
+#freepik_stories-about-us-page:not(.animated),
+#freepik_stories-accept-terms:not(.animated),
+#freepik_stories-emails:not(.animated),
+#freepik_stories-faq:not(.animated),
+#freepik_stories-active-support:not(.animated),
+#freepik_stories-cellphone:not(.animated),
+#freepik_stories-critical-thinking:not(.animated),
+#freepik_stories-mobile-development:not(.animated),
+#freepik_stories-completed:not(.animated),
+#freepik_stories-insurance:not(.animated),
+#freepik_stories-contact-us:not(.animated),
+#freepik_stories-personal-files:not(.animated),
+#freepik_stories-user-research:not(.animated),
+#freepik_stories-business-deal:not(.animated),
+#freepik_sign_in_doctor:not(.animated) {
   .animable {
     opacity: 0;
   }
@@ -37,18 +38,27 @@ svg#freepik_stories-business-deal:not(.animated){
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
-  left: -3.65rem;
-  top: -4.5rem;
+  left: -4.375rem;
+  top: -4.4rem;
+}
+
+.properties-animation-slideLeft{
+  animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -webkit-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -moz-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -o-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+}
+
+.properties-animation-slideRight{
+  animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -webkit-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -moz-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -o-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  opacity: 0;
 }
 
 /* svg header section  */
-svg#freepik_stories-online-doctor:not(.animated) {
-  .animable {
-    opacity: 0;
-  }
-}
-
-svg#freepik_stories-online-doctor.animated{
+#freepik_stories-online-doctor.animated{
   #freepik--cross-icon--inject-31,
   #freepik--Character--inject-31 {
     animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomOut;
@@ -56,23 +66,20 @@ svg#freepik_stories-online-doctor.animated{
     -moz-animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomOut;
     -o-animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomOut;
   }
-}
 
-svg#freepik_stories-online-doctor.animated{
   #freepik--pulse-icon--inject-31 {
     animation: 1.5s Infinite linear heartbeat;
     -webkit-animation: 1.5s Infinite linear heartbeat;
     -moz-animation: 1.5s Infinite linear heartbeat;
     -o-animation: 1.5s Infinite linear heartbeat;
   }
-}
 
-svg#freepik_stories-online-doctor.animated{
   #freepik--Chat--inject-31 {
     animation: 2.9s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomIn;
     -webkit-animation: 2.9s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomIn;
     -moz-animation: 2.9s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomIn;
     -o-animation: 2.9s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomIn;
+
   }
 }
 
@@ -138,8 +145,7 @@ svg#freepik_stories-online-doctor.animated{
   }
 }
 
-@keyframes slideLeft
-{
+@keyframes slideLeft {
   0% {
     opacity: 0;
     transform: translateX(-1.875rem);
@@ -156,8 +162,7 @@ svg#freepik_stories-online-doctor.animated{
   }
 }
 
-@keyframes zoomIn
-{
+@keyframes zoomIn {
   0% {
     opacity: 0;
     transform: scale(.5);
@@ -175,22 +180,14 @@ svg#freepik_stories-online-doctor.animated{
 }
 
 /* svg doctors section main */
-svg.freepik_stories-doctors:not(.animated) {
-  .animable {
-    opacity: 0;
-  }
-}
-
-svg.freepik_stories-doctors.animated {
+#freepik_stories-doctors.animated {
   #freepik--character-1--inject-4 {
     animation: 1.0s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
     -webkit-animation: 1.0s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
     -moz-animation: 1.0s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
     -o-animation: 1.0s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
   }
-}
 
-svg.freepik_stories-doctors.animated{
   #freepik--character-2--inject-4 {
     animation: 1s 1 forwards 0.8s cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
     -webkit-animation: 1s 1 forwards 0.8s cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
@@ -198,15 +195,9 @@ svg.freepik_stories-doctors.animated{
     -o-animation: 1s 1 forwards 0.8s cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
     opacity: 0;
   }
-}
 
-svg.freepik_stories-doctors.animated{
   #freepik--character-3--inject-4 {
-    animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-slideRight;
   }
 }
 
@@ -248,17 +239,16 @@ svg.freepik_stories-doctors.animated{
     -o-transform: translateX(0);
   }
 }
+
 /* svg section comments users*/
-svg#freepik_stories-online-review.animated{
+#freepik_stories-online-review.animated{
   #freepik--Character--inject-31 {
     animation: 1.1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     -webkit-animation: 1.1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     -moz-animation: 1.1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     -o-animation: 1.1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
   }
-}
 
-svg#freepik_stories-online-review.animated {
   #freepik--Review--inject-31 {
     animation: 1.2s 1 forwards  0.6s cubic-bezier(.36,-0.01,.5,1.38) fadeIn;
     -webkit-animation: 1.2s 1 forwards  0.6s cubic-bezier(.36,-0.01,.5,1.38) fadeIn;
@@ -295,30 +285,13 @@ svg#freepik_stories-online-review.animated {
 }
 
 /* svg section medicines */
-svg#freepik_stories-pharmacist:not(.animated) {
-  .animable
-  {
-    opacity: 0;
-  }
-}
-
-svg#freepik_stories-pharmacist.animated {
+#freepik_stories-pharmacist.animated {
   #freepik--Character--inject-20
   {
-    animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-slideRight;
   }
-}
-
-svg#freepik_stories-pharmacist.animated {
   #freepik--Counter--inject-20 {
-    animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+    @extend .properties-animation-slideLeft;
   }
 }
 
@@ -339,7 +312,6 @@ svg#freepik_stories-pharmacist.animated {
   }
 }
 
-
 @keyframes slideLeft {
   0% {
     opacity: 0;
@@ -358,16 +330,14 @@ svg#freepik_stories-pharmacist.animated {
 }
 
 /* svg section articles */
-svg#freepik_stories-online-article.animated {
+#freepik_stories-online-article.animated {
   #freepik--Device--inject-45 {
     animation: 1.1s 1 forwards  0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
     -webkit-animation: 1.1s 1 forwards  0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
     -moz-animation: 1.1s 1 forwards  0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
     -o-animation: 1.1s 1 forwards  0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
   }
-}
 
-svg#freepik_stories-online-article.animated {
   #freepik--Character--inject-45 {
     animation: 1.1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     -webkit-animation: 1.1s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
@@ -412,18 +382,10 @@ svg#freepik_stories-online-article.animated {
 }
 
 /* svg section sing-in */
-svg.freepik_stories-doctors:not(.animated) {
-  .animable {
-    opacity: 0;
-  }
-}
 
-svg.freepik_stories-doctors.animated {
+#freepik_sign_in_doctor.animated {
   #freepik--character-2--inject-80 {
-    animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1s 1 forwards 0s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+    @extend .properties-animation-slideLeft;
   }
 }
 
@@ -452,7 +414,7 @@ svg.freepik_stories-doctors.animated {
 }
 
 /* svg section about-us */
-svg#freepik_stories-about-us-page.animated{
+#freepik_stories-about-us-page.animated{
   #freepik--Page--inject-23
   {
     animation: 1.2s 1 forwards 0.1s linear slideLeft;
@@ -480,7 +442,7 @@ svg#freepik_stories-about-us-page.animated{
   }
 }
 
-svg#freepik_stories-accept-terms.animated {
+#freepik_stories-accept-terms.animated {
   #freepik--terms-and-conditions--inject-51 {
     animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     -webkit-animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;
@@ -490,7 +452,7 @@ svg#freepik_stories-accept-terms.animated {
   }
 }
 
-svg#freepik_stories-accept-terms.animated{
+#freepik_stories-accept-terms.animated{
   #freepik--Character--inject-51 {
     animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
     -webkit-animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
@@ -534,7 +496,7 @@ svg#freepik_stories-accept-terms.animated{
   }
 }
 
-svg#freepik_stories-emails.animated #freepik--Email--inject-29 {
+#freepik_stories-emails.animated #freepik--Email--inject-29 {
   animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
   -webkit-animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
   -moz-animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
@@ -542,7 +504,7 @@ svg#freepik_stories-emails.animated #freepik--Email--inject-29 {
   opacity: 0;
 }
 
-svg#freepik_stories-emails.animated #freepik--Character--inject-29 {
+#freepik_stories-emails.animated #freepik--Character--inject-29 {
   animation: 1.2s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
   -webkit-animation: 1.2s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
   -moz-animation: 1.2s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
@@ -584,7 +546,7 @@ svg#freepik_stories-emails.animated #freepik--Character--inject-29 {
   }
 }
 
-svg#freepik_stories-faq.animated
+#freepik_stories-faq.animated
 #freepik--Letters--inject-109 {
   animation: 1.1s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) fadeIn;
   -webkit-animation: 1.1s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) fadeIn;
@@ -593,7 +555,7 @@ svg#freepik_stories-faq.animated
   opacity: 0
 }
 
-svg#freepik_stories-faq.animated #freepik--character-4--inject-109 {
+#freepik_stories-faq.animated #freepik--character-4--inject-109 {
   animation: 1.1s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideUp;
   -webkit-animation: 1.1s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideUp;
   -moz-animation: 1.1s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideUp;
@@ -601,7 +563,7 @@ svg#freepik_stories-faq.animated #freepik--character-4--inject-109 {
   opacity: 0;
 }
 
-svg#freepik_stories-faq.animated #freepik--speech-bubble--inject-109 {
+#freepik_stories-faq.animated #freepik--speech-bubble--inject-109 {
   animation: 1.2s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideDown;
   -webkit-animation: 1.2s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideDown;
   -moz-animation: 1.2s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideDown;
@@ -652,8 +614,7 @@ svg#freepik_stories-faq.animated #freepik--speech-bubble--inject-109 {
   }
 }
 
-
-svg#freepik_stories-active-support.animated{
+#freepik_stories-active-support.animated{
   #freepik--Table--inject-124 {
     animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideUp;
     -webkit-animation: 1.2s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideUp;
@@ -662,8 +623,8 @@ svg#freepik_stories-active-support.animated{
     opacity: 0;
   }
 }
-svg#freepik_stories-active-support.animated {
 
+#freepik_stories-active-support.animated {
   #freepik--Character--inject-124 {
     animation: 1.2s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideDown;
     -webkit-animation: 1.2s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideDown;
@@ -672,7 +633,7 @@ svg#freepik_stories-active-support.animated {
     opacity: 0;
   }
 }
-svg#freepik_stories-active-support.animated{
+#freepik_stories-active-support.animated{
   #freepik--Chat--inject-124 {
     animation: 1.3s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
     -webkit-animation: 1.3s 1 forwards 0.4s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
@@ -733,7 +694,7 @@ svg#freepik_stories-active-support.animated{
   }
 }
 /* svg section register_doctors */
-svg#freepik_stories-business-deal.animated{
+#freepik_stories-business-deal.animated{
   #freepik--Contract--inject-64 {
     animation: 1.2s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
     -webkit-animation: 1.2s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
@@ -809,7 +770,23 @@ svg#freepik_stories-business-deal.animated{
   }
 }
 
-svg#freepik_stories-cellphone.animated{
+.properties-animation-slideLeft-stories-cellphone{
+  animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  opacity: 0;
+};
+
+.properties-animation-slideRight-stories-cellphone{
+  animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  opacity: 0;
+};
+
+#freepik_stories-cellphone.animated{
   #freepik--Device--inject-234 {
     animation: 1.3s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;
     -webkit-animation: 1.3s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;
@@ -818,43 +795,23 @@ svg#freepik_stories-cellphone.animated{
   }
 
   #freepik--icon-2--inject-234 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-slideRight-stories-cellphone;
   }
 
   #freepik--character-2--inject-234 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-slideRight-stories-cellphone;
   }
 
   #freepik--icon-1--inject-234 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-slideLeft-stories-cellphone;
   }
 
   #freepik--icon-1--inject-234 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-slideLeft-stories-cellphone;
   }
 
   #freepik--character-1--inject-234 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-slideLeft-stories-cellphone;
   }
 
   @keyframes slideDown {
@@ -909,21 +866,21 @@ svg#freepik_stories-cellphone.animated{
   }
 }
 
-svg#freepik_stories-critical-thinking.animated{
+.properties-animation-stories-critical-thinking{
+  animation: 1.1s 1 forwards 0.1s linear slideRight;
+  -webkit-animation: 1.1s 1 forwards 0.1s linear slideRight;
+  -moz-animation: 1.1s 1 forwards 0.1s linear slideRight;
+  -o-animation: 1.1s 1 forwards 0.1s linear slideRight;
+  opacity: 0;
+};
+
+#freepik_stories-critical-thinking.animated{
   #freepik--Document--inject-1 {
-    animation: 1.1s 1 forwards 0.1s linear slideRight;
-    -webkit-animation: 1.1s 1 forwards 0.1s linear slideRight;
-    -moz-animation: 1.1s 1 forwards 0.1s linear slideRight;
-    -o-animation: 1.1s 1 forwards 0.1s linear slideRight;
-    opacity: 0;
+    @extend .properties-animation-stories-critical-thinking;
   }
 
   #freepik--Pictures--inject-1 {
-    animation: 1.1s 1 forwards 0.1s linear slideRight;
-    -webkit-animation: 1.1s 1 forwards 0.1s linear slideRight;
-    -moz-animation: 1.1s 1 forwards 0.1s linear slideRight;
-    -o-animation: 1.1s 1 forwards 0.1s linear slideRight;
-    opacity: 0;
+    @extend .properties-animation-stories-critical-thinking;
   }
 
   #freepik--Chart--inject-1 {
@@ -984,7 +941,7 @@ svg#freepik_stories-critical-thinking.animated{
   }
 }
 
-svg#freepik_stories-mobile-development.animated {
+#freepik_stories-mobile-development.animated {
   #freepik--Device--inject-19 {
     animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
     -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
@@ -1036,7 +993,7 @@ svg#freepik_stories-mobile-development.animated {
   }
 }
 
-svg#freepik_stories-completed.animated {
+#freepik_stories-completed.animated {
   #freepik--complete-list--inject-163 {
     animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
@@ -1063,24 +1020,22 @@ svg#freepik_stories-completed.animated {
   }
 }
 
-svg#freepik_stories-insurance.animated{
+.properties-animation-stories-insurance {
+  animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+  opacity: 0;
+}
+
+#freepik_stories-insurance.animated{
   #freepik--character-1--inject-331 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-stories-insurance;
   }
 
   #freepik--character-2--inject-331 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
-
+    @extend .properties-animation-stories-insurance;
   }
-
   @keyframes slideLeft {
     0% {
       opacity: 0;
@@ -1098,49 +1053,38 @@ svg#freepik_stories-insurance.animated{
     }
   }
 }
+/* style svg stories contact us start */
+.properties-animation-stories-contact-us{
+  animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+  opacity: 0;
+}
 
-svg#freepik_stories-contact-us.animated {
+#freepik_stories-contact-us.animated {
   #freepik--Chair--inject-367 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-stories-contact-us;
   }
 
   #freepik--Character--inject-367 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0
+    @extend .properties-animation-stories-contact-us;
   }
 
   #freepik--speech-bubble--inject-367 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0
+    @extend .properties-animation-stories-contact-us;
   }
 
   #freepik--Bird--inject-367 {
-    animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0
+    @extend .properties-animation-stories-contact-us;
   }
+
 
   #freepik--Desk--inject-367 {
-    animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.2s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0
+    @extend .properties-animation-stories-contact-us;
   }
 
-  @keyframes slideRight {
+  @keyframes slideRightStoriesContactUs {
     0% {
       opacity: 0;
       transform: translateX(30px);
@@ -1174,17 +1118,19 @@ svg#freepik_stories-contact-us.animated {
     }
   }
 }
+/* style svg stories contact us end */
 
-svg#freepik_stories-personal-files.animated {
+/* style svg personal files start */
+#freepik_stories-personal-files.animated {
   #freepik--filing-cabinet--inject-384 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeftPersonalFiles;
+    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeftPersonalFiles;
+    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeftPersonalFiles;
+    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideLeftPersonalFiles;
     opacity: 0
   }
 
-  @keyframes slideLeft {
+  @keyframes slideLeftPersonalFiles {
     0% {
       opacity: 0;
       transform: translateX(-30px);
@@ -1201,85 +1147,65 @@ svg#freepik_stories-personal-files.animated {
     }
   }
 }
+/* style svg personal files end */
 
-svg#freepik_stories-user-research.animated{
-
+/* style svg stories user research start */
+.properties-animation-slideLeft-stories-user-research{
+  animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeftStoriesUserResearch;
+  -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeftStoriesUserResearch;
+  -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeftStoriesUserResearch;
+  -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeftStoriesUserResearch;
+  opacity: 0;
+}
+.properties-animation-slideRight-stories-user-research{
+  animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideRightStoriesUserResearch;
+  -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slislideRightStoriesUserResearchdeLeft;
+  -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideRightStoriesUserResearch;
+  -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideRightStoriesUserResearch;
+  opacity: 0;
+}
+#freepik_stories-user-research.animated{
   #freepik--Table--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-slideLeft-stories-user-research;
   }
 
   #freepik--profile-2--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-slideLeft-stories-user-research;
   }
 
   #freepik--profile-3--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;
+    @extend .properties-animation-slideLeft-stories-user-research;
   }
 
   #freepik--profile-4--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;}
+    @extend .properties-animation-slideLeft-stories-user-research;
+  }
 
   #freepik--profile-1--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;}
+    @extend .properties-animation-slideLeft-stories-user-research;
+  }
 
   #freepik--device-1--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;}
+    @extend .properties-animation-slideLeft-stories-user-research;
+  }
 
   #freepik--device-2--inject-2 {
-    animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
-    opacity: 0;}
+    @extend .properties-animation-slideLeft-stories-user-research;
+  }
 
   #freepik--Chair--inject-2 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;}
+    @extend .properties-animation-slideRight-stories-user-research;
+  }
 
   #freepik--Character--inject-2 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-slideRight-stories-user-research;
   }
 
   #freepik--trash-bin--inject-2 {
-    animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -webkit-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -moz-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    -o-animation: 1.3s 1 forwards 0.1s cubic-bezier(.36,-0.01,.5,1.38) slideRight;
-    opacity: 0;
+    @extend .properties-animation-slideRight-stories-user-research;
   }
 
-  @keyframes slideLeft {
+  @keyframes slideLeftStoriesUserResearch {
     0% {
       opacity: 0;
       transform: translateX(-30px);
@@ -1296,7 +1222,7 @@ svg#freepik_stories-user-research.animated{
     }
   }
 
-  @keyframes slideRight {
+  @keyframes slideRightStoriesUserResearch {
     0% {
       opacity: 0;
       transform: translateX(30px);
@@ -1313,3 +1239,6 @@ svg#freepik_stories-user-research.animated{
     }
   }
 }
+/* style svg stories user research end */
+
+/* style svg register doctor end */

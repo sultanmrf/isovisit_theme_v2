@@ -53,7 +53,6 @@ function initSwiper(target, options, name_pagination , spaceBetween = 16 , ) {
         navigation_option = false;
 
     new Swiper(target, {
-        rewind: true,
         slidesPerView: count_slides_view,
         spaceBetween: spaceBetween,
         navigation: navigation_option,
@@ -75,7 +74,7 @@ function initMedicineSwiper(target = '.swiper-medicines', name_pagination = '.sw
             grabCursor: false,
         },
         md: {
-            count_slides_view:'auto',
+            count_slides_view: 'auto',
             navigation: false,
             pagination: true,
             effect: false,

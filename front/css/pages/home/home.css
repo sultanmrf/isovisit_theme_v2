@@ -103,23 +103,8 @@ main .swiper-question-answer p {
 main .section-articles .swiper-articles img {
   height: 13.1875em; }
 
-main .section-articles .swiper-articles .card-text {
+main .section-articles .swiper-articles .a {
   height: 3.8em; }
-
-main .section-medicines .section-title {
-  top: -0.45em; }
-
-main .section-medicines .swiper-slide {
-  width: 18.75em; }
-
-main .section-medicines .card {
-  height: 10em; }
-
-main .section-medicines img {
-  width: 5.313em; }
-
-main .section-medicines .title-medicines {
-  height: 3.25em; }
 
 main .section-sign-in-doctor > .section-body {
   background: #CCE5FF; }
