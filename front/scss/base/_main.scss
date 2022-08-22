@@ -86,9 +86,6 @@ footer,
   box-shadow: unset;
 }
 
-.btn,button{
-  font-weight: 500 !important;
-}
 .active-btn{
   &:hover,&:active{
     color: white;
@@ -413,6 +410,12 @@ footer,
 .card-doctor-advisory-insurance-icon{
   width: 6.8em;
   height: 1.8em;
+}
+
+.icon-close-blue{
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../../images/icons/close-blue.png") center no-repeat;
 }
 
 .icon-twenty-four{

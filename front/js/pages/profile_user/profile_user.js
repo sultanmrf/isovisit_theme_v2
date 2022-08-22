@@ -141,6 +141,14 @@ $(document).ready(function (){
             rules_check: "این فیلد نمی تواند خالی باشد",
         });
 
+    initValidation("#form_upload",
+        {
+            description_comment: "required",
+        },
+        {
+            description_comment: " نظرات الزامی است",
+        });
+
 
     /* if hover in menu profile_user in code start */
     $(document).on('click','.list-icon-profile div[role="button"]',function (){

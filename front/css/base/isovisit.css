@@ -364,9 +364,6 @@ footer {
 .btn:active:focus {
   box-shadow: unset; }
 
-.btn, button {
-  font-weight: 500 !important; }
-
 .active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
@@ -594,6 +591,11 @@ footer {
 .card-doctor-advisory-insurance-icon {
   width: 6.8em;
   height: 1.8em; }
+
+.icon-close-blue {
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../../images/icons/close-blue.png") center no-repeat; }
 
 .icon-twenty-four, .icon-telegram-blue, .icon-telegram-light, .icon-email, .icon-edit, .icon-trash, .icon-bookmark, .icon-instagram-blue, .icon-instagram-light, .icon-aparat, .icon-gmail {
   width: 1.5em;
@@ -944,9 +946,6 @@ footer {
 .btn:active:focus {
   box-shadow: unset; }
 
-.btn, button {
-  font-weight: 500 !important; }
-
 .active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
@@ -1174,6 +1173,11 @@ footer {
 .card-doctor-advisory-insurance-icon {
   width: 6.8em;
   height: 1.8em; }
+
+.icon-close-blue {
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../../images/icons/close-blue.png") center no-repeat; }
 
 .icon-twenty-four, .icon-telegram-blue, .icon-telegram-light, .icon-email, .icon-edit, .icon-trash, .icon-bookmark, .icon-instagram-blue, .icon-instagram-light, .icon-aparat, .icon-gmail {
   width: 1.5em;
