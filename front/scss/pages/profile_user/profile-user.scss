@@ -162,7 +162,7 @@ main{
   .list-question-answer-user,
   .list-question-answer-news{
     a {
-      height:1.125em;
+      height:1.3em;
       overflow:hidden;
     }
   }
@@ -190,6 +190,12 @@ main{
   {
     @extend .size-twenty-four;
     background: url("../../../images/icons/ip.png") no-repeat;
+  }
+
+  .icon-alert{
+     width: 2em;
+     height: 2em;
+     background: url("../../../images/icons/alert.png") no-repeat;
   }
 
   /* icons man */

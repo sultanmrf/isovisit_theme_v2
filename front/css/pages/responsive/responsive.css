@@ -67,7 +67,9 @@
   .operation-doctor .dropdown-menu,
   .operation-patient .dropdown-menu {
     width: 4.875em;
-    height: 2.313em; } }
+    height: 2.313em; }
+  .list-details-ticket .details-title {
+    border-bottom: 1px solid #dee2e6; } }
 
 @media only screen and (max-width: 576px) {
   .section-list-doctors .card-body {
@@ -91,7 +93,9 @@
   .operation-patient .dropdown-menu {
     inset: -72px -41px auto auto !important; }
   .operation-doctor .dropdown-menu {
-    inset: -72px 44px auto auto !important; } }
+    inset: -72px 44px auto auto !important; }
+  .list-details-ticket .details-title {
+    border-left: 1px solid #dee2e6; } }
 
 @media only screen and (max-width: 768px) {
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {

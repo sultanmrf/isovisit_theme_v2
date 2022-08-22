@@ -116,6 +116,12 @@
       height: 2.313em;
     }
   }
+
+  .list-details-ticket{
+       .details-title{
+         border-bottom: 1px solid #dee2e6;
+       }
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -172,6 +178,12 @@
     }
   }
 
+
+  .list-details-ticket{
+     .details-title{
+       border-left: 1px solid #dee2e6;
+     }
+  }
 }
 
 

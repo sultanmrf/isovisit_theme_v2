@@ -106,7 +106,7 @@ main {
       cursor: pointer; }
   main .list-question-answer-user a,
   main .list-question-answer-news a {
-    height: 1.125em;
+    height: 1.3em;
     overflow: hidden; }
   main .icon-explorer {
     background: url("../../../images/icons/explorer.png") no-repeat; }
@@ -116,6 +116,10 @@ main {
     background: url("../../../images/icons/windows.png") no-repeat; }
   main .icon-ip {
     background: url("../../../images/icons/ip.png") no-repeat; }
+  main .icon-alert {
+    width: 2em;
+    height: 2em;
+    background: url("../../../images/icons/alert.png") no-repeat; }
   main .icon-man1 {
     background: url("../../../images/profile_user/man1.png") no-repeat; }
   main .icon-man2 {
