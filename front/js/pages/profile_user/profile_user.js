@@ -71,10 +71,16 @@ $(document).ready(function (){
     initValidation("#form_info_transaction",
         {
             account_no: "required",
-            shaba_no: "required",
+            shaba_no: {
+                required: true,
+                minlength: 24
+            },
         },{
             account_no: "شماره حساب الزامی است",
-            shaba_no: "شماره شبا الزامی است",
+            shaba_no: {
+                required: "شماره شبا الزامی است",
+                minlength: "شماره شبا باید 24 رقم باشد"
+            },
         });
 
     initValidation("#form_Info_complete_doctor",{
@@ -155,4 +161,27 @@ $(document).ready(function (){
         let title_img = $(this).data('title_img');
         $(".img-box-profile img").attr('src',"../../images/profile_user/" + title_img + ".png")
     });
+
+    $(document).on('click','.add-specialty',function (){
+       $("#info_complete_doctor_modal form > .row").prepend("<div class=\"col-12\">\n" +
+           "                                    <label for=\"specialty\" class=\"form-label iso-font-md-em mb-1 fw-normal\">تخصص</label>\n" +
+           "                                    <select class=\"form-select form-select-category iso-font-xs-em fw-normal text-secondary\" id=\"specialty\" name=\"specialty\">\n" +
+           "                                        <option value=\"\">تخصص خود را انتخاب کنید</option>\n" +
+           "                                    </select>\n" +
+           "                                    <span class=\"error_specialty error mt-1\"></span>\n" +
+           "                                </div>\n" +
+           "                                <div class=\"col-12\">\n" +
+           "                                    <label for=\"education\" class=\"form-label iso-font-md-em mb-1 fw-normal\">تحصیلات</label>\n" +
+           "                                    <input type=\"text\" class=\"form-control iso-font-xs-em fw-normal text-secondary valid\" id=\"education\" placeholder=\"تحصیلات خود را انتخاب کنید\" value=\"\" name=\"education\">\n" +
+           "                                    <span class=\"error_education error mt-1\"></span>\n" +
+           "                                </div>")
+    });
+
+    $(document).on('click','.add-file',function (){
+        $(".files-input .row").append("<div class=\"col-12\">\n" +
+            "                                    <label for=\"poster_video_about_doctor\" class=\"form-label iso-font-md-em iso-font-md-em fw-normal\">عنوان فایل<span class=\"text-muted iso-font-sm-em mx-1\">(اختیاری)</span> </label>\n" +
+            "                                    <input class=\"form-control iso-font-md-em fw-normal text-secondary\" type=\"file\" id=\"poster_video_about_doctor\" name=\"poster_video_about_doctor\">\n" +
+            "                                </div>")
+    });
+
 });

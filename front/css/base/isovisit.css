@@ -2271,47 +2271,64 @@ footer .swiper-pagination-bullet-active {
 
 /* style svg personal files end */
 /* style svg stories user research start */
-.properties-animation-slideLeft-stories-user-research, #freepik_stories-user-research.animated #freepik--Table--inject-2, #freepik_stories-user-research.animated #freepik--profile-2--inject-2, #freepik_stories-user-research.animated #freepik--profile-3--inject-2, #freepik_stories-user-research.animated #freepik--profile-4--inject-2, #freepik_stories-user-research.animated #freepik--profile-1--inject-2, #freepik_stories-user-research.animated #freepik--device-1--inject-2, #freepik_stories-user-research.animated #freepik--device-2--inject-2 {
+.properties-animation-slideLeft-stories-user-research {
   animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeftStoriesUserResearch;
   -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeftStoriesUserResearch;
   -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeftStoriesUserResearch;
   -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeftStoriesUserResearch;
   opacity: 0; }
 
-.properties-animation-slideRight-stories-user-research, #freepik_stories-user-research.animated #freepik--Chair--inject-2, #freepik_stories-user-research.animated #freepik--Character--inject-2, #freepik_stories-user-research.animated #freepik--trash-bin--inject-2 {
+.properties-animation-slideRight-stories-user-research {
   animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRightStoriesUserResearch;
   -webkit-animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slislideRightStoriesUserResearchdeLeft;
   -moz-animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRightStoriesUserResearch;
   -o-animation: 1.3s 1 forwards 0.3s cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRightStoriesUserResearch;
   opacity: 0; }
 
-@keyframes slideLeftStoriesUserResearch {
-  0% {
-    opacity: 0;
-    transform: translateX(-30px);
-    -webkit-transform: translateX(-30px);
-    -moz-transform: translateX(-30px);
-    -o-transform: translateX(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0); } }
+svg#freepik_stories-user-research.animated #freepik--Table--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
 
-@keyframes slideRightStoriesUserResearch {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-    -webkit-transform: translateX(30px);
-    -moz-transform: translateX(30px);
-    -o-transform: translateX(30px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0); } }
+svg#freepik_stories-user-research.animated #freepik--profile-2--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-3--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-4--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--profile-1--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--device-1--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--device-2--inject-130 {
+  animation: 1.2s 1 forwards linear slideLeft;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--Chair--inject-130 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.2s;
+  opacity: 0; }
+
+svg#freepik_stories-user-research.animated #freepik--Character--inject-130 {
+  animation: 1.3s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0.2s;
+  opacity: 0; }
 
 /* style svg stories user research end */
 /* style svg register doctor end */
