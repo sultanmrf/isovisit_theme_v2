@@ -800,6 +800,16 @@ header {
   header .figure .logo {
     width: 2.8rem;
     height: 2.8rem; }
+  header .icon-logo-sm {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url("../../images/logo.png");
+    background-size: 2.8rem 2.8rem; }
+  header .icon-logo-lg {
+    width: 3.7em;
+    height: 3.7em;
+    background-image: url("../../images/logo.png");
+    background-size: 4em 4em; }
   header .nav {
     height: 2rem; }
     header .nav .dropdown-menu {
@@ -837,6 +847,14 @@ header {
     top: 149px; }
   header .btn-return {
     height: 2.5em; }
+  header .modal-login input:focus {
+    border: 0.125em solid #1773B5; }
+  header .modal-login .modal-body {
+    height: 240px; }
+  header .modal-login .show-password {
+    left: 0.625em;
+    top: 0.63em;
+    background: #f8f9fa; }
   header .modal-login .box-verification-code {
     border: 1px solid #dee2e6; }
     header .modal-login .box-verification-code:focus-within {
@@ -845,6 +863,18 @@ header {
       border-color: #6c757d; }
     header .modal-login .box-verification-code input:focus {
       border-color: #1773B5; }
+  header .modal-login .box-timer {
+    width: 6.25em;
+    height: 2.125em; }
+  header .modal-login .input-phone,
+  header .modal-login .box-verification-code,
+  header .modal-login .box-password {
+    height: 2.5em; }
+  header .modal-login .box-password,
+  header .modal-login .input-phone {
+    width: 240px; }
+  header .modal-login .form-modal-login {
+    width: 240px; }
   header .menu-user {
     transition: 0.8s ease-in; }
     header .menu-user .dropdown-menu {

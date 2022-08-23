@@ -86,13 +86,18 @@
 
   .section-doctors {
     .section-header{
-      position: unset !important;
+      position: unset;
     }
     .section-title{
-      top: 1.5em;
+      top: 3.5em;
     }
   }
 
+  .section-comments-users {
+    .section-title{
+      top: 3.5em;
+    }
+  }
   .section-medicines {
     .section-header{
       position: unset !important;

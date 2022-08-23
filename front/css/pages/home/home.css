@@ -24,7 +24,7 @@ main .iso-line-title {
   border-radius: 1.875rem; }
 
 main .section-facilities-and-services .card {
-  height: 12rem; }
+  height: 11rem; }
 
 main .section-facilities-and-services .card-header {
   top: 5%;
@@ -67,6 +67,9 @@ main .section-doctors .swiper-button-prev {
 
 main .section-specialty .card-specialty {
   width: 10.625em;
+  height: 9.375em; }
+
+main .section-services .card-service {
   height: 9.375em; }
 
 main .section-services .swiper-button-next,

@@ -17,6 +17,20 @@ header {
     }
   }
 
+  .icon-logo-sm{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url("../../images/logo.png");
+    background-size: 2.8rem 2.8rem;
+  }
+
+  .icon-logo-lg{
+    width: 3.7em;
+    height: 3.7em;
+    background-image: url("../../images/logo.png");
+    background-size: 4em 4em;
+  }
+
   .nav{
     height: 2rem;
     .dropdown-menu{
@@ -84,6 +98,20 @@ header {
 
   .modal-login{
 
+    input:focus{
+      border: 0.125em solid #1773B5;
+    }
+
+    .modal-body{
+      height: 240px;
+    }
+
+    .show-password{
+      left: 0.625em;
+      top: 0.63em;
+      background: rgb(248,249,250);
+    }
+
     .box-verification-code{
       border: 1px solid #dee2e6;
 
@@ -100,6 +128,25 @@ header {
       }
     }
 
+    .box-timer{
+      width: 6.25em;
+      height: 2.125em;
+    }
+
+    .input-phone,
+    .box-verification-code,
+    .box-password{
+      height: 2.5em;
+    }
+
+    .box-password,
+    .input-phone{
+      width: 240px;
+    }
+
+    .form-modal-login{
+      width: 240px;
+    }
   }
 
   .menu-user{

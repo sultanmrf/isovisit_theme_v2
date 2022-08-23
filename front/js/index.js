@@ -118,7 +118,8 @@ $(document).ready(function (){
     // clearInterval(timer);
     function start_timer() {
         if(second === 0 && minutes === 0){
-            $(".box-timer").text("ارسال مجدد کد");
+            $(".box-timer span").text("ارسال مجدد کد");
+            $(".box-timer").addClass(['iso-bg-blue-dark','text-light']);
             clearInterval(timer);
         }else{
             if(second === 0){
@@ -127,7 +128,7 @@ $(document).ready(function (){
             }
             second -= 1;
             let val_timer = ((second < 10 ? "0" + second : second) + " : " + ("0" + minutes));
-            $(".box-timer").text(val_timer);
+            $(".box-timer span").text(val_timer);
         }
     }
 
@@ -141,14 +142,19 @@ $(document).ready(function (){
     $(document).on('click','.box-timer',function (){
         second = 60;
         minutes = 1;
-        $(".box-timer").removeClass(['iso-bg-blur-dark','text-light'])
-            .addClass(['alert-primary','iso-text-dark']);
+        $(".box-timer").removeClass(['iso-bg-blue-dark','text-light'])
+            .addClass(['alert-primary','iso-color-dark']);
         timer = setInterval(start_timer, 1000);
     });
 
     $(document).on('click','.login-with-password',function (){
         $(".card-login-password").removeClass('d-none');
         $(".card-verification").addClass('d-none');
+    });
+
+    $(document).on('click','.login-code-accepted',function (){
+        $(".card-login-password").addClass('d-none');
+        $(".card-verification").removeClass('d-none');
     });
 
     $(document).on('click','.edit-mobile',function (){
@@ -160,11 +166,11 @@ $(document).ready(function (){
 
     $(document).on('click','.show-password',function (){
         if ($(".input-login-password").prop('type') === "password") {
-            $(".input-login-password").attr('type','text');
-            $(".card-login-password i").addClass('fa-eye-slash').removeClass('fa-eye');
+            $(".input-login-password").prop('type','text');
+            $(this).find("i").addClass('fa-eye-slash').removeClass('fa-eye');
         } else {
-            $(".input-login-password").attr('type', 'password');
-            $(".card-login-password i").removeClass('fa-eye-slash').addClass('fa-eye');
+            $(".input-login-password").prop('type', 'password');
+            $(this).find("i").removeClass('fa-eye-slash').addClass('fa-eye');
         }
     });
 
@@ -204,21 +210,21 @@ $(document).ready(function (){
                 $(".icon-search").addClass('d-none').removeClass('d-flex')
                 $(".search-box-sm .btn-close-danger-modal").addClass('d-flex').removeClass('d-none');
                 $(".result-search .list-group").append("" +
-                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
-                    "      <span class=\"iso-font-sm\">سحر خوش قامت</span>\n" +
-                    "      <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">پزشک</div>\n" +
+                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center iso-font-md-em\">\n" +
+                    "      <span class=\"iso-font-sm-em-em\">سحر خوش قامت</span>\n" +
+                    "      <div class=\"badge iso-bg-blue-dark p-2 border-radius iso-font-xs-em\">پزشک</div>\n" +
                     "   </li>" +
-                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
-                    "       <span class=\"iso-font-sm\">کنترل فشار خون</span>\n" +
-                    "       <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">سرویس</div>\n" +
+                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center iso-font-md-em\">\n" +
+                    "       <span class=\"iso-font-sm-em\">کنترل فشار خون</span>\n" +
+                    "       <div class=\"badge iso-bg-blue-dark p-2 border-radius iso-font-xs-em\">سرویس</div>\n" +
                     "    </li>" +
-                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n" +
-                    "       <span class=\"iso-font-sm\">چطور به کودک خود دستور بدهم ؟</span>\n" +
-                    "       <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">مقاله</div>\n" +
+                    "    <li class=\"list-group-item d-flex justify-content-between align-items-center iso-font-md-em\">\n" +
+                    "       <span class=\"iso-font-sm-em\">چطور به کودک خود دستور بدهم ؟</span>\n" +
+                    "       <div class=\"badge iso-bg-blue-dark p-2 border-radius iso-font-xs-em\">مقاله</div>\n" +
                     "   </li>"+
-                    "  <li class=\"list-group-item d-flex justify-content-between align-items-center\">" +
-                    "       <span class=\"iso-font-sm\">روغن بنفشه محصول خوب</span>\n" +
-                    "       <div class=\"badge iso-bg-blur-dark p-2 border-radius iso-font-xxs\">دارو</div>\n"+
+                    "  <li class=\"list-group-item d-flex justify-content-between align-items-center iso-font-md-em\">" +
+                    "       <span class=\"iso-font-sm-em\">روغن بنفشه محصول خوب</span>\n" +
+                    "       <div class=\"badge iso-bg-blue-dark p-2 border-radius iso-font-xs-em\">دارو</div>\n"+
                     "   </li>");
             }else{
                 $(".icon-search").addClass('d-flex').removeClass('d-none')
@@ -290,7 +296,7 @@ $(document).ready(function (){
                 '                                    <span class="mx-2">3</span>\n' +
                 '                                </div>\n' +
                 '                                <div class="col-6">\n' +
-                '                                    <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blur-dark active-btn">پاسخ</button>\n' +
+                '                                    <button class="btn w-100 border-radius text-light iso-font-md-em iso-bg-blue-dark active-btn">پاسخ</button>\n' +
                 '                                </div>\n' +
                 '                            </div>\n' +
                 '                        </div>\n' +

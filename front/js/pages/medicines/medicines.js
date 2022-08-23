@@ -34,4 +34,6 @@ $(document).ready(function () {
             $(this).removeAttr('role');
         })
     }
+
+    initMedicineSwiper()
 });

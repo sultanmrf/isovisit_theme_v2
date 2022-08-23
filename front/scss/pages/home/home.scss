@@ -13,7 +13,7 @@ main {
   .section-facilities-and-services {
 
     .card {
-      height: 12rem;
+      height: 11rem;
     }
 
     .card-header {
@@ -79,6 +79,12 @@ main {
   .section-specialty{
     .card-specialty {
       width: 10.625em;
+      height: 9.375em;
+    }
+  }
+
+  .section-services{
+    .card-service{
       height: 9.375em;
     }
   }

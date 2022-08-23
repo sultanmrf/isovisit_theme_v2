@@ -104,8 +104,8 @@ main {
       margin-left: 1.813em !important; }
     main .swiper-menu .nav-link {
       cursor: pointer; }
-  main .list-question-answer-user a,
-  main .list-question-answer-news a {
+  main .list-question-answer-user .link-topic,
+  main .list-question-answer-news .link-topic {
     height: 1.3em;
     overflow: hidden; }
   main .icon-explorer {
