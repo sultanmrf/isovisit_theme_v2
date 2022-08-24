@@ -447,7 +447,12 @@
                             </div>
                             <div class="search-box-lg col-12 col-lg-5 col-lg-4 col-xl-5 offset-lg-1 offset-xl-1 ms-0 ms-lg-4 flex-column d-flex justify-content-center mt-lg-3">
                                 <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center mt-lg-3" id="icon_search">
-                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-items-center h-100 border-0"></i>
+                                    <div class="bg-white h-100 p-2  border-radius-end d-flex align-items-center">
+                                        <button type="button" class="btn-close-danger-modal border-radius iso-font-lg-em input-group-text text-danger clear-input d-none">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                        <i class="fa-solid fa-magnifying-glass iso-font-llg iso-color-green-dark"></i>
+                                    </div>
                                     <input type="text" class="form-control border-0 iso-font-xs search-input-lg border-radius-start h-100"  data-bs-toggle="false" data-bs-target="#modal_search"
                                            placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon_search">
                                 </div>
@@ -471,7 +476,7 @@
                                                     <button type="button" class="btn-close-danger-modal border-radius iso-font-lg-em input-group-text d-none text-danger clear-input">
                                                         <i class="fa-solid fa-xmark"></i>
                                                     </button>
-                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success bg-white d-flex align-self-center border-0 p-1 icon-search" id="icon_search_mobile"></i>
+                                                    <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text iso-color-green-dark bg-white d-flex align-self-center border-0 p-1 icon-search" id="icon_search_mobile"></i>
                                                     <input type="text" class="form-control border-0 iso-font-xxs search-input-sm" placeholder="جستجوی پزشک ، تخصص ، دارو ، مقاله ..." aria-describedby="icon_search_mobile">
                                                 </div>
                                             </div>
@@ -766,7 +771,7 @@
                                 </div>
                                 <div class="col-md-4 col-lg-3">
                                     <label for="question_three" class="form-label mb-1 text-nowrap fw-normal">آیا از داروی خاصی استفاده کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                    <input type="text"  class="form-control iso-font-xxs-em fw-normal border-radius optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" value="5465446" name="question_three">
+                                    <input type="text"  class="form-control iso-font-xxs-em fw-normal border-radius optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" name="question_three">
                                 </div>
                             </div>
                             <div class="row row-cols-4 gy-3 mt-0 mt-md-3">

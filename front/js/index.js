@@ -1,24 +1,37 @@
 $(document).ready(function (){
 
-    $(".text-indications,.title-medicines,.title-question").each(function (){
+    /* work: delete text > size custom*/
+    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question").each(function (){
         let text = $(this).text().trim();
         switch ($(this).data('title_class')){
             case "title-question":
                if(text.length > 82) {
-                   $(this).html(text.substr(0, 82) + '...');
+                   $(this).html(text.substr(0, 82) + ' ...');
                }
                break;
 
             case "text-indications":
                if(text.length > 56){
-                   $(this).html(text.substr(0, 56) + '...');
+                   $(this).html(text.substr(0, 56) + ' ...');
                }
                break;
+
+            case "text-comment":
+                if(text.length > 63){
+                    $(this).html(text.substr(0, 63) + ' ...');
+                }
+                break;
+
+            case "text-question":
+                if(text.length > 173){
+                    $(this).html(text.substr(0, 173) + ' ...');
+                }
+                break;
         }
     })
 
     /* section navbar sidebar*/
-    $(document).on('click','.btn-patients , .btn-doctors',function (){
+    $(document).on('click','.btn-patients,.btn-doctors',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
             $(this).parent().removeClass('bg-transparent').addClass('active_menu');
@@ -216,8 +229,19 @@ $(document).ready(function (){
         $(this).removeClass('border-radius-top').addClass('border-radius');
     });
 
+    /* section search-input-lg in desktop */
+    $(document).on('keyup','.search-input-lg',function (){
+        let character_length = $(this).val().length;
+        if(character_length >= 1){
+            $(".search-box-lg .btn-close-danger-modal").removeClass('d-none');
+            $(".search-box-lg .fa-magnifying-glass").addClass('d-none');
+        }else{
+            $(".search-box-lg .btn-close-danger-modal").addClass('d-none');
+            $(".search-box-lg .fa-magnifying-glass").removeClass('d-none');
+        }
+    });
 
-    /* section search-input-sm modal*/
+    /* section search-input-sm modal in mobile */
     if(check_size_media(false,576)) {
         $(".search-input-lg").attr('data-bs-toggle',"modal");
         $(document).on('keyup','.search-input-sm',function (){
@@ -251,7 +275,7 @@ $(document).ready(function (){
     }
 
     $(document).on('click','.clear-input',function () {
-        $(".search-input-sm").val('');
+        $(".search-input-sm,.search-input-lg").val('');
         $(this).addClass('d-none');
         $(".fa-magnifying-glass").addClass('d-flex').removeClass('d-none');
         $(".result-search .list-group").html('');
