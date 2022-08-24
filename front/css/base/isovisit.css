@@ -597,6 +597,11 @@ footer {
   height: 1.5em;
   background: url("../../images/icons/close-blue.png") center no-repeat; }
 
+.icon-alert {
+  width: 2em;
+  height: 2em;
+  background: url("../../images/icons/alert.png") no-repeat; }
+
 .icon-twenty-four, .icon-telegram-blue, .icon-telegram-light, .icon-email, .icon-edit, .icon-trash, .icon-bookmark, .icon-instagram-blue, .icon-instagram-light, .icon-aparat, .icon-gmail {
   width: 1.5em;
   height: 1.5em; }
@@ -616,6 +621,11 @@ footer {
   width: 2em;
   height: 2em;
   background: url("../../images/icons/support.png") no-repeat; }
+
+.icon-support-light,
+.icon-close {
+  width: 2.5em;
+  height: 2.5em; }
 
 .icon-support-light {
   background: url("../../images/icons/icon-support-light.png") no-repeat;
@@ -864,7 +874,7 @@ header {
     header .modal-login .box-verification-code input:focus {
       border-color: #1773B5; }
   header .modal-login .box-timer {
-    width: 6.25em;
+    width: 7.25em;
     height: 2.125em; }
   header .modal-login .input-phone,
   header .modal-login .box-verification-code,
@@ -1209,6 +1219,11 @@ footer {
   height: 1.5em;
   background: url("../../images/icons/close-blue.png") center no-repeat; }
 
+.icon-alert {
+  width: 2em;
+  height: 2em;
+  background: url("../../images/icons/alert.png") no-repeat; }
+
 .icon-twenty-four, .icon-telegram-blue, .icon-telegram-light, .icon-email, .icon-edit, .icon-trash, .icon-bookmark, .icon-instagram-blue, .icon-instagram-light, .icon-aparat, .icon-gmail {
   width: 1.5em;
   height: 1.5em; }
@@ -1228,6 +1243,11 @@ footer {
   width: 2em;
   height: 2em;
   background: url("../../images/icons/support.png") no-repeat; }
+
+.icon-support-light,
+.icon-close {
+  width: 2.5em;
+  height: 2.5em; }
 
 .icon-support-light {
   background: url("../../images/icons/icon-support-light.png") no-repeat;

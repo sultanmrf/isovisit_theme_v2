@@ -34,19 +34,19 @@ $(document).ready(function (){
     })
 
     /* section communication-iso */
-    $(".icon-support-light").click(function (){
+    $(".btn-communication-iso").click(function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
         if(val_aria_expanded == 'true'){
             $(".dropdown-menu-communication li").fadeOut('slow');
             $(this).attr('aria-expanded','false');
-            $(this).addClass('icon-support-light')
+            $(this).find("span").addClass('icon-support-light')
                 .addClass('rotate-0deg')
                 .removeClass(['rotate-180deg','icon-close']);
 
         }else{
             $(".dropdown-menu-communication li").fadeIn('slow');
             $(this).attr('aria-expanded','true');
-            $(this).addClass('icon-close')
+            $(this).find("span").addClass('icon-close')
                 .addClass('rotate-180deg')
                 .removeClass(['rotate-0deg','icon-support-light']);
         }

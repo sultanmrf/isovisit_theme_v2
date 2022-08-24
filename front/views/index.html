@@ -30,8 +30,8 @@
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
                         <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
-                            <a href="index.html">
-                                <div class="icon-logo-sm"></div>
+                            <a href="index.html" class="d-flex">
+                                <span class="icon-logo-sm"></span>
                             </a>
                             <figcaption class="figure-caption me-2 me-sm-0">
                                 <a href="index.html" class="d-flex flex-column">
@@ -204,12 +204,12 @@
                         <div class="d-flex mt-5 justify-content-center flex-wrap">
                             <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-around align-items-center rounded-pill">
                                 <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
-                                <div class="icon-support"></div>
+                                <span class="icon-support"></span>
                             </div>
                             <!-- logo section menu sidebar  -->
                             <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
-                                <a href="index.html">
-                                    <div class="icon-logo-lg"></div>
+                                <a href="index.html" class="d-flex">
+                                    <span class="icon-logo-lg"></span>
                                 </a>
                                 <figcaption class="figure-caption me-2 me-sm-0">
                                     <a href="index.html" class="d-flex flex-column">
@@ -269,8 +269,8 @@
 
             <!-- section logo -->
             <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
-                <a href="index.html">
-                    <div class="icon-logo-sm"></div>
+                <a href="index.html" class="d-flex">
+                    <span class="icon-logo-sm"></span>
                 </a>
                 <figcaption class="figure-caption me-2 me-sm-0">
                     <a href="index.html" class="d-flex flex-column">
@@ -352,7 +352,7 @@
                     <div class="modal-content">
                         <div class="modal-header border-0 pb-1">
                             <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
-                                <img src="../images/icons/user.png" alt="ورود / ثبت نام">
+                                <span class="icon-user"></span>
                                 <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                             </div>
                             <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
@@ -362,20 +362,14 @@
                         </div>
                         <div class="modal-body overflow-hidden card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
                             <div class="alert d-flex align-items-start p-0">
-                                <img src="../images/icons/alert.png" alt="هشدار">
-                                <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                                <span class="icon-alert"></span>
+                                <p class="iso-font-sm-em mx-2 mb-1 fw-medium">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
                             </div>
-                            <!--                            <div class="row flex-column align-items-center">-->
-                            <!--                                <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">-->
-                            <!--                                    <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>-->
-                            <!--                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone" name="mobile" id="mobile" placeholder="09251691615">-->
-                            <!--                                </div>-->
-                            <!--                                <button type="button" class="btn btn-login-modal ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>-->
-                            <!--                            </div>-->
                             <div class="form-modal-login d-flex flex-column text-start">
                                 <div class="input-group">
                                     <label for="mobile" class="iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone" name="mobile" id="mobile" placeholder="09251691615">
+                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone"
+                                           name="mobile" id="mobile" placeholder="09251691615">
                                 </div>
                                 <button type="button" class="btn ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
                             </div>
@@ -390,9 +384,9 @@
                         </div>
 
                         <!-- section enter verification code start -->
-                        <div class="modal-body overflow-hidden w-100 card-verification d-none d-flex flex-column justify-content-center align-items-center pt-2">
-                            <p class="modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
-                            <button type="button" class="btn box-timer alert-primary px-1 iso-color-dark iso-font-md-em my-3 fw-medium border-radius">
+                        <div class="modal-body overflow-hidden w-100 card-verification d-none d-flex flex-column justify-content-center align-items-center pb-3 pb-sm-4">
+                            <p class="modal-title text-center iso-font-sm-em p-0 fw-medium">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                            <button type="button" class="btn box-timer alert-primary px-1 iso-color-dark py-1 iso-font-md-em my-3 d-flex justify-content-center fw-medium border-radius">
                                 <span>02:00</span>
                             </button>
                             <div class="form-modal-login d-flex flex-column text-start">
@@ -411,7 +405,7 @@
                         </div>
                         <!-- section enter verification code end -->
 
-                        <div class="modal-body overflow-hidden card-login-password d-none d-flex flex-column justify-content-end align-items-center pb-2">
+                        <div class="modal-body overflow-hidden card-login-password d-none d-flex flex-column justify-content-end align-items-center pb-3 pb-sm-2">
                             <p class="modal-text m-0 mb-4 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
                             <div class="form-modal-login d-flex flex-column text-start">
                                 <div class="btn-modal d-flex justify-content-between">
@@ -805,7 +799,7 @@
                                             </span>
                                         </div>
                                         <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal border-radius">
-                                            <div class="icon-umbrella-active"></div>
+                                            <span class="icon-umbrella-active"></span>
                                             <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
                                         </div>
                                     </div>
@@ -858,7 +852,7 @@
                                             </span>
                                         </div>
                                         <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal border-radius">
-                                            <div class="icon-umbrella-active"></div>
+                                            <span class="icon-umbrella-active"></span>
                                             <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
                                         </div>
                                     </div>
@@ -911,7 +905,7 @@
                                             </span>
                                         </div>
                                         <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center alert-secondary iso-color-dark fw-normal border-radius">
-                                            <div class="icon-umbrella-disabled"></div>
+                                            <span class="icon-umbrella-disabled"></span>
                                             <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
                                         </div>
                                     </div>
@@ -964,7 +958,7 @@
                                             </span>
                                         </div>
                                         <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center alert-secondary iso-color-dark fw-normal border-radius">
-                                            <div class="icon-umbrella-disabled"></div>
+                                            <span class="icon-umbrella-disabled"></span>
                                             <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
                                         </div>
                                     </div>
@@ -1017,7 +1011,7 @@
                                             </span>
                                         </div>
                                         <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal border-radius">
-                                            <div class="icon-umbrella-active"></div>
+                                            <span class="icon-umbrella-active"></span>
                                             <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
                                         </div>
                                     </div>
@@ -2144,8 +2138,10 @@
         <!-- section sign-in-doctor end-->
     </div>
 
-    <div class="communication-iso box-shadow-lg position-fixed rounded-circle iso-bg-green-dark z-index-last">
-        <div class="icon-support-light pointer-event img-sm" aria-expanded="false" role="button"></div>
+    <div class="communication-iso box-shadow-lg position-fixed d-flex align-items-center rounded-circle iso-bg-green-dark z-index-last">
+        <button class="btn-communication-iso img-sm border-0 bg-transparent p-0" aria-expanded="false">
+            <span class="icon-support-light d-block"></span>
+        </button>
         <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
                 <a href="https://wa.me/+989156510022" class="text-light" target="_blank">
@@ -2192,7 +2188,7 @@
                         <div class="col-6 col-xxl-12 p-0 mt-xxl-2">
                             <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-center align-items-center rounded-pill">
                                 <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
-                                <div class="icon-support"></div>
+                                <span class="icon-support"></span>
                             </div>
                         </div>
                     </div>
@@ -2323,17 +2319,17 @@
                         </div>
                         <div class="box-aparat bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <div class="icon-aparat"></div>
+                                <span class="icon-aparat"></span>
                             </a>
                         </div>
                         <div class="box-instagram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <div class="icon-instagram-blue"></div>
+                                <span class="icon-instagram-blue"></span>
                             </a>
                         </div>
                         <div class="box-telegram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <div class="icon-telegram-blue"></div>
+                                <span class="icon-telegram-blue"></span>
                             </a>
                         </div>
                     </div>

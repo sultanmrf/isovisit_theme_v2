@@ -31,8 +31,8 @@
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
                          <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
-                            <a href="../index.html">
-                                <div class="icon-logo-sm"></div>
+                            <a href="../index.html" class="d-flex">
+                                <span class="icon-logo-sm"></span>
                             </a>
                             <figcaption class="figure-caption me-2 me-sm-0">
                                 <a href="../index.html" class="d-flex flex-column">
@@ -205,12 +205,12 @@
                         <div class="d-flex mt-5 justify-content-center flex-wrap">
                             <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-around align-items-center rounded-pill">
                                 <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
-                                <div class="icon-support"></div>
+                                <span class="icon-support"></span>
                             </div>
                             <!-- logo section menu sidebar  -->
                             <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
-                                <a href="../index.html">
-                                    <div class="icon-logo-lg"></div>
+                                <a href="../index.html" class="d-flex">
+                                    <span class="icon-logo-lg"></span>
                                 </a>
                                 <figcaption class="figure-caption me-2 me-sm-0">
                                     <a href="../index.html" class="d-flex flex-column">
@@ -270,8 +270,8 @@
 
             <!-- section logo -->
             <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
-                <a href="../index.html">
-                    <img src="../../images/logo.png" alt="لوگوی ایزو ویزیت" class="figure-img logo m-0">
+                <a href="../index.html" class="d-flex">
+                    <span class="icon-logo-sm"></span>
                 </a>
                 <figcaption class="figure-caption me-2 me-sm-0">
                     <a href="../index.html" class="d-flex flex-column">
@@ -349,11 +349,11 @@
         <!-- section modal login start -->
         <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <form action="#">
+                <form action="#" class="w-100">
                     <div class="modal-content">
                         <div class="modal-header border-0 pb-1">
                             <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
-                                <img src="../../images/icons/user.png" alt="ورود / ثبت نام">
+                                <span class="icon-user"></span>
                                 <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
                             </div>
                             <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
@@ -361,17 +361,18 @@
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>
-                        <div class="modal-body card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="modal-body overflow-hidden card-login px-2 pb-3 d-flex flex-column justify-content-center align-items-center">
                             <div class="alert d-flex align-items-start p-0">
-                                <img src="../../images/icons/alert.png" alt="هشدار">
-                                <p class="iso-font-sm-em mx-2 mb-1">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                                <span class="icon-alert"></span>
+                                <p class="iso-font-sm-em mx-2 mb-1 fw-medium">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
                             </div>
-                            <div class="row flex-column align-items-center">
-                                <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
-                                    <label for="mobile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone" name="mobile" id="mobile" placeholder="09251691615">
+                            <div class="form-modal-login d-flex flex-column text-start">
+                                <div class="input-group">
+                                    <label for="mobile" class="iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone"
+                                           name="mobile" id="mobile" placeholder="09251691615">
                                 </div>
-                                <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
+                                <button type="button" class="btn ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
                             </div>
                         </div>
                         <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
@@ -384,57 +385,45 @@
                         </div>
 
                         <!-- section enter verification code start -->
-                        <div class="modal-body card-verification d-none d-flex flex-wrap justify-content-center align-items-center">
-                            <div class="container p-0">
-                                <div class="row">
-                                    <p class="col-12 modal-title text-center iso-font-sm-em p-0">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
-                                    <div class="col-4 offset-4 mt-2">
-                                        <button type="button" class="btn w-100 alert-primary px-1 iso-color-dark iso-font-md-em box-timer fw-medium border-radius">02:00</button>
-                                    </div>
-                                    <div class="col-12 d-flex flex-wrap justify-content-center mt-3 p-0">
-                                        <div class="row m-0">
-                                            <div class="col-10 col-sm-8 offset-1 pb-1 offset-sm-2 box-verification-code d-flex flex-row-reverse bg-light px-3 py-0 border-radius">
-                                                <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
-                                                <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
-                                                <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
-                                                <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
-                                            </div>
-                                            <div class="col-10 col-sm-8 offset-1 offset-sm-2 p-0 mt-1 iso-font-md-em d-flex justify-content-between">
-                                                <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-with-password">ورود با کلمه عبور</button>
-                                                <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0  edit-mobile">تغییر شماره موبایل</button>
-                                            </div>
-                                            <button type="button" class="btn col-10 col-sm-8 offset-1 offset-sm-2 mt-3 iso-bg-blue-dark  iso-font-md-em active-btn accepted-info-user border-radius fw-medium">تایید</button>
-                                        </div>
-                                    </div>
+                        <div class="modal-body overflow-hidden w-100 card-verification d-none d-flex flex-column justify-content-center align-items-center pb-3 pb-sm-4">
+                            <p class="modal-title text-center iso-font-sm-em p-0 fw-medium">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                            <button type="button" class="btn box-timer alert-primary px-1 iso-color-dark py-1 iso-font-md-em my-3 d-flex justify-content-center fw-medium border-radius">
+                                <span>02:00</span>
+                            </button>
+                            <div class="form-modal-login d-flex flex-column text-start">
+                                <div class="box-verification-code d-flex flex-row-reverse bg-light border-radius px-2">
+                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
+                                    <input type="text" class="form-control h-75 w-50 mx-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
+                                    <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
+                                    <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
                                 </div>
+                                <div class="btn-modal mt-1 iso-font-md-em d-flex justify-content-between">
+                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-with-password">ورود با کلمه عبور</button>
+                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
+                                </div>
+                                <button type="button" class="btn accepted-info-user mt-3 iso-bg-blue-dark iso-font-md-em active-btn border-radius fw-medium">تایید</button>
                             </div>
                         </div>
                         <!-- section enter verification code end -->
 
-                        <div class="modal-body card-login-password d-none d-flex flex-wrap justify-content-center align-items-center">
-                            <div class="container p-0">
-                                <div class="row gy-2">
-                                    <div class="col-auto ms-1 mb-2 mb-md-0">
-                                        <p class="m-0 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
-                                    </div>
-                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-flex justify-content-between">
-                                        <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
-                                        <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
-                                    </div>
-                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2">
-                                        <div class="input-group flex-row-reverse box-password">
-                                            <span class="input-group-text border-radius-end border-start-0 rounded-0 bg-light">
-                                                <i class="fa fa-eye show-password iso-font-lg-em iso-color-secondary"></i>
-                                            </span>
-                                            <input type="password" class="form-control input-login-password border-radius-start rounded-0 border-end-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
-                                        </div>
-                                    </div>
-                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 iso-font-md-em d-flex justify-content-between">
-                                        <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-code-accepted">ورود با کد تایید</button>
-                                        <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0">فراموشی رمز عبور</button>
-                                    </div>
-                                    <button type="button" class="btn col-10 offset-1 col-sm-8 offset-sm-2 mt-4 iso-font-md-em iso-bg-blue-dark  border-radius active-btn fw-medium">ورود</button>
+                        <div class="modal-body overflow-hidden card-login-password d-none d-flex flex-column justify-content-end align-items-center pb-3 pb-sm-2">
+                            <p class="modal-text m-0 mb-4 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
+                            <div class="form-modal-login d-flex flex-column text-start">
+                                <div class="btn-modal d-flex justify-content-between">
+                                    <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
                                 </div>
+                                <div class=" d-flex box-password my-1 position-relative">
+                                    <input type="password" class="form-control input-login-password border-radius rounded-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
+                                    <button type="button" class="btn show-password position-absolute p-0 iso-font-md-em">
+                                        <i class="fa fa-eye iso-font-lg-em iso-color-secondary bottom-50"></i>
+                                    </button>
+                                </div>
+                                <div class="btn-modal d-flex justify-content-between">
+                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-code-accepted">ورود با کد تایید</button>
+                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0">فراموشی رمز عبور</button>
+                                </div>
+                                <button type="button" class="btn mt-3 iso-font-md-em iso-bg-blue-dark border-radius active-btn fw-medium">ورود</button>
                             </div>
                         </div>
                     </div>
@@ -522,7 +511,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xxl-6 px-1">
-                                        <a href="#" class="btn active-btn d-flex flex-wrap justify-content-between border-radius iso-bg-blue-dark iso-font-md-em py-2 px-1 box-shadow-lg h-100 fw-normal">
+                                        <a href="../visit/visit.html" class="btn active-btn d-flex flex-wrap justify-content-between border-radius iso-bg-blue-dark iso-font-md-em py-2 px-1 box-shadow-lg h-100 fw-normal">
                                             <span class="text-link text-start">مشاوره درمان کرونا</span>
                                             <span>54,000 تومان</span>
                                         </a>
@@ -572,7 +561,7 @@
                                         <div class="modal-content">
                                             <div class="modal-header border-0 pb-1 pt-2 px-2">
                                                 <div class="modal-title d-flex align-items-center m-0" id="modal_share_label">
-                                                    <div class="icon-user"></div>
+                                                    <span class="icon-user"></span>
                                                     <span class="iso-font-md-em ms-1">معرفی این پزشک به دوستان</span>
                                                 </div>
                                                 <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
@@ -591,7 +580,7 @@
                                                 <div class="icons-social-network d-flex justify-content-center my-3">
                                                     <div class="box-telegram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
                                                         <a href="#">
-                                                            <div class="icon-telegram-light"></div>
+                                                            <span class="icon-telegram-light"></span>
                                                         </a>
                                                     </div>
                                                     <div class="box-linkedin img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
@@ -640,7 +629,7 @@
                                         </div>
 
                                         <div class="card-doctor-advisory-insurance-icon d-flex justify-content-center align-items-center iso-bg-green-light iso-color-dark fw-normal ms-sm-3 ms-xxl-2 ms-2 text-nowrap border-radius">
-                                            <div class="icon-umbrella-active ms-1"></div>
+                                            <span class="icon-umbrella-active ms-1"></span>
                                             <p class="card-text iso-font-xs-em mx-1">مشاوره با بیمه</p>
                                         </div>
                                     </div>
@@ -704,13 +693,13 @@
                                     </p>
                                     <div class="icons-social-network d-flex justify-content-center">
                                         <div class="box-telegram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                            <a href="#">
-                                                <div class="icon-telegram-light"></div>
+                                            <a href="#" class="d-flex">
+                                                <span class="icon-telegram-light"></span>
                                             </a>
                                         </div>
                                         <div class="box-instagram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                            <a href="#">
-                                                <div class="icon-instagram-light"></div>
+                                            <a href="#" class="d-flex">
+                                                <span class="icon-instagram-light"></span>
                                             </a>
                                         </div>
                                         <div class="box-linkedin img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
@@ -918,7 +907,7 @@
                                             <div class="col-12 operation-comment d-flex justify-content-center mt-3">
                                                 <button type="button" class="btn btn-tags btn-outline-warning p-0 d-flex align-items-center justify-content-center iso-font-md-em mx-2"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse_tags" aria-expanded="false" aria-controls="collapse_tags">
-                                                    <i class="icon-tags"></i>
+                                                    <span class="icon-tags"></span>
                                                 </button>
                                                 <button type="button" class="btn btn-accepted btn-outline-success p-0 d-flex align-items-center justify-content-center iso-font-md-em mx-2" aria-expanded="true">
                                                     <i class="fa-solid fa-check iso-font-llg-em"></i>
@@ -927,7 +916,7 @@
                                                     <i class="fa-solid fa-trash-can iso-font-llg-em"></i>
                                                 </button>
                                                 <button type="button" class="btn btn-comment border-color-cyan p-0 d-flex align-items-center justify-content-center iso-font-md-em mx-2">
-                                                    <i class="icon-edit-comment"></i>
+                                                    <span class="icon-edit-comment"></span>
                                                 </button>
                                             </div>
 
@@ -1027,7 +1016,7 @@
                                                             <div class="row w-100 d-flex justify-content-between m-0">
                                                                 <button type="submit" class="col-5 col-md-3 btn iso-bg-blue-dark border-radius iso-font-md-em active-btn py-2 fw-medium fw-medium">ارسال</button>
                                                                 <button type="button" class="col-5 col-md-3 border-color-blue-dark border-radius bg-white iso-font-md-em iso-color-blue-dark py-2 fw-medium"
-                                                                        data-bs-toggle="collapse" data-bs-target="#collapse_answer_comment" aria-expanded="false" aria-controls="collapse_answer_comment">لغو</button>
+                                                                        data-bs-toggle="collapse" data-bs-target="#collapse_answer_comment_two" aria-expanded="false" aria-controls="collapse_answer_comment_two">لغو</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1165,8 +1154,10 @@
             </div>
         </div>
     </div>
-    <div class="communication-iso box-shadow-lg position-fixed rounded-circle iso-bg-green-dark z-index-last">
-        <div class="icon-support-light pointer-event img-sm" aria-expanded="false" role="button"></div>
+    <div class="communication-iso box-shadow-lg position-fixed d-flex align-items-center rounded-circle iso-bg-green-dark z-index-last">
+        <button class="btn-communication-iso img-sm border-0 bg-transparent p-0" aria-expanded="false">
+            <span class="icon-support-light d-block"></span>
+        </button>
         <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
                 <a href="https://wa.me/+989156510022" class="text-light" target="_blank">
@@ -1217,7 +1208,7 @@
                         <div class="col-6 col-xxl-12 p-0 mt-xxl-2">
                             <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-center align-items-center rounded-pill">
                                 <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
-                                <div class="icon-support"></div>
+                                <span class="icon-support"></span>
                             </div>
                         </div>
                     </div>
@@ -1349,17 +1340,17 @@
                         </div>
                         <div class="box-aparat bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <div class="icon-aparat"></div>
+                                <span class="icon-aparat"></span>
                             </a>
                         </div>
                         <div class="box-instagram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <div class="icon-instagram-blue"></div>
+                                <span class="icon-instagram-blue"></span>
                             </a>
                         </div>
                         <div class="box-telegram bg-light rounded-circle d-flex align-items-center justify-content-center mx-1 img-sm">
                             <a href="#" class="card-link d-flex align-items-center">
-                                <div class="icon-telegram-blue"></div>
+                                <span class="icon-telegram-blue"></span>
                             </a>
                         </div>
                     </div>

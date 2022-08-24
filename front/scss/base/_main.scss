@@ -418,6 +418,12 @@ footer,
   background: url("../../images/icons/close-blue.png") center no-repeat;
 }
 
+ .icon-alert{
+     width: 2em;
+     height: 2em;
+     background: url("../../images/icons/alert.png") no-repeat;
+  }
+
 .icon-twenty-four{
   width: 1.5em;
   height: 1.5em;
@@ -441,6 +447,12 @@ footer,
   width: 2em;
   height: 2em;
   background: url("../../images/icons/support.png") no-repeat;
+}
+
+.icon-support-light,
+.icon-close{
+  width:2.5em;
+  height:2.5em;
 }
 
 .icon-support-light{

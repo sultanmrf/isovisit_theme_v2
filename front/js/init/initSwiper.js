@@ -70,8 +70,6 @@ function initMedicineSwiper(target = '.swiper-medicines', name_pagination = '.sw
             count_slides_view: 'auto',
             navigation: false,
             pagination: true,
-            effect: false,
-            grabCursor: false,
         },
         md: {
             count_slides_view: 'auto',
