@@ -8,7 +8,6 @@
     .section-svg{
       height: 18em;
     }
-
   }
 
   .section-doctors{
@@ -29,6 +28,10 @@
 
     .link-articles{
       top: 30%;
+    }
+
+    .section-title{
+      top: 3.55em;
     }
   }
 
@@ -56,7 +59,7 @@
 
   .swiper{
     .swiper-pagination-article {
-      bottom: 0.5rem;
+      bottom: 1.1rem;
     }
 
     .swiper-pagination-question-answer, {
@@ -101,6 +104,9 @@
   .section-medicines {
     .section-header{
       position: unset !important;
+    }
+    .section-title{
+      top: 1.55em;
     }
   }
 }
@@ -283,6 +289,9 @@
         top: -3.438em;
       }
     }
+    .swiper-wrapper{
+      height: 25.625em
+    }
   }
 
   .svg-sing-in-doctor {
@@ -314,6 +323,11 @@
     }
   }
 
+  .section-comments-users{
+    .section-title{
+      top: 1.2em;
+    }
+  }
 }
 
 @media only screen and (min-width: 1400px){

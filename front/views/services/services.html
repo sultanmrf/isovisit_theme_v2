@@ -25,13 +25,13 @@
         <div class="header-menu header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
             <!-- section navbar mobile start  -->
             <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
-                <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
-                    <img src="../../images/bar.png" alt="منو">
+                <div class="d-flex d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
+                    <span class="icon-bar"></span>
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
-                         <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
                             <a href="../index.html" class="d-flex">
                                 <span class="icon-logo-sm"></span>
                             </a>
@@ -61,7 +61,7 @@
                                         <i class="fa iso-font-lg text-light fa-chevron-down ms-auto"></i>
                                     </button>
                                     <div class="menu-user-body border-top mt-2 collapse" id="collapse_menu_user">
-                                       <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
+                                        <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
                                             <li class="p-0 pt-3">
                                                 <a href="../profile_user_and_doctor/profile_user.html" class="text-light hover-line-white ms-2">
                                                     پروفایل
@@ -853,7 +853,9 @@
                     </div>
                 </div>
                 <div class="section-footer show-doctors-more line-muted-dashed position-relative d-flex justify-content-center my-5">
-                    <button type="button" class="btn iso-bg-blue-dark position-absolute px-3 iso-font-md-em active-btn fw-medium">نمایش سرویس های بیشتر</button>
+                    <button type="button" class="btn iso-bg-blue-dark position-absolute px-3 iso-font-md-em active-btn fw-medium border-radius d-flex align-items-center">
+                        نمایش سرویس های بیشتر
+                    </button>
                 </div>
             </section>
             <!-- section list services end -->

@@ -314,6 +314,9 @@ a {
 hr {
   opacity: 1; }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.8em; }
+
 h1 {
   font-size: 24px; }
 
@@ -336,19 +339,22 @@ p {
   line-height: 1.8em;
   font-weight: 400; }
 
-/* Chrome, Safari, Edge, Opera */
+/* delete counter input number in Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
-/* Firefox */
+/* delete counter input number in Firefox */
 input[type=number] {
   -moz-appearance: textfield; }
 
 .form-control:focus,
 .btn:focus {
   box-shadow: 0 0; }
+
+.form-control:focus {
+  border: 1px solid #1773B5; }
 
 .content {
   background: #F0F1F1; }
@@ -363,6 +369,10 @@ footer {
 
 .btn:active:focus {
   box-shadow: unset; }
+
+button.iso-color-blue-dark:hover {
+  border: 1px solid #009d38;
+  color: #009d38; }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -397,8 +407,6 @@ footer {
   border-bottom: 0.125rem solid #f8f9fa; }
 
 .btn-close, .btn-close-danger-modal, .btn-close-light-modal {
-  width: 1.875em;
-  height: 1.875em;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -566,6 +574,9 @@ footer {
 .section-doctors .swiper-button-prev {
   top: 44%; }
 
+.section-articles .card {
+  height: 23.625em; }
+
 .section-medicines .section-title {
   top: -0.45em; }
 
@@ -591,6 +602,13 @@ footer {
 .card-doctor-advisory-insurance-icon {
   width: 6.8em;
   height: 1.8em; }
+
+.icon-bar, .btn-close, .btn-close-danger-modal, .btn-close-light-modal {
+  width: 1.875em;
+  height: 1.875em; }
+
+.icon-bar {
+  background: url("../../images/icons/bar.png") no-repeat; }
 
 .icon-close-blue {
   width: 1.5em;
@@ -803,6 +821,8 @@ footer {
 /* style section profile doctor end */
 header {
   /* style section banner */ }
+  header h1 {
+    line-height: 1.2; }
   header .header-menu {
     width: 100%; }
   header .offcanvas-start {
@@ -936,6 +956,9 @@ a {
 hr {
   opacity: 1; }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.8em; }
+
 h1 {
   font-size: 24px; }
 
@@ -958,19 +981,22 @@ p {
   line-height: 1.8em;
   font-weight: 400; }
 
-/* Chrome, Safari, Edge, Opera */
+/* delete counter input number in Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
-/* Firefox */
+/* delete counter input number in Firefox */
 input[type=number] {
   -moz-appearance: textfield; }
 
 .form-control:focus,
 .btn:focus {
   box-shadow: 0 0; }
+
+.form-control:focus {
+  border: 1px solid #1773B5; }
 
 .content {
   background: #F0F1F1; }
@@ -985,6 +1011,10 @@ footer {
 
 .btn:active:focus {
   box-shadow: unset; }
+
+button.iso-color-blue-dark:hover {
+  border: 1px solid #009d38;
+  color: #009d38; }
 
 .active-btn:hover, .active-btn:active {
   color: white;
@@ -1019,8 +1049,6 @@ footer {
   border-bottom: 0.125rem solid #f8f9fa; }
 
 .btn-close, .btn-close-danger-modal, .btn-close-light-modal {
-  width: 1.875em;
-  height: 1.875em;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -1188,6 +1216,9 @@ footer {
 .section-doctors .swiper-button-prev {
   top: 44%; }
 
+.section-articles .card {
+  height: 23.625em; }
+
 .section-medicines .section-title {
   top: -0.45em; }
 
@@ -1213,6 +1244,13 @@ footer {
 .card-doctor-advisory-insurance-icon {
   width: 6.8em;
   height: 1.8em; }
+
+.icon-bar, .btn-close, .btn-close-danger-modal, .btn-close-light-modal {
+  width: 1.875em;
+  height: 1.875em; }
+
+.icon-bar {
+  background: url("../../images/icons/bar.png") no-repeat; }
 
 .icon-close-blue {
   width: 1.5em;

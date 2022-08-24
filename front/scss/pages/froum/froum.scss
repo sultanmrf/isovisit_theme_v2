@@ -17,10 +17,10 @@
 }
 
 .start-motion-move-text{
-  animation: animate-move-text 18s linear infinite;
-  -webkit-animation: animate-move-text 18s linear infinite;
-  -moz-animation: animate-move-text 18s linear infinite;
-  -o-animation: animate-move-text 18s linear infinite;
+  animation: animate-move-text 22s linear infinite;
+  -webkit-animation: animate-move-text 22s linear infinite;
+  -moz-animation: animate-move-text 22s linear infinite;
+  -o-animation: animate-move-text 22s linear infinite;
 }
 
 .links-question-answer{
@@ -35,6 +35,10 @@
   .input-height,
   .input-weight{
     width: 6.2em;
+    span{
+      top: 7px;
+      left: 6px;
+    }
   }
 }
 
@@ -51,4 +55,3 @@
 .icon-folder-open{
   background: url("../../../images/icons/folder.png") no-repeat;
 }
-

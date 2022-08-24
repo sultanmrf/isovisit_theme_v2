@@ -84,7 +84,7 @@ $(document).ready(function (){
    $(document).on('click','.offcanvas-sorting .btn',function (){
       let title_btn = $(this).find("span").text();
       $(".btn-sorting").find('span').html(' ');
-      $(".btn-sorting").find('span').text(title_btn);
+      $(".btn-sorting").find('h5').text(title_btn);
       $(".offcanvas-sorting .btn i").removeClass('fa-check');
       $(this).find('i').addClass('fa-check');
    });

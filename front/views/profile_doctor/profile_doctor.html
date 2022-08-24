@@ -24,8 +24,8 @@
         <div class="header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
             <!-- section navbar mobile start  -->
             <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
-                <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
-                    <img src="../../images/bar.png" alt="منو">
+                <div class="d-flex d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
+                    <span class="icon-bar"></span>
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
@@ -571,7 +571,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="input-group mt-2">
-                                                    <input type="text" class="form-control iso-font-sm-em fw-normal px-1 text-end border-radius-start alert-secondary" id="copy_link" disabled value="https://isovisit.com/medicines/4">
+                                                    <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius px-1 text-end border-radius-start alert-secondary" id="copy_link" disabled value="https://isovisit.com/medicines/4">
                                                     <div class="input-group-prepend rounded-0">
                                                         <button class="btn active-btn iso-bg-blue-dark iso-font-sm-em border-radius-end btn-copy-link px-1 py-2" data-clipboard-target="#copy_link">کپی لینک</button>
                                                         <span class="tooltip-text position-absolute border-radius text-center iso-bg-blue-dark py-1 mb-1 text-light  border border-white bottom-100">کپی شد</span>
@@ -579,7 +579,7 @@
                                                 </div>
                                                 <div class="icons-social-network d-flex justify-content-center my-3">
                                                     <div class="box-telegram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
-                                                        <a href="#">
+                                                        <a href="#" class="d-flex">
                                                             <span class="icon-telegram-light"></span>
                                                         </a>
                                                     </div>
@@ -822,7 +822,7 @@
                     <!-- section address and phone doctor end -->
 
                     <!-- section form comments start-->
-                    <section class="section-form-comments mt-4">
+                    <section class="section-form-comments mt-4" id="section_form_comments">
                         <div class="card border-radius box-shadow-lg">
                             <div class="card-header iso-font-md-em fw-normal text-center iso-bg-green-light border-0">
                                 <h2 class="iso-font-md-em m-0">نظرات</h2>
@@ -839,7 +839,7 @@
                                     </div>
                                     <div class="col-xxl-6 iso-font-sm-em fw-normal">
                                         <label for="phone" class="form-label">شماره موبایل</label>
-                                        <input type="tel" class="form-control text-start iso-font-sm-em border-radius" id="phone" name="phone" placeholder="شماره موبایل">
+                                        <input type="number" class="form-control text-start iso-font-sm-em border-radius" id="phone" name="phone" placeholder="شماره موبایل">
                                         <span class="error_phone error mt-1"></span>
                                     </div>
                                     <div class="col-xxl-6 iso-font-sm-em fw-normal">
@@ -926,7 +926,7 @@
                                                         <div class="row gy-3">
                                                             <div class="col-12 b-3">
                                                                 <label for="doctor_title" class="form-label iso-font-sm-em fw-normal">نام پزشک</label>
-                                                                <input type="text" class="form-control iso-font-sm-em fw-normal" id="doctor_title" name="doctor_title" placeholder="نام پزشک">
+                                                                <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="doctor_title" name="doctor_title" placeholder="نام پزشک">
                                                             </div>
                                                             <span class="error_doctor_title error mt-1"></span>
                                                             <div class="col-12 d-flex justify-content-between align-items-stretch">
@@ -943,12 +943,12 @@
                                                         <div class="row gy-3">
                                                             <div class="col-12">
                                                                 <label for="first_and_last_name_comment" class="form-label iso-font-sm-em fw-normal">نام و نام خانوادگی</label>
-                                                                <input type="text" class="form-control iso-font-sm-em fw-normal" id="first_and_last_name_comment" name="first_and_last_name_comment" placeholder="نام و نام خانوادگی">
+                                                                <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="first_and_last_name_comment" name="first_and_last_name_comment" placeholder="نام و نام خانوادگی">
                                                             </div>
                                                             <span class="error_first_and_last_name_comment error mt-1"></span>
                                                             <div class="col-12">
                                                                 <label for="text_comment" class="form-label iso-font-sm-em fw-normal">نظر خود را وارد کنید</label>
-                                                                <textarea type="text" class="form-control iso-font-sm-em fw-normal" id="text_comment" name="text_comment" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
+                                                                <textarea type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="text_comment" name="text_comment" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
                                                             </div>
                                                             <span class="error_text_comment error mt-1"></span>
                                                             <div class="col-12">
@@ -1004,12 +1004,12 @@
                                                     <div class="row gy-3">
                                                         <div class="col-12">
                                                             <label for="first_and_last_name_comment" class="form-label iso-font-sm-em fw-normal">نام و نام خانوادگی</label>
-                                                            <input type="text" class="form-control iso-font-sm-em fw-normal" id="first_and_last_name_comment_two" name="first_and_last_name_comment_two" placeholder="نام و نام خانوادگی">
+                                                            <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="first_and_last_name_comment_two" name="first_and_last_name_comment_two" placeholder="نام و نام خانوادگی">
                                                         </div>
                                                         <span class="error_first_and_last_name_comment_two error mt-1"></span>
                                                         <div class="col-12">
                                                             <label for="text_comment" class="form-label iso-font-sm-em fw-normal">نظر خود را وارد کنید</label>
-                                                            <textarea type="text" class="form-control iso-font-sm-em fw-normal" id="text_comment_two" name="text_comment_two" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
+                                                            <textarea type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="text_comment_two" name="text_comment_two" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
                                                         </div>
                                                         <span class="error_text_comment_two error mt-1"></span>
                                                         <div class="col-12">
@@ -1026,12 +1026,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="parent-comment-more p-0"></div>
+                            <div class="parent-comment-more p-0 mt-0"></div>
                         </div>
                         <div class="card-btn d-flex justify-content-center bg-transparent border-0">
-                            <button type="button" class="btn active-btn iso-bg-blue-dark iso-font-md-em d-flex align-items-center border-radius more-comment fw-medium" aria-expanded="false">
-                                <span class="me-3">نظرات بیشتر</span>
-                                <i class="fa-solid iso-font-llg-em fa-chevron-down"></i>
+                            <button type="button" class="btn active-btn iso-bg-blue-dark iso-font-md-em d-flex align-items-center border-radius more-comment fw-medium">
+                                نظرات بیشتر
                             </button>
                         </div>
                     </section>

@@ -29,10 +29,10 @@
     -o-transform: translateX(100%); } }
 
 .start-motion-move-text {
-  animation: animate-move-text 18s linear infinite;
-  -webkit-animation: animate-move-text 18s linear infinite;
-  -moz-animation: animate-move-text 18s linear infinite;
-  -o-animation: animate-move-text 18s linear infinite; }
+  animation: animate-move-text 22s linear infinite;
+  -webkit-animation: animate-move-text 22s linear infinite;
+  -moz-animation: animate-move-text 22s linear infinite;
+  -o-animation: animate-move-text 22s linear infinite; }
 
 .links-question-answer {
   height: 1.375em; }
@@ -43,6 +43,10 @@
 #collapse_froum .input-height,
 #collapse_froum .input-weight {
   width: 6.2em; }
+  #collapse_froum .input-height span,
+  #collapse_froum .input-weight span {
+    top: 7px;
+    left: 6px; }
 
 .icon-question,
 .icon-folder-open {

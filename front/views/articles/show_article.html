@@ -24,8 +24,8 @@
         <div class="header-menu header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
             <!-- section navbar mobile start  -->
             <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
-                <div class="d-block d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
-                    <img src="../../images/bar.png" alt="منو">
+                <div class="d-flex d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
+                    <span class="icon-bar"></span>
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
@@ -643,7 +643,7 @@
                     <div class="section-body p-3">
                         <div class="row gy-3 lh-md">
                             <div class="col-12 section-title d-flex flex-column mt-0 flex-md-row justify-content-between">
-                                <div class="title-medicines order-2 order-md-1 mt-3 mt-md-0">
+                                <div class="title-article order-2 order-md-1 mt-3 mt-md-0">
                                     <h1 class="m-0 mt-4">چطور به کودک خودم دستور بدهم؟</h1>
                                     <p class="m-0 mt-2 fw-normal iso-font-sm-em">نویسنده : <a href="../profile_doctor/profile_doctor.html">سینا دژم پور  - متخصص روانپزشکی</a></p>
                                 </div>
@@ -660,7 +660,7 @@
                                 </div>
                             </div>
                             <div class="col-12 section-description mt-3 fw-normal d-flex align-items-center flex-column justify-content-center">
-                                <img src="../../images/article-img.png" alt="..." class="img-fluid">
+                                <img src="../../images/img-article.jpg" alt="..." class="img-fluid">
                                 <p class="section-text">
                                     بسیاری از والدینی که دغدغه تربیت صحیح کودک خود را دارند،از روانپزشکان در مورد نحوه صحیح دستور دادن به کودک خود سوال میکنند.به اقتضای شرایط، والدین مجبور به نظارت و دستور دادن به کودک در شرایط مختلفی هستند.مثل شلوغ کردن کودک ، انجام یک عمل نامناسب یا درخواست انجام وظایف مثل مرتب کردن اتاق...
 
@@ -1038,7 +1038,7 @@
                                     </div>
                                     <div class="col-md-6 col-xl-6 box-copy-link d-flex align-items-center">
                                         <div class="input-group">
-                                            <input type="text" class="form-control iso-font-sm-em fw-normal px-1 text-end border-radius-start alert-secondary" id="copy_link" disabled value="https://isovisit.com/medicines/4">
+                                            <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius px-1 text-end border-radius-start alert-secondary" id="copy_link" disabled value="https://isovisit.com/medicines/4">
                                             <div class="input-group-prepend rounded-0">
                                                 <button class="btn active-btn iso-bg-blue-dark iso-font-sm-em border-radius-end btn-copy-link px-1 py-2" data-clipboard-target="#copy_link">کپی لینک</button>
                                                 <span class="tooltip-text position-absolute border-radius text-center iso-bg-blue-dark py-1 mb-1 text-light  border border-white bottom-100">کپی شد</span>
@@ -1054,7 +1054,7 @@
             </article>
             <!-- section description medicines start -->
 
-            <div class="col-lg-6 ps-0">
+            <div class="col-lg-6 px-0">
                 <!-- section list doctors start -->
                 <section class="section-about-doctor mt-4">
                     <div class="row gy-3 justify-content-lg-center">
@@ -1115,7 +1115,7 @@
                                 </div>
                                 <div class="col-xxl-6 iso-font-sm-em fw-normal">
                                     <label for="phone" class="form-label">شماره موبایل</label>
-                                    <input type="tel" class="form-control text-start iso-font-sm-em border-radius" id="phone" name="phone" placeholder="شماره موبایل">
+                                    <input type="number" class="form-control text-start iso-font-sm-em border-radius" id="phone" name="phone" placeholder="شماره موبایل">
                                     <span class="error_phone error mt-1"></span>
                                 </div>
                                 <div class="col-xxl-6 iso-font-sm-em fw-normal">
@@ -1202,7 +1202,7 @@
                                                     <div class="row gy-3">
                                                         <div class="col-12 b-3">
                                                             <label for="doctor_title" class="form-label iso-font-sm-em fw-normal">نام پزشک</label>
-                                                            <input type="text" class="form-control iso-font-sm-em fw-normal" id="doctor_title" name="doctor_title" placeholder="نام پزشک">
+                                                            <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="doctor_title" name="doctor_title" placeholder="نام پزشک">
                                                         </div>
                                                         <span class="error_doctor_title error mt-1"></span>
                                                         <div class="col-12 d-flex justify-content-between align-items-stretch">
@@ -1219,12 +1219,12 @@
                                                     <div class="row gy-3">
                                                         <div class="col-12">
                                                             <label for="first_and_last_name_comment" class="form-label iso-font-sm-em fw-normal">نام و نام خانوادگی</label>
-                                                            <input type="text" class="form-control iso-font-sm-em fw-normal" id="first_and_last_name_comment" name="first_and_last_name_comment" placeholder="نام و نام خانوادگی">
+                                                            <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="first_and_last_name_comment" name="first_and_last_name_comment" placeholder="نام و نام خانوادگی">
                                                         </div>
                                                         <span class="error_first_and_last_name_comment error mt-1"></span>
                                                         <div class="col-12">
                                                             <label for="text_comment" class="form-label iso-font-sm-em fw-normal">نظر خود را وارد کنید</label>
-                                                            <textarea type="text" class="form-control iso-font-sm-em fw-normal" id="text_comment" name="text_comment" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
+                                                            <textarea type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="text_comment" name="text_comment" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
                                                         </div>
                                                         <span class="error_text_comment error mt-1"></span>
                                                         <div class="col-12">
@@ -1280,12 +1280,12 @@
                                                 <div class="row gy-3">
                                                     <div class="col-12">
                                                         <label for="first_and_last_name_comment" class="form-label iso-font-sm-em fw-normal">نام و نام خانوادگی</label>
-                                                        <input type="text" class="form-control iso-font-sm-em fw-normal" id="first_and_last_name_comment_two" name="first_and_last_name_comment_two" placeholder="نام و نام خانوادگی">
+                                                        <input type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="first_and_last_name_comment_two" name="first_and_last_name_comment_two" placeholder="نام و نام خانوادگی">
                                                     </div>
                                                     <span class="error_first_and_last_name_comment_two error mt-1"></span>
                                                     <div class="col-12">
                                                         <label for="text_comment" class="form-label iso-font-sm-em fw-normal">نظر خود را وارد کنید</label>
-                                                        <textarea type="text" class="form-control iso-font-sm-em fw-normal" id="text_comment_two" name="text_comment_two" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
+                                                        <textarea type="text" class="form-control iso-font-sm-em fw-normal border-radius border-radius" id="text_comment_two" name="text_comment_two" placeholder="نظر خود را وارد کنید" rows="5"></textarea>
                                                     </div>
                                                     <span class="error_text_comment_two error mt-1"></span>
                                                     <div class="col-12">
@@ -1302,7 +1302,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="parent-comment-more p-0"></div>
+                        <div class="parent-comment-more p-0 mt-0"></div>
                     </div>
                     <div class="card-btn d-flex justify-content-center bg-transparent border-0">
                         <button type="button" class="btn active-btn iso-bg-blue-dark iso-font-md-em d-flex align-items-center border-radius more-comment fw-medium" aria-expanded="false">
