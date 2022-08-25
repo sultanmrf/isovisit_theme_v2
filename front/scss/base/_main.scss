@@ -1,6 +1,7 @@
 @import "variables";
 
 $line-height-size: 1.8em;
+$color-primary:#007BFF;
 
 html{
   font-size: 1rem;
@@ -96,9 +97,15 @@ footer,
   box-shadow: unset;
 }
 
-button.iso-color-blue-dark:hover{
-  border: 1px solid $iso-green-dark;
-  color: $iso-green-dark;
+button {
+  &.iso-color-blue-dark:hover {
+    border: 1px solid $iso-green-dark;
+    color: $iso-green-dark;
+  }
+}
+
+a:hover{
+  color: $iso-blue-dark;
 }
 
 .active-btn{
@@ -169,6 +176,11 @@ button.iso-color-blue-dark:hover{
   @extend .btn-close;
   background-color: $iso-blue-dark;
   border: 2px solid #fff;
+}
+
+.btn-outline-primary{
+  color: $color-primary;
+  border-color: $color-primary;
 }
 
 .dropdown{
@@ -726,3 +738,59 @@ button.iso-color-blue-dark:hover{
   }
 }
 /* style section profile doctor end */
+
+.modal-login,
+.modal-edit-mobile{
+
+  .box-timer{
+    width: 7.25em;
+    height: 2.125em;
+  }
+
+  .input-phone,
+  .box-verification-code,
+  .box-password{
+    height: 2.5em;
+  }
+
+  .box-password,
+  .input-phone{
+    width: 240px;
+  }
+
+  .form-modal-login{
+    width: 240px;
+  }
+
+  input:focus{
+    border: 0.125em solid #1773B5;
+  }
+
+  .modal-body{
+    height: 240px;
+  }
+
+  .show-password{
+    left: 0.625em;
+    top: 0.63em;
+    background: rgb(248,249,250);
+  }
+
+  .box-verification-code{
+    border: 1px solid #dee2e6;
+
+    &:focus-within{
+      border: 0.125em solid #1773B5;
+    }
+
+    input{
+      border-color: #6c757d;
+      padding: 0 8px 8px 0;
+    }
+
+    input:focus{
+      border-color: #1773B5;
+    }
+  }
+}
+

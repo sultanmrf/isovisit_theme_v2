@@ -88,7 +88,7 @@ This set of fonts are used in this project under the license: (.....)
 .iso-bg-blue-light {
   background: #CCE5FF; }
 
-.iso-bg-cyan {
+.bg-info {
   background: #17A2B8; }
 
 .iso-bg-gray-light {
@@ -98,7 +98,7 @@ This set of fonts are used in this project under the license: (.....)
   background: #28a745; }
 
 .iso-bg-green-light {
-  background: #D4EDDA; }
+  background: #D1E7DD; }
 
 .iso-bg-green-dark {
   background: #009d38; }
@@ -126,7 +126,7 @@ This set of fonts are used in this project under the license: (.....)
   color: #999999; }
 
 .iso-color-green-light {
-  color: #D4EDDA; }
+  color: #D1E7DD; }
 
 /* iso font size */
 .iso-font-xs {
@@ -374,6 +374,9 @@ button.iso-color-blue-dark:hover {
   border: 1px solid #009d38;
   color: #009d38; }
 
+a:hover {
+  color: #1773B5; }
+
 .active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
@@ -421,6 +424,10 @@ button.iso-color-blue-dark:hover {
 .btn-close-light-modal {
   background-color: #1773B5;
   border: 2px solid #fff; }
+
+.btn-outline-primary {
+  color: #007BFF;
+  border-color: #007BFF; }
 
 .dropdown .nav-link:after {
   all: unset; }
@@ -819,6 +826,57 @@ button.iso-color-blue-dark:hover {
     background: url("../../images/icons/edit-comment-light.png") no-repeat; }
 
 /* style section profile doctor end */
+.modal-login .box-timer,
+.modal-edit-mobile .box-timer {
+  width: 7.25em;
+  height: 2.125em; }
+
+.modal-login .input-phone,
+.modal-login .box-verification-code,
+.modal-login .box-password,
+.modal-edit-mobile .input-phone,
+.modal-edit-mobile .box-verification-code,
+.modal-edit-mobile .box-password {
+  height: 2.5em; }
+
+.modal-login .box-password,
+.modal-login .input-phone,
+.modal-edit-mobile .box-password,
+.modal-edit-mobile .input-phone {
+  width: 240px; }
+
+.modal-login .form-modal-login,
+.modal-edit-mobile .form-modal-login {
+  width: 240px; }
+
+.modal-login input:focus,
+.modal-edit-mobile input:focus {
+  border: 0.125em solid #1773B5; }
+
+.modal-login .modal-body,
+.modal-edit-mobile .modal-body {
+  height: 240px; }
+
+.modal-login .show-password,
+.modal-edit-mobile .show-password {
+  left: 0.625em;
+  top: 0.63em;
+  background: #f8f9fa; }
+
+.modal-login .box-verification-code,
+.modal-edit-mobile .box-verification-code {
+  border: 1px solid #dee2e6; }
+  .modal-login .box-verification-code:focus-within,
+  .modal-edit-mobile .box-verification-code:focus-within {
+    border: 0.125em solid #1773B5; }
+  .modal-login .box-verification-code input,
+  .modal-edit-mobile .box-verification-code input {
+    border-color: #6c757d;
+    padding: 0 8px 8px 0; }
+  .modal-login .box-verification-code input:focus,
+  .modal-edit-mobile .box-verification-code input:focus {
+    border-color: #1773B5; }
+
 header {
   /* style section banner */ }
   header h1 {
@@ -877,34 +935,6 @@ header {
     top: 149px; }
   header .btn-return {
     height: 2.5em; }
-  header .modal-login input:focus {
-    border: 0.125em solid #1773B5; }
-  header .modal-login .modal-body {
-    height: 240px; }
-  header .modal-login .show-password {
-    left: 0.625em;
-    top: 0.63em;
-    background: #f8f9fa; }
-  header .modal-login .box-verification-code {
-    border: 1px solid #dee2e6; }
-    header .modal-login .box-verification-code:focus-within {
-      border: 0.125em solid #1773B5; }
-    header .modal-login .box-verification-code input {
-      border-color: #6c757d; }
-    header .modal-login .box-verification-code input:focus {
-      border-color: #1773B5; }
-  header .modal-login .box-timer {
-    width: 7.25em;
-    height: 2.125em; }
-  header .modal-login .input-phone,
-  header .modal-login .box-verification-code,
-  header .modal-login .box-password {
-    height: 2.5em; }
-  header .modal-login .box-password,
-  header .modal-login .input-phone {
-    width: 240px; }
-  header .modal-login .form-modal-login {
-    width: 240px; }
   header .menu-user {
     transition: 0.8s ease-in; }
     header .menu-user .dropdown-menu {
@@ -1016,6 +1046,9 @@ button.iso-color-blue-dark:hover {
   border: 1px solid #009d38;
   color: #009d38; }
 
+a:hover {
+  color: #1773B5; }
+
 .active-btn:hover, .active-btn:active {
   color: white;
   background: #009d38; }
@@ -1063,6 +1096,10 @@ button.iso-color-blue-dark:hover {
 .btn-close-light-modal {
   background-color: #1773B5;
   border: 2px solid #fff; }
+
+.btn-outline-primary {
+  color: #007BFF;
+  border-color: #007BFF; }
 
 .dropdown .nav-link:after {
   all: unset; }
@@ -1461,6 +1498,57 @@ button.iso-color-blue-dark:hover {
     background: url("../../images/icons/edit-comment-light.png") no-repeat; }
 
 /* style section profile doctor end */
+.modal-login .box-timer,
+.modal-edit-mobile .box-timer {
+  width: 7.25em;
+  height: 2.125em; }
+
+.modal-login .input-phone,
+.modal-login .box-verification-code,
+.modal-login .box-password,
+.modal-edit-mobile .input-phone,
+.modal-edit-mobile .box-verification-code,
+.modal-edit-mobile .box-password {
+  height: 2.5em; }
+
+.modal-login .box-password,
+.modal-login .input-phone,
+.modal-edit-mobile .box-password,
+.modal-edit-mobile .input-phone {
+  width: 240px; }
+
+.modal-login .form-modal-login,
+.modal-edit-mobile .form-modal-login {
+  width: 240px; }
+
+.modal-login input:focus,
+.modal-edit-mobile input:focus {
+  border: 0.125em solid #1773B5; }
+
+.modal-login .modal-body,
+.modal-edit-mobile .modal-body {
+  height: 240px; }
+
+.modal-login .show-password,
+.modal-edit-mobile .show-password {
+  left: 0.625em;
+  top: 0.63em;
+  background: #f8f9fa; }
+
+.modal-login .box-verification-code,
+.modal-edit-mobile .box-verification-code {
+  border: 1px solid #dee2e6; }
+  .modal-login .box-verification-code:focus-within,
+  .modal-edit-mobile .box-verification-code:focus-within {
+    border: 0.125em solid #1773B5; }
+  .modal-login .box-verification-code input,
+  .modal-edit-mobile .box-verification-code input {
+    border-color: #6c757d;
+    padding: 0 8px 8px 0; }
+  .modal-login .box-verification-code input:focus,
+  .modal-edit-mobile .box-verification-code input:focus {
+    border-color: #1773B5; }
+
 /* footer */
 footer .footer-certificates .footer-body {
   height: 9.938rem; }

@@ -1,7 +1,7 @@
 $(document).ready(function (){
 
     /* work: delete text > size custom*/
-    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question").each(function (){
+    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question,.title-service").each(function (){
         let text = $(this).text().trim();
         switch ($(this).data('title_class')){
             case "title-question":
@@ -27,6 +27,13 @@ $(document).ready(function (){
                     $(this).html(text.substr(0, 173) + ' ...');
                 }
                 break;
+
+            case "title-service":
+
+                if(text.length > 18){
+                    $(this).html(text.substr(0, 18) + ' ...');
+                }
+                break;
         }
     })
 
@@ -45,8 +52,9 @@ $(document).ready(function (){
     })
 
     /*section navbar top*/
-    $(document).on('click','.link-patients',function (){
+    $(document).on('click','.link-patients,.link-doctors',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
+
         if(val_aria_expanded == 'true'){
             $(this).parent().addClass('active_menu');
             $(this).addClass('text-light').removeClass('iso-color-dark');
@@ -57,7 +65,7 @@ $(document).ready(function (){
             $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         }
     })
-    $(".link-patients").focusout(function () {
+    $(".link-patients,.link-doctors").focusout(function () {
         $(this).parent().removeClass('active_menu');
         $(this).removeClass('text-light').addClass('iso-color-dark');
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
@@ -145,12 +153,13 @@ $(document).ready(function (){
     let second = 60,
         minutes = 1;
     timer = "";
-    // clearInterval(timer);
+
     function start_timer() {
         if(second === 0 && minutes === 0){
             $(".box-timer span").text("ارسال مجدد کد");
             $(".box-timer").addClass(['iso-bg-blue-dark','text-light']);
             clearInterval(timer);
+            $(".box-timer").attr('disabled',false);
         }else{
             if(second === 0){
                 minutes -= 1;
@@ -159,6 +168,7 @@ $(document).ready(function (){
             second -= 1;
             let val_timer = ((second < 10 ? "0" + second : second) + " : " + ("0" + minutes));
             $(".box-timer span").text(val_timer);
+            $(".box-timer").attr('disabled',true);
         }
     }
 
@@ -406,6 +416,50 @@ $(document).ready(function (){
             text_comment_two: "متن نظر الزامی است",
         });
     /* validation form answer comment end */
+
+    /* validation form question answer start */
+    initValidation("#form",
+        {
+            height: "required",
+            weight: "required",
+            births: "required",
+            category: "required",
+            title_question:{
+                required: true,
+                maxlength: 150
+            },
+            description:{
+                required: true,
+                maxlength: 650
+            },
+            code_security:"required",
+            rules_check:"required",
+            file:{
+                required: true,
+                extension: "xls|csv",
+            },
+        },
+        {
+            height: "قد را مشخص کنید",
+            weight: "وزن را مشخص کنید",
+            births: "سال تولد را مشخص کنید",
+            category: "دسته بندی را مشخص کنید",
+            title_question: {
+                required:"عنوان سوال را مشخص کنید",
+                maxlength: "حداکثر کاراکتر ها باید 150 باشد"
+            },
+            description: {
+                required:"توضیحات خود را وارد کنید",
+                maxlength: "حداکثر کاراکتر ها باید 650 باشد"
+            },
+            code_security: "کد امنیتی را وارد کنید",
+            rules_check: "تایید قوانین الزامی باشد",
+            file:{
+                required: "tyrr5edyr",
+                extension: "aewfaeeerer",
+            },
+        });
+    /* validation form question answer end */
 
     $(document).on('click','.filter-consultants button',function (){
         let val_aria_select = $(this).attr('aria-selected');

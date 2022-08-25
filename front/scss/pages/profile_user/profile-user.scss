@@ -1,5 +1,6 @@
 @import "../../base/variables";
 
+$bg-light:#F8F9FA;
 .size-thirty{
   width: 1.875em;
   height: 1.875em;
@@ -131,7 +132,6 @@ main{
       }
     }
   }
-
 
   .specifications{
     border-left: 0.125em dashed $iso-dark !important;
@@ -456,5 +456,24 @@ main{
       height: 40px;
     }
   }
+
+  .filter-consultants{
+    button:not(.btn-outline-warning):hover{
+      color: $bg-light;
+    }
+    .btn-outline-info:hover{
+      color: $bg-light;
+    }
+  }
+
+  #pills_consultants{
+    a{
+      &.iso-color-blue-dark:hover {
+        border: 1px solid $iso-green-dark;
+        color: $iso-green-dark;
+      }
+    }
+  }
+
 
 }

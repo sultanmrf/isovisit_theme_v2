@@ -22,46 +22,4 @@ $(document).ready(function () {
             $(this).find("i").removeClass('fa-chevron-down').addClass('fa-chevron-up');
         }
     });
-
-    initValidation("#form",
-        {
-            height: "required",
-            weight: "required",
-            births: "required",
-            category: "required",
-            title_question:{
-                required: true,
-                maxlength: 150
-            },
-            description:{
-                required: true,
-                maxlength: 650
-            },
-            code_security:"required",
-            rules_check:"required",
-            file:{
-                required: true,
-                extension: "xls|csv",
-            },
-        },
-        {
-            height: "قد را مشخص کنید",
-            weight: "وزن را مشخص کنید",
-            births: "سال تولد را مشخص کنید",
-            category: "دسته بندی را مشخص کنید",
-            title_question: {
-                required:"عنوان سوال را مشخص کنید",
-                maxlength: "حداکثر کاراکتر ها باید 150 باشد"
-            },
-            description: {
-                required:"توضیحات خود را وارد کنید",
-                maxlength: "حداکثر کاراکتر ها باید 650 باشد"
-            },
-            code_security: "کد امنیتی را وارد کنید",
-            rules_check: "تایید قوانین الزامی باشد",
-            file:{
-                required: "tyrr5edyr",
-                extension: "aewfaeeerer",
-            },
-        });
 });

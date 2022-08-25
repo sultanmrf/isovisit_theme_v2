@@ -4,6 +4,7 @@
 */
 /**
 *   size
+
 */
 /* size rem */
 /* size em */
@@ -58,32 +59,6 @@ iframe {
 
 .icon-share {
   background: url("../../../images/icons/share.png") no-repeat; }
-
-.icon-edit-comment,
-.icon-tags {
-  width: 1.25em;
-  height: 1.25em; }
-
-.icon-edit-comment {
-  background: url("../../../images/icons/edit-comment.png") no-repeat; }
-
-.icon-tags {
-  background: url("../../../images/icons/tags.png") no-repeat; }
-
-.section-about-doctor .card-body {
-  height: 12.5em; }
-
-.operation-comment .btn {
-  width: 2em;
-  height: 2em; }
-
-.operation-comment .btn-tags:hover .icon-tags {
-  background: url("../../../images/icons/tag-light.png") no-repeat; }
-
-.operation-comment .btn-comment:hover {
-  background: #17A2B8; }
-  .operation-comment .btn-comment:hover .icon-edit-comment {
-    background: url("../../../images/icons/edit-comment-light.png") no-repeat; }
 
 .links-doctor a {
   color: #009d38; }

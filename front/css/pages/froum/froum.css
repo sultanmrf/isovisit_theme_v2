@@ -3,6 +3,7 @@
 */
 /**
 *   size
+
 */
 /* size rem */
 /* size em */
@@ -45,8 +46,8 @@
   width: 6.2em; }
   #collapse_froum .input-height span,
   #collapse_froum .input-weight span {
-    top: 7px;
-    left: 6px; }
+    top: 0.73em;
+    left: 0.2em; }
 
 .icon-question,
 .icon-folder-open {

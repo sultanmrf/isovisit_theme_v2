@@ -99,59 +99,6 @@ header {
     height: 2.5em;
   }
 
-  .modal-login{
-
-    input:focus{
-      border: 0.125em solid #1773B5;
-    }
-
-    .modal-body{
-      height: 240px;
-    }
-
-    .show-password{
-      left: 0.625em;
-      top: 0.63em;
-      background: rgb(248,249,250);
-    }
-
-    .box-verification-code{
-      border: 1px solid #dee2e6;
-
-      &:focus-within{
-        border: 0.125em solid #1773B5;
-      }
-
-      input{
-        border-color: #6c757d;
-      }
-
-      input:focus{
-        border-color: #1773B5;
-      }
-    }
-
-    .box-timer{
-      width: 7.25em;
-      height: 2.125em;
-    }
-
-    .input-phone,
-    .box-verification-code,
-    .box-password{
-      height: 2.5em;
-    }
-
-    .box-password,
-    .input-phone{
-      width: 240px;
-    }
-
-    .form-modal-login{
-      width: 240px;
-    }
-  }
-
   .menu-user{
     transition: 0.8s ease-in;
     .dropdown-menu{

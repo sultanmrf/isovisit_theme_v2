@@ -205,7 +205,7 @@
                         </ul>
                         <div class="d-flex mt-5 justify-content-center flex-wrap">
                             <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-around align-items-center rounded-pill">
-                                <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                                <a href="tel:00226510915" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
                                 <span class="icon-support"></span>
                             </div>
                             <!-- logo section menu sidebar  -->
@@ -241,9 +241,9 @@
                         <a href="../froum/froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
                     </li>
                     <li class="nav-item dropdown px-2 pe-1 border-radius-top">
-                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="link-patients p-0 py-1 align-items-center d-flex iso-color-dark link-hover position-relative" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             برای بیماران
-                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg ms-2"></i>
                         </a>
                         <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_patients">
                             <li><a href="../single_pages/faq.html" class="dropdown-item text-light active-btn">سوالات متداول</a></li>
@@ -253,9 +253,9 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown px-2 pe-1 border-radius-top">
-                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_doctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="link-doctors p-0 py-1 iso-color-dark d-flex align-items-center link-hover position-relative" href="#" id="navbar_doctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             برای پزشکان
-                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg ms-2"></i>
                         </a>
                         <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_doctors">
                             <li><a href="../register_doctors/register_doctor.html" class="dropdown-item text-light active-btn">ثبت نام پزشکان </a></li>
@@ -371,7 +371,7 @@
                                 <div class="input-group">
                                     <label for="mobile" class="iso-font-md-em text-start fw-normal">شماره موبایل</label>
                                     <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone"
-                                           name="mobile" id="mobile" placeholder="09251691615">
+                                           name="mobile" id="mobile" placeholder="09123456789">
                                 </div>
                                 <button type="button" class="btn ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
                             </div>
@@ -398,9 +398,9 @@
                                     <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
                                     <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
                                 </div>
-                                <div class="btn-modal mt-1 iso-font-md-em d-flex justify-content-between">
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-with-password">ورود با کلمه عبور</button>
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
+                                <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
+                                    <a href="#"  class="iso-color-blue-dark iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</a>
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</a>
                                 </div>
                                 <button type="button" class="btn accepted-info-user mt-3 iso-bg-blue-dark iso-font-md-em active-btn border-radius fw-medium">تایید</button>
                             </div>
@@ -410,9 +410,9 @@
                         <div class="modal-body overflow-hidden card-login-password d-none d-flex flex-column justify-content-end align-items-center pb-3 pb-sm-2">
                             <p class="modal-text m-0 mb-4 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
                             <div class="form-modal-login d-flex flex-column text-start">
-                                <div class="btn-modal d-flex justify-content-between">
+                                <div class="link-modal d-flex justify-content-between">
                                     <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</a>
                                 </div>
                                 <div class=" d-flex box-password my-1 position-relative">
                                     <input type="password" class="form-control input-login-password border-radius rounded-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
@@ -420,9 +420,9 @@
                                         <i class="fa fa-eye iso-font-lg-em iso-color-secondary bottom-50"></i>
                                     </button>
                                 </div>
-                                <div class="btn-modal d-flex justify-content-between">
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-code-accepted">ورود با کد تایید</button>
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0">فراموشی رمز عبور</button>
+                                <div class="link-modal d-flex justify-content-between">
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 login-code-accepted fw-normal">ورود با کد تایید</a>
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 fw-normal">فراموشی رمز عبور</a>
                                 </div>
                                 <button type="button" class="btn mt-3 iso-font-md-em iso-bg-blue-dark border-radius active-btn fw-medium">ورود</button>
                             </div>
@@ -1015,8 +1015,8 @@
                             <div class="footer-title iso-font-md m-0">نیاز به پشتیبانی دارید؟</div>
                         </div>
                         <div class="col-6 col-xxl-12 p-0 mt-xxl-2">
-                            <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-center align-items-center rounded-pill">
-                                <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                            <div class="support-phone py-1 p-2 border d-flex bg-light justify-content-center align-items-center rounded-pill">
+                                <a href="tel:00226510915" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
                                 <span class="icon-support"></span>
                             </div>
                         </div>

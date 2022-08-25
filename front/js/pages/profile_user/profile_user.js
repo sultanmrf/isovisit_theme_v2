@@ -28,14 +28,14 @@ $(document).ready(function (){
 
     initValidation("#form_ticket",{
         title_ticket: "required",
-        description: "required",
+        description_ticket: "required",
         file_ticket: "required",
-        code_security: "required"
+        code_security_ticket: "required"
     }, {
         title_ticket: "موضوع تیکت الزامی است",
-        description: "پیام تیکت الزامی است",
+        description_ticket: "پیام تیکت الزامی است",
         file_ticket: "تصویر تیکت الزامی است",
-        code_security: "کد امنیتی الزام است"
+        code_security_ticket: "کد امنیتی الزام است"
     });
 
     initValidation("#form_profile",{
@@ -157,7 +157,7 @@ $(document).ready(function (){
 
 
     /* if hover in menu profile_user in code start */
-    $(document).on('click','.list-icon-profile div[role="button"]',function (){
+    $(document).on('click','.list-icon-profile span[role="button"]',function (){
         let title_img = $(this).data('title_img');
         $(".img-box-profile img").attr('src',"../../images/profile_user/" + title_img + ".png")
     });

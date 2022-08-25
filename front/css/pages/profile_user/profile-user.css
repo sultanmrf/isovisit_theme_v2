@@ -116,10 +116,6 @@ main {
     background: url("../../../images/icons/windows.png") no-repeat; }
   main .icon-ip {
     background: url("../../../images/icons/ip.png") no-repeat; }
-  main .icon-alert {
-    width: 2em;
-    height: 2em;
-    background: url("../../../images/icons/alert.png") no-repeat; }
   main .icon-man1 {
     background: url("../../../images/profile_user/man1.png") no-repeat; }
   main .icon-man2 {
@@ -228,3 +224,10 @@ main {
     height: 2.625em; }
     main .search-box-user input, main .search-box-user i {
       height: 40px; }
+  main .filter-consultants button:not(.btn-outline-warning):hover {
+    color: #F8F9FA; }
+  main .filter-consultants .btn-outline-info:hover {
+    color: #F8F9FA; }
+  main #pills_consultants a.iso-color-blue-dark:hover {
+    border: 1px solid #009d38;
+    color: #009d38; }

@@ -206,7 +206,7 @@
                         </ul>
                         <div class="d-flex mt-5 justify-content-center flex-wrap">
                             <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-around align-items-center rounded-pill">
-                                <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                                <a href="tel:00226510915" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
                                 <span class="icon-support"></span>
                             </div>
                             <!-- logo section menu sidebar  -->
@@ -242,9 +242,9 @@
                         <a href="../froum/froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
                     </li>
                     <li class="nav-item dropdown px-2 pe-1 border-radius-top">
-                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="link-patients p-0 py-1 align-items-center d-flex iso-color-dark link-hover position-relative" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             برای بیماران
-                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg ms-2"></i>
                         </a>
                         <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_patients">
                             <li><a href="../single_pages/faq.html" class="dropdown-item text-light active-btn">سوالات متداول</a></li>
@@ -254,9 +254,9 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown px-2 pe-1 border-radius-top">
-                        <a class="nav-link p-0 py-1 link-patients iso-color-dark align-items-center d-flex dropdown-toggle" href="#" id="navbar_doctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="link-doctors p-0 py-1 iso-color-dark d-flex align-items-center link-hover position-relative" href="#" id="navbar_doctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             برای پزشکان
-                            <i class="fa fa-solid fa-chevron-down iso-font-lg mx-2"></i>
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg ms-2"></i>
                         </a>
                         <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_doctors">
                             <li><a href="../register_doctors/register_doctor.html" class="dropdown-item text-light active-btn">ثبت نام پزشکان </a></li>
@@ -372,7 +372,7 @@
                                 <div class="input-group">
                                     <label for="mobile" class="iso-font-md-em text-start fw-normal">شماره موبایل</label>
                                     <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone"
-                                           name="mobile" id="mobile" placeholder="09251691615">
+                                           name="mobile" id="mobile" placeholder="09123456789">
                                 </div>
                                 <button type="button" class="btn ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
                             </div>
@@ -399,9 +399,9 @@
                                     <input type="text" class="form-control h-75 w-50 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
                                     <input type="text" class="form-control h-75 w-50 me-3 rounded-0 bg-transparent text-center border-2 border-top-0 border-end-0 border-start-0 iso-font-sm-em fw-medium mt-1" name="/" maxlength="1">
                                 </div>
-                                <div class="btn-modal mt-1 iso-font-md-em d-flex justify-content-between">
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-with-password">ورود با کلمه عبور</button>
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
+                                <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
+                                    <a href="#"  class="iso-color-blue-dark iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</a>
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</a>
                                 </div>
                                 <button type="button" class="btn accepted-info-user mt-3 iso-bg-blue-dark iso-font-md-em active-btn border-radius fw-medium">تایید</button>
                             </div>
@@ -411,9 +411,9 @@
                         <div class="modal-body overflow-hidden card-login-password d-none d-flex flex-column justify-content-end align-items-center pb-3 pb-sm-2">
                             <p class="modal-text m-0 mb-4 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
                             <div class="form-modal-login d-flex flex-column text-start">
-                                <div class="btn-modal d-flex justify-content-between">
+                                <div class="link-modal d-flex justify-content-between">
                                     <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 edit-mobile">تغییر شماره موبایل</button>
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</a>
                                 </div>
                                 <div class=" d-flex box-password my-1 position-relative">
                                     <input type="password" class="form-control input-login-password border-radius rounded-0 bg-light iso-font-md-em iso-color-secondary" placeholder="کلمه عبور">
@@ -421,9 +421,9 @@
                                         <i class="fa fa-eye iso-font-lg-em iso-color-secondary bottom-50"></i>
                                     </button>
                                 </div>
-                                <div class="btn-modal d-flex justify-content-between">
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0 login-code-accepted">ورود با کد تایید</button>
-                                    <button type="button" class="btn iso-color-blue-dark iso-font-sm-em p-0">فراموشی رمز عبور</button>
+                                <div class="link-modal d-flex justify-content-between">
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 login-code-accepted fw-normal">ورود با کد تایید</a>
+                                    <a href="#" class="iso-color-blue-dark iso-font-sm-em p-0 fw-normal">فراموشی رمز عبور</a>
                                 </div>
                                 <button type="button" class="btn mt-3 iso-font-md-em iso-bg-blue-dark border-radius active-btn fw-medium">ورود</button>
                             </div>
@@ -518,8 +518,8 @@
                     <i class="fa-solid fa-bell iso-font-llg-em text-warning"></i>
                     <h5 class="mx-2 m-0 fw-normal">آخرین بروزرسانی های ایزو ویزیت</h5>
                 </div>
-                <div class="col-12 order-3 order-sm-2 col-md-4 d-flex align-items-center p-0">
-                    <button type="button" class="border-0 bg-transparent iso-color-blue-dark iso-font-sm-em fw-bold" data-bs-toggle="modal" data-bs-target="#last_update_iso_visit">برای دیدن جدید ترین تغییرات در ایزو ویزیت کلیک کنید</button>
+                <div class="col-12 order-3 order-sm-2 col-md-4 d-flex align-items-center justify-content-center justify-content-sm-start  p-0">
+                    <button type="button" class="border-0 bg-transparent text-primary iso-font-xs-em fw-bold px-0" data-bs-toggle="modal" data-bs-target="#last_update_iso_visit">برای دیدن جدید ترین تغییرات در ایزو ویزیت کلیک کنید😍</button>
                 </div>
                 <div class="col-2 order-2 order-sm-3 col-md-1 d-flex justify-content-end p-0">
                     <button type="button" class="btn iso-font-lg-em border-radius bg-transparent btn-close-danger-modal text-danger" data-bs-dismiss="alert" aria-label="Close">
@@ -543,10 +543,10 @@
                                 <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                                     <div class="img-box-profile d-flex flex-column align-items-center">
                                         <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#edit_img_profile_modal_2">
-                                            <img src="../../images/doctor2.png" class="figure-img img-lg mb-1 rounded-circle poin" alt="عکس پروفایل">
+                                            <img src="../../images/doctor2.png" class="figure-img img-lg mb-1 rounded-circle poin border border-1" alt="عکس پروفایل">
                                         </button>
-                                        <button type="button" class="btn iso-font-md-em fw-normal p-0 iso-color-blue-dark"
-                                                data-bs-toggle="modal" data-bs-target="#edit_img_profile_modal_2">تغییر تصویر</button>
+                                        <a href="#" class="iso-font-md-em fw-normal p-0 iso-color-blue-dark"
+                                                data-bs-toggle="modal" data-bs-target="#edit_img_profile_modal_2">تغییر تصویر</a>
                                     </div>
                                 </div>
                             </div>
@@ -777,7 +777,7 @@
                                     data-bs-target="#pills_waiting_close"  role="tab" aria-controls="pills_waiting_close" aria-selected="false">منتظر بستن</button>
                         </li>
                         <li class="col-6 col-sm-4 col-lg-2 nav-item d-flex justify-content-center" role="presentation">
-                            <button type="button" class="btn btn-outline-info-dark iso-font-md-em fw-medium border-radius" id="pills_users_online_tab" data-bs-toggle="pill"
+                            <button type="button" class="btn btn-outline-info iso-font-md-em fw-medium border-radius" id="pills_users_online_tab" data-bs-toggle="pill"
                                     data-bs-target="#pills_users_online"  role="tab" aria-controls="pills_users_online" aria-selected="false">افراد آنلاین</button>
                         </li>
                         <li class="col-6 col-sm-4 col-lg-2 nav-item d-flex justify-content-center" role="presentation">
@@ -788,17 +788,17 @@
 
                     <div class="search-box-user col-12 col-lg-4 flex-column d-flex justify-content-center border border border-secondary border-radius mt-1">
                         <div class="input-group-search d-flex position-relative flex-row-reverse align-items-center" id="icon_search">
-                            <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text text-success border-radius-end bg-white d-flex align-items-center border-0"></i>
-                            <input type="text" class="form-control border-0 iso-font-xs border-radius-start" placeholder="جستجوی کاربر" aria-describedby="icon_search">
+                            <i class="fa-solid fa-magnifying-glass iso-font-llg input-group-text iso-color-green-dark border-radius-end bg-white d-flex align-items-center border-0"></i>
+                            <input type="text" class="form-control border-0 iso-font-xs border-radius-start text-secondary" placeholder="جستجوی کاربر" aria-describedby="icon_search">
                         </div>
                     </div>
 
                     <!-- filter while doctor login show start -->
                     <div class="row w-100 d-flex justify-content-center mt-2">
                         <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
-                            <a href="../list_doctors/list_doctors.html" class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius">
+                            <a href="../list_doctors/list_doctors.html" class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius  iso-color-blue-dark">
                                 <i class="fa fa-plus iso-font-lg-em iso-color-blue-dark"></i>
-                                <span class="mx-2 iso-color-blue-dark">مشاوره جدید</span>
+                                <span class="mx-2">مشاوره جدید</span>
                             </a>
                         </div>
                     </div>
@@ -827,7 +827,7 @@
                                                     <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                     <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                 </div>
-                                                <span class="iso-font-xs-em text-primary fw-normal">اصلاح مزاج</span>
+                                                <span class="iso-font-xs-em text-primary fw-normal title-service" data-title_class="title-service">اصلاح مزاج</span>
                                             </div>
                                         </div>
                                     </div>
@@ -856,7 +856,7 @@
                                                     <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                     <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                 </div>
-                                                <span class="iso-font-xs-em text-primary fw-normal">اصلاح مزاج</span>
+                                                <span class="iso-font-xs-em text-primary fw-normal title-service" data-title_class="title-service">اصلاح مزاج</span>
                                             </div>
                                         </div>
                                     </div>
@@ -885,7 +885,7 @@
                                                     <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                     <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                 </div>
-                                                <span class="iso-font-xs-em text-primary fw-normal">اصلاح مزاج</span>
+                                                <span class="iso-font-xs-em text-primary fw-normal title-service" data-title_class="title-service">اصلاح مزاج</span>
                                             </div>
                                         </div>
                                     </div>
@@ -914,7 +914,7 @@
                                                     <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                     <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                 </div>
-                                                <span class="iso-font-xs-em text-primary fw-normal">اصلاح مزاج</span>
+                                                <span class="iso-font-xs-em text-primary fw-normal title-service" data-title_class="title-service">اصلاح مزاج</span>
                                             </div>
                                         </div>
                                     </div>
@@ -943,7 +943,7 @@
                                                     <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                     <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                 </div>
-                                                <span class="iso-font-xs-em text-primary fw-normal">اصلاح مزاج</span>
+                                                <span class="iso-font-xs-em text-primary fw-normal title-service" data-title_class="title-service">اصلاح مزاج</span>
                                             </div>
                                         </div>
                                     </div>
@@ -972,7 +972,7 @@
                                                     <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                     <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                 </div>
-                                                <span class="iso-font-xs-em text-primary fw-normal">اصلاح مزاج</span>
+                                                <span class="iso-font-xs-em text-primary fw-normal title-service" data-title_class="title-service">اصلاح مزاج</span>
                                             </div>
                                         </div>
                                     </div>
@@ -996,7 +996,7 @@
                                                                 <span class="iso-font-sm-em iso-color-dark mb-1 fw-normal"> محمد کاظمیان (۲۵۴۱)</span>
                                                                 <div class="d-flex align-items-center justify-content-between me-sm-0 me-lg-3 me-xl-0">
                                                                     <span class="iso-font-xs-em text-primary fw-normal">پیش نسخه</span>
-                                                                    <div class="badge bg-danger iso-font-xs-em iso-color-dark m-0 text-light">اورژانسی</div>
+                                                                    <div class="badge bg-danger iso-font-xs-em iso-color-dark me-3 me-sm-0 text-light">اورژانسی</div>
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
@@ -1006,7 +1006,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal ms-1 text-nowrap">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal ms-1 text-nowrap title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1025,7 +1026,7 @@
                                                                 <span class="iso-font-sm-em iso-color-dark mb-1 fw-normal"> محمد کاظمیان (۲۵۴۱)</span>
                                                                 <div class="d-flex align-items-center justify-content-between me-sm-0 me-lg-3 me-xl-0">
                                                                     <span class="iso-font-xs-em text-primary fw-normal">پیش نسخه</span>
-                                                                    <div class="badge bg-danger iso-font-xs-em iso-color-dark m-0 text-light">اورژانسی</div>
+                                                                    <div class="badge bg-danger iso-font-xs-em iso-color-dark me-3 me-sm-0 text-light">اورژانسی</div>
                                                                 </div>
                                                             </figcaption>
                                                         </figure>
@@ -1035,7 +1036,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal ms-1 text-nowrap">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal ms-1 text-nowrap title-service"  data-title_class="title-service
+">یسبثشتاخهشصاهحخصشاخاخ</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1063,7 +1065,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1091,7 +1094,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1119,7 +1123,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1147,7 +1152,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1179,7 +1185,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1207,7 +1214,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1235,7 +1243,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1263,7 +1272,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1291,7 +1301,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1319,7 +1330,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1351,7 +1363,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1379,7 +1392,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1407,7 +1421,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1435,7 +1450,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1463,7 +1479,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1491,7 +1508,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1523,7 +1541,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1551,7 +1570,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1579,7 +1599,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1607,7 +1628,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1635,7 +1657,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1663,7 +1686,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1695,7 +1719,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1723,7 +1748,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1751,7 +1777,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1779,7 +1806,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1807,7 +1835,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1835,7 +1864,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1867,7 +1897,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1895,7 +1926,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1923,7 +1955,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1951,7 +1984,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1979,7 +2013,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2007,7 +2042,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2039,7 +2075,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2067,7 +2104,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2095,7 +2133,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2123,7 +2162,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2151,7 +2191,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2179,7 +2220,8 @@
                                                             <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                             <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                         </div>
-                                                        <span class="iso-font-xs-em text-primary fw-normal">مشاوره عمومی</span>
+                                                        <span class="iso-font-xs-em text-primary fw-normal title-servicel"  data-title_class="title-service">مشاوره عمومی</span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2238,8 +2280,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="status-transaction d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2276,8 +2318,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="status-transaction d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2398,8 +2440,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="cost-counseling d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2455,8 +2497,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="cost-counseling d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2622,8 +2664,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="status-transaction d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2660,8 +2702,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="status-transaction d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2706,8 +2748,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="cost-counseling d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2763,8 +2805,8 @@
                                                     <div class="col-8 col-sm-9 d-flex align-items-center">
                                                         <div class="cost-counseling d-flex flex-wrap my-2">
                                                             <span class="iso-color-green-dark iso-font-sm-em">32,000 تومان</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-cyan mx-3">کارت به کارت</span>
-                                                            <span class="border-radius text-light iso-font-xs-em p-1 iso-bg-green-dark">تایید شد</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-info mx-3">کارت به کارت</span>
+                                                            <span class="border-radius text-light iso-font-xs-em p-1 bg-success">تایید شد</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2990,10 +3032,10 @@
                 <div class="tab-header">
                     <div class="row w-100 d-flex justify-content-center m-0 mb-3">
                         <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center px-0">
-                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius"
+                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius iso-color-blue-dark"
                                     data-bs-toggle="modal" data-bs-target="#send_message_new_secretary_modal">
-                                <i class="fa fa-plus iso-font-lg-em iso-color-blue-dark"></i>
-                                <span class="mx-2 iso-color-blue-dark">ارسال پیام جدید به منشی</span>
+                                <i class="fa fa-plus iso-font-lg-em"></i>
+                                <span class="mx-2">ارسال پیام جدید به منشی</span>
                             </button>
                         </div>
                     </div>
@@ -3022,7 +3064,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3050,7 +3093,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3078,7 +3122,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3106,7 +3151,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3134,7 +3180,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3162,7 +3209,8 @@
                                                         <div class="badge bg-success iso-font-xs-em rounded-circle">2</div>
                                                         <span class="text-muted ms-1 iso-font-xs-em">۱۳۹۹/۰۳/۱۲</span>
                                                     </div>
-                                                    <span class="iso-font-xs-em text-primary fw-normal">مشاوره درمان کرونا</span>
+                                                    <span class="iso-font-xs-em text-primary fw-normal title-service"  data-title_class="title-service
+">مشاوره درمان کرونا</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3177,10 +3225,10 @@
                 <div class="tab-header">
                     <div class="row w-100 d-flex justify-content-center m-0">
                         <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center px-0">
-                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius"
+                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius  iso-color-blue-dark"
                                     data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">
-                                <i class="fa fa-plus iso-font-lg-em iso-color-blue-dark"></i>
-                                <span class="mx-2 iso-color-blue-dark">ایجاد سوال پزشکی جدید</span>
+                                <i class="fa fa-plus iso-font-lg-em"></i>
+                                <span class="mx-2">ایجاد سوال پزشکی جدید</span>
                             </button>
                         </div>
                     </div>
@@ -3249,7 +3297,7 @@
                                 <div class="row gy-3 mt-2">
                                     <div class="col-md-4 col-lg-3">
                                         <label for="category" class="form-label iso-font-md-em mb-1 fw-normal">دسته بندی </label>
-                                        <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius" id="category" name="category">
+                                        <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary" id="category" name="category">
                                             <option value="">دسته بندی سوال خود را انتخاب کنید</option>
                                             <option value="1">اصلاح مزاج</option>
                                         </select>
@@ -3257,27 +3305,27 @@
                                     </div>
                                     <div class="col-md-4 col-lg-3">
                                         <label for="title_question" class="form-label iso-font-md-em mb-1 fw-normal">عنوان سوال</label>
-                                        <input type="text" class="form-control iso-font-xxs-em fw-normal border-radius" id="title_question" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
+                                        <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="title_question" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
                                         <span class="error_title_question error mt-1"></span>
                                     </div>
                                     <div class="col-md-4 col-lg-3">
                                         <label for="description_question_answer" class="form-label iso-font-md-em mb-1 fw-normal">توضیحات</label>
-                                        <textarea class="form-control iso-font-xxs-em fw-normal border-radius" id="description_question_answer" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
+                                        <textarea class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="description_question_answer" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
                                         <span class="error_description error mt-1"></span>
                                     </div>
                                 </div>
                                 <div class="row gy-4 gy-md-3 mt-0 mt-md-3">
                                     <div class="col-md-4 col-lg-3">
                                         <label for="question_one" class="form-label iso-font-md-em mb-1 fw-normal">بیماری خاصی دارید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                        <input type="text" class="form-control iso-font-xxs-em fw-normal border-radius optional" id="question_one" placeholder="مثل بیماری قلبی ، فشارخون ، دیابت و ..." value="" name="question_one">
+                                        <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_one" placeholder="مثل بیماری قلبی ، فشارخون ، دیابت و ..." value="" name="question_one">
                                     </div>
                                     <div class="col-md-4 col-lg-3">
                                         <label for="question_two" class="form-label iso-font-md-em mb-1 text-nowrap fw-normal">به پزشک دیگری مراجعه کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                        <input type="text" class="form-control iso-font-xxs-em fw-normal border-radius optional" id="question_two" placeholder="توضیحات در مورد مراجعه به پزشک" value="" name="question_two">
+                                        <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_two" placeholder="توضیحات در مورد مراجعه به پزشک" value="" name="question_two">
                                     </div>
                                     <div class="col-md-4 col-lg-3">
                                         <label for="question_three" class="form-label iso-font-md-em mb-1 text-nowrap fw-normal">آیا از داروی خاصی استفاده کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                        <input type="text"  class="form-control iso-font-xxs-em fw-normal border-radius optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" name="question_three">
+                                        <input type="text"  class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" name="question_three">
                                     </div>
                                 </div>
                                 <div class="row row-cols-4 gy-3 mt-0 mt-md-3">
@@ -3289,7 +3337,7 @@
                                         <div class="row row-cols-2">
                                             <div class="col d-flex flex-wrap align-items-end">
                                                 <label for="code_security_question_answer" class="form-label iso-font-md-em mb-1 fw-normal">کد امنیتی </label>
-                                                <input type="number" class="form-control py-2 iso-font-xxs-em fw-normal text-start border-radius" id="code_security_question_answer"
+                                                <input type="number" class="form-control py-2 iso-font-xs-em fw-normal text-start border-radius text-secondary" id="code_security_question_answer"
                                                        placeholder="کد امنیتی" value="" name="code_security">
                                             </div>
                                             <div class="col captcha d-flex align-items-end p-0">
@@ -3298,7 +3346,7 @@
                                                     <i class="fas fa-sync iso-font-llg-em"></i>
                                                 </a>
                                             </div>
-                                            <span class="error_code_security error mt-1"></span>
+                                            <span class="error_code_security_ticket error mt-1"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4 form-check d-flex flex-wrap align-items-end ms-2">
@@ -3332,7 +3380,7 @@
                                                     <span>موضوع</span>
                                                 </div>
                                                 <div class="col-9 d-flex align-items-center">
-                                                    <a href="#" class="link-topic iso-font-sm-em my-2">برای چرب و پوست حساسی که با هر کرم و روغنی جوش میزنه چیکار کنم؟</a>
+                                                    <a href="../froum/show_question.html" class="link-topic iso-font-sm-em my-2">برای چرب و پوست حساسی که با هر کرم و روغنی جوش میزنه چیکار کنم؟</a>
                                                 </div>
                                             </div>
                                             <div class="row m-0">
@@ -3381,7 +3429,7 @@
                                                     <span>موضوع</span>
                                                 </div>
                                                 <div class="col-9 d-flex align-items-center">
-                                                    <a href="#" class="link-topic iso-font-sm-em my-2">برا موخوره چیکار کنم ؟</a>
+                                                    <a href="../froum/show_question.html" class="link-topic iso-font-sm-em my-2">برا موخوره چیکار کنم ؟</a>
                                                 </div>
                                             </div>
                                             <div class="row m-0">
@@ -3440,7 +3488,7 @@
                                                     <span>موضوع</span>
                                                 </div>
                                                 <div class="col-9 d-flex align-items-center">
-                                                    <a href="#" class="link-topic iso-font-sm-em my-2">برای چرب و پوست حساسی که با هر کرم و روغنی جوش میزنه چیکار کنم؟</a>
+                                                    <a href="../froum/show_question.html" class="link-topic iso-font-sm-em my-2">برای چرب و پوست حساسی که با هر کرم و روغنی جوش میزنه چیکار کنم؟</a>
                                                 </div>
                                             </div>
                                             <div class="row m-0">
@@ -3465,7 +3513,7 @@
                                                     <span>موضوع</span>
                                                 </div>
                                                 <div class="col-9 d-flex align-items-center">
-                                                    <a href="#" class="link-topic iso-font-sm-em my-2">برا موخوره چیکار کنم ؟</a>
+                                                    <a href="../froum/show_question.html" class="link-topic iso-font-sm-em my-2">برا موخوره چیکار کنم ؟</a>
                                                 </div>
                                             </div>
                                             <div class="row m-0">
@@ -3620,10 +3668,10 @@
                 <div class="tab-header">
                     <div class="row w-100 d-flex flex-column justify-content-center align-items-center m-0">
                         <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center px-0">
-                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius"
+                            <button class="btn border-color-blue-dark d-flex align-items-center justify-content-center iso-font-md-em bg-white w-100 fw-medium border-radius  iso-color-blue-dark"
                                     data-bs-toggle="modal" data-bs-target="#ticket_modal">
-                                <i class="fa fa-plus iso-font-lg-em iso-color-blue-dark"></i>
-                                <span class="mx-2 iso-color-blue-dark">ایجاد تیکت جدید</span>
+                                <i class="fa fa-plus iso-font-lg-em"></i>
+                                <span class="mx-2">ایجاد تیکت جدید</span>
                             </button>
                         </div>
                         <div class="col-12 col-sm-8 col-md-4 col-lg-3 d-flex justify-content-center px-0 mt-4">
@@ -3944,9 +3992,9 @@
                                 <span class="error_title_ticket error mt-1"></span>
                             </div>
                             <div class="col-12">
-                                <label for="description" class="form-label iso-font-md-em">پیام</label>
-                                <textarea class="form-control text-start iso-font-sm-em border-radius" id="description" name="description" rows="5" placeholder="پیام"></textarea>
-                                <span class="error_description error mt-1"></span>
+                                <label for="description_ticket" class="form-label iso-font-md-em">پیام</label>
+                                <textarea class="form-control text-start iso-font-sm-em border-radius" id="description_ticket" name="description_ticket" rows="5" placeholder="پیام"></textarea>
+                                <span class="error_description_ticket error mt-1"></span>
                             </div>
                             <div class="col-12 d-flex flex-column justify-content-end align-items-start">
                                 <label for="file_ticket" class="form-label iso-font-md-em">تصویر</label>
@@ -3956,8 +4004,8 @@
                             <div class="col-12">
                                 <div class="row row-cols-2">
                                     <div class="col-6 d-flex flex-column justify-content-end align-items-start">
-                                        <label for="code_security" class="form-label iso-font-md-em">کد امنیتی</label>
-                                        <input type="number" class="form-control text-start iso-font-sm-em border-radius" id="code_security" name="code_security" placeholder="کد امنیتی">
+                                        <label for="code_security_ticket" class="form-label iso-font-md-em">کد امنیتی</label>
+                                        <input type="number" class="form-control text-start iso-font-sm-em border-radius" id="code_security_ticket" name="code_security_ticket" placeholder="کد امنیتی">
                                     </div>
                                     <div class="col-6 captcha p-0 d-flex align-items-end">
                                         <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid" alt="کپچا">
@@ -3965,7 +4013,7 @@
                                             <i class="fas fa-sync iso-font-llg-em"></i>
                                         </a>
                                     </div>
-                                    <span class="error_code_security error mt-1"></span>
+                                    <span class="error_code_security_ticket error mt-1"></span>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -4004,7 +4052,7 @@
                             <div class="row flex-column align-items-center">
                                 <div class="col-10 col-sm-11 col-lg-10 offset-1 ms-0 d-flex flex-wrap justify-content-center align-items-center p-0">
                                     <label for="mobile_profile" class="col-12 iso-font-md-em text-start fw-normal">شماره موبایل</label>
-                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em" name="mobile_profile" id="mobile_profile" placeholder="09251691615">
+                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em" name="mobile_profile" id="mobile_profile" placeholder="09123456789">
                                     <span class="error_mobile_profile error mt-1"></span>
                                 </div>
                                 <button type="button" class="btn col-10 col-sm-11 col-lg-10 offset-1 ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ارسال</button>
@@ -4062,35 +4110,35 @@
                                 <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                                     <div class="img-box-profile d-flex flex-column align-items-center">
                                         <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#edit_img_profile_modal_2">
-                                            <img src="../../images/doctor2.png" class="figure-img img-lg mb-1 rounded-circle poin" alt="عکس پروفایل">
+                                            <img src="../../images/doctor2.png" class="figure-img img-lg mb-1 rounded-circle poin border border-1" alt="عکس پروفایل">
                                         </button>
-                                        <button type="button" class="btn iso-font-md-em fw-normal p-0 iso-color-blue-dark"
-                                                data-bs-toggle="modal" data-bs-target="#edit_img_profile_modal_2">تغییر تصویر</button>
+                                        <a href="#" class="iso-font-md-em fw-normal p-0 iso-color-blue-dark"
+                                                data-bs-toggle="modal" data-bs-target="#edit_img_profile_modal_2">تغییر تصویر</a>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label for="first_name" class="form-label iso-font-md-em">نام</label>
-                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="first_name" name="first_name" placeholder="نام">
+                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="first_name" name="first_name" placeholder="نام">
                                     <span class="error_first_name error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="last_name" class="form-label iso-font-md-em">نام خانوادگی</label>
-                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="last_name" name="last_name" placeholder="نام خانوادگی">
+                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="last_name" name="last_name" placeholder="نام خانوادگی">
                                     <span class="error_last_name error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="title_user" class="form-label iso-font-md-em">عنوان کاربر</label>
-                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="title_user" name="title_user" disabled placeholder="عنوان کاربر">
+                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="title_user" name="title_user" disabled placeholder="عنوان کاربر">
                                     <span class="error_title_user error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="code_national" class="form-label iso-font-md-em">کد ملی (اختیاری)</label>
-                                    <input type="number" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="code_national" name="code_national" placeholder="کد ملی">
+                                    <input type="number" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="code_national" name="code_national" placeholder="کد ملی">
                                     <span class="error_code_national error mt-1"></span>
                                 </div>
                                 <div class="col-6">
                                     <label for="gender" class="form-label iso-font-md-em">جنسیت</label>
-                                    <select class="form-select iso-font-xs-em fw-normal" name="gender" id="gender">
+                                    <select class="form-select iso-font-xs-em fw-normal text-secondary" name="gender" id="gender">
                                         <option value="" selected>جنسیت</option>
                                         <option value="man">مرد</option>
                                         <option value="woman">زن</option>
@@ -4099,7 +4147,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label for="birth" class="form-label iso-font-md-em">سال تولد</label>
-                                    <select class="form-select iso-font-xs-em fw-normal" name="birth" id="birth">
+                                    <select class="form-select iso-font-xs-em fw-normal text-secondary" name="birth" id="birth">
                                         <option value="" selected>سال تولد</option>
                                         <option value="1378">1378</option>
                                         <option value="1379">1379</option>
@@ -4112,22 +4160,22 @@
                                 </div>
                                 <div class="col-6">
                                     <label for="height" class="form-label iso-font-md-em">قد</label>
-                                    <input type="number" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="height" name="height" placeholder="قد">
+                                    <input type="number" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="height" name="height" placeholder="قد">
                                     <span class="error_height error mt-1"></span>
                                 </div>
                                 <div class="col-6">
                                     <label for="width" class="form-label iso-font-md-em">وزن</label>
-                                    <input type="number" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="width" name="width" placeholder="وزن">
+                                    <input type="number" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="width" name="width" placeholder="وزن">
                                     <span class="error_width error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="province" class="form-label iso-font-md-em">استان (اختیاری)</label>
-                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="province" name="province" placeholder="استان">
+                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="province" name="province" placeholder="استان">
                                     <span class="error_province error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="city" class="form-label iso-font-md-em">شهر (اختیاری)</label>
-                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius" id="city" name="city" placeholder="شهر">
+                                    <input type="text" class="form-control text-start iso-font-xs-em fw-normal border-radius text-secondary" id="city" name="city" placeholder="شهر">
                                     <span class="error_city error mt-1"></span>
                                 </div>
                                 <div class="col-12">
@@ -4510,7 +4558,7 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <label for="specialty" class="form-label iso-font-md-em mb-1 fw-normal">تخصص</label>
-                                    <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary" id="specialty" name="specialty">
+                                    <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary text-secondary" id="specialty" name="specialty">
                                         <option value="">تخصص خود را انتخاب کنید</option>
                                     </select>
                                     <span class="error_specialty error mt-1"></span>
@@ -4533,7 +4581,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="year_work_doctor" class="form-label iso-font-md-em mb-1 fw-normal">سال شروع به کار پزشکی</label>
-                                    <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary" id="year_work_doctor" name="year_work_doctor">
+                                    <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary text-secondary" id="year_work_doctor" name="year_work_doctor">
                                         <option value="">انتخاب سال</option>
                                     </select>
                                     <span class="error_year_work_doctor error mt-1"></span>
@@ -4709,14 +4757,14 @@
                             <div class="row gy-3">
                                 <div class="col-12">
                                     <label for="counseling" class="form-label iso-font-md-em mb-1 fw-normal">مشاوره </label>
-                                    <select class="form-select iso-font-xs-em fw-normal" id="counseling" name="counseling">
+                                    <select class="form-select iso-font-xs-em fw-normal text-secondary" id="counseling" name="counseling">
                                         <option value="">مشاوره خود را انتخاب کنید</option>
                                     </select>
                                     <span class="error_counseling error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="description_message" class="form-label iso-font-md-em mb-1 fw-normal">پیام</label>
-                                    <textarea class="form-control iso-font-md-em fw-normal" id="description_message" rows="6" placeholder="پبام" name="description_message"></textarea>
+                                    <textarea class="form-control iso-font-xs-em fw-normal text-secondary" id="description_message" rows="6" placeholder="پبام" name="description_message"></textarea>
                                     <span class="error_description_message error mt-1"></span>
                                 </div>
                                 <div class="col-12">
@@ -4750,8 +4798,8 @@
                             <div class="footer-title iso-font-md m-0">نیاز به پشتیبانی دارید؟</div>
                         </div>
                         <div class="col-6 col-xxl-12 p-0 mt-xxl-2">
-                            <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-center align-items-center rounded-pill">
-                                <a href="#" target="_blank" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                            <div class="support-phone py-1 p-2 border d-flex bg-light justify-content-center align-items-center rounded-pill">
+                                <a href="tel:00226510915" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
                                 <span class="icon-support"></span>
                             </div>
                         </div>
