@@ -22,7 +22,6 @@ $(document).ready(function (){
          }
          /*اگر تعداد فیلتر های ثبت شده بیشتر از 0 باشد عددش رو بنداز و گرنه باید خالی چاپ شود */
          show_counter_filter(count_filter_selected);
-
       })
 
       let count_filters_done = $(target).find(".card-body .card-text").length;
@@ -79,7 +78,7 @@ $(document).ready(function (){
       show_filters_select('.card-details-filter-mobile');
    })
 
-
+   /* sorting filter start */
    $(document).off('click','.offcanvas-sorting .btn');
    $(document).on('click','.offcanvas-sorting .btn',function (){
       let title_btn = $(this).find("span").text();
@@ -88,5 +87,7 @@ $(document).ready(function (){
       $(".offcanvas-sorting .btn i").removeClass('fa-check');
       $(this).find('i').addClass('fa-check');
    });
+   /* sorting filter end */
+
 });
 

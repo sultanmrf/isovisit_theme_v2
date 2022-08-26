@@ -1,10 +1,8 @@
-/* variables */
 /**
 *   color
 */
 /**
 *   size
-
 */
 /* size rem */
 /* size em */
@@ -17,6 +15,12 @@
  */
 /**
 * spacing text
+ */
+/**
+* variable custom
+ */
+/**
+* size custom
  */
 .card-info-doctor .btn-group {
   border: 0.063em solid #009d38; }
@@ -31,7 +35,7 @@
 .swiper-gallery-doctor {
   width: 18.75em;
   height: 18.75em;
-  padding: 3.125em; }
+  padding: 50px; }
   .swiper-gallery-doctor .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -58,6 +62,8 @@ iframe {
   z-index: 9999; }
 
 .icon-share {
+  width: 1.5em;
+  height: 1.5em;
   background: url("../../../images/icons/share.png") no-repeat; }
 
 .links-doctor a {

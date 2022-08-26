@@ -1,7 +1,7 @@
 $(document).ready(function (){
 
-    /* work: delete text > size custom*/
-    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question,.title-service").each(function (){
+    /* work: delete text > size custom start */
+    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question,.title-service,.topic-counseling,.text-question-answer").each(function (){
         let text = $(this).text().trim();
         switch ($(this).data('title_class')){
             case "title-question":
@@ -22,6 +22,12 @@ $(document).ready(function (){
                 }
                 break;
 
+            case "text-question-answer":
+                if(text.length > 34){
+                    $(this).html(text.substr(0, 34) + ' ...');
+                }
+                break;
+
             case "text-question":
                 if(text.length > 173){
                     $(this).html(text.substr(0, 173) + ' ...');
@@ -29,15 +35,21 @@ $(document).ready(function (){
                 break;
 
             case "title-service":
-
                 if(text.length > 18){
                     $(this).html(text.substr(0, 18) + ' ...');
                 }
                 break;
+
+            case "topic-counseling":
+                if(text.length > 30){
+                    $(this).html(text.substr(0, 30) + ' ...');
+                }
+                break;
         }
     })
+    /* work: delete text > size custom end */
 
-    /* section navbar sidebar*/
+    /* section navbar sidebar start */
     $(document).on('click','.btn-patients,.btn-doctors',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
         if(val_aria_expanded == 'true'){
@@ -50,8 +62,9 @@ $(document).ready(function (){
             $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         }
     })
+    /* section navbar sidebar end */
 
-    /*section navbar top*/
+    /* section navbar top start */
     $(document).on('click','.link-patients,.link-doctors',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
 
@@ -70,8 +83,9 @@ $(document).ready(function (){
         $(this).removeClass('text-light').addClass('iso-color-dark');
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
     })
+    /* section navbar top end */
 
-    /* section communication-iso */
+    /* section communication-iso start */
     $(".btn-communication-iso").click(function (){
         let val_aria_expanded = $(this).attr('aria-expanded');
         if(val_aria_expanded == 'true'){
@@ -89,6 +103,7 @@ $(document).ready(function (){
                 .removeClass(['rotate-0deg','icon-support-light']);
         }
     })
+    /* section communication-iso end */
 
     let $window = $(window);
     $window.on('scroll', revealOnScroll);
@@ -123,14 +138,13 @@ $(document).ready(function (){
         }else{
             $(".header-menu").removeClass(['position-fixed','z-index-last']);
         }
-
     }
 
     $(document).on('click','.scroll-top',function (){
         $('html').animate({scrollTop : 0},200);
     });
 
-    /* section login */
+    /* section modal login start */
     $(".box-verification-code input").keyup(function () {
         if ($(this).val() != "") {
             $(this).next('input').focus();
@@ -151,8 +165,8 @@ $(document).ready(function (){
 
     /* function timer */
     let second = 60,
-        minutes = 1;
-    timer = "";
+        minutes = 1,
+        timer ;
 
     function start_timer() {
         if(second === 0 && minutes === 0){
@@ -219,9 +233,9 @@ $(document).ready(function (){
         $(".btn-login,.btn-show-modal-login").addClass('d-none').removeClass('d-flex');
         $('.modal').modal('hide');
     });
-    /* section login */
+    /* section modal login end */
 
-    /* section menu user */
+    /* section menu user start */
     $(document).off('click','.btn-user , .btn-user-collapse');
     $(document).on('click','.btn-user , .btn-user-collapse',function (){
         let val_aria_expanded = $(this).attr("aria-expanded");
@@ -238,8 +252,9 @@ $(document).ready(function (){
         $(this).find('i').addClass('rotate-0deg').removeClass('rotate-180deg');
         $(this).removeClass('border-radius-top').addClass('border-radius');
     });
+    /* section menu user end */
 
-    /* section search-input-lg in desktop */
+    /* section search-input-lg in desktop start */
     $(document).on('keyup','.search-input-lg',function (){
         let character_length = $(this).val().length;
         if(character_length >= 1){
@@ -250,8 +265,9 @@ $(document).ready(function (){
             $(".search-box-lg .fa-magnifying-glass").removeClass('d-none');
         }
     });
+    /* section search-input-lg in desktop end */
 
-    /* section search-input-sm modal in mobile */
+    /* section search-input-sm modal in mobile start */
     if(check_size_media(false,576)) {
         $(".search-input-lg").attr('data-bs-toggle',"modal");
         $(document).on('keyup','.search-input-sm',function (){
@@ -283,6 +299,7 @@ $(document).ready(function (){
             }
         })
     }
+    /* section search-input-sm modal in mobile end */
 
     $(document).on('click','.clear-input',function () {
         $(".search-input-sm,.search-input-lg").val('');

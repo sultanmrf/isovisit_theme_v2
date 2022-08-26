@@ -15,7 +15,7 @@ function show_map(map_container_id, lat, long) {
             attribution: '',
         }).addTo(map_main);
 
-        var map_main_marker = L.marker([lat, long]).addTo(map_main);
+        L.marker([lat, long]).addTo(map_main);
     }
 }
 

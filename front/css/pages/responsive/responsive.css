@@ -4,7 +4,6 @@
 */
 /**
 *   size
-
 */
 /* size rem */
 /* size em */
@@ -17,6 +16,12 @@
  */
 /**
 * spacing text
+ */
+/**
+* variable custom
+ */
+/**
+* size custom
  */
 @media only screen and (max-width: 992px) {
   .section-comments-users .section-svg,
@@ -124,7 +129,7 @@
     background-size: 69.875em 27.5em; }
   /* section tab menu profile user start */
   main .menu-profile .active:after {
-    bottom: -6px; } }
+    bottom: -.375em; } }
 
 @media only screen and (min-width: 992px) {
   html {
@@ -168,13 +173,11 @@
     height: 7.375em; }
   footer .footer-certificates,
   footer .footer-contact {
-    border-top: 0 solid; }
-  .links-doctor {
-    border-radius: 8px; } }
+    border-top: 0 solid; } }
 
 @media only screen and (max-width: 1400px) {
   .links-doctor {
-    border-radius: 0 0 8px 8px; }
+    border-radius: 0 0 .5em .5em; }
   /* section form comment in profile doctor start */
   #form_comments .input-group-height {
     height: unset; }

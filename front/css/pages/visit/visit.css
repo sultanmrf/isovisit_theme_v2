@@ -1,17 +1,41 @@
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+
+* border-color
+ */
+/**
+* spacing text
+ */
+/**
+* variable custom
+ */
+/**
+* size custom
+ */
 body {
   background: url("../../../images/background/background-visit.png"); }
 
 #visit_menu {
   background: #F0F1F1; }
 
-.size-24, .icon-smile, .icon-paper, .icon-microphone, .icon-more, .icon-artificial-intelligence, .icon-note, .icon-smart-assistant, .icon-notification-end-counseling, .icon-questionnaire, .icon-report, .icon-payment, .icon-visit, .icon-question-more, .icon-end-consultation, .icon-secretary, .icon-send {
+.size-twenty-four, .icon-smile, .icon-paper, .icon-microphone, .icon-more, .icon-artificial-intelligence, .icon-note, .icon-smart-assistant, .icon-notification-end-counseling, .icon-questionnaire, .icon-report, .icon-payment, .icon-visit, .icon-question-more, .icon-end-consultation, .icon-secretary, .icon-send {
   width: 1.5em;
   height: 1.5em; }
 
 .icon-menu {
-  width: 30px;
-  height: 30px;
-  background: url("../../../images/icons/menu.png") no-repeat; }
+  width: 2.5em;
+  height: 2.5em;
+  background: url("../../../images/icons/menu.png") center no-repeat; }
 
 .icon-smile {
   background: url("../../../images/icons/smile.png") no-repeat; }
@@ -70,7 +94,7 @@ body {
   .operation-patient .dropdown-menu,
   .operation-doctor .dropdown-menu {
     min-width: unset;
-    width: 2.188px;
+    width: 2.188em;
     height: 4.5em; }
 
 .operation-doctor .dropdown-menu {
@@ -102,8 +126,7 @@ body {
   right: -1.125em; }
 
 .emojionearea .emojionearea-editor:empty:before {
-  margin-right: 5px;
-  margin-top: -1px; }
+  margin: 0 5px 0 -1px; }
 
 .emojionearea.form-control {
   box-shadow: unset; }

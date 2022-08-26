@@ -159,20 +159,13 @@ main{
     }
   }
 
-  .list-question-answer-user,
-  .list-question-answer-news{
-    .link-topic {
-      height:1.3em;
-      overflow:hidden;
-    }
-  }
-
   /* icons */
   .icon-explorer
   {
     @extend .size-twenty-four;
     background: url("../../../images/icons/explorer.png") no-repeat;
   }
+
 
   .icon-pc
   {

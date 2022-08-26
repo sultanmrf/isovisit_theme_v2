@@ -197,7 +197,6 @@
   }
 }
 
-
 @media only screen and (max-width: 768px){
 
   .profile-doctor-master{
@@ -244,12 +243,11 @@
     .menu-profile{
       .active{
         &:after{
-          bottom: -6px;
+          bottom: -.375em;
         }
       }
     }
   }
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -348,15 +346,11 @@
       border-top: 0 solid;
     }
   }
-
-  .links-doctor{
-    border-radius: 8px;
-  }
 }
 
 @media only screen and (max-width: 1400px){
   .links-doctor{
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 .5em .5em;
   }
 
   /* section form comment in profile doctor start */

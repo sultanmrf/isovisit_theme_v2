@@ -4,7 +4,6 @@
 */
 /**
 *   size
-
 */
 /* size rem */
 /* size em */
@@ -17,6 +16,12 @@
  */
 /**
 * spacing text
+ */
+/**
+* variable custom
+ */
+/**
+* size custom
  */
 main .iso-line-title {
   width: 0.375em;

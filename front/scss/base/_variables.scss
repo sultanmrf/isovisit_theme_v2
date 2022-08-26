@@ -5,7 +5,6 @@
 $iso-dark : #001A34;
 $iso-blue-dark : #1773B5;
 $iso-blue-light : #CCE5FF;
-$iso-cyan : #17A2B8;
 $iso-gray-light : #F0F1F1;
 $iso-light: #F5F5F5;
 $iso-white-dark: #F8F9FA;
@@ -14,7 +13,6 @@ $iso-green-light : #D1E7DD;
 $iso-green-dark : #009d38;
 $iso-secondary : #999999;
 $iso-warning: #fff3cd;
-
 
 /**
 *   size
@@ -55,3 +53,18 @@ $iso-border-color-light: #D6D8D9;
 
 $letter-space-sm : 4px;
 $letter-space-md : 7px;
+
+/**
+* variable custom
+ */
+$line-height-size: 1.8em;
+$color-primary:#007BFF;
+
+/**
+* size custom
+ */
+$size-20:1.25em;
+$size-30:1.875em;
+$size-25:1.563em;
+$size-24:1.5em;
+$size-40:2.5em;

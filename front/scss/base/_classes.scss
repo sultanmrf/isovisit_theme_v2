@@ -5,12 +5,8 @@
   color: #F8F9FA;
 }
 
-.iso-bg-blue-light{
+.alert-primary iso-color-dark{
   background: $iso-blue-light;
-}
-
-.bg-info{
-  background: $iso-cyan;
 }
 
 .iso-bg-gray-light{
@@ -171,6 +167,9 @@
   margin-right: 0.25rem;
 }
 
+.my-6{
+  margin: 4rem 0 4rem 0;
+}
 /* iso padding */
 .px-12{
   padding:0 0.75rem 0 0.75rem;
@@ -195,38 +194,13 @@
   line-height: 1.8;
 }
 
-
 /* iso border color */
 .border-color-blue-dark{
   border:1px solid $iso-blue-dark;
 }
-
-.border-color-cyan{
-  border:1px solid $iso-cyan;
-}
 /* iso order */
 .order-6{
   order: 6;
-}
-
-/* iso btn outline */
-.btn-outline-info-dark{
-  border: 1px solid $iso-cyan;
-  color: $iso-cyan;
-  &:hover{
-    color: white;
-    background: $iso-cyan;
-  }
-}
-
-.btn-outline-green-dark{
-  border: 1px solid $iso-green;
-  color: $iso-green;
-
-  &:hover{
-    color: white;
-    background: $iso-green;
-  }
 }
 
 /* z-index */
@@ -237,6 +211,7 @@
 .z-index-first{
   z-index: 1;
 }
+
 /* marker */
 .marker-light{
   li{

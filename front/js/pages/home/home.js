@@ -1,5 +1,4 @@
 $(document).ready(function (){
-
     if (check_size_media(false,992)) {
         $('.svg-doctors').attr('viewBox','-20 18 500 397');
         $('.svg-articles').attr('viewBox','-80 134 500 400');
@@ -12,6 +11,4 @@ $(document).ready(function (){
     initServicesSwiper();
     initQuestionAnswerSwiper();
     initArticleSwiper();
-
-
 });

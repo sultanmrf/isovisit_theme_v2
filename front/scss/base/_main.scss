@@ -1,7 +1,29 @@
 @import "variables";
 
-$line-height-size: 1.8em;
-$color-primary:#007BFF;
+.size-thirty{
+  width: $size-30;
+  height: $size-30;
+}
+
+.size-twenty-five{
+  width: $size-25;
+  height: $size-25;
+}
+
+.size-twenty-four{
+  width: $size-24;
+  height: $size-24;
+}
+
+.size-twenty{
+  width: $size-20;
+  height: $size-20;
+}
+
+.size-forty{
+  width: $size-40;
+  height: $size-40;
+}
 
 html{
   font-size: 1rem;
@@ -79,7 +101,7 @@ input[type=number] {
 }
 
 .content{
-  background: #F0F1F1;
+  background: $iso-gray-light;
 }
 
 main,
@@ -90,7 +112,7 @@ footer,
 }
 
 .menu-user-body{
-  transform: translatey(-0.313em);
+  transform: translatey(-.313em);
 }
 
 .btn:active:focus{
@@ -157,6 +179,7 @@ a:hover{
 }
 
 .btn-close{
+  @extend .size-thirty;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,11 +273,6 @@ a:hover{
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-}
-
-.img-xs{
-  width: 24px;
-  height: 24px;
 }
 
 .img-md {
@@ -441,13 +459,29 @@ a:hover{
   height: 1.8em;
 }
 
-.icon-bar,
-.btn-close{
-  width: 1.875em;
-  height: 1.875em;
+/* list class icons */
+.icon-whatsapp{
+  @extend .size-twenty-five;
+  background: url("../../images/icons/whatsapp.png") center no-repeat;
+}
+
+.icon-telegram-circle{
+  @extend .size-twenty-five;
+  background: url("../../images/icons/telegram.png") center no-repeat;
+}
+
+.icon-ticket{
+  @extend .size-twenty-five;
+  background: url("../../images/icons/ticket.png") center no-repeat;
+}
+
+.icon-phone{
+  @extend .size-twenty-five;
+  background: url("../../images/icons/phone.png") center no-repeat;
 }
 
 .icon-bar{
+  @extend .size-thirty;
   background: url("../../images/icons/bar.png") no-repeat;
 }
 
@@ -461,11 +495,6 @@ a:hover{
   width: 2em;
   height: 2em;
   background: url("../../images/icons/alert.png") no-repeat;
-}
-
-.icon-twenty-four{
-  width: 1.5em;
-  height: 1.5em;
 }
 
 .icon-umbrella-active,
@@ -488,82 +517,87 @@ a:hover{
   background: url("../../images/icons/support.png") no-repeat;
 }
 
-.icon-support-light,
-.icon-close{
-  width:2.5em;
-  height:2.5em;
-}
-
 .icon-support-light{
+  @extend .size-forty;
   background: url("../../images/icons/icon-support-light.png") no-repeat;
   background-size: cover;
 }
 
 .icon-close{
+  @extend .size-forty;
   background: url("../../images/icons/close.png") no-repeat;
   background-size: cover;
 }
 
 .icon-telegram-blue{
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/telegram-blue.png") no-repeat;
 }
 
 .icon-telegram-light{
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/telegram-light.png") no-repeat;
 }
 
 .icon-email{
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/email.png") no-repeat;
 }
 
 .icon-edit {
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/edit.png") no-repeat;
 }
 
 .icon-trash {
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/trash.png") no-repeat;
 }
 
 .icon-check{
-  width: 20px;
-  height: 20px;
+  width:$size-20;
+  height: $size-20;
   background: url("../../images/icons/check.png") no-repeat;
 }
 
-.icon-bookmark{
-  @extend .icon-twenty-four;
-  background: url("../../images/icons/saved.png") no-repeat;
-}
-
 .icon-instagram-blue{
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/instegram-blue.png") no-repeat;
 }
 
 .icon-instagram-light{
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/instagram-light.png") no-repeat;
 }
 
-.icon-aparat,
-.icon-gmail{
-  width: 1.878em;
-  height: 1.878em;
-}
-
 .icon-aparat{
-  @extend .icon-twenty-four;
+  @extend .size-twenty-four;
   background: url("../../images/icons/aparat.png");
 }
 
 .icon-gmail{
-  @extend .icon-twenty-four;
+  @extend .size-thirty;
   background: url("../../images/icons/gmail.png");
+}
+
+.icon-user{
+  @extend .size-twenty-five;
+  background: url("../../images/icons/user.png") no-repeat;
+}
+
+.iso-form-check-input{
+  @extend .size-twenty-five;
+  border: 2px solid rgba(0,0,0,.25);
+}
+
+.icon-edit-comment{
+  @extend .size-twenty;
+  background: url("../../images/icons/edit-comment.png") no-repeat;
+}
+
+.icon-tags{
+  @extend .size-twenty;
+  background: url("../../images/icons/tags.png") no-repeat;
 }
 
 .captcha{
@@ -572,19 +606,6 @@ a:hover{
     height: 2em;
   }
 }
-
-.icon-user{
-  width: 1.6em;
-  height: 1.6em;
-  background: url("../../images/icons/user.png") no-repeat;
-}
-
-.iso-form-check-input{
-  width: 1.5em;
-  height: 1.5em;
-  border: 2px solid rgba(0,0,0,.25);
-}
-
 /* list doctors */
 .section-list-doctors{
   .card-body{
@@ -598,11 +619,13 @@ a:hover{
 }
 
 .love-active{
+  animation: animate-love-active 0.2s linear;
   -webkit-animation: animate-love-active 0.2s linear;
   -moz-animation: animate-love-active 0.2s linear;
 }
 
 .love-disabled{
+  animation: animate-love-disabled 0.2s linear;
   -webkit-animation: animate-love-disabled 0.2s linear;
   -moz-animation: animate-love-disabled 0.2s linear;
 }
@@ -649,6 +672,9 @@ a:hover{
 
 .tooltip-active{
   animation: tooltip_effect 3s;
+  -webkit-animation: tooltip_effect 3s;
+  -moz-animation: tooltip_effect 3s;
+  -o-animation: tooltip_effect 3s;
 }
 
 @keyframes tooltip_effect {
@@ -689,35 +715,9 @@ a:hover{
     width: 9.813em;
     height: 2.938em;
   }
-
-  .btn{
-    &.btn-outline-info-dark.active{
-      background: $iso-cyan;
-      color: white;
-    }
-
-    &.btn-outline-green-dark.active{
-      background: $iso-green;
-      color: white;
-    }
-  }
 }
 
 /* style section profile doctor start */
-.icon-edit-comment,
-.icon-tags{
-  width: 1.25em;
-  height: 1.25em;
-}
-
-.icon-edit-comment{
-  background: url("../../images/icons/edit-comment.png") no-repeat;
-}
-
-.icon-tags{
-  background: url("../../images/icons/tags.png") no-repeat;
-}
-
 .operation-comment{
   .btn{
     width: 2em;
@@ -731,7 +731,6 @@ a:hover{
   }
 
   .btn-comment:hover{
-    background: #17A2B8;
     & .icon-edit-comment{
       background: url("../../images/icons/edit-comment-light.png") no-repeat;
     }
@@ -741,6 +740,10 @@ a:hover{
 
 .modal-login,
 .modal-edit-mobile{
+
+  .border-blue{
+    border: 2px solid $iso-blue-dark;
+  }
 
   .box-timer{
     width: 7.25em;
@@ -753,17 +756,12 @@ a:hover{
     height: 2.5em;
   }
 
-  .box-password,
-  .input-phone{
-    width: 240px;
-  }
-
   .form-modal-login{
-    width: 240px;
+    width: 15em;
   }
 
   input:focus{
-    border: 0.125em solid #1773B5;
+    @extend .border-blue;
   }
 
   .modal-body{
@@ -780,7 +778,7 @@ a:hover{
     border: 1px solid #dee2e6;
 
     &:focus-within{
-      border: 0.125em solid #1773B5;
+      @extend .border-blue;
     }
 
     input{
@@ -789,7 +787,7 @@ a:hover{
     }
 
     input:focus{
-      border-color: #1773B5;
+      border-color: $iso-blue-dark;
     }
   }
 }

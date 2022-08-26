@@ -1,99 +1,101 @@
+@import "../../base/variables";
+
 body{
   background: url("../../../images/background/background-visit.png");
 }
 
 #visit_menu{
-  background: #F0F1F1;
+  background: $iso-gray-light;
 }
 
-.size-24{
-  width: 1.5em;
-  height: 1.5em;
+.size-twenty-four{
+  width: $size-24;
+  height: $size-24;
 }
 
 .icon-menu{
-  width: 30px;
-  height: 30px;
-  background: url("../../../images/icons/menu.png") no-repeat;
+  width: $size-40;
+  height: $size-40;
+  background: url("../../../images/icons/menu.png") center no-repeat;
 }
 
 .icon-smile{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/smile.png") no-repeat;
 }
 
 .icon-paper{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/paper.png") no-repeat;
 }
 
 .icon-microphone{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/microphone.png") no-repeat;
 }
 
 .icon-more{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/more.png") no-repeat;
 }
 
 .icon-artificial-intelligence{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/artificial-intelligence.png") no-repeat;
 }
 
 .icon-note{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/note.png") no-repeat;
 }
 
 .icon-smart-assistant{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/smart-assistant.png") no-repeat;
 }
 
 .icon-notification-end-counseling{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/notification-end-counseling.png") no-repeat;
 }
 
 .icon-questionnaire{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/questionnaire.png") no-repeat;
 }
 
 .icon-report{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/statistics.png") no-repeat;
 }
 
 .icon-payment{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/payment.png") no-repeat;
 }
 
 .icon-visit{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/visit.png") no-repeat;
 }
 
 .icon-question-more{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/question-more.png") no-repeat;
 }
 
 .icon-end-consultation{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/end-consultation.png") no-repeat;
 }
 
 .icon-secretary{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/secretary.png") no-repeat;
 }
 
 .icon-send{
-  @extend .size-24;
+  @extend .size-twenty-four;
   background: url("../../../images/icons/send.png") no-repeat;
 }
 
@@ -108,7 +110,7 @@ body{
   width: 2.5em;
   .dropdown-menu{
     min-width: unset;
-    width: 2.188px;
+    width: 2.188em;
     height: 4.5em;
   }
 }
@@ -162,8 +164,7 @@ body{
 
 .emojionearea{
   .emojionearea-editor:empty:before {
-    margin-right: 5px;
-    margin-top: -1px;
+    margin: 0 5px 0 -1px;
   }
 }
 

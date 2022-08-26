@@ -1,5 +1,6 @@
 $(document).ready(function (){
 
+    /* edit size svg in max size 576*/
     if(check_size_media(false,576)) {
         $('.svg-stories-personal-files').attr('viewBox','50 0 500 500');
         $('.svg-stories-mobile-development').attr('viewBox','-50 0 500 500');

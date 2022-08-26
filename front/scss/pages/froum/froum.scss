@@ -1,5 +1,10 @@
 @import "../../base/variables";
 
+.size-twenty-four{
+  width: $size-24;
+  height: $size-24;
+}
+
 @keyframes animate-move-text {
   0%   {
     transform: translateX(-50%);
@@ -42,16 +47,12 @@
   }
 }
 
-.icon-question,
-.icon-folder-open{
-  width: 24px;
-  height: 24px;
-}
-
 .icon-question{
+  @extend .size-twenty-four;
   background: url("../../../images/icons/question.png") no-repeat;
 }
 
 .icon-folder-open{
+  @extend .size-twenty-four;
   background: url("../../../images/icons/folder.png") no-repeat;
 }

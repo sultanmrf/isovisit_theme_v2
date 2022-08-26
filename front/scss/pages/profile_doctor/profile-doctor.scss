@@ -1,4 +1,3 @@
-/* variables */
 @import "../../base/variables";
 
 .card-info-doctor{
@@ -19,7 +18,7 @@
 .swiper-gallery-doctor {
   width: 18.75em;
   height: 18.75em;
-  padding: 3.125em;
+  padding: 50px;
 
   .swiper-slide {
     background-position: center;
@@ -64,6 +63,8 @@ iframe{
 }
 
 .icon-share{
+  width: $size-24;
+  height: $size-24;
   background: url("../../../images/icons/share.png") no-repeat;
 }
 

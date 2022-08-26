@@ -3,7 +3,6 @@
 */
 /**
 *   size
-
 */
 /* size rem */
 /* size em */
@@ -17,6 +16,16 @@
 /**
 * spacing text
  */
+/**
+* variable custom
+ */
+/**
+* size custom
+ */
+.size-twenty-four, .icon-question, .icon-folder-open {
+  width: 1.5em;
+  height: 1.5em; }
+
 @keyframes animate-move-text {
   0% {
     transform: translateX(-50%);
@@ -48,11 +57,6 @@
   #collapse_froum .input-weight span {
     top: 0.73em;
     left: 0.2em; }
-
-.icon-question,
-.icon-folder-open {
-  width: 24px;
-  height: 24px; }
 
 .icon-question {
   background: url("../../../images/icons/question.png") no-repeat; }

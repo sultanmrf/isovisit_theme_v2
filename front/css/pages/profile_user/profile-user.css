@@ -16,6 +16,12 @@
 /**
 * spacing text
  */
+/**
+* variable custom
+ */
+/**
+* size custom
+ */
 .size-thirty, main .icon-profile, main .icon-consultants, main .icon-transactions, main .icon-secretary-message, main .icon-comments, main .icon-question-answer, main .icon-tickets, main .icon-secretary, main .icon-social-network {
   width: 1.875em;
   height: 1.875em; }
@@ -104,10 +110,6 @@ main {
       margin-left: 1.813em !important; }
     main .swiper-menu .nav-link {
       cursor: pointer; }
-  main .list-question-answer-user .link-topic,
-  main .list-question-answer-news .link-topic {
-    height: 1.3em;
-    overflow: hidden; }
   main .icon-explorer {
     background: url("../../../images/icons/explorer.png") no-repeat; }
   main .icon-pc {

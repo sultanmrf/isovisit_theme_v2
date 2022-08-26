@@ -1,5 +1,5 @@
-@import "../base/main";
-
+@import "../base/variables";
+$size-44: 2.8rem;
 header {
   h1{
     line-height: 1.2;
@@ -13,31 +13,27 @@ header {
     width: 16.875rem;
   }
 
-  .figure{
-    .logo{
-      width: 2.8rem;
-      height: 2.8rem;
-    }
+  .icon-logo-lg,
+  .icon-logo-sm{
+    background-image: url("../../images/logo.png");
   }
 
   .icon-logo-sm{
-    width: 2.8rem;
-    height: 2.8rem;
-    background-image: url("../../images/logo.png");
-    background-size: 2.8rem 2.8rem;
+    width: $size-44;
+    height: $size-44;
+    background-size: $size-44 $size-44;
   }
 
   .icon-logo-lg{
     width: 3.7em;
     height: 3.7em;
-    background-image: url("../../images/logo.png");
     background-size: 4em 4em;
   }
 
   .nav{
     height: 2rem;
     .dropdown-menu{
-      width: 200px;
+      width: 12.5em;
       border-radius: 0 $iso-border-radius $iso-border-radius;
       transform: translate3d(0px, 34px, 0px) !important;
       -webkit-transform: translate3d(0px, 34px, 0px) !important;
@@ -91,7 +87,7 @@ header {
     }
 
     .iso-position-absolute{
-      top: 149px;
+      top: 9.313em;
     }
   }
 
@@ -103,7 +99,7 @@ header {
     transition: 0.8s ease-in;
     .dropdown-menu{
       z-index: 4;
-      width: 230px;
+      width: 14.375em;
       transform: translate(0px, 29px) !important;
       -webkit-transform: translate(0px, 29px) !important;
       -moz-transform: translate(0px, 29px) !important;
