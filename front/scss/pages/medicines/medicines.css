@@ -1,0 +1,24 @@
+.box-img-medicines {
+  height: 22em;
+}
+
+.section-medicines .swiper-wrapper {
+  height: 12.5em;
+}
+
+.box-question-of-doctors-about-medicines .card {
+  width: 23em;
+  right: -27.813em;
+  cursor: pointer;
+}
+.box-question-of-doctors-about-medicines .img-box-profile {
+  right: 13.313em;
+  z-index: 2;
+}
+
+.section-list-medicines .card {
+  width: 19.5em;
+  height: 10em;
+}
+
+/*# sourceMappingURL=medicines.css.map */

@@ -1,0 +1,14 @@
+.section-consulting .text-description-editor {
+  height: 14.375em;
+}
+
+.section-list-specialty .section-footer,
+.section-list-services .section-footer {
+  height: 2.625em;
+}
+
+.line-muted-dashed {
+  background-position: center;
+}
+
+/*# sourceMappingURL=doctors-consulting.css.map */

@@ -1,0 +1,329 @@
+/**
+*   color
+*/
+/**
+*   size
+*/
+/* size rem */
+/* size em */
+/**
+* border-radius
+ */
+/**
+
+* border-color
+ */
+/**
+* spacing text
+ */
+/**
+* variable custom
+ */
+/**
+* size custom
+ */
+.size-thirty, main .icon-social-network, main .icon-secretary, main .icon-tickets, main .icon-question-answer, main .icon-comments, main .icon-secretary-message, main .icon-transactions, main .icon-consultants, main .icon-profile {
+  width: 1.875em;
+  height: 1.875em;
+}
+
+.sizes-sixty, main .icon-woman24, main .icon-woman23, main .icon-woman22, main .icon-woman21, main .icon-woman20, main .icon-woman19, main .icon-woman18, main .icon-woman17, main .icon-woman16, main .icon-woman15, main .icon-woman14, main .icon-woman13, main .icon-woman12, main .icon-woman11, main .icon-woman10, main .icon-woman9, main .icon-woman8, main .icon-woman7, main .icon-woman6, main .icon-woman5, main .icon-woman4, main .icon-woman3, main .icon-woman2, main .icon-woman1, main .icon-man24, main .icon-man23, main .icon-man22, main .icon-man21, main .icon-man20, main .icon-man19, main .icon-man18, main .icon-man17, main .icon-man16, main .icon-man15, main .icon-man14, main .icon-man13, main .icon-man12, main .icon-man11, main .icon-man10, main .icon-man9, main .icon-man8, main .icon-man7, main .icon-man6, main .icon-man5, main .icon-man4, main .icon-man3, main .icon-man2, main .icon-man1 {
+  width: 3.75em;
+  height: 3.75em;
+}
+
+.size-twenty-four, main .icon-ip, main .icon-windows, main .icon-pc, main .icon-explorer {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+main {
+  /* icons */
+  /* icons man */
+  /* icons woman */
+}
+main .icon-profile {
+  background: url("../../../images/icons/profile.png");
+}
+main .icon-consultants {
+  background: url("../../../images/icons/general-consultation.png");
+}
+main .icon-transactions {
+  background: url("../../../images/icons/transactions.png");
+}
+main .icon-secretary-message {
+  background: url("../../../images/icons/secretary-message.png");
+}
+main .icon-comments {
+  background: url("../../../images/icons/comments.png");
+}
+main .icon-question-answer {
+  background: url("../../../images/icons/question-answer.png");
+}
+main .icon-tickets {
+  background: url("../../../images/icons/tickets.png");
+}
+main .icon-secretary {
+  background: url("../../../images/icons/secretary.png") no-repeat;
+}
+main .icon-social-network {
+  background: url("../../../images/icons/social-networks.png");
+}
+main .filter-reverse-background-to-green {
+  filter: hue-rotate(294deg);
+}
+main .menu-profile .link-hover:after {
+  bottom: -27.5em;
+}
+main .menu-profile .link-hover:hover div {
+  filter: hue-rotate(356deg);
+}
+main .menu-profile .active {
+  position: relative;
+}
+main .menu-profile .active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -0.375em;
+  height: 0.25em;
+  border-radius: 8px;
+  left: 0;
+  background: #1773B5;
+}
+main .menu-profile .active div {
+  filter: hue-rotate(356deg);
+}
+main .menu-profile .active:after {
+  bottom: -1.063em;
+}
+main .filter-tickets .link-hover:after {
+  bottom: 0;
+}
+main .filter-tickets .link-hover:hover div {
+  filter: hue-rotate(356deg);
+}
+main .filter-tickets .active {
+  position: relative;
+}
+main .filter-tickets .active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -0.375em;
+  height: 0.25em;
+  border-radius: 8px;
+  left: 0;
+  background: #1773B5;
+}
+main .filter-tickets .active div {
+  filter: hue-rotate(356deg);
+}
+main .filter-tickets .active:after {
+  bottom: 0.063em;
+}
+main .specifications {
+  border-left: 0.125em dashed #001A34 !important;
+  width: 8.625em;
+}
+main .nav-pills .nav-link.active {
+  color: #1773B5;
+}
+main #pills-consultants .badge {
+  border-radius: 3.125em;
+}
+main .swiper-menu {
+  height: 4.688em;
+}
+main .swiper-menu .swiper-slide {
+  width: auto !important;
+  margin-left: 1.813em !important;
+}
+main .swiper-menu .nav-link {
+  cursor: pointer;
+}
+main .icon-explorer {
+  background: url("../../../images/icons/explorer.png") no-repeat;
+}
+main .icon-pc {
+  background: url("../../../images/icons/pc.png") no-repeat;
+}
+main .icon-windows {
+  background: url("../../../images/icons/windows.png") no-repeat;
+}
+main .icon-ip {
+  background: url("../../../images/icons/ip.png") no-repeat;
+}
+main .icon-man1 {
+  background: url("../../../images/profile_user/man1.png") no-repeat;
+}
+main .icon-man2 {
+  background: url("../../../images/profile_user/man2.png") no-repeat;
+}
+main .icon-man3 {
+  background: url("../../../images/profile_user/man3.png") no-repeat;
+}
+main .icon-man4 {
+  background: url("../../../images/profile_user/man4.png") no-repeat;
+}
+main .icon-man5 {
+  background: url("../../../images/profile_user/man5.png") no-repeat;
+}
+main .icon-man6 {
+  background: url("../../../images/profile_user/man6.png") no-repeat;
+}
+main .icon-man7 {
+  background: url("../../../images/profile_user/man7.png") no-repeat;
+}
+main .icon-man8 {
+  background: url("../../../images/profile_user/man8.png") no-repeat;
+}
+main .icon-man9 {
+  background: url("../../../images/profile_user/man9.png") no-repeat;
+}
+main .icon-man10 {
+  background: url("../../../images/profile_user/man10.png") no-repeat;
+}
+main .icon-man11 {
+  background: url("../../../images/profile_user/man11.png") no-repeat;
+}
+main .icon-man12 {
+  background: url("../../../images/profile_user/man12.png") no-repeat;
+}
+main .icon-man13 {
+  background: url("../../../images/profile_user/man13.png") no-repeat;
+}
+main .icon-man14 {
+  background: url("../../../images/profile_user/man14.png") no-repeat;
+}
+main .icon-man15 {
+  background: url("../../../images/profile_user/man15.png") no-repeat;
+}
+main .icon-man16 {
+  background: url("../../../images/profile_user/man16.png") no-repeat;
+}
+main .icon-man17 {
+  background: url("../../../images/profile_user/man17.png") no-repeat;
+}
+main .icon-man18 {
+  background: url("../../../images/profile_user/man18.png") no-repeat;
+}
+main .icon-man19 {
+  background: url("../../../images/profile_user/man19.png") no-repeat;
+}
+main .icon-man20 {
+  background: url("../../../images/profile_user/man20.png") no-repeat;
+}
+main .icon-man21 {
+  background: url("../../../images/profile_user/man21.png") no-repeat;
+}
+main .icon-man22 {
+  background: url("../../../images/profile_user/man22.png") no-repeat;
+}
+main .icon-man23 {
+  background: url("../../../images/profile_user/man23.png") no-repeat;
+}
+main .icon-man24 {
+  background: url("../../../images/profile_user/man24.png") no-repeat;
+}
+main .icon-woman1 {
+  background: url("../../../images/profile_user/woman1.png") no-repeat;
+}
+main .icon-woman2 {
+  background: url("../../../images/profile_user/woman2.png") no-repeat;
+}
+main .icon-woman3 {
+  background: url("../../../images/profile_user/woman3.png") no-repeat;
+}
+main .icon-woman4 {
+  background: url("../../../images/profile_user/woman4.png") no-repeat;
+}
+main .icon-woman5 {
+  background: url("../../../images/profile_user/woman5.png") no-repeat;
+}
+main .icon-woman6 {
+  background: url("../../../images/profile_user/woman6.png") no-repeat;
+}
+main .icon-woman7 {
+  background: url("../../../images/profile_user/woman7.png") no-repeat;
+}
+main .icon-woman8 {
+  background: url("../../../images/profile_user/woman8.png") no-repeat;
+}
+main .icon-woman9 {
+  background: url("../../../images/profile_user/woman9.png") no-repeat;
+}
+main .icon-woman10 {
+  background: url("../../../images/profile_user/woman10.png") no-repeat;
+}
+main .icon-woman11 {
+  background: url("../../../images/profile_user/woman11.png") no-repeat;
+}
+main .icon-woman12 {
+  background: url("../../../images/profile_user/woman12.png") no-repeat;
+}
+main .icon-woman13 {
+  background: url("../../../images/profile_user/woman13.png") no-repeat;
+}
+main .icon-woman14 {
+  background: url("../../../images/profile_user/woman14.png") no-repeat;
+}
+main .icon-woman15 {
+  background: url("../../../images/profile_user/woman15.png") no-repeat;
+}
+main .icon-woman16 {
+  background: url("../../../images/profile_user/woman16.png") no-repeat;
+}
+main .icon-woman17 {
+  background: url("../../../images/profile_user/woman17.png") no-repeat;
+}
+main .icon-woman18 {
+  background: url("../../../images/profile_user/woman18.png") no-repeat;
+}
+main .icon-woman19 {
+  background: url("../../../images/profile_user/woman19.png") no-repeat;
+}
+main .icon-woman20 {
+  background: url("../../../images/profile_user/woman20.png") no-repeat;
+}
+main .icon-woman21 {
+  background: url("../../../images/profile_user/woman21.png") no-repeat;
+}
+main .icon-woman22 {
+  background: url("../../../images/profile_user/woman22.png") no-repeat;
+}
+main .icon-woman23 {
+  background: url("../../../images/profile_user/woman23.png") no-repeat;
+}
+main .icon-woman24 {
+  background: url("../../../images/profile_user/woman24.png") no-repeat;
+}
+main .swiper-wrapper {
+  transition: 0.8s ease-in;
+}
+main .img-payment-receipt img {
+  width: 15.625em;
+  height: 15.625em;
+}
+main .copy-number-consistency {
+  width: 10em;
+}
+main .search-box-user {
+  width: 21.625em;
+  height: 2.625em;
+}
+main .search-box-user input, main .search-box-user i {
+  height: 40px;
+}
+main .filter-consultants button:not(.btn-outline-warning):hover {
+  color: #F8F9FA;
+}
+main .filter-consultants .btn-outline-info:hover {
+  color: #F8F9FA;
+}
+main #pills_consultants a.iso-color-blue-dark:hover {
+  border: 1px solid #009d38;
+  color: #009d38;
+}
+
+/*# sourceMappingURL=profile-user.css.map */
