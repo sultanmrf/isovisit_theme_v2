@@ -42,33 +42,6 @@ main {
   /* icons man */
   /* icons woman */
 }
-main .icon-profile {
-  background: url("../../../images/icons/profile.png");
-}
-main .icon-consultants {
-  background: url("../../../images/icons/general-consultation.png");
-}
-main .icon-transactions {
-  background: url("../../../images/icons/transactions.png");
-}
-main .icon-secretary-message {
-  background: url("../../../images/icons/secretary-message.png");
-}
-main .icon-comments {
-  background: url("../../../images/icons/comments.png");
-}
-main .icon-question-answer {
-  background: url("../../../images/icons/question-answer.png");
-}
-main .icon-tickets {
-  background: url("../../../images/icons/tickets.png");
-}
-main .icon-secretary {
-  background: url("../../../images/icons/secretary.png") no-repeat;
-}
-main .icon-social-network {
-  background: url("../../../images/icons/social-networks.png");
-}
 main .filter-reverse-background-to-green {
   filter: hue-rotate(294deg);
 }
@@ -141,6 +114,33 @@ main .swiper-menu .swiper-slide {
 }
 main .swiper-menu .nav-link {
   cursor: pointer;
+}
+main .icon-profile {
+  background: url("../../../images/icons/profile.png");
+}
+main .icon-consultants {
+  background: url("../../../images/icons/general-consultation.png");
+}
+main .icon-transactions {
+  background: url("../../../images/icons/transactions.png");
+}
+main .icon-secretary-message {
+  background: url("../../../images/icons/secretary-message.png");
+}
+main .icon-comments {
+  background: url("../../../images/icons/comments.png");
+}
+main .icon-question-answer {
+  background: url("../../../images/icons/question-answer.png");
+}
+main .icon-tickets {
+  background: url("../../../images/icons/tickets.png");
+}
+main .icon-secretary {
+  background: url("../../../images/icons/secretary.png") no-repeat;
+}
+main .icon-social-network {
+  background: url("../../../images/icons/social-networks.png");
 }
 main .icon-explorer {
   background: url("../../../images/icons/explorer.png") no-repeat;
@@ -324,6 +324,10 @@ main .filter-consultants .btn-outline-info:hover {
 main #pills_consultants a.iso-color-blue-dark:hover {
   border: 1px solid #009d38;
   color: #009d38;
+}
+main .input-shaba-no span {
+  top: 0.563em;
+  left: 0.625em;
 }
 
 /*# sourceMappingURL=profile-user.css.map */

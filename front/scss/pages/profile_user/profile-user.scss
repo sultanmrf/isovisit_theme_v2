@@ -16,69 +16,26 @@ $bg-light:#F8F9FA;
   height: 1.5em;
 }
 
-main{
-  .icon-profile{
-    @extend .size-thirty;
-    background: url("../../../images/icons/profile.png");
-  }
-
-  .icon-consultants{
-    @extend .size-thirty;
-    background: url("../../../images/icons/general-consultation.png");
-  }
-
-  .icon-transactions{
-    @extend .size-thirty;
-    background: url("../../../images/icons/transactions.png");
-  }
-
-  .icon-secretary-message{
-    @extend .size-thirty;
-    background: url("../../../images/icons/secretary-message.png");
-  }
-
-  .icon-comments{
-    @extend .size-thirty;
-    background: url("../../../images/icons/comments.png");
-  }
-
-  .icon-question-answer{
-    @extend .size-thirty;
-    background: url("../../../images/icons/question-answer.png");
-  }
-
-  .icon-tickets{
-    @extend .size-thirty;;
-    background: url("../../../images/icons/tickets.png");
-  }
-
-  .icon-secretary{
-    @extend .size-thirty;
-    background: url("../../../images/icons/secretary.png") no-repeat;
-  }
-
-  .icon-social-network{
-    @extend .size-thirty;
-    background: url("../../../images/icons/social-networks.png");
-  }
-
-  .filter-reverse-background-to-green{
+main {
+  .filter-reverse-background-to-green {
     filter: hue-rotate(294deg);
   }
 
-  .menu-profile{
-    .link-hover{
-      &:after{
+  .menu-profile {
+    .link-hover {
+      &:after {
         bottom: -27.5em;
       }
-      &:hover div{
+
+      &:hover div {
         filter: hue-rotate(356deg);
       }
     }
 
-    .active{
+    .active {
       position: relative;
-      &:after{
+
+      &:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -89,30 +46,31 @@ main{
         background: $iso-blue-dark;
       }
 
-      div{
+      div {
         filter: hue-rotate(356deg);
       }
 
-      &:after{
+      &:after {
         bottom: -1.063em;
       }
     }
   }
 
-
-  .filter-tickets{
-    .link-hover{
-      &:after{
+  .filter-tickets {
+    .link-hover {
+      &:after {
         bottom: 0;
       }
-      &:hover div{
+
+      &:hover div {
         filter: hue-rotate(356deg);
       }
     }
 
-    .active{
+    .active {
       position: relative;
-      &:after{
+
+      &:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -123,344 +81,388 @@ main{
         background: $iso-blue-dark;
       }
 
-      div{
+      div {
         filter: hue-rotate(356deg);
       }
 
-      &:after{
+      &:after {
         bottom: 0.063em;
       }
     }
   }
 
-  .specifications{
+  .specifications {
     border-left: 0.125em dashed $iso-dark !important;
     width: 8.625em;
   }
 
-  .nav-pills .nav-link.active{
+  .nav-pills .nav-link.active {
     color: $iso-blue-dark;
   }
 
-  #pills-consultants{
-    .badge{
+  #pills-consultants {
+    .badge {
       border-radius: 3.125em;
     }
   }
 
-  .swiper-menu{
-    height:4.688em;
-    .swiper-slide{
+  .swiper-menu {
+    height: 4.688em;
+
+    .swiper-slide {
       width: auto !important;
-      margin-left:1.813em !important;
+      margin-left: 1.813em !important;
     }
-    .nav-link{
+
+    .nav-link {
       cursor: pointer;
     }
   }
 
   /* icons */
-  .icon-explorer
-  {
+  .icon-profile {
+    @extend .size-thirty;
+    background: url("../../../images/icons/profile.png");
+  }
+
+  .icon-consultants {
+    @extend .size-thirty;
+    background: url("../../../images/icons/general-consultation.png");
+  }
+
+  .icon-transactions {
+    @extend .size-thirty;
+    background: url("../../../images/icons/transactions.png");
+  }
+
+  .icon-secretary-message {
+    @extend .size-thirty;
+    background: url("../../../images/icons/secretary-message.png");
+  }
+
+  .icon-comments {
+    @extend .size-thirty;
+    background: url("../../../images/icons/comments.png");
+  }
+
+  .icon-question-answer {
+    @extend .size-thirty;
+    background: url("../../../images/icons/question-answer.png");
+  }
+
+  .icon-tickets {
+    @extend .size-thirty;;
+    background: url("../../../images/icons/tickets.png");
+  }
+
+  .icon-secretary {
+    @extend .size-thirty;
+    background: url("../../../images/icons/secretary.png") no-repeat;
+  }
+
+  .icon-social-network {
+    @extend .size-thirty;
+    background: url("../../../images/icons/social-networks.png");
+  }
+
+  .icon-explorer {
     @extend .size-twenty-four;
     background: url("../../../images/icons/explorer.png") no-repeat;
   }
 
-
-  .icon-pc
-  {
+  .icon-pc {
     @extend .size-twenty-four;
     background: url("../../../images/icons/pc.png") no-repeat;
   }
 
-  .icon-windows
-  {
+  .icon-windows {
     @extend .size-twenty-four;
     background: url("../../../images/icons/windows.png") no-repeat;
   }
 
-  .icon-ip
-  {
+  .icon-ip {
     @extend .size-twenty-four;
     background: url("../../../images/icons/ip.png") no-repeat;
   }
 
   /* icons man */
-  .icon-man1{
+  .icon-man1 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man1.png") no-repeat;
   }
 
-  .icon-man2{
+  .icon-man2 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man2.png") no-repeat;
   }
 
-  .icon-man3{
+  .icon-man3 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man3.png") no-repeat;
   }
 
-  .icon-man4{
+  .icon-man4 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man4.png") no-repeat;
   }
 
-  .icon-man5{
+  .icon-man5 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man5.png") no-repeat;
   }
 
-  .icon-man6{
+  .icon-man6 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man6.png") no-repeat;
   }
 
-  .icon-man7{
+  .icon-man7 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man7.png") no-repeat;
   }
 
-  .icon-man8{
+  .icon-man8 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man8.png") no-repeat;
   }
 
-  .icon-man9{
+  .icon-man9 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man9.png") no-repeat;
   }
 
-  .icon-man10{
+  .icon-man10 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man10.png") no-repeat;
   }
 
-  .icon-man11{
+  .icon-man11 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man11.png") no-repeat;
   }
 
-  .icon-man12{
+  .icon-man12 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man12.png") no-repeat;
   }
 
-  .icon-man13{
+  .icon-man13 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man13.png") no-repeat;
   }
 
-  .icon-man14{
+  .icon-man14 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man14.png") no-repeat;
   }
 
-  .icon-man15{
+  .icon-man15 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man15.png") no-repeat;
   }
 
-  .icon-man16{
+  .icon-man16 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man16.png") no-repeat;
   }
 
-  .icon-man17{
+  .icon-man17 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man17.png") no-repeat;
   }
 
-  .icon-man18{
+  .icon-man18 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man18.png") no-repeat;
   }
 
-  .icon-man19{
+  .icon-man19 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man19.png") no-repeat;
   }
 
-  .icon-man20{
+  .icon-man20 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man20.png") no-repeat;
   }
 
-  .icon-man21{
+  .icon-man21 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man21.png") no-repeat;
   }
 
-  .icon-man22{
+  .icon-man22 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man22.png") no-repeat;
   }
 
-  .icon-man23{
+  .icon-man23 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man23.png") no-repeat;
   }
 
-  .icon-man24{
+  .icon-man24 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/man24.png") no-repeat;
   }
 
   /* icons woman */
-  .icon-woman1{
+  .icon-woman1 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman1.png") no-repeat;
   }
 
-  .icon-woman2{
+  .icon-woman2 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman2.png") no-repeat;
   }
 
-  .icon-woman3{
+  .icon-woman3 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman3.png") no-repeat;
   }
 
-  .icon-woman4{
+  .icon-woman4 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman4.png") no-repeat;
   }
 
-  .icon-woman5{
+  .icon-woman5 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman5.png") no-repeat;
   }
 
-  .icon-woman6{
+  .icon-woman6 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman6.png") no-repeat;
   }
 
-  .icon-woman7{
+  .icon-woman7 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman7.png") no-repeat;
   }
 
-  .icon-woman8{
+  .icon-woman8 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman8.png") no-repeat;
   }
 
-  .icon-woman9{
+  .icon-woman9 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman9.png") no-repeat;
   }
 
-  .icon-woman10{
+  .icon-woman10 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman10.png") no-repeat;
   }
 
-  .icon-woman11{
+  .icon-woman11 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman11.png") no-repeat;
   }
 
-  .icon-woman12{
+  .icon-woman12 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman12.png") no-repeat;
   }
 
-  .icon-woman13{
+  .icon-woman13 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman13.png") no-repeat;
   }
 
-  .icon-woman14{
+  .icon-woman14 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman14.png") no-repeat;
   }
 
-  .icon-woman15{
+  .icon-woman15 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman15.png") no-repeat;
   }
 
-  .icon-woman16{
+  .icon-woman16 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman16.png") no-repeat;
   }
 
-  .icon-woman17{
+  .icon-woman17 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman17.png") no-repeat;
   }
 
-  .icon-woman18{
+  .icon-woman18 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman18.png") no-repeat;
   }
 
-  .icon-woman19{
+  .icon-woman19 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman19.png") no-repeat;
   }
 
-  .icon-woman20{
+  .icon-woman20 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman20.png") no-repeat;
   }
 
-  .icon-woman21{
+  .icon-woman21 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman21.png") no-repeat;
   }
 
-  .icon-woman22{
+  .icon-woman22 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman22.png") no-repeat;
   }
 
-  .icon-woman23{
+  .icon-woman23 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman23.png") no-repeat;
   }
 
-  .icon-woman24{
+  .icon-woman24 {
     @extend .sizes-sixty;
     background: url("../../../images/profile_user/woman24.png") no-repeat;
   }
 
-  .swiper-wrapper{
+  .swiper-wrapper {
     transition: 0.8s ease-in;
   }
 
-  .img-payment-receipt{
-    img{
+  .img-payment-receipt {
+    img {
       width: 15.625em;
       height: 15.625em;
     }
   }
 
-  .copy-number-consistency{
+  .copy-number-consistency {
     width: 10em;
   }
 
-  .search-box-user{
+  .search-box-user {
     width: 21.625em;
     height: 2.625em;
-    input,i{
+
+    input, i {
       height: 40px;
     }
   }
 
-  .filter-consultants{
-    button:not(.btn-outline-warning):hover{
+  .filter-consultants {
+    button:not(.btn-outline-warning):hover {
       color: $bg-light;
     }
-    .btn-outline-info:hover{
+
+    .btn-outline-info:hover {
       color: $bg-light;
     }
   }
 
-  #pills_consultants{
-    a{
+  #pills_consultants {
+    a {
       &.iso-color-blue-dark:hover {
         border: 1px solid $iso-green-dark;
         color: $iso-green-dark;
@@ -468,5 +470,10 @@ main{
     }
   }
 
-
+  .input-shaba-no {
+    span {
+      top: 0.563em;
+      left: 0.625em;
+    }
+  }
 }
