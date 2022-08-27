@@ -1,7 +1,7 @@
 $(document).ready(function (){
 
     /* work: delete text > size custom start */
-    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question,.title-service,.topic-counseling,.text-question-answer").each(function (){
+    $(".text-indications,.title-medicines,.title-question,.text-comment,.text-question,.title-service,.topic-counseling,.text-question-answer,.title-doctor").each(function (){
         let text = $(this).text().trim();
         switch ($(this).data('title_class')){
             case "title-question":
@@ -35,14 +35,20 @@ $(document).ready(function (){
                 break;
 
             case "title-service":
-                if(text.length > 18){
-                    $(this).html(text.substr(0, 18) + ' ...');
+                if(text.length > 15){
+                    $(this).html(text.substr(0, 15) + ' ...');
                 }
                 break;
 
             case "topic-counseling":
                 if(text.length > 30){
                     $(this).html(text.substr(0, 30) + ' ...');
+                }
+                break;
+
+            case "title-doctor":
+                if(text.length > 19){
+                    $(this).html(text.substr(0, 19) + ' ...');
                 }
                 break;
         }

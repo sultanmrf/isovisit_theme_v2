@@ -26,12 +26,12 @@ body{
 
 .icon-paper{
   @extend .size-twenty-four;
-  background: url("../../../images/icons/paper.png") no-repeat;
+  background: url("../../../images/icons/paper.png") center no-repeat;
 }
 
 .icon-microphone{
   @extend .size-twenty-four;
-  background: url("../../../images/icons/microphone.png") no-repeat;
+  background: url("../../../images/icons/microphone.png") center no-repeat;
 }
 
 .icon-more{
@@ -189,4 +189,18 @@ body{
 
 .emojionearea .emojionearea-button>div{
   width: 2.063em;
+}
+
+.card-patient,
+.card-replay-patient{
+  .card{
+    border-radius: 0 $iso-border-radius $iso-border-radius $iso-border-radius;
+  }
+}
+
+.card-replay-doctor,
+.card-answer-doctor{
+  .card-body{
+    border-radius: $iso-border-radius 0 $iso-border-radius $iso-border-radius;
+  }
 }

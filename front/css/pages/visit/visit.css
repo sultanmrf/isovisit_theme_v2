@@ -41,10 +41,10 @@ body {
   background: url("../../../images/icons/smile.png") no-repeat; }
 
 .icon-paper {
-  background: url("../../../images/icons/paper.png") no-repeat; }
+  background: url("../../../images/icons/paper.png") center no-repeat; }
 
 .icon-microphone {
-  background: url("../../../images/icons/microphone.png") no-repeat; }
+  background: url("../../../images/icons/microphone.png") center no-repeat; }
 
 .icon-more {
   background: url("../../../images/icons/more.png") no-repeat; }
@@ -143,3 +143,11 @@ body {
 
 .emojionearea .emojionearea-button > div {
   width: 2.063em; }
+
+.card-patient .card,
+.card-replay-patient .card {
+  border-radius: 0 8px 8px 8px; }
+
+.card-replay-doctor .card-body,
+.card-answer-doctor .card-body {
+  border-radius: 8px 0 8px 8px; }
