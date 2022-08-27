@@ -1,5 +1,4 @@
-/*variable*/
-/**
+/*variable*/ /**
 *   color
 */
 /**
@@ -25,160 +24,221 @@
  */
 @media only screen and (max-width: 992px) {
   .section-comments-users .section-svg,
-  .section-doctors .section-svg {
-    height: 18em; }
+.section-doctors .section-svg {
+    height: 18em;
+  }
   .section-doctors .link-doctors {
-    top: 41%; }
+    top: 41%;
+  }
   .section-articles .section-svg {
-    height: 13.30em; }
+    height: 13.3em;
+  }
   .section-articles .swiper-wrapper {
-    height: 27em; }
+    height: 27em;
+  }
   .section-articles .link-articles {
-    top: 30%; }
+    top: 30%;
+  }
   .section-articles .section-title {
-    top: 3.55em; }
+    top: 3.55em;
+  }
   .section-medicines .swiper-wrapper {
-    height: 12em; }
+    height: 12em;
+  }
   .section-medicines .section-svg {
-    height: 13.3em; }
+    height: 13.3em;
+  }
   .section-medicines .link-medicines {
-    top: 41%; }
+    top: 41%;
+  }
   .svg-sing-in-doctor {
     width: 12.5em;
     height: 12.5em;
     left: -4.5em;
-    top: 0.2em; }
+    top: 0.2em;
+  }
   .swiper .swiper-pagination-article {
-    bottom: 1.1rem; }
+    bottom: 1.1rem;
+  }
   .swiper .swiper-pagination-question-answer {
-    bottom: -0.313rem; }
+    bottom: -0.313rem;
+  }
   .swiper .swiper-pagination-medicines {
-    bottom: -0.5rem; }
+    bottom: -0.5rem;
+  }
   /* section register_doctor start */
   .section-comment-doctors .figure-caption {
-    top: 0.625em; }
+    top: 0.625em;
+  }
   /* section register_doctor end */
   main .section-facilities-and-services .card-body {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .section-doctors .section-header {
-    position: unset; }
+    position: unset;
+  }
   .section-doctors .section-title {
-    top: 3.5em; }
+    top: 3.5em;
+  }
   .section-comments-users .section-title {
-    top: 3.5em; }
+    top: 3.5em;
+  }
   .section-medicines .section-header {
-    position: unset !important; }
+    position: unset !important;
+  }
   .section-medicines .section-title {
-    top: 1.55em; } }
-
+    top: 1.55em;
+  }
+}
 @media only screen and (min-width: 768px) {
   footer .footer-about {
-    border-top: 0 solid #fff; } }
-
+    border-top: 0 solid #fff;
+  }
+}
 @media only screen and (min-width: 576px) {
   .operation-doctor .dropdown-menu,
-  .operation-patient .dropdown-menu {
+.operation-patient .dropdown-menu {
     width: 4.875em;
-    height: 2.313em; }
+    height: 2.313em;
+  }
   .list-details-ticket .details-title {
-    border-bottom: 1px solid #dee2e6; } }
-
+    border-bottom: 1px solid #dee2e6;
+  }
+}
 @media only screen and (max-width: 576px) {
   .section-list-doctors .card-body {
-    height: auto; }
+    height: auto;
+  }
   /* section register_doctor start */
   .section-comment-doctors .swiper-wrapper {
-    height: 14em; }
+    height: 14em;
+  }
   .section-comment-doctors .swiper-pagination-comment-doctors {
-    bottom: .625em; }
+    bottom: 0.625em;
+  }
   .section-comment-doctors .swiper-slide-next {
     transform: unset;
     margin-right: unset;
-    margin-left: 1em !important; }
+    margin-left: 1em !important;
+  }
   /* section register_doctor end */
   /* section ticket profile_user start */
   #pills-tickets .list-group .list-group-item .col-4 {
     border-left: 1px solid #dee2e6;
-    border-bottom: 0 !important; }
+    border-bottom: 0 !important;
+  }
   /* section ticket profile_user end */
   /* section visit */
   .operation-patient .dropdown-menu {
-    inset: -72px -41px auto auto !important; }
+    inset: -72px -41px auto auto !important;
+  }
   .operation-doctor .dropdown-menu {
-    inset: -72px 44px auto auto !important; }
+    inset: -72px 44px auto auto !important;
+  }
   .list-details-ticket .details-title {
-    border-left: 1px solid #dee2e6; } }
-
+    border-left: 1px solid #dee2e6;
+  }
+}
 @media only screen and (max-width: 768px) {
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {
-    bottom: 5em; }
+    bottom: 5em;
+  }
   .section-list-doctors figure {
-    height: 4.188em; }
+    height: 4.188em;
+  }
   .box-question-of-doctors-about-medicines .card {
-    width: 22.5em; }
+    width: 22.5em;
+  }
   .box-question-of-doctors-about-medicines .img-box-profile {
-    right: .563em; }
+    right: 0.563em;
+  }
   .medicines-master ~ .communication-iso, .medicines-master ~ .scroll-top {
-    bottom: 7em; }
+    bottom: 7em;
+  }
   /* section register_doctor start */
   .section-service-doctors {
     background: none;
-    box-shadow: unset; }
+    box-shadow: unset;
+  }
   /* section register_doctor end */
   .banner-pattern {
-    background-size: 69.875em 27.5em; }
+    background-size: 69.875em 27.5em;
+  }
   /* section tab menu profile user start */
   main .menu-profile .active:after {
-    bottom: -.375em; } }
-
+    bottom: -0.375em;
+  }
+}
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 1.350rem; }
+    font-size: 1.35rem;
+  }
   .iso-position-relative-lg-none {
-    position: unset; }
+    position: unset;
+  }
   .iso-position-absolute-lg-none {
-    position: unset; }
+    position: unset;
+  }
   .animated-edit-position {
     left: 7rem;
-    top: -1rem; }
+    top: -1rem;
+  }
   main .section-facilities-and-services .card-header {
-    top: 0; }
+    top: 0;
+  }
   .swiper-doctors,
-  .swiper-comments-users {
-    margin-top: 5em; }
+.swiper-comments-users {
+    margin-top: 5em;
+  }
   .section-articles .section-btn button {
-    top: -3.438em; }
+    top: -3.438em;
+  }
   .section-articles .swiper-wrapper {
-    height: 25.625em; }
+    height: 25.625em;
+  }
   .svg-sing-in-doctor {
     left: -14.375em;
-    top: -6.125em; }
+    top: -6.125em;
+  }
   main .section-facilities-and-services .card-body {
     height: 7rem;
-    width: 9rem; }
+    width: 9rem;
+  }
   main .section-facilities-and-services h6 {
-    font-size: 17px; }
+    font-size: 17px;
+  }
   .section-medicines .section-header {
-    top: 0.9em; }
+    top: 0.9em;
+  }
   .section-doctors .section-header {
-    top: 1em; }
+    top: 1em;
+  }
   .section-comments-users .section-title {
-    top: 1.2em; } }
-
+    top: 1.2em;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .section-data-profile-doctor .btn-group {
     top: -3.438em;
-    border-radius: 8px; }
+    border-radius: 8px;
+  }
   .section-data-profile-doctor .row {
-    height: 7.375em; }
+    height: 7.375em;
+  }
   footer .footer-certificates,
-  footer .footer-contact {
-    border-top: 0 solid; } }
-
+footer .footer-contact {
+    border-top: 0 solid;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .links-doctor {
-    border-radius: 0 0 .5em .5em; }
+    border-radius: 0 0 0.5em 0.5em;
+  }
   /* section form comment in profile doctor start */
   #form_comments .input-group-height {
-    height: unset; }
-  /* section form comment in profile doctor end */ }
+    height: unset;
+  }
+  /* section form comment in profile doctor end */
+}
+
+/*# sourceMappingURL=responsive.css.map */
