@@ -3218,141 +3218,141 @@
                 <div class="tab-body mt-4">
                     <!-- section form create question start -->
                     <div class="collapse my-4 px-0" id="collapse_froum">
-                        <div class="card box-shadow-lg border-radius">
-                            <div class="card-header bg-transparent d-flex justify-content-between border-0 py-3">
-                                <div class="card-title d-flex align-items-center m-0">
-                                    <span class="iso-font-md-em ms-1">پرسیدن سوال پزشکی</span>
+                    <div class="card box-shadow-lg border-radius">
+                        <div class="card-header bg-transparent d-flex justify-content-between border-0 py-3">
+                            <div class="card-title d-flex align-items-center m-0">
+                                <span class="iso-font-md-em ms-1">پرسیدن سوال پزشکی</span>
+                            </div>
+                            <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="card-body pt-0">
+                            <form id="form">
+                                <div class="row row-cols-4">
+                                    <div class="col-12 p-0 py-0 px-md-1">
+                                        <div class="row gy-2 m-0">
+                                            <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
+                                                <label class="m-0 fw-normal">جنسیت : </label>
+                                                <div class="form-check mx-4 d-flex align-items-center">
+                                                    <input class="form-check-input optional" type="radio" name="gender" id="gender1" value="" checked>
+                                                    <label class="form-check-label ms-2" for="gender1">
+                                                        مرد
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mx-2 d-flex align-items-center">
+                                                    <input class="form-check-input optional" type="radio" name="gender" id="gender2" value="">
+                                                    <label class="form-check-label ms-2" for="gender2">
+                                                        زن
+                                                    </label>
+                                                </div>
+                                                <span class="error mt-1"></span>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
+                                                <label for="births" class="form-label m-0 fw-normal">سال تولد : </label>
+                                                <select class="form-select form-select-birth iso-font-xs-em fw-normal py-1 mx-2 border-radius" id="births" name="births">
+                                                    <option value="">انتخاب کنید</option>
+                                                    <option>1300</option>
+                                                    <option>1378</option>
+                                                    <option>1388</option>
+                                                    <option>1399</option>
+                                                    <option>1399</option>
+                                                </select>
+                                                <span class="error_births error mt-1"></span>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 pe-0">
+                                                <label class="mt-2 fw-normal">قد : </label>
+                                                <div class="input-height ms-2 mt-2 flex-row-reverse position-relative">
+                                                    <input type="text" class="form-control iso-font-sm-em fw-normal py-1 px-2 border-radius text-secondary" value="" placeholder="قد" aria-label="cm" name="height">
+                                                    <span class="position-absolute fw-normal iso-font-xs-em bg-white h-50 px-2">cm</span>
+                                                </div>
+                                                <span class="error_height error mt-1"></span>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 p-0">
+                                                <label class="mt-2 fw-normal ms-2">وزن : </label>
+                                                <div class="input-weight ms-2 mt-2 flex-row-reverse position-relative">
+                                                    <input type="text" class="form-control iso-font-sm-em fw-normal py-1 px-2 border-radius text-secondary" value="" placeholder="وزن" aria-label="kg" name="weight">
+                                                    <span class="position-absolute fw-normal iso-font-xs-em bg-white h-50 px-2">kg</span>
+                                                </div>
+                                                <span class="error_weight error mt-1"></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                            <div class="card-body pt-0">
-                                <form id="form">
-                                    <div class="row row-cols-4">
-                                        <div class="col-12 p-0 py-0 px-md-1">
-                                            <div class="row gy-2 m-0">
-                                                <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
-                                                    <label class="m-0 fw-normal">جنسیت : </label>
-                                                    <div class="form-check mx-4 d-flex align-items-center">
-                                                        <input class="form-check-input optional" type="radio" name="gender" id="gender1" value="" checked>
-                                                        <label class="form-check-label ms-2" for="gender1">
-                                                            مرد
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check mx-2 d-flex align-items-center">
-                                                        <input class="form-check-input optional" type="radio" name="gender" id="gender2" value="">
-                                                        <label class="form-check-label ms-2" for="gender2">
-                                                            زن
-                                                        </label>
-                                                    </div>
-                                                    <span class="error mt-1"></span>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
-                                                    <label for="births" class="form-label m-0 fw-normal">سال تولد : </label>
-                                                    <select class="form-select form-select-birth iso-font-xs-em fw-normal py-1 mx-2 border-radius" id="births" name="births">
-                                                        <option value="">انتخاب کنید</option>
-                                                        <option>1300</option>
-                                                        <option>1378</option>
-                                                        <option>1388</option>
-                                                        <option>1399</option>
-                                                        <option>1399</option>
-                                                    </select>
-                                                    <span class="error_births error mt-1"></span>
-                                                </div>
-                                                <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 pe-0">
-                                                    <label class="mt-2 fw-normal">قد : </label>
-                                                    <div class="input-height ms-2 mt-2 flex-row-reverse position-relative">
-                                                        <input type="text" class="form-control iso-font-sm-em fw-normal py-1 px-2 border-radius text-secondary" value="" placeholder="قد" aria-label="cm" name="height">
-                                                        <span class="position-absolute fw-normal iso-font-xs-em bg-white h-50 px-2">cm</span>
-                                                    </div>
-                                                    <span class="error_height error mt-1"></span>
-                                                </div>
-                                                <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 p-0">
-                                                    <label class="mt-2 fw-normal ms-2">وزن : </label>
-                                                    <div class="input-weight ms-2 mt-2 flex-row-reverse position-relative">
-                                                        <input type="text" class="form-control iso-font-sm-em fw-normal py-1 px-2 border-radius text-secondary" value="" placeholder="وزن" aria-label="kg" name="weight">
-                                                        <span class="position-absolute fw-normal iso-font-xs-em bg-white h-50 px-2">kg</span>
-                                                    </div>
-                                                    <span class="error_weight error mt-1"></span>
-                                                </div>
+                                <div class="row gy-3 mt-2">
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="category" class="form-label mb-1 fw-normal">دسته بندی </label>
+                                        <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary" id="category" name="category">
+                                            <option value="">دسته بندی سوال خود را انتخاب کنید</option>
+                                            <option value="1">اصلاح مزاج</option>
+                                        </select>
+                                        <span class="error_category error mt-1"></span>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="title_question" class="form-label mb-1 fw-normal">عنوان سوال</label>
+                                        <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="title_question" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
+                                        <span class="error_title_question error mt-1"></span>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="description" class="form-label mb-1 fw-normal">توضیحات</label>
+                                        <textarea class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="description" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
+                                        <span class="error_description error mt-1"></span>
+                                    </div>
+                                </div>
+                                <div class="row gy-4 gy-md-3 mt-0 mt-md-3">
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="question_one" class="form-label mb-1 fw-normal">بیماری خاصی دارید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
+                                        <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_one" placeholder="مثل بیماری قلبی ، فشارخون ، دیابت و ..." value="" name="question_one">
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="question_two" class="form-label mb-1 text-nowrap fw-normal">به پزشک دیگری مراجعه کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
+                                        <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_two" placeholder="توضیحات در مورد مراجعه به پزشک" value="" name="question_two">
+                                    </div>
+                                    <div class="col-md-4 col-lg-3">
+                                        <label for="question_three" class="form-label mb-1 text-nowrap fw-normal">آیا از داروی خاصی استفاده کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
+                                        <input type="text"  class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" name="question_three">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-4 gy-3 mt-0 mt-md-3">
+                                    <div class="col-12 col-md-3">
+                                        <label for="file" class="form-label mb-1 fw-normal">ارسال عکس در صورت لزوم<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span>  </label>
+                                        <input class="form-control py-1 iso-font-md-em optional border-radius" type="file" id="file" name="file">
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
+                                        <div class="row row-cols-2">
+                                            <div class="col d-flex flex-wrap align-items-end">
+                                                <label for="code_security" class="form-label mb-1 fw-normal">کد امنیتی </label>
+                                                <input type="number" class="form-control py-2 iso-font-xs-em fw-normal text-start border-radius text-secondary" id="code_security"
+                                                       placeholder="کد امنیتی" value="" name="code_security">
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row gy-3 mt-2">
-                                        <div class="col-md-4 col-lg-3">
-                                            <label for="category" class="form-label mb-1 fw-normal">دسته بندی </label>
-                                            <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary" id="category" name="category">
-                                                <option value="">دسته بندی سوال خود را انتخاب کنید</option>
-                                                <option value="1">اصلاح مزاج</option>
-                                            </select>
-                                            <span class="error_category error mt-1"></span>
-                                        </div>
-                                        <div class="col-md-4 col-lg-3">
-                                            <label for="title_question" class="form-label mb-1 fw-normal">عنوان سوال</label>
-                                            <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="title_question" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
-                                            <span class="error_title_question error mt-1"></span>
-                                        </div>
-                                        <div class="col-md-4 col-lg-3">
-                                            <label for="description" class="form-label mb-1 fw-normal">توضیحات</label>
-                                            <textarea class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="description" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
-                                            <span class="error_description error mt-1"></span>
-                                        </div>
-                                    </div>
-                                    <div class="row gy-4 gy-md-3 mt-0 mt-md-3">
-                                        <div class="col-md-4 col-lg-3">
-                                            <label for="question_one" class="form-label mb-1 fw-normal">بیماری خاصی دارید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                            <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_one" placeholder="مثل بیماری قلبی ، فشارخون ، دیابت و ..." value="" name="question_one">
-                                        </div>
-                                        <div class="col-md-4 col-lg-3">
-                                            <label for="question_two" class="form-label mb-1 text-nowrap fw-normal">به پزشک دیگری مراجعه کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                            <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_two" placeholder="توضیحات در مورد مراجعه به پزشک" value="" name="question_two">
-                                        </div>
-                                        <div class="col-md-4 col-lg-3">
-                                            <label for="question_three" class="form-label mb-1 text-nowrap fw-normal">آیا از داروی خاصی استفاده کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                            <input type="text"  class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" name="question_three">
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-4 gy-3 mt-0 mt-md-3">
-                                        <div class="col-12 col-md-3">
-                                            <label for="file" class="form-label mb-1 fw-normal">ارسال عکس در صورت لزوم<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span>  </label>
-                                            <input class="form-control py-1 iso-font-md-em optional border-radius" type="file" id="file" name="file">
-                                        </div>
-                                        <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
-                                            <div class="row row-cols-2">
-                                                <div class="col d-flex flex-wrap align-items-end">
-                                                    <label for="code_security" class="form-label mb-1 fw-normal">کد امنیتی </label>
-                                                    <input type="number" class="form-control py-2 iso-font-xs-em fw-normal text-start border-radius text-secondary" id="code_security"
-                                                           placeholder="کد امنیتی" value="" name="code_security">
-                                                </div>
-                                                <div class="col captcha d-flex align-items-end p-0">
-                                                    <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid" alt="کپچا">
-                                                    <a href="#" class="refresh_captcha mx-1">
-                                                        <i class="fas fa-sync iso-font-llg-em"></i>
-                                                    </a>
-                                                </div>
-                                                <span class="error_code_security_ticket error mt-1"></span>
+                                            <div class="col captcha d-flex align-items-end p-0">
+                                                <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid" alt="کپچا">
+                                                <a href="#" class="refresh_captcha mx-1">
+                                                    <i class="fas fa-sync iso-font-llg-em"></i>
+                                                </a>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 form-check d-flex flex-wrap align-items-end ms-2">
-                                            <input class="form-check-input iso-form-check-input mt-lg-4" type="checkbox" name="rules_check" value="" id="rules_check">
-                                            <label class="form-check-label iso-font-md-em fw-normal mx-2" for="rules_check">
-                                                <a href="../single_pages/terms-conditions.html">قوانین</a>
-                                                <span class="iso-color-dark">ارسال سوالات رایگان را مطالعه کنید</span>
-                                            </label>
-                                            <span class="error_rules_check error mt-1"></span>
+                                            <span class="error_code_security_ticket error mt-1"></span>
                                         </div>
                                     </div>
-                                    <div class="col-12 d-flex justify-content-center mt-4">
-                                        <button type="submit" class="btn col-6 col-md-3 iso-bg-blue-dark iso-font-md-em border-radius active-btn fw-medium">ذخیره سوال </button>
-                                        <button type="button" class="btn col-6 col-md-3 border-color-blue-dark border-radius bg-white iso-font-md-em iso-color-blue-dark py-2 ms-3 fw-medium"
-                                                data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">بازگشت</button>
+                                    <div class="col-12 col-md-6 col-lg-4 form-check d-flex flex-wrap align-items-end ms-2">
+                                        <input class="form-check-input iso-form-check-input mt-lg-4" type="checkbox" name="rules_check" value="" id="rules_check">
+                                        <label class="form-check-label iso-font-md-em fw-normal mx-2" for="rules_check">
+                                            <a href="../single_pages/terms-conditions.html">قوانین</a>
+                                            <span class="iso-color-dark">ارسال سوالات رایگان را مطالعه کنید</span>
+                                        </label>
+                                        <span class="error_rules_check error mt-1"></span>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    <button type="submit" class="btn col-6 col-md-3 iso-bg-blue-dark iso-font-md-em border-radius active-btn fw-medium">ذخیره سوال </button>
+                                    <button type="button" class="btn col-6 col-md-3 border-color-blue-dark border-radius bg-white iso-font-md-em iso-color-blue-dark py-2 ms-3 fw-medium"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">بازگشت</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
                     <!-- section form create question end -->
                     <div class="list-question-answer-user">
                         <h3 class="iso-font-md-em fw-normal">لیست پرسش و پاسخ های ایجاد شده توسط شما</h3>
@@ -3969,7 +3969,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label for="gender" class="form-label iso-font-md-em">جنسیت</label>
-                                    <select class="form-select iso-font-xs-em fw-normal text-secondary" name="gender" id="gender">
+                                    <select class="form-select iso-font-xs-em fw-normal text-secondary border-radius" name="gender" id="gender">
                                         <option value="" selected>جنسیت</option>
                                         <option value="man">مرد</option>
                                         <option value="woman">زن</option>
@@ -3978,7 +3978,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label for="birth" class="form-label iso-font-md-em">سال تولد</label>
-                                    <select class="form-select iso-font-xs-em fw-normal text-secondary" name="birth" id="birth">
+                                    <select class="form-select iso-font-xs-em fw-normal text-secondary border-radius" name="birth" id="birth">
                                         <option value="" selected>سال تولد</option>
                                         <option value="1378">1378</option>
                                         <option value="1379">1379</option>
@@ -4252,7 +4252,7 @@
                                 <label for="description_comment" class="form-label iso-font-md-em iso-font-md-em">
                                     <strong>لطفا نظرات و یا پیشنهادات خود را در جهت بهبود خدمات ما برایمان ارسال کنید</strong>
                                 </label>
-                                <textarea class="form-control iso-font-xs-em fw-normal text-secondary" id="description_comment" name="description_comment" rows="4" placeholder="لطفا نظرات و یا پیشنهادات خود را در جهت بهبود خدمات ما برایمان ارسال کنید"></textarea>
+                                <textarea class="form-control iso-font-xs-em fw-normal text-secondary border-radius" id="description_comment" name="description_comment" rows="4" placeholder="لطفا نظرات و یا پیشنهادات خود را در جهت بهبود خدمات ما برایمان ارسال کنید"></textarea>
                                 <span class="error_description_comment error mt-1"></span>
                             </div>
                             <div class="col-12 d-flex justify-content-between mt-2 align-items-stretch">
@@ -4396,7 +4396,7 @@
                                 </div>
                                 <div class="col-12">
                                     <label for="education" class="form-label iso-font-md-em mb-1 fw-normal">تحصیلات</label>
-                                    <input type="text" class="form-control iso-font-xs-em fw-normal text-secondary valid" id="education" placeholder="تحصیلات خود را انتخاب کنید" value="" name="education">
+                                    <input type="text" class="form-control iso-font-xs-em fw-normal text-secondary border-radius valid border-radius text-start" id="education" placeholder="تحصیلات خود را انتخاب کنید" value="" name="education">
                                     <span class="error_education error mt-1"></span>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
@@ -4407,7 +4407,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="medical_system_code" class="form-label iso-font-md-em mb-1 fw-normal">کد نظام پزشکی</label>
-                                    <input type="number" class="form-control iso-font-xs-em fw-normal text-secondary valid" id="medical_system_code" placeholder="کد نظام پزشکی" value="" name="medical_system_code">
+                                    <input type="number" class="form-control iso-font-xs-em fw-normal text-secondary border-radius valid border-radius text-start" id="medical_system_code" placeholder="کد نظام پزشکی" value="" name="medical_system_code">
                                     <span class="error_medical_system_code error mt-1"></span>
                                 </div>
                                 <div class="col-sm-6">
@@ -4420,17 +4420,17 @@
 
                                 <div class="col-12">
                                     <label for="biography" class="form-label iso-font-md-em mb-1 fw-normal">بیوگرافی</label>
-                                    <textarea class="form-control iso-font-xs-em fw-normal text-secondary" id="biography" rows="3" placeholder="بیوگرافی" name="biography"></textarea>
+                                    <textarea class="form-control iso-font-xs-em fw-normal text-secondary border-radius" id="biography" rows="3" placeholder="بیوگرافی" name="biography"></textarea>
                                     <span class="error_biography error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="address" class="form-label iso-font-md-em mb-1 fw-normal">آدرس مطب<span class="text-muted iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                    <input type="text" class="form-control iso-font-xs-em fw-normal text-secondary valid" id="address" placeholder="آدرس مطب" value="" name="address">
+                                    <input type="text" class="form-control iso-font-xs-em fw-normal text-secondary border-radius valid border-radius text-start" id="address" placeholder="آدرس مطب" value="" name="address">
                                     <span class="error_address error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="phone" class="form-label iso-font-md-em mb-1 fw-normal">تلفن مطب<span class="text-muted iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                    <input type="number" class="form-control iso-font-xs-em fw-normal text-secondary text-start valid" id="phone" placeholder="تلفن مطب" value="" name="phone">
+                                    <input type="number" class="form-control iso-font-xs-em fw-normal text-secondary border-radius text-start valid border-radius" id="phone" placeholder="تلفن مطب" value="" name="phone">
                                     <span class="error_phone error mt-1"></span>
                                 </div>
                                 <div class="line-muted-dashed w-75 mx-auto mt-4"></div>
@@ -4588,14 +4588,14 @@
                             <div class="row gy-3">
                                 <div class="col-12">
                                     <label for="counseling" class="form-label iso-font-md-em mb-1 fw-normal">مشاوره </label>
-                                    <select class="form-select iso-font-xs-em fw-normal text-secondary" id="counseling" name="counseling">
+                                    <select class="form-select iso-font-xs-em fw-normal text-secondary border-radius" id="counseling" name="counseling">
                                         <option value="">مشاوره خود را انتخاب کنید</option>
                                     </select>
                                     <span class="error_counseling error mt-1"></span>
                                 </div>
                                 <div class="col-12">
                                     <label for="description_message" class="form-label iso-font-md-em mb-1 fw-normal">پیام</label>
-                                    <textarea class="form-control iso-font-xs-em fw-normal text-secondary" id="description_message" rows="6" placeholder="پبام" name="description_message"></textarea>
+                                    <textarea class="form-control iso-font-xs-em fw-normal text-secondary border-radius" id="description_message" rows="6" placeholder="پبام" name="description_message"></textarea>
                                     <span class="error_description_message error mt-1"></span>
                                 </div>
                                 <div class="col-12">

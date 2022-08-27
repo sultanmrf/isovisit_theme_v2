@@ -15,7 +15,7 @@ $(document).ready(function (){
         }, 100);
     });
 
-    initValidation("#form",
+    initValidation("#form_register_doctor",
         {first_and_last_name:"required",
             mobile_number:{
                 required: true,

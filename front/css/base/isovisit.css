@@ -1160,6 +1160,19 @@ a:hover {
   border-color: #1773B5;
 }
 
+#collapse_froum .form-select-birth {
+  width: 10em;
+}
+#collapse_froum .input-height,
+#collapse_froum .input-weight {
+  width: 6.2em;
+}
+#collapse_froum .input-height span,
+#collapse_froum .input-weight span {
+  top: 0.73em;
+  left: 0.2em;
+}
+
 /* footer */
 footer .footer-certificates .footer-body {
   height: 9.938rem;
