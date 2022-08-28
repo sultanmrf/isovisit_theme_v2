@@ -1159,6 +1159,10 @@ a:hover {
 .modal-edit-mobile .box-verification-code input:focus {
   border-color: #1773B5;
 }
+.modal-login .link-modal button,
+.modal-edit-mobile .link-modal button {
+  color: #1773B5;
+}
 
 #collapse_froum .form-select-birth {
   width: 10em;
