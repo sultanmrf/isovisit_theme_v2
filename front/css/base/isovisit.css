@@ -467,7 +467,7 @@ header .menu-user .btn-user-collapse {
 /**
 * size custom
  */
-.size-thirty, .icon-gmail, .icon-bar, .btn-close, .btn-close-light-modal, .btn-close-danger-modal {
+.size-thirty, .icon-gmail, .icon-aparat, .icon-bar, .btn-close, .btn-close-light-modal, .btn-close-danger-modal {
   width: 1.875em;
   height: 1.875em;
 }
@@ -477,7 +477,7 @@ header .menu-user .btn-user-collapse {
   height: 1.563em;
 }
 
-.size-twenty-four, .icon-aparat, .icon-instagram-light, .icon-instagram-blue, .icon-trash, .icon-edit, .icon-email, .icon-telegram-light, .icon-telegram-blue {
+.size-twenty-four, .icon-instagram-light, .icon-instagram-blue, .icon-trash, .icon-edit, .icon-email, .icon-telegram-light, .icon-telegram-blue {
   width: 1.5em;
   height: 1.5em;
 }
