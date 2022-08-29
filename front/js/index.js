@@ -5,16 +5,16 @@ $(document).ready(function (){
         let text = $(this).text().trim();
         switch ($(this).data('title_class')){
             case "title-question":
-               if(text.length > 82) {
-                   $(this).html(text.substr(0, 82) + ' ...');
-               }
-               break;
+                if(text.length > 82) {
+                    $(this).html(text.substr(0, 82) + ' ...');
+                }
+                break;
 
             case "text-indications":
-               if(text.length > 56){
-                   $(this).html(text.substr(0, 56) + ' ...');
-               }
-               break;
+                if(text.length > 56){
+                    $(this).html(text.substr(0, 56) + ' ...');
+                }
+                break;
 
             case "text-comment":
                 if(text.length > 63){
@@ -508,4 +508,18 @@ $(document).ready(function (){
         }
     });
     /* js section operation comment end */
+
+    /* js section modal login to input verification-code start */
+    $(document).on("input",".box-verification-code input",function (){
+        debugger;
+        if($(this).val().length > 3){
+            setRangePositionInput(this, 3);
+        }
+    });
+
+    function setRangePositionInput(elem, number_pos) {
+        elem.focus();
+        elem.setSelectionRange(number_pos, number_pos);
+    }
+    /* js section modal login to input verification-code end */
 });

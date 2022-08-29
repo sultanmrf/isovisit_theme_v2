@@ -1113,16 +1113,19 @@ a:hover {
 }
 
 /* style section profile doctor end */
-.modal-login .border-blue, .modal-login .box-verification-code:focus-within, .modal-login input:focus,
+.modal-login .border-blue, .modal-login input:focus,
+.modal-login .modal-edit-mobile input:focus,
+.modal-edit-mobile .modal-login input:focus, .modal-login .box-verification-code:focus-within,
 .modal-edit-mobile .border-blue,
-.modal-edit-mobile .box-verification-code:focus-within,
-.modal-edit-mobile input:focus {
+.modal-edit-mobile input:focus,
+.modal-edit-mobile .box-verification-code:focus-within {
   border: 2px solid #1773B5;
 }
 .modal-login .box-timer,
 .modal-edit-mobile .box-timer {
   width: 7.25em;
   height: 2.125em;
+  margin: 12px 0 19px 0;
 }
 .modal-login .input-phone,
 .modal-login .box-verification-code,
@@ -1132,6 +1135,25 @@ a:hover {
 .modal-edit-mobile .box-password {
   height: 2.5em;
 }
+.modal-login .box-verification-code,
+.modal-edit-mobile .box-verification-code {
+  border: 1px solid #dee2e6;
+}
+.modal-login .box-verification-code input:focus,
+.modal-edit-mobile .box-verification-code input:focus {
+  background-image: linear-gradient(to left, #1773B5 70%, rgba(255, 255, 255, 0) 0%);
+}
+.modal-login .box-verification-code input,
+.modal-edit-mobile .box-verification-code input {
+  padding-left: 1.563em;
+  letter-spacing: 50px;
+  direction: ltr;
+  background: linear-gradient(to left, #6c757d 70%, rgba(255, 255, 255, 0) 0%) repeat-x bottom;
+  background-size: 58px 2px;
+  background-position-x: 48px;
+  background-position-y: 29px;
+  width: 15rem;
+}
 .modal-login .form-modal-login,
 .modal-edit-mobile .form-modal-login {
   width: 15em;
@@ -1139,25 +1161,13 @@ a:hover {
 .modal-login .modal-body,
 .modal-edit-mobile .modal-body {
   height: 240px;
+  padding: 10px;
 }
 .modal-login .show-password,
 .modal-edit-mobile .show-password {
   left: 0.625em;
   top: 0.63em;
   background: rgb(248, 249, 250);
-}
-.modal-login .box-verification-code,
-.modal-edit-mobile .box-verification-code {
-  border: 1px solid #dee2e6;
-}
-.modal-login .box-verification-code input,
-.modal-edit-mobile .box-verification-code input {
-  border-color: #6c757d;
-  padding: 0 8px 8px 0;
-}
-.modal-login .box-verification-code input:focus,
-.modal-edit-mobile .box-verification-code input:focus {
-  border-color: #1773B5;
 }
 .modal-login .link-modal button,
 .modal-edit-mobile .link-modal button {

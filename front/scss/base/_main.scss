@@ -748,12 +748,37 @@ a:hover{
   .box-timer{
     width: 7.25em;
     height: 2.125em;
+    margin: 12px 0 19px 0;
   }
 
   .input-phone,
   .box-verification-code,
   .box-password{
     height: 2.5em;
+  }
+
+  .box-verification-code{
+    border: 1px solid #dee2e6;
+    &:focus-within{
+      @extend .border-blue;
+    }
+
+    input:focus{
+      background-image: linear-gradient(to left, $iso-blue-dark 70%, rgba(255, 255, 255, 0) 0%);
+    }
+  }
+
+  .box-verification-code{
+    input{
+      padding-left: 1.563em;
+      letter-spacing: 50px;
+      direction: ltr;
+      background: linear-gradient(to left, #6c757d 70%, rgba(255, 255, 255, 0) 0%) repeat-x bottom;
+      background-size: 58px 2px;
+      background-position-x: 48px;
+      background-position-y: 29px;
+      width: 15rem;
+    }
   }
 
   .form-modal-login{
@@ -766,29 +791,13 @@ a:hover{
 
   .modal-body{
     height: 240px;
+    padding: 10px;
   }
 
   .show-password{
     left: 0.625em;
     top: 0.63em;
     background: rgb(248,249,250);
-  }
-
-  .box-verification-code{
-    border: 1px solid #dee2e6;
-
-    &:focus-within{
-      @extend .border-blue;
-    }
-
-    input{
-      border-color: #6c757d;
-      padding: 0 8px 8px 0;
-    }
-
-    input:focus{
-      border-color: $iso-blue-dark;
-    }
   }
 
   .link-modal{
