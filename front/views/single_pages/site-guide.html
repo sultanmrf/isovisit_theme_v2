@@ -393,8 +393,14 @@
                                 <span>02:00</span>
                             </button>
                             <div class="form-modal-login d-flex flex-column text-start">
-                                <div class="box-verification-code d-flex bg-light border-radius px-1">
-                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0" maxlength="4"/>
+                                <div class="box-verification-code d-flex bg-light border-radius px-1 overflow-hidden">
+                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0 position-relative" maxlength="4"/>
+                                    <div class="box-line-input position-relative">
+                                        <span class="line-1 position-absolute"></span>
+                                        <span class="line-2 position-absolute"></span>
+                                        <span class="line-3 position-absolute"></span>
+                                        <span class="line-4 position-absolute"></span>
+                                    </div>
                                 </div>
                                 <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
                                     <button type="button"  class="btn iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</button>

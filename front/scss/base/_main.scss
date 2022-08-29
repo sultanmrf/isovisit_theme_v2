@@ -761,23 +761,41 @@ a:hover{
     border: 1px solid #dee2e6;
     &:focus-within{
       @extend .border-blue;
-    }
-
-    input:focus{
-      background-image: linear-gradient(to left, $iso-blue-dark 70%, rgba(255, 255, 255, 0) 0%);
+      .box-line-input{
+        span{
+          background: $iso-blue-dark;
+        }
+      }
     }
   }
 
   .box-verification-code{
     input{
-      padding-left: 1.563em;
-      letter-spacing: 50px;
-      direction: ltr;
-      background: linear-gradient(to left, #6c757d 70%, rgba(255, 255, 255, 0) 0%) repeat-x bottom;
-      background-size: 58px 2px;
-      background-position-x: 48px;
-      background-position-y: 29px;
+      padding-left: 1.75em;
+      letter-spacing: 41px;
       width: 15rem;
+      left: .79em;
+    }
+    .box-line-input{
+      right: -0.4em;
+      span{
+        width: 2.5em;
+        height: .125em;
+        background: #6c757d;
+        top: 1.813em;
+      }
+      .line-1{
+        left: 10.125em;
+      }
+      .line-2{
+        left: 7.063em;
+      }
+      .line-3{
+        left: 4em;
+      }
+      .line-4{
+        left: .875em;
+      }
     }
   }
 

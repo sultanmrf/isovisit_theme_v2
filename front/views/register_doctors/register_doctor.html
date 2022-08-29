@@ -31,7 +31,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
-                         <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
                             <a href="../index.html" class="d-flex">
                                 <span class="icon-logo-sm"></span>
                             </a>
@@ -61,7 +61,7 @@
                                         <i class="fa iso-font-lg text-light fa-chevron-down ms-auto"></i>
                                     </button>
                                     <div class="menu-user-body border-top mt-2 collapse" id="collapse_menu_user">
-                                       <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
+                                        <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
                                             <li class="p-0 pt-3">
                                                 <a href="../profile_user_and_doctor/profile_user.html" class="text-light hover-line-white ms-2">
                                                     پروفایل
@@ -392,8 +392,14 @@
                                 <span>02:00</span>
                             </button>
                             <div class="form-modal-login d-flex flex-column text-start">
-                                <div class="box-verification-code d-flex bg-light border-radius px-1">
-                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0" maxlength="4"/>
+                                <div class="box-verification-code d-flex bg-light border-radius px-1 overflow-hidden">
+                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0 position-relative" maxlength="4"/>
+                                    <div class="box-line-input position-relative">
+                                        <span class="line-1 position-absolute"></span>
+                                        <span class="line-2 position-absolute"></span>
+                                        <span class="line-3 position-absolute"></span>
+                                        <span class="line-4 position-absolute"></span>
+                                    </div>
                                 </div>
                                 <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
                                     <button type="button"  class="btn iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</button>

@@ -1139,20 +1139,43 @@ a:hover {
 .modal-edit-mobile .box-verification-code {
   border: 1px solid #dee2e6;
 }
-.modal-login .box-verification-code input:focus,
-.modal-edit-mobile .box-verification-code input:focus {
-  background-image: linear-gradient(to left, #1773B5 70%, rgba(255, 255, 255, 0) 0%);
+.modal-login .box-verification-code:focus-within .box-line-input span,
+.modal-edit-mobile .box-verification-code:focus-within .box-line-input span {
+  background: #1773B5;
 }
 .modal-login .box-verification-code input,
 .modal-edit-mobile .box-verification-code input {
-  padding-left: 1.563em;
-  letter-spacing: 50px;
-  direction: ltr;
-  background: linear-gradient(to left, #6c757d 70%, rgba(255, 255, 255, 0) 0%) repeat-x bottom;
-  background-size: 58px 2px;
-  background-position-x: 48px;
-  background-position-y: 29px;
+  padding-left: 1.75em;
+  letter-spacing: 41px;
   width: 15rem;
+  left: 0.79em;
+}
+.modal-login .box-verification-code .box-line-input,
+.modal-edit-mobile .box-verification-code .box-line-input {
+  right: -0.4em;
+}
+.modal-login .box-verification-code .box-line-input span,
+.modal-edit-mobile .box-verification-code .box-line-input span {
+  width: 2.5em;
+  height: 0.125em;
+  background: #6c757d;
+  top: 1.813em;
+}
+.modal-login .box-verification-code .box-line-input .line-1,
+.modal-edit-mobile .box-verification-code .box-line-input .line-1 {
+  left: 10.125em;
+}
+.modal-login .box-verification-code .box-line-input .line-2,
+.modal-edit-mobile .box-verification-code .box-line-input .line-2 {
+  left: 7.063em;
+}
+.modal-login .box-verification-code .box-line-input .line-3,
+.modal-edit-mobile .box-verification-code .box-line-input .line-3 {
+  left: 4em;
+}
+.modal-login .box-verification-code .box-line-input .line-4,
+.modal-edit-mobile .box-verification-code .box-line-input .line-4 {
+  left: 0.875em;
 }
 .modal-login .form-modal-login,
 .modal-edit-mobile .form-modal-login {

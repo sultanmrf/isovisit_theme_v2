@@ -196,6 +196,7 @@ $(document).ready(function (){
         $(".card-login").addClass('d-none');
         $(".modal-footer").addClass('d-none');
         $(".card-verification").removeClass('d-none');
+        clearInterval(timer);
         timer = setInterval(start_timer, 1000);
     });
 
@@ -508,18 +509,4 @@ $(document).ready(function (){
         }
     });
     /* js section operation comment end */
-
-    /* js section modal login to input verification-code start */
-    $(document).on("input",".box-verification-code input",function (){
-        debugger;
-        if($(this).val().length > 3){
-            setRangePositionInput(this, 3);
-        }
-    });
-
-    function setRangePositionInput(elem, number_pos) {
-        elem.focus();
-        elem.setSelectionRange(number_pos, number_pos);
-    }
-    /* js section modal login to input verification-code end */
 });

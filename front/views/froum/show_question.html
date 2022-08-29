@@ -31,7 +31,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
                     <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
                         <!-- logo section  -->
-                         <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
                             <a href="../index.html" class="d-flex">
                                 <span class="icon-logo-sm"></span>
                             </a>
@@ -61,7 +61,7 @@
                                         <i class="fa iso-font-lg text-light fa-chevron-down ms-auto"></i>
                                     </button>
                                     <div class="menu-user-body border-top mt-2 collapse" id="collapse_menu_user">
-                                       <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
+                                        <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
                                             <li class="p-0 pt-3">
                                                 <a href="../profile_user_and_doctor/profile_user.html" class="text-light hover-line-white ms-2">
                                                     پروفایل
@@ -291,7 +291,7 @@
             <!-- section menu user logged in start-->
             <div class="menu-user marker-light dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
                 <button type="button" class="btn border-radius iso-bg-blue-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user fw-medium"
-                         id="dropdown_menu_link" data-bs-toggle="dropdown" aria-expanded="false">
+                        id="dropdown_menu_link" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>سیروس</span>
                     <i class="fa iso-font-lg-em fa-chevron-down ms-2"></i>
                 </button>
@@ -392,8 +392,14 @@
                                 <span>02:00</span>
                             </button>
                             <div class="form-modal-login d-flex flex-column text-start">
-                                <div class="box-verification-code d-flex bg-light border-radius px-1">
-                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0" maxlength="4"/>
+                                <div class="box-verification-code d-flex bg-light border-radius px-1 overflow-hidden">
+                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0 position-relative" maxlength="4"/>
+                                    <div class="box-line-input position-relative">
+                                        <span class="line-1 position-absolute"></span>
+                                        <span class="line-2 position-absolute"></span>
+                                        <span class="line-3 position-absolute"></span>
+                                        <span class="line-4 position-absolute"></span>
+                                    </div>
                                 </div>
                                 <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
                                     <button type="button"  class="btn iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</button>
@@ -437,7 +443,7 @@
                     <div class="col-12 col-lg-10 p-2 p-lg-0 text-nowrap d-flex align-items-center justify-content-center justify-content-lg-start text-light iso-position-absolute iso-position-absolute-lg-none">
                         <div class="row w-100 justify-content-start mt-2 mt-lg-0">
                             <div class="col-12 col-lg-4 offset-1 d-flex ms-0 ms-lg-4 flex-column">
-                               <div class="d-flex flex-column mb-2">
+                                <div class="d-flex flex-column mb-2">
                                     <span class="iso-font-xxl iso-font-xxl-mo text-shadow fw-bold mb-1">ایزو ویزیت</span>
                                     <span class="iso-font-llg text-shadow fw-bold mt-0 mb-1">مشاور آنلاین پزشکی و طب سنتی</span>
                                 </div>
