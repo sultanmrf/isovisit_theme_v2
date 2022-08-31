@@ -22,6 +22,16 @@ $(document).ready(function (){
         let id =$(this).attr('id');
         $("a").not('#' + id +'').removeClass('active');
     })
+    /* section copy link in clipboard start */
+    new ClipboardJS('.btn-copy-link');
+
+    $(document).on('click','.btn-copy-link',function (){
+        $('.tooltip-text').addClass('tooltip-active');
+        setTimeout(function (){
+            $(".tooltip-text").removeClass('tooltip-active');
+        },2500)
+    })
+    /* section copy link in clipboard end */
 
     initMenuProfile();
 
@@ -154,6 +164,49 @@ $(document).ready(function (){
             description_comment: " نظرات الزامی است",
         });
 
+    /* validation form question answer start */
+    initValidation("#form",
+        {
+            height: "required",
+            weight: "required",
+            births: "required",
+            category: "required",
+            title_question:{
+                required: true,
+                maxlength: 150
+            },
+            description:{
+                required: true,
+                maxlength: 650
+            },
+            code_security:"required",
+            rules_check:"required",
+            file:{
+                required: true,
+                extension: "xls|csv",
+            },
+        },
+        {
+            height: "قد را مشخص کنید",
+            weight: "وزن را مشخص کنید",
+            births: "سال تولد را مشخص کنید",
+            category: "دسته بندی را مشخص کنید",
+            title_question: {
+                required:"عنوان سوال را مشخص کنید",
+                maxlength: "حداکثر کاراکتر ها باید 150 باشد"
+            },
+            description: {
+                required:"توضیحات خود را وارد کنید",
+                maxlength: "حداکثر کاراکتر ها باید 650 باشد"
+            },
+            code_security: "کد امنیتی را وارد کنید",
+            rules_check: "تایید قوانین الزامی باشد",
+            file:{
+                required: "tyrr5edyr",
+                extension: "aewfaeeerer",
+            },
+        });
+    /* validation form question answer end */
 
     /* if hover in menu profile_user in code start */
     $(document).on('click','.list-icon-profile span[role="button"]',function (){
@@ -161,6 +214,7 @@ $(document).ready(function (){
         $(".img-box-profile img").attr('src',"../../images/profile_user/" + title_img + ".png")
     });
 
+    /* section modal info complete doctor start */
     $(document).on('click','.add-specialty',function (){
        $("#info_complete_doctor_modal form > .row").prepend("<div class=\"col-12\">\n" +
            "                                    <label for=\"specialty\" class=\"form-label iso-font-md-em mb-1 fw-normal\">تخصص</label>\n" +
@@ -176,11 +230,23 @@ $(document).ready(function (){
            "                                </div>")
     });
 
+
     $(document).on('click','.add-file',function (){
         $(".files-input .row").append("<div class=\"col-12\">\n" +
             "                                    <label for=\"poster_video_about_doctor\" class=\"form-label iso-font-md-em iso-font-md-em fw-normal\">عنوان فایل<span class=\"text-muted iso-font-sm-em mx-1\">(اختیاری)</span> </label>\n" +
             "                                    <input class=\"form-control iso-font-md-em fw-normal text-secondary\" type=\"file\" id=\"poster_video_about_doctor\" name=\"poster_video_about_doctor\">\n" +
             "                                </div>")
     });
+    /* section modal info complete doctor end */
 
+    $(document).on('click','.filter-consultants button',function (){
+        let val_aria_select = $(this).attr('aria-selected');
+        if(val_aria_select === "true"){
+            $(this).attr('aria-selected',false)
+        }else{
+            $(this).attr('aria-selected',true).removeClass('active');
+            $(".tab-pane").find('.active').removeClass(['show','active']);
+            $("#pills_all_consultants").addClass(['show','active']);
+        }
+    });
 });

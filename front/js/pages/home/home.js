@@ -11,4 +11,6 @@ $(document).ready(function (){
     initServicesSwiper();
     initQuestionAnswerSwiper();
     initArticleSwiper();
+    initDoctorsSwiper();
+    initMedicineSwiper();
 });

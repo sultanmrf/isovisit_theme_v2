@@ -1,66 +1,27 @@
 $(document).ready(function (){
-    /* section get advice start */
-    $(".text-link").each(function (){
-        if($(this).text().length > 28 ){
-            $(this).find("~ span").addClass(['w-100','text-end','mt-1']);
-            $(".section-get-advice .btn-group").append($(this).parents(".col-xxl-6"));
+    $(document).on('click','.more-description',function (){
+        let val_aria_expanded = $(this).attr('aria-expanded');
+        if(val_aria_expanded == "true"){
+            $(this).attr("aria-expanded","false");
+            $(".text-description-editor").css('height','14.375em');
+            $(".section-consulting .section-footer span").text('بیشتر');
+            $(".section-consulting .section-footer i").addClass('fa-chevron-down').removeClass('fa-chevron-up');
+        }else{
+            $(this).attr("aria-expanded","true");
+            $(".text-description-editor").css('height','auto');
+            $(".section-consulting .section-footer span").text('بستن');
+            $(".section-consulting .section-footer i").addClass('fa-chevron-up').removeClass('fa-chevron-down');
         }
-    });
-    /* section get advice start */
-
-    lightbox.option({
-        'positionFromTop': 250
     })
 
-    /* section copy link in clipboard start */
-    new ClipboardJS('.btn-copy-link');
-
-    $(document).on('click','.btn-copy-link',function (){
-        $('.tooltip-text').addClass('tooltip-active');
-        setTimeout(function (){
-            $(".tooltip-text").removeClass('tooltip-active');
-        },2500)
-    })
-    /* section copy link in clipboard end */
-
-    $(".doctor-star-rating").starRating({
+    /* svg star doctors start */
+    $(".doctor-number-star-rating").starRating({
         readOnly: true,
         emptyColor:'#ffc107',
-        starSize: 25
+        starSize: 18,
+        totalStars: 1,
     });
-
-    /* swiper slider doctors section video introduction doctor start*/
-    initGalleryDoctorSwiper();
-    /* swiper slider doctors section video introduction doctor end*/
-
-    /*نمایش ادرس دکتر در نقشه گوگل*/
-    show_map('contact_map',36.312416, 59.553421)
-
-    /* edit location div section get advice in size mobile start */
-    if(check_size_media(false,768)){
-        $(".section-get-advice").removeClass(['position-sticky', 'top-0']);
-        $(".section-data-profile-doctor").after($(".section-get-advice"));
-    }
-    /* edit location div section get advice in size mobile end */
-
-    /* js section about doctors start */
-    $(document).off('click','.more-info-doctors');
-    $(document).on('click','.more-info-doctors',function (){
-        let val_aria_expanded = $(this).attr('aria-expanded');
-        if(val_aria_expanded == 'true'){
-            $(this).attr('aria-expanded','false');
-            $(".section-about-doctor .card-body").css('height','12.5em');
-            $(this).find("span").text('نظرات بیشتر');
-            $(this).find("i").removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        }else {
-            $(this).attr('aria-expanded','true');
-            $(".section-about-doctor .card-body").css('height','auto');
-            $(this).find("span").text('بستن');
-            $(this).find("i").removeClass('fa-chevron-down').addClass('fa-chevron-up');
-
-        }
-    });
-    /* js section about doctors end */
+    /* svg star doctors end */
 
     /* animation active and disable love start */
     $(document).on('click','.love',function (){
@@ -91,7 +52,7 @@ $(document).ready(function (){
         }
     });
     /* js section operation comment end */
-    ;
+
     $(document).on('click','.more-comment',function (){
         $(".section-comments-users .parent-comment-more").append('<div class="col-12 p-0 mt-2">\n' +
             '                    <div class="card p-2 bg-light border-radius">\n' +

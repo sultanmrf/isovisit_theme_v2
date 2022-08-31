@@ -89,5 +89,13 @@ $(document).ready(function (){
    });
    /* sorting filter end */
 
+   /* svg star doctors start */
+   $(".doctor-number-star-rating").starRating({
+      readOnly: true,
+      emptyColor:'#ffc107',
+      starSize: 18,
+      totalStars: 1,
+   });
+   /* svg star doctors end */
 });
 

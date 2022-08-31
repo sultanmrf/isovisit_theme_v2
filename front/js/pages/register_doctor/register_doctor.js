@@ -43,5 +43,4 @@ $(document).ready(function (){
             code_security: "کد امنیتی الزامی است",
 
         });
-
 });

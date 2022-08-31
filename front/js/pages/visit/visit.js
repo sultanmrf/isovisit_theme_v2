@@ -18,4 +18,15 @@ $(document).ready(function (){
         tonesStyle: "textarea",
         placeholder: "پیام"
     });
+
+    $(document).on('click','.filter-consultants button',function (){
+        let val_aria_select = $(this).attr('aria-selected');
+        if(val_aria_select === "true"){
+            $(this).attr('aria-selected',false)
+        }else{
+            $(this).attr('aria-selected',true).removeClass('active');
+            $(".tab-pane").find('.active').removeClass(['show','active']);
+            $("#pills_all_consultants").addClass(['show','active']);
+        }
+    });
 });
