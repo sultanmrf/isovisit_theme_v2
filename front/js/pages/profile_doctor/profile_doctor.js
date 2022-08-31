@@ -38,8 +38,9 @@ $(document).ready(function (){
 
     /* edit location div section get advice in size mobile start */
     if(check_size_media(false,768)){
-        $(".section-get-advice").removeClass(['position-sticky', 'top-0']);
-        $(".section-data-profile-doctor").after($(".section-get-advice"));
+        let section_get_advice =  $(".section-get-advice");
+        section_get_advice.removeClass(['position-sticky', 'top-0']);
+        $(".section-data-profile-doctor").after(section_get_advice);
     }
     /* edit location div section get advice in size mobile end */
 
@@ -78,20 +79,6 @@ $(document).ready(function (){
     });
     /* animation active and disable love end */
 
-    /* js section operation comment start */
-    $(document).off('click','.btn-accepted');
-    $(document).on('click','.btn-accepted',function (){
-        let val_aria_expanded = $(this).attr('aria-expanded');
-        if(val_aria_expanded == 'true'){
-            $(this).attr('aria-expanded','false').removeClass(['btn-outline-success','border-success']).addClass('btn-outline-secondary');
-            $(this).find("i").removeClass(['fa-check','text-success']).addClass('fa-ban');
-        }else {
-            $(this).attr('aria-expanded','true').addClass('border-success').removeClass('btn-outline-secondary');
-            $(this).find("i").addClass(['fa-check','text-success']).removeClass('fa-ban');
-        }
-    });
-    /* js section operation comment end */
-    ;
     $(document).on('click','.more-comment',function (){
         $(".section-comments-users .parent-comment-more").append('<div class="col-12 p-0 mt-2">\n' +
             '                    <div class="card p-2 bg-light border-radius">\n' +
