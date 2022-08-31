@@ -11,7 +11,7 @@
     <link href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../../node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="../../css/base/isovisit.css" rel="stylesheet">
-    <link href="../../css/pages/responsive/responsive.css" rel="stylesheet"
+    <link href="../../css/pages/responsive/responsive.css" rel="stylesheet">
 </head>
 <body>
 <!-- section header start -->
@@ -696,26 +696,34 @@
             <!-- section terms conditions end-->
         </div>
     </div>
-    <div class="communication-iso box-shadow-lg position-fixed rounded-circle iso-bg-green-dark">
+    <div class="communication-iso box-shadow-lg position-fixed d-flex align-items-center rounded-circle iso-bg-green-dark z-index-last">
         <button class="btn-communication-iso img-sm border-0 bg-transparent p-0" aria-expanded="false">
             <span class="icon-support-light d-block"></span>
         </button>
         <ul class="dropdown-menu-communication position-absolute d-flex flex-column align-items-end list-unstyled">
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در واتساپ</span>
-                <img src="./images/icons/whatsapp.png" class="ms-2" alt="پیام در واتساپ">
+                <a href="https://wa.me/+989156510022" class="text-light d-flex align-items-center" target="_blank">
+                    <span>پیام در واتساپ</span>
+                    <span class="icon-whatsapp ms-2"></span>
+                </a>
             </li>
             <li class="my-3 my-lg-2 iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در تلگرام</span>
-                <img src="./images/icons/telegram.png" class="ms-2" alt="پیام در واتساپ">
+                <a href="https://t.me/Parsiteb_IsoVisit" class="text-light d-flex align-items-center" target="_blank">
+                    <span>پیام در تلگرام</span>
+                    <span class="icon-telegram-circle ms-2"></span>
+                </a>
             </li>
             <li class="iso-bg-green-dark text-light rounded-pill p-2">
-                <span>پیام در تیکت</span>
-                <img src="./images/icons/ticket.png" class="ms-2" alt="پیام در تیکت">
+                <a href="../profile_user_and_doctor/tickets.html" class="text-light d-flex align-items-center" target="_blank">
+                    <span>پیام در تیکت</span>
+                    <span class="icon-ticket ms-2"></span>
+                </a>
             </li>
             <li class="my-3 my-lg-2 mb-4 mb-lg-3 iso-bg-green-dark text-light rounded-pill p-2 mb-3">
-                <span>تماس تلفنی</span>
-                <img src="./images/icons/phone.png" class="ms-2" alt="تماس تلفنی">
+                <a href="tel:09156510022" class="text-light d-flex align-items-center">
+                    <span>تماس تلفنی</span>
+                    <span class="icon-phone ms-2"></span>
+                </a>
             </li>
         </ul>
     </div>
@@ -884,9 +892,7 @@
                             </a>
                         </div>
                     </div>
-
                     <p class="footer-text mt-3 m-0 fw-normal iso-font-xs-em">© تمامی حقوق مادی و معنوی این وب سایت به ایزو ویزیت تعلق دارد.</p>
-
                 </div>
             </div>
         </div>
