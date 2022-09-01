@@ -16,7 +16,6 @@
     "emojionearea": "^3.4.2",
     "jquery": "^3.6.0",
     "jquery-validation": "^1.19.5",
-    "lazyloadxt": "^1.1.0",
     "leaflet": "^1.8.0",
     "lightbox2": "^2.11.3",
     "sass": "^1.54.5",
