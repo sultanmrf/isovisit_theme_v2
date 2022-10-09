@@ -467,7 +467,7 @@ header .menu-user .btn-user-collapse {
 /**
 * size custom
  */
-.size-thirty, .icon-gmail, .icon-aparat, .icon-bar, .btn-close, .btn-close-light-modal, .btn-close-danger-modal {
+.size-thirty, .icon-gmail, .icon-aparat-light, .icon-aparat, .icon-bar, .btn-close, .btn-close-light-modal, .btn-close-danger-modal {
   width: 1.875em;
   height: 1.875em;
 }
@@ -973,6 +973,11 @@ a:hover {
   background: url("../../images/icons/aparat.png");
 }
 
+.icon-aparat-light {
+  filter: brightness(0) invert(1);
+  background: url("../../images/icons/aparat.png");
+}
+
 .icon-gmail {
   background: url("../../images/icons/gmail.png");
 }
@@ -1208,6 +1213,11 @@ a:hover {
 #collapse_froum .input-weight span {
   top: 0.73em;
   left: 0.2em;
+}
+
+#contact_map {
+  width: 100%;
+  height: 15.625em;
 }
 
 /* footer */

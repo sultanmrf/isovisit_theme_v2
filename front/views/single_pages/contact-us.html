@@ -10,8 +10,9 @@
     <link href="../../../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../../node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../../node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
     <link href="../../css/base/isovisit.css" rel="stylesheet">
-    <link href="../../css/pages/froum/froum.css" rel="stylesheet">
+    <link href="../../css/pages/articles/articles.css" rel="stylesheet">
     <link href="../../css/pages/responsive/responsive.css" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
 <header>
     <div class="container-xxl p-0">
         <!-- section navbar start-->
-        <div class="header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
+        <div class="header-menu header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
             <!-- section navbar mobile start  -->
             <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
                 <div class="d-flex d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
@@ -235,7 +236,7 @@
                         <a href="../specialty/specialty.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">تخصص ها</a>
                     </li>
                     <li class="nav-item px-12">
-                        <a href="../froum/froum.html" class="iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                        <a href="../froum/froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
                     </li>
                     <li class="nav-item dropdown px-2 pe-1 border-radius-top">
                         <a class="link-patients p-0 py-1 align-items-center d-flex iso-color-dark link-hover position-relative" href="#" id="navbar_patients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -643,295 +644,136 @@
 <!-- section main start -->
 <main>
     <div class="content container-xxl">
-        <div class="row gy-4 d-flex flex-wrap position-relative pb-4 m-0">
+        <div class="row d-flex flex-wrap position-relative pb-4 m-0">
             <!-- section breadcrumb link start -->
-            <nav class="col-12 d-flex align-items-center px-0" aria-label="breadcrumb">
+            <nav class="col-12 my-4 d-flex align-items-center px-0" aria-label="breadcrumb">
                 <ol class="breadcrumb iso-font-sm-em m-0 fw-normal">
                     <li class="breadcrumb-item"><a href="../index.html">ایزوویزیت</a></li>
-                    <li class="breadcrumb-item"><a href="../froum/froum.html">پرسش و پاسخ</a></li>
-                    <li class="breadcrumb-item"><a href="../services/show_service.html">اصلاح مزاج</a></li>
-                    <li class="breadcrumb-item">برای شروع روند درمان باید چه کار کنم؟</li>
+                    <li class="breadcrumb-item">تماس با ما</li>
                 </ol>
             </nav>
             <!-- section breadcrumb link end -->
 
-            <!-- section alert question and answer success start start -->
-            <div class="section-alert-question-answer px-0">
-                <div class="alert alert-warning d-flex iso-font-sm-em align-items-center m-0">
-                    <div class="row w-100">
-                        <div class="col-auto d-flex align-items-center">
-                            <i class="fa-solid fa-bell text-warning iso-font-xl-em"></i>
-                            <p class="m-0 ms-2 iso-color-dark text-nowrap">آخرین پرسش و پاسخ های تایید شده :</p>
-                        </div>
-                        <div class="col-md-9 p-0">
-                            <div class="links-question-answer overflow-hidden mx-2 w-100 position-relative">
-                                <div class="motion-move-text text-nowrap position-absolute">
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">برای شروع روند درمان باید چکار کنم ؟</a>
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">اصلاح مزاج - </a>
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات چاقی </a>
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات کودکان و لجبازی های آن ها</a>
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">ریزش شدید موهای سر و سفید شدن مو</a>
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">مشکلات چاقی </a>
-                                    <a href="#" class="iso-color-blue-dark border-end border-2 border-dark px-2">ریزش شدید موهای سر و سفید شدن مو</a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- section contact-us start -->
+            <section class="col-12 section-contact-us bg-light border-radius p-3">
+                <div class="section-header">
+                    <div class="section-title mb-3">
+                        <h2 class="iso-color-blue-dark fw-medium iso-font-md-em">فرم تماس با پشتیبانی و ارسال تیکت ایزو ویزیت</h2>
                     </div>
                 </div>
-            </div>
-            <!-- section alert question and answer success start end -->
-
-            <!-- section btn question doctor start -->
-            <div class="col-sm-6 mx-sm-auto btn-question-doctor mt-3 mt-sm-4 px-0 px-md-2">
-                <button class="iso-font-md-em btn iso-bg-blue-dark active-btn w-100 border-radius fw-medium"
-                        data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">پرسیدن سوال پزشکی</button>
-            </div>
-            <!-- section btn question doctor end -->
-
-            <!-- section form create question start -->
-            <div class="collapse" id="collapse_froum">
-                <div class="card box-shadow-lg border-radius">
-                    <div class="card-header bg-transparent d-flex justify-content-between border-0 py-3">
-                        <div class="card-title d-flex align-items-center m-0">
-                            <span class="iso-font-md-em ms-1">پرسیدن سوال پزشکی</span>
-                        </div>
-                        <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
-                                data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="card-body pt-0">
-                        <form id="form">
-                            <div class="row row-cols-4">
-                                <div class="col-12 p-0 py-0 px-md-1">
-                                    <div class="row gy-2 m-0">
-                                        <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
-                                            <label class="m-0 fw-normal">جنسیت : </label>
-                                            <div class="form-check mx-4 d-flex align-items-center">
-                                                <input class="form-check-input optional" type="radio" name="gender" id="gender1" value="" checked>
-                                                <label class="form-check-label ms-2" for="gender1">
-                                                    مرد
-                                                </label>
-                                            </div>
-                                            <div class="form-check mx-2 d-flex align-items-center">
-                                                <input class="form-check-input optional" type="radio" name="gender" id="gender2" value="">
-                                                <label class="form-check-label ms-2" for="gender2">
-                                                    زن
-                                                </label>
-                                            </div>
-                                            <span class="error mt-1"></span>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-xl-3 d-flex flex-wrap align-items-center">
-                                            <label for="births" class="form-label m-0 fw-normal">سال تولد : </label>
-                                            <select class="form-select form-select-birth iso-font-xs-em fw-normal py-1 mx-2 border-radius" id="births" name="births">
-                                                <option value="">انتخاب کنید</option>
-                                                <option>1300</option>
-                                                <option>1378</option>
-                                                <option>1388</option>
-                                                <option>1399</option>
-                                                <option>1399</option>
-                                            </select>
-                                            <span class="error_births error mt-1"></span>
-                                        </div>
-                                        <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 pe-0">
-                                            <label class="mt-2 fw-normal">قد : </label>
-                                            <div class="input-height ms-2 mt-2 flex-row-reverse position-relative">
-                                                <input type="number" class="form-control iso-font-sm-em fw-normal py-1 px-2 border-radius text-secondary text-start" value="" placeholder="قد" aria-label="cm" name="height">
-                                                <span class="position-absolute fw-normal iso-font-xs-em bg-white h-50 px-2">cm</span>
-                                            </div>
-                                            <span class="error_height error mt-1"></span>
-                                        </div>
-                                        <div class="col-6 col-md-6 col-xl-2 d-flex flex-wrap align-items-center mt-4 mt-lg-0 p-0">
-                                            <label class="mt-2 fw-normal ms-2">وزن : </label>
-                                            <div class="input-weight ms-2 mt-2 flex-row-reverse position-relative">
-                                                <input type="number" class="form-control iso-font-sm-em fw-normal py-1 px-2 border-radius text-secondary text-start" value="" placeholder="وزن" aria-label="kg" name="weight">
-                                                <span class="position-absolute fw-normal iso-font-xs-em bg-white h-50 px-2">kg</span>
-                                            </div>
-                                            <span class="error_weight error mt-1"></span>
-                                        </div>
+                <div class="section-body">
+                    <form class="bg-transparent shadow-none" id="form_contact_us" name="form_contact_us" novalidate="novalidate">
+                        <div class="row gy-3">
+                            <div class="col-xl-6 iso-font-sm-em fw-normal">
+                                <label for="inputName" class="form-label">نام و نام خانوادگی</label>
+                                <input type="text" class="form-control text-start iso-font-sm-em border-radius" id="inputName" name="name" value="محمد رضا فنودی" disabled placeholder="محمد رضا فنودی">
+                                <span class="error_name error mt-1"></span>
+                            </div>
+                            <div class="col-xl-6 iso-font-sm-em fw-normal">
+                                <label for="inputPhone" class="form-label">شماره موبایل</label>
+                                <input type="text" class="form-control text-start iso-font-sm-em border-radius" id="inputPhone" name="phone" value="09056116984" disabled placeholder="شماره موبایل">
+                                <span class="error_phone error mt-1"></span>
+                            </div>
+                            <div class="col-12 iso-font-sm-em fw-normal">
+                                <label for="inputSubject" class="form-label">موضوع</label>
+                                <input type="text" class="form-control text-start iso-font-sm-em border-radius" id="inputSubject" name="subject" placeholder="موضوع">
+                                <span class="error_subject error mt-1"></span>
+                            </div>
+                            <div class="col-12 iso-font-sm-em fw-normal">
+                                <label for="message" class="form-label">پیام</label>
+                                <textarea class="form-control text-start iso-font-sm-em border-radius" id="message" name="message" placeholder="پیام"></textarea>
+                                <span class="error_message error mt-1"></span>
+                            </div>
+                            <div class="col-12 iso-font-sm-em fw-normal">
+                                <div class="row align-items-end">
+                                    <div class="col-6 col-sm-3 d-flex flex-column justify-content-end align-items-start">
+                                        <label for="code_security" class="form-label">کد امنیتی</label>
+                                        <input type="number" class="form-control text-start iso-font-sm-em border-radius" id="code_security" name="code_security" placeholder="کد امنیتی">
+                                    </div>
+                                    <div class="col-6 captcha p-0 d-flex align-items-end">
+                                        <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid" alt="کپچا">
+                                        <a href="#" class="refresh_captcha mx-1">
+                                            <i class="fas fa-sync iso-font-llg-em"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row gy-3 mt-2">
-                                <div class="col-md-4 col-lg-3">
-                                    <label for="category" class="form-label mb-1 fw-normal">دسته بندی </label>
-                                    <select class="form-select form-select-category iso-font-xs-em fw-normal border-radius text-secondary" id="category" name="category">
-                                        <option value="">دسته بندی سوال خود را انتخاب کنید</option>
-                                        <option value="1">اصلاح مزاج</option>
-                                    </select>
-                                    <span class="error_category error mt-1"></span>
-                                </div>
-                                <div class="col-md-4 col-lg-3">
-                                    <label for="title_question" class="form-label mb-1 fw-normal">عنوان سوال</label>
-                                    <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="title_question" placeholder="عنوان سوال خود را انتخاب کنید" value="" name="title_question">
-                                    <span class="error_title_question error mt-1"></span>
-                                </div>
-                                <div class="col-md-4 col-lg-3">
-                                    <label for="description" class="form-label mb-1 fw-normal">توضیحات</label>
-                                    <textarea class="form-control iso-font-xs-em fw-normal border-radius text-secondary" id="description" rows="3" placeholder="توضیحات در مورد سوال خود را وارد کنید" name="description"></textarea>
-                                    <span class="error_description error mt-1"></span>
-                                </div>
-                            </div>
-                            <div class="row gy-4 gy-md-3 mt-0 mt-md-3">
-                                <div class="col-md-4 col-lg-3">
-                                    <label for="question_one" class="form-label mb-1 fw-normal">بیماری خاصی دارید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                    <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_one" placeholder="مثل بیماری قلبی ، فشارخون ، دیابت و ..." value="" name="question_one">
-                                </div>
-                                <div class="col-md-4 col-lg-3">
-                                    <label for="question_two" class="form-label mb-1 text-nowrap fw-normal">به پزشک دیگری مراجعه کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                    <input type="text" class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_two" placeholder="توضیحات در مورد مراجعه به پزشک" value="" name="question_two">
-                                </div>
-                                <div class="col-md-4 col-lg-3">
-                                    <label for="question_three" class="form-label mb-1 text-nowrap fw-normal">آیا از داروی خاصی استفاده کردید؟<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span> </label>
-                                    <input type="text"  class="form-control iso-font-xs-em fw-normal border-radius text-secondary optional" id="question_three" placeholder="توضیحات در مورد مراجعه به پزشک" name="question_three">
-                                </div>
-                            </div>
-                            <div class="row row-cols-4 gy-3 mt-0 mt-md-3">
-                                <div class="col-12 col-md-3">
-                                    <label for="file" class="form-label mb-1 fw-normal">ارسال عکس در صورت لزوم<span class="text-muted  iso-font-sm-em mx-1">(اختیاری)</span>  </label>
-                                    <input class="form-control py-1 iso-font-md-em optional border-radius" type="file" id="file" name="file">
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
-                                    <div class="row row-cols-2">
-                                        <div class="col d-flex flex-wrap align-items-end">
-                                            <label for="code_security" class="form-label mb-1 fw-normal">کد امنیتی </label>
-                                            <input type="number" class="form-control py-2 iso-font-xs-em fw-normal text-start border-radius text-secondary" id="code_security"
-                                                   placeholder="کد امنیتی" value="" name="code_security">
-                                        </div>
-                                        <div class="col captcha d-flex align-items-end p-0">
-                                            <img src="https://isovisit.com/captcha/flat?oiqm8a4r" class="img-fluid" alt="کپچا">
-                                            <a href="#" class="refresh_captcha mx-1">
-                                                <i class="fas fa-sync iso-font-llg-em"></i>
-                                            </a>
-                                        </div>
-                                        <span class="error_code_security_ticket error mt-1"></span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 form-check d-flex flex-wrap align-items-end ms-2">
-                                    <input class="form-check-input iso-form-check-input mt-lg-4" type="checkbox" name="rules_check" value="" id="rules_check">
-                                    <label class="form-check-label iso-font-md-em fw-normal mx-2" for="rules_check">
-                                        <a href="../single_pages/terms-conditions.html">قوانین</a>
-                                        <span class="iso-color-dark">ارسال سوالات رایگان را مطالعه کنید</span>
-                                    </label>
-                                    <span class="error_rules_check error mt-1"></span>
-                                </div>
-                            </div>
-                            <div class="col-12 d-flex justify-content-center mt-4">
-                                <button type="submit" class="btn col-6 col-md-3 iso-bg-blue-dark iso-font-md-em border-radius active-btn fw-medium">ذخیره سوال </button>
-                                <button type="button" class="btn col-6 col-md-3 border-color-blue-dark border-radius bg-white iso-font-md-em iso-color-blue-dark py-2 ms-3 fw-medium"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse_froum" aria-expanded="false" aria-controls="collapse_froum">بازگشت</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- section form create question end -->
-
-            <!-- section alert question and answer success start -->
-            <section class="section-show-question px-0">
-                <div class="card bg-light border-0 border-radius box-shadow-lg">
-                    <div class="card-header alert-success border-0 pb-1">
-                        <div class="row gy-3 gy-md-0">
-                            <div class="col-md-8 d-flex flex-column px-2">
-                                <div class="card-title d-flex">
-                                    <span class="icon-question"></span>
-                                    <h2 class="m-0 iso-font-sm-em iso-color-dark mx-2">برای شروع روند درمان باید چه کار کنم؟</h2>
-                                </div>
-                                <div class="title-category d-flex mt-2 mt-md-0">
-                                    <span class="icon-folder-open"></span>
-                                    <p class="m-0 iso-color-dark mx-2">اصلاح مزاج</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 d-flex flex-column mt-2 mt-md-0">
+                            <div class="col-12">
                                 <div class="row m-0">
-                                    <div class="col-8 col-md-12 d-flex justify-content-md-end align-items-center p-0 px-md-1">
-                                        <div class="d-flex justify-content-md-end">
-                                            <div class="box-count-comments d-flex justify-content-end align-items-center">
-                                                <i class="fa-solid fa-calendar-days iso-color-green-dark iso-font-llg-em"></i>
-                                                <span class="iso-color-dark iso-font-sm-em ms-1">1400/12/17</span>
-                                            </div>
-                                            <div class="box-count-comments mx-3 mx-md-5 d-flex justify-content-end align-items-center">
-                                                <i class="fa fa-comment iso-color-green-dark iso-font-llg-em"></i>
-                                                <span class="iso-color-dark iso-font-sm-em ms-1">5</span>
-                                            </div>
-                                            <div class="box-count-comments d-flex justify-content-end align-items-center">
-                                                <i class="fa fa-eye iso-color-green-dark iso-font-llg-em"></i>
-                                                <span class="iso-color-dark iso-font-sm-em ms-1">130</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-sm-4 col-md-12 p-1 justify-content-end">
-                                        <div class="form-check form-switch col-12 col-sm-7 col-md-5 col-lg-3 d-flex justify-content-around align-items-center ms-auto border-color-blue-dark mt-md-2 border-radius">
-                                            <input class="form-check-input align-self-start align-self-lg-center" type="checkbox" id="let_me_know">
-                                            <label class="form-check-label iso-color-blue-dark iso-font-sm-em" for="let_me_know">خبرم کن</label>
-                                        </div>
+                                    <div class="col-sm-3 col-12 offset-sm-9 p-0">
+                                        <button type="submit" class="btn active-btn iso-font-md-em iso-bg-blue-dark border-radius fw-medium w-100" id="contact">ارسال</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="details-user d-flex align-items-center mb-3 iso-font-sm-em">
-                            <div class="row w-100">
-                                <div class="col-md pe-0">
-                                    <div class="card-text d-flex align-items-center ms-2">
-                                        <i class="fa fa-user iso-font-llg-em iso-color-green-dark"></i>
-                                        <p class="m-0 ms-2">عباس گودرزی - 41 ساله</p>
-                                    </div>
+                    </form>
+                    <div class="line-muted-dashed my-4"></div>
+                    <div class="row gy-4">
+                        <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="fw-normal">واحد پاسخگویی به مشتریان</h3>
+                            <a href="tel:051-37649732" class="text-primary d-block mb-1 iso-font-llg-em">051-37649732</a>
+                        </div>
+                        <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="fw-normal">واحد پاسخگویی به پزشکان</h3>
+                            <a href="tel:09156510022" class="text-primary d-block mb-1 iso-font-llg-em">09156510022</a>
+                        </div>
+                        <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="fw-normal">ایمیل</h3>
+                            <a href="mailto:info@isovisit.com" class="text-primary iso-font-llg-em fw-normal d-block mb-1">info@isovisit.com</a>
+                            <div class="icons-social-network d-flex justify-content-center">
+                                <div class="box-telegram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex">
+                                        <span class="icon-telegram-light"></span>
+                                    </a>
                                 </div>
-                                <div class="col-md-9 p-0 d-flex">
-
-                                    <p class="card-text m-0 mx-2">
-                                        قد : 170
-                                    </p>
-                                    <p class="card-text m-0 mx-2">
-                                        وزن : 70
-                                    </p>
-                                    <button type="button" class="btn d-flex align-self-center p-1 py-0 mx-2 iso-font-sm-em alert-success border-radius">وزن پایین</button>
+                                <div class="box-instagram img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex">
+                                        <span class="icon-instagram-light"></span>
+                                    </a>
+                                </div>
+                                <div class="box-aparat img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <span class="icon-aparat-light"></span>
+                                    </a>
+                                </div>
+                                <div class="box-linkedin img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands iso-font-xl-em text-light fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <div class="box-facebook img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <i class="fab iso-font-xl-em text-light fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="box-twitter img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands iso-font-xl-em text-light fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="box-youtube img-sm iso-bg-blue-dark rounded-circle d-flex align-items-center justify-content-center mx-1">
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-brands iso-font-xl-em text-light fa-youtube"></i>
+                                    </a>
                                 </div>
                             </div>
-
                         </div>
-                        <ul class="list-group iso-font-sm-em">
-                            <li class="list-group-item py-1 px-2 border-0 bg-transparent mb-2">بهترین دکتر طب سنتی تو سایتتون کیه؟</li>
-                            <li class="list-group-item d-flex bg-transparent border-0 px-2">
-                                <i class="fa fa-question-circle iso-color-green-dark iso-font-xl-em"></i>
-                                <p class="m-0 ms-2">بیماری خاصی دارید؟</p>
-                            </li>
-                            <li class="list-group-item d-flex bg-transparent border-0 pt-0 px-2">
-                                <i class="fa fa-circle-check iso-color-green-light iso-font-xl-em"></i>
-                                <p class="m-0 ms-2">خیر</p>
-                            </li>
-                            <li class="list-group-item d-flex bg-transparent border-0 px-2">
-                                <i class="fa fa-question-circle iso-color-green-dark iso-font-xl-em"></i>
-                                <p class="m-0 ms-2">به پزشک دیگری مراجعه کردید؟</p>
-                            </li>
-                            <li class="list-group-item d-flex bg-transparent border-0 pt-0 px-2">
-                                <i class="fa fa-circle-check iso-color-green-light iso-font-xl-em"></i>
-                                <p class="m-0 ms-2">بله</p>
-                            </li>
-                            <li class="list-group-item d-flex bg-transparent border-0 px-2">
-                                <i class="fa fa-question-circle iso-color-green-dark iso-font-xl-em"></i>
-                                <p class="m-0 ms-2">آیا از داروی خاصی استفاده می کنید؟</p>
-                            </li>
-                            <li class="list-group-item d-flex bg-transparent border-0 pt-0 px-2">
-                                <i class="fa fa-circle-check iso-color-green-light iso-font-xl-em"></i>
-                                <p class="m-0 ms-2">خیر</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-footer border-0 px-4 px-md-5 pb-3 d-flex bg-transparent">
-                        <div class="box-love d-flex align-items-center">
-                            <img src="../../images/icons/love.png" class="love pointer-event" role="button" aria-expanded="false" alt="پسندیدم">
-                            <span class="mx-2">3</span>
+                        <div class="col-12 d-flex flex-column">
+                            <h3 class="fw-normal text-center text-lg-start">آدرس</h3>
+                            <address>
+                                <h4 class="fw-normal iso-font-llg-em m-0">
+                                    ایران، خراسان رضوی، مشهد، بلوار سجاد، بزرگمهر ۱۳، یاسمن ۱۵، پلاک ۱۸
+                                </h4>
+                            </address>
+                            <div id="contact_map"></div>
                         </div>
-                        <button type="button" class="btn col-8 col-sm-4 col-lg-3 offset-4 ms-auto iso-bg-blue-dark iso-font-md-em border-radius active-btn fw-medium">پاسخ</button>
                     </div>
                 </div>
             </section>
-            <!-- section alert question and answer success end -->
+            <!-- section contact-us end -->
         </div>
     </div>
+
     <div class="communication-iso box-shadow-lg position-fixed d-flex align-items-center rounded-circle iso-bg-green-dark z-index-last">
         <button class="btn-communication-iso img-sm border-0 bg-transparent p-0" aria-expanded="false">
             <span class="icon-support-light d-block"></span>
@@ -1128,9 +970,7 @@
                             </a>
                         </div>
                     </div>
-
                     <p class="footer-text mt-3 m-0 fw-normal iso-font-xs-em">© تمامی حقوق مادی و معنوی این وب سایت به ایزو ویزیت تعلق دارد.</p>
-
                 </div>
             </div>
         </div>
@@ -1141,11 +981,10 @@
 <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../../../node_modules/swiper/swiper-bundle.js"></script>
-<script src="../../../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="../../js/init/initValidation.js"></script>
+<script src="../../../node_modules/leaflet/dist/leaflet.js"></script>
 <script src="../../js/general/general_function.js"></script>
 <script src="../../js/init/initSwiper.js"></script>
 <script src="../../js/isovisit.js"></script>
-<script src="../../js/pages/froum/froum.js"></script>
+<script src="../../js/pages/singel_page/contact-us.js"></script>
 </body>
 </html>

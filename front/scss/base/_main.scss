@@ -575,6 +575,12 @@ a:hover{
   background: url("../../images/icons/aparat.png");
 }
 
+.icon-aparat-light{
+  @extend .size-thirty;
+  filter: brightness(0) invert(1);
+  background: url("../../images/icons/aparat.png");
+}
+
 .icon-gmail{
   @extend .size-thirty;
   background: url("../../images/icons/gmail.png");
@@ -840,3 +846,7 @@ a:hover{
   }
 }
 
+#contact_map{
+  width: 100%;
+  height: 15.625em;
+}

@@ -64,10 +64,6 @@ iframe {
   width: 100%;
 }
 
-#contact_map {
-  height: 15.625em;
-}
-
 .get-advice-fixed {
   bottom: 0.625em;
   z-index: 9999;
