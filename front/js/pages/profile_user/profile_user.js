@@ -249,4 +249,10 @@ $(document).ready(function (){
             $("#pills_all_consultants").addClass(['show','active']);
         }
     });
+
+    /* section list interest start */
+    $(document).on('click','.delete-interest',function (){
+       $(this).parent().remove();
+    });
+    /* section list interest end */
 });

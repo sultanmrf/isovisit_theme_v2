@@ -29,6 +29,12 @@ $(document).ready(function (){
         starSize: 25
     });
 
+    $(".star_rate_doctor").starRating({
+        readOnly: true,
+        emptyColor:'#ffc107',
+        starSize: 25
+    });
+
     /* swiper slider doctors section video introduction doctor start*/
     initGalleryDoctorSwiper();
     /* swiper slider doctors section video introduction doctor end*/
@@ -158,4 +164,14 @@ $(document).ready(function (){
             text_comment_two: "متن نظر الزامی است",
         });
     /* validation form answer comment end */
+
+
+    /* validation comment user for doctor start */
+    initValidation("#form_comment",{
+            comment: "required",
+        },
+        {
+            comment: "متن نظر الزامی است و باید حداقل 5 کاراکتر باشد",
+        });
+    /* validation comment user for doctor start */
 });

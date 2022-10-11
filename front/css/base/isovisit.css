@@ -358,19 +358,11 @@ header .header-menu {
 header .offcanvas-start {
   width: 16.875rem;
 }
-header .icon-logo-lg,
-header .icon-logo-sm {
-  background-image: url("../../images/logo.png");
-}
 header .icon-logo-sm {
   width: 2.8rem;
   height: 2.8rem;
   background-size: 2.8rem 2.8rem;
-}
-header .icon-logo-lg {
-  width: 3.7em;
-  height: 3.7em;
-  background-size: 4em 4em;
+  background-image: url("../../images/logo.png");
 }
 header .nav {
   height: 2rem;
@@ -583,6 +575,13 @@ footer {
 
 .btn:active:focus {
   box-shadow: unset;
+}
+
+.icon-logo-lg {
+  width: 3.7em;
+  height: 3.7em;
+  background-size: 4em 4em;
+  background-image: url("../../images/logo.png");
 }
 
 button.iso-color-blue-dark:hover {
@@ -1120,14 +1119,22 @@ a:hover {
 /* style section profile doctor end */
 .modal-login .border-blue, .modal-login input:focus,
 .modal-login .modal-edit-mobile input:focus,
-.modal-edit-mobile .modal-login input:focus, .modal-login .box-verification-code:focus-within,
+.modal-edit-mobile .modal-login input:focus,
+.modal-login .card-login input:focus,
+.card-login .modal-login input:focus, .modal-login .box-verification-code:focus-within,
 .modal-edit-mobile .border-blue,
 .modal-edit-mobile input:focus,
-.modal-edit-mobile .box-verification-code:focus-within {
+.modal-edit-mobile .card-login input:focus,
+.card-login .modal-edit-mobile input:focus,
+.modal-edit-mobile .box-verification-code:focus-within,
+.card-login .border-blue,
+.card-login input:focus,
+.card-login .box-verification-code:focus-within {
   border: 2px solid #1773B5;
 }
 .modal-login .box-timer,
-.modal-edit-mobile .box-timer {
+.modal-edit-mobile .box-timer,
+.card-login .box-timer {
   width: 7.25em;
   height: 2.125em;
   margin: 12px 0 19px 0;
@@ -1137,68 +1144,84 @@ a:hover {
 .modal-login .box-password,
 .modal-edit-mobile .input-phone,
 .modal-edit-mobile .box-verification-code,
-.modal-edit-mobile .box-password {
+.modal-edit-mobile .box-password,
+.card-login .input-phone,
+.card-login .box-verification-code,
+.card-login .box-password {
   height: 2.5em;
 }
 .modal-login .box-verification-code,
-.modal-edit-mobile .box-verification-code {
+.modal-edit-mobile .box-verification-code,
+.card-login .box-verification-code {
   border: 1px solid #dee2e6;
 }
 .modal-login .box-verification-code:focus-within .box-line-input span,
-.modal-edit-mobile .box-verification-code:focus-within .box-line-input span {
+.modal-edit-mobile .box-verification-code:focus-within .box-line-input span,
+.card-login .box-verification-code:focus-within .box-line-input span {
   background: #1773B5;
 }
 .modal-login .box-verification-code input,
-.modal-edit-mobile .box-verification-code input {
+.modal-edit-mobile .box-verification-code input,
+.card-login .box-verification-code input {
   padding-left: 1.75em;
   letter-spacing: 41px;
   width: 15rem;
   left: 0.79em;
 }
 .modal-login .box-verification-code .box-line-input,
-.modal-edit-mobile .box-verification-code .box-line-input {
+.modal-edit-mobile .box-verification-code .box-line-input,
+.card-login .box-verification-code .box-line-input {
   right: -0.4em;
 }
 .modal-login .box-verification-code .box-line-input span,
-.modal-edit-mobile .box-verification-code .box-line-input span {
+.modal-edit-mobile .box-verification-code .box-line-input span,
+.card-login .box-verification-code .box-line-input span {
   width: 2.5em;
   height: 0.125em;
   background: #6c757d;
   top: 1.813em;
 }
 .modal-login .box-verification-code .box-line-input .line-1,
-.modal-edit-mobile .box-verification-code .box-line-input .line-1 {
+.modal-edit-mobile .box-verification-code .box-line-input .line-1,
+.card-login .box-verification-code .box-line-input .line-1 {
   left: 10.125em;
 }
 .modal-login .box-verification-code .box-line-input .line-2,
-.modal-edit-mobile .box-verification-code .box-line-input .line-2 {
+.modal-edit-mobile .box-verification-code .box-line-input .line-2,
+.card-login .box-verification-code .box-line-input .line-2 {
   left: 7.063em;
 }
 .modal-login .box-verification-code .box-line-input .line-3,
-.modal-edit-mobile .box-verification-code .box-line-input .line-3 {
+.modal-edit-mobile .box-verification-code .box-line-input .line-3,
+.card-login .box-verification-code .box-line-input .line-3 {
   left: 4em;
 }
 .modal-login .box-verification-code .box-line-input .line-4,
-.modal-edit-mobile .box-verification-code .box-line-input .line-4 {
+.modal-edit-mobile .box-verification-code .box-line-input .line-4,
+.card-login .box-verification-code .box-line-input .line-4 {
   left: 0.875em;
 }
 .modal-login .form-modal-login,
-.modal-edit-mobile .form-modal-login {
+.modal-edit-mobile .form-modal-login,
+.card-login .form-modal-login {
   width: 15em;
 }
 .modal-login .modal-body,
-.modal-edit-mobile .modal-body {
+.modal-edit-mobile .modal-body,
+.card-login .modal-body {
   height: 240px;
   padding: 10px;
 }
 .modal-login .show-password,
-.modal-edit-mobile .show-password {
+.modal-edit-mobile .show-password,
+.card-login .show-password {
   left: 0.625em;
   top: 0.63em;
   background: rgb(248, 249, 250);
 }
 .modal-login .link-modal button,
-.modal-edit-mobile .link-modal button {
+.modal-edit-mobile .link-modal button,
+.card-login .link-modal button {
   color: #1773B5;
 }
 

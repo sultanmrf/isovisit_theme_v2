@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ایزو ویزیت | پزشکان</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../css/base/isovisit.css" rel="stylesheet">
+    <link href="../../css/pages/auth/auth.css" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <div class="container-xxl">
+        <div class="d-flex justify-content-center align-items-center pt-4 pt-lg-5">
+            <a href="../index.html" type="button" class="btn mx-auto iso-bg-blue-dark z-index-last active-btn iso-font-lg-em">
+                <i class="fa-solid fa-home-alt"></i>
+                <span>خانه</span>
+            </a>
+        </div>
+        <div class="row mt-0 mt-lg-5 gy-4">
+            <div class="col-md-7 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0 z-index-last" id="offcanvas_right_label">
+                    <a href="../index.html" class="d-flex">
+                        <span class="icon-logo-lg"></span>
+                    </a>
+                    <figcaption class="figure-caption me-2 me-sm-0">
+                        <a href="../index.html" class="d-flex flex-column">
+                            <span class="iso-font-lg iso-color-green-dark m-0 fw-bold">ایزو ویزیت</span>
+                            <span class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </span>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-5 d-flex align-items-center">
+
+                <div class="card card-login z-index-last w-100 border-radius">
+                    <div class="card-header bg-transparent d-flex border-0 pb-1">
+                        <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
+                            <span class="icon-user"></span>
+                            <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
+                        </div>
+                    </div>
+                    <div class="card-body overflow-hidden step-number-mobile d-flex flex-column justify-content-center align-items-center">
+                        <div class="alert d-flex align-items-start p-0">
+                            <span class="icon-alert"></span>
+                            <p class="iso-font-sm-em mx-2 mb-1 fw-medium">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                        </div>
+                        <div class="form-modal-login d-flex flex-column text-start">
+                            <div class="input-group">
+                                <label for="mobile" class="iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone w-100"
+                                       name="mobile" id="mobile" placeholder="09123456789">
+                            </div>
+                            <button type="button" class="btn ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent pt-0 px-0 d-flex flex-column align-items-center justify-content-center border-0">
+                        <div class="line-blur-dashed my-3 m-0"></div>
+                        <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em fw-medium px-4 m-0 border-radius">
+                            <span class="icon-gmail"></span>
+                            <span class="ms-2">ورود / ثبت نام با جیمیل</span>
+                        </button>
+                        <span class="iso-font-xs-em mt-1">برای کاربران خارج از کشور</span>
+                    </div>
+
+                    <!-- section enter verification code start -->
+                    <div class="card-body overflow-hidden w-100 step-verification d-none d-flex flex-column justify-content-between align-items-center">
+                        <p class="modal-title text-center iso-font-sm-em p-0 fw-medium">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                        <button type="button" class="btn box-timer alert-primary px-1 iso-color-dark py-1 iso-font-md-em d-flex justify-content-center fw-medium border-radius">
+                            <span>02:00</span>
+                        </button>
+                        <div class="form-modal-login d-flex flex-column text-start">
+                            <div class="box-verification-code d-flex bg-light border-radius px-1 overflow-hidden">
+                                <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0 position-relative" maxlength="4"/>
+                                <div class="box-line-input position-relative">
+                                    <span class="line-1 position-absolute"></span>
+                                    <span class="line-2 position-absolute"></span>
+                                    <span class="line-3 position-absolute"></span>
+                                    <span class="line-4 position-absolute"></span>
+                                </div>
+                            </div>
+                            <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
+                                <button type="button"  class="btn iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</button>
+                                <button type="button" class="btn iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</button>
+                            </div>
+                            <button type="button" class="btn accepted-info-user mt-3 iso-bg-blue-dark iso-font-md-em active-btn border-radius fw-medium">تایید</button>
+                        </div>
+                    </div>
+                    <!-- section enter verification code end -->
+
+                    <div class="card-body overflow-hidden step-login-password d-none d-flex flex-column justify-content-end align-items-center">
+                        <p class="modal-text m-0 mb-4 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
+                        <div class="form-modal-login d-flex flex-column text-start">
+                            <div class="link-modal d-flex justify-content-between">
+                                <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                <button type="button" class="btn iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</button>
+                            </div>
+                            <div class="box-password d-flex my-1 position-relative">
+                                <input type="password" class="form-control input-login-password border-radius rounded-0 bg-light iso-font-md-em text-secondary" placeholder="کلمه عبور">
+                                <button type="button" class="btn show-password position-absolute p-0 iso-font-md-em">
+                                    <i class="fa fa-eye iso-font-lg-em text-secondary bottom-50"></i>
+                                </button>
+                            </div>
+                            <div class="link-modal d-flex justify-content-between">
+                                <button type="button" class="btn iso-font-sm-em p-0 login-code-accepted fw-normal">ورود با کد تایید</button>
+                                <button type="button" class="btn iso-font-sm-em p-0 fw-normal">فراموشی رمز عبور</button>
+                            </div>
+                            <button type="button" class="btn mt-3 iso-font-md-em iso-bg-blue-dark border-radius active-btn fw-medium">ورود</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/general/general_function.js"></script>
+<script src="../../js/pages/auth/auth.js"></script>
+</body>
+</html>

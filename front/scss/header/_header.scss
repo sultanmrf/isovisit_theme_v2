@@ -13,21 +13,11 @@ header {
     width: 16.875rem;
   }
 
-  .icon-logo-lg,
-  .icon-logo-sm{
-    background-image: url("../../images/logo.png");
-  }
-
   .icon-logo-sm{
     width: $size-44;
     height: $size-44;
     background-size: $size-44 $size-44;
-  }
-
-  .icon-logo-lg{
-    width: 3.7em;
-    height: 3.7em;
-    background-size: 4em 4em;
+    background-image: url("../../images/logo.png");
   }
 
   .nav{

@@ -119,6 +119,13 @@ footer,
   box-shadow: unset;
 }
 
+.icon-logo-lg{
+  width: 3.7em;
+  height: 3.7em;
+  background-size: 4em 4em;
+  background-image: url("../../images/logo.png");
+}
+
 button {
   &.iso-color-blue-dark:hover {
     border: 1px solid $iso-green-dark;
@@ -745,7 +752,8 @@ a:hover{
 /* style section profile doctor end */
 
 .modal-login,
-.modal-edit-mobile{
+.modal-edit-mobile,
+.card-login{
 
   .border-blue{
     border: 2px solid $iso-blue-dark;
