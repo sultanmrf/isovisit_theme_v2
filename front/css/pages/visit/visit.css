@@ -113,6 +113,7 @@ body {
 .operation-doctor {
   width: 2.5em;
 }
+
 .operation-patient .dropdown-menu,
 .operation-doctor .dropdown-menu {
   min-width: unset;
@@ -189,5 +190,7 @@ body {
 .card-answer-doctor .card-body {
   border-radius: 8px 0 8px 8px;
 }
+
+/*# sourceMappingURL=visit.css.map */
 
 /*# sourceMappingURL=visit.css.map */

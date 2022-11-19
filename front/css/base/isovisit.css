@@ -1086,7 +1086,7 @@ a:hover {
   background-image: unset;
 }
 
-/* style error validation */
+/* style errors validation */
 .error {
   width: 100%;
   height: 0.625em;
@@ -1241,6 +1241,17 @@ a:hover {
 #contact_map {
   width: 100%;
   height: 15.625em;
+}
+
+/* main */
+.bg-img-404 {
+  background: url("../../images/errors/404.png") no-repeat;
+  width: 290px;
+  height: 210px;
+}
+
+.section-error {
+  height: 86vh;
 }
 
 /* footer */

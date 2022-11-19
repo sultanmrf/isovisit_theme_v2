@@ -221,12 +221,12 @@ $(document).ready(function (){
            "                                    <select class=\"form-select form-select-category iso-font-xs-em fw-normal text-secondary border-radius\" id=\"specialty\" name=\"specialty\">\n" +
            "                                        <option value=\"\">تخصص خود را انتخاب کنید</option>\n" +
            "                                    </select>\n" +
-           "                                    <span class=\"error_specialty error mt-1\"></span>\n" +
+           "                                    <span class=\"error_specialty errors mt-1\"></span>\n" +
            "                                </div>\n" +
            "                                <div class=\"col-12\">\n" +
            "                                    <label for=\"education\" class=\"form-label iso-font-md-em mb-1 fw-normal\">تحصیلات</label>\n" +
            "                                    <input type=\"text\" class=\"form-control iso-font-xs-em fw-normal text-secondary border-radius valid border-radius text-start\" id=\"education\" placeholder=\"تحصیلات خود را انتخاب کنید\" value=\"\" name=\"education\">\n" +
-           "                                    <span class=\"error_education error mt-1\"></span>\n" +
+           "                                    <span class=\"error_education errors mt-1\"></span>\n" +
            "                                </div>")
     });
 

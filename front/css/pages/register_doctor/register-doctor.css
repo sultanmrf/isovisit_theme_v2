@@ -8,6 +8,7 @@ main .animated {
   background-image: url("../../../images/background/pattern.png");
   background-size: 100% 27.5em;
 }
+
 .banner-pattern .row {
   height: 24em;
 }
@@ -24,17 +25,21 @@ svg {
 .section-comment-doctors .swiper-slide {
   height: 10.5em;
 }
+
 .section-comment-doctors .swiper-wrapper {
   height: 14em;
 }
+
 .section-comment-doctors .card {
   width: 25em;
   height: 9.375em;
 }
+
 .section-comment-doctors .figure {
   top: -2em;
   right: 0.875em;
 }
+
 .section-comment-doctors .swiper-pagination-comment-doctors {
   bottom: -0.063em;
 }
@@ -42,5 +47,7 @@ svg {
 #code_security {
   height: 2.438em;
 }
+
+/*# sourceMappingURL=register-doctor.css.map */
 
 /*# sourceMappingURL=register-doctor.css.map */

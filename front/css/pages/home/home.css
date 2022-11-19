@@ -28,60 +28,76 @@ main .iso-line-title {
   position: absolute;
   border-radius: 1.875rem;
 }
+
 main .section-facilities-and-services .card {
   height: 11rem;
 }
+
 main .section-facilities-and-services .card-header {
   top: 5%;
   z-index: 2;
   width: 9.75rem;
 }
+
 main .section-facilities-and-services .card-header .card-img {
   width: 50%;
   height: 5em;
 }
+
 main .section-facilities-and-services .card-header .card-img img {
   width: 61%;
 }
+
 main .section-facilities-and-services .card-body {
   top: 3.063rem;
   height: 7.875rem;
   width: 9.75rem;
   font-size: 1.188em;
 }
+
 main svg {
   display: none;
 }
+
 main .section-doctors .section-header button {
   bottom: 1.063em;
 }
+
 main .section-doctors .card-doctor {
   width: 14.8em;
 }
+
 main .section-doctors .card-doctor .card-img {
   width: 5.563em;
 }
+
 main .section-doctors .card-doctor .card-img span {
   bottom: 0.375em;
   right: -0.313em;
 }
+
 main .section-doctors .swiper-doctors {
   height: 15em;
 }
+
 main .section-doctors .swiper-doctors .swiper-slide {
   width: 14.8em;
 }
+
 main .section-doctors .swiper-button-next,
 main .section-doctors .swiper-button-prev {
   top: 44%;
 }
+
 main .section-specialty .card-specialty {
   width: 10.625em;
   height: 9.375em;
 }
+
 main .section-services .card-service {
   height: 9.375em;
 }
+
 main .section-services .swiper-button-next,
 main .section-services .swiper-button-prev,
 main .section-specialty .swiper-button-next,
@@ -90,41 +106,54 @@ main .section-comments-users .swiper-button-next,
 main .section-comments-users .swiper-button-prev {
   top: 44%;
 }
+
 main .swiper-services,
 main .swiper-specialty {
   height: 10.625em;
 }
+
 main .swiper-services .swiper-slide,
 main .swiper-specialty .swiper-slide {
   width: 10.625em;
 }
+
 main .swiper-question-answer .card {
   width: 20.5em;
   height: 15em;
 }
+
 main .swiper-question-answer .swiper-slide {
   height: 15.5em;
 }
+
 main .swiper-question-answer .swiper-wrapper {
   height: 17em;
 }
+
 main .swiper-question-answer h1 {
   text-overflow: ellipsis;
 }
+
 main .swiper-question-answer p {
   height: 5.6em;
 }
+
 main .section-articles .swiper-articles img {
   height: 13.1875em;
 }
+
 main .section-articles .swiper-articles .a {
   height: 3.8em;
 }
+
 main .section-sign-in-doctor > .section-body {
   background: #CCE5FF;
 }
+
 main .section-sign-in-doctor .card {
   height: 10.64em;
 }
+
+/*# sourceMappingURL=home.css.map */
 
 /*# sourceMappingURL=home.css.map */

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404</title>
+
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../css/base/isovisit.css" rel="stylesheet">
+    <link href="../../css/pages/responsive/responsive.css" rel="stylesheet">
+</head>
+<body>
+<!-- section header start -->
+<header>
+    <div class="container-xxl p-0">
+        <!-- section navbar start-->
+        <div class="header-menu row row-col-3 px-12 d-flex justify-content-between align-items-center bg-light box-shadow-sm m-0 position-relative">
+            <!-- section navbar mobile start  -->
+            <nav class="col-1 col-xl-9 order-xl-2 p-0 order-1">
+                <div class="d-flex d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_right" aria-controls="offcanvas_right">
+                    <span class="icon-bar"></span>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_right" aria-labelledby="offcanvas_right_label">
+                    <div class="offcanvas-header px-2 pb-3 pt-3 justify-content-around d-flex flex-row-reverse">
+                        <!-- logo section  -->
+                        <figure class="figure d-flex justify-content-center align-items-center me-4 mb-0 p-0" id="offcanvas_right_label">
+                            <a href="../index.html" class="d-flex">
+                                <span class="icon-logo-sm"></span>
+                            </a>
+                            <figcaption class="figure-caption me-2 me-sm-0">
+                                <a href="../index.html" class="d-flex flex-column">
+                                    <span class="iso-font-lg iso-color-green-dark m-0 fw-bold">ایزو ویزیت</span>
+                                    <span class="iso-font-xs iso-color-dark m-0 mt-1 lh-base">حس خوب یک درمان آنلاین </span>
+                                </a>
+                            </figcaption>
+                        </figure>
+                        <!-- logo section  -->
+                        <button type="button" class="btn icon-close-blue" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-light">
+                        <ul class="list-group">
+                            <li class="list-group-item border-0 mt-1 p-0 bg-transparent">
+                                <button type="button" class="btn col-12 border-0 text-start py-2 p-3 iso-bg-blue-dark btn-show-modal-login border-radius active-btn fw-medium"
+                                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
+                                <!-- menu user logged in-->
+                                <div class="menu-user marker-light flex-column iso-bg-blue-dark border-radius d-none">
+                                    <button class="menu-user-header btn w-100 iso-bg-blue-dark px-2 p-0 d-flex align-items-center btn-user-collapse collapsed border-radius fw-medium"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse_menu_user" aria-expanded="false" aria-controls="collapse_menu_user">
+                                        <img src="../../images/doc3.jpg" class="figure-img rounded-circle img-sm m-1" alt="عکس پروفایل دکتر">
+                                        <span class="text-light ms-1">
+                                                سیروس جعفری
+                                         </span>
+                                        <i class="fa iso-font-lg text-light fa-chevron-down ms-auto"></i>
+                                    </button>
+                                    <div class="menu-user-body border-top mt-2 collapse" id="collapse_menu_user">
+                                        <ul class="ps-4 m-0 border-radius-bottom  iso-font-md-em iso-bg-blue-dark">
+                                            <li class="p-0 pt-3">
+                                                <a href="../profile_user_and_doctor/profile_user.html" class="text-light hover-line-white ms-2">
+                                                    پروفایل
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="../profile_user_and_doctor/consultations.html" class="text-light hover-line-white ms-2">
+                                                    مشاوره ها
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="../profile_user_and_doctor/transactions.html" class="text-light hover-line-white ms-2">
+                                                    تراکنش ها
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="../profile_user_and_doctor/message_secretary.html" class="text-light hover-line-white ms-2">
+                                                    پیام های منشی
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="../profile_user_and_doctor/tickets.html" class="text-light hover-line-white ms-2">
+                                                    تیکت ها
+                                                </a>
+                                            </li>
+                                            <li class="p-0 pt-3">
+                                                <a href="../profile_user_and_doctor/comments.html" class="text-light hover-line-white ms-2">
+                                                    نظرات
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="menu-user-footer p-3 pb-1">
+                                            <button class="btn btn-danger py-1 px-2 border-radius fw-normal iso-font-sm-em fw-medium">خروج</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../index.html" class="iso-color-dark link-hover position-relative">صفحه اصلی</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../services/services.html" class="iso-color-dark link-hover position-relative">مشاوره آنلاین پزشکی</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../specialty/specialty.html" class="iso-color-dark link-hover position-relative">تخصص ها</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1 bg-transparent">
+                                <a href="../list_doctors/list_doctors.html" class="iso-color-dark link-hover position-relative">پزشکان</a>
+                            </li>
+                            <li class="list-group-item border-0 mt-1  bg-transparent">
+                                <a href="../froum/froum.html" class="iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="../medicines/medicines.html" class="iso-color-dark link-hover position-relative">دارو ها</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="../articles/articles.html" class="iso-color-dark link-hover position-relative">مقالات</a>
+                            </li>
+                            <li class="list-group-item border-0 border-radius p-0 d-flex justify-content-center flex-wrap bg-transparent">
+                                <button class="btn d-flex justify-content-between unactive_menu px-1 ms-1 pt-2 pb-0 btn-doctors
+                                rounded-0 align-items-center text-start col-11  iso-font-md-em bg-transparent fw-medium"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#details_menu_doctors" aria-expanded="false" aria-controls="details_menu_doctors">
+                                    <span  class="fw-medium">ایزو ویزیت</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse border-top mt-2 p-2 marker-light " id="details_menu_doctors">
+                                    <div class="card mt-2 bg-transparent border-0">
+                                        <ul class="row gy-3 fw-normal px-4">
+                                            <li>
+                                                <a href="../register_doctors/register_doctor.html" class="text-light hover-line-white">
+                                                    ثبت نام پزشکان
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../single_pages/site-guide.html" class="text-light hover-line-white">
+                                                    راهنمای سایت
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../single_pages/faq.html" class="text-light hover-line-white">
+                                                    سوالات متداول
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../single_pages/about.html" class="text-light hover-line-white">
+                                                    درباره ما
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-light hover-line-white">
+                                                    ثبت کلینیک
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../single_pages/terms-conditions.html" class="text-light hover-line-white">
+                                                    شرایط و قوانین
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../single_pages/privacy-policy.html" class="text-light hover-line-white">
+                                                    حریم خصوصی
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-light hover-line-white">
+                                                    ثبت شکایت
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-light hover-line-white">
+                                                    انتقاد و پیشنهادات
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr class="bg-secondary mx-2">
+
+                        <div class="d-flex mt-5 justify-content-center flex-wrap">
+                            <div class="support-phone py-1 p-2 border d-flex bg-white justify-content-around align-items-center rounded-pill">
+                                <a href="tel:00226510915" class="mx-2 iso-color-blue-dark">0022 651 0915</a>
+                                <span class="icon-support"></span>
+                            </div>
+                            <!-- logo section menu sidebar  -->
+                            <figure class="figure d-flex justify-content-center align-items-center p-0 mt-3 mb-0">
+                                <a href="../index.html" class="d-flex">
+                                    <span class="icon-logo-lg"></span>
+                                </a>
+                                <figcaption class="figure-caption me-2 me-sm-0">
+                                    <a href="../index.html" class="d-flex flex-column">
+                                        <span class="iso-font-xl iso-color-green-dark fw-bold">ایزو ویزیت</span>
+                                        <span class="iso-font-md text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <!-- logo section menu sidebar  -->
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav d-none d-xl-flex justify-content-center align-items-center">
+                    <li class="nav-item px-2">
+                        <a href="../index.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../services/services.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">مشاوره آنلاین پزشکی</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../specialty/specialty.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">تخصص ها</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../list_doctors/list_doctors.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پزشکان</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../froum/froum.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">پرسش و پاسخ</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../medicines/medicines.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">دارو ها</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../articles/articles.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">مقالات</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="../single_pages/contact-us.html" class="nav-link p-0 py-1 iso-color-dark link-hover position-relative">تماس با ما</a>
+                    </li>
+                    <li class="nav-item dropdown px-2 pe-1 border-radius-top">
+                        <a class="link-doctors p-0 py-1 iso-color-dark d-flex align-items-center link-hover position-relative" href="#" id="navbar_doctors" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ایزو ویزیت
+                            <i class="fa fa-solid fa-chevron-down iso-font-lg-em ms-2"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0 py-3 active_menu" aria-labelledby="navbar_doctors">
+                            <li><a href="../register_doctors/register_doctor.html" class="dropdown-item text-light active-btn">ثبت نام پزشکان </a></li>
+                            <li><a href="../single_pages/site-guide.html" class="dropdown-item text-light active-btn">راهنمای سایت</a></li>
+                            <li><a href="../single_pages/faq.html" class="dropdown-item text-light active-btn">سوالات متداول</a></li>
+                            <li><a href="../single_pages/about.html" class="dropdown-item text-light active-btn">درباره ما</a></li>
+                            <li><a href="#" class="dropdown-item text-light active-btn">ثبت کلینیک</a></li>
+                            <li><a href="../single_pages/terms-conditions.html" class="dropdown-item text-light active-btn">شرایط و قوانین</a></li>
+                            <li><a href="../single_pages/privacy-policy.html" class="dropdown-item text-light active-btn">حریم خصوصی</a></li>
+                            <li><a href="#" class="dropdown-item text-light active-btn">ثبت شکایات</a></li>
+                            <li><a href="#" class="dropdown-item text-light active-btn">انتقاد و پیشنهادات</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- section navbar mobile end -->
+
+            <!-- section logo -->
+            <figure class="figure col-8 col-md-9 col-xl-2 d-flex pe-2 justify-content-center justify-content-xl-start p-0 my-2 order-1">
+                <a href="../index.html" class="d-flex">
+                    <span class="icon-logo-sm"></span>
+                </a>
+                <figcaption class="figure-caption me-2 me-sm-0">
+                    <a href="../index.html" class="d-flex flex-column">
+                        <span class="iso-font-lg iso-color-green-dark fw-bold">ایزو ویزیت</span>
+                        <span class="iso-font-xxs text-nowrap iso-color-dark lh-base">حس خوب یک درمان آنلاین </span>
+                    </a>
+                </figcaption>
+            </figure>
+            <!-- section logo -->
+
+            <div class="btn-login col-3 col-sm-2 col-md-1 d-flex justify-content-end p-0 order-3">
+                <button type="button" class="btn border-0 py-2 p-1 iso-bg-blue-dark text-nowrap border-radius btn-show-modal-login active-btn iso-font-md-em fw-medium"
+                        data-bs-toggle="modal" data-bs-target=".modal-login">ورود / عضویت </button>
+            </div>
+
+            <!-- section menu user logged in start-->
+            <div class="menu-user marker-light dropdown col-3 p-0 col-sm-2 col-xl-1 order-3 d-none justify-content-end">
+                <button type="button" class="btn border-radius iso-bg-blue-dark dropdown-toggle text-light d-flex align-items-center iso-font-md-em btn-user fw-medium"
+                        id="dropdown_menu_link" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>سیروس</span>
+                    <i class="fa iso-font-lg-em fa-chevron-down ms-2"></i>
+                </button>
+                <div class="dropdown-menu box-shadow iso-font-md-em border-0 border-radius fw-normal px-1 py-0 iso-bg-blue-dark" aria-labelledby="dropdown_menu_link">
+                    <div class="dropdown-header iso-font-md-em text-light p-0">
+                        <figure class="d-flex align-items-center m-0">
+                            <img src="../../images/doc3.jpg" class="rounded-circle img-sm m-2" alt="عکس پروفایل">
+                            <figcaption>
+                                سیروس جعفری
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="dropdown-body border-top">
+                        <ul class="ps-3 m-0">
+                            <li class="p-0 pt-3">
+                                <a href="../profile_user_and_doctor/profile_user.html" class="text-light hover-line-white ms-2">
+                                    پروفایل
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="../profile_user_and_doctor/consultations.html" class="text-light hover-line-white ms-2">
+                                    مشاوره ها
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="../profile_user_and_doctor/transactions.html" class="text-light hover-line-white ms-2">
+                                    تراکنش ها
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="../profile_user_and_doctor/message_secretary.html" class="text-light hover-line-white ms-2">
+                                    پیام های منشی
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="../profile_user_and_doctor/tickets.html" class="text-light hover-line-white ms-2">
+                                    تیکت ها
+                                </a>
+                            </li>
+                            <li class="p-0 pt-3">
+                                <a href="../profile_user_and_doctor/comments.html" class="text-light hover-line-white ms-2">
+                                    نظرات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-footer pt-3 pb-2">
+                        <button class="btn btn-danger py-1 px-2 border-radius ms-2 fw-normal iso-font-sm-em fw-medium">خروج</button>
+                    </div>
+                </div>
+            </div>
+            <!-- section menu user logged in end-->
+        </div>
+        <!-- section navbar end -->
+
+        <!-- section modal login start -->
+        <div class="modal fade modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal_login_label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <form action="#" class="w-100">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 pb-1">
+                            <div class="modal-title d-flex align-items-center m-0" id="modal_login_label">
+                                <span class="icon-user"></span>
+                                <span class="iso-font-lg-em ms-1">ورود / ثبت نام</span>
+                            </div>
+                            <button type="button" class="btn iso-font-lg-em border-radius btn-close-danger-modal text-danger"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body overflow-hidden card-login d-flex flex-column justify-content-center align-items-center">
+                            <div class="alert d-flex align-items-start p-0">
+                                <span class="icon-alert"></span>
+                                <p class="iso-font-sm-em mx-2 mb-1 fw-medium">کلیه اطلاع رسانی هاسایت بعد از پاسخ پزشک ، به شماره وارد شده در سامانه ارسال خواهد شد.</p>
+                            </div>
+                            <div class="form-modal-login d-flex flex-column text-start">
+                                <div class="input-group">
+                                    <label for="mobile" class="iso-font-md-em text-start fw-normal">شماره موبایل</label>
+                                    <input type="number" class="form-control bg-light text-end border-radius mt-1 letter-space-md iso-font-md-em input-phone w-100"
+                                           name="mobile" id="mobile" placeholder="09123456789">
+                                </div>
+                                <button type="button" class="btn ms-0 border-radius iso-bg-blue-dark mt-3 send iso-font-lg-em active-btn fw-medium">ورود</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer pt-0 px-0 d-flex border-0 justify-content-center">
+                            <div class="line-blur-dashed my-3 m-0"></div>
+                            <button type="button" class="btn btn-danger d-flex align-items-center iso-font-md-em fw-medium px-4 m-0 border-radius">
+                                <span class="icon-gmail"></span>
+                                <span class="ms-2">ورود / ثبت نام با جیمیل</span>
+                            </button>
+                            <span class="iso-font-xs-em">برای کاربران خارج از کشور</span>
+                        </div>
+
+                        <!-- section enter verification code start -->
+                        <div class="modal-body overflow-hidden w-100 card-verification d-none d-flex flex-column justify-content-between align-items-center">
+                            <p class="modal-title text-center iso-font-sm-em p-0 fw-medium">لطفا کد ارسال شده به شماره 09395343120 را وارد کنید</p>
+                            <button type="button" class="btn box-timer alert-primary px-1 iso-color-dark py-1 iso-font-md-em d-flex justify-content-center fw-medium border-radius">
+                                <span>02:00</span>
+                            </button>
+                            <div class="form-modal-login d-flex flex-column text-start">
+                                <div class="box-verification-code d-flex bg-light border-radius px-1 overflow-hidden">
+                                    <input type="text" class="form-control iso-font-sm-em fw-medium text-end bg-transparent border-0 py-0 ps-0 position-relative" maxlength="4"/>
+                                    <div class="box-line-input position-relative">
+                                        <span class="line-1 position-absolute"></span>
+                                        <span class="line-2 position-absolute"></span>
+                                        <span class="line-3 position-absolute"></span>
+                                        <span class="line-4 position-absolute"></span>
+                                    </div>
+                                </div>
+                                <div class="link-modal mt-1 iso-font-md-em d-flex justify-content-between">
+                                    <button type="button"  class="btn iso-font-sm-em p-0 login-with-password fw-normal">ورود با کلمه عبور</button>
+                                    <button type="button" class="btn iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</button>
+                                </div>
+                                <button type="button" class="btn accepted-info-user mt-3 iso-bg-blue-dark iso-font-md-em active-btn border-radius fw-medium">تایید</button>
+                            </div>
+                        </div>
+                        <!-- section enter verification code end -->
+
+                        <div class="modal-body overflow-hidden card-login-password d-none d-flex flex-column justify-content-end align-items-center">
+                            <p class="modal-text m-0 mb-4 iso-font-sm-em fw-medium">رمز عبور را وارد کنید</p>
+                            <div class="form-modal-login d-flex flex-column text-start">
+                                <div class="link-modal d-flex justify-content-between">
+                                    <label class="iso-font-sm-em align-self-end">کلمه عبور</label>
+                                    <button type="button" class="btn iso-font-sm-em p-0 edit-mobile fw-normal">تغییر شماره موبایل</button>
+                                </div>
+                                <div class="box-password d-flex my-1 position-relative">
+                                    <input type="password" class="form-control input-login-password border-radius rounded-0 bg-light iso-font-md-em text-secondary" placeholder="کلمه عبور">
+                                    <button type="button" class="btn show-password position-absolute p-0 iso-font-md-em">
+                                        <i class="fa fa-eye iso-font-lg-em text-secondary bottom-50"></i>
+                                    </button>
+                                </div>
+                                <div class="link-modal d-flex justify-content-between">
+                                    <button type="button" class="btn iso-font-sm-em p-0 login-code-accepted fw-normal">ورود با کد تایید</button>
+                                    <button type="button" class="btn iso-font-sm-em p-0 fw-normal">فراموشی رمز عبور</button>
+                                </div>
+                                <button type="button" class="btn mt-3 iso-font-md-em iso-bg-blue-dark border-radius active-btn fw-medium">ورود</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- section modal login end -->
+    </div>
+</header>
+<!-- section header end -->
+
+<!-- main section -->
+<main>
+    <div class="container-xxl">
+        <section class="section-error container d-flex justify-content-center align-items-center">
+            <div class="row gy-3 w-100">
+                <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start order-2 order-lg-1">
+                    <h1 class="iso-color-blue-dark iso-font-xl">
+                        خطای 404!
+                        <span class="iso-font-lg d-block">صفحه ای که دنبال آن بودید پیدا نشد!</span>
+                    </h1>
+                    <div class="alert alert-warning p-2 d-inline-block">
+                        <ul class="m-0 iso-font-md-em px-3 fw-medium iso-color-dark">
+                            <li>
+                                شاید صفحه منتقل یا حذف شده باشد.
+                            </li>
+                            <li>
+                                شاید شما آدرس را اشتباه وارد کردید.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row gy-2 w-100">
+                        <div class="col-lg-6 px-0">
+                            <button type="button" class="btn iso-bg-blue-dark py-2 active-btn w-100 iso-font-md-em border-radius">
+                                صفحه اصلی
+                            </button>
+                        </div>
+                        <div class="col-lg-6 px-0">
+                            <button type="button" class="border-color-blue-dark border-radius bg-white iso-color-blue-dark py-2 w-100 iso-font-md-em">ارتباط با پشتیبانی</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center justify-content-lg-end order-1 order-lg-2">
+                    <div class="bg-img-404"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- main section end -->
+
+
+<script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/general/general_function.js"></script>
+<script src="../../js/isovisit.js"></script>
+</body>
+</html>
