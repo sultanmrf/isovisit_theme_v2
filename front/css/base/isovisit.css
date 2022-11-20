@@ -1253,6 +1253,9 @@ a:hover {
 .section-error {
   height: 86vh;
 }
+.section-error button {
+  width: 310px;
+}
 
 /* footer */
 footer .footer-certificates .footer-body {

@@ -138,6 +138,9 @@
   .list-details-ticket .details-title {
     border-left: 1px solid #dee2e6;
   }
+  main .input-shaba-no span {
+    top: 0.3em;
+  }
 }
 @media only screen and (max-width: 768px) {
   .profile-doctor-master ~ .communication-iso, .profile-doctor-master ~ .scroll-top {
@@ -216,6 +219,9 @@
   .section-comments-users .section-title {
     top: 1.2em;
   }
+  .section-error button {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .section-data-profile-doctor .btn-group {
@@ -240,6 +246,5 @@ footer .footer-contact {
   }
   /* section form comment in profile doctor end */
 }
-/*# sourceMappingURL=responsive.css.map */
 
 /*# sourceMappingURL=responsive.css.map */
